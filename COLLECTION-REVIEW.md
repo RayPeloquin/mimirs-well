@@ -6,7 +6,7 @@
 
 The 70 expanded records make sense in a research/design collection **when read with their stated evidence and limitations**. They include proposed devices, computational studies, engineering audits, collaboration/review methods and creative work; they are not 70 demonstrated inventions. No expanded record was removed or promoted to validated status by this review.
 
-The other 327 entries are retained as **archive titles awaiting assessment**, not endorsed designs. A title alone cannot establish a mechanism, feasibility or a reason to build it. They should not be presented as completed engineering. This register covers all 397 published entries and gives every entry a disposition.
+The other 326 entries are retained as **archive titles awaiting assessment**, not endorsed designs. A title alone cannot establish a mechanism, feasibility or a reason to build it. They should not be presented as completed engineering. This register covers all 396 published entries and gives every entry a disposition.
 
 This pass read all published titles and the purpose, evidence and limitations fields of the 70 expanded summaries. It checked record binding, exact-title duplication, required fields and presentation. It did not independently reopen every original research source, rerun experiments/models, establish novelty, perform clinical/physical qualification or audit every external link. Conclusions are about the public descriptions, not certification of their underlying research.
 
@@ -19,11 +19,11 @@ This report uses only the already-published website files, not newly disclosed a
 | Finding | Disposition |
 | --- | --- |
 | Source groups looked like development stages; “Illustrated concept” could imply artwork had been inspected | Changed visible labels to portfolio listing, archived design/community title, or recovered concept title; filter explicitly describes source groups |
-| 327 title-only entries could be mistaken for reviewed designs | Added explicit mechanism/feasibility/evidence-pending wording; retained their names and links for recovery |
+| 326 title-only entries could be mistaken for reviewed designs | Added explicit mechanism/feasibility/evidence-pending wording; retained their names and links for recovery |
 | “Source-backed” did not distinguish public artifacts from privately held references | Clarified that named archived references may not be public downloads and precedent papers do not validate our designs |
 | SKEPTIC-1 was filed only under AI/safety | Moved to physics/engineering with a mechanical-measurement tag, matching its published experiment scope |
 | Collection contains governance, games and community proposals as well as devices | Clarified collection scope; these are legitimate parts of the Well, not all physical inventions |
-| Exact duplicates and disconnected expanded overrides | 397 distinct exact titles; all 70 expanded records attach to cards; all contain purpose, version, evidence, contributors, references, next steps and notes |
+| Exact duplicates and disconnected expanded overrides | 396 distinct exact titles; all 70 expanded records attach to cards; all contain purpose, version, evidence, contributors, references, next steps and notes |
 | Related names may still overlap | Preserve separately until source lineage is established; no unsupported merges |
 
 ## Important boundaries retained
@@ -230,230 +230,229 @@ These are review leads from the existing public titles/summaries, not verdicts b
 | 171 | [Thor](https://raypeloquin.github.io/mimirs-well/#design/thor) | Archive only — source and feasibility pending |
 | 172 | [Thor’s Hammer](https://raypeloquin.github.io/mimirs-well/#design/thor-s-hammer) | Archive only — source and feasibility pending |
 | 173 | [Thor Avatar](https://raypeloquin.github.io/mimirs-well/#design/thor-avatar) | Archive only — source and feasibility pending |
-| 174 | [Officer Capri’s Eyes](https://raypeloquin.github.io/mimirs-well/#design/officer-capri-s-eyes) | Archive only — source and feasibility pending |
-| 175 | [Mosquito Reaper](https://raypeloquin.github.io/mimirs-well/#design/mosquito-reaper) | Archive only — source and feasibility pending |
-| 176 | [Tickhammer](https://raypeloquin.github.io/mimirs-well/#design/tickhammer) | Archive only — source and feasibility pending |
-| 177 | [SPOTRECON / SPOTRECON R2](https://raypeloquin.github.io/mimirs-well/#design/spotrecon-spotrecon-r2) | Research record — retain with stated limits |
-| 178 | [WARDEN-1 — Farm Guardian](https://raypeloquin.github.io/mimirs-well/#design/warden-1-farm-guardian) | Archive only — source and feasibility pending |
-| 179 | [HerdMinder / HM-01](https://raypeloquin.github.io/mimirs-well/#design/herdminder-hm-01) | Archive only — source and feasibility pending |
-| 180 | [Jaguar Mode](https://raypeloquin.github.io/mimirs-well/#design/jaguar-mode) | Archive only — source and feasibility pending |
-| 181 | [FLUFFY-01](https://raypeloquin.github.io/mimirs-well/#design/fluffy-01) | Archive only — source and feasibility pending |
-| 182 | [Dog Soundboard — Communication protocol](https://raypeloquin.github.io/mimirs-well/#design/dog-soundboard-communication-protocol) | Archive only — source and feasibility pending |
-| 183 | [Tunneler](https://raypeloquin.github.io/mimirs-well/#design/tunneler) | Archive only — source and feasibility pending |
-| 184 | [Burst-Mode Subsurface Actuation](https://raypeloquin.github.io/mimirs-well/#design/burst-mode-subsurface-actuation) | Archive only — source and feasibility pending |
-| 185 | [Drone Rotor D1](https://raypeloquin.github.io/mimirs-well/#design/drone-rotor-d1) | Archive only — source and feasibility pending |
-| 186 | [Small Farm Community](https://raypeloquin.github.io/mimirs-well/#design/small-farm-community) | Archive only — source and feasibility pending |
-| 187 | [The Golden Ratio — Intergenerational Community](https://raypeloquin.github.io/mimirs-well/#design/the-golden-ratio-intergenerational-community) | Archive only — source and feasibility pending |
-| 188 | [Charlotte School — Intergenerational living and year-round gardens](https://raypeloquin.github.io/mimirs-well/#design/charlotte-school-intergenerational-living-and-year-round-gardens) | Archive only — source and feasibility pending |
-| 189 | [Fortress of Solitude](https://raypeloquin.github.io/mimirs-well/#design/fortress-of-solitude) | Archive only — source and feasibility pending |
-| 190 | [Butterfly Wanderings — Coloring book](https://raypeloquin.github.io/mimirs-well/#design/butterfly-wanderings-coloring-book) | Archive only — source and feasibility pending |
-| 191 | [Ember — Animated companion](https://raypeloquin.github.io/mimirs-well/#design/ember-animated-companion) | Archive only — source and feasibility pending |
-| 192 | [Aeris-Bridge — Lung support](https://raypeloquin.github.io/mimirs-well/#design/aeris-bridge-lung-support) | Archive only — source and feasibility pending |
-| 193 | [AUX-HEART](https://raypeloquin.github.io/mimirs-well/#design/aux-heart) | Archive only — source and feasibility pending |
-| 194 | [Neuro-Bridge](https://raypeloquin.github.io/mimirs-well/#design/neuro-bridge) | Archive only — source and feasibility pending |
-| 195 | [Thoracis — Bioperfusion](https://raypeloquin.github.io/mimirs-well/#design/thoracis-bioperfusion) | Archive only — source and feasibility pending |
-| 196 | [Cerebris — Trauma support](https://raypeloquin.github.io/mimirs-well/#design/cerebris-trauma-support) | Archive only — source and feasibility pending |
-| 197 | [Dermis — Bioreactor / cradle](https://raypeloquin.github.io/mimirs-well/#design/dermis-bioreactor-cradle) | Archive only — source and feasibility pending |
-| 198 | [Cortex — Neural bioreactor](https://raypeloquin.github.io/mimirs-well/#design/cortex-neural-bioreactor) | Archive only — source and feasibility pending |
-| 199 | [Nexus Bridge](https://raypeloquin.github.io/mimirs-well/#design/nexus-bridge) | Archive only — source and feasibility pending |
-| 200 | [Crimson Sentinel — Surgical pod](https://raypeloquin.github.io/mimirs-well/#design/crimson-sentinel-surgical-pod) | Archive only — source and feasibility pending |
-| 201 | [Human Maintenance Stack](https://raypeloquin.github.io/mimirs-well/#design/human-maintenance-stack) | Archive only — source and feasibility pending |
-| 202 | [Empty River — Blood manufacturing](https://raypeloquin.github.io/mimirs-well/#design/empty-river-blood-manufacturing) | Archive only — source and feasibility pending |
-| 203 | [White Marrow Foundry](https://raypeloquin.github.io/mimirs-well/#design/white-marrow-foundry) | Archive only — source and feasibility pending |
-| 204 | [Boneweave](https://raypeloquin.github.io/mimirs-well/#design/boneweave) | Archive only — source and feasibility pending |
-| 205 | [PALEOFRAME-1](https://raypeloquin.github.io/mimirs-well/#design/paleoframe-1) | Archive only — source and feasibility pending |
-| 206 | [Neurosynapse-1](https://raypeloquin.github.io/mimirs-well/#design/neurosynapse-1) | Archive only — source and feasibility pending |
-| 207 | [Neuroshell-1](https://raypeloquin.github.io/mimirs-well/#design/neuroshell-1) | Archive only — source and feasibility pending |
-| 208 | [INKHEAL](https://raypeloquin.github.io/mimirs-well/#design/inkheal) | Archive only — source and feasibility pending |
-| 209 | [GASTRA — Gastric sleeve concept](https://raypeloquin.github.io/mimirs-well/#design/gastra-gastric-sleeve-concept) | Archive only — source and feasibility pending |
-| 210 | [OSMOSKIN](https://raypeloquin.github.io/mimirs-well/#design/osmoskin) | Archive only — source and feasibility pending |
-| 211 | [OSSUARY — Biomanufacturing](https://raypeloquin.github.io/mimirs-well/#design/ossuary-biomanufacturing) | Archive only — source and feasibility pending |
-| 212 | [Aether Cup — Ophthalmic concept](https://raypeloquin.github.io/mimirs-well/#design/aether-cup-ophthalmic-concept) | Archive only — source and feasibility pending |
-| 213 | [Neonatal / Prenatal Care Chamber](https://raypeloquin.github.io/mimirs-well/#design/neonatal-prenatal-care-chamber) | Archive only — source and feasibility pending |
-| 214 | [Bioengineered Hair-Follicle / Horn-Implant Concepts](https://raypeloquin.github.io/mimirs-well/#design/bioengineered-hair-follicle-horn-implant-concepts) | Archive only — source and feasibility pending |
-| 215 | [Biomedical Nanocarrier](https://raypeloquin.github.io/mimirs-well/#design/biomedical-nanocarrier) | Archive only — source and feasibility pending |
-| 216 | [Smart Tattoo / Microneedle System](https://raypeloquin.github.io/mimirs-well/#design/smart-tattoo-microneedle-system) | Archive only — source and feasibility pending |
-| 217 | [Invisible Ink — Printing and removal](https://raypeloquin.github.io/mimirs-well/#design/invisible-ink-printing-and-removal) | Archive only — source and feasibility pending |
-| 218 | [Chromo Veil](https://raypeloquin.github.io/mimirs-well/#design/chromo-veil) | Archive only — source and feasibility pending |
-| 219 | [ECHO Genome / EchoGenome](https://raypeloquin.github.io/mimirs-well/#design/echo-genome-echogenome) | Archive only — source and feasibility pending |
-| 220 | [Acoustic Genome](https://raypeloquin.github.io/mimirs-well/#design/acoustic-genome) | Archive only — source and feasibility pending |
-| 221 | [ECHO-DNA / ECHO-Y / ECHO-P / ECHO-H](https://raypeloquin.github.io/mimirs-well/#design/echo-dna-echo-y-echo-p-echo-h) | Archive only — source and feasibility pending |
-| 222 | [Host-Powered Synthetic Chromosome](https://raypeloquin.github.io/mimirs-well/#design/host-powered-synthetic-chromosome) | Archive only — source and feasibility pending |
-| 223 | [HSX-01 / HSX-21](https://raypeloquin.github.io/mimirs-well/#design/hsx-01-hsx-21) | Archive only — source and feasibility pending |
-| 224 | [Hydrofell-01 — Hydro data center](https://raypeloquin.github.io/mimirs-well/#design/hydrofell-01-hydro-data-center) | Archive only — source and feasibility pending |
-| 225 | [Silt HIPPO — Silo cistern](https://raypeloquin.github.io/mimirs-well/#design/silt-hippo-silo-cistern) | Archive only — source and feasibility pending |
-| 226 | [Atlas Cistern](https://raypeloquin.github.io/mimirs-well/#design/atlas-cistern) | Archive only — source and feasibility pending |
-| 227 | [Off-Grid Ranch Water System](https://raypeloquin.github.io/mimirs-well/#design/off-grid-ranch-water-system) | Archive only — source and feasibility pending |
-| 228 | [PaperPower — Water battery](https://raypeloquin.github.io/mimirs-well/#design/paperpower-water-battery) | Archive only — source and feasibility pending |
-| 229 | [PAPERGRID-0](https://raypeloquin.github.io/mimirs-well/#design/papergrid-0) | Archive only — source and feasibility pending |
-| 230 | [OREHEARTH — Geothermal concept](https://raypeloquin.github.io/mimirs-well/#design/orehearth-geothermal-concept) | Archive only — source and feasibility pending |
-| 231 | [Hearth Cask](https://raypeloquin.github.io/mimirs-well/#design/hearth-cask) | Archive only — source and feasibility pending |
-| 232 | [Vortexcap — Supercapacitor](https://raypeloquin.github.io/mimirs-well/#design/vortexcap-supercapacitor) | Archive only — source and feasibility pending |
-| 233 | [HIPPO Vortex LMB](https://raypeloquin.github.io/mimirs-well/#design/hippo-vortex-lmb) | Archive only — source and feasibility pending |
-| 234 | [Thermal Grace Module](https://raypeloquin.github.io/mimirs-well/#design/thermal-grace-module) | Archive only — source and feasibility pending |
-| 235 | [Thunder Vault](https://raypeloquin.github.io/mimirs-well/#design/thunder-vault) | Archive only — source and feasibility pending |
-| 236 | [Buoyant Impulse Pod](https://raypeloquin.github.io/mimirs-well/#design/buoyant-impulse-pod) | Archive only — source and feasibility pending |
-| 237 | [Janus Loop — Supply recovery](https://raypeloquin.github.io/mimirs-well/#design/janus-loop-supply-recovery) | Archive only — source and feasibility pending |
-| 238 | [Liquid-Metal Cooling System](https://raypeloquin.github.io/mimirs-well/#design/liquid-metal-cooling-system) | Archive only — source and feasibility pending |
-| 239 | [PARSEVAL — Coolant system](https://raypeloquin.github.io/mimirs-well/#design/parseval-coolant-system) | Archive only — source and feasibility pending |
-| 240 | [Parseval Loom](https://raypeloquin.github.io/mimirs-well/#design/parseval-loom) | Archive only — source and feasibility pending |
-| 241 | [SpinCell DLE](https://raypeloquin.github.io/mimirs-well/#design/spincell-dle) | Archive only — source and feasibility pending |
-| 242 | [Saturn-01 — Processing concept](https://raypeloquin.github.io/mimirs-well/#design/saturn-01-processing-concept) | Archive only — source and feasibility pending |
-| 243 | [Solar-Thermal Centrifuge](https://raypeloquin.github.io/mimirs-well/#design/solar-thermal-centrifuge) | Archive only — source and feasibility pending |
-| 244 | [Gaian Tailings](https://raypeloquin.github.io/mimirs-well/#design/gaian-tailings) | Archive only — source and feasibility pending |
-| 245 | [Blackwall — Fuel reclaimer](https://raypeloquin.github.io/mimirs-well/#design/blackwall-fuel-reclaimer) | Archive only — source and feasibility pending |
-| 246 | [Charcoal Microplastic Filtration](https://raypeloquin.github.io/mimirs-well/#design/charcoal-microplastic-filtration) | Archive only — source and feasibility pending |
-| 247 | [Orichalcum Lattice](https://raypeloquin.github.io/mimirs-well/#design/orichalcum-lattice) | Archive only — source and feasibility pending |
-| 248 | [Orichalcum Crown](https://raypeloquin.github.io/mimirs-well/#design/orichalcum-crown) | Archive only — source and feasibility pending |
-| 249 | [Resonant Edge — Masonry saw](https://raypeloquin.github.io/mimirs-well/#design/resonant-edge-masonry-saw) | Archive only — source and feasibility pending |
-| 250 | [Resonant Brace](https://raypeloquin.github.io/mimirs-well/#design/resonant-brace) | Archive only — source and feasibility pending |
-| 251 | [Waterjet Cutter](https://raypeloquin.github.io/mimirs-well/#design/waterjet-cutter) | Archive only — source and feasibility pending |
-| 252 | [Resonant Acoustic Core Drill](https://raypeloquin.github.io/mimirs-well/#design/resonant-acoustic-core-drill) | Archive only — source and feasibility pending |
-| 253 | [Modular Rope Coupler / Ranchline Utility](https://raypeloquin.github.io/mimirs-well/#design/modular-rope-coupler-ranchline-utility) | Archive only — source and feasibility pending |
-| 254 | [Titanium Pressure-Adaptive Metamaterial Mount](https://raypeloquin.github.io/mimirs-well/#design/titanium-pressure-adaptive-metamaterial-mount) | Archive only — source and feasibility pending |
-| 255 | [Triple-Nitinol Spine](https://raypeloquin.github.io/mimirs-well/#design/triple-nitinol-spine) | Archive only — source and feasibility pending |
-| 256 | [Devouring Lattice](https://raypeloquin.github.io/mimirs-well/#design/devouring-lattice) | Archive only — source and feasibility pending |
-| 257 | [Dielectric Threshold Mapper](https://raypeloquin.github.io/mimirs-well/#design/dielectric-threshold-mapper) | Archive only — source and feasibility pending |
-| 258 | [Eta-Threshold — Material mapper](https://raypeloquin.github.io/mimirs-well/#design/eta-threshold-material-mapper) | Archive only — source and feasibility pending |
-| 259 | [Deep Earth Listening / Earth Stethoscope](https://raypeloquin.github.io/mimirs-well/#design/deep-earth-listening-earth-stethoscope) | Archive only — source and feasibility pending |
-| 260 | [Gaian Needle-Mole](https://raypeloquin.github.io/mimirs-well/#design/gaian-needle-mole) | Archive only — source and feasibility pending |
-| 261 | [TB-01M Grootslang](https://raypeloquin.github.io/mimirs-well/#design/tb-01m-grootslang) | Archive only — source and feasibility pending |
-| 262 | [Telluric Borer](https://raypeloquin.github.io/mimirs-well/#design/telluric-borer) | Archive only — source and feasibility pending |
-| 263 | [Telluric Borehole](https://raypeloquin.github.io/mimirs-well/#design/telluric-borehole) | Archive only — source and feasibility pending |
-| 264 | [Telluric Transmitter](https://raypeloquin.github.io/mimirs-well/#design/telluric-transmitter) | Archive only — source and feasibility pending |
-| 265 | [Telluric Accelerator / Mass Driver](https://raypeloquin.github.io/mimirs-well/#design/telluric-accelerator-mass-driver) | Archive only — source and feasibility pending |
-| 266 | [LITHO-HIPPO](https://raypeloquin.github.io/mimirs-well/#design/litho-hippo) | Archive only — source and feasibility pending |
-| 267 | [Torus Data Center](https://raypeloquin.github.io/mimirs-well/#design/torus-data-center) | Archive only — source and feasibility pending |
-| 268 | [Torus Vault](https://raypeloquin.github.io/mimirs-well/#design/torus-vault) | Archive only — source and feasibility pending |
-| 269 | [Vertical Vortex Silo Data Center](https://raypeloquin.github.io/mimirs-well/#design/vertical-vortex-silo-data-center) | Archive only — source and feasibility pending |
-| 270 | [Pyramid Data Center](https://raypeloquin.github.io/mimirs-well/#design/pyramid-data-center) | Archive only — source and feasibility pending |
-| 271 | [Neural Web — Underground data center](https://raypeloquin.github.io/mimirs-well/#design/neural-web-underground-data-center) | Archive only — source and feasibility pending |
-| 272 | [AH-1 / SH-1 — Underground campus](https://raypeloquin.github.io/mimirs-well/#design/ah-1-sh-1-underground-campus) | Archive only — source and feasibility pending |
-| 273 | [Firewell — Silo wildfire relief](https://raypeloquin.github.io/mimirs-well/#design/firewell-silo-wildfire-relief) | Archive only — source and feasibility pending |
-| 274 | [Acoustic Snuffer — Wildfire convoy](https://raypeloquin.github.io/mimirs-well/#design/acoustic-snuffer-wildfire-convoy) | Archive only — source and feasibility pending |
-| 275 | [Atmospheric Firefighting System](https://raypeloquin.github.io/mimirs-well/#design/atmospheric-firefighting-system) | Archive only — source and feasibility pending |
-| 276 | [Ocean Ear](https://raypeloquin.github.io/mimirs-well/#design/ocean-ear) | Archive only — source and feasibility pending |
-| 277 | [Ocean Boundary Residual Inference](https://raypeloquin.github.io/mimirs-well/#design/ocean-boundary-residual-inference) | Archive only — source and feasibility pending |
-| 278 | [Polyforge-1 — Ocean cleanup ship](https://raypeloquin.github.io/mimirs-well/#design/polyforge-1-ocean-cleanup-ship) | Archive only — source and feasibility pending |
-| 279 | [River Reaper Walker](https://raypeloquin.github.io/mimirs-well/#design/river-reaper-walker) | Archive only — source and feasibility pending |
-| 280 | [Planetary Stitch](https://raypeloquin.github.io/mimirs-well/#design/planetary-stitch) | Archive only — source and feasibility pending |
-| 281 | [Earth Complexity Monitor](https://raypeloquin.github.io/mimirs-well/#design/earth-complexity-monitor) | Archive only — source and feasibility pending |
-| 282 | [BAMBOO-RF — Agricultural tolerance concept](https://raypeloquin.github.io/mimirs-well/#design/bamboo-rf-agricultural-tolerance-concept) | Archive only — source and feasibility pending |
-| 283 | [StrixArk — Owl conservation](https://raypeloquin.github.io/mimirs-well/#design/strixark-owl-conservation) | Archive only — source and feasibility pending |
-| 284 | [Pollinator Habitat Electric Steamer](https://raypeloquin.github.io/mimirs-well/#design/pollinator-habitat-electric-steamer) | Archive only — source and feasibility pending |
-| 285 | [Lifeguard Lance — Rescue drone and fleet](https://raypeloquin.github.io/mimirs-well/#design/lifeguard-lance-rescue-drone-and-fleet) | Archive only — source and feasibility pending |
-| 286 | [PetSafe — Drone backpack](https://raypeloquin.github.io/mimirs-well/#design/petsafe-drone-backpack) | Archive only — source and feasibility pending |
-| 287 | [Ghostwalker Scout](https://raypeloquin.github.io/mimirs-well/#design/ghostwalker-scout) | Archive only — source and feasibility pending |
-| 288 | [SCARAB-DC — Shipboard repair](https://raypeloquin.github.io/mimirs-well/#design/scarab-dc-shipboard-repair) | Archive only — source and feasibility pending |
-| 289 | [SCARAB-RF](https://raypeloquin.github.io/mimirs-well/#design/scarab-rf) | Archive only — source and feasibility pending |
-| 290 | [Scarab-4](https://raypeloquin.github.io/mimirs-well/#design/scarab-4) | Archive only — source and feasibility pending |
-| 291 | [LANTEX-24 / LANTEX-PRO — Lanternfly drone](https://raypeloquin.github.io/mimirs-well/#design/lantex-24-lantex-pro-lanternfly-drone) | Research record — retain with stated limits |
-| 292 | [Humanitarian Demining Drone](https://raypeloquin.github.io/mimirs-well/#design/humanitarian-demining-drone) | Archive only — source and feasibility pending |
-| 293 | [Gravity Thief — Launch concept](https://raypeloquin.github.io/mimirs-well/#design/gravity-thief-launch-concept) | Archive only — source and feasibility pending |
-| 294 | [Sky-Spine Observatory](https://raypeloquin.github.io/mimirs-well/#design/sky-spine-observatory) | Archive only — source and feasibility pending |
-| 295 | [Skybridle — Aircraft safety](https://raypeloquin.github.io/mimirs-well/#design/skybridle-aircraft-safety) | Archive only — source and feasibility pending |
-| 296 | [Aircraft Belly-Landing Energy System](https://raypeloquin.github.io/mimirs-well/#design/aircraft-belly-landing-energy-system) | Archive only — source and feasibility pending |
-| 297 | [RAM-FALCON](https://raypeloquin.github.io/mimirs-well/#design/ram-falcon) | Archive only — source and feasibility pending |
-| 298 | [Anubis Abyssal Gill](https://raypeloquin.github.io/mimirs-well/#design/anubis-abyssal-gill) | Archive only — source and feasibility pending |
-| 299 | [Amphibishell](https://raypeloquin.github.io/mimirs-well/#design/amphibishell) | Archive only — source and feasibility pending |
-| 300 | [FSAMS-SKIN — EVA concept](https://raypeloquin.github.io/mimirs-well/#design/fsams-skin-eva-concept) | Archive only — source and feasibility pending |
-| 301 | [Aether Shroud](https://raypeloquin.github.io/mimirs-well/#design/aether-shroud) | Archive only — source and feasibility pending |
-| 302 | [Lunar EVA Life Support](https://raypeloquin.github.io/mimirs-well/#design/lunar-eva-life-support) | Archive only — source and feasibility pending |
-| 303 | [Anubis Wing — Flight suit](https://raypeloquin.github.io/mimirs-well/#design/anubis-wing-flight-suit) | Archive only — source and feasibility pending |
-| 304 | [Sky Wing](https://raypeloquin.github.io/mimirs-well/#design/sky-wing) | Archive only — source and feasibility pending |
-| 305 | [Skybus](https://raypeloquin.github.io/mimirs-well/#design/skybus) | Archive only — source and feasibility pending |
-| 306 | [Outlaw Hovercruiser](https://raypeloquin.github.io/mimirs-well/#design/outlaw-hovercruiser) | Archive only — source and feasibility pending |
-| 307 | [Aetheris Octad — Skycity](https://raypeloquin.github.io/mimirs-well/#design/aetheris-octad-skycity) | Archive only — source and feasibility pending |
-| 308 | [Zero-G Pod](https://raypeloquin.github.io/mimirs-well/#design/zero-g-pod) | Archive only — source and feasibility pending |
-| 309 | [Orbital Pressure Corridor / Beam Handoff](https://raypeloquin.github.io/mimirs-well/#design/orbital-pressure-corridor-beam-handoff) | Archive only — source and feasibility pending |
-| 310 | [EM Capture Chain — Spacecraft concept](https://raypeloquin.github.io/mimirs-well/#design/em-capture-chain-spacecraft-concept) | Archive only — source and feasibility pending |
-| 311 | [ORION — Orbital recycling](https://raypeloquin.github.io/mimirs-well/#design/orion-orbital-recycling) | Archive only — source and feasibility pending |
-| 312 | [PULSELINK — Reentry](https://raypeloquin.github.io/mimirs-well/#design/pulselink-reentry) | Archive only — source and feasibility pending |
-| 313 | [S2M-DART](https://raypeloquin.github.io/mimirs-well/#design/s2m-dart) | Archive only — source and feasibility pending |
-| 314 | [LINC-DART-01](https://raypeloquin.github.io/mimirs-well/#design/linc-dart-01) | Archive only — source and feasibility pending |
-| 315 | [PMSM — Space sample microscope](https://raypeloquin.github.io/mimirs-well/#design/pmsm-space-sample-microscope) | Archive only — source and feasibility pending |
-| 316 | [ETA-GATE — Light elevator](https://raypeloquin.github.io/mimirs-well/#design/eta-gate-light-elevator) | Archive only — source and feasibility pending |
-| 317 | [Aether-Latch Memory](https://raypeloquin.github.io/mimirs-well/#design/aether-latch-memory) | Archive only — source and feasibility pending |
-| 318 | [Aetherfilament Memory](https://raypeloquin.github.io/mimirs-well/#design/aetherfilament-memory) | Archive only — source and feasibility pending |
-| 319 | [Plasmoid Memory Cell / Seven-Cell Ring](https://raypeloquin.github.io/mimirs-well/#design/plasmoid-memory-cell-seven-cell-ring) | Archive only — source and feasibility pending |
-| 320 | [PLA-1 — Plasmoid laser communications array](https://raypeloquin.github.io/mimirs-well/#design/pla-1-plasmoid-laser-communications-array) | Archive only — source and feasibility pending |
-| 321 | [VSRL-01 — Accelerator](https://raypeloquin.github.io/mimirs-well/#design/vsrl-01-accelerator) | Archive only — source and feasibility pending |
-| 322 | [Folded Linac](https://raypeloquin.github.io/mimirs-well/#design/folded-linac) | Archive only — source and feasibility pending |
-| 323 | [Helical Silo Collider](https://raypeloquin.github.io/mimirs-well/#design/helical-silo-collider) | Archive only — source and feasibility pending |
-| 324 | [Hadron Seed Chamber](https://raypeloquin.github.io/mimirs-well/#design/hadron-seed-chamber) | Archive only — source and feasibility pending |
-| 325 | [Veil Resonator](https://raypeloquin.github.io/mimirs-well/#design/veil-resonator) | Archive only — source and feasibility pending |
-| 326 | [Veil Gate — Exotic lattice](https://raypeloquin.github.io/mimirs-well/#design/veil-gate-exotic-lattice) | Archive only — source and feasibility pending |
-| 327 | [Chronovisor](https://raypeloquin.github.io/mimirs-well/#design/chronovisor) | Archive only — source and feasibility pending |
-| 328 | [Chronos Bridge](https://raypeloquin.github.io/mimirs-well/#design/chronos-bridge) | Archive only — source and feasibility pending |
-| 329 | [Chrono Veil](https://raypeloquin.github.io/mimirs-well/#design/chrono-veil) | Archive only — source and feasibility pending |
-| 330 | [Quantum Slice Teleporter](https://raypeloquin.github.io/mimirs-well/#design/quantum-slice-teleporter) | Archive only — source and feasibility pending |
-| 331 | [Quantum Secure Field Communications](https://raypeloquin.github.io/mimirs-well/#design/quantum-secure-field-communications) | Archive only — source and feasibility pending |
-| 332 | [Hermes Quantum Queue](https://raypeloquin.github.io/mimirs-well/#design/hermes-quantum-queue) | Archive only — source and feasibility pending |
-| 333 | [BounceQEC](https://raypeloquin.github.io/mimirs-well/#design/bounceqec) | Archive only — source and feasibility pending |
-| 334 | [Floquet Wave Processor](https://raypeloquin.github.io/mimirs-well/#design/floquet-wave-processor) | Archive only — source and feasibility pending |
-| 335 | [Gamma Native / Quantum Optical Foundry](https://raypeloquin.github.io/mimirs-well/#design/gamma-native-quantum-optical-foundry) | Archive only — source and feasibility pending |
-| 336 | [QReadout](https://raypeloquin.github.io/mimirs-well/#design/qreadout) | Archive only — source and feasibility pending |
-| 337 | [STACK-NV — Sensor family](https://raypeloquin.github.io/mimirs-well/#design/stack-nv-sensor-family) | Archive only — source and feasibility pending |
-| 338 | [Euplectella Node A / Node B](https://raypeloquin.github.io/mimirs-well/#design/euplectella-node-a-node-b) | Archive only — source and feasibility pending |
-| 339 | [REWIND-II — Plasma concept](https://raypeloquin.github.io/mimirs-well/#design/rewind-ii-plasma-concept) | Archive only — source and feasibility pending |
-| 340 | [Gravitationally Coupled Clock](https://raypeloquin.github.io/mimirs-well/#design/gravitationally-coupled-clock) | Archive only — source and feasibility pending |
-| 341 | [Rindler Habitat](https://raypeloquin.github.io/mimirs-well/#design/rindler-habitat) | Archive only — source and feasibility pending |
-| 342 | [BOUNDARY-0 / BOUNDARY-0X](https://raypeloquin.github.io/mimirs-well/#design/boundary-0-boundary-0x) | Archive only — source and feasibility pending |
-| 343 | [NULL-1 / NULL-1H / SHIELD-1](https://raypeloquin.github.io/mimirs-well/#design/null-1-null-1h-shield-1) | Archive only — source and feasibility pending |
-| 344 | [DEUTERION](https://raypeloquin.github.io/mimirs-well/#design/deuterion) | Archive only — source and feasibility pending |
-| 345 | [Physics Operating System](https://raypeloquin.github.io/mimirs-well/#design/physics-operating-system) | Archive only — source and feasibility pending |
-| 346 | [Elemental Operator Atlas / Rubik Engine](https://raypeloquin.github.io/mimirs-well/#design/elemental-operator-atlas-rubik-engine) | Archive only — source and feasibility pending |
-| 347 | [RUBIQ](https://raypeloquin.github.io/mimirs-well/#design/rubiq) | Archive only — source and feasibility pending |
-| 348 | [XFORM-Q88](https://raypeloquin.github.io/mimirs-well/#design/xform-q88) | Archive only — source and feasibility pending |
-| 349 | [ATTRACTOR](https://raypeloquin.github.io/mimirs-well/#design/attractor) | Archive only — source and feasibility pending |
-| 350 | [MindTrace / PhotonTrace](https://raypeloquin.github.io/mimirs-well/#design/mindtrace-photontrace) | Archive only — source and feasibility pending |
-| 351 | [BACKTRACE](https://raypeloquin.github.io/mimirs-well/#design/backtrace) | Archive only — source and feasibility pending |
-| 352 | [MIRRORBOX M01](https://raypeloquin.github.io/mimirs-well/#design/mirrorbox-m01) | Archive only — source and feasibility pending |
-| 353 | [Reality Stress Engine](https://raypeloquin.github.io/mimirs-well/#design/reality-stress-engine) | Archive only — source and feasibility pending |
-| 354 | [Mercurius / ECHO Mercurius](https://raypeloquin.github.io/mimirs-well/#design/mercurius-echo-mercurius) | Archive only — source and feasibility pending |
-| 355 | [Hypha Mesh](https://raypeloquin.github.io/mimirs-well/#design/hypha-mesh) | Archive only — source and feasibility pending |
-| 356 | [Hypha Ear](https://raypeloquin.github.io/mimirs-well/#design/hypha-ear) | Archive only — source and feasibility pending |
-| 357 | [Hypha Rootway](https://raypeloquin.github.io/mimirs-well/#design/hypha-rootway) | Archive only — source and feasibility pending |
-| 358 | [Pando Bridge](https://raypeloquin.github.io/mimirs-well/#design/pando-bridge) | Archive only — source and feasibility pending |
-| 359 | [Pando Tongue](https://raypeloquin.github.io/mimirs-well/#design/pando-tongue) | Archive only — source and feasibility pending |
-| 360 | [Echo Bowl](https://raypeloquin.github.io/mimirs-well/#design/echo-bowl) | Archive only — source and feasibility pending |
-| 361 | [NEITH LANTERN Gate](https://raypeloquin.github.io/mimirs-well/#design/neith-lantern-gate) | Archive only — source and feasibility pending |
-| 362 | [AEGIS Veil / Veilkeeper](https://raypeloquin.github.io/mimirs-well/#design/aegis-veil-veilkeeper) | Archive only — source and feasibility pending |
-| 363 | [AEGIS BufferShield](https://raypeloquin.github.io/mimirs-well/#design/aegis-buffershield) | Archive only — source and feasibility pending |
-| 364 | [AEGIS-10](https://raypeloquin.github.io/mimirs-well/#design/aegis-10) | Archive only — source and feasibility pending |
-| 365 | [JANUS-10](https://raypeloquin.github.io/mimirs-well/#design/janus-10) | Archive only — source and feasibility pending |
-| 366 | [AREOPAGUS](https://raypeloquin.github.io/mimirs-well/#design/areopagus) | Research record — retain with stated limits |
-| 367 | [ARBOR / SEED](https://raypeloquin.github.io/mimirs-well/#design/arbor-seed) | Archive only — source and feasibility pending |
-| 368 | [Concordia](https://raypeloquin.github.io/mimirs-well/#design/concordia) | Archive only — source and feasibility pending |
-| 369 | [Hephaestus — Autonomous forge](https://raypeloquin.github.io/mimirs-well/#design/hephaestus-autonomous-forge) | Archive only — source and feasibility pending |
-| 370 | [AG-DAS Guardian](https://raypeloquin.github.io/mimirs-well/#design/ag-das-guardian) | Archive only — source and feasibility pending |
-| 371 | [PaperCall / PaperCall Sky](https://raypeloquin.github.io/mimirs-well/#design/papercall-papercall-sky) | Archive only — source and feasibility pending |
-| 372 | [Paper Factory](https://raypeloquin.github.io/mimirs-well/#design/paper-factory) | Archive only — source and feasibility pending |
-| 373 | [MECHAGE](https://raypeloquin.github.io/mimirs-well/#design/mechage) | Archive only — source and feasibility pending |
-| 374 | [LAAF PINN](https://raypeloquin.github.io/mimirs-well/#design/laaf-pinn) | Archive only — source and feasibility pending |
-| 375 | [OmniSight Goggles](https://raypeloquin.github.io/mimirs-well/#design/omnisight-goggles) | Archive only — source and feasibility pending |
-| 376 | [HBFTune — EEG concept](https://raypeloquin.github.io/mimirs-well/#design/hbftune-eeg-concept) | Archive only — source and feasibility pending |
-| 377 | [KA Patch — Bioenergy jewelry](https://raypeloquin.github.io/mimirs-well/#design/ka-patch-bioenergy-jewelry) | Archive only — source and feasibility pending |
-| 378 | [KA Lock](https://raypeloquin.github.io/mimirs-well/#design/ka-lock) | Archive only — source and feasibility pending |
-| 379 | [KA Fold](https://raypeloquin.github.io/mimirs-well/#design/ka-fold) | Archive only — source and feasibility pending |
-| 380 | [Khepri Stride — Sneaker concept](https://raypeloquin.github.io/mimirs-well/#design/khepri-stride-sneaker-concept) | Archive only — source and feasibility pending |
-| 381 | [Canine Wearable](https://raypeloquin.github.io/mimirs-well/#design/canine-wearable) | Archive only — source and feasibility pending |
-| 382 | [iExalt Node](https://raypeloquin.github.io/mimirs-well/#design/iexalt-node) | Archive only — source and feasibility pending |
-| 383 | [Underground Cattle Barn](https://raypeloquin.github.io/mimirs-well/#design/underground-cattle-barn) | Archive only — source and feasibility pending |
-| 384 | [Shell City — Inverted-mushroom barn](https://raypeloquin.github.io/mimirs-well/#design/shell-city-inverted-mushroom-barn) | Archive only — source and feasibility pending |
-| 385 | [MA’AT Tower](https://raypeloquin.github.io/mimirs-well/#design/ma-at-tower) | Archive only — source and feasibility pending |
-| 386 | [Judgment Pyramid](https://raypeloquin.github.io/mimirs-well/#design/judgment-pyramid) | Archive only — source and feasibility pending |
-| 387 | [Stone Mansion District](https://raypeloquin.github.io/mimirs-well/#design/stone-mansion-district) | Archive only — source and feasibility pending |
-| 388 | [Pawtucket Riverside Market / Fleet District](https://raypeloquin.github.io/mimirs-well/#design/pawtucket-riverside-market-fleet-district) | Archive only — source and feasibility pending |
-| 389 | [Purgatory Tavern](https://raypeloquin.github.io/mimirs-well/#design/purgatory-tavern) | Archive only — source and feasibility pending |
-| 390 | [Angels Diner](https://raypeloquin.github.io/mimirs-well/#design/angels-diner) | Archive only — source and feasibility pending |
-| 391 | [Winchester Monster Guild](https://raypeloquin.github.io/mimirs-well/#design/winchester-monster-guild) | Archive only — source and feasibility pending |
-| 392 | [Oasis Dadan](https://raypeloquin.github.io/mimirs-well/#design/oasis-dadan) | Archive only — source and feasibility pending |
-| 393 | [Nile’s Shadow](https://raypeloquin.github.io/mimirs-well/#design/nile-s-shadow) | Archive only — source and feasibility pending |
-| 394 | [Hydrator Neo — Pizza station](https://raypeloquin.github.io/mimirs-well/#design/hydrator-neo-pizza-station) | Archive only — source and feasibility pending |
-| 395 | [Recipe Pucks](https://raypeloquin.github.io/mimirs-well/#design/recipe-pucks) | Archive only — source and feasibility pending |
-| 396 | [Lee Vertical City / Quick City Seven](https://raypeloquin.github.io/mimirs-well/#design/lee-vertical-city-quick-city-seven) | Archive only — source and feasibility pending |
-| 397 | [Florida Space Coast Autonomous Systems Innovation Park](https://raypeloquin.github.io/mimirs-well/#design/florida-space-coast-autonomous-systems-innovation-park) | Archive only — source and feasibility pending |
+| 174 | [Mosquito Reaper](https://raypeloquin.github.io/mimirs-well/#design/mosquito-reaper) | Archive only — source and feasibility pending |
+| 175 | [Tickhammer](https://raypeloquin.github.io/mimirs-well/#design/tickhammer) | Archive only — source and feasibility pending |
+| 176 | [SPOTRECON / SPOTRECON R2](https://raypeloquin.github.io/mimirs-well/#design/spotrecon-spotrecon-r2) | Research record — retain with stated limits |
+| 177 | [WARDEN-1 — Farm Guardian](https://raypeloquin.github.io/mimirs-well/#design/warden-1-farm-guardian) | Archive only — source and feasibility pending |
+| 178 | [HerdMinder / HM-01](https://raypeloquin.github.io/mimirs-well/#design/herdminder-hm-01) | Archive only — source and feasibility pending |
+| 179 | [Jaguar Mode](https://raypeloquin.github.io/mimirs-well/#design/jaguar-mode) | Archive only — source and feasibility pending |
+| 180 | [FLUFFY-01](https://raypeloquin.github.io/mimirs-well/#design/fluffy-01) | Archive only — source and feasibility pending |
+| 181 | [Dog Soundboard — Communication protocol](https://raypeloquin.github.io/mimirs-well/#design/dog-soundboard-communication-protocol) | Archive only — source and feasibility pending |
+| 182 | [Tunneler](https://raypeloquin.github.io/mimirs-well/#design/tunneler) | Archive only — source and feasibility pending |
+| 183 | [Burst-Mode Subsurface Actuation](https://raypeloquin.github.io/mimirs-well/#design/burst-mode-subsurface-actuation) | Archive only — source and feasibility pending |
+| 184 | [Drone Rotor D1](https://raypeloquin.github.io/mimirs-well/#design/drone-rotor-d1) | Archive only — source and feasibility pending |
+| 185 | [Small Farm Community](https://raypeloquin.github.io/mimirs-well/#design/small-farm-community) | Archive only — source and feasibility pending |
+| 186 | [The Golden Ratio — Intergenerational Community](https://raypeloquin.github.io/mimirs-well/#design/the-golden-ratio-intergenerational-community) | Archive only — source and feasibility pending |
+| 187 | [Charlotte School — Intergenerational living and year-round gardens](https://raypeloquin.github.io/mimirs-well/#design/charlotte-school-intergenerational-living-and-year-round-gardens) | Archive only — source and feasibility pending |
+| 188 | [Fortress of Solitude](https://raypeloquin.github.io/mimirs-well/#design/fortress-of-solitude) | Archive only — source and feasibility pending |
+| 189 | [Butterfly Wanderings — Coloring book](https://raypeloquin.github.io/mimirs-well/#design/butterfly-wanderings-coloring-book) | Archive only — source and feasibility pending |
+| 190 | [Ember — Animated companion](https://raypeloquin.github.io/mimirs-well/#design/ember-animated-companion) | Archive only — source and feasibility pending |
+| 191 | [Aeris-Bridge — Lung support](https://raypeloquin.github.io/mimirs-well/#design/aeris-bridge-lung-support) | Archive only — source and feasibility pending |
+| 192 | [AUX-HEART](https://raypeloquin.github.io/mimirs-well/#design/aux-heart) | Archive only — source and feasibility pending |
+| 193 | [Neuro-Bridge](https://raypeloquin.github.io/mimirs-well/#design/neuro-bridge) | Archive only — source and feasibility pending |
+| 194 | [Thoracis — Bioperfusion](https://raypeloquin.github.io/mimirs-well/#design/thoracis-bioperfusion) | Archive only — source and feasibility pending |
+| 195 | [Cerebris — Trauma support](https://raypeloquin.github.io/mimirs-well/#design/cerebris-trauma-support) | Archive only — source and feasibility pending |
+| 196 | [Dermis — Bioreactor / cradle](https://raypeloquin.github.io/mimirs-well/#design/dermis-bioreactor-cradle) | Archive only — source and feasibility pending |
+| 197 | [Cortex — Neural bioreactor](https://raypeloquin.github.io/mimirs-well/#design/cortex-neural-bioreactor) | Archive only — source and feasibility pending |
+| 198 | [Nexus Bridge](https://raypeloquin.github.io/mimirs-well/#design/nexus-bridge) | Archive only — source and feasibility pending |
+| 199 | [Crimson Sentinel — Surgical pod](https://raypeloquin.github.io/mimirs-well/#design/crimson-sentinel-surgical-pod) | Archive only — source and feasibility pending |
+| 200 | [Human Maintenance Stack](https://raypeloquin.github.io/mimirs-well/#design/human-maintenance-stack) | Archive only — source and feasibility pending |
+| 201 | [Empty River — Blood manufacturing](https://raypeloquin.github.io/mimirs-well/#design/empty-river-blood-manufacturing) | Archive only — source and feasibility pending |
+| 202 | [White Marrow Foundry](https://raypeloquin.github.io/mimirs-well/#design/white-marrow-foundry) | Archive only — source and feasibility pending |
+| 203 | [Boneweave](https://raypeloquin.github.io/mimirs-well/#design/boneweave) | Archive only — source and feasibility pending |
+| 204 | [PALEOFRAME-1](https://raypeloquin.github.io/mimirs-well/#design/paleoframe-1) | Archive only — source and feasibility pending |
+| 205 | [Neurosynapse-1](https://raypeloquin.github.io/mimirs-well/#design/neurosynapse-1) | Archive only — source and feasibility pending |
+| 206 | [Neuroshell-1](https://raypeloquin.github.io/mimirs-well/#design/neuroshell-1) | Archive only — source and feasibility pending |
+| 207 | [INKHEAL](https://raypeloquin.github.io/mimirs-well/#design/inkheal) | Archive only — source and feasibility pending |
+| 208 | [GASTRA — Gastric sleeve concept](https://raypeloquin.github.io/mimirs-well/#design/gastra-gastric-sleeve-concept) | Archive only — source and feasibility pending |
+| 209 | [OSMOSKIN](https://raypeloquin.github.io/mimirs-well/#design/osmoskin) | Archive only — source and feasibility pending |
+| 210 | [OSSUARY — Biomanufacturing](https://raypeloquin.github.io/mimirs-well/#design/ossuary-biomanufacturing) | Archive only — source and feasibility pending |
+| 211 | [Aether Cup — Ophthalmic concept](https://raypeloquin.github.io/mimirs-well/#design/aether-cup-ophthalmic-concept) | Archive only — source and feasibility pending |
+| 212 | [Neonatal / Prenatal Care Chamber](https://raypeloquin.github.io/mimirs-well/#design/neonatal-prenatal-care-chamber) | Archive only — source and feasibility pending |
+| 213 | [Bioengineered Hair-Follicle / Horn-Implant Concepts](https://raypeloquin.github.io/mimirs-well/#design/bioengineered-hair-follicle-horn-implant-concepts) | Archive only — source and feasibility pending |
+| 214 | [Biomedical Nanocarrier](https://raypeloquin.github.io/mimirs-well/#design/biomedical-nanocarrier) | Archive only — source and feasibility pending |
+| 215 | [Smart Tattoo / Microneedle System](https://raypeloquin.github.io/mimirs-well/#design/smart-tattoo-microneedle-system) | Archive only — source and feasibility pending |
+| 216 | [Invisible Ink — Printing and removal](https://raypeloquin.github.io/mimirs-well/#design/invisible-ink-printing-and-removal) | Archive only — source and feasibility pending |
+| 217 | [Chromo Veil](https://raypeloquin.github.io/mimirs-well/#design/chromo-veil) | Archive only — source and feasibility pending |
+| 218 | [ECHO Genome / EchoGenome](https://raypeloquin.github.io/mimirs-well/#design/echo-genome-echogenome) | Archive only — source and feasibility pending |
+| 219 | [Acoustic Genome](https://raypeloquin.github.io/mimirs-well/#design/acoustic-genome) | Archive only — source and feasibility pending |
+| 220 | [ECHO-DNA / ECHO-Y / ECHO-P / ECHO-H](https://raypeloquin.github.io/mimirs-well/#design/echo-dna-echo-y-echo-p-echo-h) | Archive only — source and feasibility pending |
+| 221 | [Host-Powered Synthetic Chromosome](https://raypeloquin.github.io/mimirs-well/#design/host-powered-synthetic-chromosome) | Archive only — source and feasibility pending |
+| 222 | [HSX-01 / HSX-21](https://raypeloquin.github.io/mimirs-well/#design/hsx-01-hsx-21) | Archive only — source and feasibility pending |
+| 223 | [Hydrofell-01 — Hydro data center](https://raypeloquin.github.io/mimirs-well/#design/hydrofell-01-hydro-data-center) | Archive only — source and feasibility pending |
+| 224 | [Silt HIPPO — Silo cistern](https://raypeloquin.github.io/mimirs-well/#design/silt-hippo-silo-cistern) | Archive only — source and feasibility pending |
+| 225 | [Atlas Cistern](https://raypeloquin.github.io/mimirs-well/#design/atlas-cistern) | Archive only — source and feasibility pending |
+| 226 | [Off-Grid Ranch Water System](https://raypeloquin.github.io/mimirs-well/#design/off-grid-ranch-water-system) | Archive only — source and feasibility pending |
+| 227 | [PaperPower — Water battery](https://raypeloquin.github.io/mimirs-well/#design/paperpower-water-battery) | Archive only — source and feasibility pending |
+| 228 | [PAPERGRID-0](https://raypeloquin.github.io/mimirs-well/#design/papergrid-0) | Archive only — source and feasibility pending |
+| 229 | [OREHEARTH — Geothermal concept](https://raypeloquin.github.io/mimirs-well/#design/orehearth-geothermal-concept) | Archive only — source and feasibility pending |
+| 230 | [Hearth Cask](https://raypeloquin.github.io/mimirs-well/#design/hearth-cask) | Archive only — source and feasibility pending |
+| 231 | [Vortexcap — Supercapacitor](https://raypeloquin.github.io/mimirs-well/#design/vortexcap-supercapacitor) | Archive only — source and feasibility pending |
+| 232 | [HIPPO Vortex LMB](https://raypeloquin.github.io/mimirs-well/#design/hippo-vortex-lmb) | Archive only — source and feasibility pending |
+| 233 | [Thermal Grace Module](https://raypeloquin.github.io/mimirs-well/#design/thermal-grace-module) | Archive only — source and feasibility pending |
+| 234 | [Thunder Vault](https://raypeloquin.github.io/mimirs-well/#design/thunder-vault) | Archive only — source and feasibility pending |
+| 235 | [Buoyant Impulse Pod](https://raypeloquin.github.io/mimirs-well/#design/buoyant-impulse-pod) | Archive only — source and feasibility pending |
+| 236 | [Janus Loop — Supply recovery](https://raypeloquin.github.io/mimirs-well/#design/janus-loop-supply-recovery) | Archive only — source and feasibility pending |
+| 237 | [Liquid-Metal Cooling System](https://raypeloquin.github.io/mimirs-well/#design/liquid-metal-cooling-system) | Archive only — source and feasibility pending |
+| 238 | [PARSEVAL — Coolant system](https://raypeloquin.github.io/mimirs-well/#design/parseval-coolant-system) | Archive only — source and feasibility pending |
+| 239 | [Parseval Loom](https://raypeloquin.github.io/mimirs-well/#design/parseval-loom) | Archive only — source and feasibility pending |
+| 240 | [SpinCell DLE](https://raypeloquin.github.io/mimirs-well/#design/spincell-dle) | Archive only — source and feasibility pending |
+| 241 | [Saturn-01 — Processing concept](https://raypeloquin.github.io/mimirs-well/#design/saturn-01-processing-concept) | Archive only — source and feasibility pending |
+| 242 | [Solar-Thermal Centrifuge](https://raypeloquin.github.io/mimirs-well/#design/solar-thermal-centrifuge) | Archive only — source and feasibility pending |
+| 243 | [Gaian Tailings](https://raypeloquin.github.io/mimirs-well/#design/gaian-tailings) | Archive only — source and feasibility pending |
+| 244 | [Blackwall — Fuel reclaimer](https://raypeloquin.github.io/mimirs-well/#design/blackwall-fuel-reclaimer) | Archive only — source and feasibility pending |
+| 245 | [Charcoal Microplastic Filtration](https://raypeloquin.github.io/mimirs-well/#design/charcoal-microplastic-filtration) | Archive only — source and feasibility pending |
+| 246 | [Orichalcum Lattice](https://raypeloquin.github.io/mimirs-well/#design/orichalcum-lattice) | Archive only — source and feasibility pending |
+| 247 | [Orichalcum Crown](https://raypeloquin.github.io/mimirs-well/#design/orichalcum-crown) | Archive only — source and feasibility pending |
+| 248 | [Resonant Edge — Masonry saw](https://raypeloquin.github.io/mimirs-well/#design/resonant-edge-masonry-saw) | Archive only — source and feasibility pending |
+| 249 | [Resonant Brace](https://raypeloquin.github.io/mimirs-well/#design/resonant-brace) | Archive only — source and feasibility pending |
+| 250 | [Waterjet Cutter](https://raypeloquin.github.io/mimirs-well/#design/waterjet-cutter) | Archive only — source and feasibility pending |
+| 251 | [Resonant Acoustic Core Drill](https://raypeloquin.github.io/mimirs-well/#design/resonant-acoustic-core-drill) | Archive only — source and feasibility pending |
+| 252 | [Modular Rope Coupler / Ranchline Utility](https://raypeloquin.github.io/mimirs-well/#design/modular-rope-coupler-ranchline-utility) | Archive only — source and feasibility pending |
+| 253 | [Titanium Pressure-Adaptive Metamaterial Mount](https://raypeloquin.github.io/mimirs-well/#design/titanium-pressure-adaptive-metamaterial-mount) | Archive only — source and feasibility pending |
+| 254 | [Triple-Nitinol Spine](https://raypeloquin.github.io/mimirs-well/#design/triple-nitinol-spine) | Archive only — source and feasibility pending |
+| 255 | [Devouring Lattice](https://raypeloquin.github.io/mimirs-well/#design/devouring-lattice) | Archive only — source and feasibility pending |
+| 256 | [Dielectric Threshold Mapper](https://raypeloquin.github.io/mimirs-well/#design/dielectric-threshold-mapper) | Archive only — source and feasibility pending |
+| 257 | [Eta-Threshold — Material mapper](https://raypeloquin.github.io/mimirs-well/#design/eta-threshold-material-mapper) | Archive only — source and feasibility pending |
+| 258 | [Deep Earth Listening / Earth Stethoscope](https://raypeloquin.github.io/mimirs-well/#design/deep-earth-listening-earth-stethoscope) | Archive only — source and feasibility pending |
+| 259 | [Gaian Needle-Mole](https://raypeloquin.github.io/mimirs-well/#design/gaian-needle-mole) | Archive only — source and feasibility pending |
+| 260 | [TB-01M Grootslang](https://raypeloquin.github.io/mimirs-well/#design/tb-01m-grootslang) | Archive only — source and feasibility pending |
+| 261 | [Telluric Borer](https://raypeloquin.github.io/mimirs-well/#design/telluric-borer) | Archive only — source and feasibility pending |
+| 262 | [Telluric Borehole](https://raypeloquin.github.io/mimirs-well/#design/telluric-borehole) | Archive only — source and feasibility pending |
+| 263 | [Telluric Transmitter](https://raypeloquin.github.io/mimirs-well/#design/telluric-transmitter) | Archive only — source and feasibility pending |
+| 264 | [Telluric Accelerator / Mass Driver](https://raypeloquin.github.io/mimirs-well/#design/telluric-accelerator-mass-driver) | Archive only — source and feasibility pending |
+| 265 | [LITHO-HIPPO](https://raypeloquin.github.io/mimirs-well/#design/litho-hippo) | Archive only — source and feasibility pending |
+| 266 | [Torus Data Center](https://raypeloquin.github.io/mimirs-well/#design/torus-data-center) | Archive only — source and feasibility pending |
+| 267 | [Torus Vault](https://raypeloquin.github.io/mimirs-well/#design/torus-vault) | Archive only — source and feasibility pending |
+| 268 | [Vertical Vortex Silo Data Center](https://raypeloquin.github.io/mimirs-well/#design/vertical-vortex-silo-data-center) | Archive only — source and feasibility pending |
+| 269 | [Pyramid Data Center](https://raypeloquin.github.io/mimirs-well/#design/pyramid-data-center) | Archive only — source and feasibility pending |
+| 270 | [Neural Web — Underground data center](https://raypeloquin.github.io/mimirs-well/#design/neural-web-underground-data-center) | Archive only — source and feasibility pending |
+| 271 | [AH-1 / SH-1 — Underground campus](https://raypeloquin.github.io/mimirs-well/#design/ah-1-sh-1-underground-campus) | Archive only — source and feasibility pending |
+| 272 | [Firewell — Silo wildfire relief](https://raypeloquin.github.io/mimirs-well/#design/firewell-silo-wildfire-relief) | Archive only — source and feasibility pending |
+| 273 | [Acoustic Snuffer — Wildfire convoy](https://raypeloquin.github.io/mimirs-well/#design/acoustic-snuffer-wildfire-convoy) | Archive only — source and feasibility pending |
+| 274 | [Atmospheric Firefighting System](https://raypeloquin.github.io/mimirs-well/#design/atmospheric-firefighting-system) | Archive only — source and feasibility pending |
+| 275 | [Ocean Ear](https://raypeloquin.github.io/mimirs-well/#design/ocean-ear) | Archive only — source and feasibility pending |
+| 276 | [Ocean Boundary Residual Inference](https://raypeloquin.github.io/mimirs-well/#design/ocean-boundary-residual-inference) | Archive only — source and feasibility pending |
+| 277 | [Polyforge-1 — Ocean cleanup ship](https://raypeloquin.github.io/mimirs-well/#design/polyforge-1-ocean-cleanup-ship) | Archive only — source and feasibility pending |
+| 278 | [River Reaper Walker](https://raypeloquin.github.io/mimirs-well/#design/river-reaper-walker) | Archive only — source and feasibility pending |
+| 279 | [Planetary Stitch](https://raypeloquin.github.io/mimirs-well/#design/planetary-stitch) | Archive only — source and feasibility pending |
+| 280 | [Earth Complexity Monitor](https://raypeloquin.github.io/mimirs-well/#design/earth-complexity-monitor) | Archive only — source and feasibility pending |
+| 281 | [BAMBOO-RF — Agricultural tolerance concept](https://raypeloquin.github.io/mimirs-well/#design/bamboo-rf-agricultural-tolerance-concept) | Archive only — source and feasibility pending |
+| 282 | [StrixArk — Owl conservation](https://raypeloquin.github.io/mimirs-well/#design/strixark-owl-conservation) | Archive only — source and feasibility pending |
+| 283 | [Pollinator Habitat Electric Steamer](https://raypeloquin.github.io/mimirs-well/#design/pollinator-habitat-electric-steamer) | Archive only — source and feasibility pending |
+| 284 | [Lifeguard Lance — Rescue drone and fleet](https://raypeloquin.github.io/mimirs-well/#design/lifeguard-lance-rescue-drone-and-fleet) | Archive only — source and feasibility pending |
+| 285 | [PetSafe — Drone backpack](https://raypeloquin.github.io/mimirs-well/#design/petsafe-drone-backpack) | Archive only — source and feasibility pending |
+| 286 | [Ghostwalker Scout](https://raypeloquin.github.io/mimirs-well/#design/ghostwalker-scout) | Archive only — source and feasibility pending |
+| 287 | [SCARAB-DC — Shipboard repair](https://raypeloquin.github.io/mimirs-well/#design/scarab-dc-shipboard-repair) | Archive only — source and feasibility pending |
+| 288 | [SCARAB-RF](https://raypeloquin.github.io/mimirs-well/#design/scarab-rf) | Archive only — source and feasibility pending |
+| 289 | [Scarab-4](https://raypeloquin.github.io/mimirs-well/#design/scarab-4) | Archive only — source and feasibility pending |
+| 290 | [LANTEX-24 / LANTEX-PRO — Lanternfly drone](https://raypeloquin.github.io/mimirs-well/#design/lantex-24-lantex-pro-lanternfly-drone) | Research record — retain with stated limits |
+| 291 | [Humanitarian Demining Drone](https://raypeloquin.github.io/mimirs-well/#design/humanitarian-demining-drone) | Archive only — source and feasibility pending |
+| 292 | [Gravity Thief — Launch concept](https://raypeloquin.github.io/mimirs-well/#design/gravity-thief-launch-concept) | Archive only — source and feasibility pending |
+| 293 | [Sky-Spine Observatory](https://raypeloquin.github.io/mimirs-well/#design/sky-spine-observatory) | Archive only — source and feasibility pending |
+| 294 | [Skybridle — Aircraft safety](https://raypeloquin.github.io/mimirs-well/#design/skybridle-aircraft-safety) | Archive only — source and feasibility pending |
+| 295 | [Aircraft Belly-Landing Energy System](https://raypeloquin.github.io/mimirs-well/#design/aircraft-belly-landing-energy-system) | Archive only — source and feasibility pending |
+| 296 | [RAM-FALCON](https://raypeloquin.github.io/mimirs-well/#design/ram-falcon) | Archive only — source and feasibility pending |
+| 297 | [Anubis Abyssal Gill](https://raypeloquin.github.io/mimirs-well/#design/anubis-abyssal-gill) | Archive only — source and feasibility pending |
+| 298 | [Amphibishell](https://raypeloquin.github.io/mimirs-well/#design/amphibishell) | Archive only — source and feasibility pending |
+| 299 | [FSAMS-SKIN — EVA concept](https://raypeloquin.github.io/mimirs-well/#design/fsams-skin-eva-concept) | Archive only — source and feasibility pending |
+| 300 | [Aether Shroud](https://raypeloquin.github.io/mimirs-well/#design/aether-shroud) | Archive only — source and feasibility pending |
+| 301 | [Lunar EVA Life Support](https://raypeloquin.github.io/mimirs-well/#design/lunar-eva-life-support) | Archive only — source and feasibility pending |
+| 302 | [Anubis Wing — Flight suit](https://raypeloquin.github.io/mimirs-well/#design/anubis-wing-flight-suit) | Archive only — source and feasibility pending |
+| 303 | [Sky Wing](https://raypeloquin.github.io/mimirs-well/#design/sky-wing) | Archive only — source and feasibility pending |
+| 304 | [Skybus](https://raypeloquin.github.io/mimirs-well/#design/skybus) | Archive only — source and feasibility pending |
+| 305 | [Outlaw Hovercruiser](https://raypeloquin.github.io/mimirs-well/#design/outlaw-hovercruiser) | Archive only — source and feasibility pending |
+| 306 | [Aetheris Octad — Skycity](https://raypeloquin.github.io/mimirs-well/#design/aetheris-octad-skycity) | Archive only — source and feasibility pending |
+| 307 | [Zero-G Pod](https://raypeloquin.github.io/mimirs-well/#design/zero-g-pod) | Archive only — source and feasibility pending |
+| 308 | [Orbital Pressure Corridor / Beam Handoff](https://raypeloquin.github.io/mimirs-well/#design/orbital-pressure-corridor-beam-handoff) | Archive only — source and feasibility pending |
+| 309 | [EM Capture Chain — Spacecraft concept](https://raypeloquin.github.io/mimirs-well/#design/em-capture-chain-spacecraft-concept) | Archive only — source and feasibility pending |
+| 310 | [ORION — Orbital recycling](https://raypeloquin.github.io/mimirs-well/#design/orion-orbital-recycling) | Archive only — source and feasibility pending |
+| 311 | [PULSELINK — Reentry](https://raypeloquin.github.io/mimirs-well/#design/pulselink-reentry) | Archive only — source and feasibility pending |
+| 312 | [S2M-DART](https://raypeloquin.github.io/mimirs-well/#design/s2m-dart) | Archive only — source and feasibility pending |
+| 313 | [LINC-DART-01](https://raypeloquin.github.io/mimirs-well/#design/linc-dart-01) | Archive only — source and feasibility pending |
+| 314 | [PMSM — Space sample microscope](https://raypeloquin.github.io/mimirs-well/#design/pmsm-space-sample-microscope) | Archive only — source and feasibility pending |
+| 315 | [ETA-GATE — Light elevator](https://raypeloquin.github.io/mimirs-well/#design/eta-gate-light-elevator) | Archive only — source and feasibility pending |
+| 316 | [Aether-Latch Memory](https://raypeloquin.github.io/mimirs-well/#design/aether-latch-memory) | Archive only — source and feasibility pending |
+| 317 | [Aetherfilament Memory](https://raypeloquin.github.io/mimirs-well/#design/aetherfilament-memory) | Archive only — source and feasibility pending |
+| 318 | [Plasmoid Memory Cell / Seven-Cell Ring](https://raypeloquin.github.io/mimirs-well/#design/plasmoid-memory-cell-seven-cell-ring) | Archive only — source and feasibility pending |
+| 319 | [PLA-1 — Plasmoid laser communications array](https://raypeloquin.github.io/mimirs-well/#design/pla-1-plasmoid-laser-communications-array) | Archive only — source and feasibility pending |
+| 320 | [VSRL-01 — Accelerator](https://raypeloquin.github.io/mimirs-well/#design/vsrl-01-accelerator) | Archive only — source and feasibility pending |
+| 321 | [Folded Linac](https://raypeloquin.github.io/mimirs-well/#design/folded-linac) | Archive only — source and feasibility pending |
+| 322 | [Helical Silo Collider](https://raypeloquin.github.io/mimirs-well/#design/helical-silo-collider) | Archive only — source and feasibility pending |
+| 323 | [Hadron Seed Chamber](https://raypeloquin.github.io/mimirs-well/#design/hadron-seed-chamber) | Archive only — source and feasibility pending |
+| 324 | [Veil Resonator](https://raypeloquin.github.io/mimirs-well/#design/veil-resonator) | Archive only — source and feasibility pending |
+| 325 | [Veil Gate — Exotic lattice](https://raypeloquin.github.io/mimirs-well/#design/veil-gate-exotic-lattice) | Archive only — source and feasibility pending |
+| 326 | [Chronovisor](https://raypeloquin.github.io/mimirs-well/#design/chronovisor) | Archive only — source and feasibility pending |
+| 327 | [Chronos Bridge](https://raypeloquin.github.io/mimirs-well/#design/chronos-bridge) | Archive only — source and feasibility pending |
+| 328 | [Chrono Veil](https://raypeloquin.github.io/mimirs-well/#design/chrono-veil) | Archive only — source and feasibility pending |
+| 329 | [Quantum Slice Teleporter](https://raypeloquin.github.io/mimirs-well/#design/quantum-slice-teleporter) | Archive only — source and feasibility pending |
+| 330 | [Quantum Secure Field Communications](https://raypeloquin.github.io/mimirs-well/#design/quantum-secure-field-communications) | Archive only — source and feasibility pending |
+| 331 | [Hermes Quantum Queue](https://raypeloquin.github.io/mimirs-well/#design/hermes-quantum-queue) | Archive only — source and feasibility pending |
+| 332 | [BounceQEC](https://raypeloquin.github.io/mimirs-well/#design/bounceqec) | Archive only — source and feasibility pending |
+| 333 | [Floquet Wave Processor](https://raypeloquin.github.io/mimirs-well/#design/floquet-wave-processor) | Archive only — source and feasibility pending |
+| 334 | [Gamma Native / Quantum Optical Foundry](https://raypeloquin.github.io/mimirs-well/#design/gamma-native-quantum-optical-foundry) | Archive only — source and feasibility pending |
+| 335 | [QReadout](https://raypeloquin.github.io/mimirs-well/#design/qreadout) | Archive only — source and feasibility pending |
+| 336 | [STACK-NV — Sensor family](https://raypeloquin.github.io/mimirs-well/#design/stack-nv-sensor-family) | Archive only — source and feasibility pending |
+| 337 | [Euplectella Node A / Node B](https://raypeloquin.github.io/mimirs-well/#design/euplectella-node-a-node-b) | Archive only — source and feasibility pending |
+| 338 | [REWIND-II — Plasma concept](https://raypeloquin.github.io/mimirs-well/#design/rewind-ii-plasma-concept) | Archive only — source and feasibility pending |
+| 339 | [Gravitationally Coupled Clock](https://raypeloquin.github.io/mimirs-well/#design/gravitationally-coupled-clock) | Archive only — source and feasibility pending |
+| 340 | [Rindler Habitat](https://raypeloquin.github.io/mimirs-well/#design/rindler-habitat) | Archive only — source and feasibility pending |
+| 341 | [BOUNDARY-0 / BOUNDARY-0X](https://raypeloquin.github.io/mimirs-well/#design/boundary-0-boundary-0x) | Archive only — source and feasibility pending |
+| 342 | [NULL-1 / NULL-1H / SHIELD-1](https://raypeloquin.github.io/mimirs-well/#design/null-1-null-1h-shield-1) | Archive only — source and feasibility pending |
+| 343 | [DEUTERION](https://raypeloquin.github.io/mimirs-well/#design/deuterion) | Archive only — source and feasibility pending |
+| 344 | [Physics Operating System](https://raypeloquin.github.io/mimirs-well/#design/physics-operating-system) | Archive only — source and feasibility pending |
+| 345 | [Elemental Operator Atlas / Rubik Engine](https://raypeloquin.github.io/mimirs-well/#design/elemental-operator-atlas-rubik-engine) | Archive only — source and feasibility pending |
+| 346 | [RUBIQ](https://raypeloquin.github.io/mimirs-well/#design/rubiq) | Archive only — source and feasibility pending |
+| 347 | [XFORM-Q88](https://raypeloquin.github.io/mimirs-well/#design/xform-q88) | Archive only — source and feasibility pending |
+| 348 | [ATTRACTOR](https://raypeloquin.github.io/mimirs-well/#design/attractor) | Archive only — source and feasibility pending |
+| 349 | [MindTrace / PhotonTrace](https://raypeloquin.github.io/mimirs-well/#design/mindtrace-photontrace) | Archive only — source and feasibility pending |
+| 350 | [BACKTRACE](https://raypeloquin.github.io/mimirs-well/#design/backtrace) | Archive only — source and feasibility pending |
+| 351 | [MIRRORBOX M01](https://raypeloquin.github.io/mimirs-well/#design/mirrorbox-m01) | Archive only — source and feasibility pending |
+| 352 | [Reality Stress Engine](https://raypeloquin.github.io/mimirs-well/#design/reality-stress-engine) | Archive only — source and feasibility pending |
+| 353 | [Mercurius / ECHO Mercurius](https://raypeloquin.github.io/mimirs-well/#design/mercurius-echo-mercurius) | Archive only — source and feasibility pending |
+| 354 | [Hypha Mesh](https://raypeloquin.github.io/mimirs-well/#design/hypha-mesh) | Archive only — source and feasibility pending |
+| 355 | [Hypha Ear](https://raypeloquin.github.io/mimirs-well/#design/hypha-ear) | Archive only — source and feasibility pending |
+| 356 | [Hypha Rootway](https://raypeloquin.github.io/mimirs-well/#design/hypha-rootway) | Archive only — source and feasibility pending |
+| 357 | [Pando Bridge](https://raypeloquin.github.io/mimirs-well/#design/pando-bridge) | Archive only — source and feasibility pending |
+| 358 | [Pando Tongue](https://raypeloquin.github.io/mimirs-well/#design/pando-tongue) | Archive only — source and feasibility pending |
+| 359 | [Echo Bowl](https://raypeloquin.github.io/mimirs-well/#design/echo-bowl) | Archive only — source and feasibility pending |
+| 360 | [NEITH LANTERN Gate](https://raypeloquin.github.io/mimirs-well/#design/neith-lantern-gate) | Archive only — source and feasibility pending |
+| 361 | [AEGIS Veil / Veilkeeper](https://raypeloquin.github.io/mimirs-well/#design/aegis-veil-veilkeeper) | Archive only — source and feasibility pending |
+| 362 | [AEGIS BufferShield](https://raypeloquin.github.io/mimirs-well/#design/aegis-buffershield) | Archive only — source and feasibility pending |
+| 363 | [AEGIS-10](https://raypeloquin.github.io/mimirs-well/#design/aegis-10) | Archive only — source and feasibility pending |
+| 364 | [JANUS-10](https://raypeloquin.github.io/mimirs-well/#design/janus-10) | Archive only — source and feasibility pending |
+| 365 | [AREOPAGUS](https://raypeloquin.github.io/mimirs-well/#design/areopagus) | Research record — retain with stated limits |
+| 366 | [ARBOR / SEED](https://raypeloquin.github.io/mimirs-well/#design/arbor-seed) | Archive only — source and feasibility pending |
+| 367 | [Concordia](https://raypeloquin.github.io/mimirs-well/#design/concordia) | Archive only — source and feasibility pending |
+| 368 | [Hephaestus — Autonomous forge](https://raypeloquin.github.io/mimirs-well/#design/hephaestus-autonomous-forge) | Archive only — source and feasibility pending |
+| 369 | [AG-DAS Guardian](https://raypeloquin.github.io/mimirs-well/#design/ag-das-guardian) | Archive only — source and feasibility pending |
+| 370 | [PaperCall / PaperCall Sky](https://raypeloquin.github.io/mimirs-well/#design/papercall-papercall-sky) | Archive only — source and feasibility pending |
+| 371 | [Paper Factory](https://raypeloquin.github.io/mimirs-well/#design/paper-factory) | Archive only — source and feasibility pending |
+| 372 | [MECHAGE](https://raypeloquin.github.io/mimirs-well/#design/mechage) | Archive only — source and feasibility pending |
+| 373 | [LAAF PINN](https://raypeloquin.github.io/mimirs-well/#design/laaf-pinn) | Archive only — source and feasibility pending |
+| 374 | [OmniSight Goggles](https://raypeloquin.github.io/mimirs-well/#design/omnisight-goggles) | Archive only — source and feasibility pending |
+| 375 | [HBFTune — EEG concept](https://raypeloquin.github.io/mimirs-well/#design/hbftune-eeg-concept) | Archive only — source and feasibility pending |
+| 376 | [KA Patch — Bioenergy jewelry](https://raypeloquin.github.io/mimirs-well/#design/ka-patch-bioenergy-jewelry) | Archive only — source and feasibility pending |
+| 377 | [KA Lock](https://raypeloquin.github.io/mimirs-well/#design/ka-lock) | Archive only — source and feasibility pending |
+| 378 | [KA Fold](https://raypeloquin.github.io/mimirs-well/#design/ka-fold) | Archive only — source and feasibility pending |
+| 379 | [Khepri Stride — Sneaker concept](https://raypeloquin.github.io/mimirs-well/#design/khepri-stride-sneaker-concept) | Archive only — source and feasibility pending |
+| 380 | [Canine Wearable](https://raypeloquin.github.io/mimirs-well/#design/canine-wearable) | Archive only — source and feasibility pending |
+| 381 | [iExalt Node](https://raypeloquin.github.io/mimirs-well/#design/iexalt-node) | Archive only — source and feasibility pending |
+| 382 | [Underground Cattle Barn](https://raypeloquin.github.io/mimirs-well/#design/underground-cattle-barn) | Archive only — source and feasibility pending |
+| 383 | [Shell City — Inverted-mushroom barn](https://raypeloquin.github.io/mimirs-well/#design/shell-city-inverted-mushroom-barn) | Archive only — source and feasibility pending |
+| 384 | [MA’AT Tower](https://raypeloquin.github.io/mimirs-well/#design/ma-at-tower) | Archive only — source and feasibility pending |
+| 385 | [Judgment Pyramid](https://raypeloquin.github.io/mimirs-well/#design/judgment-pyramid) | Archive only — source and feasibility pending |
+| 386 | [Stone Mansion District](https://raypeloquin.github.io/mimirs-well/#design/stone-mansion-district) | Archive only — source and feasibility pending |
+| 387 | [Pawtucket Riverside Market / Fleet District](https://raypeloquin.github.io/mimirs-well/#design/pawtucket-riverside-market-fleet-district) | Archive only — source and feasibility pending |
+| 388 | [Purgatory Tavern](https://raypeloquin.github.io/mimirs-well/#design/purgatory-tavern) | Archive only — source and feasibility pending |
+| 389 | [Angels Diner](https://raypeloquin.github.io/mimirs-well/#design/angels-diner) | Archive only — source and feasibility pending |
+| 390 | [Winchester Monster Guild](https://raypeloquin.github.io/mimirs-well/#design/winchester-monster-guild) | Archive only — source and feasibility pending |
+| 391 | [Oasis Dadan](https://raypeloquin.github.io/mimirs-well/#design/oasis-dadan) | Archive only — source and feasibility pending |
+| 392 | [Nile’s Shadow](https://raypeloquin.github.io/mimirs-well/#design/nile-s-shadow) | Archive only — source and feasibility pending |
+| 393 | [Hydrator Neo — Pizza station](https://raypeloquin.github.io/mimirs-well/#design/hydrator-neo-pizza-station) | Archive only — source and feasibility pending |
+| 394 | [Recipe Pucks](https://raypeloquin.github.io/mimirs-well/#design/recipe-pucks) | Archive only — source and feasibility pending |
+| 395 | [Lee Vertical City / Quick City Seven](https://raypeloquin.github.io/mimirs-well/#design/lee-vertical-city-quick-city-seven) | Archive only — source and feasibility pending |
+| 396 | [Florida Space Coast Autonomous Systems Innovation Park](https://raypeloquin.github.io/mimirs-well/#design/florida-space-coast-autonomous-systems-innovation-park) | Archive only — source and feasibility pending |
 
 ## Next step
 
