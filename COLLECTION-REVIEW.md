@@ -2,11 +2,15 @@
 
 17 November 2026 · Review of published content and catalog structure
 
+## Current publication snapshot
+
+Following the explicitly approved architecture batch: **396 entries, 80 expanded records, 316 archive-only titles**. The register below reflects this update. The original suitability review below covered the earlier 70 expanded summaries; its source hashes and findings describe that historical snapshot. The ten new summaries retain implementation/lineage limits. Authority at Commit was rerun as described in its record; this does not extend the original audit to independent experimental validation.
+
 ## Verdict and scope
 
 The 70 expanded records make sense in a research/design collection **when read with their stated evidence and limitations**. They include proposed devices, computational studies, engineering audits, collaboration/review methods and creative work; they are not 70 demonstrated inventions. No expanded record was removed or promoted to validated status by this review.
 
-The other 326 entries are retained as **archive titles awaiting assessment**, not endorsed designs. A title alone cannot establish a mechanism, feasibility or a reason to build it. They should not be presented as completed engineering. This register covers all 396 published entries and gives every entry a disposition.
+At the original review, the other 326 entries were retained as **archive titles awaiting assessment**, not endorsed designs. A title alone cannot establish a mechanism, feasibility or a reason to build it. They should not be presented as completed engineering. This register covers all 396 published entries and gives every entry a disposition.
 
 This pass read all published titles and the purpose, evidence and limitations fields of the 70 expanded summaries. It checked record binding, exact-title duplication, required fields and presentation. It did not independently reopen every original research source, rerun experiments/models, establish novelty, perform clinical/physical qualification or audit every external link. Conclusions are about the public descriptions, not certification of their underlying research.
 
@@ -71,7 +75,7 @@ These are review leads from the existing public titles/summaries, not verdicts b
 | 12 | [Court of the Synthetic — Multi-model engineering review](https://raypeloquin.github.io/mimirs-well/#design/court-of-the-synthetic-multi-model-engineering-review) | Research record — retain with stated limits |
 | 13 | [Olympus Floor Model — Engineering project and portfolio control](https://raypeloquin.github.io/mimirs-well/#design/olympus-floor-model-engineering-project-and-portfolio-control) | Research record — retain with stated limits |
 | 14 | [Olympus Registry — Design lineage and evidence catalog](https://raypeloquin.github.io/mimirs-well/#design/olympus-registry-design-lineage-and-evidence-catalog) | Research record — retain with stated limits |
-| 15 | [AC² — Admissible decision architecture](https://raypeloquin.github.io/mimirs-well/#design/ac2-admissible-decision-architecture) | Archive only — source and feasibility pending |
+| 15 | [AC² — Admissible decision architecture](https://raypeloquin.github.io/mimirs-well/#design/ac2-admissible-decision-architecture) | Research record — retain with stated limits |
 | 16 | [Enki’s Will — Living safety stack](https://raypeloquin.github.io/mimirs-well/#design/enki-s-will-living-safety-stack) | Research record — retain with stated limits |
 | 17 | [Edge Reflex Mesh — Local control and safety reflexes](https://raypeloquin.github.io/mimirs-well/#design/edge-reflex-mesh-local-control-and-safety-reflexes) | Research record — retain with stated limits |
 | 18 | [Yggdrasil Protocol — Governed adaptive systems](https://raypeloquin.github.io/mimirs-well/#design/yggdrasil-protocol-governed-adaptive-systems) | Research record — retain with stated limits |
@@ -119,13 +123,13 @@ These are review leads from the existing public titles/summaries, not verdicts b
 | 60 | [HIVE-1 — Human–AI cognitive network](https://raypeloquin.github.io/mimirs-well/#design/hive-1-human-ai-cognitive-network) | Research record — retain with stated limits |
 | 61 | [The Choir Protocol / CASG](https://raypeloquin.github.io/mimirs-well/#design/the-choir-protocol-casg) | Archive only — source and feasibility pending |
 | 62 | [Choir on ARQEN](https://raypeloquin.github.io/mimirs-well/#design/choir-on-arqen) | Archive only — source and feasibility pending |
-| 63 | [ARQEN — Architecture and interface contract](https://raypeloquin.github.io/mimirs-well/#design/arqen-architecture-and-interface-contract) | Archive only — source and feasibility pending |
+| 63 | [ARQEN — Architecture and interface contract](https://raypeloquin.github.io/mimirs-well/#design/arqen-architecture-and-interface-contract) | Research record — retain with stated limits |
 | 64 | [The Triad — Aegis, Heimdall and Enki’s Will](https://raypeloquin.github.io/mimirs-well/#design/the-triad-aegis-heimdall-and-enki-s-will) | Research record — retain with stated limits |
-| 65 | [ATCB](https://raypeloquin.github.io/mimirs-well/#design/atcb) | Archive only — source and feasibility pending |
-| 66 | [Authority at Commit](https://raypeloquin.github.io/mimirs-well/#design/authority-at-commit) | Archive only — source and feasibility pending |
+| 65 | [ATCB](https://raypeloquin.github.io/mimirs-well/#design/atcb) | Research record — retain with stated limits |
+| 66 | [Authority at Commit](https://raypeloquin.github.io/mimirs-well/#design/authority-at-commit) | Research record — retain with stated limits |
 | 67 | [Court on Trial](https://raypeloquin.github.io/mimirs-well/#design/court-on-trial) | Research record — retain with stated limits |
 | 68 | [Olympus Witness Rig](https://raypeloquin.github.io/mimirs-well/#design/olympus-witness-rig) | Research record — retain with stated limits |
-| 69 | [Weaver’s Shuttle](https://raypeloquin.github.io/mimirs-well/#design/weaver-s-shuttle) | Archive only — source and feasibility pending |
+| 69 | [Weaver’s Shuttle](https://raypeloquin.github.io/mimirs-well/#design/weaver-s-shuttle) | Research record — retain with stated limits |
 | 70 | [Asteris Daydream Loop](https://raypeloquin.github.io/mimirs-well/#design/asteris-daydream-loop) | Archive only — source and feasibility pending |
 | 71 | [Asteris Desktop Steward](https://raypeloquin.github.io/mimirs-well/#design/asteris-desktop-steward) | Archive only — source and feasibility pending |
 | 72 | [AC Cognition Engine](https://raypeloquin.github.io/mimirs-well/#design/ac-cognition-engine) | Archive only — source and feasibility pending |
@@ -136,11 +140,11 @@ These are review leads from the existing public titles/summaries, not verdicts b
 | 77 | [Mobile Truth Stack](https://raypeloquin.github.io/mimirs-well/#design/mobile-truth-stack) | Research record — retain with stated limits |
 | 78 | [Consent Gate](https://raypeloquin.github.io/mimirs-well/#design/consent-gate) | Research record — retain with stated limits |
 | 79 | [Conduct Architecture](https://raypeloquin.github.io/mimirs-well/#design/conduct-architecture) | Research record — retain with stated limits |
-| 80 | [Enki’s Memory](https://raypeloquin.github.io/mimirs-well/#design/enki-s-memory) | Archive only — source and feasibility pending |
-| 81 | [Enki’s Homeostasis](https://raypeloquin.github.io/mimirs-well/#design/enki-s-homeostasis) | Archive only — source and feasibility pending |
-| 82 | [Synapse of Enki](https://raypeloquin.github.io/mimirs-well/#design/synapse-of-enki) | Archive only — source and feasibility pending |
-| 83 | [Thoth’s Mind](https://raypeloquin.github.io/mimirs-well/#design/thoth-s-mind) | Archive only — source and feasibility pending |
-| 84 | [Endurance Stack](https://raypeloquin.github.io/mimirs-well/#design/endurance-stack) | Archive only — source and feasibility pending |
+| 80 | [Enki’s Memory](https://raypeloquin.github.io/mimirs-well/#design/enki-s-memory) | Research record — retain with stated limits |
+| 81 | [Enki’s Homeostasis](https://raypeloquin.github.io/mimirs-well/#design/enki-s-homeostasis) | Research record — retain with stated limits |
+| 82 | [Synapse of Enki](https://raypeloquin.github.io/mimirs-well/#design/synapse-of-enki) | Research record — retain with stated limits |
+| 83 | [Thoth’s Mind](https://raypeloquin.github.io/mimirs-well/#design/thoth-s-mind) | Research record — retain with stated limits |
+| 84 | [Endurance Stack](https://raypeloquin.github.io/mimirs-well/#design/endurance-stack) | Research record — retain with stated limits |
 | 85 | [PHANTOM WEAVE](https://raypeloquin.github.io/mimirs-well/#design/phantom-weave) | Archive only — source and feasibility pending |
 | 86 | [SAFE CHANNEL — Negative Space Mapper](https://raypeloquin.github.io/mimirs-well/#design/safe-channel-negative-space-mapper) | Archive only — source and feasibility pending |
 | 87 | [TRUTHMAP](https://raypeloquin.github.io/mimirs-well/#design/truthmap) | Archive only — source and feasibility pending |
