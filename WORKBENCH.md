@@ -10,7 +10,7 @@ This is a maintained snapshot, not live monitoring or an automatic task runner. 
 
 Build Mimir’s Well one small, reviewable batch at a time: connect each project’s public purpose to its evidence, limitations, attribution and next check.
 
-The registry currently contains 15 source-backed expanded records: Ghostglass, SKEPTIC-1, HIPPO Data Center Cooling Stack, PIPE-LISTENER-01, GENTLE-01, GRASP-01, SILT HARP, Roman Concrete, Third-Look, CRUCIBLE, ECHO-Rx, ECHO-M, BRIDLE-3, RAVEN-P1 and Temporal Reflection Chamber. Other entries remain catalog listings pending source review. An expanded record is not a validation rating.
+The registry currently contains 17 source-backed expanded records: Ghostglass, SKEPTIC-1, HIPPO Data Center Cooling Stack, PIPE-LISTENER-01, GENTLE-01, GRASP-01, SILT HARP, Roman Concrete, Third-Look, CRUCIBLE, ECHO-Rx, ECHO-M, BRIDLE-3, RAVEN-P1, Temporal Reflection Chamber, Adventurer’s Forge and Mimir’s Well. Other entries remain catalog listings pending source review. An expanded record is not a validation rating.
 
 ## What has been checked
 
@@ -30,7 +30,7 @@ The registry currently contains 15 source-backed expanded records: Ghostglass, S
 
 ## Suggested next brick
 
-Review Adventurer’s Forge against its current public repository, then fill only the supported record fields. If evidence is missing, leave that uncertainty explicit.
+Check catalog search, project links, record closing and guestbook navigation on desktop and phone-sized screens. Record observed problems before changing anything. Adventurer’s Forge and Mimir’s Well now have expanded records based on their public sources.
 
 After each batch, update this snapshot when its counts, status or proposed next step change. Check the actual source rather than treating an old snapshot as current.
 
