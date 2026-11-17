@@ -156,6 +156,36 @@ The main README already states that complete reproduction is unavailable. The or
 
 No broken README file link was found, and no research artifact was invented or replaced. The next bounded task is to locate the original research pack, compare it with this manifest and reconcile exact file/version provenance before publishing any missing materials.
 
+## RAVEN-P1 original-pack recovery — 17 November 2026
+
+Recovered the saved **RAVEN-P1-Research-Pack-v0.1.zip**, dated 5 November 2026, and compared it with the previously inventoried public main tree `b3fdb1ffa6548d394d69dd85694c494a970edc73`. The archived ZIP is 6,898,392 bytes; its SHA-256 is `caae1f07ee1072e0249d3f9d88122dff2f68cfc029323fb9ea7a40b93ea355a4`.
+
+### Integrity and version reconciliation
+
+| Check | Result |
+| --- | --- |
+| ZIP inventory | 61 files, including SHA256SUMS.txt |
+| Internal SHA-256 manifest | All 60 listed files match; only the manifest itself is not self-listed |
+| Same-path public files | 11 match the archive exactly by Git blob SHA |
+| Archived README | Exactly matches public RESEARCH-README.md after adding its repository-availability banner |
+| Current public README | Expanded repository overview; intentionally distinct from the original pack instructions |
+| v0.1 PDF | Archive: 307,261 bytes; public standalone: 332,234 bytes. Public standalone Git blob matches the repository. Both have five pages, identical extracted page text and pixel-identical Poppler renders at 72 dpi on all five pages; no byte-identity claim |
+| Original reference PDB | SHA-256 matches the public model-provenance record |
+| Both saved OmegaFold PDBs | SHA-256 matches their public verification.json records |
+| v0.2 materials | Outside this v0.1 archive; the v0.2 PDF and coding-sequence FASTA are later public additions |
+
+Exact same-path matches: DESIGN.md, REVIEW.md, figures/forward-structures.svg, inputs/residue-map.json, inputs/top7-reference-92.fasta, results/RAVEN-P1-v0.1.fasta, results/design-summary.json, results/model-provenance.json, results/scores.csv, results/software-versions.json and results/verification.json.
+
+### What was recovered
+
+The archive contains reproduce.py, requirements.txt, build_report.py and supporting scripts; the original reference and normalized backbone PDBs; raw generation sequence/score files; both saved forward-predicted PDBs; the failed ESMFold-service status record; additional results and figures; ProteinMPNN source/weights/license; and OmegaFold source/license. Its README explicitly requires a separately downloaded approximately 3.18 GB OmegaFold checkpoint, which is not bundled.
+
+The archive and the public records therefore identify a matching v0.1 study, rather than a newly invented reconstruction. Internal checksums demonstrate agreement with the saved manifest, not independent authenticity, experimental validity or a successful fresh computation. No archived program, model checkpoint or neural prediction was executed in this recovery pass. No missing research artifact was uploaded or existing research file overwritten.
+
+### Next bounded step
+
+Inspect the recovered scripts and third-party license packaging, then prepare a provenance-preserving publication of the missing v0.1 files. Preserve current README improvements and later v0.2 materials; keep the archived manifest scoped to its original package. A fresh reproduction would be a separate check in an isolated environment, with its own dated outputs. The original-pack recovery is complete; public reproduction remains incomplete until the recovered materials are actually published and verified.
+
 ## Collection suitability review — 17 November 2026
 
 All 396 current titles and the 70 expanded summaries were screened for collection fit, coherent scope, evidence wording and record binding. The 70 summaries are retained as bounded research/review/creative records; 326 remain archive titles with feasibility unassessed. No experimental validation or independent full-source rerun was performed. Source groups now describe provenance rather than maturity; archive-only limitations and reference accessibility are explicit. SKEPTIC-1 is categorized under physics/engineering. [Full disposition register and priority source questions](COLLECTION-REVIEW.md).
@@ -172,7 +202,7 @@ All 396 current titles and the 70 expanded summaries were screened for collectio
 
 ## Suggested next brick
 
-The CRUCIBLE / ECHO-M / BRIDLE-3 source-link batch and RAVEN-P1 reproduction inventory are complete as scoped above. Next, locate the original RAVEN-P1 research pack and reconcile it against the public file manifest before considering uploads. Do not manufacture missing scripts, structural outputs or historical results. That recovery task is not running in the background.
+The three-project source batch, RAVEN-P1 inventory and original v0.1 pack recovery are complete as scoped above. Next, inspect recovered scripts and license packaging, then prepare publication of the missing v0.1 files while preserving existing public documentation and later versions. Public reproduction is still incomplete; no model rerun or research-file upload occurred in the recovery pass.
 
 After each batch, update this snapshot when its counts, status or proposed next step change. Check the actual source rather than treating an old snapshot as current.
 
