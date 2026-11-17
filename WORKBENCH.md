@@ -103,6 +103,59 @@ These ten external references were a bounded sample from the source documents, n
 - BRIDLE-3's saved JSON matches the registry's rounded local peaks and shared-loss limits: approximately 1.852 / 1.453 / 1.474 / 1.205, eventual 2.102392 for the original reserve and 1.529371 for a reserve sized only through model time 12. Source inspection shows the listed consistency checks. The model is dimensionless and uncalibrated; code and saved outputs were inspected, not executed.
 - No material contradiction requiring a registry summary correction was found in these sampled comparisons. This is source traceability and bounded consistency review, not independent scientific validation, full code review, hardware qualification or clinical evidence.
 
+## RAVEN-P1 reproduction inventory — 17 November 2026
+
+Inspected the complete, non-truncated public main-branch tree `b3fdb1ffa6548d394d69dd85694c494a970edc73`: **16 files**. All **15 relative file/image links** in the current README resolve to entries in that tree. Documentation and saved tabular/sequence data were retrieved; PDFs and the SVG were checked by repository metadata only. This is a repository inventory, not a review of other branches, releases or privately held archives.
+
+### Available files
+
+| File | Bytes | Git blob SHA |
+| --- | ---: | --- |
+| [DESIGN.md](https://github.com/RayPeloquin/RAVEN-P1/blob/main/DESIGN.md) | 2,687 | `914c8968a777e9d8045215c640821d72bdf5acf6` |
+| [RAVEN-P1-Computational-Protein-Design-v0.1.pdf](https://github.com/RayPeloquin/RAVEN-P1/blob/main/RAVEN-P1-Computational-Protein-Design-v0.1.pdf) | 332,234 | `b73b0ca53d9a629215912d1090d069fe3c10d389` |
+| [RAVEN-P1-Gene-and-Mutation-Controls-v0.2.pdf](https://github.com/RayPeloquin/RAVEN-P1/blob/main/RAVEN-P1-Gene-and-Mutation-Controls-v0.2.pdf) | 236,025 | `e63d4fdba4225a1aa462dc89a31bc7aae467db8b` |
+| [README.md](https://github.com/RayPeloquin/RAVEN-P1/blob/main/README.md) | 3,421 | `b06d7fb5cd41fdf4e608f6e21d0594170e42174b` |
+| [RESEARCH-README.md](https://github.com/RayPeloquin/RAVEN-P1/blob/main/RESEARCH-README.md) | 5,633 | `71ca8bd1ffe97a4878ba7d4e897e18124b86029d` |
+| [REVIEW.md](https://github.com/RayPeloquin/RAVEN-P1/blob/main/REVIEW.md) | 1,759 | `99307fc44834de033d9233087939d156ed7b832e` |
+| [figures/forward-structures.svg](https://github.com/RayPeloquin/RAVEN-P1/blob/main/figures/forward-structures.svg) | 45,722 | `27d700506c64af07a3a31e70e1163b56c178e7c1` |
+| [inputs/residue-map.json](https://github.com/RayPeloquin/RAVEN-P1/blob/main/inputs/residue-map.json) | 12,959 | `5962afe044985e0226d7048a3528452667e4c667` |
+| [inputs/top7-reference-92.fasta](https://github.com/RayPeloquin/RAVEN-P1/blob/main/inputs/top7-reference-92.fasta) | 137 | `71a5351f798677625cf251def15f4c75644a670f` |
+| [results/RAVEN-P1-Illustrative-CDS-v0.2.fasta](https://github.com/RayPeloquin/RAVEN-P1/blob/main/results/RAVEN-P1-Illustrative-CDS-v0.2.fasta) | 374 | `69e99b5dbb67d64a23e4a5a3dcef222d482777a7` |
+| [results/RAVEN-P1-v0.1.fasta](https://github.com/RayPeloquin/RAVEN-P1/blob/main/results/RAVEN-P1-v0.1.fasta) | 183 | `aa45a5d921b864eb9134733f77164ea5585d9092` |
+| [results/design-summary.json](https://github.com/RayPeloquin/RAVEN-P1/blob/main/results/design-summary.json) | 2,117 | `c702c8835f052546e8e8e8cb8f4c5a2f11a58e26` |
+| [results/model-provenance.json](https://github.com/RayPeloquin/RAVEN-P1/blob/main/results/model-provenance.json) | 513 | `64cb84fd711c97393b321fa28d8d90e5139fb4fa` |
+| [results/scores.csv](https://github.com/RayPeloquin/RAVEN-P1/blob/main/results/scores.csv) | 28,973 | `f88e9a3d0ab1825807be6a73bb858019faecacf2` |
+| [results/software-versions.json](https://github.com/RayPeloquin/RAVEN-P1/blob/main/results/software-versions.json) | 233 | `84fccaf23c6bb7677add31d214a2efa3f25306c3` |
+| [results/verification.json](https://github.com/RayPeloquin/RAVEN-P1/blob/main/results/verification.json) | 1,801 | `c3d64197f324f346d4ddde6b709fe01822384298` |
+
+### Reproduction gaps
+
+| Required material | Observed public-branch status | Consequence |
+| --- | --- | --- |
+| `requirements.txt` | Absent | Documented dependency-install command cannot run as written |
+| `reproduce.py` | Absent | Documented generation/scoring and optional folding commands cannot run |
+| `build_report.py` | Absent | Documented report-regeneration command cannot run |
+| `inputs/top7-backbone-92.pdb` | Absent | Exact normalized experimental design template is unavailable |
+| Original downloaded reference PDB | No PDB file in tree; provenance records its URL and expected checksum | Original input bytes cannot be verified against the saved run here |
+| `results/omegafold/TOP7_REFERENCE_92.pdb` | Absent; named in saved verification JSON | Reference forward geometry and its recorded checksum cannot be independently checked |
+| `results/omegafold/RAVEN_P1.pdb` | Absent; named in saved verification JSON | Candidate forward geometry, structural metrics and recorded checksum cannot be independently checked |
+| `results/esmfold-reference-status.json` | Absent; named in research README | The reported failed-service record is not inspectable here |
+| Raw generation outputs and v0.2 intermediate prediction artifacts | No separate generation or prediction files in tree; v0.1 candidate sequences are retained in scores.csv | Full original outputs and v0.2 mutation-control calculations cannot be reconstructed from the public branch alone |
+| Bundled model source/weights/licenses and research ZIP | No vendor tree or ZIP in this branch | The extracted-pack instructions describe materials not yet published here |
+| OmegaFold checkpoint | External download URL, size and SHA-256 are documented; checkpoint absent by design | Not treated as a broken repository link; external availability/bytes were not checked in this inventory |
+
+The main README already states that complete reproduction is unavailable. The original research-pack README's availability banner is broader than the current inventory: some inputs, provenance and outputs are now present, but the exact template, scripts and forward PDBs remain absent. A source commit and expected checkpoint hash identify intended inputs; they do not supply the missing files.
+
+### Checks performed on retrieved saved data
+
+- Candidate and reference FASTAs each contain 92 residues; they differ at 50 positions.
+- The residue map has 92 consecutive positions mapping chain A residues 3–94, agrees with the reference FASTA, and maps source MSE37 to methionine at design position 35.
+- scores.csv contains 97 data rows, including 64 design rows with 64 distinct sequences. Among those saved design means, design_064 is the minimum and its sequence equals the published candidate FASTA.
+- The illustrative coding-sequence FASTA contains 279 bases and ends in TAA. Translation/expression and biological performance were not tested in this inventory.
+- These are new consistency checks on saved public files. They do not rerun ProteinMPNN or OmegaFold, reproduce structural RMSD/contact calculations, verify the complete PDF reports, or demonstrate physical folding, function or safety.
+
+No broken README file link was found, and no research artifact was invented or replaced. The next bounded task is to locate the original research pack, compare it with this manifest and reconcile exact file/version provenance before publishing any missing materials.
+
 ## Collection suitability review — 17 November 2026
 
 All 396 current titles and the 70 expanded summaries were screened for collection fit, coherent scope, evidence wording and record binding. The 70 summaries are retained as bounded research/review/creative records; 326 remain archive titles with feasibility unassessed. No experimental validation or independent full-source rerun was performed. Source groups now describe provenance rather than maturity; archive-only limitations and reference accessibility are explicit. SKEPTIC-1 is categorized under physics/engineering. [Full disposition register and priority source questions](COLLECTION-REVIEW.md).
@@ -119,7 +172,7 @@ All 396 current titles and the 70 expanded summaries were screened for collectio
 
 ## Suggested next brick
 
-The CRUCIBLE / ECHO-M / BRIDLE-3 source-link batch is complete as scoped above. Next, check RAVEN-P1’s reproduction-file inventory against its current README and record exactly which materials are available or missing. That proposed inventory check is not running in the background.
+The CRUCIBLE / ECHO-M / BRIDLE-3 source-link batch and RAVEN-P1 reproduction inventory are complete as scoped above. Next, locate the original RAVEN-P1 research pack and reconcile it against the public file manifest before considering uploads. Do not manufacture missing scripts, structural outputs or historical results. That recovery task is not running in the background.
 
 After each batch, update this snapshot when its counts, status or proposed next step change. Check the actual source rather than treating an old snapshot as current.
 
