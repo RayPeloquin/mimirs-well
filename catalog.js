@@ -5,7 +5,7 @@ const labels={safety:'AI & governance',biology:'Biology & medicine',physics:'Phy
 const grid=document.querySelector('.grid');
 document.querySelectorAll('.card').forEach(c=>{c.dataset.stage='repository';const badge=document.createElement('span');badge.className='stage';badge.textContent='Public repository';c.querySelector('h3').before(badge)});
 const third=document.createElement('article');third.className='card';third.dataset.category='biology';third.dataset.stage='repository';
-const top=document.createElement('div');top.className='cardtop';const tag=document.createElement('span');tag.className='tag';tag.textContent='Biology & medicine';top.append(tag);
+const top=document.createElement('div');top.className='cardtop';const thirdIndex=document.createElement('span');thirdIndex.className='index';thirdIndex.textContent='10 /';const tag=document.createElement('span');tag.className='tag';tag.textContent='Biology & medicine';top.append(thirdIndex,tag);
 const stage=document.createElement('span');stage.className='stage';stage.textContent='Public repository';
 const h=document.createElement('h3');h.textContent='Third-Look';
 const p=document.createElement('p');p.textContent='Three-camera wound-imaging handpiece research. Explore the design, development record and limitations.';
