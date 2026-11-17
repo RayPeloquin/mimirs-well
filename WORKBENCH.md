@@ -50,7 +50,7 @@ The Roman-concrete record retains its DOI and now also links PMC9821858. The alt
 
 ## Collection suitability review — 17 November 2026
 
-All 397 titles and the 70 expanded summaries were screened for collection fit, coherent scope, evidence wording and record binding. The 70 summaries are retained as bounded research/review/creative records; 327 remain archive titles with feasibility unassessed. No experimental validation or independent full-source rerun was performed. Source groups now describe provenance rather than maturity; archive-only limitations and reference accessibility are explicit. SKEPTIC-1 is categorized under physics/engineering. [Full disposition register and priority source questions](COLLECTION-REVIEW.md).
+All 396 current titles and the 70 expanded summaries were screened for collection fit, coherent scope, evidence wording and record binding. The 70 summaries are retained as bounded research/review/creative records; 326 remain archive titles with feasibility unassessed. No experimental validation or independent full-source rerun was performed. Source groups now describe provenance rather than maturity; archive-only limitations and reference accessibility are explicit. SKEPTIC-1 is categorized under physics/engineering. [Full disposition register and priority source questions](COLLECTION-REVIEW.md).
 
 ## Open questions
 
