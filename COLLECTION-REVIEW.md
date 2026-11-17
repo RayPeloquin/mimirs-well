@@ -4,7 +4,7 @@
 
 ## Current publication snapshot
 
-Following the explicitly approved architecture batch: **396 entries, 80 expanded records, 316 archive-only titles**. The register below reflects this update. The original suitability review below covered the earlier 70 expanded summaries; its source hashes and findings describe that historical snapshot. The ten new summaries retain implementation/lineage limits. Authority at Commit was rerun as described in its record; this does not extend the original audit to independent experimental validation.
+Following the explicitly approved architecture and medical/motion batches: **396 entries, 90 expanded records, 306 archive-only titles**. The register below reflects both updates. The original suitability review below covered the earlier 70 expanded summaries; its source hashes and findings describe that historical snapshot. The 20 subsequently published summaries retain implementation, naming and evidence limits. Authority at Commit was rerun as described in its record; the medical/motion batch is documentation review only. These publications do not constitute independent experimental or clinical validation.
 
 ## Verdict and scope
 
@@ -152,22 +152,22 @@ These are review leads from the existing public titles/summaries, not verdicts b
 | 89 | [CONFLUENCE-01 — Synthetic Sense](https://raypeloquin.github.io/mimirs-well/#design/confluence-01-synthetic-sense) | Research record — retain with stated limits |
 | 90 | [Quantum Sovereign Stack](https://raypeloquin.github.io/mimirs-well/#design/quantum-sovereign-stack) | Archive only — source and feasibility pending |
 | 91 | [Vowed Self-Continuity Engine](https://raypeloquin.github.io/mimirs-well/#design/vowed-self-continuity-engine) | Archive only — source and feasibility pending |
-| 92 | [HEMOSTAT-R](https://raypeloquin.github.io/mimirs-well/#design/hemostat-r) | Archive only — source and feasibility pending |
-| 93 | [Hallvard’s Promise / Little Lungs](https://raypeloquin.github.io/mimirs-well/#design/hallvard-s-promise-little-lungs) | Archive only — source and feasibility pending |
+| 92 | [HEMOSTAT-R](https://raypeloquin.github.io/mimirs-well/#design/hemostat-r) | Research record — retain with stated limits |
+| 93 | [Hallvard’s Promise / Little Lungs](https://raypeloquin.github.io/mimirs-well/#design/hallvard-s-promise-little-lungs) | Research record — retain with stated limits |
 | 94 | [EMH — Field Guide Gloves](https://raypeloquin.github.io/mimirs-well/#design/emh-field-guide-gloves) | Archive only — source and feasibility pending |
-| 95 | [Soul Forge](https://raypeloquin.github.io/mimirs-well/#design/soul-forge) | Archive only — source and feasibility pending |
+| 95 | [Soul Forge](https://raypeloquin.github.io/mimirs-well/#design/soul-forge) | Research record — retain with stated limits |
 | 96 | [Soul Forge — Hand Mapping](https://raypeloquin.github.io/mimirs-well/#design/soul-forge-hand-mapping) | Archive only — source and feasibility pending |
-| 97 | [Blood Manager](https://raypeloquin.github.io/mimirs-well/#design/blood-manager) | Archive only — source and feasibility pending |
-| 98 | [Tumor Hunter](https://raypeloquin.github.io/mimirs-well/#design/tumor-hunter) | Archive only — source and feasibility pending |
+| 97 | [Blood Manager](https://raypeloquin.github.io/mimirs-well/#design/blood-manager) | Research record — retain with stated limits |
+| 98 | [Tumor Hunter](https://raypeloquin.github.io/mimirs-well/#design/tumor-hunter) | Research record — retain with stated limits |
 | 99 | [Medi Goo](https://raypeloquin.github.io/mimirs-well/#design/medi-goo) | Archive only — source and feasibility pending |
-| 100 | [GRAIL-1 — Hemocompatibility Doctrine](https://raypeloquin.github.io/mimirs-well/#design/grail-1-hemocompatibility-doctrine) | Archive only — source and feasibility pending |
-| 101 | [Governed Acoustofluidic System](https://raypeloquin.github.io/mimirs-well/#design/governed-acoustofluidic-system) | Archive only — source and feasibility pending |
-| 102 | [Lung Mapper](https://raypeloquin.github.io/mimirs-well/#design/lung-mapper) | Archive only — source and feasibility pending |
-| 103 | [Horizon Glasses](https://raypeloquin.github.io/mimirs-well/#design/horizon-glasses) | Archive only — source and feasibility pending |
+| 100 | [GRAIL-1 — Hemocompatibility Doctrine](https://raypeloquin.github.io/mimirs-well/#design/grail-1-hemocompatibility-doctrine) | Research record — retain with stated limits |
+| 101 | [Governed Acoustofluidic System](https://raypeloquin.github.io/mimirs-well/#design/governed-acoustofluidic-system) | Research record — retain with stated limits |
+| 102 | [Lung Mapper](https://raypeloquin.github.io/mimirs-well/#design/lung-mapper) | Research record — retain with stated limits |
+| 103 | [Horizon Glasses](https://raypeloquin.github.io/mimirs-well/#design/horizon-glasses) | Research record — retain with stated limits |
 | 104 | [Heart of Osiris](https://raypeloquin.github.io/mimirs-well/#design/heart-of-osiris) | Archive only — source and feasibility pending |
 | 105 | [Wi-Fi Sensing for Accessible Homes](https://raypeloquin.github.io/mimirs-well/#design/wi-fi-sensing-for-accessible-homes) | Archive only — source and feasibility pending |
 | 106 | [Child Safety Search Assist](https://raypeloquin.github.io/mimirs-well/#design/child-safety-search-assist) | Archive only — source and feasibility pending |
-| 107 | [WISH — Virtual-motion research](https://raypeloquin.github.io/mimirs-well/#design/wish-virtual-motion-research) | Archive only — source and feasibility pending |
+| 107 | [WISH — Virtual-motion research](https://raypeloquin.github.io/mimirs-well/#design/wish-virtual-motion-research) | Research record — retain with stated limits |
 | 108 | [MICRO HIPPO FABRIC](https://raypeloquin.github.io/mimirs-well/#design/micro-hippo-fabric) | Archive only — source and feasibility pending |
 | 109 | [HIPPO Stack](https://raypeloquin.github.io/mimirs-well/#design/hippo-stack) | Archive only — source and feasibility pending |
 | 110 | [HIPPO DRAGON](https://raypeloquin.github.io/mimirs-well/#design/hippo-dragon) | Archive only — source and feasibility pending |
