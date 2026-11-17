@@ -20,6 +20,13 @@ The registry currently contains 50 source-backed expanded records: Ghostglass, S
 - The visitor log is a separate GitHub issue. Comments do not change website records.
 - No full browser/device audit or independent rerun of every project’s research has been completed by this website-maintenance pass.
 
+
+## Navigation spot-check — 17 November 2026
+
+Live Chrome checks covered the default desktop viewport and requested 390 × 844 / 320 × 740 phone-sized viewports (usable widths 375 / 305 pixels with scrollbars). Search, the 50-record expanded filter, SKEPTIC-1 opening, source-link destination, Escape/Close, focus return, contained record scrolling and the visitor-log section/link were checked. No horizontal overflow or captured console errors were observed in those paths; the record dialog had no editing controls.
+
+Two observed issues were addressed: the empty-results message now mentions all filters and Reset filters; dropdowns now have a 44-pixel minimum height. This is a spot-check, not a complete accessibility, device, cross-browser or external-link audit.
+
 ## Open questions
 
 - LANTEX-24/LANTEX-PRO and Lanternfly Collector v0.2 are related material; exact version lineage remains unresolved. Archived design-review approval labels are not experimental validation.
@@ -32,7 +39,7 @@ The registry currently contains 50 source-backed expanded records: Ghostglass, S
 
 ## Suggested next brick
 
-Check catalog search, project links, record closing and guestbook navigation on desktop and phone-sized screens. Record observed problems before changing anything. Adventurer’s Forge and Mimir’s Well now have expanded records based on their public sources.
+Check a small batch of external source links and record missing files, redirects and access barriers. The desktop and phone-sized navigation spot-check is complete; see its scoped evidence above.
 
 After each batch, update this snapshot when its counts, status or proposed next step change. Check the actual source rather than treating an old snapshot as current.
 
