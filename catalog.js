@@ -21,7 +21,7 @@ groups.forEach(([category,status,titles])=>titles.split('\n').forEach(title=>{
  const note=document.createElement('p');
  note.textContent=status==='Illustrated concept'?'Recovered concept title. Supporting design and evidence review pending.':status==='Portfolio architecture'?'Listed in the October 2026 selected portfolio. Project documentation is being organized.':'Recovered from saved design material. Project summary and source references are being organized.';
  card.append(top,badge,heading,note);
- if(title.startsWith('Sister’s Hope')){const alias=document.createElement('small');alias.className='alias';alias.textContent='Former archive title: Mimir’s Well — Hand Restoration Glove.';card.append(alias)}
+ if(title.startsWith('Sister’s Hope')){note.textContent='A proposed assistive glove concept exploring support for hand movement and everyday tasks. Design review and testing are pending; clinical benefit has not been established.';const alias=document.createElement('small');alias.className='alias';alias.textContent='Former archive title: Mimir’s Well — Hand Restoration Glove.';card.append(alias)}
  if(title.startsWith('Mimir’s Well')){note.textContent='A research architecture for AI discovery, collaboration and traceable findings. Separate from the former glove project.'}
  grid.append(card);
 }));
