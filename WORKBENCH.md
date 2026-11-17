@@ -27,6 +27,27 @@ Live Chrome checks covered the default desktop viewport and requested 390 × 844
 
 Two observed issues were addressed: the empty-results message now mentions all filters and Reset filters; dropdowns now have a 44-pixel minimum height. This is a spot-check, not a complete accessibility, device, cross-browser or external-link audit.
 
+## External-source spot-check — 17 November 2026
+
+Twelve existing targets sampled; not a full-site link audit or scientific evidence review.
+
+| Target | Observation |
+| --- | --- |
+| Ghostglass public repository | Repository available and public |
+| Ghostglass README.md | File exists via GitHub |
+| Ghostglass experiment.py | File exists via GitHub |
+| Ghostglass test_protocol.py | File exists via GitHub |
+| Ghostglass results.json | File exists via GitHub |
+| Ghostglass test-record.txt | File exists via GitHub |
+| DOI 10.3390/s26144325 | HTTP 200 after redirect to MDPI |
+| White Rose eprint 243429 | HTTP 200 |
+| DOI 10.5281/zenodo.18631450 | HTTP 200 after redirect to Zenodo |
+| MIT manipulation force.html | HTTP 200 |
+| DOI 10.1126/sciadv.add1602 | Publisher returned HTTP 403; access barrier, not a confirmed missing paper |
+| PFLOTRAN Richards theory page | HTTP 200 |
+
+The Roman-concrete record retains its DOI and now also links PMC9821858. The alternative's article identity and DOI were confirmed through indexed PMC/PubMed records; direct automated retrieval encountered a challenge response. It is an alternative route, not a promise of unrestricted access. Repository-file existence and HTTP success do not establish scientific validity, complete content access or permanent availability.
+
 ## Open questions
 
 - LANTEX-24/LANTEX-PRO and Lanternfly Collector v0.2 are related material; exact version lineage remains unresolved. Archived design-review approval labels are not experimental validation.
@@ -39,7 +60,7 @@ Two observed issues were addressed: the empty-results message now mentions all f
 
 ## Suggested next brick
 
-Check a small batch of external source links and record missing files, redirects and access barriers. The desktop and phone-sized navigation spot-check is complete; see its scoped evidence above.
+Continue with a bounded source-link check for CRUCIBLE, ECHO-M and BRIDLE-3. Record missing files, redirects and access barriers separately from scientific evidence quality. The first 12-target spot-check is recorded above.
 
 After each batch, update this snapshot when its counts, status or proposed next step change. Check the actual source rather than treating an old snapshot as current.
 
