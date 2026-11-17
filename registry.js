@@ -55,9 +55,9 @@ if(base.sources){base.sources.split('\n').map(s=>s.trim()).filter(Boolean).forEa
 document.getElementById('record-permalink').href='#design/'+id;
 if(!dialog.open)dialog.showModal();dialog.scrollTop=0;document.getElementById('record-close').focus();
 if(route)window.history.pushState(null,'','#design/'+id);return true}
-function close(){dialog.close();if(location.hash.startsWith('#design/'))window.history.replaceState(null,'','#projects');if(returnFocus?.isConnected&&returnFocus!==document.body&&!dialog.contains(returnFocus))returnFocus.focus();else document.getElementById('search')?.focus()}
+function close(restoreFocus=true){dialog.close();if(location.hash.startsWith('#design/'))window.history.replaceState(null,'','#projects');if(restoreFocus){if(returnFocus?.isConnected&&returnFocus!==document.body&&!dialog.contains(returnFocus))returnFocus.focus();else document.getElementById('search')?.focus()}}
 document.getElementById('record-close').addEventListener('click',close);
 dialog.addEventListener('cancel',e=>{e.preventDefault();close()});
-function route(){if(location.hash.startsWith('#design/')){const id=location.hash.slice(8);if(records.has(id))open(id,false);else{if(dialog.open)close();announce('Project link not found. Search the catalog for its title.')}}else if(dialog.open)close()}
+function route(){if(location.hash.startsWith('#design/')){let id;try{id=decodeURIComponent(location.hash.slice(8))}catch(e){id=null}if(records.has(id)){announce('');open(id,false)}else{if(dialog.open)close(false);announce('Project link not found. Search the catalog for its title.')}}else{announce('');if(dialog.open)close(false)}}
 window.addEventListener('hashchange',route);route();
 })();
