@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AEGIS-TWIN v0.6: an early-stage bilateral protective exosleeve and artificial nervous-system research concept.">
+  <title>AEGIS-TWIN v0.6 — Mimir's Well</title>
+  <style>
+    :root{color-scheme:dark;--bg:#080f17;--panel:#101d25;--ink:#edf4ef;--muted:#acbbc0;--line:#29404a;--mint:#b5f5cf;--gold:#d9bc83}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,sans-serif}
+    a{color:var(--mint);text-underline-offset:5px}a:focus-visible{outline:3px solid var(--gold);outline-offset:5px}
+    .wrap{max-width:1160px;margin:auto;padding:0 6%}header{border-bottom:1px solid var(--line)}
+    nav{min-height:86px;display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+    nav .brand{font:25px Georgia,serif;color:var(--ink);text-decoration:none}nav .brand span{color:var(--mint)}
+    nav .back{font-size:13px;letter-spacing:.05em}
+    .eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--mint)}
+    .hero{padding:78px 0 52px}.hero h1{font:clamp(48px,8vw,92px)/1 Georgia,serif;letter-spacing:-.04em;margin:18px 0}
+    .hero h1 em{font-weight:normal;color:var(--mint)}.lead{font-size:clamp(20px,2.6vw,29px);max-width:860px;margin:20px 0}
+    .muted{color:var(--muted)}.status{display:inline-block;border:1px solid var(--gold);color:var(--gold);padding:7px 12px;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+    figure{margin:0 0 30px;border:1px solid var(--line);background:var(--panel)}
+    figure img{display:block;width:100%;height:auto}figcaption{padding:12px 18px;color:var(--muted);font-size:13px}
+    section{padding:34px 0 55px}h2{font:clamp(32px,4vw,46px)/1.2 Georgia,serif;margin:8px 0 20px}
+    h3{font:25px Georgia,serif;margin:8px 0 12px}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+    .panel{border:1px solid var(--line);padding:28px;background:linear-gradient(145deg,#18303877,transparent)}
+    .panel p{color:var(--muted);margin:0}.panel .eyebrow{margin-bottom:12px}
+    .note{border-left:3px solid var(--gold);padding:14px 0 14px 22px;margin:30px 0;color:var(--muted)}
+    .note strong{color:var(--ink)}.cta{display:inline-block;background:var(--mint);color:#081711;padding:12px 20px;text-decoration:none;font-weight:700}
+    .small{font-size:13px;color:var(--muted)}footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:12px}
+    @media(max-width:760px){.split{grid-template-columns:1fr}.hero{padding-top:52px}section{padding:25px 0 42px}}
+  </style>
+</head>
+<body>
+<header><div class="wrap"><nav><a class="brand" href="./"><span>◉</span> Mimir’s Well</a><a class="back" href="./#projects">← Back to the collection</a></nav></div></header>
+<main class="wrap">
+  <div class="hero">
+    <div class="eyebrow">The Synthetic Court · Human augmentation and restoration research</div>
+    <h1>AEGIS-TWIN <em>v0.6</em></h1>
+    <p class="lead">The arms are only half the story.</p>
+    <p class="muted">Imagine sliding your own arms into a synthetic exoskeleton intended to protect them, assist their movement, and respond to your intentions. Then give that machine an artificial nervous system.</p>
+    <p><span class="status">Stage-0 design concept · Not for human use</span></p>
+  </div>
+  <figure>
+    <img src="assets/aegis-twin-v06-exterior.webp" width="1536" height="1024" alt="Concept rendering of a person wearing two segmented protective robotic arm sleeves, attached to a torso and pelvic support harness." fetchpriority="high">
+    <figcaption>External concept view. Organic arms remain inside the powered protective sleeves; shown geometry and protection have not been validated.</figcaption>
+  </figure>
+  <section aria-labelledby="two-uses"><div class="eyebrow">One for lovin’. One for livin’.</div><h2 id="two-uses">Gentle touch. Useful strength.</h2>
+    <div class="split">
+      <article class="panel"><div class="eyebrow">01 / AUGMENT</div><h3>Slide-in protective exosleeves</h3><p>For wearers with intact arms: a proposed hybrid of segmented exterior shells, soft sensor interfaces, self-aligning joints, bounded powered assistance, and independent mechanical release.</p></article>
+      <article class="panel"><div class="eyebrow">02 / RESTORE</div><h3>Adapt to the connection already there</h3><p>For people with missing or damaged limbs: a separate, individualized physical interface is envisioned. Future work would investigate pre-existing biological nerve–muscle pathways, including AMI-type connections of the kind Dave has discussed. No specific compatibility is established or promised.</p></article>
+    </div>
+  </section>
+  <section aria-labelledby="sense"><div class="eyebrow">Proposed sensory architecture</div><h2 id="sense">The artificial nervous system</h2>
+    <p class="muted">A proposed CHROMATASKIN sensor layer would detect contact and slipping; joint sensors would track device position; noninvasive muscle and movement sensing would help infer wearer intent. Calibrated skin-level feedback is an early research route. Implanted nerve interfaces are a distinct, optional clinical research path—not a requirement for the standard slide-in system.</p>
+    <figure>
+      <img src="assets/aegis-twin-v06-cutaway.webp" width="1536" height="1024" loading="lazy" alt="Cutaway concept artwork of one exosleeve, showing an intact human arm inside a protective clamshell with a sensor liner, surface electrodes, a floating elbow joint, and a mechanical release.">
+      <figcaption>Illustrative cutaway. The labeled components, wiring, and anatomical fit are concept art—not dimensioned CAD, tested circuitry, or a clinical neural interface.</figcaption>
+    </figure>
+    <div class="note"><strong>Safety before strength.</strong> Each arm must be independently releasable without battery power. Joint misalignment, tissue pressure, heat, unintended motion, and entrapment are open design hazards, not solved problems.</div>
+  </section>
+  <section aria-labelledby="status"><div class="eyebrow">What exists today</div><h2 id="status">A direction, not a finished device.</h2>
+    <p class="muted">The current v0.6 package is a design brief and visual concept. No validated hardware, protective rating, strength measurement, natural sensory restoration, universal fit, or clinical result is claimed. The next proposed gates are CAD and digital anthropometric analysis, followed by instrumented tests on nonhuman phantoms with explicit failure criteria. Human studies would require independent professional and regulatory review.</p>
+    <p class="small">Concept direction: Mr. Peloquin and Asteris Solenne. Technical challenge and review informed by the Synthetic Court, including Claude, Gemini, Grok and Meta AI. AI-assisted critique is not independent validation.</p>
+    <p><a class="cta" href="./#projects">Return to the Well</a></p>
+  </section>
+</main>
+<footer><div class="wrap">Mimir’s Well · Where the source gathers. <strong>We do no harm.</strong></div></footer>
+</body>
+</html>

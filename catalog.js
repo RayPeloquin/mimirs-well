@@ -10,7 +10,18 @@ const stage=document.createElement('span');stage.className='stage';stage.textCon
 const h=document.createElement('h3');h.textContent='Third-Look';
 const p=document.createElement('p');p.textContent='Three-camera wound-imaging handpiece research. Explore the design, development record and limitations.';
 const a=document.createElement('a');a.href='https://github.com/RayPeloquin/Third-Look-Three-Camera';a.textContent='Open project repository ↗';third.append(top,stage,h,p,a);grid.append(third);
-let number=11;
+// AEGIS-TWIN v0.6 has a public overview, but its safety and human-interface work is still conceptual.
+const aegis=document.createElement('article');aegis.className='card';aegis.dataset.category='robotics';aegis.dataset.stage='repository';
+const aegisTop=document.createElement('div');aegisTop.className='cardtop';
+const aegisIndex=document.createElement('span');aegisIndex.className='index';aegisIndex.textContent='11 /';
+const aegisTag=document.createElement('span');aegisTag.className='tag';aegisTag.textContent='Robotics & field systems';
+aegisTop.append(aegisIndex,aegisTag);
+const aegisStage=document.createElement('span');aegisStage.className='stage';aegisStage.textContent='Public concept overview';
+const aegisHeading=document.createElement('h3');aegisHeading.textContent='AEGIS-TWIN v0.6';
+const aegisNote=document.createElement('p');aegisNote.textContent='Hybrid protective exosleeves and an artificial nervous-system research concept. Intact-arm augmentation and separate limb-restoration interfaces; no human-use validation.';
+const aegisLink=document.createElement('a');aegisLink.href='aegis-twin.html';aegisLink.textContent='See the concept and cutaway ↗';
+aegis.append(aegisTop,aegisStage,aegisHeading,aegisNote,aegisLink);grid.append(aegis);
+let number=12;
 groups.forEach(([category,status,titles])=>titles.split('\n').forEach(title=>{
  const card=document.createElement('article');card.className='card';card.dataset.category=category;card.dataset.stage=status==='Illustrated concept'?'concept':'documented';
  const top=document.createElement('div');top.className='cardtop';
