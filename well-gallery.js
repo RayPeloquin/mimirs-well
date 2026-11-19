@@ -3,6 +3,12 @@
   'use strict';
   const illustrations = [
     {
+      id: 'veil-e-edison-01',
+      src: 'assets/veil-e-edison-01-quiet-receiver-poster.webp',
+      alt: 'VEIL-E / EDISON-01 The Quiet Receiver concept poster showing an enclosed sensor instrument, fusion display, calibration channels, and rules for evaluating residual signals.',
+      caption: 'VEIL-E / EDISON-01 · Historical concept poster; proposed residual-detection apparatus only. No built receiver, validated anomaly, communication or source identity.',
+    },
+    {
       id: 'triple-nitinol-spine',
       src: 'assets/triple-nitinol-spine-concept.webp',
       alt: 'Triple-Nitinol Spine research concept with three parallel curved nickel-titanium flexure rods supported by machined spacer collars and precision mounting hardware.',
