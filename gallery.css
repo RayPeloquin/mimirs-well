@@ -1,0 +1,6 @@
+/* Lightweight concept-art panels for illustrated design entries. */
+.card .concept-art{margin:0 0 22px;border:1px solid var(--line);background:#09141c;overflow:hidden}
+.card .concept-art a{display:block;margin:0;line-height:0}
+.card .concept-art img{display:block;width:100%;height:auto;aspect-ratio:3 / 2;object-fit:contain;background:#09141c}
+.card .concept-art figcaption{font-size:11px;line-height:1.5;color:var(--muted);padding:10px 12px}
+.card .concept-art a:focus-visible{outline-offset:-3px}
