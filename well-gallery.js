@@ -14,6 +14,18 @@
       alt: 'HIPPO-MAG-01 governed magnetic-compensation tabletop experiment concept with copper coils, sensors and a control box.',
       caption: 'HIPPO-MAG-01 · AI-generated concept render; hardware untested.',
     },
+    {
+      id: 'skeptic-1',
+      src: 'assets/skeptic-1-probe-bench.webp',
+      alt: 'SKEPTIC-1 concept bench illustration with three sliding masses, four springs, a detachable stiffness probe and optical sensors.',
+      caption: 'SKEPTIC-1 · AI-generated concept illustration; instrument not built or validated.',
+    },
+    {
+      id: 'aegis-twin-v0-6',
+      src: 'assets/aegis-twin-v06-exterior.webp',
+      alt: 'AEGIS-TWIN bilateral protective exosleeve concept shown worn over both intact arms.',
+      caption: 'AEGIS-TWIN v0.6 · AI-generated concept render; not tested on humans.',
+    },
   ];
   illustrations.forEach(({ id, src, alt, caption }) => {
     const card = document.querySelector(`.card[data-record-id="${id}"]`);

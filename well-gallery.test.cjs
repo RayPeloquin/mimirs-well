@@ -35,15 +35,19 @@ function createFixture(ids) {
   return { render, figures };
 }
 
-test('exactly two matching design cards receive labeled, clickable concept artwork', () => {
+test('four matching design cards receive labeled, clickable concept artwork', () => {
   const fieldId = 'field-medic-guided-hand-support';
   const hippoId = 'hippo-mag-01-magnetic-compensation-experiment';
+  const skepticId = 'skeptic-1';
+  const aegisId = 'aegis-twin-v0-6';
   const otherId = 'sisters-hope-hand-restoration-gloves';
-  const app = createFixture([fieldId, hippoId, otherId]);
+  const app = createFixture([fieldId, hippoId, skepticId, aegisId, otherId]);
   app.render();
   for (const [id, filename, name] of [
     [fieldId, 'field-medic-assistive-backpack.webp', 'FIELD MEDIC'],
     [hippoId, 'hippo-mag-01-tabletop.webp', 'HIPPO-MAG-01'],
+    [skepticId, 'skeptic-1-probe-bench.webp', 'SKEPTIC-1'],
+    [aegisId, 'aegis-twin-v06-exterior.webp', 'AEGIS-TWIN'],
   ]) {
     assert.equal(app.figures(id).length, 1, id + ' should have exactly one image');
     const figure = app.figures(id)[0];
@@ -54,6 +58,8 @@ test('exactly two matching design cards receive labeled, clickable concept artwo
     assert.match(image.alt, new RegExp(name));
     assert.equal(image.loading, 'lazy');
     assert.match(caption.textContent, /concept|illustration|untested/i);
+    const localAsset = filename.startsWith('aegis-') ? path.join(__dirname, 'web_assets', filename) : path.join(__dirname, 'assets', filename);
+    assert.ok(existsSync(localAsset), `${filename} must have a matching image asset`);
   }
   assert.equal(app.figures(otherId).length, 0, 'unrelated designs remain untouched');
 });
