@@ -39,6 +39,12 @@
       caption: 'SKEPTIC-1 · AI-generated concept illustration; instrument not built or validated.',
     },
     {
+      id: 'skeptic-1',
+      src: 'assets/skeptic-1-probe-frequency-poster.webp',
+      alt: 'Corrected SKEPTIC-1 concept poster: three sliding masses, spring-coupled test hardware and a removable probe, comparing ideal modeled frequencies of 11.4314 Hz before the probe and 12.7509 Hz or 12.3489 Hz with the probe.',
+      caption: 'SKEPTIC-1 · Supplied corrected probe-frequency poster; ideal-model values are illustrative, not measured; hardware unbuilt.',
+    },
+    {
       id: 'aegis-twin-v0-6',
       src: 'assets/aegis-twin-v06-exterior.webp',
       alt: 'AEGIS-TWIN bilateral protective exosleeve concept shown worn over both intact arms.',
