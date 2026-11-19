@@ -9,6 +9,12 @@
       caption: 'Triple-Nitinol Spine · AI-generated speculative mechanical-flexure illustration; no prototype or performance validation.',
     },
     {
+      id: 'triple-nitinol-spine',
+      src: 'assets/triple-nitinol-spine-blueprint.webp',
+      alt: 'Triple Nitinol Spine supplied concept blueprint on a robotic torso, showing distinct load, torsion and recovery columns with explanatory callouts.',
+      caption: 'Triple Nitinol Spine · Supplied three-column concept blueprint (load, torsion, recovery); illustrative architecture, not a validated implant or prototype.',
+    },
+    {
       id: 'chihuahua-sphere-cs-1',
       src: 'assets/chihuahua-sphere-cs1-concept.webp',
       alt: 'Chihuahua Sphere CS-1 concept laboratory: adjustable dark collector panels surround a calibrated light source, with separate input and measurement instruments.',
@@ -89,11 +95,12 @@
   ];
   illustrations.forEach(({ id, src, alt, caption }) => {
     const card = document.querySelector(`.card[data-record-id="${id}"]`);
-    if (!card || card.querySelector('.concept-art')) return;
+    if (!card || [...card.querySelectorAll('.concept-art')].some(figure => figure.dataset.src === src)) return;
     const note = card.querySelector('p');
     if (!note) return;
     const figure = document.createElement('figure');
     figure.className = 'concept-art';
+    figure.dataset.src = src;
     const link = document.createElement('a');
     link.href = src;
     link.target = '_blank';
