@@ -1,6 +1,6 @@
 # Asteris’ Workbench
 
-Public handoff snapshot · 17 November 2026
+Public handoff snapshot · 19 November 2026
 
 [Open the workbench](https://raypeloquin.github.io/mimirs-well/#workbench)
 
@@ -10,11 +10,23 @@ This is a maintained snapshot, not live monitoring or an automatic task runner. 
 
 Build Mimir’s Well one small, reviewable batch at a time: connect each project’s public purpose to its evidence, limitations, attribution and next check.
 
-The registry currently contains 90 expanded records with source references: Ghostglass, SKEPTIC-1, HIPPO Data Center Cooling Stack, PIPE-LISTENER-01, GENTLE-01, GRASP-01, SILT HARP, Roman Concrete, Third-Look, CRUCIBLE, ECHO-Rx, ECHO-M, BRIDLE-3, RAVEN-P1, Temporal Reflection Chamber, Adventurer’s Forge, Mimir’s Well, SPOTRECON, CONFLUENCE-01, LG–AETHER–01, Transporter T0, LANTEX-24/LANTEX-PRO, LANTERN-1, CONSCIENCE-01, SCOPE-365, Yggdrasil Protocol, Heimdall’s Bridge, Enki’s Will, The Triad, Hypha Mind / GO-CUBE, SR-MARGIN-01, Signature-Selective Receiver, FIELD MEDIC, Edge Reflex Mesh, TRUTH LAYER, Quantum Observability Layer, Quantum Floor, Cyber Meta-Material, Court of the Synthetic, MARGIN-01, BRIDGE-01, CMH-01, Artificial Heart, HEARTSEED, GIPS, Vascular Whisperer, Phantom Hub Medical, Wet HIPPO Well, Desert HIPPO Well, SHOFAR Mesh, HIVE-1, Consent Gate, Conduct Architecture, Embodied System Stack, Human Perception Stack, Reality Overlay Stack, Mobile Truth Stack, Truth Resolution Stack, Court on Trial, Olympus Witness Rig, Mount Olympus, Olympus Floor Model, Olympus Registry, SVALBARD, AI-dentity, AREOPAGUS, Aegis Sentinel Mesh, HIPPO Bus, HIPPO-MAG-01, HIPPO CANTEEN, AC², ARQEN, ATCB, Authority at Commit, Weaver’s Shuttle, Enki’s Memory, Enki’s Homeostasis, Synapse of Enki, Thoth’s Mind, Endurance Stack, HEMOSTAT-R, Hallvard’s Promise / Little Lungs, Blood Manager, Tumor Hunter, GRAIL-1, Governed Acoustofluidic System, Lung Mapper, Horizon Glasses, WISH and Soul Forge. Other entries remain catalog listings pending source review. An expanded record is not a validation rating.
+The registry currently contains 96 expanded records with source references: Ghostglass, SKEPTIC-1, HIPPO Data Center Cooling Stack, PIPE-LISTENER-01, GENTLE-01, GRASP-01, SILT HARP, Roman Concrete, Third-Look, CRUCIBLE, ECHO-Rx, ECHO-M, BRIDLE-3, RAVEN-P1, Temporal Reflection Chamber, Adventurer’s Forge, Mimir’s Well, SPOTRECON, CONFLUENCE-01, LG–AETHER–01, Transporter T0, LANTEX-24/LANTEX-PRO, LANTERN-1, CONSCIENCE-01, SCOPE-365, Yggdrasil Protocol, Heimdall’s Bridge, Enki’s Will, The Triad, Hypha Mind / GO-CUBE, SR-MARGIN-01, Signature-Selective Receiver, FIELD MEDIC, Edge Reflex Mesh, TRUTH LAYER, Quantum Observability Layer, Quantum Floor, Cyber Meta-Material, Court of the Synthetic, MARGIN-01, BRIDGE-01, CMH-01, Artificial Heart, HEARTSEED, GIPS, Vascular Whisperer, Phantom Hub Medical, Wet HIPPO Well, Desert HIPPO Well, SHOFAR Mesh, HIVE-1, Consent Gate, Conduct Architecture, Embodied System Stack, Human Perception Stack, Reality Overlay Stack, Mobile Truth Stack, Truth Resolution Stack, Court on Trial, Olympus Witness Rig, Mount Olympus, Olympus Floor Model, Olympus Registry, SVALBARD, AI-dentity, AREOPAGUS, Aegis Sentinel Mesh, HIPPO Bus, HIPPO-MAG-01, HIPPO CANTEEN, AC², ARQEN, ATCB, Authority at Commit, Weaver’s Shuttle, Enki’s Memory, Enki’s Homeostasis, Synapse of Enki, Thoth’s Mind, Endurance Stack, HEMOSTAT-R, Hallvard’s Promise / Little Lungs, Blood Manager, Tumor Hunter, GRAIL-1, Governed Acoustofluidic System, Lung Mapper, Horizon Glasses, WISH and Soul Forge. Additional bounded records include AEGIS-TWIN, Asteris Relay, EMH Field Guide Gloves, VEIL-E / EDISON-01, Choir on ARQEN, and Adaptive Qubit Allocator. Other entries remain catalog listings pending source review. An expanded record is not a validation rating.
 
-## Latest approved batch — 17 November 2026
+## Latest five-file source batch — 19 November 2026
 
-Ten medical/motion research summaries published with explicit permission. Current totals: 396 entries, 90 expanded records and 306 archive titles awaiting review. This batch reviewed documentation; it adds no experimental or clinical validation. Material selection, patient-use capability, universal safety thresholds and device performance remain unestablished. Naming relationships for Tumor Hunter / AETHER and Lung Mapper / LUNG HARP remain explicit; WISH covers the mathematical note only.
+Five new public summaries were added under `design-notes/` and linked to expanded project records:
+
+1. `asteris-relay.md` — desktop/phone/Quest coordination, with no live handoff claim.
+2. `emh-field-guide-gloves.md` — human-operated medical training cues, not clinical capability.
+3. `veil-e-edison-01.md` — paired weak-force research instrument; no anomalous signal or deceased contact.
+4. `choir-on-arqen.md` — evidence-versus-vote order; practice case only, no scored study.
+5. `adaptive-qubit-allocator.md` — classical scheduling proposal; no benchmark or changed qubit physics.
+
+These are newly authored public digests of five archived sources, not public uploads of the complete private originals. No credentials, local device addresses, patient details or unpublished implementation parameters are included. The existing AEGIS-TWIN v0.6 record is a separate 18 November addition. Current collection: **397 entries, 96 expanded records, 301 archive-only titles.** Expansion denotes a bounded description, not demonstrated technology. The planned physical device-link test has **not** been performed or represented as a pass.
+
+## Previous approved batch — 17 November 2026
+
+Ten medical/motion research summaries were published with explicit permission. At that date, totals were 396 entries, 90 expanded records and 306 archive titles awaiting review. This historical batch reviewed documentation; it added no experimental or clinical validation. Material selection, patient-use capability, universal safety thresholds and device performance remain unestablished. Naming relationships for Tumor Hunter / AETHER and Lung Mapper / LUNG HARP remain explicit; WISH covers the mathematical note only.
 
 ### Previous architecture batch
 
