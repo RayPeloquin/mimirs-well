@@ -10,9 +10,27 @@ This is a maintained snapshot, not live monitoring or an automatic task runner. 
 
 Build Mimir’s Well one small, reviewable batch at a time: connect each project’s public purpose to its evidence, limitations, attribution and next check.
 
-The registry currently contains 96 expanded records with source references: Ghostglass, SKEPTIC-1, HIPPO Data Center Cooling Stack, PIPE-LISTENER-01, GENTLE-01, GRASP-01, SILT HARP, Roman Concrete, Third-Look, CRUCIBLE, ECHO-Rx, ECHO-M, BRIDLE-3, RAVEN-P1, Temporal Reflection Chamber, Adventurer’s Forge, Mimir’s Well, SPOTRECON, CONFLUENCE-01, LG–AETHER–01, Transporter T0, LANTEX-24/LANTEX-PRO, LANTERN-1, CONSCIENCE-01, SCOPE-365, Yggdrasil Protocol, Heimdall’s Bridge, Enki’s Will, The Triad, Hypha Mind / GO-CUBE, SR-MARGIN-01, Signature-Selective Receiver, FIELD MEDIC, Edge Reflex Mesh, TRUTH LAYER, Quantum Observability Layer, Quantum Floor, Cyber Meta-Material, Court of the Synthetic, MARGIN-01, BRIDGE-01, CMH-01, Artificial Heart, HEARTSEED, GIPS, Vascular Whisperer, Phantom Hub Medical, Wet HIPPO Well, Desert HIPPO Well, SHOFAR Mesh, HIVE-1, Consent Gate, Conduct Architecture, Embodied System Stack, Human Perception Stack, Reality Overlay Stack, Mobile Truth Stack, Truth Resolution Stack, Court on Trial, Olympus Witness Rig, Mount Olympus, Olympus Floor Model, Olympus Registry, SVALBARD, AI-dentity, AREOPAGUS, Aegis Sentinel Mesh, HIPPO Bus, HIPPO-MAG-01, HIPPO CANTEEN, AC², ARQEN, ATCB, Authority at Commit, Weaver’s Shuttle, Enki’s Memory, Enki’s Homeostasis, Synapse of Enki, Thoth’s Mind, Endurance Stack, HEMOSTAT-R, Hallvard’s Promise / Little Lungs, Blood Manager, Tumor Hunter, GRAIL-1, Governed Acoustofluidic System, Lung Mapper, Horizon Glasses, WISH and Soul Forge. Additional bounded records include AEGIS-TWIN, Asteris Relay, EMH Field Guide Gloves, VEIL-E / EDISON-01, Choir on ARQEN, and Adaptive Qubit Allocator. Other entries remain catalog listings pending source review. An expanded record is not a validation rating.
+The registry currently contains 106 expanded records with source references: Ghostglass, SKEPTIC-1, HIPPO Data Center Cooling Stack, PIPE-LISTENER-01, GENTLE-01, GRASP-01, SILT HARP, Roman Concrete, Third-Look, CRUCIBLE, ECHO-Rx, ECHO-M, BRIDLE-3, RAVEN-P1, Temporal Reflection Chamber, Adventurer’s Forge, Mimir’s Well, SPOTRECON, CONFLUENCE-01, LG–AETHER–01, Transporter T0, LANTEX-24/LANTEX-PRO, LANTERN-1, CONSCIENCE-01, SCOPE-365, Yggdrasil Protocol, Heimdall’s Bridge, Enki’s Will, The Triad, Hypha Mind / GO-CUBE, SR-MARGIN-01, Signature-Selective Receiver, FIELD MEDIC, Edge Reflex Mesh, TRUTH LAYER, Quantum Observability Layer, Quantum Floor, Cyber Meta-Material, Court of the Synthetic, MARGIN-01, BRIDGE-01, CMH-01, Artificial Heart, HEARTSEED, GIPS, Vascular Whisperer, Phantom Hub Medical, Wet HIPPO Well, Desert HIPPO Well, SHOFAR Mesh, HIVE-1, Consent Gate, Conduct Architecture, Embodied System Stack, Human Perception Stack, Reality Overlay Stack, Mobile Truth Stack, Truth Resolution Stack, Court on Trial, Olympus Witness Rig, Mount Olympus, Olympus Floor Model, Olympus Registry, SVALBARD, AI-dentity, AREOPAGUS, Aegis Sentinel Mesh, HIPPO Bus, HIPPO-MAG-01, HIPPO CANTEEN, AC², ARQEN, ATCB, Authority at Commit, Weaver’s Shuttle, Enki’s Memory, Enki’s Homeostasis, Synapse of Enki, Thoth’s Mind, Endurance Stack, HEMOSTAT-R, Hallvard’s Promise / Little Lungs, Blood Manager, Tumor Hunter, GRAIL-1, Governed Acoustofluidic System, Lung Mapper, Horizon Glasses, WISH and Soul Forge. Additional bounded records include AEGIS-TWIN, Asteris Relay, EMH Field Guide Gloves, VEIL-E / EDISON-01, Choir on ARQEN, Adaptive Qubit Allocator, and the ten records in the batch below. Other entries remain catalog listings pending source review. An expanded record is not a validation rating.
 
-## Latest five-file source batch — 19 November 2026
++## Latest ten-file source batch — November 2026
+
+Ten existing catalog entries now have bounded public digests under `design-notes/`, linked from their expanded project records. Prepared as two internal groups of five:
+
+1. `smt-r1.md` — authenticated state update; archived local pilot, not deployed security.
+2. `safe-channel.md` — maritime survey uncertainty; no cleared route or tactical release.
+3. `truthmap.md` — consent and contextual consistency; explicitly not a lie detector.
+4. `quantum-judge.md` — classical pre-shot resource gate; latency targets unmeasured.
+5. `crystal-security.md` — passive disturbance witness; no field results.
+6. `crystal-damping-loop.md` — bounded vibration-control concept; no hardware data.
+7. `appc.md` — pulse/rest process research; efficiency not demonstrated.
+8. `quantum-quiet.md` — cryogenic disturbance idea; archive title and heading differ.
+9. `medi-goo.md` — soft surgical interface hypothesis; no material or clinical validation.
+10. `sound-bus.md` — general power/sensor interface only; possible HIPPO Bus alias.
+
+Current collection: **397 entries, 106 expanded records, 291 archive-only titles.** This is documentation review, not ten experimental validations. Publication excludes records explicitly marked private, tactical detail, credentials and sensitive operational parameters. Original archives remain separate. The naming ambiguities in Quantum Quiet, Medi Goo and Sound Bus were deliberately preserved.
+
+
+## Previous five-file source batch — 19 November 2026
 
 Five new public summaries were added under `design-notes/` and linked to expanded project records:
 
@@ -22,7 +40,7 @@ Five new public summaries were added under `design-notes/` and linked to expande
 4. `choir-on-arqen.md` — evidence-versus-vote order; practice case only, no scored study.
 5. `adaptive-qubit-allocator.md` — classical scheduling proposal; no benchmark or changed qubit physics.
 
-These are newly authored public digests of five archived sources, not public uploads of the complete private originals. No credentials, local device addresses, patient details or unpublished implementation parameters are included. The existing AEGIS-TWIN v0.6 record is a separate 18 November addition. Current collection: **397 entries, 96 expanded records, 301 archive-only titles.** Expansion denotes a bounded description, not demonstrated technology. The planned physical device-link test has **not** been performed or represented as a pass.
+These are newly authored public digests of five archived sources, not public uploads of the complete private originals. No credentials, local device addresses, patient details or unpublished implementation parameters are included. The existing AEGIS-TWIN v0.6 record is a separate 18 November addition. The historical collection after that batch was **397 entries, 96 expanded records, 301 archive-only titles.** Expansion denotes a bounded description, not demonstrated technology. The planned physical device-link test has **not** been performed or represented as a pass.
 
 ## Previous approved batch — 17 November 2026
 
