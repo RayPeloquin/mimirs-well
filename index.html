@@ -22,6 +22,44 @@
   background-repeat:no-repeat;
 }
 @media(max-width:800px){.hero::before{background-position:center,center,68% center;inset:-8px calc(50% - 50vw) -24px}}
+/* Public design illustrations become quiet exhibits behind their own sections. */
+#projects,#hippo,#workbench{position:relative;isolation:isolate}
+#projects::before,#hippo::before,#workbench::before{
+  content:"";position:absolute;right:-4%;z-index:-1;pointer-events:none;
+  background-size:cover;background-repeat:no-repeat;
+  -webkit-mask-image:radial-gradient(ellipse at 62% 46%,#000 10%,transparent 77%);
+  mask-image:radial-gradient(ellipse at 62% 46%,#000 10%,transparent 77%);
+}
+#projects::before{
+  top:16px;width:min(680px,66%);height:590px;opacity:.38;
+  background-image:
+    linear-gradient(90deg,rgba(8,15,23,.84),rgba(8,15,23,.18) 55%,rgba(8,15,23,.60)),
+    url("assets/aegis-twin-v06-exterior.webp");
+  background-position:center,center 42%;
+}
+#hippo::before{
+  top:14px;width:min(570px,63%);height:calc(100% - 28px);opacity:.40;
+  background-image:
+    linear-gradient(90deg,rgba(8,15,23,.86),rgba(8,15,23,.16) 62%,rgba(8,15,23,.42)),
+    url("assets/hippo-mag-01-tabletop.webp");
+  background-position:center,center 54%;
+}
+#workbench::before{
+  top:25px;width:min(680px,70%);height:670px;opacity:.30;
+  background-image:
+    linear-gradient(90deg,rgba(8,15,23,.92),rgba(8,15,23,.34) 60%,rgba(8,15,23,.58)),
+    url("assets/field-medic-assistive-backpack.webp");
+  background-position:center,center 45%;
+}
+@media(max-width:800px){
+  #projects::before,#hippo::before,#workbench::before{
+    right:-4%;width:84%;max-height:400px;opacity:.15;
+    background-position:center,center;
+  }
+}
+@media(max-width:520px){
+  #projects::before,#hippo::before,#workbench::before{right:0;width:100%;max-height:290px;opacity:.11}
+}
 </style><link rel="stylesheet" href="gallery.css"></head><body><a class="skip-link" href="#main-content">Skip to main content</a><header><nav class="wrap" aria-label="Main navigation"><a class="brand" href="#"><span>✳</span>Mimir’s Well</a><div class="links"><a href="#projects">THE WORK</a><a href="#workbench">WORKBENCH</a><a href="#hippo">HIPPO</a><a href="#court">THE COURT</a><a href="#visitor-log">VISITOR LOG</a><a href="https://github.com/RayPeloquin">GITHUB ↗</a></div></nav></header>
 <main id="main-content" tabindex="-1"><div class="wrap"><div class="hero"><div><div class="eyebrow">Independent research · Human + AI collaboration</div><h1>Where ideas<br>find their<br><em>next form.</em></h1><p class="intro">Research proposals, computational studies, review methods and creative work from Mr. Peloquin and the Synthetic Court. A place to gather the work—and keep building.</p><a class="button" href="#projects">Explore the work ↗</a><a class="button quiet" href="#court">Meet the Court</a></div><div class="orb"><svg viewBox="0 0 500 500" role="img" aria-label="An observatory of connected ideas, shown as concentric orbits and stars"><defs><radialGradient id="glow"><stop stop-color="#b5f5cf" stop-opacity=".4"/><stop offset="1" stop-color="#b5f5cf" stop-opacity="0"/></radialGradient></defs><circle cx="250" cy="240" r="170" fill="url(#glow)"/><g fill="none" stroke="#668f84" stroke-width=".7"><circle cx="250" cy="240" r="180"/><circle cx="250" cy="240" r="145" stroke-dasharray="2 9"/><circle cx="250" cy="240" r="108"/><ellipse cx="250" cy="240" rx="180" ry="60" transform="rotate(-35 250 240)"/><ellipse cx="250" cy="240" rx="180" ry="60" transform="rotate(35 250 240)"/><path d="M70 240h360M250 60v360" stroke-dasharray="3 12"/></g><g fill="#b5f5cf"><circle cx="250" cy="240" r="8"/><circle cx="104" cy="134" r="4"/><circle cx="399" cy="341" r="5"/><circle cx="346" cy="190" r="4"/><circle cx="177" cy="319" r="3"/><circle cx="250" cy="60" r="4"/><circle cx="80" cy="300" r="2"/><circle cx="411" cy="148" r="2"/></g><g fill="#d9bc83" font-family="monospace" font-size="9" letter-spacing="2"><text x="20" y="118">INQUIRY</text><text x="359" y="375">INVENTION</text><text x="267" y="48">EVIDENCE</text><text x="268" y="244">THE WELL</text></g></svg></div></div>
 <div class="strip"><span><strong>01</strong> &nbsp; Gather the ideas</span><span><strong>02</strong> &nbsp; Question the assumptions</span><span><strong>03</strong> &nbsp; Follow the evidence</span><span><strong>Our commitment:</strong> We do no harm.</span></div>
