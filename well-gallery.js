@@ -3,6 +3,12 @@
   'use strict';
   const illustrations = [
     {
+      id: 'triple-nitinol-spine',
+      src: 'assets/triple-nitinol-spine-concept.webp',
+      alt: 'Triple-Nitinol Spine research concept with three parallel curved nickel-titanium flexure rods supported by machined spacer collars and precision mounting hardware.',
+      caption: 'Triple-Nitinol Spine · AI-generated speculative mechanical-flexure illustration; no prototype or performance validation.',
+    },
+    {
       id: 'chihuahua-sphere-cs-1',
       src: 'assets/chihuahua-sphere-cs1-concept.webp',
       alt: 'Chihuahua Sphere CS-1 concept laboratory: adjustable dark collector panels surround a calibrated light source, with separate input and measurement instruments.',
