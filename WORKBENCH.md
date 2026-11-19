@@ -10,9 +10,26 @@ This is a maintained snapshot, not live monitoring or an automatic task runner. 
 
 Build Mimir’s Well one small, reviewable batch at a time: connect each project’s public purpose to its evidence, limitations, attribution and next check.
 
-The registry currently contains 116 expanded records with source references: Ghostglass, SKEPTIC-1, HIPPO Data Center Cooling Stack, PIPE-LISTENER-01, GENTLE-01, GRASP-01, SILT HARP, Roman Concrete, Third-Look, CRUCIBLE, ECHO-Rx, ECHO-M, BRIDLE-3, RAVEN-P1, Temporal Reflection Chamber, Adventurer’s Forge, Mimir’s Well, SPOTRECON, CONFLUENCE-01, LG–AETHER–01, Transporter T0, LANTEX-24/LANTEX-PRO, LANTERN-1, CONSCIENCE-01, SCOPE-365, Yggdrasil Protocol, Heimdall’s Bridge, Enki’s Will, The Triad, Hypha Mind / GO-CUBE, SR-MARGIN-01, Signature-Selective Receiver, FIELD MEDIC, Edge Reflex Mesh, TRUTH LAYER, Quantum Observability Layer, Quantum Floor, Cyber Meta-Material, Court of the Synthetic, MARGIN-01, BRIDGE-01, CMH-01, Artificial Heart, HEARTSEED, GIPS, Vascular Whisperer, Phantom Hub Medical, Wet HIPPO Well, Desert HIPPO Well, SHOFAR Mesh, HIVE-1, Consent Gate, Conduct Architecture, Embodied System Stack, Human Perception Stack, Reality Overlay Stack, Mobile Truth Stack, Truth Resolution Stack, Court on Trial, Olympus Witness Rig, Mount Olympus, Olympus Floor Model, Olympus Registry, SVALBARD, AI-dentity, AREOPAGUS, Aegis Sentinel Mesh, HIPPO Bus, HIPPO-MAG-01, HIPPO CANTEEN, AC², ARQEN, ATCB, Authority at Commit, Weaver’s Shuttle, Enki’s Memory, Enki’s Homeostasis, Synapse of Enki, Thoth’s Mind, Endurance Stack, HEMOSTAT-R, Hallvard’s Promise / Little Lungs, Blood Manager, Tumor Hunter, GRAIL-1, Governed Acoustofluidic System, Lung Mapper, Horizon Glasses, WISH and Soul Forge. Additional bounded records include AEGIS-TWIN, Asteris Relay, EMH Field Guide Gloves, VEIL-E / EDISON-01, Choir on ARQEN, Adaptive Qubit Allocator, and the twenty records in the two latest batches. Other entries remain catalog listings pending source review. An expanded record is not a validation rating.
+The registry currently contains 126 expanded records with source references: Ghostglass, SKEPTIC-1, HIPPO Data Center Cooling Stack, PIPE-LISTENER-01, GENTLE-01, GRASP-01, SILT HARP, Roman Concrete, Third-Look, CRUCIBLE, ECHO-Rx, ECHO-M, BRIDLE-3, RAVEN-P1, Temporal Reflection Chamber, Adventurer’s Forge, Mimir’s Well, SPOTRECON, CONFLUENCE-01, LG–AETHER–01, Transporter T0, LANTEX-24/LANTEX-PRO, LANTERN-1, CONSCIENCE-01, SCOPE-365, Yggdrasil Protocol, Heimdall’s Bridge, Enki’s Will, The Triad, Hypha Mind / GO-CUBE, SR-MARGIN-01, Signature-Selective Receiver, FIELD MEDIC, Edge Reflex Mesh, TRUTH LAYER, Quantum Observability Layer, Quantum Floor, Cyber Meta-Material, Court of the Synthetic, MARGIN-01, BRIDGE-01, CMH-01, Artificial Heart, HEARTSEED, GIPS, Vascular Whisperer, Phantom Hub Medical, Wet HIPPO Well, Desert HIPPO Well, SHOFAR Mesh, HIVE-1, Consent Gate, Conduct Architecture, Embodied System Stack, Human Perception Stack, Reality Overlay Stack, Mobile Truth Stack, Truth Resolution Stack, Court on Trial, Olympus Witness Rig, Mount Olympus, Olympus Floor Model, Olympus Registry, SVALBARD, AI-dentity, AREOPAGUS, Aegis Sentinel Mesh, HIPPO Bus, HIPPO-MAG-01, HIPPO CANTEEN, AC², ARQEN, ATCB, Authority at Commit, Weaver’s Shuttle, Enki’s Memory, Enki’s Homeostasis, Synapse of Enki, Thoth’s Mind, Endurance Stack, HEMOSTAT-R, Hallvard’s Promise / Little Lungs, Blood Manager, Tumor Hunter, GRAIL-1, Governed Acoustofluidic System, Lung Mapper, Horizon Glasses, WISH and Soul Forge. Additional bounded records include AEGIS-TWIN, Asteris Relay, EMH Field Guide Gloves, VEIL-E / EDISON-01, Choir on ARQEN, Adaptive Qubit Allocator, and the thirty records across the three latest batches. Other entries remain catalog listings pending source review. An expanded record is not a validation rating.
 
-## Latest ten-file source batch — November 2026 (second batch)
+## Latest ten-file source batch — November 2026 (third batch)
+
+Ten existing catalog cards now link to evidence-bounded public digests, grouped as two sets of five:
+
+1. `quantum-shepherd.md` — Quantum HIPPO Bus alias; predictive infrastructure, no measured benefit.
+2. `quantum-sovereign-stack.md` — classical quantum-facility cockpit; integration not tested.
+3. `dog-soundboard.md` — blinded animal-communication protocol; no scored trial.
+4. `jaguar-mode.md` — low-disturbance robotics; not stealth or certified behavior.
+5. `ghost-fiber.md` — neutrino candidate evidence replay; no detector or novelty claim.
+6. `asteris-desktop-steward.md` — existing preview-first sorter; no live desktop run here.
+7. `ocean-boundary-residual-inference.md` — non-operational oceanographic inference hypothesis.
+8. `mosquito-reaper.md` — supervised civilian pest research; non-target effects untested.
+9. `drone-rotor-d1.md` — published rotor-data reconstruction, not measured D1 hardware.
+10. `bamboo-rf.md` — Phase 1 specimen/measurement diagram; no material results.
+
+Current collection: **397 entries, 126 expanded records, 271 archive-only titles.** The original private sources remain separate. Quantitative targets, numerical controls and review labels are not upgrades to physical evidence. Technical content involving sensitive environmental detection, pest equipment or uncertain operational authority is summarized at the public-purpose level only.
+
+## Previous ten-file source batch — November 2026 (second batch)
 
 Ten existing catalog entries received source-linked, compact public summaries. None represents new experimental work:
 
@@ -27,7 +44,7 @@ Ten existing catalog entries received source-linked, compact public summaries. N
 9. `fireground-fusion-hud.md` — thermal/edge display proposal; no emergency-use validation.
 10. `small-farm-community.md` — accessible resident-led farm idea; no site, care approval or financing.
 
-Current collection: **397 entries, 116 expanded records, 281 archive-only titles.** These notes are source-based digests, not private-original uploads. Source identity, contributors and uncertainties are recorded; child safeguarding, personal housing context, specialized power source specifications and untested emergency applications are handled conservatively. The Well's home-page Workbench stamp and record-count prose were refreshed during this batch.
+The historical collection after that batch contained **397 entries, 116 expanded records, 281 archive-only titles.** These notes are source-based digests, not private-original uploads. Source identity, contributors and uncertainties are recorded; child safeguarding, personal housing context, specialized power source specifications and untested emergency applications are handled conservatively. The Well's home-page Workbench stamp and record-count prose were refreshed during this batch.
 
 ## Previous ten-file source batch — November 2026
 
