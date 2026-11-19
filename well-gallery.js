@@ -3,6 +3,12 @@
   'use strict';
   const illustrations = [
     {
+      id: 'chihuahua-sphere-cs-1',
+      src: 'assets/chihuahua-sphere-cs1-concept.webp',
+      alt: 'Chihuahua Sphere CS-1 concept laboratory: adjustable dark collector panels surround a calibrated light source, with separate input and measurement instruments.',
+      caption: 'Chihuahua Sphere / CS-1 · AI-generated optical test-rig illustration; calculation-only concept, no built or tested apparatus.',
+    },
+    {
       id: 'field-medic-guided-hand-support',
       src: 'assets/field-medic-assistive-backpack.webp',
       alt: 'FIELD MEDIC assistive backpack concept showing a medic with robotic support braces and a guided-hand glove.',
