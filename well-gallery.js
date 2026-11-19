@@ -26,6 +26,24 @@
       alt: 'AEGIS-TWIN bilateral protective exosleeve concept shown worn over both intact arms.',
       caption: 'AEGIS-TWIN v0.6 · AI-generated concept render; not tested on humans.',
     },
+    {
+      id: 'herdminder-hm-01',
+      src: 'assets/herdminder-hm01-concept.webp',
+      alt: 'HerdMinder farm observation drone concept above a cattle pasture, with a stockperson operating the controller.',
+      caption: 'HerdMinder / HM-01 · AI-generated concept illustration; no field-tested drone or welfare detection.',
+    },
+    {
+      id: 'atlas-cistern',
+      src: 'assets/atlas-cistern-concept.webp',
+      alt: 'Atlas Cistern concept cutaway of a civic water-storage reservoir beneath landscaped public spaces.',
+      caption: 'Atlas Cistern · AI-generated civic-infrastructure concept; no approved or built facility.',
+    },
+    {
+      id: 'lifeguard-lance-rescue-drone-and-fleet',
+      src: 'assets/lifeguard-lance-concept.webp',
+      alt: 'Lifeguard Lance rescue-drone concept carrying a flotation ring toward a swimmer as shore lifeguards respond.',
+      caption: 'Lifeguard Lance · AI-generated rescue concept; not certified or available for emergency use.',
+    },
   ];
   illustrations.forEach(({ id, src, alt, caption }) => {
     const card = document.querySelector(`.card[data-record-id="${id}"]`);

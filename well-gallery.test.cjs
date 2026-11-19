@@ -35,19 +35,25 @@ function createFixture(ids) {
   return { render, figures };
 }
 
-test('four matching design cards receive labeled, clickable concept artwork', () => {
+test('seven matching design cards receive labeled, clickable concept artwork', () => {
   const fieldId = 'field-medic-guided-hand-support';
   const hippoId = 'hippo-mag-01-magnetic-compensation-experiment';
   const skepticId = 'skeptic-1';
   const aegisId = 'aegis-twin-v0-6';
+  const herdId = 'herdminder-hm-01';
+  const atlasId = 'atlas-cistern';
+  const lanceId = 'lifeguard-lance-rescue-drone-and-fleet';
   const otherId = 'sisters-hope-hand-restoration-gloves';
-  const app = createFixture([fieldId, hippoId, skepticId, aegisId, otherId]);
+  const app = createFixture([fieldId, hippoId, skepticId, aegisId, herdId, atlasId, lanceId, otherId]);
   app.render();
   for (const [id, filename, name] of [
     [fieldId, 'field-medic-assistive-backpack.webp', 'FIELD MEDIC'],
     [hippoId, 'hippo-mag-01-tabletop.webp', 'HIPPO-MAG-01'],
     [skepticId, 'skeptic-1-probe-bench.webp', 'SKEPTIC-1'],
     [aegisId, 'aegis-twin-v06-exterior.webp', 'AEGIS-TWIN'],
+    [herdId, 'herdminder-hm01-concept.webp', 'HerdMinder'],
+    [atlasId, 'atlas-cistern-concept.webp', 'Atlas Cistern'],
+    [lanceId, 'lifeguard-lance-concept.webp', 'Lifeguard Lance'],
   ]) {
     assert.equal(app.figures(id).length, 1, id + ' should have exactly one image');
     const figure = app.figures(id)[0];
