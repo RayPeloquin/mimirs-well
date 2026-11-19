@@ -35,7 +35,7 @@ function createFixture(ids) {
   return { render, figures };
 }
 
-test('eight matching design cards receive labeled, clickable concept artwork', () => {
+test('twelve matching design cards receive labeled, clickable concept artwork', () => {
   const fieldId = 'field-medic-guided-hand-support';
   const hippoId = 'hippo-mag-01-magnetic-compensation-experiment';
   const skepticId = 'skeptic-1';
@@ -44,8 +44,12 @@ test('eight matching design cards receive labeled, clickable concept artwork', (
   const atlasId = 'atlas-cistern';
   const lanceId = 'lifeguard-lance-rescue-drone-and-fleet';
   const fqscId = 'fqsc-01';
+  const radioId = 'radio-echo-chamber';
+  const fluffyId = 'fluffy-01';
+  const knockId = 'knock-moth-pool-tile-mapping';
+  const siltId = 'silt-harp-manual-muddy-water-prefiltration';
   const otherId = 'sisters-hope-hand-restoration-gloves';
-  const app = createFixture([fieldId, hippoId, skepticId, aegisId, herdId, atlasId, lanceId, fqscId, otherId]);
+  const app = createFixture([fieldId, hippoId, skepticId, aegisId, herdId, atlasId, lanceId, fqscId, radioId, fluffyId, knockId, siltId, otherId]);
   app.render();
   for (const [id, filename, name] of [
     [fieldId, 'field-medic-assistive-backpack.webp', 'FIELD MEDIC'],
@@ -56,6 +60,10 @@ test('eight matching design cards receive labeled, clickable concept artwork', (
     [atlasId, 'atlas-cistern-concept.webp', 'Atlas Cistern'],
     [lanceId, 'lifeguard-lance-concept.webp', 'Lifeguard Lance'],
     [fqscId, 'fqsc-01-concept.webp', 'FQSC-01'],
+    [radioId, 'radio-echo-chamber-concept.webp', 'Radio Echo Chamber'],
+    [fluffyId, 'fluffy-01-concept.webp', 'FLUFFY-01'],
+    [knockId, 'knock-moth-concept.webp', 'Knock-Moth'],
+    [siltId, 'silt-harp-concept.webp', 'SILT HARP'],
   ]) {
     assert.equal(app.figures(id).length, 1, id + ' should have exactly one image');
     const figure = app.figures(id)[0];

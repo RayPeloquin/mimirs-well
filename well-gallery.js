@@ -50,6 +50,30 @@
       alt: 'Lifeguard Lance rescue-drone concept carrying a flotation ring toward a swimmer as shore lifeguards respond.',
       caption: 'Lifeguard Lance · AI-generated rescue concept; not certified or available for emergency use.',
     },
+    {
+      id: 'radio-echo-chamber',
+      src: 'assets/radio-echo-chamber-concept.webp',
+      alt: 'Radio Echo Chamber concept illustration of a copper RF test cavity and oscilloscope showing a decaying ringdown trace.',
+      caption: 'Radio Echo Chamber · AI-generated passive RF measurement concept; no demonstrated signal recovery.',
+    },
+    {
+      id: 'fluffy-01',
+      src: 'assets/fluffy-01-concept.webp',
+      alt: 'FLUFFY-01 unarmed, wolf-inspired research quadruped concept in an outdoor test area with a human supervisor.',
+      caption: 'FLUFFY-01 · AI-generated unarmed research-robot concept; no physical prototype built.',
+    },
+    {
+      id: 'knock-moth-pool-tile-mapping',
+      src: 'assets/knock-moth-concept.webp',
+      alt: 'Knock-Moth conceptual closed-case handheld pool-tile inspection aid held against a tiled wall, without internal engineering detail.',
+      caption: 'Knock-Moth · AI-generated exterior-only inspection concept; no validated defect-detection performance.',
+    },
+    {
+      id: 'silt-harp-manual-muddy-water-prefiltration',
+      src: 'assets/silt-harp-concept.webp',
+      alt: 'SILT HARP manual muddy-water prefiltration concept with a coarse solids rack, sediment basin and a caretaker removing collected silt.',
+      caption: 'SILT HARP · AI-generated solids-prefilter concept, not verified potable-water treatment.',
+    },
   ];
   illustrations.forEach(({ id, src, alt, caption }) => {
     const card = document.querySelector(`.card[data-record-id="${id}"]`);
