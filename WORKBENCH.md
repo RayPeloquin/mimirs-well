@@ -10,9 +10,43 @@ This is a maintained snapshot, not live monitoring or an automatic task runner. 
 
 Build Mimir’s Well one small, reviewable batch at a time: connect each project’s public purpose to its evidence, limitations, attribution and next check.
 
-The registry currently contains 131 expanded records with source references: Ghostglass, SKEPTIC-1, HIPPO Data Center Cooling Stack, PIPE-LISTENER-01, GENTLE-01, GRASP-01, SILT HARP, Roman Concrete, Third-Look, CRUCIBLE, ECHO-Rx, ECHO-M, BRIDLE-3, RAVEN-P1, Temporal Reflection Chamber, Adventurer’s Forge, Mimir’s Well, SPOTRECON, CONFLUENCE-01, LG–AETHER–01, Transporter T0, LANTEX-24/LANTEX-PRO, LANTERN-1, CONSCIENCE-01, SCOPE-365, Yggdrasil Protocol, Heimdall’s Bridge, Enki’s Will, The Triad, Hypha Mind / GO-CUBE, SR-MARGIN-01, Signature-Selective Receiver, FIELD MEDIC, Edge Reflex Mesh, TRUTH LAYER, Quantum Observability Layer, Quantum Floor, Cyber Meta-Material, Court of the Synthetic, MARGIN-01, BRIDGE-01, CMH-01, Artificial Heart, HEARTSEED, GIPS, Vascular Whisperer, Phantom Hub Medical, Wet HIPPO Well, Desert HIPPO Well, SHOFAR Mesh, HIVE-1, Consent Gate, Conduct Architecture, Embodied System Stack, Human Perception Stack, Reality Overlay Stack, Mobile Truth Stack, Truth Resolution Stack, Court on Trial, Olympus Witness Rig, Mount Olympus, Olympus Floor Model, Olympus Registry, SVALBARD, AI-dentity, AREOPAGUS, Aegis Sentinel Mesh, HIPPO Bus, HIPPO-MAG-01, HIPPO CANTEEN, AC², ARQEN, ATCB, Authority at Commit, Weaver’s Shuttle, Enki’s Memory, Enki’s Homeostasis, Synapse of Enki, Thoth’s Mind, Endurance Stack, HEMOSTAT-R, Hallvard’s Promise / Little Lungs, Blood Manager, Tumor Hunter, GRAIL-1, Governed Acoustofluidic System, Lung Mapper, Horizon Glasses, WISH and Soul Forge. Additional bounded records include AEGIS-TWIN, Asteris Relay, EMH Field Guide Gloves, VEIL-E / EDISON-01, Choir on ARQEN, Adaptive Qubit Allocator, and the thirty-five retained records across the four latest batches. Other entries remain catalog listings pending source review. An expanded record is not a validation rating.
+The registry currently contains **152 expanded records with source references**. Representative projects include Ghostglass, SKEPTIC-1, HIPPO, FIELD MEDIC, BRIDLE, RAVEN-P1, Temporal Reflection Chamber, Mimir’s Well, AEGIS-TWIN, FQSC-01, and the new ten public digests below. The 55 retained records across six recent batches are bounded summaries; the original source files are not made public by those summaries. Other entries remain catalog listings pending source review. An expanded record is not a validation rating.
 
-## Latest illustrated concept shortlist — November 2026 (fourth batch; five retained)
+## Latest ten-file source batch — 19 November 2026 (sixth batch)
+
+Ten additional existing archive cards received source-grounded, public-purpose digests and expanded registry records:
+
+1. `knock-moth.md` — mason's acoustic tile-comparison aid; marked-private device brief stays unpublished; no diagnostic performance.
+2. `fluffy-01.md` — unarmed operator-authorized canid quadruped; AI Court review, no built or certified robot.
+3. `skipjack-lf.md` — uncrewed cargo hover feasibility; sizing model only, no complete aircraft or flight.
+4. `ndsm-01.md` — neutrino statistical-conversion feasibility; no selected-atom control or outside Court approval.
+5. `green-craft.md` — exterior art geometry; relative units only, no engineered craft.
+6. `butterfly-wanderings.md` — ten-page coloring-book artifact; no public redistribution or commercial validation.
+7. `bridle-1.md` — integrated aerospike thermal-margin research; no built propulsion hardware or test.
+8. `bridle-2.md` — modular aerospike counterexample study; uncalibrated normalized model, no hardware results.
+9. `papergrid-0.md` — one-roll materials/energy accounting poster; no tested cell or grid-scale evidence.
+10. `off-grid-ranch-water-system.md` — matching SKY TROUGH concept art; no measured water yield or verified title lineage.
+
+**Current collection: 393 entries, 152 expanded records, 241 archive-only titles.** The new notes live under `public-notes/` and link from their existing records. Private originals, sensitive construction details and image files were not added to the public repository. FQSC-01's separate design page was the intervening new catalog entry; it is counted once, distinct from these ten expanded archive titles. No hardware, flight, medical, energy or scientific performance was established by this publication.
+
+## Previous ten-file source batch — November 2026 (fifth batch)
+
+Ten existing archive cards received short public digests; four draw on text research/design briefs and six on illustrated source posters:
+
+1. `herdminder-hm-01.md` — cattle observation fleet scheduling; no flight or welfare validation.
+2. `uss-eldridge-working-physics.md` — historical evidence and constrained real-world physics, not teleportation.
+3. `hidden-heat.md` — exact stochastic model with archived numerical checks, not experimental heat measurement.
+4. `raptor-veil.md` — propulsion safety-oriented flow hypothesis, not hardware results.
+5. `paperpower.md` — water-activated paper battery image; energy/shelf-life claims unmeasured.
+6. `atlas-cistern.md` — water-treatment and utility infrastructure integration diagram; no approved site or mass balance.
+7. `firewell.md` — civilian wildfire-water reserve concept; no conversion or emergency field trial.
+8. `lifeguard-lance.md` — splashdown rescue flotation drone illustration; no rescue-use validation.
+9. `resonant-edge.md` — acoustic-assisted masonry saw visual; no measured cutting benefit or guarding review.
+10. `vortexcap.md` — flowing-electrolyte supercapacitor poster; no cell or efficiency data.
+
+Current collection: **392 entries, 141 expanded records, 251 archive-only titles.** This batch publishes evidence-bounded summaries only, not private original files, engineering approvals, rescue devices or scientific novelty claims. Quantitative poster values remain unverified; explicitly private source notes were excluded.
+
+## Previous illustrated concept shortlist — November 2026 (fourth batch; five retained)
 
 Five illustrated concept cards retain public evidence-bounded digests:
 
@@ -24,7 +58,7 @@ Five illustrated concept cards retain public evidence-bounded digests:
 
 Removed from public listings and deleted as public digest files at the owner's request: Hydrator Neo, Khepri Stride, Canine Wearable, Underground Cattle Barn, and Shell City. Their original concept images were not altered. The deleted public digest files remain recoverable from earlier Git history.
 
-Current collection: **392 entries, 131 expanded records, 261 archive-only titles.** Original images remain separate; the five retained notes describe visual concepts, not demonstrated prototypes.
+The historical collection at this point contained **392 entries, 131 expanded records, 261 archive-only titles.** Original images remained separate; the five retained notes described visual concepts, not demonstrated prototypes.
 
 ## Previous ten-file source batch — November 2026 (third batch)
 
