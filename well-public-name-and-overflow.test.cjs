@@ -14,5 +14,5 @@ test('public search description uses Mr. Peloquin rather than the private nickna
 
 test('full-bleed decorative backgrounds do not introduce horizontal page scrolling', () => {
   assert.match(html, /\.hero::before\s*\{[^}]*50vw/s, 'hero retains its full-bleed artwork');
-  assert.match(html, /body\s*\{[^}]*overflow-x\s*:\s*clip/s, 'decorative overspill is clipped at the page edge');
+  assert.match(html, /html\s*\{[^}]*overflow-x\s*:\s*clip/s, 'decorative overspill is clipped at the root scrolling element');
 });
