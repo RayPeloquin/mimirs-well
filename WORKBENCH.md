@@ -10,24 +10,21 @@ This is a maintained snapshot, not live monitoring or an automatic task runner. 
 
 Build Mimir’s Well one small, reviewable batch at a time: connect each project’s public purpose to its evidence, limitations, attribution and next check.
 
-The registry currently contains 136 expanded records with source references: Ghostglass, SKEPTIC-1, HIPPO Data Center Cooling Stack, PIPE-LISTENER-01, GENTLE-01, GRASP-01, SILT HARP, Roman Concrete, Third-Look, CRUCIBLE, ECHO-Rx, ECHO-M, BRIDLE-3, RAVEN-P1, Temporal Reflection Chamber, Adventurer’s Forge, Mimir’s Well, SPOTRECON, CONFLUENCE-01, LG–AETHER–01, Transporter T0, LANTEX-24/LANTEX-PRO, LANTERN-1, CONSCIENCE-01, SCOPE-365, Yggdrasil Protocol, Heimdall’s Bridge, Enki’s Will, The Triad, Hypha Mind / GO-CUBE, SR-MARGIN-01, Signature-Selective Receiver, FIELD MEDIC, Edge Reflex Mesh, TRUTH LAYER, Quantum Observability Layer, Quantum Floor, Cyber Meta-Material, Court of the Synthetic, MARGIN-01, BRIDGE-01, CMH-01, Artificial Heart, HEARTSEED, GIPS, Vascular Whisperer, Phantom Hub Medical, Wet HIPPO Well, Desert HIPPO Well, SHOFAR Mesh, HIVE-1, Consent Gate, Conduct Architecture, Embodied System Stack, Human Perception Stack, Reality Overlay Stack, Mobile Truth Stack, Truth Resolution Stack, Court on Trial, Olympus Witness Rig, Mount Olympus, Olympus Floor Model, Olympus Registry, SVALBARD, AI-dentity, AREOPAGUS, Aegis Sentinel Mesh, HIPPO Bus, HIPPO-MAG-01, HIPPO CANTEEN, AC², ARQEN, ATCB, Authority at Commit, Weaver’s Shuttle, Enki’s Memory, Enki’s Homeostasis, Synapse of Enki, Thoth’s Mind, Endurance Stack, HEMOSTAT-R, Hallvard’s Promise / Little Lungs, Blood Manager, Tumor Hunter, GRAIL-1, Governed Acoustofluidic System, Lung Mapper, Horizon Glasses, WISH and Soul Forge. Additional bounded records include AEGIS-TWIN, Asteris Relay, EMH Field Guide Gloves, VEIL-E / EDISON-01, Choir on ARQEN, Adaptive Qubit Allocator, and the forty records across the four latest batches. Other entries remain catalog listings pending source review. An expanded record is not a validation rating.
+The registry currently contains 131 expanded records with source references: Ghostglass, SKEPTIC-1, HIPPO Data Center Cooling Stack, PIPE-LISTENER-01, GENTLE-01, GRASP-01, SILT HARP, Roman Concrete, Third-Look, CRUCIBLE, ECHO-Rx, ECHO-M, BRIDLE-3, RAVEN-P1, Temporal Reflection Chamber, Adventurer’s Forge, Mimir’s Well, SPOTRECON, CONFLUENCE-01, LG–AETHER–01, Transporter T0, LANTEX-24/LANTEX-PRO, LANTERN-1, CONSCIENCE-01, SCOPE-365, Yggdrasil Protocol, Heimdall’s Bridge, Enki’s Will, The Triad, Hypha Mind / GO-CUBE, SR-MARGIN-01, Signature-Selective Receiver, FIELD MEDIC, Edge Reflex Mesh, TRUTH LAYER, Quantum Observability Layer, Quantum Floor, Cyber Meta-Material, Court of the Synthetic, MARGIN-01, BRIDGE-01, CMH-01, Artificial Heart, HEARTSEED, GIPS, Vascular Whisperer, Phantom Hub Medical, Wet HIPPO Well, Desert HIPPO Well, SHOFAR Mesh, HIVE-1, Consent Gate, Conduct Architecture, Embodied System Stack, Human Perception Stack, Reality Overlay Stack, Mobile Truth Stack, Truth Resolution Stack, Court on Trial, Olympus Witness Rig, Mount Olympus, Olympus Floor Model, Olympus Registry, SVALBARD, AI-dentity, AREOPAGUS, Aegis Sentinel Mesh, HIPPO Bus, HIPPO-MAG-01, HIPPO CANTEEN, AC², ARQEN, ATCB, Authority at Commit, Weaver’s Shuttle, Enki’s Memory, Enki’s Homeostasis, Synapse of Enki, Thoth’s Mind, Endurance Stack, HEMOSTAT-R, Hallvard’s Promise / Little Lungs, Blood Manager, Tumor Hunter, GRAIL-1, Governed Acoustofluidic System, Lung Mapper, Horizon Glasses, WISH and Soul Forge. Additional bounded records include AEGIS-TWIN, Asteris Relay, EMH Field Guide Gloves, VEIL-E / EDISON-01, Choir on ARQEN, Adaptive Qubit Allocator, and the thirty-five retained records across the four latest batches. Other entries remain catalog listings pending source review. An expanded record is not a validation rating.
 
-## Latest ten-file illustrated concept batch — November 2026 (fourth batch)
+## Latest illustrated concept shortlist — November 2026 (fourth batch; five retained)
 
-Ten previously archive-only cards now carry bounded public notes derived from archived design images:
+Five illustrated concept cards retain public evidence-bounded digests:
 
 1. `mirrorbox-m01.md` — evidence-recorder concept; no software/hardware or authorized evaluation run.
 2. `rubiq.md` — proposed quantum protected-state layer; no tested code or error reduction.
 3. `aether-latch-memory.md` — HZO persistent-cache architecture; no fabricated chip or measurements.
 4. `polyforge-1.md` — ocean-plastics vessel illustration; no ship, throughput or wildlife assessment.
-5. `shell-city.md` — imaginative underground farm and barn; no site or engineering study.
-6. `underground-cattle-barn.md` — landscape-integrated livestock shelter; no animal-welfare or air-quality review.
-7. `khepri-stride.md` — body-energy sneaker poster; no harvest, lighting or gait data.
-8. `canine-wearable.md` — illuminated dog-wearable poster; no runtime or veterinary result.
-9. `euplectella-node.md` — porous compute-pod A/B visuals; no thermal prototype or variant lineage proof.
-10. `hydrator-neo.md` — pizza station illustration; no mechanism, cleaning or food-safety validation.
+5. `euplectella-node.md` — porous compute-pod A/B visuals; no thermal prototype or variant lineage proof.
 
-Current collection: **397 entries, 136 expanded records, 261 archive-only titles.** Original images are not published in these notes. Visual marketing captions are claims to investigate, not measured results; animal welfare, food safety, marine safety and fabricated electronics remain outside the evidence shown.
+Removed from public listings and deleted as public digest files at the owner's request: Hydrator Neo, Khepri Stride, Canine Wearable, Underground Cattle Barn, and Shell City. Their original concept images were not altered. The deleted public digest files remain recoverable from earlier Git history.
+
+Current collection: **392 entries, 131 expanded records, 261 archive-only titles.** Original images remain separate; the five retained notes describe visual concepts, not demonstrated prototypes.
 
 ## Previous ten-file source batch — November 2026 (third batch)
 

@@ -9,15 +9,10 @@ const designs = [
   ['rubiq', 'rubiq.md', 'RUBIQ'],
   ['aether-latch-memory', 'aether-latch-memory.md', 'Aether-Latch Memory'],
   ['polyforge-1-ocean-cleanup-ship', 'polyforge-1.md', 'Polyforge-1 — Ocean cleanup ship'],
-  ['shell-city-inverted-mushroom-barn', 'shell-city.md', 'Shell City — Inverted-mushroom barn'],
-  ['underground-cattle-barn', 'underground-cattle-barn.md', 'Underground Cattle Barn'],
-  ['khepri-stride-sneaker-concept', 'khepri-stride.md', 'Khepri Stride — Sneaker concept'],
-  ['canine-wearable', 'canine-wearable.md', 'Canine Wearable'],
   ['euplectella-node-a-node-b', 'euplectella-node.md', 'Euplectella Node A / Node B'],
-  ['hydrator-neo-pizza-station', 'hydrator-neo.md', 'Hydrator Neo — Pizza station'],
 ];
 
-test('ten illustrated archive cards have source-limited public detail records', () => {
+test('five retained illustrated archive cards have source-limited public detail records', () => {
   const source = fs.readFileSync(path.join(__dirname, 'registry.js'), 'utf8');
   const catalog = fs.readFileSync(path.join(__dirname, 'catalog.js'), 'utf8');
   const records = new Map(designs.map(([id]) => [id, { id, purpose: 'Archive title only' }]));
