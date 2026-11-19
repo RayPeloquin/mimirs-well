@@ -10,6 +10,12 @@ const omitted = [
   'Canine Wearable',
   'Underground Cattle Barn',
   'Shell City — Inverted-mushroom barn',
+  'Butterfly Wanderings — Coloring book',
+  'Purgatory Tavern',
+  'Angels Diner',
+  'Winchester Monster Guild',
+  'Oasis Dadan',
+  'Nile’s Shadow',
 ];
 
 function renderCatalog() {
@@ -32,13 +38,15 @@ function renderCatalog() {
   return cards.map((card) => card.children.find((child) => child.tagName === 'h3')?.textContent);
 }
 
-test('public catalog omits the five parked illustrated concepts but retains the research entries', () => {
+test('public catalog omits eleven parked concepts but retains research entries', () => {
   const names = renderCatalog();
-  assert.equal(names.length, 384, 'three dynamic feature cards plus 381 archived titles');
+  assert.equal(names.length, 378, 'three dynamic feature cards plus 375 retained archive titles');
   for (const name of omitted) assert.ok(!names.includes(name), `${name} remains public`);
   for (const name of ['MIRRORBOX M01', 'RUBIQ', 'Aether-Latch Memory', 'Polyforge-1 — Ocean cleanup ship', 'Euplectella Node A / Node B']) {
     assert.ok(names.includes(name), `${name} was accidentally omitted`);
   }
   assert.ok(names.includes('FQSC-01'), 'new reviewed physics design should remain public');
   assert.equal(new Set(names).size, names.length, 'no duplicate public cards');
+  assert.equal(fs.existsSync(path.join(__dirname, 'public-notes', 'butterfly-wanderings.md')), false,
+    'the removed demo should not retain a public source note');
 });

@@ -10,14 +10,13 @@ const candidates = [
   ['skipjack-lf-hover-feasibility', 'skipjack-lf.md', 'SKIPJACK-LF — Hover feasibility'],
   ['ndsm-01-neutrino-feasibility-study', 'ndsm-01.md', 'NDSM-01 — Neutrino feasibility study'],
   ['green-craft-exterior-concept', 'green-craft.md', 'Green Craft — Exterior concept'],
-  ['butterfly-wanderings-coloring-book', 'butterfly-wanderings.md', 'Butterfly Wanderings — Coloring book'],
   ['bridle-1-monolithic-cellular-aerospike', 'bridle-1.md', 'BRIDLE-1 — Monolithic cellular aerospike'],
   ['bridle-2', 'bridle-2.md', 'BRIDLE-2'],
   ['papergrid-0', 'papergrid-0.md', 'PAPERGRID-0'],
   ['off-grid-ranch-water-system', 'off-grid-ranch-water-system.md', 'Off-Grid Ranch Water System'],
 ];
 
-test('ten more existing archive cards expose bounded public notes and expanded project records', () => {
+test('the nine retained sixth-batch archive cards expose bounded public notes and expanded records', () => {
   const registry = fs.readFileSync(path.join(__dirname, 'registry.js'), 'utf8');
   const catalog = fs.readFileSync(path.join(__dirname, 'catalog.js'), 'utf8');
   const records = new Map(candidates.map(([id]) => [id, { id }]));

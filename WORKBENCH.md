@@ -10,24 +10,27 @@ This is a maintained snapshot, not live monitoring or an automatic task runner. 
 
 Build Mimir’s Well one small, reviewable batch at a time: connect each project’s public purpose to its evidence, limitations, attribution and next check.
 
-The registry currently contains **152 expanded records with source references**. Representative projects include Ghostglass, SKEPTIC-1, HIPPO, FIELD MEDIC, BRIDLE, RAVEN-P1, Temporal Reflection Chamber, Mimir’s Well, AEGIS-TWIN, FQSC-01, and the new ten public digests below. The 55 retained records across six recent batches are bounded summaries; the original source files are not made public by those summaries. Other entries remain catalog listings pending source review. An expanded record is not a validation rating.
+The registry currently contains **151 expanded records with source references**. Representative projects include Ghostglass, SKEPTIC-1, HIPPO, FIELD MEDIC, BRIDLE, RAVEN-P1, Temporal Reflection Chamber, Mimir’s Well, AEGIS-TWIN, FQSC-01, and the nine retained public digests below. The 54 retained records across six recent batches are bounded summaries; the original source files are not made public by those summaries. Other entries remain catalog listings pending source review. An expanded record is not a validation rating.
 
 ## Latest ten-file source batch — 19 November 2026 (sixth batch)
 
-Ten additional existing archive cards received source-grounded, public-purpose digests and expanded registry records:
+Ten additional archive cards were initially reviewed. **Nine are retained** as source-grounded public summaries; the coloring-book demonstration was later removed at the owner's request:
 
 1. `knock-moth.md` — mason's acoustic tile-comparison aid; marked-private device brief stays unpublished; no diagnostic performance.
 2. `fluffy-01.md` — unarmed operator-authorized canid quadruped; AI Court review, no built or certified robot.
 3. `skipjack-lf.md` — uncrewed cargo hover feasibility; sizing model only, no complete aircraft or flight.
 4. `ndsm-01.md` — neutrino statistical-conversion feasibility; no selected-atom control or outside Court approval.
 5. `green-craft.md` — exterior art geometry; relative units only, no engineered craft.
-6. `butterfly-wanderings.md` — ten-page coloring-book artifact; no public redistribution or commercial validation.
-7. `bridle-1.md` — integrated aerospike thermal-margin research; no built propulsion hardware or test.
-8. `bridle-2.md` — modular aerospike counterexample study; uncalibrated normalized model, no hardware results.
-9. `papergrid-0.md` — one-roll materials/energy accounting poster; no tested cell or grid-scale evidence.
-10. `off-grid-ranch-water-system.md` — matching SKY TROUGH concept art; no measured water yield or verified title lineage.
+6. `bridle-1.md` — integrated aerospike thermal-margin research; no built propulsion hardware or test.
+7. `bridle-2.md` — modular aerospike counterexample study; uncalibrated normalized model, no hardware results.
+8. `papergrid-0.md` — one-roll materials/energy accounting poster; no tested cell or grid-scale evidence.
+9. `off-grid-ranch-water-system.md` — matching SKY TROUGH concept art; no measured water yield or verified title lineage.
 
-**Current collection: 393 entries, 152 expanded records, 241 archive-only titles.** The new notes live under `public-notes/` and link from their existing records. Private originals, sensitive construction details and image files were not added to the public repository. FQSC-01's separate design page was the intervening new catalog entry; it is counted once, distinct from these ten expanded archive titles. No hardware, flight, medical, energy or scientific performance was established by this publication.
+**Current collection: 387 entries, 151 expanded records, 236 archive-only titles.** The nine retained notes live under `public-notes/` and link from their existing records. Private originals, sensitive construction details and image files were not added to the public repository. FQSC-01's separate design page was the intervening new catalog entry; it is counted once. No hardware, flight, medical, energy or scientific performance was established by this publication.
+
+## Public shelf pruning — 19 November 2026
+
+Six titles were removed from the public catalog at the owner's request: **Butterfly Wanderings — Coloring book**, **Purgatory Tavern**, **Angels Diner**, **Winchester Monster Guild**, **Oasis Dadan**, and **Nile’s Shadow**. The public Butterfly Wanderings digest file and its expanded registry entry were also removed. The previous digest can be recovered from repository history; the owner's separately archived original artwork was not modified. The five other names were archive-only titles with no public digest files. This is collection curation, not a judgment that the private creative ideas lack value.
 
 ## Previous ten-file source batch — November 2026 (fifth batch)
 
