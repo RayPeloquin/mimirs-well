@@ -34,10 +34,11 @@ function renderCatalog() {
 
 test('public catalog omits the five parked illustrated concepts but retains the research entries', () => {
   const names = renderCatalog();
-  assert.equal(names.length, 383, 'two dynamic feature cards plus 381 archived titles');
+  assert.equal(names.length, 384, 'three dynamic feature cards plus 381 archived titles');
   for (const name of omitted) assert.ok(!names.includes(name), `${name} remains public`);
   for (const name of ['MIRRORBOX M01', 'RUBIQ', 'Aether-Latch Memory', 'Polyforge-1 — Ocean cleanup ship', 'Euplectella Node A / Node B']) {
     assert.ok(names.includes(name), `${name} was accidentally omitted`);
   }
+  assert.ok(names.includes('FQSC-01'), 'new reviewed physics design should remain public');
   assert.equal(new Set(names).size, names.length, 'no duplicate public cards');
 });

@@ -27,6 +27,12 @@
       caption: 'AEGIS-TWIN v0.6 · AI-generated concept render; not tested on humans.',
     },
     {
+      id: 'fqsc-01',
+      src: 'assets/fqsc-01-concept.webp',
+      alt: 'FQSC-01 concept rendering of a confined-ion measurement instrument with sealed chamber, optical modules and separate spectral and motion response displays.',
+      caption: 'FQSC-01 · AI-generated concept visualization; no built or validated instrument.',
+    },
+    {
       id: 'herdminder-hm-01',
       src: 'assets/herdminder-hm01-concept.webp',
       alt: 'HerdMinder farm observation drone concept above a cattle pasture, with a stockperson operating the controller.',

@@ -21,7 +21,17 @@ const aegisHeading=document.createElement('h3');aegisHeading.textContent='AEGIS-
 const aegisNote=document.createElement('p');aegisNote.textContent='Hybrid protective exosleeves and an artificial nervous-system research concept. Intact-arm augmentation and separate limb-restoration interfaces; no human-use validation.';
 const aegisLink=document.createElement('a');aegisLink.href='aegis-twin.html';aegisLink.textContent='See the concept and cutaway ↗';
 aegis.append(aegisTop,aegisStage,aegisHeading,aegisNote,aegisLink);grid.append(aegis);
-let number=12;
+// FQSC-01 is an original, simulation-first physics concept rather than a validated instrument.
+const fqsc=document.createElement('article');fqsc.className='card';fqsc.dataset.category='physics';fqsc.dataset.stage='documented';
+const fqscTop=document.createElement('div');fqscTop.className='cardtop';
+const fqscIndex=document.createElement('span');fqscIndex.className='index';fqscIndex.textContent='12 /';
+const fqscTag=document.createElement('span');fqscTag.className='tag';fqscTag.textContent='Physics & aerospace';fqscTop.append(fqscIndex,fqscTag);
+const fqscStage=document.createElement('span');fqscStage.className='stage';fqscStage.textContent='Simulation-first research concept';
+const fqscHeading=document.createElement('h3');fqscHeading.textContent='FQSC-01';
+const fqscNote=document.createElement('p');fqscNote.textContent='Field-Quench Spectral Coupling: a proposed confined-ion research instrument comparing internal excitation with motion under changing electromagnetic fields. Concept only; no hardware or measurements.';
+const fqscLink=document.createElement('a');fqscLink.href='fqsc-01.html';fqscLink.textContent='Explore the design and research gates ↗';
+fqsc.append(fqscTop,fqscStage,fqscHeading,fqscNote,fqscLink);grid.append(fqsc);
+let number=13;
 groups.forEach(([category,status,titles])=>titles.split('\n').forEach(title=>{
  const card=document.createElement('article');card.className='card';card.dataset.category=category;card.dataset.stage=status==='Illustrated concept'?'concept':'documented';
  const top=document.createElement('div');top.className='cardtop';

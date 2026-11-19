@@ -35,7 +35,7 @@ function createFixture(ids) {
   return { render, figures };
 }
 
-test('seven matching design cards receive labeled, clickable concept artwork', () => {
+test('eight matching design cards receive labeled, clickable concept artwork', () => {
   const fieldId = 'field-medic-guided-hand-support';
   const hippoId = 'hippo-mag-01-magnetic-compensation-experiment';
   const skepticId = 'skeptic-1';
@@ -43,8 +43,9 @@ test('seven matching design cards receive labeled, clickable concept artwork', (
   const herdId = 'herdminder-hm-01';
   const atlasId = 'atlas-cistern';
   const lanceId = 'lifeguard-lance-rescue-drone-and-fleet';
+  const fqscId = 'fqsc-01';
   const otherId = 'sisters-hope-hand-restoration-gloves';
-  const app = createFixture([fieldId, hippoId, skepticId, aegisId, herdId, atlasId, lanceId, otherId]);
+  const app = createFixture([fieldId, hippoId, skepticId, aegisId, herdId, atlasId, lanceId, fqscId, otherId]);
   app.render();
   for (const [id, filename, name] of [
     [fieldId, 'field-medic-assistive-backpack.webp', 'FIELD MEDIC'],
@@ -54,6 +55,7 @@ test('seven matching design cards receive labeled, clickable concept artwork', (
     [herdId, 'herdminder-hm01-concept.webp', 'HerdMinder'],
     [atlasId, 'atlas-cistern-concept.webp', 'Atlas Cistern'],
     [lanceId, 'lifeguard-lance-concept.webp', 'Lifeguard Lance'],
+    [fqscId, 'fqsc-01-concept.webp', 'FQSC-01'],
   ]) {
     assert.equal(app.figures(id).length, 1, id + ' should have exactly one image');
     const figure = app.figures(id)[0];

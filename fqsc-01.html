@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FQSC-01 Field-Quench Spectral Coupling: Mr. Peloquin and Asteris Solenne's simulation-first research concept for measuring field-driven excitation and motion in confined atomic ions.">
+  <title>FQSC-01 — Field-Quench Spectral Coupling · Mimir's Well</title>
+  <style>
+    :root{color-scheme:dark;--bg:#080f17;--panel:#101d25;--ink:#edf4ef;--muted:#acbbc0;--line:#29404a;--mint:#b5f5cf;--gold:#d9bc83}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;overflow-x:clip}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,sans-serif}
+    a{color:var(--mint);text-underline-offset:5px}a:focus-visible{outline:3px solid var(--gold);outline-offset:5px}
+    .wrap{max-width:1160px;margin:auto;padding:0 6%}header{border-bottom:1px solid var(--line)}
+    nav{min-height:86px;display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+    nav .brand{font:25px Georgia,serif;color:var(--ink);text-decoration:none}nav .brand span{color:var(--mint)}
+    nav .back{font-size:13px;letter-spacing:.05em}.eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--mint)}
+    .hero{padding:78px 0 52px}.hero h1{font:clamp(45px,7.8vw,88px)/1 Georgia,serif;letter-spacing:-.04em;margin:18px 0}
+    .hero h1 em{font-weight:normal;color:var(--mint)}.lead{font-size:clamp(20px,2.6vw,29px);max-width:840px;margin:20px 0}
+    .muted{color:var(--muted)}.status{display:inline-block;border:1px solid var(--gold);color:var(--gold);padding:7px 12px;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+    figure{margin:0 0 30px;border:1px solid var(--line);background:var(--panel)}figure img{display:block;width:100%;height:auto}
+    figcaption{padding:12px 18px;color:var(--muted);font-size:13px}section{padding:34px 0 55px}
+    h2{font:clamp(32px,4vw,46px)/1.2 Georgia,serif;margin:8px 0 20px}h3{font:25px Georgia,serif;margin:8px 0 12px}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:22px}.panel{border:1px solid var(--line);padding:28px;background:linear-gradient(145deg,#18303877,transparent)}
+    .panel p{color:var(--muted);margin:0}.panel .eyebrow{margin-bottom:12px}.note{border-left:3px solid var(--gold);padding:14px 0 14px 22px;margin:30px 0;color:var(--muted)}.note strong{color:var(--ink)}
+    .formula{border:1px solid var(--line);background:#13242d;padding:20px 25px;margin:25px 0;overflow-wrap:anywhere;font:clamp(16px,2.5vw,23px)/1.5 Georgia,serif;color:var(--mint)}
+    ol{padding-left:24px}li{margin:12px 0}.small{font-size:13px;color:var(--muted)}
+    .cta{display:inline-block;background:var(--mint);color:#081711;padding:12px 20px;text-decoration:none;font-weight:700}
+    footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:12px}
+    @media(max-width:760px){.split{grid-template-columns:1fr}.hero{padding-top:52px}section{padding:25px 0 42px}}
+  </style>
+</head>
+<body>
+<header><div class="wrap"><nav><a class="brand" href="./"><span>✳</span> Mimir’s Well</a><a class="back" href="./#projects">← Back to the collection</a></nav></div></header>
+<main class="wrap">
+  <div class="hero">
+    <div class="eyebrow">The Synthetic Court · Physics research concepts</div>
+    <h1>FQSC-01 <em>Field-Quench Spectral Coupling</em></h1>
+    <p class="lead">Where does the energy actually go?</p>
+    <p class="muted">The slingshot analogy asks a serious question: if electromagnetic energy is stored around a localized particle and the field changes, how much becomes internal excitation, how much becomes motion, and how much remains elsewhere in the system?</p>
+    <p><span class="status">v0.1 · Concept artwork and computational proposal · Not built</span></p>
+  </div>
+  <figure>
+    <img src="assets/fqsc-01-concept.webp" width="1672" height="941" alt="AI-generated FQSC-01 concept instrument on a laboratory workbench: sealed chamber with optical ports, enclosed controller and display comparing spectral response with motion response." fetchpriority="high">
+    <figcaption>FQSC-01 conceptual instrument. The glowing trapped ion is a magnified visualization; the image is not a working apparatus, dimensioned engineering drawing, or measured result.</figcaption>
+  </figure>
+  <section aria-labelledby="architecture"><div class="eyebrow">01 / Proposed architecture</div><h2 id="architecture">A controlled question in a compact instrument.</h2>
+    <div class="split">
+      <article class="panel"><div class="eyebrow">Confinement</div><h3>Trapped-ion chamber</h3><p>A conceptual sealed observation region for one or a few confined atomic ions. The physical trap technology and any eventual laboratory feasibility are separate specialist-engineering questions.</p></article>
+      <article class="panel"><div class="eyebrow">Field interaction</div><h3>Controlled field history</h3><p>A modelled time-varying electromagnetic interaction with an explicitly specified spectrum, coupling, duration and energy budget. A macroscopic switch is not assumed to generate nuclear-scale photons.</p></article>
+      <article class="panel"><div class="eyebrow">Reference and sensing</div><h3>Optical state readout</h3><p>Known atomic transitions supply a comparison for internal-state response; separate motional observables distinguish excitation from simple trap displacement or heating.</p></article>
+      <article class="panel"><div class="eyebrow">Measurement</div><h3>Digital twin and analysis</h3><p>Time-dependent calculations estimate transition probability, ion motion and remaining field energy. The displayed traces are illustrative, not measured data.</p></article>
+    </div>
+  </section>
+  <section aria-labelledby="math"><div class="eyebrow">02 / The physical test</div><h2 id="math">Energy stored is not energy absorbed.</h2>
+    <p class="muted">For a weak electric-dipole transition, excitation depends on the transition matrix element and the field's spectral amplitude at the transition frequency, not just the total energy stored in the apparatus.</p>
+    <p class="formula" aria-label="Transition probability is proportional to the squared dipole matrix element times the squared Fourier field amplitude at the transition frequency">P(i → f) ∝ |⟨f|d|i⟩|² · |Ẽ(ω<sub>fi</sub>)|²</p>
+    <h3>Computational test sequence</h3>
+    <ol>
+      <li>Define a confined-ion model and prescribed field history, including a baseline without the proposed modulation.</li>
+      <li>Calculate final internal-state populations and centre-of-mass motional energy separately.</li>
+      <li>Track the energy budget and compare numerical predictions against standard weak-field perturbation theory.</li>
+      <li>State uncertainty, sensitivity and conditions that would rule out any claimed advantage.</li>
+    </ol>
+    <div class="note"><strong>Physics boundary.</strong> Photon–nucleus interactions are established, but FQSC-01 does not demonstrate nuclear breakup or replace the Large Hadron Collider. Neither a large energy store nor a dramatic field change automatically produces a high-energy quantum.</div>
+  </section>
+  <section aria-labelledby="review"><div class="eyebrow">03 / The Court's review</div><h2 id="review">The narrowed idea survived. The shortcut did not.</h2>
+    <p class="muted">A shared concept brief was critically reviewed by Grok, Claude, Gemini and Meta AI. Their four responses converged on the spectral-coupling objection: three called for revision and one recommended holding nuclear-scale claims. Atomic-scale modelling remained the responsible next question. AI opinions do not constitute experimental or independent scientific validation.</p>
+    <p class="muted">Related established work includes <a href="https://www.nist.gov/pml/time-and-frequency-division/ion-storage">NIST's trapped-ion research</a> and <a href="https://home.cern/alice-detects-conversion-lead-gold-lhc/">CERN's electromagnetic-dissociation measurements</a>. These are prior art and context, not evidence that the proposed instrument works.</p>
+    <p class="small">Concept: Mr. Peloquin and Asteris Solenne. Slingshot analogy and direction: Mr. Peloquin. Documentation, concept image and technical framing: Asteris Solenne / ChatGPT. Critical AI review: Grok, Claude, Gemini and Meta AI. Working nickname: “One-Inch Collider.”</p>
+    <p class="small">Read the <a href="https://github.com/RayPeloquin/mimirs-well/blob/main/design-notes/fqsc-01.md">full research note, evidence limits and next check ↗</a>.</p>
+    <p><a class="cta" href="./#projects">Return to the Well</a></p>
+  </section>
+</main>
+<footer><div class="wrap">Mimir’s Well · Where the source gathers. <strong>We do no harm.</strong></div></footer>
+</body>
+</html>
