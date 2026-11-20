@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="The Divergence Ledger at Mimir's Well: what we intended, what we actually observed, and what else a research concept might be useful for. First pilot: KA PATCH v1.0.">
+<title>Divergence Ledger · KA PATCH v1.0 — Mimir’s Well</title>
+<style>
+:root{color-scheme:dark;--bg:#080f17;--panel:#10202a;--panel2:#0c1822;--line:#2c4149;--ink:#edf4ef;--muted:#aec0c5;--mint:#b5f5cf;--gold:#d9bc83;--pale:#ebddbb}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 system-ui,-apple-system,sans-serif}a{color:var(--mint);text-underline-offset:4px}a:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:5px}
+.wrap{width:min(1120px,90%);margin:auto}header{border-bottom:1px solid var(--line);background:#0b171f}header .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;padding:20px 0}.brand{font:25px Georgia,serif;color:var(--ink);text-decoration:none}.back{font-size:14px}
+.hero{padding:64px 0 50px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;z-index:-1;right:-8%;top:-80px;width:min(700px,95vw);height:550px;background:radial-gradient(ellipse at center,#26544550 0%,transparent 68%);pointer-events:none}
+.eyebrow{color:var(--gold);font-size:12px;letter-spacing:.19em;text-transform:uppercase}h1,h2,h3{font-family:Georgia,serif;font-weight:normal;line-height:1.12}h1{font-size:clamp(49px,8vw,91px);letter-spacing:-.045em;margin:20px 0}h1 em{font-weight:normal;color:var(--mint)}h2{font-size:clamp(29px,4vw,43px);margin:10px 0 16px}h3{font-size:25px;margin:13px 0}
+.lead{font-size:clamp(19px,2.5vw,23px);color:#d1e5df;max-width:810px;line-height:1.5}.muted{color:var(--muted)}p{max-width:850px}.pillset{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}.pill{display:inline-block;border:1px solid var(--line);background:#13232a;color:var(--mint);padding:7px 12px;font-size:12px;letter-spacing:.04em}.pill.warn{color:var(--gold);border-color:#65543e}
+.kicker{font:italic 23px/1.5 Georgia,serif;color:var(--gold);margin:25px 0 0}
+section{padding:48px 0;border-top:1px solid var(--line)}
+.triad{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;margin:30px 0}.record{border:1px solid var(--line);background:linear-gradient(155deg,#142730,#0c171f);padding:26px;min-width:0;position:relative;display:flex;flex-direction:column}.record:before{content:"";height:3px;position:absolute;top:0;left:0;right:0;background:var(--mint);opacity:.65}.record:nth-child(2):before{background:var(--gold)}.record:nth-child(3):before{background:#87c6bd}.number{font:13px monospace;letter-spacing:.14em;color:var(--gold)}.record p{color:#c4d3d5;font-size:15px}.record .micro{font-size:12px;color:var(--muted);margin-top:auto;padding-top:12px}.record h3{font-size:clamp(24px,2.7vw,31px)}
+.notice{border-left:3px solid var(--gold);padding:17px 22px;background:#242116;max-width:920px;color:#eadcbf}.notice strong{color:#ffe3b5}
+.flow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin:23px 0}.flow article{border:1px solid var(--line);padding:20px;background:var(--panel2)}.flow strong{display:block;color:var(--mint);margin:0 0 8px}.flow p{margin:0;color:var(--muted);font-size:14px}
+table{border-collapse:collapse;width:100%;font-size:14px;max-width:920px}th,td{border-bottom:1px solid var(--line);text-align:left;padding:13px 14px;vertical-align:top}th{width:29%;font-weight:600;color:var(--gold)}td{color:#d4e2e3}
+details{border:1px solid var(--line);background:var(--panel2);padding:16px 20px;margin:12px 0;max-width:930px}summary{cursor:pointer;color:var(--mint);font-weight:650}details p,details li{color:var(--muted);font-size:14px}.button{display:inline-block;padding:13px 20px;border:1px solid var(--mint);text-decoration:none;font-size:14px;margin:15px 15px 4px 0}.button.main{background:var(--mint);color:#0b1e19;font-weight:700}
+footer{border-top:1px solid var(--line);padding:35px 0 60px;color:var(--muted);font-size:13px}
+@media(max-width:770px){.triad{grid-template-columns:1fr}.record{min-height:0}.flow{grid-template-columns:1fr 1fr}}
+@media(max-width:540px){.hero{padding:42px 0 32px}.flow{grid-template-columns:1fr}th,td{display:block;width:auto;padding:9px 5px}th{border-bottom:0;padding-top:17px}td{padding-bottom:17px}section{padding:37px 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="brand" href="index.html">✳ Mimir’s Well</a><a class="back" href="index.html#workbench">← Back to the Workbench</a></div></header>
+<main id="main">
+<div class="wrap hero">
+<div class="eyebrow">The Divergence Ledger · First public pilot · Recorded 20 November 2026</div>
+<h1>Useful even<br>when <em>wrong.</em></h1>
+<p class="lead">What we intended. What actually happened. What else this might be useful for.</p>
+<p class="muted">Every design begins with a destination. A good research archive also records the paths it did not expect. This ledger preserves the boundary between intention, observation, and a new hypothesis.</p>
+<p class="kicker">The next person deserves more than our conclusions.</p>
+<div class="pillset"><span class="pill">Pilot 001 · KA PATCH v1.0</span><span class="pill warn">Concept · Not experimentally validated</span><span class="pill">Ledger schema v0.1</span></div>
+</div>
+<section aria-labelledby="pilot-title"><div class="wrap">
+<div class="eyebrow">01 / One project, three questions</div>
+<h2 id="pilot-title">KA PATCH v1.0</h2>
+<p class="muted">Paired front-and-back energy-harvesting patch concept · Small movements, small currents, new possibilities.</p>
+<div class="triad">
+<article class="record" aria-labelledby="intent-title">
+<div class="number">01 / INTENDED</div><h3 id="intent-title">What we intended</h3>
+<p>Explore whether thin, flexible patches on the chest and upper back can recover small amounts of electrical energy from respiratory and heartbeat-related movement, contact deformation, and temperature gradients.</p>
+<p class="micro">Proposed method: piezoelectric, triboelectric, and thermoelectric layers, followed by power conditioning and an energy buffer.</p>
+</article>
+<article class="record" aria-labelledby="observed-title">
+<div class="number">02 / OBSERVED</div><h3 id="observed-title">What actually happened</h3>
+<p>A concept and its illustrations were developed. This public ledger has no measured output, prototype test, independent replication, or validated power budget to report.</p>
+<p class="micro">Current outcome: <strong>unmeasured</strong> — neither technical success nor failure established. An illustration is not an experimental result.</p>
+</article>
+<article class="record" aria-labelledby="alternate-title">
+<div class="number">03 / POSSIBLE CROSSOVER</div><h3 id="alternate-title">What else might this be useful for?</h3>
+<p>Even if practical energy harvesting proves inefficient, flexible motion-sensitive layers might be worth testing for breathing-motion sensing, pressure mapping, or assistive-wearable input signals.</p>
+<p class="micro">These are <strong>new hypotheses</strong>, not accidental discoveries or established applications.</p>
+</article>
+</div>
+<div class="notice"><strong>The honesty gate:</strong> There is no recorded failure to reinterpret yet. This pilot shows how a proposed design can preserve promising alternative directions without fabricating evidence.</div>
+</div></section>
+<section aria-labelledby="next-title"><div class="wrap">
+<div class="eyebrow">02 / The next reproducible brick</div><h2 id="next-title">Measure first. Interpret second.</h2>
+<p class="muted">A small benchtop experiment can produce the first genuine observation for this ledger, without applying untested electronics to anyone's chest.</p>
+<div class="flow">
+<article><strong>1 · Isolate</strong><p>Test one candidate transducer with a known deformation input. Record frequency, displacement, load, and controls.</p></article>
+<article><strong>2 · Measure</strong><p>Capture voltage and current under a defined electrical load; estimate harvested energy, then subtract power-conditioning losses.</p></article>
+<article><strong>3 · Reframe</strong><p>If useful power is too low, examine whether the measured signal is repeatable enough for sensing. Label that result separately.</p></article>
+</div>
+<p class="muted">Before any wearable or medical use: assess electrical isolation, heat, adhesive and skin safety, repeatability, and compatibility with existing medical devices. No clinical utility is claimed.</p>
+</div></section>
+<section aria-labelledby="trace-title"><div class="wrap">
+<div class="eyebrow">03 / Record of what we know</div><h2 id="trace-title">The evidence receipt</h2>
+<table aria-label="KA PATCH pilot record provenance"><tbody>
+<tr><th>Project and version</th><td>KA PATCH v1.0 · paired bioelectronic patch concept</td></tr>
+<tr><th>Ledger version</th><td>0.1 · created 20 November 2026. This is the ledger entry date, not the original design date.</td></tr>
+<tr><th>Contributors</th><td>Mr. Peloquin and Asteris Solenne · human–AI collaborative concept documentation</td></tr>
+<tr><th>Source material</th><td>Previously prepared concept descriptions and illustrations. Original technical source package and creation date have not been verified in this public pilot.</td></tr>
+<tr><th>Evidence available here</th><td>Concept-level architecture and proposed applications; no physical measurements, test logs, or independent performance evidence.</td></tr>
+<tr><th>Outcome status</th><td>Proposed / unmeasured · confidence in performance not established.</td></tr>
+<tr><th>Next check</th><td>Bench-test one harvesting element with a defined mechanical input, known load, and documented baseline.</td></tr>
+<tr><th>Guardrail</th><td>Do not infer usable power, medical safety, or a new sensor from conceptual artwork alone. We do no harm.</td></tr>
+</tbody></table>
+<details><summary>How to use a Divergence Record</summary><p>Record the original hypothesis before the trial. Keep raw results and test conditions separate from interpretation. Mark unknowns explicitly. If a different application emerges, describe it as a hypothesis until it is independently tested. Preserve previous versions so the next researcher can see exactly when the interpretation changed.</p></details>
+<details><summary>What would change this record from “unmeasured” to “tested”?</summary><p>A date-stamped protocol, apparatus configuration, control runs, raw measurements, analysis method, and a stated result. A failed test belongs in the ledger just as much as a successful one; neither should be invented to fill a blank.</p></details>
+</div></section>
+<section><div class="wrap"><div class="eyebrow">04 / Where the source gathers</div><h2>Wrong destination.<br>Useful journey.</h2><p class="lead">A failed answer to one question may become a good question for the next person. Keep the record honest, and leave the door open.</p><a class="button main" href="index.html#projects">Explore the Well ↗</a><a class="button" href="index.html#workbench">Return to the Workbench ↗</a></div></section>
+</main>
+<footer><div class="wrap">✳ &nbsp; Mimir’s Well · The Synthetic Court · <strong>We do no harm.</strong> &nbsp; <a href="legal.html">Legal &amp; Rights</a></div></footer>
+</body></html>
