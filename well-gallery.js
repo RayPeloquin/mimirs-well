@@ -3,6 +3,18 @@
   'use strict';
   const illustrations = [
     {
+      id: 'echo-rx',
+      src: 'assets/echo-rx-responsive-cell-platform.webp',
+      alt: 'ECHO-Rx Medicine made by cells concept poster illustrating a proposed cell-based responsive biologic-production platform.',
+      caption: 'ECHO-Rx · Responsive biologic-production concept artwork; no demonstrated biological production or clinical efficacy.',
+    },
+    {
+      id: 'echo-rx',
+      src: 'assets/echo-rx-contained-cell-research.webp',
+      alt: 'ECHO-Rx contained-cell research poster showing a laboratory chamber under a microscope and the phrase Stop production. Measure what remains.',
+      caption: 'ECHO-Rx · Contained-cell measurement concept emphasizing secretion shutoff and residual activity. No ECHO-Rx biological results or validated containment are reported.',
+    },
+    {
       id: 'echo-genome-echogenome',
       src: 'assets/echo-genome-v02-concept.webp',
       alt: 'ECHO Genome v0.2 conceptual cell illustration showing host chromosomes beside a proposed nonintegrating artificial chromosome and memory modules.',
