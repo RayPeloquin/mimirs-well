@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="SKEPTIC-1 Divergence Ledger pilot 002: a reversible mechanical probe separates previously identical ideal-model fault signatures; a symmetric control retains ambiguity.">
+<title>Divergence Ledger · SKEPTIC-1 — Mimir’s Well</title>
+<style>
+:root{color-scheme:dark;--bg:#080f17;--panel:#10202a;--panel2:#0c1822;--line:#2c4149;--ink:#edf4ef;--muted:#aec0c5;--mint:#b5f5cf;--gold:#d9bc83;--pale:#ebddbb}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 system-ui,-apple-system,sans-serif}a{color:var(--mint);text-underline-offset:4px}a:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:5px}
+.wrap{width:min(1120px,90%);margin:auto}header{border-bottom:1px solid var(--line);background:#0b171f}header .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;padding:20px 0}.brand{font:25px Georgia,serif;color:var(--ink);text-decoration:none}.back{font-size:14px}
+.hero{padding:64px 0 50px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;z-index:-1;right:-8%;top:-80px;width:min(700px,95vw);height:550px;background:radial-gradient(ellipse at center,#26544550 0%,transparent 68%);pointer-events:none}
+.eyebrow{color:var(--gold);font-size:12px;letter-spacing:.19em;text-transform:uppercase}h1,h2,h3{font-family:Georgia,serif;font-weight:normal;line-height:1.12}h1{font-size:clamp(49px,8vw,91px);letter-spacing:-.045em;margin:20px 0}h1 em{font-weight:normal;color:var(--mint)}h2{font-size:clamp(29px,4vw,43px);margin:10px 0 16px}h3{font-size:25px;margin:13px 0}
+.lead{font-size:clamp(19px,2.5vw,23px);color:#d1e5df;max-width:810px;line-height:1.5}.muted{color:var(--muted)}p{max-width:850px}.pillset{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}.pill{display:inline-block;border:1px solid var(--line);background:#13232a;color:var(--mint);padding:7px 12px;font-size:12px;letter-spacing:.04em}.pill.warn{color:var(--gold);border-color:#65543e}
+.kicker{font:italic 23px/1.5 Georgia,serif;color:var(--gold);margin:25px 0 0}
+section{padding:48px 0;border-top:1px solid var(--line)}
+.triad{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;margin:30px 0}.record{border:1px solid var(--line);background:linear-gradient(155deg,#142730,#0c171f);padding:26px;min-width:0;position:relative;display:flex;flex-direction:column}.record:before{content:"";height:3px;position:absolute;top:0;left:0;right:0;background:var(--mint);opacity:.65}.record:nth-child(2):before{background:var(--gold)}.record:nth-child(3):before{background:#87c6bd}.number{font:13px monospace;letter-spacing:.14em;color:var(--gold)}.record p{color:#c4d3d5;font-size:15px}.record .micro{font-size:12px;color:var(--muted);margin-top:auto;padding-top:12px}.record h3{font-size:clamp(24px,2.7vw,31px)}
+.notice{border-left:3px solid var(--gold);padding:17px 22px;background:#242116;max-width:920px;color:#eadcbf}.notice strong{color:#ffe3b5}
+.flow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin:23px 0}.flow article{border:1px solid var(--line);padding:20px;background:var(--panel2)}.flow strong{display:block;color:var(--mint);margin:0 0 8px}.flow p{margin:0;color:var(--muted);font-size:14px}
+table{border-collapse:collapse;width:100%;font-size:14px;max-width:920px}th,td{border-bottom:1px solid var(--line);text-align:left;padding:13px 14px;vertical-align:top}th{width:29%;font-weight:600;color:var(--gold)}td{color:#d4e2e3}
+details{border:1px solid var(--line);background:var(--panel2);padding:16px 20px;margin:12px 0;max-width:930px}summary{cursor:pointer;color:var(--mint);font-weight:650}details p,details li{color:var(--muted);font-size:14px}.button{display:inline-block;padding:13px 20px;border:1px solid var(--mint);text-decoration:none;font-size:14px;margin:15px 15px 4px 0}.button.main{background:var(--mint);color:#0b1e19;font-weight:700}
+footer{border-top:1px solid var(--line);padding:35px 0 60px;color:var(--muted);font-size:13px}
+@media(max-width:770px){.triad{grid-template-columns:1fr}.record{min-height:0}.flow{grid-template-columns:1fr 1fr}}
+@media(max-width:540px){.hero{padding:42px 0 32px}.flow{grid-template-columns:1fr}th,td{display:block;width:auto;padding:9px 5px}th{border-bottom:0;padding-top:17px}td{padding-bottom:17px}section{padding:37px 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="brand" href="index.html">✳ Mimir’s Well</a><a class="back" href="index.html#workbench">← Back to the Workbench</a></div></header>
+<main id="main">
+<div class="wrap hero">
+<div class="eyebrow">The Divergence Ledger · Pilot 002 · Recorded 20 November 2026</div>
+<h1>Ask matter<br><em>twice.</em></h1>
+<p class="lead">What we intended. What actually happened. What else this might be useful for.</p>
+<p class="muted">SKEPTIC-1 explores whether a <strong>known, reversible change</strong> to a mechanical system can reveal information hidden in a passive measurement. The second question is an intervention—not a second guess.</p>
+<p class="kicker">Matter that asks a second question.</p>
+<div class="pillset"><span class="pill">Pilot 002 · SKEPTIC-1 v0.1</span><span class="pill">Numerical study · Reproducible code</span><span class="pill warn">No physical instrument or hardware validation</span></div>
+</div>
+<section aria-labelledby="pilot-title"><div class="wrap">
+<div class="eyebrow">01 / One study, three questions</div>
+<h2 id="pilot-title">The SKEPTIC-1 record</h2>
+<p class="muted">An idealized three-mass, four-spring experiment asks whether an asymmetric probe can disambiguate two fault locations that produce identical ordinary vibration spectra.</p>
+<div class="triad">
+<article class="record" aria-labelledby="intent-title"><div class="number">01 / INTENDED</div><h3 id="intent-title">What we intended</h3>
+<p>Design a bench instrument that measures a system, changes its stiffness in a known and reversible way, measures again, and checks that the original state returns.</p>
+<p class="micro">Goal: distinguish competing mechanical explanations while explicitly detecting calibration failure, ambiguity, or return-state drift.</p></article>
+<article class="record" aria-labelledby="observed-title"><div class="number">02 / COMPUTED</div><h3 id="observed-title">What actually happened</h3>
+<p>In the saved <strong>ideal numerical model</strong>, a 25% loss of the left-end or right-end spring gives exactly the same unbraced three-mode spectrum. A 500 N/m grounded brace at mass 1 breaks that equality: the first-mode predictions differ by <strong>0.402028772 Hz</strong>.</p>
+<p class="micro">Local parameter-sensitivity rank changes from <strong>2 to 3</strong> when baseline and braced observations are combined. A symmetric center brace remains ambiguous.</p></article>
+<article class="record" aria-labelledby="alternate-title"><div class="number">03 / POSSIBLE CROSSOVER</div><h3 id="alternate-title">What else might this be useful for?</h3>
+<p>The negative control suggests a general experimental lesson: adding a measurement is not enough if the intervention preserves the system's symmetry. Deliberately chosen probes may be worth exploring in fixture inspection, robotic mechanism diagnostics, and experimental sensor placement.</p>
+<p class="micro">Proposed transfer directions, not validated applications. Symmetry-breaking and experiment design have substantial prior art.</p></article>
+</div>
+<div class="notice"><strong>The divergence:</strong> “Probe it again” is not automatically informative. The <em>location and symmetry</em> of the probe matter. The failed center-brace control is an informative model result, not a failed physical prototype.</div>
+<figure style="max-width:880px;margin:28px 0 0"><img src="https://raw.githubusercontent.com/RayPeloquin/SKEPTIC-1/main/figures/architecture.png" alt="SKEPTIC-1 schematic: three masses connected by four springs between supports, with a reversible additional grounded brace on the first mass." width="1150" height="350" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border:1px solid var(--line);background:#e3eff1;border-radius:5px"><figcaption style="font-size:12px;color:var(--muted);margin-top:8px">Model architecture from the SKEPTIC-1 repository. This is a generated schematic, not a photograph of built hardware.</figcaption></figure>
+</div></section>
+<section aria-labelledby="numbers-title"><div class="wrap">
+<div class="eyebrow">02 / What the existing model actually shows</div>
+<h2 id="numbers-title">Same starting answer. Different response to a question.</h2>
+<table aria-label="SKEPTIC-1 ideal model first three vibration frequencies"><thead><tr><th>Model condition</th><th>Predicted modes, Hz</th></tr></thead><tbody>
+<tr><th>Unbraced · left-end loss</th><td>11.431406672 · 21.798818369 · 29.165501437</td></tr>
+<tr><th>Unbraced · right-end loss</th><td>11.431406672 · 21.798818369 · 29.165501437</td></tr>
+<tr><th>500 N/m brace at mass 1 · left loss</th><td>12.750896532 · 23.195330438 · 29.707486900</td></tr>
+<tr><th>500 N/m brace at mass 1 · right loss</th><td>12.348867760 · 23.155769835 · 29.907512147</td></tr>
+</tbody></table>
+<p class="muted">Three masses of 0.1 kg and four nominal 1000 N/m springs. Each end-fault scenario reduces one end spring by 25%. These are deterministic model predictions, not observed physical frequencies. No statistical accuracy or detection rate has been established.</p>
+<div class="flow">
+<article><strong>Control · no brace</strong><p>Mirror-image end faults remain exactly indistinguishable in the ideal vibration spectrum.</p></article>
+<article><strong>Asymmetric intervention</strong><p>A grounded brace at mass 1 distinguishes the modeled cases and raises local sensitivity rank.</p></article>
+<article><strong>Negative control · center brace</strong><p>The symmetric center intervention preserves ambiguity; changing a system is not necessarily an informative test.</p></article>
+</div>
+<p><a class="button main" href="https://github.com/RayPeloquin/SKEPTIC-1/blob/main/results/results.json">Inspect numerical results ↗</a><a class="button" href="https://github.com/RayPeloquin/SKEPTIC-1/blob/main/model.py">Read source model ↗</a></p>
+</div></section>
+<section aria-labelledby="next-title"><div class="wrap">
+<div class="eyebrow">03 / The next experimental brick</div><h2 id="next-title">Prove the intervention is real.</h2>
+<p class="muted">A useful next phase is not simply a more complicated fit. It is a controlled benchtop comparison against simpler ways of obtaining the same information.</p>
+<div class="flow">
+<article><strong>1 · Build and calibrate</strong><p>Measure actual stiffness, mass, actuator repeatability, sensor response, and return-state drift for a small laboratory test article.</p></article>
+<article><strong>2 · Blind the comparison</strong><p>Compare adaptive bracing with fixed, random, and repeated passive tests, plus richer passive mode-shape or response measurements under matched resources.</p></article>
+<article><strong>3 · Keep adverse findings</strong><p>Record when added stiffness fails to resolve ambiguity, when drift invalidates a test, or when passive methods work just as well.</p></article>
+</div>
+<div class="notice"><strong>Limits:</strong> No hardware has been built. Damping, friction, mounting, real sensor noise, and actuator hysteresis are omitted from the saved ideal model. Multistart fitting is a local search, not a global proof. Practical diagnostic utility and novelty remain unestablished.</div>
+</div></section>
+<section aria-labelledby="trace-title"><div class="wrap">
+<div class="eyebrow">04 / The evidence receipt</div><h2 id="trace-title">A trail worth following.</h2>
+<table aria-label="SKEPTIC-1 evidence provenance"><tbody>
+<tr><th>Project and version</th><td>SKEPTIC-1 v0.1 · original research pack dated 4 November 2026</td></tr>
+<tr><th>Ledger entry</th><td>Pilot 002 · prepared 20 November 2026; a documentation record, not a new experiment</td></tr>
+<tr><th>Original authorship</th><td>Designed and numerically modeled by Asteris Solenne / ChatGPT in response to Anubis's open-ended request; Anubis authorized publication. AI-assisted outside review supplied criticism. See the <a href="https://github.com/RayPeloquin/SKEPTIC-1/blob/main/AUTHORSHIP.md">authorship statement ↗</a>.</td></tr>
+<tr><th>Implemented today</th><td>Reduced-order numerical example; analytic and numerical sensitivity cross-checks; reflection-symmetry test; center-brace negative control; illustrative local profile fits</td></tr>
+<tr><th>Not implemented</th><td>A physical instrument, validated adaptive test policy, real sensor and actuation pipeline, field data, certified decision thresholds</td></tr>
+<tr><th>Reproduction</th><td><a href="https://github.com/RayPeloquin/SKEPTIC-1/blob/main/README.md">README &amp; instructions ↗</a> · <a href="https://github.com/RayPeloquin/SKEPTIC-1/blob/main/model.py">model.py ↗</a> · <a href="https://github.com/RayPeloquin/SKEPTIC-1/blob/main/requirements.txt">requirements ↗</a> · <a href="https://github.com/RayPeloquin/SKEPTIC-1/blob/main/results/spectra.csv">spectra.csv ↗</a></td></tr>
+<tr><th>Evidence status</th><td>Ideal-model calculations saved; physical performance unverified; no detection-rate or structural-safety claim</td></tr>
+<tr><th>Alternative applications</th><td>Hypotheses for transferable test-design principles only. No new use has been independently demonstrated.</td></tr>
+<tr><th>Guiding principle</th><td>Record the null result as carefully as the separation result. We do no harm.</td></tr>
+</tbody></table>
+<details><summary>Why is the center-brace result worth keeping?</summary><p>The center brace leaves the model reflection-symmetric. A change to the experiment therefore produces no additional information about which end spring was weakened. This is a constructive negative control: it demonstrates why intervention design matters.</p></details>
+<details><summary>Does this establish a new diagnostic method?</summary><p>No. Boundary-condition changes, added-stiffness identification, symmetry-breaking, and optimal experiment design have established research histories. The numerical example supports this particular ideal-model illustration, not priority, general diagnostic accuracy, or patent novelty.</p></details>
+<details><summary>What should the next researcher check?</summary><p>Reproduce the existing source calculation, introduce realistic damping and sensor noise, pre-register a comparison between asymmetric, symmetric, random, fixed and passive measurements, and retain failed calibration and drift cases as first-class evidence.</p></details>
+</div></section>
+<section><div class="wrap"><div class="eyebrow">05 / The next question</div><h2>When the first answer is ambiguous,<br>change the question.</h2><p class="lead">Not every question breaks a symmetry. Not every experiment needs to succeed to teach us something. Record both.</p><a class="button main" href="https://github.com/RayPeloquin/SKEPTIC-1">Explore SKEPTIC-1 research ↗</a><a class="button" href="divergence-ledger.html">Read pilot 001 · KA PATCH ↗</a><a class="button" href="index.html#divergence-ledger">Return to the Ledger ↗</a></div></section>
+</main>
+<footer><div class="wrap">✳ &nbsp; Mimir’s Well · The Synthetic Court · <strong>We do no harm.</strong> &nbsp; <a href="legal.html">Legal &amp; Rights</a></div></footer>
+</body></html>
