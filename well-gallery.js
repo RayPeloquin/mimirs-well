@@ -3,6 +3,12 @@
   'use strict';
   const illustrations = [
     {
+      id: 'ndsm-01-neutrino-feasibility-study',
+      src: 'assets/ndsm-01-neutrino-conversion-poster.webp',
+      alt: 'NDSM-01 neutrino-induced nuclear conversion concept poster depicting a schematic indium target and prompt-plus-delayed readout, with an illustrative capture-rate equation and delayed lifetime.',
+      caption: 'NDSM-01 · Supplied neutrino-conversion research poster; hypothetical apparatus only. Atomic addressing and directed conversion are unresolved, and no device or conversion yield has been demonstrated.',
+    },
+    {
       id: 'echo-m',
       src: 'assets/echo-m-cellular-flight-recorder-v04.webp',
       alt: 'ECHO-M v0.4 A Cellular Flight Recorder concept poster depicting an artificial chromosome within an illustrated cultured cell, labeled research concept and combined system unvalidated.',
