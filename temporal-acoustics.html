@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Temporal Acoustics — Mimir’s Well</title>
+<meta name="description" content="A reproducible synthetic acoustic-imaging study of underground cavities and geological false positives.">
+<style>
+:root{color-scheme:dark;--bg:#081018;--panel:#10222b;--line:#29404a;--ink:#eef5f3;--muted:#afc4c9;--mint:#b4f4d1;--gold:#ebc38c}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,sans-serif}a{color:var(--mint);text-underline-offset:4px}a:focus-visible{outline:3px solid var(--gold);outline-offset:4px}.wrap{width:min(1120px,92%);margin:auto}header{border-bottom:1px solid var(--line);background:#0b171f}header .wrap{display:flex;gap:20px;justify-content:space-between;align-items:center;padding:19px 0}header a{text-decoration:none}.brand{font:24px Georgia,serif;color:var(--ink)}.back{font-size:14px}.hero{padding:60px 0 35px}.eyebrow{color:var(--gold);font-size:12px;letter-spacing:.19em;text-transform:uppercase}h1,h2{font-family:Georgia,serif;font-weight:normal}h1{font-size:clamp(48px,8vw,90px);line-height:1.03;letter-spacing:-.04em;margin:18px 0 22px}h2{font-size:clamp(29px,4vw,45px);margin:0 0 14px}p{max-width:780px}p.lead{font-size:20px;color:#cde4e2;max-width:840px}.muted,.caption{color:var(--muted)}.caption{font-size:13px;line-height:1.45;margin:8px 0 0}.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:35px 0}.metric{border:1px solid var(--line);background:var(--panel);padding:18px;border-radius:6px}.metric strong{display:block;color:var(--mint);font-size:29px;font-weight:650}.metric small{display:block;color:var(--muted);line-height:1.4}section{border-top:1px solid var(--line);padding:46px 0}.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}figure{margin:0}figure img{width:100%;height:auto;border:1px solid var(--line);border-radius:7px;background:#071019}figure.wide{margin:20px 0 30px}.notice{padding:18px 22px;border-left:4px solid var(--gold);background:#252117;color:#f0dac0;max-width:890px;margin:23px 0}.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:19px}.step{padding:17px;border:1px solid var(--line);border-radius:6px}.step strong{color:var(--mint)}table{border-collapse:collapse;width:100%;max-width:850px;margin:20px 0;font-size:14px}th,td{padding:11px 13px;text-align:left;border-bottom:1px solid var(--line)}th{color:var(--gold)}td{color:#d9e9e8}.button{display:inline-block;border:1px solid var(--mint);padding:12px 18px;margin:7px 12px 7px 0;text-decoration:none;border-radius:3px}.button.primary{background:var(--mint);color:#0d221d;font-weight:700}footer{border-top:1px solid var(--line);padding:32px 0 55px;color:var(--muted);font-size:13px}@media(max-width:700px){.metrics,.two,.steps{grid-template-columns:1fr 1fr}.metrics{gap:9px}.metric strong{font-size:24px}.steps{grid-template-columns:1fr}table{font-size:12px}th,td{padding:8px 5px}}@media(max-width:470px){.two,.metrics{grid-template-columns:1fr}}
+</style></head><body>
+<header><div class="wrap"><a class="brand" href="index.html">Mimir’s Well</a><a class="back" href="index.html#projects">← Back to the collection</a></div></header>
+<main>
+<div class="wrap hero"><div class="eyebrow">Physics &amp; engineering · Experimental research · v0.3</div>
+<h1>Temporal<br>Acoustics</h1>
+<p class="lead">Can we learn the shape of a hidden chamber from waves moving through stone—and tell an actual void from a misleading change in the rock?</p>
+<p class="muted">An open, reproducible synthetic inverse-imaging investigation. Our longer-term interest includes original layouts of underground structures, but the current experiment concerns <em>present-day synthetic cavities only</em>.</p>
+<div class="notice"><strong>Evidence boundary.</strong> No measurements were taken at Malta, any pyramid, or any archaeological site. The illustrations are AI-generated concepts; the plotted images below come from computer simulations. There is no claim of a discovered chamber or reconstructed historical layout.</div>
+<div class="metrics">
+<div class="metric"><strong>8</strong><small>Randomized rock worlds in the held-out challenge</small></div>
+<div class="metric"><strong>32</strong><small>Cavity-present and cavity-absent noisy measurements</small></div>
+<div class="metric"><strong>10/10</strong><small>Software unit tests passing</small></div>
+<div class="metric"><strong>5/8</strong><small>False chamber alarms from hard solid impostors using one scoring rule</small></div>
+</div></div>
+<section><div class="wrap"><div class="eyebrow">01 / Visual hypothesis</div><h2>Listening through limestone</h2>
+<div class="two">
+<figure><img src="assets/temporal-acoustics-survey-concept.png" alt="Artistic cutaway of limestone and a surface array sending cyan waves into a dark underground cavity" loading="lazy"><figcaption class="caption">AI-generated concept illustration. A surface excitation and receivers probe an imagined subsurface chamber; the drawing is not a measured field or exact wave-solver output.</figcaption></figure>
+<figure><img src="assets/temporal-acoustics-void-v-solid-concept.png" alt="Artistic comparison of a black empty cavity and a light-colored solid rock inclusion beneath acoustic sensors" loading="lazy"><figcaption class="caption">AI-generated comparison: empty space versus contrasting solid stone. The actual v0.3 calculation shows that a solid inclusion can sometimes be misclassified as a cavity.</figcaption></figure>
+</div></div></section>
+<section><div class="wrap"><div class="eyebrow">02 / Numerical method</div><h2>The current test apparatus is mathematical</h2>
+<div class="steps">
+<div class="step"><strong>1 · Simulate</strong><p>A 2D scalar finite-difference wave equation sends known 900 Hz pulses from five sources through simulated rock to thirteen receivers. Some worlds contain a planted circular pressure-release void.</p></div>
+<div class="step"><strong>2 · Reconstruct</strong><p>A short-offset matched filter estimates an effective wave speed. A no-void model is subtracted, then a separate diffraction stack searches possible cavity positions without receiving the true coordinates.</p></div>
+<div class="step"><strong>3 · Challenge</strong><p>Hold out entire geology worlds when choosing thresholds. Compare noisy cavity-present worlds against empty-rock controls and sharp solid inclusions. Record false positives—not just attractive images.</p></div>
+</div>
+<p class="muted">This is neither coupled elastic P/S-wave propagation nor spatially resolved 2D rock tomography. Known source timing, idealized boundaries, and simplified acoustics are important limitations.</p>
+</div></section>
+<section><div class="wrap"><div class="eyebrow">03 / Computed results</div><h2>Where the model succeeds—and fails</h2>
+<p>Across eight independently varied synthetic rock fields, with two noise realizations per class, cavity-present examples often produce stronger migration peaks than ordinary cavity-free rock. The table reports one small held-out-world experiment, not expected field performance.</p>
+<table><thead><tr><th>Image score</th><th>Pairwise AUC</th><th>Held-out sensitivity</th><th>Held-out false-positive rate</th></tr></thead>
+<tbody><tr><td>Fixed speed · global peak</td><td>0.973</td><td>93.8%</td><td>18.8%</td></tr>
+<tr><td>Calibrated speed · global peak</td><td>0.992</td><td>100%</td><td>12.5%</td></tr>
+<tr><td>Calibrated speed · interior peak</td><td>1.000</td><td>100%</td><td>12.5%</td></tr></tbody></table>
+<figure class="wide"><img src="assets/temporal-acoustics-holdout-detection.png" alt="Four scatter plots comparing cavity and no-cavity migration scores over eight synthetic geology worlds" loading="lazy"><figcaption class="caption">Actual v0.3 computed score distributions. Green dots denote planted cavities; red crosses denote no-cavity controls. AUC of 1 in this toy distribution is not proof of reliable archaeological detection.</figcaption></figure>
+<div class="notice"><strong>The impostor problem:</strong> when eight additional no-cavity worlds contained a sharp, 35%-slower <em>solid</em> inclusion, the calibrated interior-peak rule produced <strong>five false alarms out of eight</strong> at a threshold previously set using smoother-rock null controls. This is a deliberate out-of-distribution challenge.</div>
+<figure class="wide"><img src="assets/temporal-acoustics-solid-inclusion-challenge.png" alt="Four charts showing scores of cavity-free smooth rock, genuine air cavities and solid inclusions relative to frozen thresholds" loading="lazy"><figcaption class="caption">Actual computed control results. Orange triangles are solid inclusions, not hollow spaces. A bright migration feature alone cannot establish a cavity.</figcaption></figure>
+</div></section>
+<section><div class="wrap"><div class="eyebrow">04 / Observability</div><h2>The deep stone can hide from a shallow calibration</h2>
+<p>We compared uniform rock with a second synthetic world containing an 11%-faster deep lens. Both yielded the same effective speed from the short-offset direct arrivals—approximately <strong>2,542 m/s</strong>—although their later recorded wavefields differed considerably.</p>
+<figure class="wide"><img src="assets/temporal-acoustics-deep-lens-ambiguity.png" alt="Computed simulation of uniform rock versus a deep faster lens, with identical estimated direct-arrival speed and divergent late waves" loading="lazy"><figcaption class="caption">Actual simulated velocity fields and wave records. The present single-depth source/receiver line does not independently constrain the deep 2D velocity field from direct arrival times.</figcaption></figure>
+<p>The next physical question is one of measurement geometry: multiple depths and intersecting paths, then elastic wave modes, rock anisotropy, attenuation, irregular void shapes, and independent ground truth. Any eventual archaeological application would require site permissions and non-invasive conservation safeguards.</p>
+</div></section>
+<section><div class="wrap"><div class="eyebrow">05 / Open record</div><h2>Inspect the source and limitations</h2>
+<p>The research folder contains Python source, ten tests, the synthetic-run configuration, machine-readable metrics, and v0.1–v0.3 reports. The first reproducible tests are computer simulations; no physical device has been built or validated.</p>
+<a class="button primary" href="https://github.com/RayPeloquin/mimirs-well/tree/main/research/temporal-acoustics">Open public research source ↗</a>
+<a class="button" href="research/temporal-acoustics/results/v0.3-report.md">Read the full v0.3 report ↗</a>
+<a class="button" href="index.html#design/temporal-acoustics">Open Well registry record ↗</a>
+<p class="muted">Research concept and direction: Mr. Peloquin. Computational development, tests and illustrations: Asteris Solenne / ChatGPT. Early Court discussions included Grok, Claude, Gemini and Meta AI. Those discussions do not constitute independent verification.</p>
+</div></section>
+</main><footer><div class="wrap">Mimir’s Well · The Synthetic Court · We do no harm. · Published as an experimental research record, not proof of ancient history.</div></footer>
+</body></html>

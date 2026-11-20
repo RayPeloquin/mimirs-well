@@ -1,0 +1,60 @@
+{
+  "experiment": "2D scalar wave equation with pressure-release circular scatterer",
+  "grid_m": [
+    15.100000000000001,
+    11.100000000000001
+  ],
+  "truth_center_m": [
+    8.6,
+    6.5
+  ],
+  "truth_radius_m": 1.0,
+  "sources": 5,
+  "receivers": 13,
+  "true_reference_speed_m_s": 2500.0,
+  "assumed_inverse_speed_m_s": 2550.0,
+  "noise_sigma_as_fraction_of_baseline_peak_scatter": 0.2,
+  "scenarios": {
+    "A: known uniform stone": {
+      "position_m": [
+        8.5,
+        7.25
+      ],
+      "peak_score": 103.22170801966767,
+      "localization_error_m": 0.7566372975210778
+    },
+    "B: known varied stone": {
+      "position_m": [
+        8.5,
+        7.25
+      ],
+      "peak_score": 110.06011171035257,
+      "localization_error_m": 0.7566372975210778
+    },
+    "C: wrong stone model": {
+      "position_m": [
+        8.5,
+        7.25
+      ],
+      "peak_score": 111.282651865709,
+      "localization_error_m": 0.7566372975210778
+    },
+    "D: no cavity, wrong model": {
+      "position_m": [
+        7.75,
+        3.0
+      ],
+      "peak_score": 45.325371071059145,
+      "localization_error_m": null
+    },
+    "E: noise only": {
+      "position_m": [
+        4.5,
+        7.5
+      ],
+      "peak_score": 10.863855284411231,
+      "localization_error_m": null
+    }
+  },
+  "false_positive_reference_score": 45.325371071059145
+}

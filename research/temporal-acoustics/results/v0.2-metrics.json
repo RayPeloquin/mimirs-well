@@ -1,0 +1,88 @@
+{
+  "experiment": "synthetic 2D scalar acoustic surrogate; two-stage speed calibration",
+  "ground_truth_speed_m_s": 2400.0,
+  "fixed_initial_model_speed_m_s": 2550.0,
+  "cavity_center_m": [
+    8.6,
+    6.5
+  ],
+  "cavity_radius_m": 1.0,
+  "noise_standard_deviation": 0.08983395099639893,
+  "sensor_depth_m": 1.8,
+  "sources": 5,
+  "receivers": 13,
+  "scenarios": {
+    "Uniform rock + cavity": {
+      "cavity_present": true,
+      "fixed_position_m": [
+        8.75,
+        7.5
+      ],
+      "fixed_peak": 99.54836885114695,
+      "calibrated_speed_m_s": 2520.7241253200013,
+      "direct_arrival_rms_s": 1.3606621269906361e-05,
+      "calibration_pairs": 17,
+      "calibrated_position_m": [
+        8.75,
+        7.25
+      ],
+      "calibrated_peak": 97.06820726557353,
+      "fixed_error_m": 1.0111874208078344,
+      "calibrated_error_m": 0.7648529270389178
+    },
+    "Varied rock + cavity": {
+      "cavity_present": true,
+      "fixed_position_m": [
+        8.5,
+        7.5
+      ],
+      "fixed_peak": 107.00057924482768,
+      "calibrated_speed_m_s": 2467.997493509983,
+      "direct_arrival_rms_s": 1.6903436720091487e-05,
+      "calibration_pairs": 17,
+      "calibrated_position_m": [
+        8.5,
+        7.25
+      ],
+      "calibrated_peak": 112.80526871576684,
+      "fixed_error_m": 1.004987562112089,
+      "calibrated_error_m": 0.7566372975210778
+    },
+    "Uniform rock, no cavity": {
+      "cavity_present": false,
+      "fixed_position_m": [
+        7.75,
+        3.0
+      ],
+      "fixed_peak": 76.11605956849668,
+      "calibrated_speed_m_s": 2520.7241253200013,
+      "direct_arrival_rms_s": 1.3606621269906361e-05,
+      "calibration_pairs": 17,
+      "calibrated_position_m": [
+        7.75,
+        3.0
+      ],
+      "calibrated_peak": 66.6386357323553,
+      "fixed_error_m": null,
+      "calibrated_error_m": null
+    },
+    "Varied rock, no cavity": {
+      "cavity_present": false,
+      "fixed_position_m": [
+        8.0,
+        3.0
+      ],
+      "fixed_peak": 98.24470848403769,
+      "calibrated_speed_m_s": 2467.997493509983,
+      "direct_arrival_rms_s": 1.6903436720091487e-05,
+      "calibration_pairs": 17,
+      "calibrated_position_m": [
+        8.0,
+        3.0
+      ],
+      "calibrated_peak": 82.06901471514907,
+      "fixed_error_m": null,
+      "calibrated_error_m": null
+    }
+  }
+}

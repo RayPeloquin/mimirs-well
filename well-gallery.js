@@ -3,6 +3,18 @@
   'use strict';
   const illustrations = [
     {
+      id: 'temporal-acoustics',
+      src: 'assets/temporal-acoustics-survey-concept.png',
+      alt: 'Conceptual cutaway of Maltese limestone with surface acoustic receivers, a source and wavefronts scattering from a dark underground air-filled cavity.',
+      caption: 'Temporal Acoustics · AI-generated concept artwork illustrating a possible surface survey, not an actual archaeological scan.',
+    },
+    {
+      id: 'temporal-acoustics',
+      src: 'assets/temporal-acoustics-void-v-solid-concept.png',
+      alt: 'Split scientific concept art: left a hollow limestone cavity, right a solid contrasting rock inclusion, both with stylized acoustic wavefronts.',
+      caption: 'Temporal Acoustics · AI-generated visual comparison of cavity versus solid inclusion. Propagation paths are illustrative, not numerical results.',
+    },
+    {
       id: 'echo-rx',
       src: 'assets/echo-rx-responsive-cell-platform.webp',
       alt: 'ECHO-Rx Medicine made by cells concept poster illustrating a proposed cell-based responsive biologic-production platform.',
