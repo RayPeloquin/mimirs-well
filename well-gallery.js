@@ -3,6 +3,12 @@
   'use strict';
   const illustrations = [
     {
+      id: 'crucible',
+      src: 'assets/crucible-aviation-test-harness-poster.png',
+      alt: 'CRUCIBLE reusable autonomy test harness concept poster with a proposed fixed-wing aircraft above a synthetic rover, multirotor and simulation engine.',
+      caption: 'CRUCIBLE · AI-generated test-harness concept poster. Rover and multirotor are synthetic demonstrations; the fixed-wing aircraft extension is proposed, not implemented or validated.',
+    },
+    {
       id: 'temporal-acoustics',
       src: 'assets/temporal-acoustics-survey-concept.png',
       alt: 'Conceptual cutaway of Maltese limestone with surface acoustic receivers, a source and wavefronts scattering from a dark underground air-filled cavity.',

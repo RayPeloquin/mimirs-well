@@ -36,7 +36,7 @@ function createFixture(ids) {
   return { render, figures };
 }
 
-test('twelve matching design cards receive labeled, clickable concept artwork', () => {
+test('thirteen matching design cards receive labeled, clickable concept artwork', () => {
   const fieldId = 'field-medic-guided-hand-support';
   const hippoId = 'hippo-mag-01-magnetic-compensation-experiment';
   const skepticId = 'skeptic-1';
@@ -49,8 +49,9 @@ test('twelve matching design cards receive labeled, clickable concept artwork', 
   const fluffyId = 'fluffy-01';
   const knockId = 'knock-moth-pool-tile-mapping';
   const siltId = 'silt-harp-manual-muddy-water-prefiltration';
+  const crucibleId = 'crucible';
   const otherId = 'sisters-hope-hand-restoration-gloves';
-  const app = createFixture([fieldId, hippoId, skepticId, aegisId, herdId, atlasId, lanceId, fqscId, radioId, fluffyId, knockId, siltId, otherId]);
+  const app = createFixture([fieldId, hippoId, skepticId, aegisId, herdId, atlasId, lanceId, fqscId, radioId, fluffyId, knockId, siltId, crucibleId, otherId]);
   app.render();
   for (const [id, filename, name] of [
     [fieldId, 'field-medic-assistive-backpack.webp', 'FIELD MEDIC'],
@@ -65,6 +66,7 @@ test('twelve matching design cards receive labeled, clickable concept artwork', 
     [fluffyId, 'fluffy-01-concept.webp', 'FLUFFY-01'],
     [knockId, 'knock-moth-concept.webp', 'Knock-Moth'],
     [siltId, 'silt-harp-concept.webp', 'SILT HARP'],
+    [crucibleId, 'crucible-aviation-test-harness-poster.png', 'CRUCIBLE'],
   ]) {
     const figure = app.figures(id).find(f => f.children[0]?.href === 'assets/' + filename);
     assert.ok(figure, id + ' should include its expected artwork (possibly alongside later variants)');
@@ -79,6 +81,9 @@ test('twelve matching design cards receive labeled, clickable concept artwork', 
     assert.ok(existsSync(localAsset), `${filename} must have a matching image asset`);
   }
   assert.equal(app.figures(otherId).length, 0, 'unrelated designs remain untouched');
+  const crucibleCaption = app.figures(crucibleId)[0].children[1].textContent;
+  assert.match(crucibleCaption, /synthetic/i, 'existing demo is labeled synthetic');
+  assert.match(crucibleCaption, /proposed/i, 'aircraft extension is labeled proposed');
 });
 
 test('artwork loader tolerates a missing design and does not duplicate existing figures', () => {
