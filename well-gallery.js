@@ -3,6 +3,48 @@
   'use strict';
   const illustrations = [
     {
+      id: 'raven-p1',
+      src: 'assets/raven-p1-v03-cover.webp',
+      alt: 'RAVEN-P1 v0.3 Court of the Synthetic cover, with orange and teal protein-ribbon illustration and the question Can 38 changes keep the fold?',
+      caption: 'RAVEN-P1 · Supplied v0.3-labeled cover artwork. Computational study and concept illustration; a corresponding published v0.3 research release is not verified here.',
+    },
+    {
+      id: 'raven-p1',
+      src: 'assets/raven-p1-v02-sequence-questions.webp',
+      alt: 'RAVEN-P1 v0.2 From Sequence to Questions cover with a luminous blue protein ribbon and stated 279-nucleotide, 92-amino-acid, eight-prediction computational scope.',
+      caption: 'RAVEN-P1 · v0.2 sequence-to-questions illustration; computational concept only, unsynthesized and untested.',
+    },
+    {
+      id: 'raven-p1',
+      src: 'assets/raven-p1-structure-math.webp',
+      alt: 'RAVEN-P1 computational structure comparison poster with candidate sequence, aligned C-alpha trace, RMSD 0.781 angstrom and mean model confidence 96.90 of 100.',
+      caption: 'RAVEN-P1 · Computed structure and mathematical summary. Values describe a model-to-reference comparison, not experimental folding, stability or function.',
+    },
+    {
+      id: 'raven-p1',
+      src: 'assets/raven-p1-v02-controls.webp',
+      alt: 'RAVEN-P1 v0.2 controls study chart, comparing predicted structure and target with mutation-path RMSD and local-confidence scores.',
+      caption: 'RAVEN-P1 · v0.2 computational controls; intermediate mutation paths are correlated and do not establish general mutation tolerance.',
+    },
+    {
+      id: 'raven-p1',
+      src: 'assets/raven-p1-contact-maps.webp',
+      alt: 'RAVEN-P1 computational folding contact maps comparing original and reassigned residue letters, showing 108 of 124 versus 34 of 124 long-range contacts recovered.',
+      caption: 'RAVEN-P1 · AlphaFold2 predicted-contact comparison under a specific sequence reassignment; the figures do not constitute laboratory validation.',
+    },
+    {
+      id: 'raven-p1',
+      src: 'assets/raven-p1-folded-protein-concept.webp',
+      alt: 'Luminous teal-and-gold protein ribbon representing RAVEN-P1 as an artistic folding concept.',
+      caption: 'RAVEN-P1 · Luminous folded-protein concept art, not an atomic model or measured structure.',
+    },
+    {
+      id: 'raven-p1',
+      src: 'assets/raven-p1-feather-concept.webp',
+      alt: 'RAVEN-P1 feather-shaped teal-and-copper protein ribbon with the title The twelve-site folding test.',
+      caption: 'RAVEN-P1 · Twelve-site folding-test concept illustration, not an experimentally determined structure.',
+    },
+    {
       id: 'signature-selective-receiver-detection-and-error-bounds',
       src: 'assets/nulling-boundary-receiver-mathematics.webp',
       alt: 'The Nulling Boundary concept poster showing a signature-selective receiver board and the observation, worst-case margin, minimax receiver, and synthetic full-nulling threshold equations.',
@@ -145,6 +187,7 @@
     label.textContent = caption;
     link.append(image);
     figure.append(link, label);
-    note.after(figure);
+    const previousArt = [...card.querySelectorAll('.concept-art')].at(-1);
+    (previousArt || note).after(figure);
   });
 })();
