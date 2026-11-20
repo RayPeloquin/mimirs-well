@@ -3,6 +3,12 @@
   'use strict';
   const illustrations = [
     {
+      id: 'echo-m',
+      src: 'assets/echo-m-cellular-flight-recorder-v04.webp',
+      alt: 'ECHO-M v0.4 A Cellular Flight Recorder concept poster depicting an artificial chromosome within an illustrated cultured cell, labeled research concept and combined system unvalidated.',
+      caption: 'ECHO-M v0.4 · Supplied host-coupled artificial chromosome research poster; conceptual illustration for cultured-cell research only. The combined system has not been validated.',
+    },
+    {
       id: 'veil-e-edison-01',
       src: 'assets/veil-e-edison-01-quiet-receiver-poster.webp',
       alt: 'VEIL-E / EDISON-01 The Quiet Receiver concept poster showing an enclosed sensor instrument, fusion display, calibration channels, and rules for evaluating residual signals.',
