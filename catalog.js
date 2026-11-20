@@ -65,6 +65,19 @@ const withdrawnTitles=new Set([
  'Stone Mansion District',
  'Thor Avatar',
 ]);
+// Separate catalog record for the artwork. The archived QBERT title is unchanged.
+const qubitCard=document.createElement('article');
+qubitCard.className='card';qubitCard.dataset.category='physics';qubitCard.dataset.stage='concept';
+const qubitTop=document.createElement('div');qubitTop.className='cardtop';
+const qubitIndex=document.createElement('span');qubitIndex.className='index';qubitIndex.textContent=String(number++).padStart(2,'0')+' /';
+const qubitTag=document.createElement('span');qubitTag.className='tag';qubitTag.textContent=labels.physics;
+qubitTop.append(qubitIndex,qubitTag);
+const qubitStage=document.createElement('span');qubitStage.className='stage';qubitStage.textContent='Concept artwork · Project provenance unverified';
+const qubitHeading=document.createElement('h3');qubitHeading.textContent='Qubit — Ankh Assembly';
+const qubitNote=document.createElement('p');qubitNote.textContent='Ankh-centered cryogenic quantum-computing concept artwork. No built device or measured qubit operation is documented. Original project name and design version remain unconfirmed. This is not QBERT.';
+const qubitLink=document.createElement('a');qubitLink.href='#qubit-art';qubitLink.textContent='View the Ankh Qubit artwork ↗';
+qubitCard.append(qubitTop,qubitStage,qubitHeading,qubitNote,qubitLink);grid.append(qubitCard);
+
 groups.forEach(([category,status,titles])=>titles.split('\n').filter(title=>!withdrawnTitles.has(title)).forEach(title=>{
  const armoryDivision=armoryDivisions.get(title);
  const publicCategory=armoryDivision?'defense':category;
@@ -76,13 +89,7 @@ groups.forEach(([category,status,titles])=>titles.split('\n').filter(title=>!wit
  const heading=document.createElement('h3');heading.textContent=title;
  const note=document.createElement('p');
  note.textContent=status==='Illustrated concept'?'Archive title only. Mechanism, feasibility and supporting evidence have not yet been reviewed.':status==='Portfolio architecture'?'Listed in the October 2026 selected portfolio. Mechanism, feasibility and supporting evidence review pending.':'Archived design title. Mechanism, feasibility and supporting evidence review pending.';
- if(title==='QBERT'){
-   note.textContent='Archived QBERT quantum-hardware concept. A supplied Ankh-centered apparatus image is tentatively associated with a later QBERT design; its original version and technical specifications have not been verified.';
-   const qbertLink=document.createElement('a');
-   qbertLink.href='#qbert-art';
-   qbertLink.textContent='See the QBERT Ankh artwork ↗';
-   card.append(qbertLink);
- }
+
  if(title==='ECHO Protocell — Resonant and Provisioned Seed')note.textContent='Two illustrated minimal-cell proposals: a resonant energy-harvesting seed (v0.3) and a chemically supplied, provisioned seed (v0.4). Both remain speculative concepts; no constructed protocell, self-sustaining operation, replication or containment validation is established.';
  card.append(top,badge,heading,note);
  if(armoryDivision){const division=document.createElement('small');division.className='alias';division.textContent=armoryDivision+' · Research status unchanged';card.append(division)}
