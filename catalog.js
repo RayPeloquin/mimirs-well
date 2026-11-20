@@ -81,6 +81,14 @@ groups.forEach(([category,status,titles])=>titles.split('\n').filter(title=>!wit
  if(armoryDivision){const division=document.createElement('small');division.className='alias';division.textContent=armoryDivision+' · Research status unchanged';card.append(division)}
  if(title.startsWith('Sister’s Hope')){note.textContent='A proposed assistive glove concept exploring support for hand movement and everyday tasks. Design review and testing are pending; clinical benefit has not been established.';const alias=document.createElement('small');alias.className='alias';alias.textContent='Former archive title: Mimir’s Well — Hand Restoration Glove.';card.append(alias)}
  if(title.startsWith('Mimir’s Well')){note.textContent='A research architecture for AI discovery, collaboration and traceable findings. Separate from the former glove project.'}
+ if(title==='KA Patch — Bioenergy jewelry'){
+   note.textContent='KA PATCH v1.0 explores body-coupled micro-energy harvesting for low-power wearables. Concept only: no measured power output or clinical validation. Pilot 001 in the Divergence Ledger separates intent, observations, and alternative uses.';
+   const ledgerLink=document.createElement('a');
+   ledgerLink.href='divergence-ledger.html';
+   ledgerLink.textContent='Read pilot 001 · Divergence Ledger ↗';
+   card.append(ledgerLink);
+ }
+
  grid.append(card);
 }));
 // Promote already-listed repository projects without creating duplicate project cards.
