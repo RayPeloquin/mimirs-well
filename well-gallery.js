@@ -3,6 +3,42 @@
   'use strict';
   const illustrations = [
     {
+      id: 'x07-skipjack-integration',
+      src: 'assets/skipjack-large-craft-concept.webp',
+      alt: 'Tentatively identified SKIPJACK large-vehicle hover concept showing a dark angular craft above multiple blue glowing lift zones in a hangar.',
+      caption: 'SKIPJACK family · Tentative identification supplied from project memory. Speculative vehicle-scale concept art; no hover or lift performance demonstrated.',
+    },
+    {
+      id: 'x07-skipjack-integration',
+      src: 'assets/skipjack-6-ehd-lift-plate.webp',
+      alt: 'SKIPJACK 6 electrohydrodynamic lift-plate concept showing a sealed plate, cutaway, stacked architecture and unverified performance specifications.',
+      caption: 'SKIPJACK 6 · Early lift-plate architecture artwork. Illustrated performance figures and operating conditions are not measured or accepted engineering ratings.',
+    },
+    {
+      id: 'x07-skipjack-integration',
+      src: 'assets/skipjack-vehicle-integration.webp',
+      alt: 'Dark passenger-car concept with glowing electrohydrodynamic plates beneath its body and wheels.',
+      caption: 'SKIPJACK 6 · Vehicle-integration concept artwork only. No demonstrated vehicle-scale support, roadworthiness or flight.',
+    },
+    {
+      id: 'x07-skipjack-integration',
+      src: 'assets/skipjack-sj6-ead-c2-grid1.webp',
+      alt: 'SJ6-EAD-C2 GRID-1 v0.1 test-stand architecture poster with segmented electrodes, independent timing and impulse-to-energy measurement plan.',
+      caption: 'SKIPJACK / SJ6-EAD-C2 · Proposed free-air segmented electrohydrodynamic cassette test program; experimental draft, not a validated apparatus or thrust result.',
+    },
+    {
+      id: 'x07-skipjack-integration',
+      src: 'assets/x07-strix-rev-e-court-verdict.webp',
+      alt: 'X-07 STRIX revision E Court engineering verdict rejecting free-air hover, withdrawing the 80 kilogram-force at 30 millimeter and 11 kilowatt rating, and specifying ground-cushion measurements.',
+      caption: 'X-07 STRIX · Court review: free-air hover rejected, prior vehicle-scale rating withdrawn. Ground-cushion tests are proposed only; no lift claim is established.',
+    },
+    {
+      id: 'rewind-ii-plasma-concept',
+      src: 'assets/rewind-ii-solid-state-axial-fan.webp',
+      alt: 'REWIND-II solid-state axial-fan concept with magnet arrays, traveling plasma pressure sheets, airflow arrows and proposed energy and noise goals.',
+      caption: 'REWIND-II · Speculative ducted-airflow concept; no measured mass-flow, efficiency, noise, propulsion or solid-state fan performance.',
+    },
+    {
       id: 'raven-p1',
       src: 'assets/raven-p1-v03-cover.webp',
       alt: 'RAVEN-P1 v0.3 Court of the Synthetic cover, with orange and teal protein-ribbon illustration and the question Can 38 changes keep the fold?',
