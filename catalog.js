@@ -18,6 +18,11 @@ const armoryDivisions=new Map([
  ['AG-DAS Guardian','Protective systems'],
  ['Weaver’s Shuttle','Security & resilience'],
  ['NEITH LANTERN Gate','Security & resilience'],
+ ['Poseidon’s Trident','Advanced defense concepts'],
+ ['Thor’s Hammer','Advanced defense concepts'],
+ ['Tickhammer','Advanced defense concepts'],
+ ['Fenrir','Advanced defense concepts'],
+ ['HY-BRASIL DOME','Advanced defense concepts'],
 ]);
 const grid=document.querySelector('.grid');
 document.querySelectorAll('.card').forEach(c=>{c.dataset.stage='repository';const badge=document.createElement('span');badge.className='stage';badge.textContent='Public repository';c.querySelector('h3').before(badge)});
@@ -56,6 +61,7 @@ const withdrawnTitles=new Set([
  'Ember — Animated companion',
  'Judgment Pyramid',
  'Stone Mansion District',
+ 'Thor Avatar',
 ]);
 groups.forEach(([category,status,titles])=>titles.split('\n').filter(title=>!withdrawnTitles.has(title)).forEach(title=>{
  const armoryDivision=armoryDivisions.get(title);
@@ -87,7 +93,7 @@ if(controls){
  const button=document.createElement('button');button.type='button';button.dataset.filter='defense';button.setAttribute('aria-pressed','false');button.textContent='The Armory';controls.append(button);
  const introduction=document.createElement('div');introduction.className='catalog-help';introduction.hidden=true;
  const heading=document.createElement('strong');heading.textContent='The Armory · Defense & Protective Systems';
- const description=document.createElement('p');description.textContent='Protective systems · Battlefield medicine · Detection & awareness · Autonomous support · Security & resilience. Civilian Skunk Works research: no military qualification, hardware performance or safety certification is implied.';
+ const description=document.createElement('p');description.textContent='Protective systems · Battlefield medicine · Detection & awareness · Autonomous support · Security & resilience · Advanced defense concepts. Civilian Skunk Works research: no military qualification, hardware performance or safety certification is implied.';
  const principle=document.createElement('p');principle.textContent='Protection first. Evidence always. We do no harm.';
  introduction.append(heading,description,principle);controls.after(introduction);
  controls.querySelectorAll('[data-filter]').forEach(choice=>choice.addEventListener('click',()=>{introduction.hidden=choice.dataset.filter!=='defense'}));
