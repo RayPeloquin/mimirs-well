@@ -32,7 +32,15 @@ const fqscNote=document.createElement('p');fqscNote.textContent='Field-Quench Sp
 const fqscLink=document.createElement('a');fqscLink.href='fqsc-01.html';fqscLink.textContent='Explore the design and research gates ↗';
 fqsc.append(fqscTop,fqscStage,fqscHeading,fqscNote,fqscLink);grid.append(fqsc);
 let number=13;
-groups.forEach(([category,status,titles])=>titles.split('\n').forEach(title=>{
+// These titles are retained in the historical inventory but excluded from the public Well.
+const withdrawnTitles=new Set([
+ 'Charlotte School — Intergenerational living and year-round gardens',
+ 'Fortress of Solitude',
+ 'Ember — Animated companion',
+ 'Judgment Pyramid',
+ 'Stone Mansion District',
+]);
+groups.forEach(([category,status,titles])=>titles.split('\n').filter(title=>!withdrawnTitles.has(title)).forEach(title=>{
  const card=document.createElement('article');card.className='card';card.dataset.category=category;card.dataset.stage=status==='Illustrated concept'?'concept':'documented';
  const top=document.createElement('div');top.className='cardtop';
  const index=document.createElement('span');index.className='index';index.textContent=String(number++).padStart(2,'0')+' /';
