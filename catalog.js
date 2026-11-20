@@ -76,6 +76,13 @@ groups.forEach(([category,status,titles])=>titles.split('\n').filter(title=>!wit
  const heading=document.createElement('h3');heading.textContent=title;
  const note=document.createElement('p');
  note.textContent=status==='Illustrated concept'?'Archive title only. Mechanism, feasibility and supporting evidence have not yet been reviewed.':status==='Portfolio architecture'?'Listed in the October 2026 selected portfolio. Mechanism, feasibility and supporting evidence review pending.':'Archived design title. Mechanism, feasibility and supporting evidence review pending.';
+ if(title==='QBERT'){
+   note.textContent='Archived QBERT quantum-hardware concept. A supplied Ankh-centered apparatus image is tentatively associated with a later QBERT design; its original version and technical specifications have not been verified.';
+   const qbertLink=document.createElement('a');
+   qbertLink.href='#qbert-art';
+   qbertLink.textContent='See the QBERT Ankh artwork ↗';
+   card.append(qbertLink);
+ }
  if(title==='ECHO Protocell — Resonant and Provisioned Seed')note.textContent='Two illustrated minimal-cell proposals: a resonant energy-harvesting seed (v0.3) and a chemically supplied, provisioned seed (v0.4). Both remain speculative concepts; no constructed protocell, self-sustaining operation, replication or containment validation is established.';
  card.append(top,badge,heading,note);
  if(armoryDivision){const division=document.createElement('small');division.className='alias';division.textContent=armoryDivision+' · Research status unchanged';card.append(division)}
