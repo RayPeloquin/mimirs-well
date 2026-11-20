@@ -3,6 +3,13 @@
   'use strict';
   const illustrations = [
     {
+      id: 'qbert',
+      src: 'assets/qbert-ankh-quantum-concept.jpg',
+      alt: 'Photorealistic concept artwork of a suspended, cryogenic-style cylindrical apparatus with many wires and a glowing central panel bearing an ankh symbol.',
+      caption: 'QBERT · Tentative project association supplied by its creator. Historic quantum-hardware concept artwork, not a verified laboratory photograph or evidence of a working qubit system.',
+    },
+
+    {
       id: 'crucible',
       src: 'assets/crucible-aviation-test-harness-poster.png',
       alt: 'CRUCIBLE reusable autonomy test harness concept poster with a proposed fixed-wing aircraft above a synthetic rover, multirotor and simulation engine.',
