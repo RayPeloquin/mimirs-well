@@ -25,12 +25,13 @@ function renderCatalog() {
     children: [],
     dataset: {},
     append(...nodes) { this.children.push(...nodes); },
+    querySelector(selector) { return selector === 'h3' ? this.children.find(node => node.tagName === 'h3') : null; },
   });
   const document = {
     querySelectorAll() { return []; },
     querySelector(selector) {
-      assert.equal(selector, '.grid');
-      return { append(card) { cards.push(card); } };
+      if(selector !== '.grid') return null;
+      return { append(card) { cards.push(card); }, querySelectorAll() { return cards; } };
     },
     createElement: element,
   };
@@ -40,7 +41,7 @@ function renderCatalog() {
 
 test('public catalog omits eleven parked concepts but retains research entries', () => {
   const names = renderCatalog();
-  assert.equal(names.length, 378, 'three dynamic feature cards plus 375 retained archive titles');
+  assert.equal(names.length, 373, 'public catalog includes the new ECHO Protocell entry and excludes six owner-withdrawn cards');
   for (const name of omitted) assert.ok(!names.includes(name), `${name} remains public`);
   for (const name of ['MIRRORBOX M01', 'RUBIQ', 'Aether-Latch Memory', 'Polyforge-1 — Ocean cleanup ship', 'Euplectella Node A / Node B']) {
     assert.ok(names.includes(name), `${name} was accidentally omitted`);

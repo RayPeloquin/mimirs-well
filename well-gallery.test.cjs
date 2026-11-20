@@ -8,8 +8,9 @@ const script = path.join(__dirname, 'well-gallery.js');
 
 function element(tag) {
   return {
-    tag, className: '', children: [], attributes: {}, textContent: '',
-    append(...items) { this.children.push(...items); },
+    tag, className: '', children: [], attributes: {}, dataset: {}, textContent: '',
+    append(...items) { for (const item of items) { item.parent = this; this.children.push(item); } },
+    after(item) { const siblings = this.parent.children; item.parent = this.parent; siblings.splice(siblings.indexOf(this) + 1, 0, item); },
     setAttribute(name, value) { this.attributes[name] = value; },
   };
 }
@@ -19,8 +20,8 @@ function createFixture(ids) {
     const card = element('article');
     const note = element('p');
     card.append(note);
-    note.after = child => card.append(child);
     card.querySelector = selector => selector === 'p' ? note : card.children.find(x => x.className === 'concept-art');
+    card.querySelectorAll = selector => selector === '.concept-art' ? card.children.filter(x => x.className === 'concept-art') : [];
     return [id, card];
   }));
   const document = {
@@ -65,8 +66,8 @@ test('twelve matching design cards receive labeled, clickable concept artwork', 
     [knockId, 'knock-moth-concept.webp', 'Knock-Moth'],
     [siltId, 'silt-harp-concept.webp', 'SILT HARP'],
   ]) {
-    assert.equal(app.figures(id).length, 1, id + ' should have exactly one image');
-    const figure = app.figures(id)[0];
+    const figure = app.figures(id).find(f => f.children[0]?.href === 'assets/' + filename);
+    assert.ok(figure, id + ' should include its expected artwork (possibly alongside later variants)');
     const [link, caption] = figure.children;
     const image = link.children[0];
     assert.equal(image.src, 'assets/' + filename);
@@ -74,7 +75,7 @@ test('twelve matching design cards receive labeled, clickable concept artwork', 
     assert.match(image.alt, new RegExp(name));
     assert.equal(image.loading, 'lazy');
     assert.match(caption.textContent, /concept|illustration|untested/i);
-    const localAsset = filename.startsWith('aegis-') ? path.join(__dirname, 'web_assets', filename) : path.join(__dirname, 'assets', filename);
+    const localAsset = path.join(__dirname, 'assets', filename);
     assert.ok(existsSync(localAsset), `${filename} must have a matching image asset`);
   }
   assert.equal(app.figures(otherId).length, 0, 'unrelated designs remain untouched');

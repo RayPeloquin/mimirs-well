@@ -6,7 +6,7 @@ const path = require('node:path');
 test('the Well gives three distinct sections their own publicly published design art', () => {
   const html = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8');
   const placements = [
-    ['projects', 'assets/aegis-twin-v06-exterior.webp', 'web_assets/aegis-twin-v06-exterior.webp'],
+    ['projects', 'assets/aegis-twin-v06-exterior.webp'],
     ['hippo', 'assets/hippo-mag-01-tabletop.webp'],
     ['workbench', 'assets/field-medic-assistive-backpack.webp'],
   ];

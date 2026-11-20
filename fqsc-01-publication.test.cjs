@@ -10,6 +10,8 @@ function element(tag) {
   return {
     tag, children: [], dataset: {}, textContent: '', href: '',
     append(...items) { this.children.push(...items); },
+    querySelector(selector) { return selector === 'h3' ? this.children.find(child => child.tag === 'h3') : null; },
+    querySelectorAll(selector) { return selector === '.card' ? this.children.filter(child => child.className === 'card') : []; },
   };
 }
 
