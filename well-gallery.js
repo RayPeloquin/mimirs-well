@@ -3,6 +3,12 @@
   'use strict';
   const illustrations = [
     {
+      id: 'signature-selective-receiver-detection-and-error-bounds',
+      src: 'assets/nulling-boundary-receiver-mathematics.webp',
+      alt: 'The Nulling Boundary concept poster showing a signature-selective receiver board and the observation, worst-case margin, minimax receiver, and synthetic full-nulling threshold equations.',
+      caption: 'The Nulling Boundary · Supplied mathematical concept poster. The full-nulling threshold belongs to a chosen synthetic fixture, not a universal constant; receiver hardware is not demonstrated.',
+    },
+    {
       id: 'ndsm-01-neutrino-feasibility-study',
       src: 'assets/ndsm-01-neutrino-conversion-poster.webp',
       alt: 'NDSM-01 neutrino-induced nuclear conversion concept poster depicting a schematic indium target and prompt-plus-delayed readout, with an illustrative capture-rate equation and delayed lifetime.',
