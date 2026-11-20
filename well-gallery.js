@@ -3,6 +3,30 @@
   'use strict';
   const illustrations = [
     {
+      id: 'echo-genome-echogenome',
+      src: 'assets/echo-genome-v02-concept.webp',
+      alt: 'ECHO Genome v0.2 conceptual cell illustration showing host chromosomes beside a proposed nonintegrating artificial chromosome and memory modules.',
+      caption: 'ECHO Genome v0.2 · Supplied host-coupled genome concept poster. Replication, nonintegration, sensing and containment are design aspirations, not experimental results.',
+    },
+    {
+      id: 'echo-genome-echogenome',
+      src: 'assets/echo-genome-v03-deterrent-concept.webp',
+      alt: 'ECHO Genome v0.3 Deterrent Edition poster depicting host-coupled artificial chromosome modules and a proposed human-deterrent interface.',
+      caption: 'ECHO Genome v0.3 · Historical deterrent concept poster only. Human-response, exposure and safety claims are unverified; no deployed or validated deterrent system is implied.',
+    },
+    {
+      id: 'echo-protocell-resonant-and-provisioned-seed',
+      src: 'assets/echo-protocell-v03-resonant-seed.webp',
+      alt: 'ECHO Protocell v0.3 Resonant Seed concept with proposed ambient-energy harvesting, membrane construction and autonomous cellular machinery.',
+      caption: 'ECHO Protocell v0.3 · Resonant Seed speculative architecture. Ambient harvesting sufficient for cellular self-maintenance has not been demonstrated.',
+    },
+    {
+      id: 'echo-protocell-resonant-and-provisioned-seed',
+      src: 'assets/echo-protocell-v04-provisioned-seed.webp',
+      alt: 'ECHO Protocell v0.4 Provisioned Seed concept with defined nutrient feedstock, packaged artificial chromosome, preloaded expression machinery and chemical energy module.',
+      caption: 'ECHO Protocell v0.4 · Provisioned Seed concept; no built minimal cell or validated autonomous persistence, division or containment.',
+    },
+    {
       id: 'x07-skipjack-integration',
       src: 'assets/skipjack-large-craft-concept.webp',
       alt: 'Tentatively identified SKIPJACK large-vehicle hover concept showing a dark angular craft above multiple blue glowing lift zones in a hangar.',
