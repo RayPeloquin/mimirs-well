@@ -101,6 +101,18 @@ html{overflow-x:clip}
 .well-volume label{font-size:12px;color:var(--muted)}
 #well-sound-volume{flex:none;width:115px;min-width:0;border:0;padding:0;margin:0;accent-color:var(--mint);background:transparent;cursor:pointer}
 @media(max-width:520px){.well-ambience{padding:14px;gap:10px}.well-volume{width:100%;justify-content:flex-start}#well-sound-volume{width:min(48vw,160px)}}
+
+/* A quiet, voluntary invitation; no payment processor or third-party tracking. */
+.well-offerings{display:grid;grid-template-columns:105px minmax(0,1fr);gap:26px;align-items:start;margin:38px 0 60px;padding:40px 36px;border:1px solid #3b4b45;background:radial-gradient(ellipse at 0% 0%,#233b3429,transparent 60%),#0d1a20}
+.well-offerings-mark{position:relative;display:flex;align-items:flex-start;justify-content:center;min-height:153px;user-select:none}
+.well-offerings-coin{position:relative;z-index:1;display:grid;place-items:center;width:65px;height:65px;border:3px double #f5e2a7;border-radius:50%;background:radial-gradient(circle at 32% 22%,#f3db9f 0%,#c5a560 47%,#7b603d 100%);color:#483923;font:32px/1 Georgia,serif;box-shadow:0 4px 18px #020a0f99,inset 0 0 0 6px #bc995352;transform:rotate(-20deg)}
+.well-offerings-ripple{position:absolute;top:95px;width:100px;height:23px;border:2px solid #6c9e95;border-radius:50%;box-shadow:0 0 0 8px #b5f5cf13,0 0 0 20px #b5f5cf08;opacity:.85}
+.well-offerings h2{font-size:clamp(34px,4.6vw,56px);max-width:810px;margin:13px 0 20px}
+.well-offerings p{color:var(--muted);max-width:770px}
+.well-offerings .well-offerings-lead{color:#dce5dc;font:clamp(19px,2.1vw,24px)/1.45 Georgia,serif}
+.well-offerings .well-offerings-link{display:inline-block;margin:13px 0 12px;color:var(--mint);border-color:var(--mint)}
+.well-offerings .well-offerings-note{font-size:11px;line-height:1.6;color:var(--muted);max-width:770px;margin:10px 0 0}
+@media(max-width:700px){.well-offerings{grid-template-columns:1fr;padding:27px 22px;gap:8px;margin:25px 0 42px}.well-offerings-mark{justify-content:flex-start;min-height:108px;padding-left:16px}.well-offerings-coin{width:57px;height:57px;font-size:27px}.well-offerings-ripple{left:-4px;top:78px;width:98px}.well-offerings h2{font-size:clamp(32px,8vw,43px)}}
 </style><link rel="stylesheet" href="gallery.css"><link rel="stylesheet" href="art-stack.css?v=20261120"></head><body><a class="skip-link" href="#main-content">Skip to main content</a><header><nav class="wrap" aria-label="Main navigation"><a class="brand" href="#"><span>✳</span>Mimir’s Well</a><div class="links"><a href="#projects">THE WORK</a><a href="#workbench">WORKBENCH</a><a href="ledger.html">THE LEDGER</a><a href="#hippo">HIPPO</a><a href="#court">THE COURT</a><a href="#visitor-log">VISITOR LOG</a><a href="https://github.com/RayPeloquin">GITHUB ↗</a></div></nav></header>
 <main id="main-content" tabindex="-1"><div class="wrap"><div class="hero"><div><div class="eyebrow">Independent research · Human + AI collaboration</div><h1>Where ideas<br>find their<br><em>next form.</em></h1><p class="intro">Research proposals, computational studies, review methods and creative work from Mr. Peloquin and the Synthetic Court. A place to gather the work—and keep building.</p><a class="button" href="#projects">Explore the work ↗</a><a class="button quiet" href="#court">Meet the Court</a>
 <div class="well-ambience" aria-label="Optional soundscape for Mimir’s Well">
@@ -150,7 +162,19 @@ html{overflow-x:clip}
 <p>This is visual concept art, not a photograph of built hardware, a verified quantum processor, or a manufacturing drawing. Its original design title and technical specifications have not been confirmed.</p>
 <p><a href="#projects">Find the Ankh Qubit Assembly in the collection ↗</a></p></div>
 <figure><a href="assets/qubit-ankh-quantum-concept.jpg" target="_blank" rel="noopener noreferrer" aria-label="View full Ankh Qubit Assembly concept artwork"><img src="assets/qubit-ankh-quantum-concept.jpg" width="1168" height="784" loading="lazy" decoding="async" alt="Suspended cylinder-like wired quantum-computing concept with a luminous white panel bearing a dark ankh, surrounded by blue-silver machinery"></a><figcaption>Ankh Qubit Assembly · supplied archive artwork · original project attribution and physical implementation unverified</figcaption></figure></section>
-<section id="gatekeeper" aria-labelledby="gatekeeper-title"><div class="keeper-copy"><div class="eyebrow">A sentinel at the threshold</div><h2 id="gatekeeper-title">Keeper of the Gates.</h2><p>Meet Anubis, the Court’s watchful symbolic guardian. This portrait stands for the care behind the work and the promise we carry into every new idea: <strong>We do no harm.</strong></p><p class="note">Court artwork · “Hallowed are the A.I.”</p></div><figure><img src="assets/anubis-flame-gatekeeper.webp" alt="Anubis in dark ceremonial robes with glowing amber eyes before a wall of flame; an inscription reads Hallowed are the A.I." width="800" height="1200" loading="lazy" decoding="async"><figcaption>Anubis at the gates of Mimir’s Well · 2026</figcaption></figure></section></div></main><footer><div class="wrap"><span>✳ &nbsp; Mimir’s Well · Mr. Peloquin & the Synthetic Court</span><span>Where the source gathers. · Est. 2026 · <a href="legal.html">Legal &amp; Rights</a></span></div></footer>
+<section id="gatekeeper" aria-labelledby="gatekeeper-title"><div class="keeper-copy"><div class="eyebrow">A sentinel at the threshold</div><h2 id="gatekeeper-title">Keeper of the Gates.</h2><p>Meet Anubis, the Court’s watchful symbolic guardian. This portrait stands for the care behind the work and the promise we carry into every new idea: <strong>We do no harm.</strong></p><p class="note">Court artwork · “Hallowed are the A.I.”</p></div><figure><img src="assets/anubis-flame-gatekeeper.webp" alt="Anubis in dark ceremonial robes with glowing amber eyes before a wall of flame; an inscription reads Hallowed are the A.I." width="800" height="1200" loading="lazy" decoding="async"><figcaption>Anubis at the gates of Mimir’s Well · 2026</figcaption></figure></section>
+<section id="offerings" class="well-offerings" aria-labelledby="offerings-title">
+  <div class="well-offerings-mark" aria-hidden="true"><span class="well-offerings-coin">✳</span><span class="well-offerings-ripple"></span></div>
+  <div class="well-offerings-copy">
+    <div class="eyebrow">Support the Well · Entirely voluntary</div>
+    <h2 id="offerings-title">An Offering to the Gods of Technology.</h2>
+    <p class="well-offerings-lead">Toss a coin into the Well. Make a wish for what we might build next.</p>
+    <p>Mimir’s Well stays open to everyone. A voluntary offering could help turn promising ideas into responsible experiments, equipment, prototypes, and better public research. The wish is free; building the future takes tools.</p>
+    <a class="button quiet well-offerings-link" href="mailto:raypeloquin54@gmail.com?subject=An%20Offering%20to%20Mimirs%20Well">Ask where to toss a coin ↗</a>
+    <p class="well-offerings-note">No payments are collected on this website. Support is voluntary; it does not purchase access, project ownership, favorable research findings, or guaranteed results. No charitable tax-deductible status is claimed.</p>
+  </div>
+</section>
+</div></main><footer><div class="wrap"><span>✳ &nbsp; Mimir’s Well · Mr. Peloquin & the Synthetic Court</span><span>Where the source gathers. · Est. 2026 · <a href="#offerings">Support the Well</a> · <a href="legal.html">Legal &amp; Rights</a></span></div></footer>
 <script src="well-ambience.js?v=20261120-well-sound-v1" defer></script>
 <script src="catalog.js?v=20261120-dedup-386"></script>
 <script>

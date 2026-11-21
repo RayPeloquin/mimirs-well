@@ -6,6 +6,10 @@ Public handoff snapshot · 20 November 2026
 
 This is a maintained snapshot, not live monitoring or an automatic task runner. Read current source and commit history before resuming work. Do not put credentials, private conversations, personal details or unpublished technical material here.
 
+## A voluntary offering for Mimir's Well — 20 November 2026
+
+Added the discreet **“An Offering to the Gods of Technology”** section near the foot of the homepage and a footer anchor. Visitors can use the existing publicly listed correspondence address to ask about supporting prototypes, materials and research. No paywall, payment collection, invented checkout URL or fundraising counter was installed. Contributions are explicitly voluntary; no charitable tax deduction, research result or IP rights are promised. A verified payment provider link may be added later on explicit authorization.
+
 ## Well soundscape — 20 November 2026
 
 Added an original, purely procedural optional ambience to the homepage: irregular distant water droplets, faint filtered airflow and deep stone resonance. Visitors must explicitly click to start; volume is adjustable and audio stops on tab hide, page leave or manual toggle. No music, drumbeat, recorded track, third-party audio request or autoplay; the browser constructs and runs the sound locally. The site remains usable without Web Audio support. Source: `well-ambience.js`; smoke-test opt-in audio in a real browser before declaring done.

@@ -8,6 +8,10 @@
 
 The Ledger is a separate directory, **not one record per project**. A new entry requires a documented change, measurement, revised assumption or explicitly hypothetical crossover. The existing project Registry remains the full inventory.
 
+## Offering to the Gods of Technology
+
+The homepage uses a coin-and-ripple visual with the playful title **“An Offering to the Gods of Technology”**. It has a discreet, entirely voluntary [Support the Well](https://raypeloquin.github.io/mimirs-well/#offerings) invitation. It links to the public correspondence address already published on the [Legal & Rights](legal.html) page, for people who want to ask about supporting independently documented research, prototyping, equipment or archive upkeep. There is **no payment processor, invented donation link, paywall or pledge counter**. The website claims **no charitable tax-deductible status**. Contributors do not purchase project ownership, promised scientific outcomes or special access. A future verified payment destination must be reviewed before replacing the contact link.
+
 ## Optional soundscape
 
 The homepage includes a quietly mixed, original procedural soundscape: occasional water droplets with a restrained echo, filtered cavern air and low stone-like resonance. It uses the browser's Web Audio API and no recorded/audio assets, autoplay, cookies or telemetry. It **always starts off**. Visitors may explicitly press **Listen to the Well**, adjust volume, or **Silence the Well**. Playback also stops if they leave or hide the tab. The rest of the site works normally when audio is unsupported or disabled. Source: `well-ambience.js`.
