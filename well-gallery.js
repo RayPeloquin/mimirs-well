@@ -16,6 +16,12 @@
       caption: 'CRUCIBLE · AI-generated test-harness concept poster. Rover and multirotor are synthetic demonstrations; the fixed-wing aircraft extension is proposed, not implemented or validated.',
     },
     {
+      id: 'temporal-reflection-chamber',
+      src: 'assets/temporal-reflection-chamber-concept.jpg',
+      alt: 'Temporal Reflection Chamber proposal showing an 8 by 8 by 8 foot metal research enclosure, instrumented transmission-line testbed, external equipment rack and idealized wave-speed and frequency equations.',
+      caption: 'Temporal Reflection Chamber · AI-generated cutaway concept. Unbuilt and untested. The transmission-line equations are an ideal-model prediction under fixed inductance and uniform nondispersive assumptions, not a measured temporal-reflection effect.',
+    },
+    {
       id: 'temporal-acoustics',
       src: 'assets/temporal-acoustics-survey-concept.png',
       alt: 'Conceptual cutaway of Maltese limestone with surface acoustic receivers, a source and wavefronts scattering from a dark underground air-filled cavity.',
