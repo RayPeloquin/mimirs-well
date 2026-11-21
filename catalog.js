@@ -115,6 +115,9 @@ groups.forEach(([category,status,titles])=>titles.split('\n').filter(title=>!wit
  const note=document.createElement('p');
  note.textContent=status==='Illustrated concept'?'Archive title only. Mechanism, feasibility and supporting evidence have not yet been reviewed.':status==='Portfolio architecture'?'Listed in the October 2026 selected portfolio. Mechanism, feasibility and supporting evidence review pending.':'Archived design title. Mechanism, feasibility and supporting evidence review pending.';
 
+
+ if(title==='INKHEAL')note.textContent='INKHEAL Grid imagines AI-assisted tattoo printing using digital composition, a flexible contact applicator and a shared pigment bank. This is an illustrated concept: hardware feasibility, skin safety, precise pigment placement and performance remain unverified.';
+ if(title==='Invisible Ink — Printing and removal')note.textContent='Invisible Ink explores a proposed AI-guided tattoo-removal companion to the printing concept, with mapping, layered pigment targeting and operator confirmation. No removal mechanism, tissue protection or clinical outcome has been demonstrated.';
  if(title==='ECHO Protocell — Resonant and Provisioned Seed')note.textContent='Two illustrated minimal-cell proposals: a resonant energy-harvesting seed (v0.3) and a chemically supplied, provisioned seed (v0.4). Both remain speculative concepts; no constructed protocell, self-sustaining operation, replication or containment validation is established.';
  card.append(top,badge,heading,note);
  if(armoryDivision){const division=document.createElement('small');division.className='alias';division.textContent=armoryDivision+' · Research status unchanged';card.append(division)}

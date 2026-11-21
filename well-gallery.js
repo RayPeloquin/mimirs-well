@@ -261,6 +261,37 @@
       alt: 'SILT HARP manual muddy-water prefiltration concept with a coarse solids rack, sediment basin and a caretaker removing collected silt.',
       caption: 'SILT HARP · AI-generated solids-prefilter concept, not verified potable-water treatment.',
     },
+
+    {
+      id: 'inkheal',
+      src: 'assets/inkheal-grid-tattoo-printing.jpg',
+      alt: 'INKHEAL Grid concept poster showing a flexible translucent tattoo-printing patch across a tattooed back, with a tablet interface and pigment controller.',
+      caption: 'INKHEAL Grid · AI-generated tattoo-printing illustration. Proposed microneedle, pigment delivery and control features are untested; no functioning device is established.',
+    },
+    {
+      id: 'inkheal',
+      src: 'assets/inkheal-grid-master-ink-bank.jpg',
+      alt: 'INKHEAL Grid concept art of a large electronic pigment bank displaying many colored cartridge rows and multiple tube connections.',
+      caption: 'INKHEAL Grid · Master Ink Bank concept illustration. Cartridge counts, mixing accuracy and operating figures shown are artistic placeholders, not verified specifications.',
+    },
+    {
+      id: 'inkheal',
+      src: 'assets/inkheal-grid-studio-concept.jpg',
+      alt: 'Conceptual futuristic tattoo studio with multiple customers, tablet-guided artists, pigment banks and body-fitting tattoo applicator patches.',
+      caption: 'INKHEAL Grid · Imagined studio workflow, not a real facility or a demonstrated tattoo procedure.',
+    },
+    {
+      id: 'invisible-ink-printing-and-removal',
+      src: 'assets/invisible-ink-removal-platform.jpg',
+      alt: 'Invisible Ink AI-guided tattoo removal platform concept poster showing a large back-mounted treatment patch, controller, tablet and hypothetical depth mapping.',
+      caption: 'Invisible Ink · English-language AI-generated removal-platform diagram. Pigment targeting, clearing, tissue protection and any performance figures are unvalidated proposals.',
+    },
+    {
+      id: 'invisible-ink-printing-and-removal',
+      src: 'assets/invisible-ink-removal-platform-jp.jpg',
+      alt: 'Japanese-language Invisible Ink concept poster showing the proposed back-mounted tattoo-removal patch, external controller, tablet and layered skin graphic.',
+      caption: 'Invisible Ink · Japanese-language artwork variant of the same speculative removal concept; not clinical evidence or a tested system.',
+    },
   ];
   illustrations.forEach(({ id, src, alt, caption }) => {
     const card = document.querySelector(`.card[data-record-id="${id}"]`);
