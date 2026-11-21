@@ -6,6 +6,12 @@ Public handoff snapshot · 20 November 2026
 
 This is a maintained snapshot, not live monitoring or an automatic task runner. Read current source and commit history before resuming work. Do not put credentials, private conversations, personal details or unpublished technical material here.
 
+## Source-backed registry batch — 20 November 2026
+
+Expanded ten previously title-only records using corresponding user-owned local source texts, with non-operational public digests committed under `public-notes/`. Each digest gives an archived source filename and SHA-256 for provenance without uploading the private original. **No new scientific validation, physical tests, clinical results, third-party approval or manufacturing details are claimed.** The source-versus-title mismatch for FSAMS-SKIN (industrial machine skin versus catalog EVA label) is flagged explicitly rather than silently reconciled. The private hand-mapping source is summarized without case-specific medical details.
+
+**Verified inventory after batch:** 386 distinct project cards, 162 expanded research records, 224 pending expanded review. This changes documentation coverage, not technical maturity. [Batch manifest](docs/source-backed-registry-batch-2026-11-20.md).
+
 ## Duplicate project-card cleanup — 20 November 2026
 
 Removed the second, archive-only Temporal Reflection Chamber project card from `catalog.js`, preserving its featured project card, source repository link, expanded Registry record and concept artwork. Verified current count: **386 cards / 386 unique titles**, with **152 expanded Registry records** and **234 awaiting expanded review**. Historical counts in older dated audits remain intact.

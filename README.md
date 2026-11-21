@@ -32,6 +32,7 @@ The [Divergence Ledger](https://raypeloquin.github.io/mimirs-well/#divergence-le
 - `index.html`: main site and project collection.
 - `catalog.js`: recovered title inventory and project cards.
 - `registry.js`: read-only expanded project records and provenance.
+- `public-notes/`: bounded research digests linking reviewed archive material to project records without publishing private originals.
 - `well-gallery.js`, `gallery.css`, `assets/`: project artwork with captions and alt text.
 - `research/`, `design-notes/`, `public-notes/`: published research, bounded design summaries and source pointers.
 - `WORKBENCH.md`: handoff notes and historical maintenance snapshots.
@@ -44,7 +45,7 @@ Not all original sources are public. Some archive entries refer to private mater
 
 ## Audited source snapshot
 
-The [20 November 2026 collection and link audit](docs/source-and-collection-audit-2026-11-20.md) recorded **384 distinct project cards** and **152 expanded source-backed records** before the separate GO-CUBE and Court Governance Stack cards were added. The current source contains **386 project cards with 386 distinct titles** and **152 expanded source-backed records**. The duplicate recovered-catalog title for Temporal Reflection Chamber was retired; its featured project card, source link, expanded Registry record and cutaway artwork remain in place. It confirms 64 internal source-reference paths/occurrences and a sample of outside links, while distinguishing publisher access barriers from genuinely missing targets. These are dated source counts, **not** live scientific maturity indicators.
+The [20 November 2026 collection and link audit](docs/source-and-collection-audit-2026-11-20.md) recorded **384 distinct project cards** and **152 expanded source-backed records** before the separate GO-CUBE and Court Governance Stack cards were added. The current source contains **386 project cards with 386 distinct titles** and **162 expanded source-backed records**; **224** await expanded source review. The duplicate recovered-catalog title for Temporal Reflection Chamber was retired; its featured project card, source link, expanded Registry record and cutaway artwork remain in place. It confirms 64 internal source-reference paths/occurrences and a sample of outside links, while distinguishing publisher access barriers from genuinely missing targets. These are dated source counts, **not** live scientific maturity indicators.
 
 ## Maintenance and checks
 
