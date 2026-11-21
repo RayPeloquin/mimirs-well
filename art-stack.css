@@ -1,0 +1,21 @@
+/* Compact artwork stacks: the underlying figures, captions and full-size links remain intact. */
+.art-stack{--art-stack-accent:var(--cyan,var(--mint,#b5f5cf));--art-stack-border:var(--line,#304957);position:relative;min-width:0;max-width:100%;margin:0 0 22px}
+.art-stack__stage{position:relative;isolation:isolate;margin:9px 13px 15px 2px}
+.art-stack__stage::before,.art-stack__stage::after{content:"";position:absolute;inset:5px 0 0 0;border:1px solid var(--art-stack-border);background:#152934;pointer-events:none;border-radius:3px}
+.art-stack__stage::before{transform:translate(10px,9px) rotate(1.2deg);z-index:0;opacity:.65}
+.art-stack__stage::after{transform:translate(5px,5px) rotate(.6deg);z-index:1;opacity:.85}
+.art-stack__stage > figure{position:relative;z-index:2;margin:0;min-width:0}
+.art-stack__stage > figure[hidden]{display:none!important}
+.art-stack__controls{display:flex;gap:10px;align-items:center;justify-content:space-between;max-width:100%;margin:0 2px}
+.art-stack__arrow{appearance:none;display:inline-grid;place-items:center;min-width:44px;min-height:44px;padding:0;border:1px solid var(--art-stack-border);background:#14242d;color:var(--art-stack-accent);font-size:23px;font-weight:500;line-height:1;cursor:pointer;border-radius:5px}
+.art-stack__arrow:hover{border-color:var(--art-stack-accent);background:#203642}
+.art-stack__arrow:focus-visible{outline:3px solid var(--art-stack-accent);outline-offset:2px}
+.art-stack__status{font-size:12px;letter-spacing:.05em;text-align:center;color:var(--art-stack-accent);font-variant-numeric:tabular-nums}
+.card .art-stack{margin:0 0 22px}
+.card .art-stack__stage > .concept-art{margin:0}
+.art-stack--page .art-stack__stage{max-width:860px;margin:12px auto 18px}
+.art-stack--page .art-stack__stage > .artcard{display:block;width:100%;grid-column:auto}
+.art-stack--page .artcard img{display:block;width:100%;height:auto;max-height:min(76vh,840px);object-fit:contain;background:#07131c}
+.art-stack--page .art-stack__controls{max-width:860px;margin:0 auto}
+@media(max-width:600px){.art-stack--page .artcard img{max-height:68vh}.art-stack__stage{margin-right:11px}}
+@media(prefers-reduced-motion:reduce){.art-stack__arrow{transition:none}}
