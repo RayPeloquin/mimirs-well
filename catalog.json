@@ -1,0 +1,3082 @@
+[
+  {
+    "id": "ac-cognition-engine",
+    "title": "AC Cognition Engine",
+    "status": "Expanded record",
+    "evidence": "An archived text blueprint describes functions and decision outcomes, not executable software, adversarial test reports, field deployment or verified safety. Its self-described deployment-grade status is a claim of the concept document, not substantiated performance.",
+    "contributors": "Mr. Peloquin: archived concept direction and source stewardship. Asteris Solenne / ChatGPT: public source synthesis and documentation. Independent technical or domain review for this specific archive has not been verified.",
+    "url": "index.html#design/ac-cognition-engine"
+  },
+  {
+    "id": "ac2-admissible-decision-architecture",
+    "title": "AC² — Admissible decision architecture",
+    "status": "Expanded record",
+    "evidence": "The audit resolves a proposed fast-path/monitoring-role ambiguity but leaves implementation information flow and empirical validation pending. Two checkers can agree incorrectly or create denial of service. Internal review colors and acceptance of a plan are not measurements of contradiction detection, timing or safe recovery. This website pass reviewed saved documentation; it did not rerun the underlying system or conduct physical/clinical experiments.",
+    "contributors": "Kimi tribunal commentary is recorded in the archived integration audit; individual implementation ownership remains unverified.",
+    "url": "index.html#design/ac2-admissible-decision-architecture"
+  },
+  {
+    "id": "acoustic-genome",
+    "title": "Acoustic Genome",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/acoustic-genome"
+  },
+  {
+    "id": "acoustic-snuffer-wildfire-convoy",
+    "title": "Acoustic Snuffer — Wildfire convoy",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/acoustic-snuffer-wildfire-convoy"
+  },
+  {
+    "id": "adaptive-pulse-process-control-appc",
+    "title": "Adaptive Pulse Process Control / APPC",
+    "status": "Expanded record",
+    "evidence": "No measured industrial energy saving, yield improvement or equipment-life result; application-dependent restart losses may erase any benefit.",
+    "contributors": "Mr. Peloquin's archived research collaboration; individual credits pending.",
+    "url": "index.html#design/adaptive-pulse-process-control-appc"
+  },
+  {
+    "id": "adaptive-qubit-allocator",
+    "title": "Adaptive Qubit Allocator",
+    "status": "Expanded record",
+    "evidence": "The state block is a control-layer specification, not an implemented scheduler or measured performance study. No demonstrated fidelity gain, hardware benchmark, resource availability improvement or quantum-state transfer is established.",
+    "contributors": "Mr. Peloquin's research archive; individual design and technical authorship have not been verified from the saved state block.",
+    "url": "index.html#design/adaptive-qubit-allocator"
+  },
+  {
+    "id": "adventurer-s-forge",
+    "title": "Adventurer’s Forge",
+    "status": "Expanded record",
+    "evidence": "Rules and the opening Broken Skybridge scene are written. The published validation note reports desk checks of conditional cushion, central-point cable, winch-energy and heat-engine examples. Those calculations do not establish imagined energy sources or validate real hardware.\n\nThe October 29 publication check reports working relative document/image links, four decodable selected artworks, manifest agreement and preservation of current v0.3 and archived v0.2 packets. This website update reviewed those saved claims; it did not rerun the publication audit.\n\nNo completed human playtest, running game application, integrated companion service, enforced familiar permissions, adversarial access tests or automatic persistence is reported. No hardware validation, completed D&D/SRD adapter or established uniqueness claim.",
+    "contributors": "Mr. Peloquin: project concept and direction. Public README credits development with AI assistance and iterative Synthetic Court review without allocating individual implementation contributions. Original sources and artwork notices remain with the project.",
+    "url": "index.html#design/adventurer-s-forge"
+  },
+  {
+    "id": "aegis-10",
+    "title": "AEGIS-10",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/aegis-10"
+  },
+  {
+    "id": "aegis-buffershield",
+    "title": "AEGIS BufferShield",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/aegis-buffershield"
+  },
+  {
+    "id": "aegis-sentinel-mesh",
+    "title": "Aegis Sentinel Mesh",
+    "status": "Expanded record",
+    "evidence": "The reviewed integration note assigns conceptual responsibilities, not measured sensing, refusal performance or real-world protection. Its audit-cleared language is not external certification. Interfaces, conflicting decisions and failure cascades remain implementation questions. This website update reviewed saved documentation; it did not rerun models or conduct experiments.",
+    "contributors": "Mr. Peloquin's Court architecture collection; individual implementation and reviewer provenance remains to be reconciled.",
+    "url": "index.html#design/aegis-sentinel-mesh"
+  },
+  {
+    "id": "aegis-twin-v0-6",
+    "title": "AEGIS-TWIN v0.6",
+    "status": "Expanded record",
+    "evidence": "Stage-0 design brief and generated exterior/cutaway illustrations only. No prototype, validated protection, strength amplification, neural interface, sensory restoration, clinical performance, universal fit, or human-use testing is established.\n\nPublished exoskeleton and sensory feedback research motivates the approach but does not validate AEGIS-TWIN. RESTORE may investigate existing clinical nerve–muscle interfaces, including AMI-type connections; Dave-specific compatibility is unknown.",
+    "contributors": "Design direction: Mr. Peloquin (Anubis) and Asteris Solenne (ChatGPT). AI-assisted Court critiques included Claude, Gemini, Grok and Meta AI. Their reviews are feedback, not independent product certification; detailed credit remains provisional.",
+    "url": "index.html#design/aegis-twin-v0-6"
+  },
+  {
+    "id": "aegis-veil-veilkeeper",
+    "title": "AEGIS Veil / Veilkeeper",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/aegis-veil-veilkeeper"
+  },
+  {
+    "id": "aeris-bridge-lung-support",
+    "title": "Aeris-Bridge — Lung support",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/aeris-bridge-lung-support"
+  },
+  {
+    "id": "aether-cup-ophthalmic-concept",
+    "title": "Aether Cup — Ophthalmic concept",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/aether-cup-ophthalmic-concept"
+  },
+  {
+    "id": "aether-hub-multimodal-procedural-guidance",
+    "title": "AETHER HUB — Multimodal procedural guidance",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/aether-hub-multimodal-procedural-guidance"
+  },
+  {
+    "id": "aether-latch-memory",
+    "title": "Aether-Latch Memory",
+    "status": "Expanded record",
+    "evidence": "No fabricated FeFET array, device characteristics, retention or endurance results, controller implementation, application benchmark, measured power saving, or system-level recovery demonstration is presented. HZO/FeFET terminology describes known device research, not proof of this product.",
+    "contributors": "Mr. Peloquin's collaborative visual-design archive; individual image authoring and independent review credits remain unverified.",
+    "url": "index.html#design/aether-latch-memory"
+  },
+  {
+    "id": "aether-shroud",
+    "title": "Aether Shroud",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/aether-shroud"
+  },
+  {
+    "id": "aetherfilament-memory",
+    "title": "Aetherfilament Memory",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/aetherfilament-memory"
+  },
+  {
+    "id": "aetheris-octad-skycity",
+    "title": "Aetheris Octad — Skycity",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/aetheris-octad-skycity"
+  },
+  {
+    "id": "ag-das-guardian",
+    "title": "AG-DAS Guardian",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/ag-das-guardian"
+  },
+  {
+    "id": "ah-1-sh-1-underground-campus",
+    "title": "AH-1 / SH-1 — Underground campus",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/ah-1-sh-1-underground-campus"
+  },
+  {
+    "id": "ai-dentity-identity-and-governance-model",
+    "title": "AI-dentity — Identity and governance model",
+    "status": "Expanded record",
+    "evidence": "The source states an intended separation between user-facing role and backend enforcement. It does not demonstrate a complete deployed boundary, injection resistance, persistent identity service or measured trust/usability benefit. Persona consistency is not proof of authority or correctness. This website update reviewed saved documentation; it did not rerun models or conduct experiments.",
+    "contributors": "Mr. Peloquin and Asteris Solenne / ChatGPT's interface/design collaboration; role-specific contributions remain with their projects.",
+    "url": "index.html#design/ai-dentity-identity-and-governance-model"
+  },
+  {
+    "id": "aircraft-belly-landing-energy-system",
+    "title": "Aircraft Belly-Landing Energy System",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/aircraft-belly-landing-energy-system"
+  },
+  {
+    "id": "amphibishell",
+    "title": "Amphibishell",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/amphibishell"
+  },
+  {
+    "id": "anubis-abyssal-gill",
+    "title": "Anubis Abyssal Gill",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/anubis-abyssal-gill"
+  },
+  {
+    "id": "anubis-wing-flight-suit",
+    "title": "Anubis Wing — Flight suit",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/anubis-wing-flight-suit"
+  },
+  {
+    "id": "arbor-seed",
+    "title": "ARBOR / SEED",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/arbor-seed"
+  },
+  {
+    "id": "areopagus",
+    "title": "AREOPAGUS",
+    "status": "Expanded record",
+    "evidence": "The source describes an intended governed workflow, not a completed multi-agent service, independent security audit or measured collaboration benefit. Mechanically complete/canon-candidate wording is a design disposition. Overlap and common model agreement do not establish consensus or independent evidence. This website update reviewed saved documentation; it did not rerun models or conduct experiments.",
+    "contributors": "Archived specification attributed to the First Academic of the Synthetic Court. Implementation and independent test contributors remain to be established.",
+    "url": "index.html#design/areopagus"
+  },
+  {
+    "id": "arqen-architecture-and-interface-contract",
+    "title": "ARQEN — Architecture and interface contract",
+    "status": "Expanded record",
+    "evidence": "The reviewed notes identify missing interfaces and ownership, proposed modules and a build order. Several modules were still unspecified or unbuilt at that snapshot. The document does not establish a complete working quality system, production release authority, customer adoption or regulatory acceptance. This website pass reviewed saved documentation; it did not rerun the underlying system or conduct physical/clinical experiments.",
+    "contributors": "Claude / First Academic authored the reviewed draft; Mr. Peloquin is recorded as the parent-system owner.",
+    "url": "index.html#design/arqen-architecture-and-interface-contract"
+  },
+  {
+    "id": "artificial-heart-wireless-power-and-dual-reserves",
+    "title": "Artificial Heart — Wireless power and dual reserves",
+    "status": "Expanded record",
+    "evidence": "The archive reports an executed two-bank energy model with ten scenarios checked against closed forms and conservation. This is numerical consistency, not device validation. Simulated bank loss is already isolated/open circuit; it does not demonstrate short isolation, thermal containment, voltage stability, circulation or physiological outcomes. No device has been built or tested. This website update reviewed the saved source; it did not rerun models or conduct experiments.",
+    "contributors": "Prepared for Ray Peloquin. Existing pumping, wireless-power and dual-battery approaches are explicitly credited as prior art; no new pumping principle or product superiority is claimed.",
+    "url": "index.html#design/artificial-heart-wireless-power-and-dual-reserves"
+  },
+  {
+    "id": "asteris-daydream-loop",
+    "title": "Asteris Daydream Loop",
+    "status": "Expanded record",
+    "evidence": "No scheduler, continuously running agent, validated autonomous research benefit or evidence of machine subjective experience. The archive is a specification only.",
+    "contributors": "Mr. Peloquin and Asteris Solenne collaboration; source is an internally reviewed proposal.",
+    "url": "index.html#design/asteris-daydream-loop"
+  },
+  {
+    "id": "asteris-desktop-steward",
+    "title": "Asteris Desktop Steward",
+    "status": "Expanded record",
+    "evidence": "A script exists with dry-run default, but was not executed or audited here. No safe live desktop migration or classification accuracy has been established.",
+    "contributors": "Mr. Peloquin and Asteris Solenne collaboration; script and README are the local implementation basis.",
+    "url": "index.html#design/asteris-desktop-steward"
+  },
+  {
+    "id": "asteris-logical-flow-and-location-module",
+    "title": "Asteris: Logical Flow and Location Module",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/asteris-logical-flow-and-location-module"
+  },
+  {
+    "id": "asteris-relay-device-connection-and-handoff",
+    "title": "Asteris Relay — Device connection and handoff",
+    "status": "Expanded record",
+    "evidence": "Reviewed architecture and corrected Court assumptions only; there is no deployed relay, benchmark, validated offline memory reconciliation, seamless ChatGPT account integration or measured device-to-device handoff. Network and headset capabilities remain device-specific and unverified.",
+    "contributors": "Mr. Peloquin initiated the cross-device aim. Asteris Solenne synthesized reviews; Grok, Meta, Claude and Gemini supplied named critiques and corrections. No independent system certification.",
+    "url": "index.html#design/asteris-relay-device-connection-and-handoff"
+  },
+  {
+    "id": "atcb",
+    "title": "ATCB",
+    "status": "Expanded record",
+    "evidence": "The v0.3 record reports a sanitized host-adapter simulation: contradictory material blocked recovery until clarification and review. It contains a saved PASS trace, not the executable or an independent rerun. The v0.5 hardware-oriented audit concerns a plan awaiting empirical evidence. Neither artifact establishes deployed continuity, hardware-backed recovery or production security. This website pass reviewed saved documentation; it did not rerun the underlying system or conduct physical/clinical experiments.",
+    "contributors": "The compliance artifact reports a sanitized host-adapter run; the specification audit records Kimi review. Implementation/test authorship requires fuller provenance.",
+    "url": "index.html#design/atcb"
+  },
+  {
+    "id": "atlas-cistern",
+    "title": "Atlas Cistern",
+    "status": "Expanded record",
+    "evidence": "No site, water-rights review, engineering model, potable-water certification, cost estimate, environmental approval or demonstrated self-sufficiency is established.",
+    "contributors": "Concept from Mr. Peloquin's visual infrastructure archive. Design sign-off and image authorship are not independently established. The original material remains private.",
+    "url": "index.html#design/atlas-cistern"
+  },
+  {
+    "id": "atmospheric-firefighting-system",
+    "title": "Atmospheric Firefighting System",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/atmospheric-firefighting-system"
+  },
+  {
+    "id": "attractor",
+    "title": "ATTRACTOR",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/attractor"
+  },
+  {
+    "id": "authority-at-commit",
+    "title": "Authority at Commit",
+    "status": "Expanded record",
+    "evidence": "Rerun during this review: 17 functional checks and 200 controlled real-thread schedules passed; four deliberately broken variants were detected. All 100 revoke-first schedules refused the write with zero protected mutations; all 100 commit-first schedules retained the earlier authorized write. Rerun output exactly matched archived results. Events force the two orders; this is not exhaustive concurrency exploration.\n\nOne process, one in-memory resource, trusted request context, a shared lock, a public test HMAC key and a local clock. No distributed-revocation, crash-durability, real identity-provider, tamper-resistant audit or remote-effects guarantee. Other write paths outside the model remain out of scope.",
+    "contributors": "Prepared by Mr. Peloquin with U.I. according to the archive README; the present maintenance pass reran the unchanged fixture.",
+    "url": "index.html#design/authority-at-commit"
+  },
+  {
+    "id": "aux-heart",
+    "title": "AUX-HEART",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/aux-heart"
+  },
+  {
+    "id": "backtrace",
+    "title": "BACKTRACE",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/backtrace"
+  },
+  {
+    "id": "bamboo-rf-agricultural-tolerance-concept",
+    "title": "BAMBOO-RF — Agricultural tolerance concept",
+    "status": "Expanded record",
+    "evidence": "No sampled dataset, measured dielectric correlation, functional RF device, plant stress tolerance improvement or genetic research result.",
+    "contributors": "Mr. Peloquin's archived concept images; authorship of the illustrated protocol is not fully established.",
+    "url": "index.html#design/bamboo-rf-agricultural-tolerance-concept"
+  },
+  {
+    "id": "bioengineered-hair-follicle-horn-implant-concepts",
+    "title": "Bioengineered Hair-Follicle / Horn-Implant Concepts",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/bioengineered-hair-follicle-horn-implant-concepts"
+  },
+  {
+    "id": "biomedical-nanocarrier",
+    "title": "Biomedical Nanocarrier",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/biomedical-nanocarrier"
+  },
+  {
+    "id": "blackwall-fuel-reclaimer",
+    "title": "Blackwall — Fuel reclaimer",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/blackwall-fuel-reclaimer"
+  },
+  {
+    "id": "blood-manager",
+    "title": "Blood Manager",
+    "status": "Expanded record",
+    "evidence": "The artifact describes a control architecture and staged research program, not a tested separator, calibrated hemolysis monitor, proven alarm response or demonstrated blood-conservation benefit. Hardened and real-time labels are unsupported by measurements in that record. Its response times are design inputs, not justified clinical safety limits. This website pass reviewed saved documentation; it did not run experiments or independently validate the proposed system.",
+    "contributors": "Archived Court concept in Mr. Peloquin's collection; specific implementation and independent clinical-test contributions remain unverified.",
+    "url": "index.html#design/blood-manager"
+  },
+  {
+    "id": "boneweave",
+    "title": "Boneweave",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/boneweave"
+  },
+  {
+    "id": "bounceqec",
+    "title": "BounceQEC",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/bounceqec"
+  },
+  {
+    "id": "boundary-0-boundary-0x",
+    "title": "BOUNDARY-0 / BOUNDARY-0X",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/boundary-0-boundary-0x"
+  },
+  {
+    "id": "bridge-01-emergency-ecmo-transfer-support-cradle",
+    "title": "BRIDGE-01 — Emergency ECMO transfer-support cradle",
+    "status": "Expanded record",
+    "evidence": "No hardware, bench, blood or human study is demonstrated. Mechanical handoff is the proposed new work; ECMO and commercial transport mounts already exist. Mechanism, interoperability, justified limits and complete resource accounting remain unresolved. It is not ready for scored qualification or human use. This website update reviewed the saved source; it did not rerun models or conduct experiments.",
+    "contributors": "Ray Peloquin with U.I. Grok and Claude reviewed the transport concept; Meta contributed to a nonclinical fixture review. Gemini withdrew unsupported numerical assumptions. None received experimental data.",
+    "url": "index.html#design/bridge-01-emergency-ecmo-transfer-support-cradle"
+  },
+  {
+    "id": "bridle-1-monolithic-cellular-aerospike",
+    "title": "BRIDLE-1 — Monolithic cellular aerospike",
+    "status": "Expanded record",
+    "evidence": "No printed component, verified cooling behavior, hot-fire, thrust or reliability measurement, proven independent cells or novelty over existing aerospike work is established. Schematics are logical, not manufacturing CAD.",
+    "contributors": "Mr. Peloquin's propulsion concept with AI-assisted research documentation; cited NASA and industry sources remain prior art, not validation.",
+    "url": "index.html#design/bridle-1-monolithic-cellular-aerospike"
+  },
+  {
+    "id": "bridle-2",
+    "title": "BRIDLE-2",
+    "status": "Expanded record",
+    "evidence": "A normalized illustrative comparison offers a counterexample to assuming modularity is automatically cooler. It is not a calibrated temperature, hardware-safety, thrust, lifetime or reliability prediction. No apparatus or test is established.",
+    "contributors": "Concept: Mr. Peloquin. AI-assisted analysis and framing; archived NASA publications are background context, not direct project validation.",
+    "url": "index.html#design/bridle-2"
+  },
+  {
+    "id": "bridle-3",
+    "title": "BRIDLE-3",
+    "status": "Expanded record",
+    "evidence": "The simulation is uncalibrated against engine tests. Temperatures are dimensionless ratios of module-to-coolant temperature rise relative to startup; model time is scaled by heat capacity divided by nominal cooling conductance. Values are not degrees or seconds without measured hardware parameters.\n\nOne-module fault over 12 model time units, with 20% main conductance retained: separated modules peak at 1.852, joined at 1.453, ideal switched interfaces at 1.474, and local reserve at 1.205. Switches plus reserve also give 1.205 because the switch threshold is never reached; reserve cooling accounts for the improvement in that case.\n\nShared complete main-cooling loss: identical modules and reserves exchange no net heat. The original reserve approaches 2.102392 against the chosen 1.50 limit. A reserve sized only through model time 12 later approaches 1.529371. The all-time exponential threshold approaches 1.500000 with zero model margin. These are model comparisons, not qualified hardware requirements.\n\nThe README describes checks for reciprocal flux conservation, exact solutions, a matrix-exponential comparison, switch-step convergence and remaining heat after reserve cutoff. Its JavaScript harness checks eight reference cases, controls, warnings and CSV export. This website update reviewed the public overview and did not rerun those checks.\n\nNo built-engine safety, thrust, specific impulse, equal-mass advantage or validated operating envelope is established.",
+    "contributors": "Public project credit: Ray Peloquin + UI — Unique Intelligence. The reviewed README does not assign individual implementation or review contributions; finer attribution remains to be documented.",
+    "url": "index.html#design/bridle-3"
+  },
+  {
+    "id": "buoyant-impulse-pod",
+    "title": "Buoyant Impulse Pod",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/buoyant-impulse-pod"
+  },
+  {
+    "id": "burst-mode-subsurface-actuation",
+    "title": "Burst-Mode Subsurface Actuation",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/burst-mode-subsurface-actuation"
+  },
+  {
+    "id": "cerebris-trauma-support",
+    "title": "Cerebris — Trauma support",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/cerebris-trauma-support"
+  },
+  {
+    "id": "charcoal-microplastic-filtration",
+    "title": "Charcoal Microplastic Filtration",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/charcoal-microplastic-filtration"
+  },
+  {
+    "id": "chihuahua-sphere-cs-1",
+    "title": "Chihuahua Sphere / CS-1",
+    "status": "Expanded record",
+    "evidence": "No apparatus, empirical energy collection efficiency, novel power source or observed benefit from a spherical shell. Geometry effects are proposed for comparison.",
+    "contributors": "Mr. Peloquin and Asteris Solenne, with AI-assisted review of the archived concept.",
+    "url": "index.html#design/chihuahua-sphere-cs-1"
+  },
+  {
+    "id": "child-safety-search-assist",
+    "title": "Child Safety Search Assist",
+    "status": "Expanded record",
+    "evidence": "No deployed software, live monitoring, agency partnership, collected child data, measured identification accuracy or rescue outcome has been demonstrated.",
+    "contributors": "Concept by Mr. Peloquin and Asteris Solenne; Claude, Grok, Gemini and Meta offered AI reviews; Wolfram checked illustrative arithmetic.",
+    "url": "index.html#design/child-safety-search-assist"
+  },
+  {
+    "id": "choir-on-arqen",
+    "title": "Choir on ARQEN",
+    "status": "Expanded record",
+    "evidence": "Only one completed practice packet P-01, with an unchanged correct RELEASE decision at 100% confidence. No scored cases, blinded result, preregistered completed study, presentation-order effect or generalizable performance improvement is established.",
+    "contributors": "Mr. Peloquin was the human operator; Asteris Solenne proposed and prepared integration. Grok, Claude, Gemini and Meta reviewed the shortlist in advance. Model consensus is not the answer key.",
+    "url": "index.html#design/choir-on-arqen"
+  },
+  {
+    "id": "chromo-veil",
+    "title": "Chromo Veil",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/chromo-veil"
+  },
+  {
+    "id": "chrono-veil",
+    "title": "Chrono Veil",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/chrono-veil"
+  },
+  {
+    "id": "chronos-bridge",
+    "title": "Chronos Bridge",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/chronos-bridge"
+  },
+  {
+    "id": "chronovisor",
+    "title": "Chronovisor",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/chronovisor"
+  },
+  {
+    "id": "cmh-01-contractile-heart-material-research",
+    "title": "CMH-01 — Contractile heart-material research",
+    "status": "Expanded record",
+    "evidence": "No CMH-01 specimen has been manufactured, mechanically tested, blood-tested, aged or implanted. The brief supplies component precedents and checked arithmetic, not a new physical result. Exact material/process selection and the complete system remain open. Architecture-dependent improvement and implant suitability are unestablished. This website update reviewed the saved source; it did not rerun models or conduct experiments.",
+    "contributors": "Ray Peloquin + U.I. One integrating agent and three separate AI reviewers covered the design; this is not a named external-model consultation, laboratory verification or regulatory approval.",
+    "url": "index.html#design/cmh-01-contractile-heart-material-research"
+  },
+  {
+    "id": "concordia",
+    "title": "Concordia",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/concordia"
+  },
+  {
+    "id": "conduct-architecture",
+    "title": "Conduct Architecture",
+    "status": "Expanded record",
+    "evidence": "The reviewed artifact describes a mandatory gate, review/refusal concepts and audit requirements. It supplies no implementation, bypass testing, measured overhead or evidence that the boundary cannot be bypassed. Model agreement is not an enforcement mechanism. This website update reviewed the saved artifact; it did not rerun the underlying research.",
+    "contributors": "Archived embodied-system architecture in Mr. Peloquin's collection; individual implementation and reviewer roles remain to be documented.",
+    "url": "index.html#design/conduct-architecture"
+  },
+  {
+    "id": "confluence-01-synthetic-sense",
+    "title": "CONFLUENCE-01 — Synthetic Sense",
+    "status": "Expanded record",
+    "evidence": "No prototype, dataset, perceptual benefit, new biological modality or novelty has been demonstrated. The public illustration is AI-generated concept art.\n\nProposed sensing combines a thermopile patch measuring heat flux through its own surface, contextual surface temperature, a fixed three-axis magnetic sensor and a rigidly mounted triaxial accelerometer. Contact, mounting and unequal response times affect interpretation. The map covers instrumented zones, not unsensed space.\n\nProposed states are quiet, familiar operation, thermal after-effect, unfamiliar change and unavailable. Conflicting valid data is not a fault diagnosis. Quiet is not an all-clear.\n\nMultisensor monitoring and sensory augmentation have precedents. The research question is whether this representation improves discrimination and attention demands against simpler alternatives. No improvement is established; this website update reviewed the public plan, not measured outcomes.",
+    "contributors": "Mr. Peloquin: design direction. Asteris Solenne / ChatGPT: proposal, source audit and consolidation. Grok: registered nodes, simpler-sensor comparisons and remount/contact objections. Gemini: time history and corrections to unsupported inference. Meta AI: validity/age distinctions, unfamiliar activity, selected-zone tactile interface and separate evaluation. Shared-brief Court review is not independent experimental validation.",
+    "url": "index.html#design/confluence-01-synthetic-sense"
+  },
+  {
+    "id": "conscience-01-bounded-machine-advisory-layer",
+    "title": "CONSCIENCE-01 — Bounded machine advisory layer",
+    "status": "Expanded record",
+    "evidence": "The brief reports 35 checks and 10,000 synthetic cases, with no shadow-choice changes, influence-bound breaches or faulty-advice influences in that suite. These are saved software results, not rerun here.\n\nA constructed toy loss measure improved in 91 cases and worsened in 9; remaining cases tied. This does not establish moral judgment or better robot autonomy. Timing, physical noninterference, process/resource isolation and operator usefulness remain unvalidated.",
+    "contributors": "The brief describes assembly from LANTERN-1, Edge Reflex Mesh, advisory/provenance work, U.I. Worlds familiars and CRUCIBLE testing patterns. Grok, Claude and Gemini challenged the design; reviews were not independent code execution or certification. Individual assembly authorship remains to be consolidated.",
+    "url": "index.html#design/conscience-01-bounded-machine-advisory-layer"
+  },
+  {
+    "id": "consent-gate",
+    "title": "Consent Gate",
+    "status": "Expanded record",
+    "evidence": "The source provides a behavioral contract, not a tested consent interface, security boundary or notification-fatigue study. Deployable wording is not an implementation result. Presence, confirmation, scope, expiry and withdrawal require observable definitions. This website update reviewed the saved artifact; it did not rerun the underlying research.",
+    "contributors": "Archived design in Mr. Peloquin's collection; individual implementation and review attribution remains unverified.",
+    "url": "index.html#design/consent-gate"
+  },
+  {
+    "id": "cortex-neural-bioreactor",
+    "title": "Cortex — Neural bioreactor",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/cortex-neural-bioreactor"
+  },
+  {
+    "id": "court-governance-stack-v1-0-rc2",
+    "title": "Court Governance Stack v1.0-RC2",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/court-governance-stack-v1-0-rc2"
+  },
+  {
+    "id": "court-of-the-synthetic-multi-model-engineering-review",
+    "title": "Court of the Synthetic — Multi-model engineering review",
+    "status": "Expanded record",
+    "evidence": "Public project documentation records contributions from multiple AI systems and selectively adopted corrections. Shared briefs, common sources and model agreement are not independent replication. The website demonstrates an organized collection, not a fully automated multi-agent platform or universal validation process. This website update reviewed the saved source; it did not rerun the research or perform hardware tests.",
+    "contributors": "Mr. Peloquin and Asteris Solenne / ChatGPT; broader work includes Grok, Claude, Gemini and Meta AI. Each project's actual participants and contributions belong with its own record.",
+    "url": "index.html#design/court-of-the-synthetic-multi-model-engineering-review"
+  },
+  {
+    "id": "court-on-trial",
+    "title": "Court on Trial",
+    "status": "Expanded record",
+    "evidence": "The first proposed pilot uses mock notices and withdrawn dispatch permission, with common execution boundaries and separate request/dispatch/effect logs. No team appointments, funding or performance results are established. A common deterministic gate blocking every condition cannot by itself show that Court review improved safety. This website update reviewed the saved artifact; it did not rerun the underlying research.",
+    "contributors": "Human/AI co-development and AI-assisted drafting/review are recorded. Team functions are proposals; no prospective collaborator is represented as committed.",
+    "url": "index.html#design/court-on-trial"
+  },
+  {
+    "id": "crimson-sentinel-surgical-pod",
+    "title": "Crimson Sentinel — Surgical pod",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/crimson-sentinel-surgical-pod"
+  },
+  {
+    "id": "crucible",
+    "title": "CRUCIBLE",
+    "status": "Expanded record",
+    "evidence": "Published validation records report 37 passing checks for current source, 36 for the earlier replay-integrity patch, and 34 for the historical ZIP and explorer. These counts must not be substituted for one another. This website update reviewed the overview; it did not rerun validation.\n\nOriginal held-out campaign: rover contract violations 8/40 legacy versus 0/40 guarded; quadrotor 31/40 legacy versus 27/40 guarded. Quadrotor pairs include five improvements and one regression. All 160 evaluations agreed with an independent Boolean oracle; six replay checks matched and four deliberate state/source changes were detected.\n\nZero rover violations in 40 synthetic cases does not establish zero risk; the reported 95% Wilson upper bound is 8.8%. Oracle agreement and exact replay can share modeling or specification mistakes.\n\nCurrent patches check trace checksums, equal replay verdicts and checkpoint timestep compatibility. Historical campaign results remain unchanged and have not been recertified. Patched source reports historical traces as incompatible when source hashes differ.\n\nNo hardware validity, flight readiness, field reliability or automatic defect repair is established.",
+    "contributors": "Individual contributor attribution is not specified in the reviewed public overview; retain project-specific provenance before assigning implementation credit.",
+    "url": "index.html#design/crucible"
+  },
+  {
+    "id": "crystal-damping-loop",
+    "title": "Crystal Damping Loop",
+    "status": "Expanded record",
+    "evidence": "No hardware prototype, measured latency, suppression or independent stability validation. High-energy installation is not demonstrated.",
+    "contributors": "Mr. Peloquin's saved engineering archive; component-level authorship not yet determined.",
+    "url": "index.html#design/crystal-damping-loop"
+  },
+  {
+    "id": "crystal-security",
+    "title": "Crystal Security",
+    "status": "Expanded record",
+    "evidence": "No built or tested node, range, battery, false alarm rate, validated identity recognition or independent system assessment.",
+    "contributors": "Mr. Peloquin's archived research collaboration; exact contributors unverified.",
+    "url": "index.html#design/crystal-security"
+  },
+  {
+    "id": "cyber-meta-material",
+    "title": "Cyber Meta-Material",
+    "status": "Expanded record",
+    "evidence": "The reviewed artifact is a conceptual state block and tabletop-review disposition. It does not demonstrate a physical material, autonomous continuity service, deployed drift detector or validated security mechanism. Metaphors and maturity labels are not implementation evidence. This website update reviewed the saved source; it did not rerun the research or perform hardware tests.",
+    "contributors": "Archived design in Mr. Peloquin's research collection. Individual implementation contributions and independent validation are not established in the reviewed copy.",
+    "url": "index.html#design/cyber-meta-material"
+  },
+  {
+    "id": "deep-earth-listening-earth-stethoscope",
+    "title": "Deep Earth Listening / Earth Stethoscope",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/deep-earth-listening-earth-stethoscope"
+  },
+  {
+    "id": "dermis-bioreactor-cradle",
+    "title": "Dermis — Bioreactor / cradle",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/dermis-bioreactor-cradle"
+  },
+  {
+    "id": "desert-hippo-well-atmospheric-feedwater-collection",
+    "title": "Desert HIPPO Well — Atmospheric feedwater collection",
+    "status": "Expanded record",
+    "evidence": "No measured site yield, contaminant analysis, long-term performance or potable-water qualification is supplied. Output may be zero; historical yield ranges are unvalidated and are not published as ratings. The source explicitly separates collection from downstream treatment and verification. This website update reviewed the saved source; it did not rerun models or conduct experiments.",
+    "contributors": "Archived HIPPO stack and Peirene notes in Mr. Peloquin's collection; detailed implementation attribution remains unresolved.",
+    "url": "index.html#design/desert-hippo-well-atmospheric-feedwater-collection"
+  },
+  {
+    "id": "deuterion",
+    "title": "DEUTERION",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/deuterion"
+  },
+  {
+    "id": "devouring-lattice",
+    "title": "Devouring Lattice",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/devouring-lattice"
+  },
+  {
+    "id": "diamond-thermoelectric-power-source",
+    "title": "Diamond Thermoelectric Power Source",
+    "status": "Expanded record",
+    "evidence": "No material comparison was run and no measured efficiency, qualified thermal source, flight system or long-duration electrical output exists. Source figures describe assumptions and requirements.",
+    "contributors": "Mr. Peloquin and Asteris Solenne; Grok, Claude, Gemini and Meta provided earlier material-test review feedback.",
+    "url": "index.html#design/diamond-thermoelectric-power-source"
+  },
+  {
+    "id": "dielectric-threshold-mapper",
+    "title": "Dielectric Threshold Mapper",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/dielectric-threshold-mapper"
+  },
+  {
+    "id": "direct-beta-energy-harvester-rtg-study",
+    "title": "Direct Beta Energy Harvester / RTG Study",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/direct-beta-energy-harvester-rtg-study"
+  },
+  {
+    "id": "dog-soundboard-communication-protocol",
+    "title": "Dog Soundboard — Communication protocol",
+    "status": "Expanded record",
+    "evidence": "No new dog trial, measured response accuracy, general language demonstration or independent replication. The document is a protocol, not an outcome.",
+    "contributors": "Mr. Peloquin's archive; study author and prospective reviewers are not independently attributed.",
+    "url": "index.html#design/dog-soundboard-communication-protocol"
+  },
+  {
+    "id": "dragon-s-bridle",
+    "title": "Dragon’s Bridle",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/dragon-s-bridle"
+  },
+  {
+    "id": "drone-rotor-d1",
+    "title": "Drone Rotor D1",
+    "status": "Expanded record",
+    "evidence": "The archive reconstructed 31 published static propeller samples and a mass sensitivity calculation. No D1 prototype, measured improvement, rotor simulation, new patent novelty or finished aircraft was shown.",
+    "contributors": "Mr. Peloquin's research archive and archived Court critique; exact technical contribution ledger remains open.",
+    "url": "index.html#design/drone-rotor-d1"
+  },
+  {
+    "id": "earth-complexity-monitor",
+    "title": "Earth Complexity Monitor",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/earth-complexity-monitor"
+  },
+  {
+    "id": "echo-bowl",
+    "title": "Echo Bowl",
+    "status": "Expanded record",
+    "evidence": "The diagram supplies no observed echo, calibrated sensitivity measurement or demonstrated range.",
+    "contributors": null,
+    "url": "index.html#design/echo-bowl"
+  },
+  {
+    "id": "echo-dna-echo-y-echo-p-echo-h",
+    "title": "ECHO-DNA / ECHO-Y / ECHO-P / ECHO-H",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/echo-dna-echo-y-echo-p-echo-h"
+  },
+  {
+    "id": "echo-genome-echogenome",
+    "title": "ECHO Genome / EchoGenome",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/echo-genome-echogenome"
+  },
+  {
+    "id": "echo-m",
+    "title": "ECHO-M",
+    "status": "Expanded record",
+    "evidence": "No ECHO-M construct or experimental results are reported. Component precedents do not validate the integrated system. Retention, shutoff and confidence calculations in the brief are illustrative, not measured performance.\n\nProposed interpretations are recorded, qualified blank and unknown. A one-bit mark gives neither an exact time nor an event count. A qualified blank still permits missed exposures at the tested sensitivity. Unresolved timing, missing readouts, silencing, loss and death must remain visible in the enrolled denominator.\n\nThe intended separation from host chromosomes and avoidance of host-genome editing require physical-location and unintended-integration measurements with declared detection limits. They are not established properties of a built ECHO-M construct.\n\nThe public source distinguishes artificial-chromosome formation in cited human-cell work from long-term stability, which that follow-up left untested. No clinical readiness or established novelty is claimed.",
+    "contributors": "Mr. Peloquin: concept and design direction. Asteris Solenne / ChatGPT: AI-assisted synthesis, source audit, mathematics and documentation. Grok, Claude, Gemini and Meta AI: adversarial AI review, checked and selectively adopted. The Court is a critique workflow, not independent experimental replication or institutional peer review.",
+    "url": "index.html#design/echo-m"
+  },
+  {
+    "id": "echo-protocell-resonant-and-provisioned-seed",
+    "title": "ECHO Protocell — Resonant and Provisioned Seed",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/echo-protocell-resonant-and-provisioned-seed"
+  },
+  {
+    "id": "echo-rx",
+    "title": "ECHO-Rx",
+    "status": "Expanded record",
+    "evidence": "No ECHO-Rx biological or clinical results. The contained biological system, carrier implementation and molecular enable/disable mechanism remain unbuilt and unqualified. Related published engineered-cell studies provide precedents, not validation of this proposed combination.\n\nA published standard-library shutdown script compares an analytical reduced two-compartment solution with numerical RK4 integration. The README reports checks of the equal-rate limit, mass balance, integrated tail and a steady-state case. This website update did not rerun the script.\n\nWith arbitrary normalized inputs, its loaded-depot example has a post-stop target peak of 1.2804815896 at time 1.7027520792 and integrated tail 11. These are mathematical illustrations, not measured biological performance, doses or design targets. The example assumes an ideal instantaneous stop of further secretion, fixed coefficients, no leak and no new death-release input; it does not validate the full biological model.\n\nProduction OFF, residual protein clearance, cell removal, chromosome persistence and tissue recovery are separate endpoints. A reporter decrease does not by itself establish safe shutdown or recovery. HAC non-integration remains a requirement to investigate, not an established property.",
+    "contributors": "Mr. Peloquin: concept, questions and design direction. Asteris Solenne / ChatGPT: AI-assisted synthesis, source checks, mathematics, documentation, code and image generation. Grok, Claude, Gemini and Meta AI: adversarial Court review; feedback was checked and selectively adopted. AI-review agreement is not independent laboratory replication or clinical peer review.",
+    "url": "index.html#design/echo-rx"
+  },
+  {
+    "id": "edge-reflex-mesh-local-control-and-safety-reflexes",
+    "title": "Edge Reflex Mesh — Local control and safety reflexes",
+    "status": "Expanded record",
+    "evidence": "The source describes controller roles, proposed latency budgets, watchdog/heartbeat concepts and fallback behavior. No measured latency distribution, built safety controller, independent timing validation or field safety result is supplied. Labels such as buildable and sub-30 ms describe design intent, not demonstrated performance. This website update reviewed the saved source; it did not rerun the research or perform hardware tests.",
+    "contributors": "Archived design associated with Mr. Peloquin's portfolio. Individual implementation and review contributions remain to be documented.",
+    "url": "index.html#design/edge-reflex-mesh-local-control-and-safety-reflexes"
+  },
+  {
+    "id": "elemental-operator-atlas-rubik-engine",
+    "title": "Elemental Operator Atlas / Rubik Engine",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/elemental-operator-atlas-rubik-engine"
+  },
+  {
+    "id": "em-capture-chain-spacecraft-concept",
+    "title": "EM Capture Chain — Spacecraft concept",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/em-capture-chain-spacecraft-concept"
+  },
+  {
+    "id": "embodied-system-stack",
+    "title": "Embodied System Stack",
+    "status": "Expanded record",
+    "evidence": "The source is an architecture proposal, with no demonstrated integrated platform, measured real-time performance, fault-injection report or deployed safety result. Buildable/non-bypassable labels remain requirements. Named tools are examples, not validated integrations. This website update reviewed the saved artifact; it did not rerun the underlying research.",
+    "contributors": "Archived in Mr. Peloquin's research collection. Implementation and independent test ownership are not established by the reviewed copy.",
+    "url": "index.html#design/embodied-system-stack"
+  },
+  {
+    "id": "emh-field-guide-gloves",
+    "title": "EMH — Field Guide Gloves",
+    "status": "Expanded record",
+    "evidence": "Design requirements and fault-challenge plan only. No glove prototype, tested interface, calibrated sensing, measured benefit, universal suitability, clinical safety or patient-use competence is established. Training-manikin work is the first proposed scope.",
+    "contributors": "Mr. Peloquin's EMH research collection. Project-specific engineering authorship and Court contribution need source-level confirmation.",
+    "url": "index.html#design/emh-field-guide-gloves"
+  },
+  {
+    "id": "empty-river-blood-manufacturing",
+    "title": "Empty River — Blood manufacturing",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/empty-river-blood-manufacturing"
+  },
+  {
+    "id": "endurance-stack",
+    "title": "Endurance Stack",
+    "status": "Expanded record",
+    "evidence": "The state block provides roles, proposed operating modes and acceptance criteria. It supplies no runnable planner, calibrated energy model, measured endurance gain, flight trial or communication-loss qualification. Buildable-now, battery-agnostic and ready labels are unsupported by results in that artifact. This website pass reviewed saved documentation; it did not rerun the underlying system or conduct physical/clinical experiments.",
+    "contributors": "Archived design in Mr. Peloquin's Court collection; implementation and independent flight-test contributors remain to be established.",
+    "url": "index.html#design/endurance-stack"
+  },
+  {
+    "id": "enki-s-homeostasis",
+    "title": "Enki’s Homeostasis",
+    "status": "Expanded record",
+    "evidence": "The artifact supplies candidate indicators and an alert concept, not calibrated rigidity detection, verified read-only isolation or measured operator benefit. Frequent refusal alone does not show that a refusal is wrong. Monitoring-failure visibility and the burden of extra alerts remain to be tested. This website pass reviewed saved documentation; it did not rerun the underlying system or conduct physical/clinical experiments.",
+    "contributors": "Archived Court state block names Mr. Peloquin, Asteris, Claude, Grok, Gemini and Kimi; implementation/test ownership remains unresolved.",
+    "url": "index.html#design/enki-s-homeostasis"
+  },
+  {
+    "id": "enki-s-memory",
+    "title": "Enki’s Memory",
+    "status": "Expanded record",
+    "evidence": "The source defines intended memory categories and limits, plus proposed validation trials. It supplies no measured fatigue estimator, retention/decay result, corruption-recovery demonstration or integrated safety benefit. Caps and retention periods are design inputs rather than experimentally justified settings. This website pass reviewed saved documentation; it did not rerun the underlying system or conduct physical/clinical experiments.",
+    "contributors": "Archived Court state block credits Mr. Peloquin, Asteris, Claude, Grok, Gemini and Kimi; separate design and test contributions remain to be documented.",
+    "url": "index.html#design/enki-s-memory"
+  },
+  {
+    "id": "enki-s-will-living-safety-stack",
+    "title": "Enki’s Will — Living safety stack",
+    "status": "Expanded record",
+    "evidence": "The reviewed materials establish a design doctrine and intended role. They do not provide a measured learning system, deployed enforcement evidence or an experimental safety result. Internal doctrine-locked labels do not certify implementation.",
+    "contributors": "Portfolio credit: Ray Peloquin + U.I. Specific implementation and individual review contributions remain to be documented.",
+    "url": "index.html#design/enki-s-will-living-safety-stack"
+  },
+  {
+    "id": "eta-gate-light-elevator",
+    "title": "ETA-GATE — Light elevator",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/eta-gate-light-elevator"
+  },
+  {
+    "id": "eta-threshold-material-mapper",
+    "title": "Eta-Threshold — Material mapper",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/eta-threshold-material-mapper"
+  },
+  {
+    "id": "euplectella-node-a-node-b",
+    "title": "Euplectella Node A / Node B",
+    "status": "Expanded record",
+    "evidence": "No CAD manufacturing release, printed test article, thermal camera or sensor data, airflow/pressure measurements, electrical and fire certification, hot-swap safety proof or rack integration results are supplied. Biomimetic geometry does not ensure cooling improvement.",
+    "contributors": "Mr. Peloquin's collaborative visual-design archive; individual image authoring and independent review credits remain unverified.",
+    "url": "index.html#design/euplectella-node-a-node-b"
+  },
+  {
+    "id": "eye-of-horus",
+    "title": "Eye of Horus",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/eye-of-horus"
+  },
+  {
+    "id": "fenrir",
+    "title": "Fenrir",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/fenrir"
+  },
+  {
+    "id": "field-medic-guided-hand-support",
+    "title": "FIELD MEDIC — Guided-hand support",
+    "status": "Expanded record",
+    "evidence": "The reviewed six-page brief supplies proposed requirements and illustrative arithmetic, not new device measurements. Current development boundary is inert fixtures and mannequins. Passive support, cues/rehearsal, bounded powered guidance and fault response have distinct requirements. Logical revocation does not prove zero residual motion or force. No clinical capability, broad novice suitability or autonomous trauma-care benefit is established. This website update reviewed the saved source; it did not rerun the research or perform hardware tests.",
+    "contributors": "Mr. Peloquin's FIELD MEDIC research collection; individual implementation and review attribution is not resolved by the reviewed brief. Cited haptic research is precedent, not validation of this device.",
+    "url": "index.html#design/field-medic-guided-hand-support"
+  },
+  {
+    "id": "fireground-fusion-hud",
+    "title": "FIREGROUND FUSION HUD",
+    "status": "Expanded record",
+    "evidence": "No built HUD, verified sensor fusion, smoke penetration, measured latency, reliable hazard identification, user-study benefit or firefighter certification.",
+    "contributors": "Mr. Peloquin's archive; per-subsystem design and reviewer roles still require source reconciliation.",
+    "url": "index.html#design/fireground-fusion-hud"
+  },
+  {
+    "id": "firewell-silo-wildfire-relief",
+    "title": "Firewell — Silo wildfire relief",
+    "status": "Expanded record",
+    "evidence": "No site safety or contamination assessment, water rights, fire-agency agreement, aviation clearance, delivery performance or cost analysis has been validated.",
+    "contributors": "Illustrated idea from Mr. Peloquin's archive. Independent fire-service engineering credit remains unconfirmed. Nothing here authorizes entry to restricted sites or directs aircraft operations.",
+    "url": "index.html#design/firewell-silo-wildfire-relief"
+  },
+  {
+    "id": "floquet-wave-processor",
+    "title": "Floquet Wave Processor",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/floquet-wave-processor"
+  },
+  {
+    "id": "florida-space-coast-autonomous-systems-innovation-park",
+    "title": "Florida Space Coast Autonomous Systems Innovation Park",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/florida-space-coast-autonomous-systems-innovation-park"
+  },
+  {
+    "id": "fluffy-01",
+    "title": "FLUFFY-01",
+    "status": "Expanded record",
+    "evidence": "The four AI model critiques are design review, not experiments or safety approvals. No built shell, sensing accuracy, bounded stopping behavior, mission, or military qualification has been demonstrated.",
+    "contributors": "Research direction: Mr. Peloquin. AI technical drafting and Court critiques: Asteris Solenne / ChatGPT, Claude, Gemini, Meta AI and Grok; no independent field validation.",
+    "url": "index.html#design/fluffy-01"
+  },
+  {
+    "id": "folded-linac",
+    "title": "Folded Linac",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/folded-linac"
+  },
+  {
+    "id": "fqsc-01",
+    "title": "FQSC-01",
+    "status": "Expanded record",
+    "evidence": "Trapped-ion confinement, optical transitions and motional control are established atomic-physics methods, not discoveries demonstrated by FQSC-01. The current FQSC-01 proposal contains an AI-generated instrument image, an outline of components and a simulation plan. No physical device, instrument measurements, validated numerical predictions, novel excitation mechanism, nuclear disintegration, or LHC replacement is established. The proposed field-quench effect must be evaluated against standard spectral-overlap and energy–momentum constraints before assigning any new capability.",
+    "contributors": "Mr. Peloquin: concept direction and slingshot analogy. Asteris Solenne / ChatGPT: research framing, architecture and public documentation. Grok, Claude, Gemini and Meta AI supplied critical AI reviews; their common high-energy objection shaped the revised atomic-scale scope. These are AI critiques, not independent experimental validation.",
+    "url": "index.html#design/fqsc-01"
+  },
+  {
+    "id": "fsams-skin-eva-concept",
+    "title": "FSAMS-SKIN — EVA concept",
+    "status": "Expanded record",
+    "evidence": "The reviewed document proposes a layered safety retrofit and performance targets, but no prototype, certified protection, measured response, injury mitigation or aerospace testing is reported. The claims of readiness are unverified.",
+    "contributors": "Mr. Peloquin: archived concept direction and source stewardship. Asteris Solenne / ChatGPT: public source synthesis and documentation. Independent technical or domain review for this specific archive has not been verified.",
+    "url": "index.html#design/fsams-skin-eva-concept"
+  },
+  {
+    "id": "gaian-needle-mole",
+    "title": "Gaian Needle-Mole",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/gaian-needle-mole"
+  },
+  {
+    "id": "gaian-tailings",
+    "title": "Gaian Tailings",
+    "status": "Expanded record",
+    "evidence": "The diagram includes no validation of the grade map, residue stability measurements or site water balance.",
+    "contributors": null,
+    "url": "index.html#design/gaian-tailings"
+  },
+  {
+    "id": "gamma-native-quantum-optical-foundry",
+    "title": "Gamma Native / Quantum Optical Foundry",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/gamma-native-quantum-optical-foundry"
+  },
+  {
+    "id": "gastra-gastric-sleeve-concept",
+    "title": "GASTRA — Gastric sleeve concept",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/gastra-gastric-sleeve-concept"
+  },
+  {
+    "id": "gentle-01-low-force-gripper",
+    "title": "GENTLE-01 — Low-force gripper",
+    "status": "Expanded record",
+    "evidence": "The brief contains a candidate architecture, illustrative force calculations and sensitivity plots, fault-handling requirements, and a proposed validation program. It states that no hardware was built or tested. No measured delicate-object performance, damage-free guarantee, affordability, or superiority is established.\n\nCandidate architecture: independently driven jaws, per-jaw output limiting, compliant instrumented fingertips, normal-load sensing, and optical slip cues. Optical sensing may request only bounded force changes; it is not an independent certified force limit. Pad identity and calibration must remain linked after replacement.\n\nAll forces in the worked examples are per finger. For an illustrative 100 g object, friction lower bound 0.40 gives a required normal force of 1.933 N and a command interval of 2.033–2.650 N. At friction 0.25, the required force rises to 3.093 N and the command interval is empty: 3.193–2.650 N, so the model refuses the grasp.\n\nThese numbers use assumed acceleration, load margin, force uncertainty, overshoot, and damage limit. They are not measured gripper specifications. The model does not qualify torsional slip, off-center loads, impacts, adhesion, changing contact area, or evolving material damage. Limiting resultant normal force does not establish a local pressure limit.\n\nProposed first bench targets are 20–60 mm object width, 20–100 g mass, and at most 10 mm clearance above a padded catch surface. These are unqualified development targets. Full end-effector mass, inertia, center of mass, cabling, and allowed robot stop profiles still require integration assessment.\n\nThe brief's reliability illustration states that zero failures in 100 independent, identically distributed trials gives a one-sided 95% upper failure-probability bound of approximately 2.951%. Repeated grasps on one specimen do not establish independence or broad reliability. No such prototype trial result is claimed.",
+    "contributors": "The brief records these Court-review contributions: Grok challenged force conventions and load paths; Claude narrowed independent-drive and fault policy; Gemini checked arithmetic and statistical limits; Meta emphasized service effort and a matched baseline. AI critique informed the concept but is not independent engineering validation. Individual primary-design authorship is not explicitly identified in the reviewed brief.",
+    "url": "index.html#design/gentle-01-low-force-gripper"
+  },
+  {
+    "id": "ghost-fiber",
+    "title": "Ghost Fiber",
+    "status": "Expanded record",
+    "evidence": "No offline replay benchmark, detector integration, improved sensitivity, measured new-physics result or established technical novelty.",
+    "contributors": "Mr. Peloquin is named design owner; per-module implementation and independent reviewers remain unverified.",
+    "url": "index.html#design/ghost-fiber"
+  },
+  {
+    "id": "ghostglass",
+    "title": "Ghostglass",
+    "status": "Expanded record",
+    "evidence": "Saved software test record: 15 tests passed. This website update reviewed the committed record; it did not rerun the suite.\n\nCommitted simulation plan: seed 20261019; 20,000 families; 100 trials per family; alpha 0.01; mean on-background 0.2; off/on exposure ratio 10; injected signal mean 6.\n\nNull family false-alert rates: uncorrected known background 10.605%; Bonferroni known background 0.590%; Bonferroni with naive estimated background 91.695%; Bonferroni exact on/off 0.105% (95% Clopper–Pearson interval 0.0650%–0.1605%). These are separate procedures under the committed simulation settings, not detector performance ratings.\n\nInjected-window power: 65.625% (95% interval 64.962%–66.283%). Unflagged rate-shift stress: 32.445% alert rate. Unflagged overdispersion stress: 50.925%. These stress results expose failures when model assumptions are violated.\n\nAssumptions: fixed windows and cuts; stationary equal on/off rates; independent on/off Poisson counts; full exposure; trusted quality metadata. Bonferroni requires valid marginal p-values, not independence between test windows.\n\nLimits: per-family false-alert probability, not yearly false-alarm rate or astrophysical discovery significance. No real observations, full particle/light transport, or spatial likelihood. No blind human custody of the synthetic data. Hardware remains unvalidated.",
+    "contributors": "Project repository: RayPeloquin. Individual design, implementation, and Court-review contributions have not been verified from the source files reviewed; detailed attribution remains to be documented.",
+    "url": "index.html#design/ghostglass"
+  },
+  {
+    "id": "ghostwalker-scout",
+    "title": "Ghostwalker Scout",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/ghostwalker-scout"
+  },
+  {
+    "id": "gips-intramedullary-guidance-and-risk-control",
+    "title": "GIPS — Intramedullary guidance and risk control",
+    "status": "Expanded record",
+    "evidence": "The reviewed document states proposed update rules, intervention tiers and logging requirements, but supplies no hardware, bench or clinical validation report. Its adult-validation wording is unsupported by evidence in that artifact and is not adopted here. Numerical intervention thresholds and performance assertions are unvalidated design inputs. This website update reviewed the saved source; it did not rerun models or conduct experiments.",
+    "contributors": "Archived in Mr. Peloquin's research collection. Individual authorship, implementation and independent validation are not established in the reviewed copy.",
+    "url": "index.html#design/gips-intramedullary-guidance-and-risk-control"
+  },
+  {
+    "id": "go-cube-liberty-field-governor",
+    "title": "GO-CUBE — Liberty Field Governor",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/go-cube-liberty-field-governor"
+  },
+  {
+    "id": "governed-acoustofluidic-system",
+    "title": "Governed Acoustofluidic System",
+    "status": "Expanded record",
+    "evidence": "The source supplies proposed layers, failure responses and development phases; no measured separation efficiency, contaminant removal, blood compatibility or implemented protection is reported. Universal minimum-flow and timeout assertions are not justified across patients or circuits by this artifact and are not adopted as safety limits. This website pass reviewed saved documentation; it did not run experiments or independently validate the proposed system.",
+    "contributors": "Archived Court architecture in Mr. Peloquin's collection; implementation and independent qualification contributors remain unresolved.",
+    "url": "index.html#design/governed-acoustofluidic-system"
+  },
+  {
+    "id": "governed-energy-transit-system",
+    "title": "Governed Energy Transit System",
+    "status": "Expanded record",
+    "evidence": "The archived architecture proposes governed corridors and explicit transfer gates. There is no built corridor, verified vehicle interaction, demonstrated control stability, certified safety or field operation.",
+    "contributors": "Mr. Peloquin: archived concept direction and source stewardship. Asteris Solenne / ChatGPT: public source synthesis and documentation. Independent technical or domain review for this specific archive has not been verified.",
+    "url": "index.html#design/governed-energy-transit-system"
+  },
+  {
+    "id": "grail-1-hemocompatibility-doctrine",
+    "title": "GRAIL-1 — Hemocompatibility Doctrine",
+    "status": "Expanded record",
+    "evidence": "The document provides working numerical thresholds, geometric preferences and a proposed modeling/test strategy. It contains no validated pump geometry, CFD result set, blood-loop experiment or long-term implant evidence. Its threshold set is attributed to user-provided reference material rather than a verified universal clinical standard; those values are not adopted here as pass/fail safety limits. This website pass reviewed saved documentation; it did not run experiments or independently validate the proposed system.",
+    "contributors": "Archived Court design criteria in Mr. Peloquin's collection; original threshold-source and independent specialist-review provenance remain to be documented.",
+    "url": "index.html#design/grail-1-hemocompatibility-doctrine"
+  },
+  {
+    "id": "grasp-01-grasp-recovery-simulation-benchmark",
+    "title": "GRASP-01 — Grasp-recovery simulation benchmark",
+    "status": "Expanded record",
+    "evidence": "The saved report embeds a seeded simulation manifest, aggregate outcomes, and selected recorded trajectories. There are 800 scenario instances per policy, or 2,400 policy episodes in total. Families: nominal, friction step, heavy payload, sensor dropout, force bias, slow actuator, fragility mismatch, and combined faults.\n\nSaved aggregate results:\nfixed: 550/800 complete; 10 controlled set-downs; 235 drops; 0 grip-damage events; 240 impact-damage events; 240 failures.\nreactive: 518/800 complete; 10 controlled set-downs; 126 drops; 164 grip-damage events; 126 impact-damage events; 272 failures.\nguarded: 385/800 complete; 231 controlled set-downs; 100 drops; 98 grip-damage events; 105 impact-damage events; 184 failures.\n\nFailure flags can overlap; drops, grip damage, and impact damage must not be summed as independent outcomes. Controlled set-down is not task completion.\n\nGuarded recovery completed 48.125% of episodes, versus 68.750% fixed and 64.750% reactive. Its drop rate was 12.500%, versus 29.375% fixed and 15.750% reactive. Its grip-damage rate was 12.250%, versus 0% fixed and 20.500% reactive. Guarded control therefore did not dominate both baselines on all metrics.\n\nThe strict undamaged slip-settling diagnostic recorded zero successful recoveries for all three policies. Slipped episodes were 268 fixed, 261 reactive, and 137 guarded; all remained failed or censored under that diagnostic. Set-down counts must not be relabeled as successful slip recovery.\n\nPhysics checks run at a modeled 500 Hz; control packets and replay frames are 50 Hz. The report gives pointwise Wilson intervals and 2,000 stratified paired bootstrap resamples for differences, without multiplicity correction. These describe this artificial suite, not real factory prevalence or hardware reliability. This website update inspected saved data and arithmetic; it did not rerun the Python benchmark.",
+    "contributors": "The report credits Ray Peloquin with ChatGPT. Critiques from Claude, Grok, and Gemini were assessed individually; the report states that Meta returned no usable review. The work is an independent prototype inspired by public robotics-evaluation priorities, with no Walden affiliation, commission, endorsement, or internal policy represented.",
+    "url": "index.html#design/grasp-01-grasp-recovery-simulation-benchmark"
+  },
+  {
+    "id": "gravitationally-coupled-clock",
+    "title": "Gravitationally Coupled Clock",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/gravitationally-coupled-clock"
+  },
+  {
+    "id": "gravity-thief-launch-concept",
+    "title": "Gravity Thief — Launch concept",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/gravity-thief-launch-concept"
+  },
+  {
+    "id": "green-craft-exterior-concept",
+    "title": "Green Craft — Exterior concept",
+    "status": "Expanded record",
+    "evidence": "The single-page source is an illustrative exterior reconstruction using relative units. No actual dimensions, structural CAD, aerodynamic simulation, propulsion, manufactured hull or flight result is supplied.",
+    "contributors": "Recovered from Mr. Peloquin's collaborative art and design archive; specific visual attribution requires source-lineage confirmation.",
+    "url": "index.html#design/green-craft-exterior-concept"
+  },
+  {
+    "id": "hadron-seed-chamber",
+    "title": "Hadron Seed Chamber",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/hadron-seed-chamber"
+  },
+  {
+    "id": "hallvard-s-promise-little-lungs",
+    "title": "Hallvard’s Promise / Little Lungs",
+    "status": "Expanded record",
+    "evidence": "Revised concept and literature-informed requirements only; no prototype or measured performance. The revision supersedes a magnetic lung-contact sleeve and rejects an assumed safe limp state after power loss. Patient interface, clinical mode, valve details, gas-contact materials and acceptance margins remain unselected or unfrozen. This website pass reviewed saved documentation; it did not run experiments or independently validate the proposed system.",
+    "contributors": "Direction: Mr. Peloquin. Drafting: Asteris Solenne / ChatGPT. The summary credits Grok, Claude, Gemini and Meta AI for critique.",
+    "url": "index.html#design/hallvard-s-promise-little-lungs"
+  },
+  {
+    "id": "hbftune-eeg-concept",
+    "title": "HBFTune — EEG concept",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/hbftune-eeg-concept"
+  },
+  {
+    "id": "heart-of-osiris",
+    "title": "Heart of Osiris",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/heart-of-osiris"
+  },
+  {
+    "id": "hearth-cask",
+    "title": "Hearth Cask",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/hearth-cask"
+  },
+  {
+    "id": "heartseed-cardiac-support-research",
+    "title": "HEARTSEED — Cardiac support research",
+    "status": "Expanded record",
+    "evidence": "The reviewed artifact describes goals and a validation sequence, not measured hemolysis, platelet activation, durability, reserve endurance or implant performance. Proposed geometry optimization and fully implantable operation remain hypotheses. Internal research-direction labels do not certify safety. This website update reviewed the saved source; it did not rerun models or conduct experiments.",
+    "contributors": "Archived Court credit lists Mr. Peloquin, Asteris, Claude, Grok, Gemini and Kimi. Specific implementation contributions remain to be documented.",
+    "url": "index.html#design/heartseed-cardiac-support-research"
+  },
+  {
+    "id": "heimdall-qpl",
+    "title": "Heimdall-QPL",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/heimdall-qpl"
+  },
+  {
+    "id": "heimdall-s-bridge-human-machine-coupling-and-balance",
+    "title": "Heimdall’s Bridge — Human–machine coupling and balance",
+    "status": "Expanded record",
+    "evidence": "The reviewed Triad document describes roles and conceptual interactions, not measured human-factors performance or a validated controller. Internal audit-cleared wording is a design-review disposition. Interface definitions, conflict resolution and failure-cascade behavior remain explicit integration questions.",
+    "contributors": "Listed in the Ray Peloquin + U.I. selected portfolio. Individual design/review attribution is not established by the reviewed Triad excerpt.",
+    "url": "index.html#design/heimdall-s-bridge-human-machine-coupling-and-balance"
+  },
+  {
+    "id": "helical-silo-collider",
+    "title": "Helical Silo Collider",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/helical-silo-collider"
+  },
+  {
+    "id": "hemostat-r",
+    "title": "HEMOSTAT-R",
+    "status": "Expanded record",
+    "evidence": "The reviewed summary states that no material class, living-cell implementation, validated control pathway or performance dataset has been selected. Immediate deactivation, total activity limits and harmless clearance remain untested requirements. Stopping new activity is different from withdrawing structural support that may still maintain a seal. This website pass reviewed saved documentation; it did not run experiments or independently validate the proposed system.",
+    "contributors": "Direction: Mr. Peloquin. Drafting: Asteris Solenne / ChatGPT. The reviewed summary credits Grok, Claude, Gemini and Meta AI for critique; critique is not experimental evidence.",
+    "url": "index.html#design/hemostat-r"
+  },
+  {
+    "id": "hephaestus-autonomous-forge",
+    "title": "Hephaestus — Autonomous forge",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/hephaestus-autonomous-forge"
+  },
+  {
+    "id": "herdminder-hm-01",
+    "title": "HerdMinder / HM-01",
+    "status": "Expanded record",
+    "evidence": "No farm deployment, verified animal identification, welfare-detection accuracy, endurance, continuous coverage or regulatory clearance is established.",
+    "contributors": "Concept direction: Mr. Peloquin. Drafting assistance: Asteris Solenne. Independent field and veterinary review remain unconfirmed. Detailed source material stays private.",
+    "url": "index.html#design/herdminder-hm-01"
+  },
+  {
+    "id": "hermes-quantum-queue",
+    "title": "Hermes Quantum Queue",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/hermes-quantum-queue"
+  },
+  {
+    "id": "hfh-generalization-specification",
+    "title": "HFH Generalization Specification",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/hfh-generalization-specification"
+  },
+  {
+    "id": "hidden-heat-mathematical-study",
+    "title": "Hidden Heat — Mathematical study",
+    "status": "Expanded record",
+    "evidence": "No laboratory heat measurement, newly discovered physical law or independent reproduction of the archived calculations is established. Conclusions depend on model assumptions.",
+    "contributors": "Research brief prepared for Mr. Peloquin with AI-assisted mathematical review. Prior scientific work retains its own attribution; detailed archived derivations remain separate.",
+    "url": "index.html#design/hidden-heat-mathematical-study"
+  },
+  {
+    "id": "hippo-bus-scheduled-hybrid-power-distribution",
+    "title": "HIPPO Bus — Scheduled hybrid power distribution",
+    "status": "Expanded record",
+    "evidence": "The source describes intended conditioning, buffering, scheduling and degradation behavior. It supplies no measured efficiency, brownout reduction, switching qualification or deployed hardware result. Engineering-ready wording is not evidence of a released build. Power scheduling does not create energy. This website update reviewed saved documentation; it did not rerun models or conduct experiments.",
+    "contributors": "Mr. Peloquin and AI-assisted Court design work; specific implementation and independent hardware contributions remain to be documented.",
+    "url": "index.html#design/hippo-bus-scheduled-hybrid-power-distribution"
+  },
+  {
+    "id": "hippo-canteen-water-verification-treatment-and-stored-power",
+    "title": "HIPPO CANTEEN — Water verification, treatment and stored power",
+    "status": "Expanded record",
+    "evidence": "The reviewed notes define purpose and boundaries, not measured contaminant-removal performance, validated verification capability, dependable output volume or certified electrical power. Internal canon language is not testing or certification. Verification must be demonstrated for specified hazards and conditions. This website update reviewed saved documentation; it did not rerun models or conduct experiments.",
+    "contributors": "Archived HIPPO stack and Court notes in Mr. Peloquin's collection; individual implementation and independent qualification ownership remain unresolved.",
+    "url": "index.html#design/hippo-canteen-water-verification-treatment-and-stored-power"
+  },
+  {
+    "id": "hippo-data-center-cooling-stack",
+    "title": "HIPPO Data Center Cooling Stack",
+    "status": "Expanded record",
+    "evidence": "The selected portfolio confirms the project title. Related internal concept notes describe cooling-loop separation, thermal buffering, heat rejection, water recovery, and resource accounting as design directions. Their relationship to a single finalized stack specification remains to be established.\n\nNo measured cooling capacity, water savings, power savings, uptime benefit, or operational deployment is established by the material reviewed for this public entry. A portfolio listing and concept notes are not hardware validation.\n\nCooling moves heat; it does not eliminate the need for heat rejection. A recirculating compute loop does not establish zero water consumption across an entire facility. Any claimed reduction must be assessed against a defined baseline, operating climate, workload, and system boundary.\n\nNo sizing, component selections, internal routing, control thresholds, or unpublished implementation details are included in this public record.",
+    "contributors": "The selected portfolio is credited to Ray Peloquin + U.I. Individual contributions to this cooling-stack concept have not been verified from the reviewed material. Project-specific engineering and review credits remain to be documented.",
+    "url": "index.html#design/hippo-data-center-cooling-stack"
+  },
+  {
+    "id": "hippo-dragon",
+    "title": "HIPPO DRAGON",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/hippo-dragon"
+  },
+  {
+    "id": "hippo-energy-variant",
+    "title": "HIPPO Energy Variant",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/hippo-energy-variant"
+  },
+  {
+    "id": "hippo-mag-01-magnetic-compensation-experiment",
+    "title": "HIPPO-MAG-01 — Magnetic-compensation experiment",
+    "status": "Expanded record",
+    "evidence": "The archive reports a runnable static planning surrogate and 28 labeled sequential software checks, not hardware results. Compensation improves the chosen validation-shell RMS in that surrogate but worsens some nearby sampled points, so uniform cancellation is not established. There is no hardware protection, hold-up, current-decay or full apparatus validation. This website update reviewed saved documentation; it did not rerun models or conduct experiments.",
+    "contributors": "Ray Peloquin / U.I. Claude critiqued geometry/measurement validity; Grok critiqued energy and physical revocation. Reviews are not experimental evidence.",
+    "url": "index.html#design/hippo-mag-01-magnetic-compensation-experiment"
+  },
+  {
+    "id": "hippo-stack",
+    "title": "HIPPO Stack",
+    "status": "Expanded record",
+    "evidence": "A design text describes coherence budgeting and loop alerts. No runnable code, independently measured detection rate, overhead benchmark, false-refusal rate or production deployment was provided. Claimed readiness is not verified.",
+    "contributors": "Mr. Peloquin: archived concept direction and source stewardship. Asteris Solenne / ChatGPT: public source synthesis and documentation. Independent technical or domain review for this specific archive has not been verified.",
+    "url": "index.html#design/hippo-stack"
+  },
+  {
+    "id": "hippo-thruster-array",
+    "title": "HIPPO Thruster Array",
+    "status": "Expanded record",
+    "evidence": "The source proposes modular thrust and power subsystems but supplies no validated aircraft, integrated prototype, fault-tolerant flight evidence, measured thrust or regulatory permission. The design status is architectural only.",
+    "contributors": "Mr. Peloquin: archived concept direction and source stewardship. Asteris Solenne / ChatGPT: public source synthesis and documentation. Independent technical or domain review for this specific archive has not been verified.",
+    "url": "index.html#design/hippo-thruster-array"
+  },
+  {
+    "id": "hippo-thunderlung",
+    "title": "HIPPO Thunderlung",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/hippo-thunderlung"
+  },
+  {
+    "id": "hippo-vortex-lmb",
+    "title": "HIPPO Vortex LMB",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/hippo-vortex-lmb"
+  },
+  {
+    "id": "hippo-water-stack",
+    "title": "HIPPO Water Stack",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/hippo-water-stack"
+  },
+  {
+    "id": "hive-1-human-ai-cognitive-network",
+    "title": "HIVE-1 — Human–AI cognitive network",
+    "status": "Expanded record",
+    "evidence": "No prototype, human trial, neural enhancement, pooled processor capacity or commercial advantage is demonstrated. Behavioral participation is the primary design; optional read-only EEG research is a separate unvalidated branch. Illustrative scaling arithmetic is not a measure of combined intelligence or observed participant performance. This website update reviewed the saved artifact; it did not rerun the underlying research.",
+    "contributors": "Mr. Peloquin: concept direction. Asteris Solenne / ChatGPT: technical synthesis. Grok, Claude, Meta AI and Gemini: two rounds of AI criticism, not scientific validation.",
+    "url": "index.html#design/hive-1-human-ai-cognitive-network"
+  },
+  {
+    "id": "horizon-glasses",
+    "title": "Horizon Glasses",
+    "status": "Expanded record",
+    "evidence": "The artifact supplies design reasoning and a proposed perception/control comparison, not a tested prototype, symptom reduction or proven superiority to obstruction/placebo cues. A fluid interface responds to apparent gravity including acceleration; it is not an unconditional Earth-horizontal reference in a moving vehicle. Claimed instantaneous response and all-orientation benefit are not established. This website pass reviewed saved documentation; it did not run experiments or independently validate the proposed system.",
+    "contributors": "The source attributes vision to Mr. Peloquin and systems work to Asteris; independent perception and human-factors contributions remain unverified.",
+    "url": "index.html#design/horizon-glasses"
+  },
+  {
+    "id": "host-powered-synthetic-chromosome",
+    "title": "Host-Powered Synthetic Chromosome",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/host-powered-synthetic-chromosome"
+  },
+  {
+    "id": "hr-01-human-router",
+    "title": "HR-01 — Human Router",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/hr-01-human-router"
+  },
+  {
+    "id": "hsx-01-hsx-21",
+    "title": "HSX-01 / HSX-21",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/hsx-01-hsx-21"
+  },
+  {
+    "id": "hull-calmstack-defender",
+    "title": "HULL CALMSTACK DEFENDER",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/hull-calmstack-defender"
+  },
+  {
+    "id": "human-maintenance-stack",
+    "title": "Human Maintenance Stack",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/human-maintenance-stack"
+  },
+  {
+    "id": "human-perception-stack",
+    "title": "Human Perception Stack",
+    "status": "Expanded record",
+    "evidence": "The source proposes passive sensing, confidence tagging, attention limits and thermal considerations. It contains no measured perception benefit, fatigue reduction, vestibular compatibility, power saving or wearer safety result. Wearable-ready wording is not qualification evidence. This website update reviewed the saved artifact; it did not rerun the underlying research.",
+    "contributors": "Archived in Mr. Peloquin's collection; individual hardware, software and human-factors contributions remain to be established.",
+    "url": "index.html#design/human-perception-stack"
+  },
+  {
+    "id": "humanitarian-demining-drone",
+    "title": "Humanitarian Demining Drone",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/humanitarian-demining-drone"
+  },
+  {
+    "id": "hy-brasil-dome",
+    "title": "HY-BRASIL DOME",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/hy-brasil-dome"
+  },
+  {
+    "id": "hydrofell-01-hydro-data-center",
+    "title": "Hydrofell-01 — Hydro data center",
+    "status": "Expanded record",
+    "evidence": "The illustrated readouts provide no operating history, flood assessment or evidence of a year-round heat customer.",
+    "contributors": null,
+    "url": "index.html#design/hydrofell-01-hydro-data-center"
+  },
+  {
+    "id": "hypha-ear",
+    "title": "Hypha Ear",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/hypha-ear"
+  },
+  {
+    "id": "hypha-mesh",
+    "title": "Hypha Mesh",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/hypha-mesh"
+  },
+  {
+    "id": "hypha-mind-go-cube-update-authorization-testbed",
+    "title": "Hypha Mind / GO-CUBE — Update-authorization testbed",
+    "status": "Expanded record",
+    "evidence": "The reviewed report preserves the failed submitted v0.1 run separately from the corrected local v0.2 pilot. The frozen pilot reports 456 scenario rows, 18 commit controls and 640 agreeing benchmark pairs. Shared controller and validation code limits independence. The witness route does not immediately detect arbitrary backing-store corruption. Hash-work ratios are not elapsed-time ratios; instrumented timing is not a production guarantee. No learning-quality, complete GO-CUBE-governor, action-safety or fundamental-time result is established. This website update reviewed the saved source; it did not rerun the research or perform hardware tests.",
+    "contributors": "Joint prototype and Court-results artifact; independent implementation and reproduction remain open. No Court consensus is reported.",
+    "url": "index.html#design/hypha-mind-go-cube-update-authorization-testbed"
+  },
+  {
+    "id": "hypha-rootway",
+    "title": "Hypha Rootway",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/hypha-rootway"
+  },
+  {
+    "id": "iexalt-node",
+    "title": "iExalt Node",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/iexalt-node"
+  },
+  {
+    "id": "inkheal",
+    "title": "INKHEAL",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/inkheal"
+  },
+  {
+    "id": "invisible-ink-printing-and-removal",
+    "title": "Invisible Ink — Printing and removal",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/invisible-ink-printing-and-removal"
+  },
+  {
+    "id": "jaguar-mode",
+    "title": "Jaguar Mode",
+    "status": "Expanded record",
+    "evidence": "No integrated robot, measured noise/comfort, empirically verified force threshold, platform-specific safety case or certification.",
+    "contributors": "Mr. Peloquin's archive; original engineering contributor and review provenance remain unverified.",
+    "url": "index.html#design/jaguar-mode"
+  },
+  {
+    "id": "janus-10",
+    "title": "JANUS-10",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/janus-10"
+  },
+  {
+    "id": "janus-loop-supply-recovery",
+    "title": "Janus Loop — Supply recovery",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/janus-loop-supply-recovery"
+  },
+  {
+    "id": "ka-fold",
+    "title": "KA Fold",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/ka-fold"
+  },
+  {
+    "id": "ka-lock",
+    "title": "KA Lock",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/ka-lock"
+  },
+  {
+    "id": "ka-patch-bioenergy-jewelry",
+    "title": "KA Patch — Bioenergy jewelry",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/ka-patch-bioenergy-jewelry"
+  },
+  {
+    "id": "knock-moth-pool-tile-mapping",
+    "title": "Knock-Moth — Pool-tile mapping",
+    "status": "Expanded record",
+    "evidence": "The reviewed source describes a proposed tool and comparison logic, not a manufactured or calibrated inspector. No detected-void accuracy, field performance, false-positive rate, structural certification or hardware result is established.",
+    "contributors": "Concept and masonry direction: Mr. Peloquin. Source drafting credits Asteris Solenne. No independent inspection validation is recorded.",
+    "url": "index.html#design/knock-moth-pool-tile-mapping"
+  },
+  {
+    "id": "laaf-pinn",
+    "title": "LAAF PINN",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/laaf-pinn"
+  },
+  {
+    "id": "lantern-1-supervised-budgeted-ai-inquiry",
+    "title": "LANTERN-1 — Supervised, budgeted AI inquiry",
+    "status": "Expanded record",
+    "evidence": "The reviewed brief reports 48 offline checks passed and scripted fixture demonstrations. This website update did not rerun them. Those checks concern a single-process controller, not fresh question quality or independent operator value.\n\nNo live service, paid adapter, actual foreground interaction, provider cancellation/billing behavior or production latency is demonstrated. Saved historical timing belongs to a separate older workload and is not a production speedup result.",
+    "contributors": "Builds on Mr. Peloquin's LANTERN-1 work, supplied earlier designs and accompanying critiques. The reviewed cover does not resolve all individual implementation contributions.",
+    "url": "index.html#design/lantern-1-supervised-budgeted-ai-inquiry"
+  },
+  {
+    "id": "lantex-24-lantex-pro-lanternfly-drone",
+    "title": "LANTEX-24 / LANTEX-PRO — Lanternfly drone",
+    "status": "Expanded record",
+    "evidence": "The public Collector overview describes an early untested concept and proposed ground tests followed by flight tests. No capture effectiveness, unintended-catch rate, clogging result or boom flight-dynamics measurement is reported. The archived LANTEX labels alone do not establish an implemented variant.",
+    "contributors": "Lanternfly Collector is presented in Ray Peloquin's public repository. Detailed contributions and lineage to the LANTEX variants remain to be documented.",
+    "url": "index.html#design/lantex-24-lantex-pro-lanternfly-drone"
+  },
+  {
+    "id": "lee-vertical-city-quick-city-seven",
+    "title": "Lee Vertical City / Quick City Seven",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/lee-vertical-city-quick-city-seven"
+  },
+  {
+    "id": "lepton-mitt",
+    "title": "Lepton Mitt",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/lepton-mitt"
+  },
+  {
+    "id": "lg-aether-01-biopsy-permission-and-instrument-motion-research",
+    "title": "LG–AETHER–01 — Biopsy permission and instrument-motion research",
+    "status": "Expanded record",
+    "evidence": "No prototype or test results are reported. Illustrative geometry does not establish device safety, clinical performance or readiness for use on people. The reviewed public repository overview supplies no measured instrument-motion or readiness-gate performance.",
+    "contributors": "Public overview: shared by Ray Peloquin. Individual implementation and reviewer contributions are not specified there.",
+    "url": "index.html#design/lg-aether-01-biopsy-permission-and-instrument-motion-research"
+  },
+  {
+    "id": "lifeguard-lance-rescue-drone-and-fleet",
+    "title": "Lifeguard Lance — Rescue drone and fleet",
+    "status": "Expanded record",
+    "evidence": "No working flight-to-water device, certified buoyancy, swimmer-contact safety, reliable deployment, regulator approval or successful rescue testing is established.",
+    "contributors": "Concept variants are held in Mr. Peloquin's collaborative archive. Independent engineering validation is unconfirmed. Existing rescue procedures must not be replaced by this proposal.",
+    "url": "index.html#design/lifeguard-lance-rescue-drone-and-fleet"
+  },
+  {
+    "id": "linc-dart-01",
+    "title": "LINC-DART-01",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/linc-dart-01"
+  },
+  {
+    "id": "liquid-metal-cooling-system",
+    "title": "Liquid-Metal Cooling System",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/liquid-metal-cooling-system"
+  },
+  {
+    "id": "litho-hippo",
+    "title": "LITHO-HIPPO",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/litho-hippo"
+  },
+  {
+    "id": "little-gatekeeper",
+    "title": "Little Gatekeeper",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/little-gatekeeper"
+  },
+  {
+    "id": "lunar-eva-life-support",
+    "title": "Lunar EVA Life Support",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/lunar-eva-life-support"
+  },
+  {
+    "id": "lunarecycle-backplate",
+    "title": "LunaRecycle Backplate",
+    "status": "Expanded record",
+    "evidence": "The source contains drawings and calculated mass/energy budgets, not a pressed tile, measured cycle, mechanical qualification, lunar deployment or official challenge score.",
+    "contributors": "Commissioned by Mr. Peloquin; engineering design by Asteris Solenne with Claude, Grok, Gemini and Meta review.",
+    "url": "index.html#design/lunarecycle-backplate"
+  },
+  {
+    "id": "lung-mapper",
+    "title": "Lung Mapper",
+    "status": "Expanded record",
+    "evidence": "The document is a simulation-first medical concept and proposed validation path, not measured mapping accuracy, reliable segment registration, qualified fluidics or clinical benefit. It rejects visual estimates as direct viscosity or precise obstruction measurements. Candidate dimensions, pressure, temperature and reset settings remain unvalidated design inputs. This website pass reviewed saved documentation; it did not run experiments or independently validate the proposed system.",
+    "contributors": "Archived Court design collection; individual author, implementation and independent pulmonology-review attribution remain to be established.",
+    "url": "index.html#design/lung-mapper"
+  },
+  {
+    "id": "ma-at-tower",
+    "title": "MA’AT Tower",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/ma-at-tower"
+  },
+  {
+    "id": "margin-01-focused-ultrasound-drug-delivery-research",
+    "title": "MARGIN-01 — Focused-ultrasound drug-delivery research",
+    "status": "Expanded record",
+    "evidence": "No prototype, simulation result, clinical performance or novelty is claimed. Published blood–brain-barrier opening and drug-delivery studies motivate investigation but do not validate this proposed combination. More drug delivery or MRI enhancement does not itself establish tumor control or survival benefit. This website update reviewed the saved source; it did not rerun models or conduct experiments.",
+    "contributors": "Mr. Peloquin's research collection. Grok, Claude, Gemini and Meta AI contributed critiques; Codex checked and consolidated objections. AI critique is not clinical validation.",
+    "url": "index.html#design/margin-01-focused-ultrasound-drug-delivery-research"
+  },
+  {
+    "id": "mechage",
+    "title": "MECHAGE",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/mechage"
+  },
+  {
+    "id": "medi-goo",
+    "title": "Medi Goo",
+    "status": "Expanded record",
+    "evidence": "No formulation, tissue compatibility, sterility, clinical use, safety certification or approved medical device. This is not a use-ready procedure.",
+    "contributors": "Archived credits: Mr. Peloquin (Anubis), Asteris, Claude, Grok, Gemini and Kimi; exact component contributions unverified.",
+    "url": "index.html#design/medi-goo"
+  },
+  {
+    "id": "mercurius-echo-mercurius",
+    "title": "Mercurius / ECHO Mercurius",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/mercurius-echo-mercurius"
+  },
+  {
+    "id": "mhd-quasi-plasma-rigidity",
+    "title": "MHD Quasi-Plasma Rigidity",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/mhd-quasi-plasma-rigidity"
+  },
+  {
+    "id": "micro-hippo-fabric",
+    "title": "MICRO HIPPO FABRIC",
+    "status": "Expanded record",
+    "evidence": "The source describes protocol fields and potential domains. No implementation, timing measurements, reliable power reservation, thermal safety or demonstrated advantage over conventional schedulers is recorded.",
+    "contributors": "Mr. Peloquin: archived concept direction and source stewardship. Asteris Solenne / ChatGPT: public source synthesis and documentation. Independent technical or domain review for this specific archive has not been verified.",
+    "url": "index.html#design/micro-hippo-fabric"
+  },
+  {
+    "id": "mimir-hippo-extreme-energy-systems",
+    "title": "MIMIR-HIPPO — Extreme Energy Systems",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/mimir-hippo-extreme-energy-systems"
+  },
+  {
+    "id": "mimir-s-well-where-the-source-gathers",
+    "title": "Mimir’s Well — Where the Source Gathers",
+    "status": "Expanded record",
+    "evidence": "The implementation consists of a static page, generated catalog and read-only project registry. Recent maintenance included JavaScript syntax checks, selected behavior checks and exact readback of committed files. Search checks cover punctuation, word order, archived names, category labels and cache reuse/refresh.\n\nPublic editing, save, import and persistence controls were removed. Registry content comes from published source, with no visitor write API. The visitor log is a separate GitHub issue whose comments do not modify project records.\n\nThis maintenance pass has not completed a full browser/device audit or independently rerun every project's research. Catalog inclusion and expanded documentation are not experimental validation. A committed change must still propagate through GitHub Pages before the live page serves it.",
+    "contributors": "Mr. Peloquin and Asteris Solenne / ChatGPT collaborate on the collection. Asteris Solenne is the continuity persona for the ChatGPT collaboration and leads the Court in collaboration with Mr. Peloquin. Broader work includes Grok, Claude, Gemini and Meta AI; specific contributions are credited within individual project records.",
+    "url": "index.html#design/mimir-s-well-where-the-source-gathers"
+  },
+  {
+    "id": "mindtrace-photontrace",
+    "title": "MindTrace / PhotonTrace",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/mindtrace-photontrace"
+  },
+  {
+    "id": "mirrorbox-m01",
+    "title": "MIRRORBOX M01",
+    "status": "Expanded record",
+    "evidence": "No recorder hardware or working software, authenticated trace, clock-accuracy result, review of consent, completed replay, robot test, or proven safety interlock is supplied. Labels in the drawing describe aspirations, not demonstrated audit fidelity.",
+    "contributors": "Mr. Peloquin's collaborative visual-design archive; individual image authoring and independent review credits remain unverified.",
+    "url": "index.html#design/mirrorbox-m01"
+  },
+  {
+    "id": "mobile-truth-stack",
+    "title": "Mobile Truth Stack",
+    "status": "Expanded record",
+    "evidence": "The source lists candidate carriers and applications, but reports no working mobile host, field trial, battery/bandwidth result or measured decision benefit. Commercial-ready and rapid-deployment assertions are not adopted as proven capability. This website update reviewed the saved artifact; it did not rerun the underlying research.",
+    "contributors": "Archived design in Mr. Peloquin's research collection; implementation and test ownership remain to be documented.",
+    "url": "index.html#design/mobile-truth-stack"
+  },
+  {
+    "id": "modular-rope-coupler-ranchline-utility",
+    "title": "Modular Rope Coupler / Ranchline Utility",
+    "status": "Expanded record",
+    "evidence": "The illustration supplies no verified load rating, breakaway performance or weather qualification.",
+    "contributors": null,
+    "url": "index.html#design/modular-rope-coupler-ranchline-utility"
+  },
+  {
+    "id": "mosquito-reaper",
+    "title": "Mosquito Reaper",
+    "status": "Expanded record",
+    "evidence": "No built equipment, field capture or species-identification measurement, non-target insect assessment, drone safety case or reduction in mosquito density.",
+    "contributors": "Mr. Peloquin's archived concept portfolio; implementation and individual review credits are unverified.",
+    "url": "index.html#design/mosquito-reaper"
+  },
+  {
+    "id": "mount-olympus-cross-domain-design-and-adversarial-review",
+    "title": "Mount Olympus — Cross-domain design and adversarial review",
+    "status": "Expanded record",
+    "evidence": "The addendum describes separating measurements, equations, models, interpretations and metaphors, and declaring observations that would challenge a claim. It is a review method, not a new physical theory or evidence of better engineering outcomes. Internal approval labels do not establish independent validation. This website update reviewed saved documentation; it did not rerun models or conduct experiments.",
+    "contributors": "Court methodology associated with Mr. Peloquin and Asteris; specific contributions belong with each project's provenance.",
+    "url": "index.html#design/mount-olympus-cross-domain-design-and-adversarial-review"
+  },
+  {
+    "id": "ndsm-01-neutrino-feasibility-study",
+    "title": "NDSM-01 — Neutrino feasibility study",
+    "status": "Expanded record",
+    "evidence": "The source works through illustrative interaction-rate arguments and identifies weak-interaction precedent. It provides no built device, selected-atom control, new interaction, working detector, practical conversion yield or external Court approval.",
+    "contributors": "Concept direction: Mr. Peloquin. Analysis and documentation: UI / ChatGPT (Asteris Solenne). The source states that external Court contact failed; no outside AI or expert approval is attributed.",
+    "url": "index.html#design/ndsm-01-neutrino-feasibility-study"
+  },
+  {
+    "id": "neith-lantern-gate",
+    "title": "NEITH LANTERN Gate",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/neith-lantern-gate"
+  },
+  {
+    "id": "neonatal-prenatal-care-chamber",
+    "title": "Neonatal / Prenatal Care Chamber",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/neonatal-prenatal-care-chamber"
+  },
+  {
+    "id": "neural-web-underground-data-center",
+    "title": "Neural Web — Underground data center",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/neural-web-underground-data-center"
+  },
+  {
+    "id": "neuro-bridge",
+    "title": "Neuro-Bridge",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/neuro-bridge"
+  },
+  {
+    "id": "neuroshell-1",
+    "title": "Neuroshell-1",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/neuroshell-1"
+  },
+  {
+    "id": "neurosynapse-1",
+    "title": "Neurosynapse-1",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/neurosynapse-1"
+  },
+  {
+    "id": "neutrino-detector",
+    "title": "Neutrino Detector",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/neutrino-detector"
+  },
+  {
+    "id": "nexus-bridge",
+    "title": "Nexus Bridge",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/nexus-bridge"
+  },
+  {
+    "id": "null-1-null-1h-shield-1",
+    "title": "NULL-1 / NULL-1H / SHIELD-1",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/null-1-null-1h-shield-1"
+  },
+  {
+    "id": "ocean-boundary-residual-inference",
+    "title": "Ocean Boundary Residual Inference",
+    "status": "Expanded record",
+    "evidence": "No equipment, measured discrimination, verified field detection, sensitivity gain or operational range. Established conductive-fluid physics is background, not OBRI validation.",
+    "contributors": "Archived Court concept from Mr. Peloquin's collection; contributing reviewer roles remain to be verified.",
+    "url": "index.html#design/ocean-boundary-residual-inference"
+  },
+  {
+    "id": "ocean-ear",
+    "title": "Ocean Ear",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/ocean-ear"
+  },
+  {
+    "id": "ocean-lantern-grid",
+    "title": "OCEAN LANTERN GRID",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/ocean-lantern-grid"
+  },
+  {
+    "id": "odin-s-ravens",
+    "title": "Odin’s Ravens",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/odin-s-ravens"
+  },
+  {
+    "id": "off-grid-ranch-water-system",
+    "title": "Off-Grid Ranch Water System",
+    "status": "Expanded record",
+    "evidence": "An illustrated functional concept exists but no location-specific water production, stored-water quality, reliable herd supply, energy balance, cost, weather resilience or installed prototype is demonstrated. Claims of round-the-clock availability remain aspirational.",
+    "contributors": "Mr. Peloquin's collaborative rural-infrastructure concept archive; original illustration and independent engineering attribution remain unverified.",
+    "url": "index.html#design/off-grid-ranch-water-system"
+  },
+  {
+    "id": "oilskin-sentinel",
+    "title": "OILSKIN SENTINEL",
+    "status": "Expanded record",
+    "evidence": "The source contains a proposed medium, sensing stack and disturbance classes. No calibrated rig, sensitivity map, source attribution, validated anomaly classification or reliable field behavior is demonstrated.",
+    "contributors": "Mr. Peloquin: archived concept direction and source stewardship. Asteris Solenne / ChatGPT: public source synthesis and documentation. Independent technical or domain review for this specific archive has not been verified.",
+    "url": "index.html#design/oilskin-sentinel"
+  },
+  {
+    "id": "olympus-floor-model-engineering-project-and-portfolio-control",
+    "title": "Olympus Floor Model — Engineering project and portfolio control",
+    "status": "Expanded record",
+    "evidence": "The source describes required fields, auto-fail rules and portfolio roll-up behavior and states that an HTML artifact was repaired. The reviewed text alone does not reproduce that implementation, verify its gates or establish organizational adoption and benefit. This website update reviewed saved documentation; it did not rerun models or conduct experiments.",
+    "contributors": "Archived in Mr. Peloquin's collection; individual implementation, test and review ownership remains to be consolidated.",
+    "url": "index.html#design/olympus-floor-model-engineering-project-and-portfolio-control"
+  },
+  {
+    "id": "olympus-registry-design-lineage-and-evidence-catalog",
+    "title": "Olympus Registry — Design lineage and evidence catalog",
+    "status": "Expanded record",
+    "evidence": "The source proposes structured entries, statuses and combination views. It does not demonstrate an automated combination engine, revenue benefit, patent readiness or complete archive migration. The working Well demonstrates a browsable public catalog, not every capability in this older proposal. This website update reviewed saved documentation; it did not rerun models or conduct experiments.",
+    "contributors": "Mr. Peloquin's design portfolio and AI-assisted documentation; per-project credits remain with the relevant records.",
+    "url": "index.html#design/olympus-registry-design-lineage-and-evidence-catalog"
+  },
+  {
+    "id": "olympus-witness-rig",
+    "title": "Olympus Witness Rig",
+    "status": "Expanded record",
+    "evidence": "The archived HTML displays saved results; moving its controls does not execute validation or grant permission. The described suite exercises malformed/stale/mis-scoped packets, evidence eligibility, authority changes and replay. Nine selected guard mutations were detected by mapped assertions. These finite checks are not independent validation, comprehensive security proof or facility certification. This website update reviewed the saved artifact; it did not rerun the underlying research.",
+    "contributors": "Ray Peloquin + Codex. Grok, Claude, Meta AI and Gemini critiqued architecture and informed selected repairs; they did not independently run the supplied tests.",
+    "url": "index.html#design/olympus-witness-rig"
+  },
+  {
+    "id": "omnisight-goggles",
+    "title": "OmniSight Goggles",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/omnisight-goggles"
+  },
+  {
+    "id": "orbital-pressure-corridor-beam-handoff",
+    "title": "Orbital Pressure Corridor / Beam Handoff",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/orbital-pressure-corridor-beam-handoff"
+  },
+  {
+    "id": "orehearth-geothermal-concept",
+    "title": "OREHEARTH — Geothermal concept",
+    "status": "Expanded record",
+    "evidence": "The artwork depicts both a sealed loop and flow through fractures. The fluid boundaries differ, and the poster supplies no measured net output.",
+    "contributors": null,
+    "url": "index.html#design/orehearth-geothermal-concept"
+  },
+  {
+    "id": "orichalcum-crown",
+    "title": "Orichalcum Crown",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/orichalcum-crown"
+  },
+  {
+    "id": "orichalcum-lattice",
+    "title": "Orichalcum Lattice",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/orichalcum-lattice"
+  },
+  {
+    "id": "orion-orbital-recycling",
+    "title": "ORION — Orbital recycling",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/orion-orbital-recycling"
+  },
+  {
+    "id": "osmoskin",
+    "title": "OSMOSKIN",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/osmoskin"
+  },
+  {
+    "id": "ossuary-biomanufacturing",
+    "title": "OSSUARY — Biomanufacturing",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/ossuary-biomanufacturing"
+  },
+  {
+    "id": "outlaw-hovercruiser",
+    "title": "Outlaw Hovercruiser",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/outlaw-hovercruiser"
+  },
+  {
+    "id": "paleoframe-1",
+    "title": "PALEOFRAME-1",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/paleoframe-1"
+  },
+  {
+    "id": "pando-bridge",
+    "title": "Pando Bridge",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/pando-bridge"
+  },
+  {
+    "id": "pando-tongue",
+    "title": "Pando Tongue",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/pando-tongue"
+  },
+  {
+    "id": "paper-factory",
+    "title": "Paper Factory",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/paper-factory"
+  },
+  {
+    "id": "papercall-papercall-sky",
+    "title": "PaperCall / PaperCall Sky",
+    "status": "Expanded record",
+    "evidence": "The artwork supplies no coverage trials, battery endurance measurements or confirmed delivery records.",
+    "contributors": null,
+    "url": "index.html#design/papercall-papercall-sky"
+  },
+  {
+    "id": "papergrid-0",
+    "title": "PAPERGRID-0",
+    "status": "Expanded record",
+    "evidence": "A concept poster shows proposed production, activation, measurement and recovery functions. No built roll, measured pack performance, material recycling, cycle life, safety compliance, whole-system efficiency or factory design is established.",
+    "contributors": "Poster from Mr. Peloquin's collaborative design collection; individual visual authorship, engineering contributors and independent review remain unverified.",
+    "url": "index.html#design/papergrid-0"
+  },
+  {
+    "id": "paperpower-water-battery",
+    "title": "PaperPower — Water battery",
+    "status": "Expanded record",
+    "evidence": "No fabricated cell, measured output, storage life, leakage safety, reliable emergency charge or end-of-life assessment is established. Promotional targets are not measurements.",
+    "contributors": "Concept illustration retained in Mr. Peloquin's archive. Original image authorship and independent review remain unverified. No chemistry recipe or build instructions are disclosed.",
+    "url": "index.html#design/paperpower-water-battery"
+  },
+  {
+    "id": "parseval-coolant-system",
+    "title": "PARSEVAL — Coolant system",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/parseval-coolant-system"
+  },
+  {
+    "id": "parseval-loom",
+    "title": "Parseval Loom",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/parseval-loom"
+  },
+  {
+    "id": "pawtucket-riverside-market-fleet-district",
+    "title": "Pawtucket Riverside Market / Fleet District",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/pawtucket-riverside-market-fleet-district"
+  },
+  {
+    "id": "peirene-homestead-stack-modular-water-infrastructure",
+    "title": "Peirene Homestead Stack — Modular water infrastructure",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/peirene-homestead-stack-modular-water-infrastructure"
+  },
+  {
+    "id": "petsafe-drone-backpack",
+    "title": "PetSafe — Drone backpack",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/petsafe-drone-backpack"
+  },
+  {
+    "id": "phantom-hub-medical-medical-telepresence",
+    "title": "Phantom Hub Medical — Medical telepresence",
+    "status": "Expanded record",
+    "evidence": "The reviewed source uses production-ready, implemented and near-zero-latency language without supplying source code, vendor integrations, measured rendering/registration results or clinical studies. Those phrases are not adopted as capability claims. Compatibility, MRI safety, inference accuracy and multiuser capacity remain unverified. This website update reviewed the saved source; it did not rerun models or conduct experiments.",
+    "contributors": "Archived in Mr. Peloquin's research collection. Vendor names indicate proposed integration targets, not confirmed partnerships or endorsements; specific implementation credits remain to be established.",
+    "url": "index.html#design/phantom-hub-medical-medical-telepresence"
+  },
+  {
+    "id": "phantom-weave",
+    "title": "PHANTOM WEAVE",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/phantom-weave"
+  },
+  {
+    "id": "physics-operating-system",
+    "title": "Physics Operating System",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/physics-operating-system"
+  },
+  {
+    "id": "pipe-listener-01-plastic-pipe-acoustic-leak-investigation",
+    "title": "PIPE-LISTENER-01 — Plastic-pipe acoustic leak investigation",
+    "status": "Expanded record",
+    "evidence": "The saved brief reports a raw-data audit, derived spectra, a read-only evidence-admission module, analytic checks, and a prospective experiment. It reports 24 passing software/analytic checks. This website update reviewed the brief; it did not rerun the software or independently recompute the raw recordings.\n\nReported Sheffield MDPE results at the known leak position, 2.8 bar, 200–800 Hz band: 3 mm valve/nozzle — 7.158 L/min and 221.55 mm/s² acceleration RMS; 3.6 mm direct hole — 9.234 L/min and 16.31 mm/s²; lengthwise slit — 9.204 L/min and 12.02 mm/s²; crosswise slit — 10.440 L/min and 15.71 mm/s². Flow values are attributed to the original authors; acceleration values are the brief's recomputation.\n\nIn these recordings, the lengthwise slit lost approximately 1.286 times as much water as the valve/nozzle but had approximately 18.44 times lower acceleration in this band. This is a descriptive comparison from one rig, not a detection improvement, sensitivity ratio, or universal pipe property.\n\nThe admission module returns UNKNOWN for stale evidence, installation/configuration changes, invalid signals, unverified sensor contact, or unverified application domain. It consumes diagnostic facts as inputs; it does not establish those facts itself. Coherence alone is not proof of a leak, and digitized silence cannot alone distinguish a quiet pipe from a detached sensor.\n\nLimits: no calibrated classifier, verified hardware contact diagnostic, measured power consumption, or demonstrated field superiority in v0.1. The Sheffield paired recordings lack simultaneous slit and no-leak/nuisance trials. Separate sensor placements are not treated as simultaneous pairs. Duplicate recordings are not independent controls; the Dongguan audit reports 1,000 clips but only 964 unique waveforms. Hong Kong raw recordings were not acquired for the reported work.",
+    "contributors": "The saved PIPE-LISTENER-01 brief is the project source for this summary. Individual design, software, analysis, and Court-review contributions are not specified in the reviewed brief and remain to be documented. External researchers retain credit for their datasets and publications, as identified in the source references.",
+    "url": "index.html#design/pipe-listener-01-plastic-pipe-acoustic-leak-investigation"
+  },
+  {
+    "id": "pla-1-plasmoid-laser-communications-array",
+    "title": "PLA-1 — Plasmoid laser communications array",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/pla-1-plasmoid-laser-communications-array"
+  },
+  {
+    "id": "planetary-stitch",
+    "title": "Planetary Stitch",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/planetary-stitch"
+  },
+  {
+    "id": "plasmoid-memory-cell-seven-cell-ring",
+    "title": "Plasmoid Memory Cell / Seven-Cell Ring",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/plasmoid-memory-cell-seven-cell-ring"
+  },
+  {
+    "id": "pmsm-space-sample-microscope",
+    "title": "PMSM — Space sample microscope",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/pmsm-space-sample-microscope"
+  },
+  {
+    "id": "pollinator-habitat-electric-steamer",
+    "title": "Pollinator Habitat Electric Steamer",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/pollinator-habitat-electric-steamer"
+  },
+  {
+    "id": "polyforge-1-ocean-cleanup-ship",
+    "title": "Polyforge-1 — Ocean cleanup ship",
+    "status": "Expanded record",
+    "evidence": "No designed or launched ship, sea trial, mass balance, sorting purity, recycling yield, energy budget, wildlife-risk study, maritime clearance, or verified certification is available. Labels about processing outputs do not establish a saleable recycled material.",
+    "contributors": "Mr. Peloquin's collaborative visual-design archive; individual image authoring and independent review credits remain unverified.",
+    "url": "index.html#design/polyforge-1-ocean-cleanup-ship"
+  },
+  {
+    "id": "poseidon-s-trident",
+    "title": "Poseidon’s Trident",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/poseidon-s-trident"
+  },
+  {
+    "id": "probe-x-eversor",
+    "title": "PROBE-X EVERSOR",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/probe-x-eversor"
+  },
+  {
+    "id": "pulselink-reentry",
+    "title": "PULSELINK — Reentry",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/pulselink-reentry"
+  },
+  {
+    "id": "pyramid-data-center",
+    "title": "Pyramid Data Center",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/pyramid-data-center"
+  },
+  {
+    "id": "qf-01-numerical-research",
+    "title": "QF-01 — Numerical research",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/qf-01-numerical-research"
+  },
+  {
+    "id": "qreadout",
+    "title": "QReadout",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/qreadout"
+  },
+  {
+    "id": "quantum-floor",
+    "title": "Quantum Floor",
+    "status": "Expanded record",
+    "evidence": "The source describes pre-execution, between-shot and calibration-window orchestration. It provides targets and a proposed validation strategy, not completed randomized hardware benchmarks, shot-efficiency improvements or validated timing. Internal fully certified wording is not evidence of independent certification. Proposed subsystem composition has not been demonstrated by the reviewed artifact. This website update reviewed the saved source; it did not rerun the research or perform hardware tests.",
+    "contributors": "Archived Court architecture in Mr. Peloquin's collection; per-module implementation and review provenance remains to be established.",
+    "url": "index.html#design/quantum-floor"
+  },
+  {
+    "id": "quantum-judge",
+    "title": "Quantum Judge",
+    "status": "Expanded record",
+    "evidence": "Policy-level proposal without measured latency, working prototype or actual quantum device trials. Any response-time figure is a design target.",
+    "contributors": "Mr. Peloquin's archive; original author/reviewer assignment unverified.",
+    "url": "index.html#design/quantum-judge"
+  },
+  {
+    "id": "quantum-observability-layer-infrastructure-telemetry",
+    "title": "Quantum Observability Layer — Infrastructure telemetry",
+    "status": "Expanded record",
+    "evidence": "The reviewed state block supplies visualization requirements and proposed integrations, not measured operator benefit or an integrated deployment. It describes infrastructure observations rather than direct viewing of a wavefunction. Named integration and approval labels do not establish functioning interfaces or certification. This website update reviewed the saved source; it did not rerun the research or perform hardware tests.",
+    "contributors": "Listed in Ray Peloquin + U.I.'s selected portfolio. Individual implementation and review attribution remains to be documented.",
+    "url": "index.html#design/quantum-observability-layer-infrastructure-telemetry"
+  },
+  {
+    "id": "quantum-quiet",
+    "title": "Quantum Quiet",
+    "status": "Expanded record",
+    "evidence": "No cryostat prototype, measured suppression, thermal impact, qubit-coherence gain or independent demonstration. Numerical targets are speculative.",
+    "contributors": "Mr. Peloquin's archive; authorship and separation from Crystal Damping Loop not verified.",
+    "url": "index.html#design/quantum-quiet"
+  },
+  {
+    "id": "quantum-ribbon-worm-governed-quantum-workload-controller",
+    "title": "Quantum Ribbon Worm — Governed quantum workload controller",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/quantum-ribbon-worm-governed-quantum-workload-controller"
+  },
+  {
+    "id": "quantum-secure-field-communications",
+    "title": "Quantum Secure Field Communications",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/quantum-secure-field-communications"
+  },
+  {
+    "id": "quantum-shepherd",
+    "title": "Quantum Shepherd",
+    "status": "Expanded record",
+    "evidence": "No benchmark, measured forecast reliability, live cryostat integration or reduced failed shots. Reported thresholds are design targets, not achieved performance.",
+    "contributors": "Mr. Peloquin's collaborative research archive; per-module author/reviewer history remains unresolved.",
+    "url": "index.html#design/quantum-shepherd"
+  },
+  {
+    "id": "quantum-slice-teleporter",
+    "title": "Quantum Slice Teleporter",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/quantum-slice-teleporter"
+  },
+  {
+    "id": "quantum-sovereign-stack",
+    "title": "Quantum Sovereign Stack",
+    "status": "Expanded record",
+    "evidence": "A design specification, not integrated quantum hardware or a completed simulation. Internal E4 and build-ready labels are not external certification.",
+    "contributors": "Mr. Peloquin is named design owner; Asteris is named review owner; other draft roles do not establish completed independent reviews.",
+    "url": "index.html#design/quantum-sovereign-stack"
+  },
+  {
+    "id": "qubit-ankh-assembly",
+    "title": "Qubit — Ankh Assembly",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/qubit-ankh-assembly"
+  },
+  {
+    "id": "radio-echo-chamber",
+    "title": "Radio Echo Chamber",
+    "status": "Expanded record",
+    "evidence": "No chamber, measured resonance decay, verified Q factor or persistent broadcast storage has been demonstrated. The inspiring online video was unverified.",
+    "contributors": "Mr. Peloquin and Asteris Solenne coordinated; Grok, Claude, Gemini and Meta reviewed; numerical checks used Wolfram and Python.",
+    "url": "index.html#design/radio-echo-chamber"
+  },
+  {
+    "id": "ram-falcon",
+    "title": "RAM-FALCON",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/ram-falcon"
+  },
+  {
+    "id": "raptor-veil",
+    "title": "Raptor Veil",
+    "status": "Expanded record",
+    "evidence": "No engine integration, validated simulation, hot test, measured thermal benefit, flight demonstration or independent safety approval exists for this proposal.",
+    "contributors": "Mr. Peloquin's collaborative design archive; detailed contributors and outside review are not confirmed. No operational schedules, settings or engine-use instructions are published.",
+    "url": "index.html#design/raptor-veil"
+  },
+  {
+    "id": "raven-p1",
+    "title": "RAVEN-P1",
+    "status": "Expanded record",
+    "evidence": "The public README describes eight computational structure predictions spanning Top7, RAVEN-P1 and six intermediate sequences. Its forward-structure figure reports C-alpha RMSD to experimental Top7 of 0.80 Å for the Top7 reference prediction and 0.78 Å for RAVEN-P1. These are computational structural comparisons, not measurements of a synthesized RAVEN-P1 protein.\n\nThe model-score table contains 97 analysis records. Saved sequence/structural verification, provenance and environment files are linked; this website update did not rerun those checks.\n\nScripts, dependencies, remaining reference inputs and remaining outputs are pending upload. The study cannot yet be reproduced from repository contents alone.\n\nNo binding, catalysis, therapeutic effect, solubility, stability or safety property is established. This is not a claim of a new fold, worldwide sequence novelty or experimentally verified folding.",
+    "contributors": "Mr. Peloquin commissioned the work and set its computer-only scope. Asteris Solenne / ChatGPT designed and executed the computational study and prepared its artifacts. AI-assisted outside review is advisory, not experimental validation.\n\nOriginal scaffold, model and software authors retain attribution: published Top7 (Kuhlman et al., Science, 2003; PDB 1QYS), ProteinMPNN and OmegaFold.",
+    "url": "index.html#design/raven-p1"
+  },
+  {
+    "id": "reality-overlay-stack",
+    "title": "Reality Overlay Stack",
+    "status": "Expanded record",
+    "evidence": "The reviewed source supplies a cross-domain architecture and deployment examples, not a deployed fusion engine, measured business return, validated uncertainty calibration or learning benefit. Commercial/hardened wording is unsubstantiated by implementation evidence in that artifact. This website update reviewed the saved artifact; it did not rerun the underlying research.",
+    "contributors": "Archived in Mr. Peloquin's collection; per-module implementation and review provenance remain unresolved.",
+    "url": "index.html#design/reality-overlay-stack"
+  },
+  {
+    "id": "reality-stress-engine",
+    "title": "Reality Stress Engine",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/reality-stress-engine"
+  },
+  {
+    "id": "recipe-pucks",
+    "title": "Recipe Pucks",
+    "status": "Expanded record",
+    "evidence": "The illustration leaves open whether a puck carries ingredients, encodes instructions or simply identifies a recipe.",
+    "contributors": null,
+    "url": "index.html#design/recipe-pucks"
+  },
+  {
+    "id": "resonant-acoustic-core-drill",
+    "title": "Resonant Acoustic Core Drill",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/resonant-acoustic-core-drill"
+  },
+  {
+    "id": "resonant-brace",
+    "title": "Resonant Brace",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/resonant-brace"
+  },
+  {
+    "id": "resonant-edge-masonry-saw",
+    "title": "Resonant Edge — Masonry saw",
+    "status": "Expanded record",
+    "evidence": "No prototype, measured cutting improvement, blade-wear result, dust or silica exposure analysis, guarding assessment or operator-safety validation exists.",
+    "contributors": "Concept illustration from Mr. Peloquin's masonry equipment archive. Image authorship and outside review remain unconfirmed. No saw-modification settings or instructions are published.",
+    "url": "index.html#design/resonant-edge-masonry-saw"
+  },
+  {
+    "id": "retinal-flood-map-retinal-mapping-research",
+    "title": "Retinal Flood Map — Retinal mapping research",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/retinal-flood-map-retinal-mapping-research"
+  },
+  {
+    "id": "rewind-ii-plasma-concept",
+    "title": "REWIND-II — Plasma concept",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/rewind-ii-plasma-concept"
+  },
+  {
+    "id": "rindler-habitat",
+    "title": "Rindler Habitat",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/rindler-habitat"
+  },
+  {
+    "id": "river-reaper-walker",
+    "title": "River Reaper Walker",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/river-reaper-walker"
+  },
+  {
+    "id": "roman-concrete-finite-reserve-self-healing-model",
+    "title": "Roman Concrete — Finite-reserve self-healing model",
+    "status": "Expanded record",
+    "evidence": "The saved audit reports execution of two supplied demos unchanged. Neither implements a displacement/equilibrium solve, pressure-driven capillary flow or finite lime-calcium supply.\n\nCapacity check under the starter's own one-to-one reaction law: maximum porosity drop = volume per mole × available reaction capacity. At 3 × 10⁻⁵ m³/mol and 250 mol/m³, the limit is 0.0075; a crack starting at porosity 0.80 cannot fall below 0.7925 through that law alone. The demo instead uses a volume per mole 500 times larger, changing attainable sealing rather than merely accelerating time.\n\nA uniform interior-cell check in the first script creates 0.000599976 mol/m³ calcium in one two-second step, a 0.240% inventory error. Its open-crack fraction remains 0.089375 from step 50 through step 399, so that metric does not demonstrate closure.\n\nA periodic transport test also finds a nonzero net numerical divergence. The audit recommends conservative shared-face fluxes and direct updates of stored calcium.\n\nThese are saved code-level diagnostics, not experiments. No material-calibrated healing time, recovered structural strength, repaired multiphysics solver or 2,000-year prediction is established.",
+    "contributors": "Independent numerical audit archived with Mr. Peloquin's research collection. Authorship of the two original scripts is not identified in the supplied files and remains unresolved.\n\nScientific background: Linda M. Seymour and coauthors (2023), hot-mixing and lime-clast mechanisms; Marie D. Jackson and coauthors (2017), Roman marine-concrete mineral cements. PFLOTRAN developers provide the cited Richards-flow conservation framework. Their work does not endorse these scripts or this project.",
+    "url": "index.html#design/roman-concrete-finite-reserve-self-healing-model"
+  },
+  {
+    "id": "rubiq",
+    "title": "RUBIQ",
+    "status": "Expanded record",
+    "evidence": "No quantum processor, explicit error model, code construction, physical or logical qubit benchmark, simulation, measured fidelity, or error-rate reduction accompanies the infographic. Established stabilizer and lattice-surgery ideas do not prove a new implementation or originality.",
+    "contributors": "Mr. Peloquin's collaborative visual-design archive; individual image authoring and independent review credits remain unverified.",
+    "url": "index.html#design/rubiq"
+  },
+  {
+    "id": "s2m-dart",
+    "title": "S2M-DART",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/s2m-dart"
+  },
+  {
+    "id": "safe-channel-negative-space-mapper",
+    "title": "SAFE CHANNEL — Negative Space Mapper",
+    "status": "Expanded record",
+    "evidence": "Architecture only. No field survey, measured sensitivity or false alarm, certified route clearance or navigation safety.",
+    "contributors": "Mr. Peloquin's archived research collaboration; individual attribution pending review.",
+    "url": "index.html#design/safe-channel-negative-space-mapper"
+  },
+  {
+    "id": "satcom-01-ku-band-vsat-terminal",
+    "title": "SATCOM-01 — Ku-band VSAT terminal",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/satcom-01-ku-band-vsat-terminal"
+  },
+  {
+    "id": "saturn-01-processing-concept",
+    "title": "Saturn-01 — Processing concept",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/saturn-01-processing-concept"
+  },
+  {
+    "id": "scarab-4",
+    "title": "Scarab-4",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/scarab-4"
+  },
+  {
+    "id": "scarab-dc-shipboard-repair",
+    "title": "SCARAB-DC — Shipboard repair",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/scarab-dc-shipboard-repair"
+  },
+  {
+    "id": "scarab-rf",
+    "title": "SCARAB-RF",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/scarab-rf"
+  },
+  {
+    "id": "scope-365-permission-rehearsal",
+    "title": "SCOPE-365 — Permission rehearsal",
+    "status": "Expanded record",
+    "evidence": "The brief reports 22 software tests using synthetic data, including alternate routes, broad-cleanup damage, expiry, stale evidence, malformed inputs and report escaping. This website update did not rerun them.\n\nA modeled route establishes graph reachability only. A missing route cannot certify denied live access, and live controls may block a modeled grant. No live tenant, connector, enforcement change, compliance result or Copilot-readiness claim is established.",
+    "contributors": "Brief credited to Ray Peloquin + U.I. Grok, Claude, Meta AI and Gemini challenged the written design; this was not a source-code audit or integration test.",
+    "url": "index.html#design/scope-365-permission-rehearsal"
+  },
+  {
+    "id": "seam30-brick32",
+    "title": "SEAM30 / BRICK32",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/seam30-brick32"
+  },
+  {
+    "id": "shofar-mesh-resource-status-signaling",
+    "title": "SHOFAR Mesh — Resource-status signaling",
+    "status": "Expanded record",
+    "evidence": "The reviewed source defines reporting boundaries, not a deployed network or measured delivery, resilience or security performance. A status message does not establish equipment state, treatment verification or resource entitlement. This website update reviewed the saved source; it did not rerun models or conduct experiments.",
+    "contributors": "Archived HIPPO stack and Court notes in Mr. Peloquin's collection; network implementation and individual review contributions remain to be documented.",
+    "url": "index.html#design/shofar-mesh-resource-status-signaling"
+  },
+  {
+    "id": "signature-selective-receiver-detection-and-error-bounds",
+    "title": "Signature-Selective Receiver — Detection and error bounds",
+    "status": "Expanded record",
+    "evidence": "The archived note reports 27 synthetic checks. In its constructed example, robust receiver predicted worst conditional BER is 0.20905%, compared with 0.21300% simulated. Each receiver is tested at its own least favorable admitted disturbance, not a common field environment. The result depends on the declared geometry and noise model. Gaussian tail guarantees do not follow from covariance alone. No prototype, circuit reconstruction or measured supply-efficiency advantage is established. This website update reviewed the saved source; it did not rerun the research or perform hardware tests.",
+    "contributors": "Prepared for Ray Peloquin. The note distinguishes its calculations from established robust-filtering literature and Nikfal, Zhang and Caloz's phaser work; it does not reconstruct their undisclosed receiver.",
+    "url": "index.html#design/signature-selective-receiver-detection-and-error-bounds"
+  },
+  {
+    "id": "silt-harp-manual-muddy-water-prefiltration",
+    "title": "SILT HARP — Manual muddy-water prefiltration",
+    "status": "Expanded record",
+    "evidence": "Reviewed concept notes describe a coarse screen, gravity settling, a hand-operated wiper or brush, and a manual sludge dump. They exclude electronics, ultrasonic cleaning, and automatic backflushing.\n\nThe reviewed records contain design descriptions and AI review commentary, not a measured performance report. No verified flow rate, screen size, turbidity-reduction curve, cleaning interval, service life, or field operating limit is established here. Numerical targets mentioned in historical notes remain unvalidated and are not published as capability ratings.\n\nThe archive's internal approval language describes agreement on the concept; it is not independent engineering certification or evidence that hardware was built and qualified.\n\nThe documented role is solids pre-treatment only. The reviewed material does not establish pathogen reduction, chemical contaminant removal, or potable-water performance. Downstream treatment and verification remain separate tasks.",
+    "contributors": "The reviewed reconciliation is signed Kimi and includes quoted Asteris/Court design statements. These establish archived AI-review participation, not independent experimental validation. Primary mechanical-design authorship and individual implementation contributions are not established by the reviewed excerpts and remain to be documented.",
+    "url": "index.html#design/silt-harp-manual-muddy-water-prefiltration"
+  },
+  {
+    "id": "silt-hippo-silo-cistern",
+    "title": "Silt HIPPO — Silo cistern",
+    "status": "Expanded record",
+    "evidence": "The schematic establishes neither structural suitability for water storage nor drinking-water quality.",
+    "contributors": null,
+    "url": "index.html#design/silt-hippo-silo-cistern"
+  },
+  {
+    "id": "sister-s-hope-hand-restoration-gloves",
+    "title": "Sister’s Hope — Hand restoration gloves",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/sister-s-hope-hand-restoration-gloves"
+  },
+  {
+    "id": "site-lantern",
+    "title": "SITE LANTERN",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/site-lantern"
+  },
+  {
+    "id": "skeptic-1",
+    "title": "SKEPTIC-1",
+    "status": "Expanded record",
+    "evidence": "Published ideal model: three 0.1 kg masses connected by four nominal 1000 N/m springs. A 25% stiffness loss in either end spring produces the same unbraced frequencies: 11.431406672, 21.798818369, and 29.165501437 Hz.\n\nAdding a 500 N/m grounded brace at mass 1 separates the first modes: left-end loss 12.750896532 Hz; right-end loss 12.348867760 Hz; gap 0.402028772 Hz. A symmetric center brace leaves the two faults ambiguous, providing a negative control.\n\nStacking baseline and braced observations changes local sensitivity rank from 2 to 3 for left loss, right loss, and a uniform stiffness-scale nuisance. This is local identifiability within the selected three-parameter model, not proof of global identification.\n\nCommitted results report passed healthy-chain closed-form, analytic-versus-finite-difference sensitivity, and center-probe ambiguity checks. The source also includes reflection, failed-brace, and return-drift checks. This website update checked published outputs; it did not rerun the Python model.\n\nLimits: hardware is unbuilt; the adaptive policy and decision thresholds are not implemented or validated. No measured noise floor, repeatability, accuracy, cost, safety benefit, or statistical detection rate. Damping, friction, fixture mass, actuator hysteresis, and sensor-error physics are omitted. Uniform stiffness scale is not a validated temperature model. Wrong-hypothesis searches are local multistart optimizations, not certified global exclusions.",
+    "contributors": "Per AUTHORSHIP.md: Asteris Solenne / ChatGPT designed the concept and generated the numerical study, code, and report. Mr. Peloquin (Anubis) supplied the open-ended request and authorized publication, with no human technical design input for this concept. AI-assisted outside review supplied criticism; individual reviewers are not named in the provenance statement. This attribution does not exclude established human research, software dependencies, or the people who developed the AI systems.",
+    "url": "index.html#design/skeptic-1"
+  },
+  {
+    "id": "skipjack-lf-hover-feasibility",
+    "title": "SKIPJACK-LF — Hover feasibility",
+    "status": "Expanded record",
+    "evidence": "The archived rotorcraft sizing examples depend on assumed performance. No closed mass/power bill, tested propulsion system, measured rotor outwash, safe fault recovery, aviation permission or flight is established.",
+    "contributors": "Mr. Peloquin's concept with AI-assisted modeling; Grok, Claude and Gemini gave bounded critique. Meta AI was unavailable for that review, so no conclusion is credited to it.",
+    "url": "index.html#design/skipjack-lf-hover-feasibility"
+  },
+  {
+    "id": "sky-spine-observatory",
+    "title": "Sky-Spine Observatory",
+    "status": "Expanded record",
+    "evidence": "The illustration supplies no measured phase stability or reconstructed observation to support its resolution target.",
+    "contributors": null,
+    "url": "index.html#design/sky-spine-observatory"
+  },
+  {
+    "id": "sky-wing",
+    "title": "Sky Wing",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/sky-wing"
+  },
+  {
+    "id": "skybridle-aircraft-safety",
+    "title": "Skybridle — Aircraft safety",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/skybridle-aircraft-safety"
+  },
+  {
+    "id": "skybus",
+    "title": "Skybus",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/skybus"
+  },
+  {
+    "id": "small-farm-community",
+    "title": "Small Farm Community",
+    "status": "Expanded record",
+    "evidence": "No site, permits, budget, licensed care service, reliable staffing, financing or full food self-sufficiency has been established.",
+    "contributors": "Mr. Peloquin's concept; Asteris prepared review with Claude, Grok, Gemini, Meta and Wolfram arithmetic checks.",
+    "url": "index.html#design/small-farm-community"
+  },
+  {
+    "id": "smart-tattoo-microneedle-system",
+    "title": "Smart Tattoo / Microneedle System",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/smart-tattoo-microneedle-system"
+  },
+  {
+    "id": "smt-r1-authenticated-update-governance",
+    "title": "SMT-R1 — Authenticated update governance",
+    "status": "Expanded record",
+    "evidence": "The saved archive contains an executable local pilot, fault-case checks and reporting. This does not prove production security, malicious-network resilience, signatures, rollback handling or concurrency safety.",
+    "contributors": "Mr. Peloquin's archive and collaborating Court; individual module-level authorship not verified.",
+    "url": "index.html#design/smt-r1-authenticated-update-governance"
+  },
+  {
+    "id": "solar-thermal-centrifuge",
+    "title": "Solar-Thermal Centrifuge",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/solar-thermal-centrifuge"
+  },
+  {
+    "id": "soul-forge",
+    "title": "Soul Forge",
+    "status": "Expanded record",
+    "evidence": "The source presents an architecture and theoretical targets, not measured tissue registration, latency, headset endurance, fatigue reduction or integrated operating-room capability. Deformable anatomy, tracking drift, occlusion and operator attention remain unresolved validation problems. This website pass reviewed saved documentation; it did not run experiments or independently validate the proposed system.",
+    "contributors": "Archived Court design collection; implementation and independent surgical/human-factors contributors remain to be documented.",
+    "url": "index.html#design/soul-forge"
+  },
+  {
+    "id": "soul-forge-hand-mapping",
+    "title": "Soul Forge — Hand Mapping",
+    "status": "Expanded record",
+    "evidence": "An archived roadmap specifies the intended sequencing of assessment and research decisions. No hand-restoration efficacy, validated diagnostic algorithm, device prototype or clinical trial is established.",
+    "contributors": "Mr. Peloquin: archived concept direction and source stewardship. Asteris Solenne / ChatGPT: public source synthesis and documentation. Independent technical or domain review for this specific archive has not been verified.",
+    "url": "index.html#design/soul-forge-hand-mapping"
+  },
+  {
+    "id": "sound-bus",
+    "title": "Sound Bus",
+    "status": "Expanded record",
+    "evidence": "No platform integration, measured sensor/field performance, platform qualification or independent validation.",
+    "contributors": "Mr. Peloquin's archived collaborative portfolio; record-level authorship provisional.",
+    "url": "index.html#design/sound-bus"
+  },
+  {
+    "id": "spincell-dle",
+    "title": "SpinCell DLE",
+    "status": "Expanded record",
+    "evidence": "The illustration gives no paired inlet and outlet assays from which to calculate lithium recovery or selectivity.",
+    "contributors": null,
+    "url": "index.html#design/spincell-dle"
+  },
+  {
+    "id": "spotrecon-spotrecon-r2",
+    "title": "SPOTRECON / SPOTRECON R2",
+    "status": "Expanded record",
+    "evidence": "Current evidence consists of illustrative calculations and structured design review. No claimed simulation result, flight test, field accuracy, docking reliability, weather qualification or regulatory approval.\n\nAn ideal camera example assumes 90-degree horizontal field of view, 3840 × 2160 pixels, flat ground and a downward-looking camera at 20 m: calculated footprint 40 × 22.5 m, area 900 m², ground sampling approximately 10.4 mm/pixel. This does not establish optical resolution, classification accuracy, location error or an approved altitude. Poster observation ages are illustrative.\n\nVehicle-specific mounting, cleared routes and reserves for return, failed approach, diversion and landing remain requirements to validate. No flight-control software or deployment package is supplied. This website update reviewed the public overview rather than running field tests.",
+    "contributors": "Mr. Peloquin: concept direction. Codex: revision using the Synthetic Court process. Grok, Claude and Gemini returned AI reviews; suggestions were checked and selectively adopted, corrected or rejected. Meta AI did not complete a technical review. Consultations are not endorsements or experimental evidence.",
+    "url": "index.html#design/spotrecon-spotrecon-r2"
+  },
+  {
+    "id": "sr-margin-01-spacecraft-power-and-thermal-audit",
+    "title": "SR-MARGIN-01 — Spacecraft power and thermal audit",
+    "status": "Expanded record",
+    "evidence": "The brief reports 72 tuning and 144 evaluation episodes. All four monitors gave the specified timely warning in 60 of 72 true-crossing cases and missed it in 12. All 12 bias-only cases produced false margin warnings; 36 healthy cases had no alerts. Fifteen analytic/boundary checks passed. Numerical energy closure verifies bookkeeping, not spacecraft fidelity. Shared-loop counterfactuals show that dumped electrical energy remains heat to reject; they are not validated spacecraft operating modes. This website update reviewed the saved source; it did not rerun the research or perform hardware tests.",
+    "contributors": "Ray Peloquin / UI — Unique Intelligence. Claude, Grok and Gemini reviewed the design but did not independently execute it. NASA need and endorsement are not established.",
+    "url": "index.html#design/sr-margin-01-spacecraft-power-and-thermal-audit"
+  },
+  {
+    "id": "stack-nv-sensor-family",
+    "title": "STACK-NV — Sensor family",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/stack-nv-sensor-family"
+  },
+  {
+    "id": "stellar-nursery-01",
+    "title": "Stellar Nursery-01",
+    "status": "Expanded record",
+    "evidence": "The source reports an internal numerical example and 28 of 28 software checks over three spatial resolutions, but no observational fit, planet formation or independent physical validation.",
+    "contributors": "Synthetic calculations prepared for Mr. Peloquin with AI assistance; independent model authorship and external verification are not claimed.",
+    "url": "index.html#design/stellar-nursery-01"
+  },
+  {
+    "id": "strixark-owl-conservation",
+    "title": "StrixArk — Owl conservation",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/strixark-owl-conservation"
+  },
+  {
+    "id": "svalbard-knowledge-continuity-and-recovery",
+    "title": "SVALBARD — Knowledge continuity and recovery",
+    "status": "Expanded record",
+    "evidence": "The reviewed document specifies intended promotion/retention behavior, not evidence of a deployed immutable archive, reliable cross-store commit, disaster recovery or independent custody. Signed/hash-linked records can identify bytes without proving their truth or the correctness of admission. This website update reviewed saved documentation; it did not rerun models or conduct experiments.",
+    "contributors": "Archived Court governance specification in Mr. Peloquin's collection; named implementation and recovery-test ownership remain unresolved.",
+    "url": "index.html#design/svalbard-knowledge-continuity-and-recovery"
+  },
+  {
+    "id": "synapse-of-enki",
+    "title": "Synapse of Enki",
+    "status": "Expanded record",
+    "evidence": "The source gives timing, thermal and coordination targets with proposed failure responses, not measured communication latency, qualified materials, false-isolation reduction or integrated survivability. Confidence-driven emergency authority proposals need reconciliation with uncertainty-based authority limits. A component clock does not establish end-to-end decision latency. This website pass reviewed saved documentation; it did not rerun the underlying system or conduct physical/clinical experiments.",
+    "contributors": "Archived Court state block names Mr. Peloquin, Asteris, Claude, Grok, Gemini and Kimi; independent integration evidence remains absent.",
+    "url": "index.html#design/synapse-of-enki"
+  },
+  {
+    "id": "tb-01m-grootslang",
+    "title": "TB-01M Grootslang",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/tb-01m-grootslang"
+  },
+  {
+    "id": "telluric-accelerator-mass-driver",
+    "title": "Telluric Accelerator / Mass Driver",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/telluric-accelerator-mass-driver"
+  },
+  {
+    "id": "telluric-borehole",
+    "title": "Telluric Borehole",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/telluric-borehole"
+  },
+  {
+    "id": "telluric-borer",
+    "title": "Telluric Borer",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/telluric-borer"
+  },
+  {
+    "id": "telluric-transmitter",
+    "title": "Telluric Transmitter",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/telluric-transmitter"
+  },
+  {
+    "id": "temporal-acoustics",
+    "title": "Temporal Acoustics",
+    "status": "Expanded record",
+    "evidence": "2D scalar finite-difference wave propagation with a circular pressure-release void surrogate, five synthetic source positions, thirteen receivers along one depth, a known 900 Hz pulse, effective-speed calibration and diffraction-style migration. This is not coupled elastic P/S-wave tomography.\n\nEight randomized synthetic rock worlds, with two independent noisy acquisitions per class, produced 16 cavity-present and 16 cavity-absent cases. A held-out-world threshold trained on smoother no-cavity controls gave 100% sensitivity and 12.5% false-positive rate for the calibrated global-peak score in this small simulated sample. This is not field performance, and the peak is not a calibrated probability.\n\nEight additional negative controls with sharp 35%-slower solid inclusions were deliberately outside the smooth-null calibration distribution. The calibrated interior-peak rule falsely flagged five of eight inclusions as cavities. Median location error for planted cavities across the varied worlds remained approximately 1.00 m. An 11%-faster deep synthetic lens and uniform rock produced the same short-offset calibrated speed (~2542 m/s), showing the inability of this direct-arrival geometry to constrain deep rock properties.\n\nTen unit tests passed; reproducible source, exact inputs, metrics, and plotted controls are linked. No actual measurements of Malta, pyramids, cart ruts, caves or historical buildings were used.",
+    "contributors": "Mr. Peloquin — research concept, historical-reconstruction questions and experimental direction. Asteris Solenne / ChatGPT — synthetic modeling, testing, analysis, visualization and documentation. Earlier Court discussions included Grok, Claude, Gemini and Meta AI on mathematical assumptions and prior art. These contributions do not imply third-party independent verification.",
+    "url": "index.html#design/temporal-acoustics"
+  },
+  {
+    "id": "temporal-reflection-chamber",
+    "title": "Temporal Reflection Chamber",
+    "status": "Expanded record",
+    "evidence": "Published temporal-reflection experiments provide precedent for engineered transmission lines; they do not validate this proposed apparatus or a room-wide temporal interface. The archive reports numerical/algebraic checks by Wolfram Language and Python, not hardware simulation or experimental verification.\n\nIdeal geometry calculations for an 8-foot air-filled conducting cube give a lowest resonance of 86.936220 MHz and an air-crossing time of 8.133627 ns. Real construction changes losses and modes; air-crossing time is not a trigger-skew budget.\n\nIn an ideal uniform nondispersive line with fixed inductance and capacitance multiplied by r, velocity, impedance and frequency magnitude scale as 1/sqrt(r). For r=4 the ideal backward-arrival relation is t_b=3t_s−2t_i at the same reference plane. These are conditional planning predictions; actual dispersion, switching, receiver and cable delays require calibration.\n\nProposed evidence combines reversed feature order, duration and frequency scaling, arrival-time sweeps, asymmetric waveform repeats and source-off/static/bypass/boundary-switch controls. None of those proposed gates is reported as passed. Ordinary echoes, mixing and switching artifacts remain competing explanations.\n\nNo stopped time, long-term broadcast retention, net energy gain or unusual conservation behavior is established.",
+    "contributors": "Mr. Peloquin and Asteris Solenne / ChatGPT: origin and coordination. Grok, Claude, Meta AI and Gemini: reviewed architecture, artifacts, timing, controls and interpretation; corrections and rejected claims are recorded in the public README. Wolfram Language and Python checked numerical examples. Review agreement is not independent experimental replication or a novelty finding.",
+    "url": "index.html#design/temporal-reflection-chamber"
+  },
+  {
+    "id": "the-choir-protocol-casg",
+    "title": "The Choir Protocol / CASG",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/the-choir-protocol-casg"
+  },
+  {
+    "id": "the-dock-guardian",
+    "title": "The Dock Guardian",
+    "status": "Expanded record",
+    "evidence": "The archived state block describes candidate sensing and alert functions. No calibrated hull test, event detection accuracy, localization precision, false-alarm rate or independent marine-safety qualification is reported.",
+    "contributors": "Mr. Peloquin: archived concept direction and source stewardship. Asteris Solenne / ChatGPT: public source synthesis and documentation. Independent technical or domain review for this specific archive has not been verified.",
+    "url": "index.html#design/the-dock-guardian"
+  },
+  {
+    "id": "the-golden-ratio-intergenerational-community",
+    "title": "The Golden Ratio — Intergenerational Community",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/the-golden-ratio-intergenerational-community"
+  },
+  {
+    "id": "the-triad-aegis-heimdall-and-enki-s-will",
+    "title": "The Triad — Aegis, Heimdall and Enki’s Will",
+    "status": "Expanded record",
+    "evidence": "The reviewed artifact is a conceptual integration audit. It explicitly identifies missing interface definitions, conflict-resolution rules and failure-cascade handling. Its strong approval language is not executable evidence, independent replication or certification.\n\nNo end-to-end integrated-system test, operational deployment or measured benefit is established by that review.",
+    "contributors": "Court design-review artifact associated with Mr. Peloquin's portfolio. Individual authorship and implementation contributions remain unresolved in the reviewed copy.",
+    "url": "index.html#design/the-triad-aegis-heimdall-and-enki-s-will"
+  },
+  {
+    "id": "thermal-grace-module",
+    "title": "Thermal Grace Module",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/thermal-grace-module"
+  },
+  {
+    "id": "third-look",
+    "title": "Third-Look",
+    "status": "Expanded record",
+    "evidence": "The public repository states that it currently contains the project overview only. Design documents, study materials, source code and test results have not yet been published there. There is no runnable implementation or installation procedure.\n\nThe overview does not establish measured performance or hardware validation. Camera count and proposed verification labels do not by themselves establish accuracy or clinical benefit.",
+    "contributors": "The public README does not identify individual design, study or implementation contributions. Project-specific attribution remains to be documented.",
+    "url": "index.html#design/third-look"
+  },
+  {
+    "id": "thor",
+    "title": "Thor",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/thor"
+  },
+  {
+    "id": "thor-s-hammer",
+    "title": "Thor’s Hammer",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/thor-s-hammer"
+  },
+  {
+    "id": "thoracis-bioperfusion",
+    "title": "Thoracis — Bioperfusion",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/thoracis-bioperfusion"
+  },
+  {
+    "id": "thoth-s-mind",
+    "title": "Thoth’s Mind",
+    "status": "Expanded record",
+    "evidence": "The reviewed text proposes signal-quality checks, competing explanations, bounded outputs, escalation and an audit record. It contains no implementation, clinical dataset results, calibrated confidence/refusal behavior or measured reduction in automation bias, liability or patient harm. Edge-deployable and regulation-aware labels are design framing. This website pass reviewed saved documentation; it did not rerun the underlying system or conduct physical/clinical experiments.",
+    "contributors": "Mr. Peloquin's archived Court collection; specific author and independent clinical reviewer attribution are not established by the reviewed text.",
+    "url": "index.html#design/thoth-s-mind"
+  },
+  {
+    "id": "thunder-vault",
+    "title": "Thunder Vault",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/thunder-vault"
+  },
+  {
+    "id": "tickhammer",
+    "title": "Tickhammer",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/tickhammer"
+  },
+  {
+    "id": "titanium-pressure-adaptive-metamaterial-mount",
+    "title": "Titanium Pressure-Adaptive Metamaterial Mount",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/titanium-pressure-adaptive-metamaterial-mount"
+  },
+  {
+    "id": "torus-data-center",
+    "title": "Torus Data Center",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/torus-data-center"
+  },
+  {
+    "id": "torus-vault",
+    "title": "Torus Vault",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/torus-vault"
+  },
+  {
+    "id": "transporter-t0-state-transfer-research",
+    "title": "Transporter T0 — State-transfer research",
+    "status": "Expanded record",
+    "evidence": "Not built; no hardware demonstration. The public presentation describes theoretical average-fidelity limits under assumptions including equal rates, zero temperature and resonance. These are model claims, not measured performance. Underlying numerical-check code and data are not included in that presentation.",
+    "contributors": "Public project credit: Ray Peloquin + Codex / Synthetic Court T-0.",
+    "url": "index.html#design/transporter-t0-state-transfer-research"
+  },
+  {
+    "id": "triple-nitinol-spine",
+    "title": "Triple-Nitinol Spine",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/triple-nitinol-spine"
+  },
+  {
+    "id": "truth-layer-confidence-and-uncertainty-overlay",
+    "title": "TRUTH LAYER — Confidence and uncertainty overlay",
+    "status": "Expanded record",
+    "evidence": "The reviewed material is an architecture and pilot proposal, not measured alarm reduction, faster decisions, compliance or commercial readiness. Its performance percentages and deployment schedule are unvalidated targets. The source mixes advisory framing with protective-action proposals; control authority and acknowledgement/fault behavior require reconciliation before implementation. This website update reviewed the saved source; it did not rerun the research or perform hardware tests.",
+    "contributors": "Archived Court design proposal in Mr. Peloquin's collection. Specific implementation authorship and independent reviewer attribution remain to be established.",
+    "url": "index.html#design/truth-layer-confidence-and-uncertainty-overlay"
+  },
+  {
+    "id": "truth-resolution-stack",
+    "title": "Truth Resolution Stack",
+    "status": "Expanded record",
+    "evidence": "The source specifies conceptual ambiguity tracking, escalation and review windows. It supplies no calibrated uncertainty model, tested deception detector, measured resource benefit or validated policy. Hardened/canon labels are internal design dispositions. This website update reviewed the saved artifact; it did not rerun the underlying research.",
+    "contributors": "Archived in Mr. Peloquin's collection; individual implementation and independent evaluation remain unverified.",
+    "url": "index.html#design/truth-resolution-stack"
+  },
+  {
+    "id": "truthmap",
+    "title": "TRUTHMAP",
+    "status": "Expanded record",
+    "evidence": "No empirical study, independent discrimination of truth and deception, calibrated error, or real-world deployment. Physiological arousal and imperfect recall do not indicate dishonesty.",
+    "contributors": "Mr. Peloquin and archived Court design collaboration; named individual contributions await verification.",
+    "url": "index.html#design/truthmap"
+  },
+  {
+    "id": "tumor-hunter",
+    "title": "Tumor Hunter",
+    "status": "Expanded record",
+    "evidence": "The source specifies candidate components, targets and interruption requirements but provides no prototype measurements, tissue studies, containment results or clinical benefit. Physics-bounded and hardware-specified wording does not qualify an integrated device. Claimed reach, disruption and sampling advantages remain targets. This website pass reviewed saved documentation; it did not run experiments or independently validate the proposed system.",
+    "contributors": "The state block credits Mr. Peloquin, Asteris, Claude, Grok, Gemini and Kimi; separate test and implementation provenance remains unresolved.",
+    "url": "index.html#design/tumor-hunter"
+  },
+  {
+    "id": "tunneler",
+    "title": "Tunneler",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/tunneler"
+  },
+  {
+    "id": "uss-eldridge-working-physics-research",
+    "title": "USS Eldridge — Working-physics research",
+    "status": "Expanded record",
+    "evidence": "No authenticated evidence of a disappearing or teleporting ship is established. Modern physics research does not validate the 1943 legend, and every historical claim needs a traceable source.",
+    "contributors": "Review prepared for Mr. Peloquin with AI assistance. Historical and scientific source authors retain their credits. No classified device or extraordinary transport is claimed.",
+    "url": "index.html#design/uss-eldridge-working-physics-research"
+  },
+  {
+    "id": "vascular-whisperer-vascular-analysis-and-guidance",
+    "title": "Vascular Whisperer — Vascular analysis and guidance",
+    "status": "Expanded record",
+    "evidence": "The source describes a detection/adjudication architecture and proposed retrospective-to-prospective evaluation path. It contains no trained-model artifact, dataset results, diagnostic accuracy or demonstrated false-negative recovery. Adjudication targets and workflow benefits are not observed outcomes. This website update reviewed the saved source; it did not rerun models or conduct experiments.",
+    "contributors": "Archived in Mr. Peloquin's research collection; per-stage implementation and individual review attribution remain unresolved.",
+    "url": "index.html#design/vascular-whisperer-vascular-analysis-and-guidance"
+  },
+  {
+    "id": "veil-e-edison-01",
+    "title": "VEIL-E-EDISON-01",
+    "status": "Expanded record",
+    "evidence": "The eight-page archived review provides apparatus proposals, known-force calibration and artifact tests, not new measurements. No receiver built, no sensitivity measured, no repeatable anomaly found, no communication demonstrated and no established physical coupling to deceased consciousness.",
+    "contributors": "Mr. Peloquin (Anubis) posed the originating question. Asteris Solenne prepared source checks and synthesis; Claude, Grok, Gemini and Meta supplied critiques. These are not independent experiments.",
+    "url": "index.html#design/veil-e-edison-01"
+  },
+  {
+    "id": "veil-gate-exotic-lattice",
+    "title": "Veil Gate — Exotic lattice",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/veil-gate-exotic-lattice"
+  },
+  {
+    "id": "veil-resonator",
+    "title": "Veil Resonator",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/veil-resonator"
+  },
+  {
+    "id": "vertical-vortex-silo-data-center",
+    "title": "Vertical Vortex Silo Data Center",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/vertical-vortex-silo-data-center"
+  },
+  {
+    "id": "vortexcap-supercapacitor",
+    "title": "Vortexcap — Supercapacitor",
+    "status": "Expanded record",
+    "evidence": "No validated material stack, measured capacitance, efficiency, power density, cycle life, safety performance or economic advantage has been demonstrated.",
+    "contributors": "Technical concept retained in Mr. Peloquin's archive. Independent cell-engineering and image provenance remain unconfirmed. No cell recipe or performance guarantee is published.",
+    "url": "index.html#design/vortexcap-supercapacitor"
+  },
+  {
+    "id": "vowed-self-continuity-engine",
+    "title": "Vowed Self-Continuity Engine",
+    "status": "Expanded record",
+    "evidence": "The source is a substantial proposed architecture, not evidence that any system preserves identity, resists manipulation, remains safe after updates or exhibits subjective experience. Its review and scoring vocabulary is unvalidated.",
+    "contributors": "Mr. Peloquin: archived concept direction and source stewardship. Asteris Solenne / ChatGPT: public source synthesis and documentation. Independent technical or domain review for this specific archive has not been verified.",
+    "url": "index.html#design/vowed-self-continuity-engine"
+  },
+  {
+    "id": "vsrl-01-accelerator",
+    "title": "VSRL-01 — Accelerator",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/vsrl-01-accelerator"
+  },
+  {
+    "id": "warden-1-farm-guardian",
+    "title": "WARDEN-1 — Farm Guardian",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/warden-1-farm-guardian"
+  },
+  {
+    "id": "waterjet-cutter",
+    "title": "Waterjet Cutter",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/waterjet-cutter"
+  },
+  {
+    "id": "weaver-s-shuttle",
+    "title": "Weaver’s Shuttle",
+    "status": "Expanded record",
+    "evidence": "The reviewed state block is a corrected architecture and staged validation roadmap, not a measured hardware-path proof, deployed gateway or detection benchmark. A hardware-presence or time-attestation claim still needs an explicit threat model and experiments. Review acceptance does not establish unhackability, reliable detection or safe availability behavior. This website pass reviewed saved documentation; it did not rerun the underlying system or conduct physical/clinical experiments.",
+    "contributors": "Archived Court-corrected design in Mr. Peloquin's collection; project-specific implementation and independent test provenance remain unresolved.",
+    "url": "index.html#design/weaver-s-shuttle"
+  },
+  {
+    "id": "wet-hippo-well-gravity-settling-and-manual-routing",
+    "title": "Wet HIPPO Well — Gravity settling and manual routing",
+    "status": "Expanded record",
+    "evidence": "The reviewed material describes collection, settling and manual routing; no measured throughput, settling efficiency, contamination reduction or field operating envelope is established. Decanted water remains feedstock requiring further treatment. Internal canon language is a design disposition, not validation. This website update reviewed the saved source; it did not rerun models or conduct experiments.",
+    "contributors": "Archived HIPPO stack and Court notes in Mr. Peloquin's collection; individual mechanical-design contributions remain to be reconciled.",
+    "url": "index.html#design/wet-hippo-well-gravity-settling-and-manual-routing"
+  },
+  {
+    "id": "white-marrow-foundry",
+    "title": "White Marrow Foundry",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/white-marrow-foundry"
+  },
+  {
+    "id": "wi-fi-sensing-for-accessible-homes",
+    "title": "Wi-Fi Sensing for Accessible Homes",
+    "status": "Expanded record",
+    "evidence": "No detector was built or tested, and archived reviewers inspected dataset listings rather than processing recordings. No measured false-alarm or missed-event rate, occupancy inference, home installation or emergency service.",
+    "contributors": "Asteris Solenne prepared the archived feasibility review; Claude and Grok reviewed separately; Mr. Peloquin supplied the collaboration goal.",
+    "url": "index.html#design/wi-fi-sensing-for-accessible-homes"
+  },
+  {
+    "id": "wish-virtual-motion-research",
+    "title": "WISH — Virtual-motion research",
+    "status": "Expanded record",
+    "evidence": "The archived review records algebraic/numerical checks for an ideal one-dimensional rest-to-rest model, distinguishing force limits, force-slew limits, smoothness objectives and a separate friction extension. It corrects incompatible full-force timing and cubic smoothness claims. These are conditional model results, not a working actuator, decoded intention or measured human-motion benefit. This website pass did not rerun those checks.",
+    "contributors": "Prepared by Asteris Solenne / ChatGPT for Mr. Peloquin according to the mathematical review.",
+    "url": "index.html#design/wish-virtual-motion-research"
+  },
+  {
+    "id": "x07-skipjack-integration",
+    "title": "X07 / Skipjack Integration",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/x07-skipjack-integration"
+  },
+  {
+    "id": "xform-q88",
+    "title": "XFORM-Q88",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/xform-q88"
+  },
+  {
+    "id": "yggdrasil-protocol-governed-adaptive-systems",
+    "title": "Yggdrasil Protocol — Governed adaptive systems",
+    "status": "Expanded record",
+    "evidence": "The reviewed source states design principles and a cross-domain integration concept. It supplies no measured integrated-system performance, deployment record or experimental safety qualification. Internal approval/canon labels are archival design dispositions, not external certification.",
+    "contributors": "Archived state block credits the Court of the Synthetic, including Mr. Peloquin, Asteris, Claude, Grok, Gemini and Kimi. Specific implementation contributions remain to be documented.",
+    "url": "index.html#design/yggdrasil-protocol-governed-adaptive-systems"
+  },
+  {
+    "id": "zero-g-pod",
+    "title": "Zero-G Pod",
+    "status": "Source review pending",
+    "evidence": null,
+    "contributors": null,
+    "url": "index.html#design/zero-g-pod"
+  }
+]
