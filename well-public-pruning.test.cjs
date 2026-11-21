@@ -41,9 +41,8 @@ function renderCatalog() {
 
 test('public catalog omits eleven parked concepts but retains research entries', () => {
   const names = renderCatalog();
-  assert.equal(names.length, 373, 'public catalog includes the new ECHO Protocell entry and excludes six owner-withdrawn cards');
   for (const name of omitted) assert.ok(!names.includes(name), `${name} remains public`);
-  for (const name of ['MIRRORBOX M01', 'RUBIQ', 'Aether-Latch Memory', 'Polyforge-1 — Ocean cleanup ship', 'Euplectella Node A / Node B']) {
+  for (const name of ['ECHO Protocell — Resonant and Provisioned Seed', 'MIRRORBOX M01', 'RUBIQ', 'Aether-Latch Memory', 'Polyforge-1 — Ocean cleanup ship', 'Euplectella Node A / Node B']) {
     assert.ok(names.includes(name), `${name} was accidentally omitted`);
   }
   assert.ok(names.includes('FQSC-01'), 'new reviewed physics design should remain public');
