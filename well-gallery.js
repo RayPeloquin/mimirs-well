@@ -280,6 +280,12 @@
       caption: 'FLUFFY-01 · AI-generated unarmed research-robot concept; no physical prototype built.',
     },
     {
+      id: 'fluffy-01',
+      src: 'assets/fluffy-01-bridge-recon-concept.jpg',
+      alt: 'FLUFFY-01 concept poster showing an unarmed mechanical wolf scout and a human operator with tablet surveying a damaged bridge from a snow-dusted rocky overlook.',
+      caption: 'FLUFFY-01 · Eyes ahead, human in command. AI-generated recon-only, semi-autonomous robotic scout concept; no prototype, navigation, bridge assessment or field performance is validated.',
+    },
+    {
       id: 'knock-moth-pool-tile-mapping',
       src: 'assets/knock-moth-concept.webp',
       alt: 'Knock-Moth conceptual closed-case handheld pool-tile inspection aid held against a tiled wall, without internal engineering detail.',
