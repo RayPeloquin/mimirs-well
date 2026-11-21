@@ -15,11 +15,21 @@ This is a maintained snapshot, not live monitoring or an automatic task runner. 
 - Spot-checked all 43 gallery-image paths against the 49 assets present in the public `assets/` directory; none was missing at the time of the pass.
 - The page source and published file tree were inspected; this was not a full visual browser, mobile-accessibility or external-link audit.
 
+## Source and collection audit — 20 November 2026
+
+[Read the dated audit](docs/source-and-collection-audit-2026-11-20.md) before repeating or extending its checks.
+
+The current public source produces **384 distinct project cards**: 370 retained catalog titles, ten static featured cards, and four additional scripted cards. All **152** expanded registry overrides attach to a current project card; **232** cards do not yet have a source-backed expanded override. The older dated record below reports 387/151 and is preserved as historical context, not the current source total.
+
+Checked **64 internal source-reference occurrences** (63 distinct published paths) against repository contents, **12 representative external-project GitHub targets** through the connected repository reader, and **five public non-GitHub reference pages**. No confirmed missing targets in these checked sets. One Nature DOI redirect was inaccessible through the retrieval service; treat it as a publisher access barrier, **not** a dead link.
+
+The homepage now includes an exact-count Workbench summary, a ten-card no-JavaScript description, and a larger touch target for Divergence Ledger links. A full fresh browser and assistive-technology audit is still pending.
+
 ## Current work
 
 Build Mimir’s Well one small, reviewable batch at a time: connect each project’s public purpose to its evidence, limitations, attribution and next check.
 
-The registry currently contains **151 expanded records with source references**. Representative projects include Ghostglass, SKEPTIC-1, HIPPO, FIELD MEDIC, BRIDLE, RAVEN-P1, Temporal Reflection Chamber, Mimir’s Well, AEGIS-TWIN, FQSC-01, and the nine retained public digests below. The 54 retained records across six recent batches are bounded summaries; the original source files are not made public by those summaries. Other entries remain catalog listings pending source review. An expanded record is not a validation rating.
+The registry now contains **152 expanded records with source references**. Representative projects include Ghostglass, SKEPTIC-1, HIPPO, FIELD MEDIC, BRIDLE, RAVEN-P1, Temporal Reflection Chamber, Mimir’s Well, AEGIS-TWIN, FQSC-01, and the nine retained public digests below. The 54 retained records across six recent batches are bounded summaries; the original source files are not made public by those summaries. Other entries remain catalog listings pending source review. An expanded record is not a validation rating.
 
 ## Latest ten-file source batch — 19 November 2026 (sixth batch)
 
