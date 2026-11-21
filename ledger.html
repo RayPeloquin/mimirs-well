@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Explore the Divergence Ledger at Mimir's Well. Search and filter research records by project, field, evidence type and update date.">
+<title>The Divergence Ledger — Mimir’s Well</title>
+<link rel="stylesheet" href="ledger-library.css">
+<script defer src="ledger-data.js?v=20261120-library-v1"></script>
+<script defer src="ledger-library.js?v=20261120-library-v1"></script>
+</head>
+<body>
+<header><div class="wrap"><a class="brand" href="index.html">✳ Mimir’s Well</a><nav aria-label="Navigation"><a href="index.html">The Well</a><a href="index.html#projects">Projects</a><a href="index.html#workbench">Workbench</a></nav></div></header>
+<main>
+<div class="hero"><div class="wrap"><div class="eyebrow">Asteris’ Workbench · Research methods</div><h1>The Divergence <em>Ledger.</em></h1><p class="lead">What we intended. What actually happened. What else might this be useful for?</p>
+<p>Research moves in unexpected directions. This index preserves evidence, design revisions, failed assumptions and alternative hypotheses without turning them into invented results.</p>
+<div class="totals"><strong data-ledger-total>17</strong><span>Documented records · Numbered permanently · Updated as new evidence is reviewed</span></div></div></div>
+<section aria-labelledby="browse-title"><div class="wrap">
+<h2 id="browse-title">Explore the records</h2>
+<form id="ledger-controls" role="search" aria-label="Search and filter divergence records" hidden>
+<div class="controls">
+<div class="field"><label for="ledger-search">Search records</label><input id="ledger-search" type="search" placeholder="Project, keyword or record number" autocomplete="off"></div>
+<div class="field"><label for="ledger-category">Research field</label><select id="ledger-category"><option value="">All fields</option></select></div>
+<div class="field"><label for="ledger-evidence">Evidence type</label><select id="ledger-evidence"><option value="">All evidence types</option></select></div>
+<div class="field"><label for="ledger-sort">Sort by</label><select id="ledger-sort"><option value="recent">Recently updated</option><option value="number-desc">Newest record number</option><option value="oldest">Oldest record number</option><option value="title">Project A–Z</option></select></div>
+</div><div class="controls-footer"><output id="ledger-result-count" role="status" aria-live="polite" aria-atomic="true">Showing 17 records</output><button id="ledger-reset" type="button">Reset filters</button></div>
+</form>
+<div id="ledger-results" hidden aria-label="Matching Divergence Ledger entries"></div>
+<p id="ledger-empty" hidden>No matching records. Try different keywords or reset the filters.</p>
+<button id="ledger-more" type="button" hidden>Show more records</button>
+<div id="ledger-fallback"><h3>All 17 published records</h3><p>Each research record has its own permanent page. Enable JavaScript for interactive filtering and sorting.</p><ol><li><a href="divergence-ledger.html">001 · KA PATCH</a></li>
+<li><a href="skeptic-divergence-ledger.html">002 · SKEPTIC-1</a></li>
+<li><a href="temporal-acoustics-divergence-ledger.html">003 · Temporal Acoustics</a></li>
+<li><a href="ghostglass-divergence-ledger.html">004 · Ghostglass</a></li>
+<li><a href="raven-p1-divergence-ledger.html">005 · RAVEN-P1</a></li>
+<li><a href="crucible-divergence-ledger.html">006 · CRUCIBLE</a></li>
+<li><a href="bridle-3-divergence-ledger.html">007 · BRIDLE-3</a></li>
+<li><a href="echo-rx-divergence-ledger.html">008 · ECHO-Rx</a></li>
+<li><a href="echo-m-divergence-ledger.html">009 · ECHO-M</a></li>
+<li><a href="third-look-divergence-ledger.html">010 · Third-Look</a></li>
+<li><a href="temporal-reflection-chamber-divergence-ledger.html">011 · Temporal Reflection Chamber</a></li>
+<li><a href="hallvards-promise-divergence-ledger.html">012 · Hallvard’s Promise</a></li>
+<li><a href="hemostat-r-divergence-ledger.html">013 · HEMOSTAT-R</a></li>
+<li><a href="fluffy-01-divergence-ledger.html">014 · FLUFFY-01</a></li>
+<li><a href="ndsm-01-divergence-ledger.html">015 · NDSM-01</a></li>
+<li><a href="hypha-mind-divergence-ledger.html">016 · Hypha Mind / GO-CUBE</a></li>
+<li><a href="radio-echo-chamber-divergence-ledger.html">017 · Radio Echo Chamber</a></li></ol></div>
+</div></section>
+<section class="method"><div class="wrap"><div class="eyebrow">An evidence-first collection</div><h2>Not every project needs a divergence.</h2>
+<p>The Well's main project registry remains the complete inventory. A Divergence Ledger entry is curated when there is a meaningful documented change, test, contradiction, revised assumption or alternative research question. No automatic one-to-one conversion from project cards to ledger entries.</p>
+<p>Statuses are evidence descriptions, not maturity scores. A model is not physical validation, a Court critique is not an experiment and a possible crossover is a hypothesis until tested. Record numbers never change; actual update dates can.</p>
+<p><a href="index.html#divergence-ledger">Return to the homepage preview</a> · <a href="docs/ledger-library-maintenance.md">How the ledger is maintained</a></p></div></section>
+</main><footer><div class="wrap">Mimir’s Well · Where the source gathers · We do no harm.</div></footer></body></html>

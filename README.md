@@ -4,7 +4,9 @@
 
 **Guiding principle:** We do no harm.
 
-**[Explore Mimir’s Well](https://raypeloquin.github.io/mimirs-well/)** · **[Divergence Ledger](https://raypeloquin.github.io/mimirs-well/#divergence-ledger)** · **[Workbench](https://raypeloquin.github.io/mimirs-well/#workbench)** · **[Legal & Rights](https://raypeloquin.github.io/mimirs-well/legal.html)**
+**[Explore Mimir’s Well](https://raypeloquin.github.io/mimirs-well/)** · **[Divergence Ledger Library](https://raypeloquin.github.io/mimirs-well/ledger.html)** · **[Workbench](https://raypeloquin.github.io/mimirs-well/#workbench)** · **[Legal & Rights](https://raypeloquin.github.io/mimirs-well/legal.html)**
+
+The Ledger is a separate directory, **not one record per project**. A new entry requires a documented change, measurement, revised assumption or explicitly hypothetical crossover. The existing project Registry remains the full inventory.
 
 ## Governance architecture family
 
@@ -34,7 +36,9 @@ The [Divergence Ledger](https://raypeloquin.github.io/mimirs-well/#divergence-le
 - `research/`, `design-notes/`, `public-notes/`: published research, bounded design summaries and source pointers.
 - `WORKBENCH.md`: handoff notes and historical maintenance snapshots.
 - `COLLECTION-REVIEW.md`: historical review of catalog scope and evidence boundaries.
-- `*-divergence-ledger.html`: project-specific three-question records.
+- `ledger.html`, `ledger-data.js`, `ledger-library.js`: a searchable, filterable, paginated directory of curated divergence records, with a three-record homepage preview.
+- `*-divergence-ledger.html`: individual three-question records preserved at their existing addresses.
+- `docs/ledger-library-maintenance.md`: record-number, update-date and inclusion rules.
 
 Not all original sources are public. Some archive entries refer to private material or another project repository. The website is **read-only** to visitors; the [visitor log](https://raypeloquin.github.io/mimirs-well/#visitor-log) is hosted separately on GitHub.
 

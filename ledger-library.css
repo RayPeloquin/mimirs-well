@@ -1,0 +1,53 @@
+:root{color-scheme:dark;--bg:#080f17;--panel:#11222b;--line:#2c4149;--ink:#edf4ef;--muted:#aebfc5;--mint:#b5f5cf;--gold:#d9bc83}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:radial-gradient(ellipse at 78% 4%,#1b323b 0,transparent 38%),var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,sans-serif}
+a{color:var(--mint);text-underline-offset:4px}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+.wrap{width:min(1160px,90%);margin:auto}
+header{border-bottom:1px solid var(--line);background:#09151d}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:22px 0}
+.brand{font:25px Georgia,serif;text-decoration:none;color:var(--ink)}
+nav{display:flex;gap:14px 24px;flex-wrap:wrap;font-size:14px}
+.hero{padding:75px 0 46px;border-bottom:1px solid var(--line)}
+.eyebrow{color:var(--gold);letter-spacing:.19em;text-transform:uppercase;font-size:12px}
+h1,h2,h3{font-family:Georgia,serif;font-weight:400;line-height:1.15}
+h1{font-size:clamp(44px,7vw,86px);letter-spacing:-.04em;margin:15px 0}
+h1 em{color:var(--mint);font-style:normal}
+.hero p{max-width:850px;color:var(--muted);font-size:17px}
+.lead{font-size:clamp(20px,2.2vw,25px)!important;color:#d9eae5!important}
+.totals{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:baseline;margin:28px 0 0}
+.totals strong{font:35px Georgia,serif;color:var(--mint)}
+.totals span{font-size:13px;color:var(--muted)}
+main section{padding:40px 0}
+#ledger-controls{border:1px solid var(--line);padding:21px;background:#101e27;border-radius:4px}
+.controls{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:12px}
+.field{display:flex;flex-direction:column;gap:6px;min-width:0}
+.field label{font-size:12px;color:#d4e6df}
+.field input,.field select{font:16px system-ui,sans-serif;width:100%;min-width:0;min-height:46px;background:#0a1720;color:var(--ink);border:1px solid #435963;padding:10px 12px}
+.controls-footer{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;margin-top:14px}
+button{font:inherit;min-height:44px;padding:9px 16px;background:#162b33;border:1px solid #4c6867;color:var(--mint);cursor:pointer}
+button:hover{background:#203840}
+#ledger-result-count{font-size:14px;color:var(--muted)}
+#ledger-results{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:24px 0}
+.ledger-entry{min-width:0;display:flex;flex-direction:column;padding:22px 23px;background:linear-gradient(145deg,#13262c,#0b171f);border:1px solid var(--line)}
+.ledger-entry__top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px 14px;color:var(--gold);font:11px/1.45 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.06em}
+.ledger-entry__date{color:var(--muted);letter-spacing:0}
+.ledger-entry__title{font-size:26px;margin:16px 0 8px}
+.ledger-entry__title a{text-decoration:none;color:var(--ink)}
+.ledger-entry__title a:hover{text-decoration:underline;color:var(--mint)}
+.ledger-entry__meta{font-size:12px;color:var(--mint);margin:0 0 10px}
+.ledger-entry__status{color:var(--gold);font-size:12px;margin:0 0 12px}
+.ledger-entry__summary{color:var(--muted);font-size:14px;margin:0 0 20px}
+.ledger-entry__read{margin-top:auto;font-size:13px;align-self:flex-start}
+#ledger-more{display:block;margin:10px auto 35px}
+#ledger-empty{padding:24px;border:1px solid var(--line);color:var(--gold)}
+#ledger-fallback{padding:18px 0}
+#ledger-fallback ol{columns:2;column-gap:35px;padding-left:25px}
+#ledger-fallback li{margin-bottom:10px;break-inside:avoid}
+.method{border-top:1px solid var(--line);background:#0b151e}
+.method h2{font-size:34px}
+.method p{max-width:860px;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:13px}
+@media(max-width:950px){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.hero{padding:45px 0 35px}#ledger-results{grid-template-columns:1fr}.controls{grid-template-columns:1fr}#ledger-fallback ol{columns:1}.ledger-entry__title{font-size:25px}}
