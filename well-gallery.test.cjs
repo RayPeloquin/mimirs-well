@@ -36,7 +36,7 @@ function createFixture(ids) {
   return { render, figures };
 }
 
-test('thirteen matching design cards receive labeled, clickable concept artwork', () => {
+test('matching design cards receive labeled, clickable concept artwork', () => {
   const fieldId = 'field-medic-guided-hand-support';
   const hippoId = 'hippo-mag-01-magnetic-compensation-experiment';
   const skepticId = 'skeptic-1';
@@ -51,7 +51,7 @@ test('thirteen matching design cards receive labeled, clickable concept artwork'
   const siltId = 'silt-harp-manual-muddy-water-prefiltration';
   const crucibleId = 'crucible';
   const otherId = 'sisters-hope-hand-restoration-gloves';
-  const app = createFixture([fieldId, hippoId, skepticId, aegisId, herdId, atlasId, lanceId, fqscId, radioId, fluffyId, knockId, siltId, crucibleId, otherId]);
+  const app = createFixture([fieldId, hippoId, skepticId, aegisId, herdId, atlasId, lanceId, fqscId, radioId, fluffyId, knockId, siltId, crucibleId, 'cerebris-trauma-support', otherId]);
   app.render();
   for (const [id, filename, name] of [
     [fieldId, 'field-medic-assistive-backpack.webp', 'FIELD MEDIC'],
@@ -66,6 +66,7 @@ test('thirteen matching design cards receive labeled, clickable concept artwork'
     [fluffyId, 'fluffy-01-concept.webp', 'FLUFFY-01'],
     [knockId, 'knock-moth-concept.webp', 'Knock-Moth'],
     [siltId, 'silt-harp-concept.webp', 'SILT HARP'],
+    ['cerebris-trauma-support', 'cerebris-v1-trauma-support.webp', 'CEREBRIS'],
     [crucibleId, 'crucible-aviation-test-harness-poster.png', 'CRUCIBLE'],
   ]) {
     const figure = app.figures(id).find(f => f.children[0]?.href === 'assets/' + filename);

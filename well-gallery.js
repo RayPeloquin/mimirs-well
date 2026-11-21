@@ -3,6 +3,12 @@
   'use strict';
   const illustrations = [
     {
+      id: 'cerebris-trauma-support',
+      src: 'assets/cerebris-v1-trauma-support.webp',
+      alt: 'CEREBRIS v1.0 concept poster showing a portable cerebral support console, its detachable module, an anatomical illustration and a simulated monitoring display.',
+      caption: 'CEREBRIS v1.0 · Trauma Cerebral Life-Support Module. Artist’s concept for field-to-hospital support. The readings are illustrative. The poster provides no patient measurements or clinical validation.',
+    },
+    {
       id: 'qubit-ankh-assembly',
       src: 'assets/qubit-ankh-quantum-concept.jpg',
       alt: 'Concept artwork of a suspended cryogenic-style quantum apparatus with many wires and an illuminated central panel marked by an ankh.',
