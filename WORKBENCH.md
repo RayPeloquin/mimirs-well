@@ -6,6 +6,10 @@ Public handoff snapshot · 20 November 2026
 
 This is a maintained snapshot, not live monitoring or an automatic task runner. Read current source and commit history before resuming work. Do not put credentials, private conversations, personal details or unpublished technical material here.
 
+## Well soundscape — 20 November 2026
+
+Added an original, purely procedural optional ambience to the homepage: irregular distant water droplets, faint filtered airflow and deep stone resonance. Visitors must explicitly click to start; volume is adjustable and audio stops on tab hide, page leave or manual toggle. No music, drumbeat, recorded track, third-party audio request or autoplay; the browser constructs and runs the sound locally. The site remains usable without Web Audio support. Source: `well-ambience.js`; smoke-test opt-in audio in a real browser before declaring done.
+
 ## Source-backed registry batch — 20 November 2026
 
 Expanded ten previously title-only records using corresponding user-owned local source texts, with non-operational public digests committed under `public-notes/`. Each digest gives an archived source filename and SHA-256 for provenance without uploading the private original. **No new scientific validation, physical tests, clinical results, third-party approval or manufacturing details are claimed.** The source-versus-title mismatch for FSAMS-SKIN (industrial machine skin versus catalog EVA label) is flagged explicitly rather than silently reconciled. The private hand-mapping source is summarized without case-specific medical details.
