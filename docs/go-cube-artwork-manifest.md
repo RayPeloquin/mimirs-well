@@ -1,7 +1,7 @@
 # GO-CUBE and Court Governance artwork manifest
 
 **Dated:** 20 November 2026  
-**Status:** Source artwork received; the website's six image slots are prepared. Binary asset transfer into GitHub is **not complete**. Do not describe the illustrations as published at the listed `assets/` paths until those files exist.
+**Status:** Six optimized artwork assets published to GitHub and linked in the GO-CUBE and Court Governance Stack pages on 20 November 2026. SHA-256 hashes below were verified against the downloaded ZIP before publication; public URL retrieval remains a separate deployment check.
 
 ## Source/target mapping
 
@@ -27,9 +27,9 @@ The optimized files were prepared at original image dimensions with WebP encodin
 | go-cube-v052-chutes-combined-architecture.webp | `c212289a9fb1f730ade829c49c133a7f15d211cb08ba7e04f4b25c99d74c3e03` |
 | court-governance-stack-v10-rc2.webp | `df47b70a08ee1229abda11e08b77d7224d2914322d2a87f18b805e08f4fd61c1` |
 
-## Remaining publication step
+## Publication and remaining QA
 
-Upload each WebP to the target `assets/` path, then replace each matching `figure[data-asset]` placeholder with a genuine `<img>` linking to the published file and carrying precise alt text. Remove the pending-asset disclaimer after confirming all six assets and page renders. Check keyboard access, mobile layout, and fallback descriptions. Do not add multiple duplicate project records; the five GO-CUBE variants share one record and the Court Stack has its own parent entry.
+All six WebP files were committed to their specified `assets/` paths together with the updated HTML pages. The five GO-CUBE graphics remain under one record; the Court Stack graphic remains in its separate parent entry. Each is rendered with responsive `<img>` markup, descriptive alt text, and a full-size link. Check real public URL responses and keyboard/mobile rendering after deployment. Historical original PNGs remain in the downloaded ZIP and are not duplicated into the published repository.
 
 ### Evidence boundary
 

@@ -12,7 +12,7 @@
 - [Court Governance Stack v1.0-RC2](court-governance-stack.html): the proposed Chutes, GO-CUBE, HIPPO, Tesseract and Princess Clause parent architecture.
 - **Hypha Mind / GO-CUBE — Update-authorization testbed**: separate source-backed software study in the Registry; it does not establish either proposed integrated controller.
 
-The six supplied graphics are described in the new pages. **The binary images have not yet been uploaded into GitHub**; [the artwork transfer manifest](docs/go-cube-artwork-manifest.md) preserves exact target filenames and checksums. Artwork placeholders remain in the two pages until the assets are transferred.
+All six supplied graphics are published on the two design pages as optimized WebP images with full-size links and alt text; the original PNGs remain in the archived handoff ZIP. [The artwork manifest](docs/go-cube-artwork-manifest.md) records target filenames, hashes, and the publication boundary. Concept images are not implementation evidence.
 
 ## How to read the collection
 
