@@ -23,7 +23,7 @@ The Well brings together projects at **very different evidence stages**:
 - **Numerical and software results** apply to the recorded model, assumptions, tests, and version. They do not automatically establish physical performance.
 - **Concept illustrations** are artwork, not photographs of tested systems, manufacturing plans, or measurements.
 
-The [Divergence Ledger](https://raypeloquin.github.io/mimirs-well/#divergence-ledger) asks three questions of a project: **What did we intend? What actually happened? What else might this be useful for?** The first seven public pilots include KA PATCH, SKEPTIC-1, Temporal Acoustics, Ghostglass, RAVEN-P1, CRUCIBLE and BRIDLE-3.
+The [Divergence Ledger](https://raypeloquin.github.io/mimirs-well/#divergence-ledger) asks three questions of a project: **What did we intend? What actually happened? What else might this be useful for?** The first seven public pilots include KA PATCH, SKEPTIC-1, Temporal Acoustics, Ghostglass, RAVEN-P1, CRUCIBLE and BRIDLE-3. **Ten further documentary records (008–017)** were added on 20 November 2026: ECHO-Rx, ECHO-M, Third-Look, Temporal Reflection Chamber, Hallvard’s Promise, HEMOSTAT-R, FLUFFY-01, NDSM-01, Hypha Mind / GO-CUBE and Radio Echo Chamber. They are not ten new experimental results. [Source map](docs/divergence-ledger-008-017.md).
 
 ## Finding the source
 

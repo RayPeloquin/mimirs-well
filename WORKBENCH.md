@@ -6,6 +6,10 @@ Public handoff snapshot · 20 November 2026
 
 This is a maintained snapshot, not live monitoring or an automatic task runner. Read current source and commit history before resuming work. Do not put credentials, private conversations, personal details or unpublished technical material here.
 
+## Divergence Ledger batch 008–017 — 20 November 2026
+
+Added ten project-specific three-question records linked from the homepage ledger. Evidence sources include project READMEs, public research notes and the existing expanded Registry. Records distinguish computation, archival design revisions and untested concepts; no new physical or biological experiments were run. The seven original ledger pages remain unchanged. [Batch source map](docs/divergence-ledger-008-017.md).
+
 ## Small website-maintenance pass — 20 November 2026
 
 - Added a prominent **THE LEDGER** navigation link to the seven existing Divergence Ledger project records. These remain research documentation, not new experiments.
