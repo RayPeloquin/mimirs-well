@@ -6,7 +6,7 @@
       id: 'qubit-ankh-assembly',
       src: 'assets/qubit-ankh-quantum-concept.jpg',
       alt: 'Concept artwork of a suspended cryogenic-style quantum apparatus with many wires and an illuminated central panel marked by an ankh.',
-      caption: 'Ankh Qubit Assembly · archive concept artwork, not a validated device or a QBERT illustration. Original design version unverified.',
+      caption: 'Ankh Qubit Assembly · archive concept artwork. No hardware validation. Original design version unverified.',
     },
 
     {

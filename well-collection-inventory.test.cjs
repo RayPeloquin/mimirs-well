@@ -50,7 +50,7 @@ test('project-card count has distinct titles and all expanded records attach', (
   assert.ok(summary, 'README current inventory is present');
   assert.equal(Number(summary[1]), titles.length, 'README project count');
   assert.equal(Number(summary[2]), ids.size, 'README distinct title count');
-  assert.ok(read('WORKBENCH.md').includes('**Verified inventory after batch:** ' + expected), 'Workbench current summary needs updating');
+  assert.ok(read('WORKBENCH.md').includes('**Current inventory:** ' + expected), 'Workbench current summary needs updating');
   assert.ok(html.includes('<a href="ledger.html">THE LEDGER</a>'), 'Ledger not in main nav');
 });
 

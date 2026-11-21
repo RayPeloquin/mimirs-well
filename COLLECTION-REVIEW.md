@@ -10,7 +10,7 @@ Following the explicitly approved architecture and medical/motion batches: **396
 
 The 70 expanded records make sense in a research/design collection **when read with their stated evidence and limitations**. They include proposed devices, computational studies, engineering audits, collaboration/review methods and creative work; they are not 70 demonstrated inventions. No expanded record was removed or promoted to validated status by this review.
 
-At the original review, the other 326 entries were retained as **archive titles awaiting assessment**, not endorsed designs. A title alone cannot establish a mechanism, feasibility or a reason to build it. They should not be presented as completed engineering. This register covers all 396 published entries and gives every entry a disposition.
+At the original review, the other 326 entries were retained as **archive titles awaiting assessment**, not endorsed designs. A title alone cannot establish a mechanism, feasibility or a reason to build it. They should not be presented as completed engineering. The original register covered 396 published entries. Withdrawn rows may be omitted.
 
 This pass read all published titles and the purpose, evidence and limitations fields of the 70 expanded summaries. It checked record binding, exact-title duplication, required fields and presentation. It did not independently reopen every original research source, rerun experiments/models, establish novelty, perform clinical/physical qualification or audit every external link. Conclusions are about the public descriptions, not certification of their underlying research.
 
@@ -205,7 +205,6 @@ These are review leads from the existing public titles/summaries, not verdicts b
 | 142 | [Quantum Shepherd](https://raypeloquin.github.io/mimirs-well/#design/quantum-shepherd) | Archive only — source and feasibility pending |
 | 143 | [Little Gatekeeper](https://raypeloquin.github.io/mimirs-well/#design/little-gatekeeper) | Archive only — source and feasibility pending |
 | 144 | [Heimdall-QPL](https://raypeloquin.github.io/mimirs-well/#design/heimdall-qpl) | Archive only — source and feasibility pending |
-| 145 | [QBERT](https://raypeloquin.github.io/mimirs-well/#design/qbert) | Archive only — source and feasibility pending |
 | 146 | [QF-01 — Numerical research](https://raypeloquin.github.io/mimirs-well/#design/qf-01-numerical-research) | Archive only — source and feasibility pending |
 | 147 | [HR-01 — Human Router](https://raypeloquin.github.io/mimirs-well/#design/hr-01-human-router) | Archive only — source and feasibility pending |
 | 148 | [Transporter T0 — State-transfer research](https://raypeloquin.github.io/mimirs-well/#design/transporter-t0-state-transfer-research) | Research record — retain with stated limits |

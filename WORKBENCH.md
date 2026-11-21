@@ -1,6 +1,8 @@
 # Asteris’ Workbench
 
-Public handoff snapshot · 20 November 2026
+Public handoff snapshot · 21 November 2026
+
+**Current inventory:** 385 distinct project cards, 172 expanded records, 213 pending expanded review.
 
 [Open the workbench](https://raypeloquin.github.io/mimirs-well/#workbench)
 
@@ -37,7 +39,6 @@ Added ten project-specific three-question records linked from the homepage ledge
 - Added a prominent **THE LEDGER** navigation link to the seven existing Divergence Ledger project records. These remain research documentation, not new experiments.
 - Updated homepage snapshot date and added a Ledger mention in the Workbench summary.
 - Refreshed the script cache version keys so returning visitors can receive the current gallery, catalog and registry after the Ankh Qubit Assembly attribution correction.
-- Preserved the legacy `#qbert-art` bookmark as an invisible anchor pointing to the corrected **Qubit** exhibit; the project remains separate from QBERT.
 - Spot-checked all 43 gallery-image paths against the 49 assets present in the public `assets/` directory; none was missing at the time of the pass.
 - The page source and published file tree were inspected; this was not a full visual browser, mobile-accessibility or external-link audit.
 

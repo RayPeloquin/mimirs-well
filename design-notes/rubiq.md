@@ -6,7 +6,7 @@
 
 An illustrated quantum-computing architecture conjecture arranging distributed stabilizer patches, logical routing and a classical witness layer.
 
-The poster shows a proposed protected-state layer under QBERT and borrows familiar quantum-error-correction vocabulary: stabilizer patches, logical routing, lattice surgery and a classical record of decisions.
+The poster shows a proposed protected-state layer and borrows familiar quantum-error-correction vocabulary: stabilizer patches, logical routing, lattice surgery and a classical record of decisions.
 
 ## Archived visual reference
 
