@@ -6,6 +6,10 @@ Public handoff snapshot · 20 November 2026
 
 This is a maintained snapshot, not live monitoring or an automatic task runner. Read current source and commit history before resuming work. Do not put credentials, private conversations, personal details or unpublished technical material here.
 
+## Duplicate project-card cleanup — 20 November 2026
+
+Removed the second, archive-only Temporal Reflection Chamber project card from `catalog.js`, preserving its featured project card, source repository link, expanded Registry record and concept artwork. Verified current count: **386 cards / 386 unique titles**, with **152 expanded Registry records** and **234 awaiting expanded review**. Historical counts in older dated audits remain intact.
+
 ## Divergence Ledger library redesign — 20 November 2026
 
 Moved the full 17-record directory to [`ledger.html`](ledger.html). The homepage now previews only three recently updated records and links to the complete library. The canonical metadata list is `ledger-data.js`; `ledger-library.js` handles browser search, field/evidence filters, sorting and Show More (18 at a time). All 17 numbered project records retain their original URLs and contents. A no-script link list remains available on the dedicated page. Do not create ledger records automatically for every catalog project. [Maintenance rules](docs/ledger-library-maintenance.md).

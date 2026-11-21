@@ -44,7 +44,7 @@ Not all original sources are public. Some archive entries refer to private mater
 
 ## Audited source snapshot
 
-The [20 November 2026 collection and link audit](docs/source-and-collection-audit-2026-11-20.md) recorded **384 distinct project cards** and **152 expanded source-backed records** before the separate GO-CUBE and Court Governance Stack cards were added. The current source contains **387 distinct project cards** and the same **152 expanded source-backed records**. One further illustrated Temporal Reflection Chamber concept card was added to the catalog; its unbuilt and untested status remains explicit. It confirms 64 internal source-reference paths/occurrences and a sample of outside links, while distinguishing publisher access barriers from genuinely missing targets. These are dated source counts, **not** live scientific maturity indicators.
+The [20 November 2026 collection and link audit](docs/source-and-collection-audit-2026-11-20.md) recorded **384 distinct project cards** and **152 expanded source-backed records** before the separate GO-CUBE and Court Governance Stack cards were added. The current source contains **386 project cards with 386 distinct titles** and **152 expanded source-backed records**. The duplicate recovered-catalog title for Temporal Reflection Chamber was retired; its featured project card, source link, expanded Registry record and cutaway artwork remain in place. It confirms 64 internal source-reference paths/occurrences and a sample of outside links, while distinguishing publisher access barriers from genuinely missing targets. These are dated source counts, **not** live scientific maturity indicators.
 
 ## Maintenance and checks
 
