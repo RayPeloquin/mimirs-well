@@ -10,7 +10,7 @@ The Ledger is a separate directory, **not one record per project**. A new entry 
 
 ## Offering to the Gods of Technology
 
-The homepage uses a coin-and-ripple visual with the playful title **“An Offering to the Gods of Technology”**. It has a discreet, entirely voluntary [Support the Well](https://raypeloquin.github.io/mimirs-well/#offerings) invitation. It links to the public correspondence address already published on the [Legal & Rights](legal.html) page, for people who want to ask about supporting independently documented research, prototyping, equipment or archive upkeep. There is **no payment processor, invented donation link, paywall or pledge counter**. The website claims **no charitable tax-deductible status**. Contributors do not purchase project ownership, promised scientific outcomes or special access. A future verified payment destination must be reviewed before replacing the contact link.
+The homepage uses a coin-and-ripple visual with the playful title **“An Offering to the Gods of Technology”**. It has a discreet, entirely voluntary [Support the Well](https://raypeloquin.github.io/mimirs-well/#offerings) invitation. The button opens Stripe Checkout for a one-time tip in USD. Readers choose the amount. The archive remains free to everyone. A tip confers no ownership, special access or promised research outcome. The website claims no charitable tax-deductible status.
 
 ## Optional soundscape
 
