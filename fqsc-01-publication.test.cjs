@@ -22,7 +22,7 @@ test('FQSC-01 appears in the physics catalog with a dedicated design page', () =
     querySelector(selector) { return selector === '.grid' ? grid : null; },
     querySelectorAll() { return []; },
   };
-  vm.runInNewContext(fs.readFileSync(path.join(root, 'catalog.js'), 'utf8'), { document });
+  vm.runInNewContext(fs.readFileSync(path.join(root, 'catalog.js'), 'utf8'), { document, wellArmoryDivisions: require('./armory-data.js') });
   const card = grid.children.find(node => node.children.some(child => child.tag === 'h3' && child.textContent === 'FQSC-01'));
   assert.ok(card, 'the physics catalog must render the actual FQSC-01 design');
   assert.equal(card.dataset.category, 'physics');

@@ -5,27 +5,7 @@ const groups=[["safety","Portfolio architecture","Mount Olympus — Cross-domain
 groups.push(['biology','Illustrated concept','ECHO Protocell — Resonant and Provisioned Seed']);
 const labels={safety:'AI & governance',biology:'Biology & medicine',physics:'Physics & aerospace',infrastructure:'Water, power & infrastructure',robotics:'Robotics & field systems',community:'Communities & creative work',defense:'The Armory · Defense & Protective Systems'};
 // Public-facing grouping only: do not infer readiness, military qualification or weapon capability.
-const armoryDivisions=new Map([
- ['FIELD MEDIC — Guided-hand support','Battlefield medicine'],
- ['HEMOSTAT-R','Battlefield medicine'],
- ['Humanitarian Demining Drone','Autonomous support'],
- ['Ghostwalker Scout','Autonomous support'],
- ['Odin’s Ravens','Detection & awareness'],
- ['Aegis Sentinel Mesh','Detection & awareness'],
- ['OILSKIN SENTINEL','Protective systems'],
- ['HULL CALMSTACK DEFENDER','Protective systems'],
- ['AEGIS Veil / Veilkeeper','Protective systems'],
- ['AEGIS BufferShield','Protective systems'],
- ['AEGIS-10','Protective systems'],
- ['AG-DAS Guardian','Protective systems'],
- ['Weaver’s Shuttle','Security & resilience'],
- ['NEITH LANTERN Gate','Security & resilience'],
- ['Poseidon’s Trident','Advanced defense concepts'],
- ['Thor’s Hammer','Advanced defense concepts'],
- ['Tickhammer','Advanced defense concepts'],
- ['Fenrir','Advanced defense concepts'],
- ['HY-BRASIL DOME','Advanced defense concepts'],
-]);
+const armoryDivisions=wellArmoryDivisions;
 const grid=document.querySelector('.grid');
 document.querySelectorAll('.card').forEach(c=>{c.dataset.stage='repository';const badge=document.createElement('span');badge.className='stage';badge.textContent='Public repository';c.querySelector('h3').before(badge)});
 const third=document.createElement('article');third.className='card';third.dataset.category='biology';third.dataset.stage='repository';
@@ -137,7 +117,8 @@ groups.forEach(([category,status,titles])=>titles.split('\n').filter(title=>!wit
  grid.append(card);
 }));
 // Promote already-listed repository projects without creating duplicate project cards.
-for(const [name,division] of [['CRUCIBLE','Security & resilience'],['AEGIS-TWIN v0.6','Protective systems']]){
+for(const name of ['CRUCIBLE','AEGIS-TWIN v0.6']){
+ const division=armoryDivisions.get(name);
  const card=[...grid.querySelectorAll('.card')].find(c=>c.querySelector('h3')?.textContent===name);
  if(!card)continue;
  card.dataset.category='defense';

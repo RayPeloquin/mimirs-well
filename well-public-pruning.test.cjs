@@ -35,7 +35,7 @@ function renderCatalog() {
     },
     createElement: element,
   };
-  vm.runInNewContext(fs.readFileSync(path.join(__dirname, 'catalog.js'), 'utf8'), { document });
+  vm.runInNewContext(fs.readFileSync(path.join(__dirname, 'catalog.js'), 'utf8'), { document, wellArmoryDivisions: require('./armory-data.js') });
   return cards.map((card) => card.children.find((child) => child.tagName === 'h3')?.textContent);
 }
 

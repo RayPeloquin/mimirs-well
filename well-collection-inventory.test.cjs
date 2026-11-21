@@ -60,3 +60,16 @@ test('plain HTML, JSON and homepage counts match the published inventory', () =>
     path.join(__dirname, 'scripts/generate-catalog.cjs'), '--check'
   ]);
 });
+
+test('Armory navigation reaches published catalog entries without scripts', () => {
+  const armory = read('armory.html');
+  const publicEntries = JSON.parse(read('catalog.json'));
+  const divisions = require('./armory-data.js');
+  const expected = publicEntries.filter(entry => divisions.has(entry.title)).map(entry => entry.id).sort();
+  const links = [...armory.matchAll(/href="catalog\.html#([^"]+)"/g)].map(match => match[1]).sort();
+  assert.match(html, /<nav[^>]*aria-label="Main navigation"[\s\S]*?<a href="armory.html">THE ARMORY<\/a>/);
+  assert.ok(expected.length > 0);
+  assert.deepEqual(links, expected);
+  const plainCatalog = read('catalog.html');
+  for (const id of links) assert.ok(plainCatalog.includes('<li id="' + id + '">'));
+});
