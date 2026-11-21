@@ -78,6 +78,31 @@ const qubitNote=document.createElement('p');qubitNote.textContent='Ankh-centered
 const qubitLink=document.createElement('a');qubitLink.href='#qubit-art';qubitLink.textContent='View the Ankh Qubit artwork ↗';
 qubitCard.append(qubitTop,qubitStage,qubitHeading,qubitNote,qubitLink);grid.append(qubitCard);
 
+
+// Related architecture records: distinct from the existing Hypha Mind/GO-CUBE update-authorization pilot.
+const goCubeCard=document.createElement('article');
+goCubeCard.className='card';goCubeCard.dataset.category='safety';goCubeCard.dataset.stage='documented';
+const goCubeTop=document.createElement('div');goCubeTop.className='cardtop';
+const goCubeIndex=document.createElement('span');goCubeIndex.className='index';goCubeIndex.textContent=String(number++).padStart(2,'0')+' /';
+const goCubeTag=document.createElement('span');goCubeTag.className='tag';goCubeTag.textContent=labels.safety;
+goCubeTop.append(goCubeIndex,goCubeTag);
+const goCubeStage=document.createElement('span');goCubeStage.className='stage';goCubeStage.textContent='Concept artwork · Implementation unverified';
+const goCubeHeading=document.createElement('h3');goCubeHeading.textContent='GO-CUBE — Liberty Field Governor';
+const goCubeNote=document.createElement('p');goCubeNote.textContent='Proposed liberty-first governor for autonomy: protected safe zones, two-eye redundancy and pressure/encirclement awareness. Five historical graphics span v0.5.1, v0.5.2 and the Chutes integration. No implemented safety guarantee is established.';
+const goCubeLink=document.createElement('a');goCubeLink.href='go-cube.html';goCubeLink.textContent='Explore the GO-CUBE design family ↗';
+goCubeCard.append(goCubeTop,goCubeStage,goCubeHeading,goCubeNote,goCubeLink);grid.append(goCubeCard);
+const courtStackCard=document.createElement('article');
+courtStackCard.className='card';courtStackCard.dataset.category='safety';courtStackCard.dataset.stage='documented';
+const courtStackTop=document.createElement('div');courtStackTop.className='cardtop';
+const courtStackIndex=document.createElement('span');courtStackIndex.className='index';courtStackIndex.textContent=String(number++).padStart(2,'0')+' /';
+const courtStackTag=document.createElement('span');courtStackTag.className='tag';courtStackTag.textContent=labels.safety;
+courtStackTop.append(courtStackIndex,courtStackTag);
+const courtStackStage=document.createElement('span');courtStackStage.className='stage';courtStackStage.textContent='Parent architecture · Concept only';
+const courtStackHeading=document.createElement('h3');courtStackHeading.textContent='Court Governance Stack v1.0-RC2';
+const courtStackNote=document.createElement('p');courtStackNote.textContent='Proposed combined architecture integrating Chutes Cube, GO-CUBE, HIPPO Bus, Tesseract-Cube and Princess Clause. The supplied governance and medical-vignette graphic illustrates roles and decisions, not a validated controller.';
+const courtStackLink=document.createElement('a');courtStackLink.href='court-governance-stack.html';courtStackLink.textContent='Explore the parent governance stack ↗';
+courtStackCard.append(courtStackTop,courtStackStage,courtStackHeading,courtStackNote,courtStackLink);grid.append(courtStackCard);
+
 groups.forEach(([category,status,titles])=>titles.split('\n').filter(title=>!withdrawnTitles.has(title)).forEach(title=>{
  const armoryDivision=armoryDivisions.get(title);
  const publicCategory=armoryDivision?'defense':category;
