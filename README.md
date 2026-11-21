@@ -6,6 +6,14 @@
 
 **[Explore Mimir’s Well](https://raypeloquin.github.io/mimirs-well/)** · **[Divergence Ledger](https://raypeloquin.github.io/mimirs-well/#divergence-ledger)** · **[Workbench](https://raypeloquin.github.io/mimirs-well/#workbench)** · **[Legal & Rights](https://raypeloquin.github.io/mimirs-well/legal.html)**
 
+## Governance architecture family
+
+- [GO-CUBE — Liberty Field Governor](go-cube.html): v0.5.1 and v0.5.2 core concepts plus Chutes Cube integration.
+- [Court Governance Stack v1.0-RC2](court-governance-stack.html): the proposed Chutes, GO-CUBE, HIPPO, Tesseract and Princess Clause parent architecture.
+- **Hypha Mind / GO-CUBE — Update-authorization testbed**: separate source-backed software study in the Registry; it does not establish either proposed integrated controller.
+
+The six supplied graphics are described in the new pages. **The binary images have not yet been uploaded into GitHub**; [the artwork transfer manifest](docs/go-cube-artwork-manifest.md) preserves exact target filenames and checksums. Artwork placeholders remain in the two pages until the assets are transferred.
+
 ## How to read the collection
 
 The Well brings together projects at **very different evidence stages**:
@@ -32,7 +40,7 @@ Not all original sources are public. Some archive entries refer to private mater
 
 ## Audited source snapshot
 
-The [20 November 2026 collection and link audit](docs/source-and-collection-audit-2026-11-20.md) calculates **384 distinct project cards** and **152 expanded source-backed records**. It confirms 64 internal source-reference paths/occurrences and a sample of outside links, while distinguishing publisher access barriers from genuinely missing targets. These are dated source counts, **not** live scientific maturity indicators.
+The [20 November 2026 collection and link audit](docs/source-and-collection-audit-2026-11-20.md) recorded **384 distinct project cards** and **152 expanded source-backed records** before the separate GO-CUBE and Court Governance Stack cards were added. The current source contains **386 distinct project cards** and the same **152 expanded source-backed records**. It confirms 64 internal source-reference paths/occurrences and a sample of outside links, while distinguishing publisher access barriers from genuinely missing targets. These are dated source counts, **not** live scientific maturity indicators.
 
 ## Maintenance and checks
 
