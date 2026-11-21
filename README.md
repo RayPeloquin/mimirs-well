@@ -30,6 +30,10 @@ The [Divergence Ledger](https://raypeloquin.github.io/mimirs-well/#divergence-le
 
 Not all original sources are public. Some archive entries refer to private material or another project repository. The website is **read-only** to visitors; the [visitor log](https://raypeloquin.github.io/mimirs-well/#visitor-log) is hosted separately on GitHub.
 
+## Audited source snapshot
+
+The [20 November 2026 collection and link audit](docs/source-and-collection-audit-2026-11-20.md) calculates **384 distinct project cards** and **152 expanded source-backed records**. It confirms 64 internal source-reference paths/occurrences and a sample of outside links, while distinguishing publisher access barriers from genuinely missing targets. These are dated source counts, **not** live scientific maturity indicators.
+
 ## Maintenance and checks
 
 This is a static GitHub Pages site. Published tests include Node.js `*.test.cjs` checks for selected HTML, gallery, public-title and research-page behaviors. Run them in a local checkout with Node.js:
