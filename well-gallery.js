@@ -34,6 +34,30 @@
       caption: 'Temporal Acoustics · AI-generated visual comparison of cavity versus solid inclusion. Propagation paths are illustrative, not numerical results.',
     },
     {
+      id: 'hallvard-s-promise-little-lungs',
+      src: 'assets/hallvards-promise-ivory-diaphragm-module.jpg',
+      alt: 'Hallvard’s Promise HP-B0 v0.3 research concept poster showing an ivory and gold, transparent cylindrical diaphragm test module with two tubing connections.',
+      caption: 'Hallvard’s Promise · HP-B0 v0.3 neonatal breathing-support research illustration. Artist’s concept only: no prototype, breathing performance data or clinical validation.',
+    },
+    {
+      id: 'hallvard-s-promise-little-lungs',
+      src: 'assets/hallvards-promise-ribbon-of-breath.jpg',
+      alt: 'Hallvard’s Promise dedication poster with the words For the smallest breaths, soft luminous ribbon shapes and two tiny footprints.',
+      caption: 'Hallvard’s Promise · For the smallest breaths. Concept title artwork, not evidence of a demonstrated respiratory-assist system.',
+    },
+    {
+      id: 'hemostat-r',
+      src: 'assets/hemostat-r-three-questions.jpg',
+      alt: 'HEMOSTAT-R concept poster showing three panels of temporary wound-scaffold material: Bound the Activity, Preserve Needed Support and Verify Material Fate.',
+      caption: 'HEMOSTAT-R · Concept questions for a temporary repair material: limit active effects, preserve necessary support and verify removal or resorption. No material has been validated.',
+    },
+    {
+      id: 'hemostat-r',
+      src: 'assets/hemostat-r-trauma-repair-scaffold.jpg',
+      alt: 'HEMOSTAT-R speculative temporary trauma-repair scaffold artwork depicting an open wound bridged by a translucent filament mesh.',
+      caption: 'HEMOSTAT-R · AI-generated trauma-repair scaffold visualization. No demonstrated bleeding-control capability, clinical outcomes or approved use.',
+    },
+    {
       id: 'echo-rx',
       src: 'assets/echo-rx-responsive-cell-platform.webp',
       alt: 'ECHO-Rx Medicine made by cells concept poster illustrating a proposed cell-based responsive biologic-production platform.',
