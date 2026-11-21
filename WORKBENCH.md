@@ -19,11 +19,19 @@ This is a maintained snapshot, not live monitoring or an automatic task runner. 
 
 [Read the dated audit](docs/source-and-collection-audit-2026-11-20.md) before repeating or extending its checks.
 
-The current public source produces **384 distinct project cards**: 370 retained catalog titles, ten static featured cards, and four additional scripted cards. All **152** expanded registry overrides attach to a current project card; **232** cards do not yet have a source-backed expanded override. The older dated record below reports 387/151 and is preserved as historical context, not the current source total.
+The current public source produces **386 distinct project cards**: 370 retained catalog titles, ten static featured cards, and six additional scripted cards (including the two new Court governance records). All **152** expanded registry overrides attach to a current project card; **232** cards do not yet have a source-backed expanded override. The older dated record below reports 387/151 and is preserved as historical context, not the current source total.
 
 Checked **64 internal source-reference occurrences** (63 distinct published paths) against repository contents, **12 representative external-project GitHub targets** through the connected repository reader, and **five public non-GitHub reference pages**. No confirmed missing targets in these checked sets. One Nature DOI redirect was inaccessible through the retrieval service; treat it as a publisher access barrier, **not** a dead link.
 
 The homepage now includes an exact-count Workbench summary, a ten-card no-JavaScript description, and a larger touch target for Divergence Ledger links. A full fresh browser and assistive-technology audit is still pending.
+
+## Governance family publication — 20 November 2026
+
+The GO-CUBE v0.5.1–v0.5.2 Liberty Field Governor and Court Governance Stack v1.0-RC2 have separate linked HTML pages and catalog cards. The existing Hypha Mind / GO-CUBE update-authorization testbed has been retained with explicit non-equivalence: a toy software pilot cannot validate the proposed liberty field or combined Court governance.
+
+Five supplied artworks are assigned to the GO-CUBE family (three core variants and two Chutes integration posters); the sixth is assigned to the parent Court Stack. **The actual binary image files have not yet been transferred into the repository.** Page artwork slots display truthful holding panels in the meantime. [See the asset manifest](docs/go-cube-artwork-manifest.md) for stable target paths and integrity hashes. The source images were preserved and faithful full-resolution WebP copies were prepared as a handoff package.
+
+Current counts: **386 distinct project cards; 152 expanded records; 234 cards not yet carrying an expanded source-backed override**. This is a documentation inventory, not a validation rating. The older dated audit of 384 cards is retained unchanged.
 
 ## Current work
 
