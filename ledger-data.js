@@ -173,6 +173,136 @@
     "summary": "An unverified broadcast story becomes a measurable ringdown question.",
     "url": "radio-echo-chamber-divergence-ledger.html",
     "updated": "2026-11-20"
+  },
+  {
+    "number": 18,
+    "title": "SpinCell DLE",
+    "category": "Materials",
+    "evidence": "Concept / design",
+    "status": "Illustrated concept",
+    "summary": "An outlet can look enriched even when much of the incoming lithium leaves in another stream.",
+    "url": "spincell-dle-divergence-ledger.html",
+    "updated": "2026-11-21"
+  },
+  {
+    "number": 19,
+    "title": "Gaian Tailings",
+    "category": "Materials",
+    "evidence": "Concept / design",
+    "status": "Illustrated concept",
+    "summary": "Selective excavation depends on how well the map predicts material between sampling points.",
+    "url": "gaian-tailings-divergence-ledger.html",
+    "updated": "2026-11-21"
+  },
+  {
+    "number": 20,
+    "title": "OREHEARTH",
+    "category": "Energy",
+    "evidence": "Concept / design",
+    "status": "Illustrated concept",
+    "summary": "Sealed tubing and flow through fractures imply different paths for the working fluid.",
+    "url": "orehearth-geothermal-concept-divergence-ledger.html",
+    "updated": "2026-11-21"
+  },
+  {
+    "number": 21,
+    "title": "Hydrofell-01",
+    "category": "Energy",
+    "evidence": "Concept / design",
+    "status": "Illustrated concept",
+    "summary": "The proposed heat-reuse outlet depends on demand at the same time and place as the available heat.",
+    "url": "hydrofell-01-hydro-data-center-divergence-ledger.html",
+    "updated": "2026-11-21"
+  },
+  {
+    "number": 22,
+    "title": "Sky-Spine Observatory",
+    "category": "Physics",
+    "evidence": "Concept / design",
+    "status": "Illustrated concept",
+    "summary": "The separation of the collectors sets a geometric scale. The proposed image also depends on how well their signals can be combined.",
+    "url": "sky-spine-observatory-divergence-ledger.html",
+    "updated": "2026-11-21"
+  },
+  {
+    "number": 23,
+    "title": "Recipe Pucks",
+    "category": "Design",
+    "evidence": "Concept / design",
+    "status": "Illustrated concept",
+    "summary": "The illustration establishes a physical recipe selector while leaving the mechanism open.",
+    "url": "recipe-pucks-divergence-ledger.html",
+    "updated": "2026-11-21"
+  },
+  {
+    "number": 24,
+    "title": "Ranchline Utility",
+    "category": "Engineering",
+    "evidence": "Concept / design",
+    "status": "Illustrated concept",
+    "summary": "A combined mechanical and electrical line raises two distinct qualification questions.",
+    "url": "modular-rope-coupler-ranchline-utility-divergence-ledger.html",
+    "updated": "2026-11-21"
+  },
+  {
+    "number": 25,
+    "title": "Silt HIPPO",
+    "category": "Infrastructure",
+    "evidence": "Concept / design",
+    "status": "Illustrated concept",
+    "summary": "The proposed settling geometry raises a measurable solids-removal question separate from structural and drinking-water qualification.",
+    "url": "silt-hippo-silo-cistern-divergence-ledger.html",
+    "updated": "2026-11-21"
+  },
+  {
+    "number": 26,
+    "title": "PaperCall Sky",
+    "category": "Communications",
+    "evidence": "Concept / design",
+    "status": "Illustrated concept",
+    "summary": "The fallback diagram leaves delivery confirmation under loss of coverage untested.",
+    "url": "papercall-papercall-sky-divergence-ledger.html",
+    "updated": "2026-11-21"
+  },
+  {
+    "number": 27,
+    "title": "Echo Bowl",
+    "category": "Physics",
+    "evidence": "Concept / design",
+    "status": "Illustrated concept",
+    "summary": "The diagram lays out a reference channel but contains no calibrated observation of a celestial echo.",
+    "url": "echo-bowl-divergence-ledger.html",
+    "updated": "2026-11-21"
+  },
+  {
+    "number": 28,
+    "title": "Diamond Thermoelectric Power Source",
+    "category": "Energy",
+    "evidence": "Concept / design",
+    "status": "Materials comparison proposed",
+    "summary": "A proposed long-duration power system yields a narrower comparison of thermal interfaces.",
+    "url": "diamond-thermoelectric-divergence-ledger.html",
+    "updated": "2026-11-21"
+  },
+  {
+    "number": 29,
+    "title": "FQSC-01",
+    "category": "Physics",
+    "evidence": "Concept / design",
+    "status": "Model proposed",
+    "summary": "The design review narrowed a field-energy analogy to a question about spectral coupling and ion motion.",
+    "url": "fqsc-01-divergence-ledger.html",
+    "updated": "2026-11-21"
+  },
+  {
+    "number": 30,
+    "title": "Chihuahua Sphere",
+    "category": "Energy",
+    "evidence": "Concept / design",
+    "status": "Calculation-only design",
+    "summary": "Separate lamp and receiver balances clarify how to count light transferred inside the apparatus.",
+    "url": "chihuahua-sphere-divergence-ledger.html",
+    "updated": "2026-11-21"
   }
 ]);
 })(typeof window !== "undefined" ? window : globalThis);

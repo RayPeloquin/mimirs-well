@@ -8,9 +8,9 @@ const root=__dirname;
 const context={window:{}};
 vm.runInNewContext(fs.readFileSync(path.join(root,'ledger-data.js'),'utf8'),context);
 const records=context.window.MimirsLedgerData;
-test('seventeen ordered, unique permanent record IDs and URLs',()=>{
- assert.equal(records.length,17);
- assert.deepEqual(Array.from(records,r=>r.number),Array.from({length:17},(_,i)=>i+1));
+test('thirty ordered, unique permanent record IDs and URLs',()=>{
+ assert.equal(records.length,30);
+ assert.deepEqual(Array.from(records,r=>r.number),Array.from({length:30},(_,i)=>i+1));
  assert.equal(new Set(Array.from(records,r=>r.url)).size,records.length);
  for(const r of records){
   assert.match(r.url,/^[a-z0-9-]+\.html$/);
@@ -33,7 +33,7 @@ test('library and homepage use shared directory and preserve a no-script list',(
  assert.ok(page.includes('id="ledger-sort"'));
  assert.ok(page.includes('id="ledger-more"'));
  assert.ok(page.includes('id="ledger-fallback"'));
- assert.equal((page.match(/<li><a href="[a-z0-9-]+-ledger\.html|<li><a href="divergence-ledger\.html/g)||[]).length,17);
+ assert.equal((page.match(/<li><a href="[a-z0-9-]+-ledger\.html|<li><a href="divergence-ledger\.html/g)||[]).length,30);
  for(const r of records)assert.ok(page.includes('href="'+r.url+'"'),r.url+' lacks fallback link');
  assert.equal((home.slice(home.indexOf('id="ledger-preview"'),home.indexOf('id="ledger-preview"')+2500).match(/DIVERGENCE RECORD/g)||[]).length,3);
 });

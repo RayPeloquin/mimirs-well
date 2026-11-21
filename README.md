@@ -35,6 +35,8 @@ The Well brings together projects at **very different evidence stages**:
 
 The [Divergence Ledger](https://raypeloquin.github.io/mimirs-well/#divergence-ledger) asks three questions of a project: **What did we intend? What actually happened? What else might this be useful for?** The first seven public pilots include KA PATCH, SKEPTIC-1, Temporal Acoustics, Ghostglass, RAVEN-P1, CRUCIBLE and BRIDLE-3. **Ten further documentary records (008–017)** were added on 20 November 2026: ECHO-Rx, ECHO-M, Third-Look, Temporal Reflection Chamber, Hallvard’s Promise, HEMOSTAT-R, FLUFFY-01, NDSM-01, Hypha Mind / GO-CUBE and Radio Echo Chamber. They are not ten new experimental results. [Source map](docs/divergence-ledger-008-017.md).
 
+Records 018–030, published 21 November 2026, cover ten illustrated designs and three energy or physics proposals. Each entry links to its public source note and identifies a test that could change the record. [Browse all 30 records](https://raypeloquin.github.io/mimirs-well/ledger.html).
+
 ## Finding the source
 
 - `index.html`: main site and project collection.
