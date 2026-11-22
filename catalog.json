@@ -1256,14 +1256,6 @@
     "url": "index.html#design/hippo-dragon"
   },
   {
-    "id": "hippo-energy-variant",
-    "title": "HIPPO Energy Variant",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
-    "url": "index.html#design/hippo-energy-variant"
-  },
-  {
     "id": "hippo-mag-01-magnetic-compensation-experiment",
     "title": "HIPPO-MAG-01 — Magnetic-compensation experiment",
     "status": "Expanded record",
@@ -1808,14 +1800,6 @@
     "url": "index.html#design/neutrino-detector"
   },
   {
-    "id": "nexus-bridge",
-    "title": "Nexus Bridge",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
-    "url": "index.html#design/nexus-bridge"
-  },
-  {
     "id": "null-1-null-1h-shield-1",
     "title": "NULL-1 / NULL-1H / SHIELD-1",
     "status": "Source review pending",
@@ -1976,14 +1960,6 @@
     "url": "index.html#design/pando-tongue"
   },
   {
-    "id": "paper-factory",
-    "title": "Paper Factory",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
-    "url": "index.html#design/paper-factory"
-  },
-  {
     "id": "papercall-papercall-sky",
     "title": "PaperCall / PaperCall Sky",
     "status": "Expanded record",
@@ -2062,14 +2038,6 @@
     "evidence": null,
     "contributors": null,
     "url": "index.html#design/phantom-weave"
-  },
-  {
-    "id": "physics-operating-system",
-    "title": "Physics Operating System",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
-    "url": "index.html#design/physics-operating-system"
   },
   {
     "id": "pipe-listener-01-plastic-pipe-acoustic-leak-investigation",
@@ -2294,14 +2262,6 @@
     "evidence": "The reviewed source supplies a cross-domain architecture and deployment examples, not a deployed fusion engine, measured business return, validated uncertainty calibration or learning benefit. Commercial/hardened wording is unsubstantiated by implementation evidence in that artifact. This website update reviewed the saved artifact; it did not rerun the underlying research.",
     "contributors": "Archived in Mr. Peloquin's collection; per-module implementation and review provenance remain unresolved.",
     "url": "index.html#design/reality-overlay-stack"
-  },
-  {
-    "id": "reality-stress-engine",
-    "title": "Reality Stress Engine",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
-    "url": "index.html#design/reality-stress-engine"
   },
   {
     "id": "recipe-pucks",
@@ -2776,14 +2736,6 @@
     "url": "index.html#design/third-look"
   },
   {
-    "id": "thor",
-    "title": "Thor",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
-    "url": "index.html#design/thor"
-  },
-  {
     "id": "thor-s-hammer",
     "title": "Thor’s Hammer",
     "status": "Source review pending",
@@ -2896,14 +2848,6 @@
     "url": "index.html#design/tumor-hunter"
   },
   {
-    "id": "tunneler",
-    "title": "Tunneler",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
-    "url": "index.html#design/tunneler"
-  },
-  {
     "id": "uss-eldridge-working-physics-research",
     "title": "USS Eldridge — Working-physics research",
     "status": "Expanded record",
@@ -2982,14 +2926,6 @@
     "evidence": null,
     "contributors": null,
     "url": "index.html#design/warden-1-farm-guardian"
-  },
-  {
-    "id": "waterjet-cutter",
-    "title": "Waterjet Cutter",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
-    "url": "index.html#design/waterjet-cutter"
   },
   {
     "id": "weaver-s-shuttle",
