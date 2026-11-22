@@ -3,6 +3,48 @@
   'use strict';
   const illustrations = [
     {
+      id: 'third-look',
+      src: 'assets/third-look-head.webp',
+      alt: 'Three lenses in a triangular housing labeled A, B and C, suspended just above the handheld mount.',
+      caption: 'Concept artwork · Detachable imaging head · proposed optical layout.',
+    },
+    {
+      id: 'third-look',
+      src: 'assets/third-look-phantom.webp',
+      alt: 'A gloved hand holds the three-camera head above a curved synthetic target. A monitor displays its outlined boundary.',
+      caption: 'Concept artwork · Synthetic target study · illustration of the proposed imaging workflow.',
+    },
+    {
+      id: 'third-look',
+      src: 'assets/third-look-presenter.webp',
+      alt: 'An illustrated presenter holds the three-lens instrument next to a flat sample on a table.',
+      caption: 'Concept artwork · Presentation concept · handheld form and scale.',
+    },
+    {
+      id: 'diamond-thermoelectric-power-source',
+      src: 'assets/diamond-thermoelectric-power-source-power-head.webp',
+      alt: 'A spacecraft panel beside a cutaway of the proposed power head. The poster labels the year-20 output as a design target.',
+      caption: 'Concept artwork · Spacecraft power concept · the output and lifetime shown are design goals.',
+    },
+    {
+      id: 'diamond-thermoelectric-power-source',
+      src: 'assets/diamond-thermoelectric-power-source-comparison.webp',
+      alt: 'Copper-colored and transparent plates above two white electrical modules with leads.',
+      caption: 'Concept artwork · Proposed comparison materials for the heat-spreader study.',
+    },
+    {
+      id: 'diamond-thermoelectric-power-source',
+      src: 'assets/diamond-thermoelectric-power-source-rig.webp',
+      alt: 'A clamped thermal test fixture on a bench beside a copper plate and a wired thermoelectric module.',
+      caption: 'Concept artwork · Proposed bench fixture for comparing heat spreaders under matched conditions.',
+    },
+    {
+      id: 'diamond-thermoelectric-power-source',
+      src: 'assets/diamond-thermoelectric-power-source-test-poster.webp',
+      alt: 'Poster asking whether diamond can beat copper, with a clamped test fixture and a one-watt stretch target.',
+      caption: 'Concept artwork · The Diamond Test · the poster states a hypothesis and stretch target. A measured advantage remains open.',
+    },
+    {
       id: 'cerebris-trauma-support',
       src: 'assets/cerebris-v1-trauma-support.webp',
       alt: 'CEREBRIS v1.0 concept poster showing a portable cerebral support console, its detachable module, an anatomical illustration and a simulated monitoring display.',
