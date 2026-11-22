@@ -305,8 +305,6 @@ These are review leads from the existing public titles/summaries, not verdicts b
 | 243 | [Gaian Tailings](https://raypeloquin.github.io/mimirs-well/#design/gaian-tailings) | Archive only — source and feasibility pending |
 | 244 | [Blackwall — Fuel reclaimer](https://raypeloquin.github.io/mimirs-well/#design/blackwall-fuel-reclaimer) | Archive only — source and feasibility pending |
 | 245 | [Charcoal Microplastic Filtration](https://raypeloquin.github.io/mimirs-well/#design/charcoal-microplastic-filtration) | Archive only — source and feasibility pending |
-| 246 | [Orichalcum Lattice](https://raypeloquin.github.io/mimirs-well/#design/orichalcum-lattice) | Archive only — source and feasibility pending |
-| 247 | [Orichalcum Crown](https://raypeloquin.github.io/mimirs-well/#design/orichalcum-crown) | Archive only — source and feasibility pending |
 | 248 | [Resonant Edge — Masonry saw](https://raypeloquin.github.io/mimirs-well/#design/resonant-edge-masonry-saw) | Archive only — source and feasibility pending |
 | 249 | [Resonant Brace](https://raypeloquin.github.io/mimirs-well/#design/resonant-brace) | Archive only — source and feasibility pending |
 | 250 | [Waterjet Cutter](https://raypeloquin.github.io/mimirs-well/#design/waterjet-cutter) | Archive only — source and feasibility pending |
