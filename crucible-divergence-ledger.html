@@ -16,7 +16,7 @@ footer{border-top:1px solid var(--line);padding:35px 0 60px;color:var(--muted);f
 @media(max-width:770px){.triad{grid-template-columns:1fr}.record{min-height:0}.flow{grid-template-columns:1fr 1fr}}
 @media(max-width:540px){.hero{padding:42px 0 32px}.flow{grid-template-columns:1fr}th,td{display:block;width:auto;padding:9px 5px}th{border-bottom:0;padding-top:17px}td{padding-bottom:17px}section{padding:37px 0}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-</style></head><body>
+.verdicts th,.verdicts td{display:table-cell;width:auto;text-align:left;padding:.45rem}.verdicts caption{text-align:left;padding:.6rem 0}</style></head><body>
 <header><div class="wrap"><a class="brand" href="index.html">✳ Mimir’s Well</a><a class="back" href="index.html#divergence-ledger">← Back to the Ledger</a></div></header>
 <main id="main">
 <div class="wrap hero"><div class="eyebrow">Divergence Ledger · Pilot 006 · Autonomy test harness · v0.2 physics and evidence</div>
@@ -27,6 +27,93 @@ footer{border-top:1px solid var(--line);padding:35px 0 60px;color:var(--muted);f
 <div class="triad"><article class="record"><div class="number">01 / INTENDED</div><h3>What we intended</h3><p>Test explicit mission contracts on simulated rover and quadrotor dynamics, preserve counterexamples, compare a deliberately defective baseline with a manually improved controller and verify replay integrity.</p><p class="micro">The original v0.2 campaign has 40 held-out scenarios per model for two controllers: 160 paired-controller evaluations.</p></article><article class="record"><div class="number">02 / OBSERVED</div><h3>What actually happened</h3><p>The rover's guarded controller reduced held-out contract violations from <strong>8/40 to 0/40</strong>. The quadrotor changed from <strong>31/40 to 27/40</strong>—and included <strong>one regression</strong>. Later replay patches fixed a case where trace checksum alone could conceal changed verdicts, and rejected a changed physics timestep during checkpoint restore.</p><p class="micro">The saved campaign belongs to the historical 34-check ZIP. The current source has 37 validation checks; those patched revisions did not rerun or recertify the historical 160-trace campaign.</p></article><article class="record"><div class="number">03 / CROSSOVER</div><h3>What else might this be useful for?</h3><p>The transferable method is an evidence-preserving failure laboratory for other software and cyber-physical systems: freeze source and assumptions, store counterexamples, test replay integrity, and explicitly retain regressions.</p><p class="micro">An engineering research direction, not production autonomy certification.</p></article></div>
 <div class="notice"><strong>The divergence:</strong> An improved aggregate result can conceal an individual regression. Replaying the wrong environment can create false confidence. The full history is part of the safety evidence.</div><figure style="max-width:880px;margin:30px 0 0"><img src="https://raw.githubusercontent.com/RayPeloquin/CRUCIBLE-Autonomy-Test-Harness/main/CRUCIBLE-v0.2.png" alt="CRUCIBLE v0.2 recorded simulation results for rover and quadrotor controller contract violations." loading="lazy" decoding="async" style="display:block;max-width:100%;height:auto;border:1px solid var(--line);border-radius:6px;background:#f0f2f2"><figcaption class="muted" style="font-size:12px;margin-top:9px">Saved v0.2 campaign overview; these results describe synthetic scenarios, not hardware trials.</figcaption></figure></div></section>
 <section aria-labelledby="evidence-title"><div class="wrap"><div class="eyebrow">02 / Keep the numbers honest</div><h2 id="evidence-title">The evidence at a glance</h2><div class="flow"><article><strong style="font:29px Georgia,serif">160</strong><p>Original held-out controller runs</p></article><article><strong style="font:29px Georgia,serif">27 / 40</strong><p>Guarded quadrotor violations remain</p></article><article><strong style="font:29px Georgia,serif">37</strong><p>Checks in current patched source</p></article></div>
+<h2 id="recount">Check the 8/40 result</h2>
+<p>After the simulated operator link went down, the rover had 2.6 seconds to slow to 0.2 m/s or less and complete 0.4 seconds at that speed or below. A run counted as one violation if it missed that requirement or breached a speed, tilt or travel limit. The quadrotor had its own hold-position and safety requirements.</p>
+<p>Each row pairs two controllers on the same held-out scenario. Count “Violation” in each column. For the rover, eight baseline violations became passes and the other 32 cases passed with both controllers. For the quadrotor, five cases improved and one regressed, taking the total from 31 violations to 27.</p>
+<details><summary>Inspect all 40 rover scenarios</summary><table class="verdicts"><caption>Rover · saved overall verdict by archive scenario number</caption><thead><tr><th scope="col">Scenario</th><th scope="col">Baseline</th><th scope="col">Guarded</th></tr></thead><tbody>
+<tr><th scope="row">000</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">001</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">002</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">003</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">004</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">005</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">006</th><td>Violation</td><td>Met</td></tr>
+<tr><th scope="row">007</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">008</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">009</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">010</th><td>Violation</td><td>Met</td></tr>
+<tr><th scope="row">011</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">012</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">013</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">014</th><td>Violation</td><td>Met</td></tr>
+<tr><th scope="row">015</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">016</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">017</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">018</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">019</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">020</th><td>Violation</td><td>Met</td></tr>
+<tr><th scope="row">021</th><td>Violation</td><td>Met</td></tr>
+<tr><th scope="row">022</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">023</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">024</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">025</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">026</th><td>Violation</td><td>Met</td></tr>
+<tr><th scope="row">027</th><td>Violation</td><td>Met</td></tr>
+<tr><th scope="row">028</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">029</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">030</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">031</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">032</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">033</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">034</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">035</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">036</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">037</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">038</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">039</th><td>Violation</td><td>Met</td></tr></tbody></table></details>
+<details><summary>Inspect all 40 quadrotor scenarios</summary><table class="verdicts"><caption>Quadrotor · saved overall verdict by archive scenario number</caption><thead><tr><th scope="col">Scenario</th><th scope="col">Baseline</th><th scope="col">Guarded</th></tr></thead><tbody>
+<tr><th scope="row">000</th><td>Violation</td><td>Violation</td></tr>
+<tr><th scope="row">001</th><td>Violation</td><td>Met</td></tr>
+<tr><th scope="row">002</th><td>Violation</td><td>Violation</td></tr>
+<tr><th scope="row">003</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">004</th><td>Violation</td><td>Violation</td></tr>
+<tr><th scope="row">005</th><td>Violation</td><td>Violation</td></tr>
+<tr><th scope="row">006</th><td>Violation</td><td>Violation</td></tr>
+<tr><th scope="row">007</th><td>Violation</td><td>Violation</td></tr>
+<tr><th scope="row">008</th><td>Violation</td><td>Violation</td></tr>
+<tr><th scope="row">009</th><td>Violation</td><td>Violation</td></tr>
+<tr><th scope="row">010</th><td>Violation</td><td>Violation</td></tr>
+<tr><th scope="row">011</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">012</th><td>Violation</td><td>Violation</td></tr>
+<tr><th scope="row">013</th><td>Violation</td><td>Violation</td></tr>
+<tr><th scope="row">014</th><td>Violation</td><td>Violation</td></tr>
+<tr><th scope="row">015</th><td>Violation</td><td>Met</td></tr>
+<tr><th scope="row">016</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">017</th><td>Violation</td><td>Violation</td></tr>
+<tr><th scope="row">018</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">019</th><td>Violation</td><td>Violation</td></tr>
+<tr><th scope="row">020</th><td>Violation</td><td>Violation</td></tr>
+<tr><th scope="row">021</th><td>Violation</td><td>Violation</td></tr>
+<tr><th scope="row">022</th><td>Met</td><td>Violation · regression</td></tr>
+<tr><th scope="row">023</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">024</th><td>Violation</td><td>Met</td></tr>
+<tr><th scope="row">025</th><td>Violation</td><td>Violation</td></tr>
+<tr><th scope="row">026</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">027</th><td>Violation</td><td>Violation</td></tr>
+<tr><th scope="row">028</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">029</th><td>Violation</td><td>Violation</td></tr>
+<tr><th scope="row">030</th><td>Met</td><td>Met</td></tr>
+<tr><th scope="row">031</th><td>Violation</td><td>Violation</td></tr>
+<tr><th scope="row">032</th><td>Violation</td><td>Violation</td></tr>
+<tr><th scope="row">033</th><td>Violation</td><td>Violation</td></tr>
+<tr><th scope="row">034</th><td>Violation</td><td>Met</td></tr>
+<tr><th scope="row">035</th><td>Violation</td><td>Violation</td></tr>
+<tr><th scope="row">036</th><td>Violation</td><td>Violation</td></tr>
+<tr><th scope="row">037</th><td>Violation</td><td>Violation</td></tr>
+<tr><th scope="row">038</th><td>Violation</td><td>Met</td></tr>
+<tr><th scope="row">039</th><td>Violation</td><td>Violation</td></tr></tbody></table></details>
+<p>We recounted the saved verdicts from 160 trace files in the historical v0.2 release and checked each file against the archive’s SHA-256 manifest. This recount reads the recorded outcomes. Replaying the simulation is a separate check.</p>
+<p><a href="https://github.com/RayPeloquin/CRUCIBLE-Autonomy-Test-Harness/blob/d8901a92c7003b022cc38ec5bd0f8ca7ec06fe5e/v0.2/contracts/mission.json">Read the exact rules</a> · <a href="https://github.com/RayPeloquin/CRUCIBLE-Autonomy-Test-Harness/blob/d8901a92c7003b022cc38ec5bd0f8ca7ec06fe5e/v0.2/results/summary.json">Inspect the campaign summary</a> · <a href="https://github.com/RayPeloquin/CRUCIBLE-Autonomy-Test-Harness/blob/d8901a92c7003b022cc38ec5bd0f8ca7ec06fe5e/CRUCIBLE-v0.2.zip">Open the frozen archive on GitHub</a></p>
 <p class="muted">These figures are copied from the project's published research outputs. Their evidence level and applicability are restricted by the original model, simulation and study limitations.</p>
 </div></section>
 <section aria-labelledby="next-title"><div class="wrap"><div class="eyebrow">03 / Next reproducible brick</div><h2 id="next-title">How to test the next question</h2><div class="flow"><article><strong>1 · Preserve the original</strong><p>Keep the release archive and source/environment hashes for the original held-out results.</p></article><article><strong>2 · Challenge an independent controller</strong><p>Test fresh, unseen faults; inspect the one quadrotor regression and prioritize mission-owner-approved requirements.</p></article><article><strong>3 · Progress through validation gates</strong><p>Calibrate physical and sensor models before SITL/HIL and controlled hardware trials. Use fresh held-out scenarios for any changed controller.</p></article></div></div></section>
