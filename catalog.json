@@ -128,14 +128,6 @@
     "url": "index.html#design/aether-latch-memory"
   },
   {
-    "id": "aether-shroud",
-    "title": "Aether Shroud",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
-    "url": "index.html#design/aether-shroud"
-  },
-  {
     "id": "aetherfilament-memory",
     "title": "Aetherfilament Memory",
     "status": "Source review pending",
@@ -294,14 +286,6 @@
     "evidence": null,
     "contributors": null,
     "url": "index.html#design/atmospheric-firefighting-system"
-  },
-  {
-    "id": "attractor",
-    "title": "ATTRACTOR",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
-    "url": "index.html#design/attractor"
   },
   {
     "id": "authority-at-commit",
@@ -488,22 +472,6 @@
     "url": "index.html#design/chromo-veil"
   },
   {
-    "id": "chrono-veil",
-    "title": "Chrono Veil",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
-    "url": "index.html#design/chrono-veil"
-  },
-  {
-    "id": "chronos-bridge",
-    "title": "Chronos Bridge",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
-    "url": "index.html#design/chronos-bridge"
-  },
-  {
     "id": "chronovisor",
     "title": "Chronovisor",
     "status": "Source review pending",
@@ -518,14 +486,6 @@
     "evidence": "No CMH-01 specimen has been manufactured, mechanically tested, blood-tested, aged or implanted. The brief supplies component precedents and checked arithmetic, not a new physical result. Exact material/process selection and the complete system remain open. Architecture-dependent improvement and implant suitability are unestablished. This website update reviewed the saved source; it did not rerun models or conduct experiments.",
     "contributors": "Ray Peloquin + U.I. One integrating agent and three separate AI reviewers covered the design; this is not a named external-model consultation, laboratory verification or regulatory approval.",
     "url": "index.html#design/cmh-01-contractile-heart-material-research"
-  },
-  {
-    "id": "concordia",
-    "title": "Concordia",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
-    "url": "index.html#design/concordia"
   },
   {
     "id": "conduct-architecture",
@@ -654,22 +614,6 @@
     "evidence": "No measured site yield, contaminant analysis, long-term performance or potable-water qualification is supplied. Output may be zero; historical yield ranges are unvalidated and are not published as ratings. The source explicitly separates collection from downstream treatment and verification. This website update reviewed the saved source; it did not rerun models or conduct experiments.",
     "contributors": "Archived HIPPO stack and Peirene notes in Mr. Peloquin's collection; detailed implementation attribution remains unresolved.",
     "url": "index.html#design/desert-hippo-well-atmospheric-feedwater-collection"
-  },
-  {
-    "id": "deuterion",
-    "title": "DEUTERION",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
-    "url": "index.html#design/deuterion"
-  },
-  {
-    "id": "devouring-lattice",
-    "title": "Devouring Lattice",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
-    "url": "index.html#design/devouring-lattice"
   },
   {
     "id": "diamond-thermoelectric-power-source",
@@ -1104,14 +1048,6 @@
     "url": "index.html#design/green-craft-exterior-concept"
   },
   {
-    "id": "hadron-seed-chamber",
-    "title": "Hadron Seed Chamber",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
-    "url": "index.html#design/hadron-seed-chamber"
-  },
-  {
     "id": "hallvard-s-promise-little-lungs",
     "title": "Hallvard’s Promise / Little Lungs",
     "status": "Expanded record",
@@ -1336,14 +1272,6 @@
     "url": "index.html#design/hr-01-human-router"
   },
   {
-    "id": "hsx-01-hsx-21",
-    "title": "HSX-01 / HSX-21",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
-    "url": "index.html#design/hsx-01-hsx-21"
-  },
-  {
     "id": "hull-calmstack-defender",
     "title": "HULL CALMSTACK DEFENDER",
     "status": "Source review pending",
@@ -1424,14 +1352,6 @@
     "url": "index.html#design/hypha-rootway"
   },
   {
-    "id": "iexalt-node",
-    "title": "iExalt Node",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
-    "url": "index.html#design/iexalt-node"
-  },
-  {
     "id": "inkheal",
     "title": "INKHEAL",
     "status": "Source review pending",
@@ -1470,22 +1390,6 @@
     "evidence": null,
     "contributors": null,
     "url": "index.html#design/janus-loop-supply-recovery"
-  },
-  {
-    "id": "ka-fold",
-    "title": "KA Fold",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
-    "url": "index.html#design/ka-fold"
-  },
-  {
-    "id": "ka-lock",
-    "title": "KA Lock",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
-    "url": "index.html#design/ka-lock"
   },
   {
     "id": "ka-patch-bioenergy-jewelry",
@@ -1630,14 +1534,6 @@
     "evidence": "No prototype, simulation result, clinical performance or novelty is claimed. Published blood–brain-barrier opening and drug-delivery studies motivate investigation but do not validate this proposed combination. More drug delivery or MRI enhancement does not itself establish tumor control or survival benefit. This website update reviewed the saved source; it did not rerun models or conduct experiments.",
     "contributors": "Mr. Peloquin's research collection. Grok, Claude, Gemini and Meta AI contributed critiques; Codex checked and consolidated objections. AI critique is not clinical validation.",
     "url": "index.html#design/margin-01-focused-ultrasound-drug-delivery-research"
-  },
-  {
-    "id": "mechage",
-    "title": "MECHAGE",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
-    "url": "index.html#design/mechage"
   },
   {
     "id": "medi-goo",
@@ -2056,14 +1952,6 @@
     "url": "index.html#design/pla-1-plasmoid-laser-communications-array"
   },
   {
-    "id": "planetary-stitch",
-    "title": "Planetary Stitch",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
-    "url": "index.html#design/planetary-stitch"
-  },
-  {
     "id": "plasmoid-memory-cell-seven-cell-ring",
     "title": "Plasmoid Memory Cell / Seven-Cell Ring",
     "status": "Source review pending",
@@ -2102,14 +1990,6 @@
     "evidence": null,
     "contributors": null,
     "url": "index.html#design/poseidon-s-trident"
-  },
-  {
-    "id": "probe-x-eversor",
-    "title": "PROBE-X EVERSOR",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
-    "url": "index.html#design/probe-x-eversor"
   },
   {
     "id": "pulselink-reentry",
@@ -2760,14 +2640,6 @@
     "url": "index.html#design/thoth-s-mind"
   },
   {
-    "id": "thunder-vault",
-    "title": "Thunder Vault",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
-    "url": "index.html#design/thunder-vault"
-  },
-  {
     "id": "tickhammer",
     "title": "Tickhammer",
     "status": "Source review pending",
@@ -2872,14 +2744,6 @@
     "url": "index.html#design/veil-e-edison-01"
   },
   {
-    "id": "veil-gate-exotic-lattice",
-    "title": "Veil Gate — Exotic lattice",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
-    "url": "index.html#design/veil-gate-exotic-lattice"
-  },
-  {
     "id": "veil-resonator",
     "title": "Veil Resonator",
     "status": "Source review pending",
@@ -2974,14 +2838,6 @@
     "evidence": null,
     "contributors": null,
     "url": "index.html#design/x07-skipjack-integration"
-  },
-  {
-    "id": "xform-q88",
-    "title": "XFORM-Q88",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
-    "url": "index.html#design/xform-q88"
   },
   {
     "id": "yggdrasil-protocol-governed-adaptive-systems",

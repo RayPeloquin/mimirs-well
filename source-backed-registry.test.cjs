@@ -10,7 +10,7 @@ test('no duplicate Temporal Reflection Chamber title in catalog and one featured
  assert.match(html,/<h3>Temporal Reflection Chamber<\/h3>/);
 });
 test('readable project count and evidence review summary are current',()=>{
- assert.match(html,/375 distinct project cards, including 172 expanded records and 203 records pending/);
+ assert.match(html,/357 distinct project cards, including 172 expanded records and 185 records pending/);
  const count=(registry.match(/if\(records\.has\('[^']+'\)\)Object\.assign\(records\.get\('[^']+'\),/g)||[]).length;
  assert.equal(count,172);
 });

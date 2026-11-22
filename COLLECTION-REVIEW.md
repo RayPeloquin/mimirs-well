@@ -196,7 +196,6 @@ These are review leads from the existing public titles/summaries, not verdicts b
 | 134 | [NDSM-01 — Neutrino feasibility study](https://raypeloquin.github.io/mimirs-well/#design/ndsm-01-neutrino-feasibility-study) | Archive only — source and feasibility pending |
 | 135 | [Neutrino Detector](https://raypeloquin.github.io/mimirs-well/#design/neutrino-detector) | Archive only — source and feasibility pending |
 | 136 | [Lepton Mitt](https://raypeloquin.github.io/mimirs-well/#design/lepton-mitt) | Archive only — source and feasibility pending |
-| 137 | [PROBE-X EVERSOR](https://raypeloquin.github.io/mimirs-well/#design/probe-x-eversor) | Archive only — source and feasibility pending |
 | 138 | [Quantum Floor](https://raypeloquin.github.io/mimirs-well/#design/quantum-floor) | Research record — retain with stated limits |
 | 139 | [Adaptive Qubit Allocator](https://raypeloquin.github.io/mimirs-well/#design/adaptive-qubit-allocator) | Archive only — source and feasibility pending |
 | 140 | [Quantum Judge](https://raypeloquin.github.io/mimirs-well/#design/quantum-judge) | Archive only — source and feasibility pending |
@@ -277,7 +276,6 @@ These are review leads from the existing public titles/summaries, not verdicts b
 | 219 | [Acoustic Genome](https://raypeloquin.github.io/mimirs-well/#design/acoustic-genome) | Archive only — source and feasibility pending |
 | 220 | [ECHO-DNA / ECHO-Y / ECHO-P / ECHO-H](https://raypeloquin.github.io/mimirs-well/#design/echo-dna-echo-y-echo-p-echo-h) | Archive only — source and feasibility pending |
 | 221 | [Host-Powered Synthetic Chromosome](https://raypeloquin.github.io/mimirs-well/#design/host-powered-synthetic-chromosome) | Archive only — source and feasibility pending |
-| 222 | [HSX-01 / HSX-21](https://raypeloquin.github.io/mimirs-well/#design/hsx-01-hsx-21) | Archive only — source and feasibility pending |
 | 223 | [Hydrofell-01 — Hydro data center](https://raypeloquin.github.io/mimirs-well/#design/hydrofell-01-hydro-data-center) | Archive only — source and feasibility pending |
 | 224 | [Silt HIPPO — Silo cistern](https://raypeloquin.github.io/mimirs-well/#design/silt-hippo-silo-cistern) | Archive only — source and feasibility pending |
 | 225 | [Atlas Cistern](https://raypeloquin.github.io/mimirs-well/#design/atlas-cistern) | Archive only — source and feasibility pending |
@@ -289,7 +287,6 @@ These are review leads from the existing public titles/summaries, not verdicts b
 | 231 | [Vortexcap — Supercapacitor](https://raypeloquin.github.io/mimirs-well/#design/vortexcap-supercapacitor) | Archive only — source and feasibility pending |
 | 232 | [HIPPO Vortex LMB](https://raypeloquin.github.io/mimirs-well/#design/hippo-vortex-lmb) | Archive only — source and feasibility pending |
 | 233 | [Thermal Grace Module](https://raypeloquin.github.io/mimirs-well/#design/thermal-grace-module) | Archive only — source and feasibility pending |
-| 234 | [Thunder Vault](https://raypeloquin.github.io/mimirs-well/#design/thunder-vault) | Archive only — source and feasibility pending |
 | 235 | [Buoyant Impulse Pod](https://raypeloquin.github.io/mimirs-well/#design/buoyant-impulse-pod) | Archive only — source and feasibility pending |
 | 236 | [Janus Loop — Supply recovery](https://raypeloquin.github.io/mimirs-well/#design/janus-loop-supply-recovery) | Archive only — source and feasibility pending |
 | 237 | [Liquid-Metal Cooling System](https://raypeloquin.github.io/mimirs-well/#design/liquid-metal-cooling-system) | Archive only — source and feasibility pending |
@@ -307,7 +304,6 @@ These are review leads from the existing public titles/summaries, not verdicts b
 | 252 | [Modular Rope Coupler / Ranchline Utility](https://raypeloquin.github.io/mimirs-well/#design/modular-rope-coupler-ranchline-utility) | Archive only — source and feasibility pending |
 | 253 | [Titanium Pressure-Adaptive Metamaterial Mount](https://raypeloquin.github.io/mimirs-well/#design/titanium-pressure-adaptive-metamaterial-mount) | Archive only — source and feasibility pending |
 | 254 | [Triple-Nitinol Spine](https://raypeloquin.github.io/mimirs-well/#design/triple-nitinol-spine) | Archive only — source and feasibility pending |
-| 255 | [Devouring Lattice](https://raypeloquin.github.io/mimirs-well/#design/devouring-lattice) | Archive only — source and feasibility pending |
 | 256 | [Dielectric Threshold Mapper](https://raypeloquin.github.io/mimirs-well/#design/dielectric-threshold-mapper) | Archive only — source and feasibility pending |
 | 257 | [Eta-Threshold — Material mapper](https://raypeloquin.github.io/mimirs-well/#design/eta-threshold-material-mapper) | Archive only — source and feasibility pending |
 | 258 | [Deep Earth Listening / Earth Stethoscope](https://raypeloquin.github.io/mimirs-well/#design/deep-earth-listening-earth-stethoscope) | Archive only — source and feasibility pending |
@@ -331,7 +327,6 @@ These are review leads from the existing public titles/summaries, not verdicts b
 | 276 | [Ocean Boundary Residual Inference](https://raypeloquin.github.io/mimirs-well/#design/ocean-boundary-residual-inference) | Archive only — source and feasibility pending |
 | 277 | [Polyforge-1 — Ocean cleanup ship](https://raypeloquin.github.io/mimirs-well/#design/polyforge-1-ocean-cleanup-ship) | Archive only — source and feasibility pending |
 | 278 | [River Reaper Walker](https://raypeloquin.github.io/mimirs-well/#design/river-reaper-walker) | Archive only — source and feasibility pending |
-| 279 | [Planetary Stitch](https://raypeloquin.github.io/mimirs-well/#design/planetary-stitch) | Archive only — source and feasibility pending |
 | 280 | [Earth Complexity Monitor](https://raypeloquin.github.io/mimirs-well/#design/earth-complexity-monitor) | Archive only — source and feasibility pending |
 | 281 | [BAMBOO-RF — Agricultural tolerance concept](https://raypeloquin.github.io/mimirs-well/#design/bamboo-rf-agricultural-tolerance-concept) | Archive only — source and feasibility pending |
 | 282 | [StrixArk — Owl conservation](https://raypeloquin.github.io/mimirs-well/#design/strixark-owl-conservation) | Archive only — source and feasibility pending |
@@ -352,7 +347,6 @@ These are review leads from the existing public titles/summaries, not verdicts b
 | 297 | [Anubis Abyssal Gill](https://raypeloquin.github.io/mimirs-well/#design/anubis-abyssal-gill) | Archive only — source and feasibility pending |
 | 298 | [Amphibishell](https://raypeloquin.github.io/mimirs-well/#design/amphibishell) | Archive only — source and feasibility pending |
 | 299 | [FSAMS-SKIN — EVA concept](https://raypeloquin.github.io/mimirs-well/#design/fsams-skin-eva-concept) | Archive only — source and feasibility pending |
-| 300 | [Aether Shroud](https://raypeloquin.github.io/mimirs-well/#design/aether-shroud) | Archive only — source and feasibility pending |
 | 301 | [Lunar EVA Life Support](https://raypeloquin.github.io/mimirs-well/#design/lunar-eva-life-support) | Archive only — source and feasibility pending |
 | 302 | [Anubis Wing — Flight suit](https://raypeloquin.github.io/mimirs-well/#design/anubis-wing-flight-suit) | Archive only — source and feasibility pending |
 | 303 | [Sky Wing](https://raypeloquin.github.io/mimirs-well/#design/sky-wing) | Archive only — source and feasibility pending |
@@ -375,12 +369,8 @@ These are review leads from the existing public titles/summaries, not verdicts b
 | 320 | [VSRL-01 — Accelerator](https://raypeloquin.github.io/mimirs-well/#design/vsrl-01-accelerator) | Archive only — source and feasibility pending |
 | 321 | [Folded Linac](https://raypeloquin.github.io/mimirs-well/#design/folded-linac) | Archive only — source and feasibility pending |
 | 322 | [Helical Silo Collider](https://raypeloquin.github.io/mimirs-well/#design/helical-silo-collider) | Archive only — source and feasibility pending |
-| 323 | [Hadron Seed Chamber](https://raypeloquin.github.io/mimirs-well/#design/hadron-seed-chamber) | Archive only — source and feasibility pending |
 | 324 | [Veil Resonator](https://raypeloquin.github.io/mimirs-well/#design/veil-resonator) | Archive only — source and feasibility pending |
-| 325 | [Veil Gate — Exotic lattice](https://raypeloquin.github.io/mimirs-well/#design/veil-gate-exotic-lattice) | Archive only — source and feasibility pending |
 | 326 | [Chronovisor](https://raypeloquin.github.io/mimirs-well/#design/chronovisor) | Archive only — source and feasibility pending |
-| 327 | [Chronos Bridge](https://raypeloquin.github.io/mimirs-well/#design/chronos-bridge) | Archive only — source and feasibility pending |
-| 328 | [Chrono Veil](https://raypeloquin.github.io/mimirs-well/#design/chrono-veil) | Archive only — source and feasibility pending |
 | 329 | [Quantum Slice Teleporter](https://raypeloquin.github.io/mimirs-well/#design/quantum-slice-teleporter) | Archive only — source and feasibility pending |
 | 330 | [Quantum Secure Field Communications](https://raypeloquin.github.io/mimirs-well/#design/quantum-secure-field-communications) | Archive only — source and feasibility pending |
 | 331 | [Hermes Quantum Queue](https://raypeloquin.github.io/mimirs-well/#design/hermes-quantum-queue) | Archive only — source and feasibility pending |
@@ -395,11 +385,8 @@ These are review leads from the existing public titles/summaries, not verdicts b
 | 340 | [Rindler Habitat](https://raypeloquin.github.io/mimirs-well/#design/rindler-habitat) | Archive only — source and feasibility pending |
 | 341 | [BOUNDARY-0 / BOUNDARY-0X](https://raypeloquin.github.io/mimirs-well/#design/boundary-0-boundary-0x) | Archive only — source and feasibility pending |
 | 342 | [NULL-1 / NULL-1H / SHIELD-1](https://raypeloquin.github.io/mimirs-well/#design/null-1-null-1h-shield-1) | Archive only — source and feasibility pending |
-| 343 | [DEUTERION](https://raypeloquin.github.io/mimirs-well/#design/deuterion) | Archive only — source and feasibility pending |
 | 345 | [Elemental Operator Atlas / Rubik Engine](https://raypeloquin.github.io/mimirs-well/#design/elemental-operator-atlas-rubik-engine) | Archive only — source and feasibility pending |
 | 346 | [RUBIQ](https://raypeloquin.github.io/mimirs-well/#design/rubiq) | Archive only — source and feasibility pending |
-| 347 | [XFORM-Q88](https://raypeloquin.github.io/mimirs-well/#design/xform-q88) | Archive only — source and feasibility pending |
-| 348 | [ATTRACTOR](https://raypeloquin.github.io/mimirs-well/#design/attractor) | Archive only — source and feasibility pending |
 | 349 | [MindTrace / PhotonTrace](https://raypeloquin.github.io/mimirs-well/#design/mindtrace-photontrace) | Archive only — source and feasibility pending |
 | 350 | [BACKTRACE](https://raypeloquin.github.io/mimirs-well/#design/backtrace) | Archive only — source and feasibility pending |
 | 351 | [MIRRORBOX M01](https://raypeloquin.github.io/mimirs-well/#design/mirrorbox-m01) | Archive only — source and feasibility pending |
@@ -417,20 +404,15 @@ These are review leads from the existing public titles/summaries, not verdicts b
 | 364 | [JANUS-10](https://raypeloquin.github.io/mimirs-well/#design/janus-10) | Archive only — source and feasibility pending |
 | 365 | [AREOPAGUS](https://raypeloquin.github.io/mimirs-well/#design/areopagus) | Research record — retain with stated limits |
 | 366 | [ARBOR / SEED](https://raypeloquin.github.io/mimirs-well/#design/arbor-seed) | Archive only — source and feasibility pending |
-| 367 | [Concordia](https://raypeloquin.github.io/mimirs-well/#design/concordia) | Archive only — source and feasibility pending |
 | 368 | [Hephaestus — Autonomous forge](https://raypeloquin.github.io/mimirs-well/#design/hephaestus-autonomous-forge) | Archive only — source and feasibility pending |
 | 369 | [AG-DAS Guardian](https://raypeloquin.github.io/mimirs-well/#design/ag-das-guardian) | Archive only — source and feasibility pending |
 | 370 | [PaperCall / PaperCall Sky](https://raypeloquin.github.io/mimirs-well/#design/papercall-papercall-sky) | Archive only — source and feasibility pending |
-| 372 | [MECHAGE](https://raypeloquin.github.io/mimirs-well/#design/mechage) | Archive only — source and feasibility pending |
 | 373 | [LAAF PINN](https://raypeloquin.github.io/mimirs-well/#design/laaf-pinn) | Archive only — source and feasibility pending |
 | 374 | [OmniSight Goggles](https://raypeloquin.github.io/mimirs-well/#design/omnisight-goggles) | Archive only — source and feasibility pending |
 | 375 | [HBFTune — EEG concept](https://raypeloquin.github.io/mimirs-well/#design/hbftune-eeg-concept) | Archive only — source and feasibility pending |
 | 376 | [KA Patch — Bioenergy jewelry](https://raypeloquin.github.io/mimirs-well/#design/ka-patch-bioenergy-jewelry) | Archive only — source and feasibility pending |
-| 377 | [KA Lock](https://raypeloquin.github.io/mimirs-well/#design/ka-lock) | Archive only — source and feasibility pending |
-| 378 | [KA Fold](https://raypeloquin.github.io/mimirs-well/#design/ka-fold) | Archive only — source and feasibility pending |
 | 379 | [Khepri Stride — Sneaker concept](https://raypeloquin.github.io/mimirs-well/#design/khepri-stride-sneaker-concept) | Archive only — source and feasibility pending |
 | 380 | [Canine Wearable](https://raypeloquin.github.io/mimirs-well/#design/canine-wearable) | Archive only — source and feasibility pending |
-| 381 | [iExalt Node](https://raypeloquin.github.io/mimirs-well/#design/iexalt-node) | Archive only — source and feasibility pending |
 | 382 | [Underground Cattle Barn](https://raypeloquin.github.io/mimirs-well/#design/underground-cattle-barn) | Archive only — source and feasibility pending |
 | 383 | [Shell City — Inverted-mushroom barn](https://raypeloquin.github.io/mimirs-well/#design/shell-city-inverted-mushroom-barn) | Archive only — source and feasibility pending |
 | 384 | [MA’AT Tower](https://raypeloquin.github.io/mimirs-well/#design/ma-at-tower) | Archive only — source and feasibility pending |
