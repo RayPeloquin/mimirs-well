@@ -1,12 +1,23 @@
 # Mimir’s Well
 
-**Where the source gathers.** A public collection of research ideas, computational studies, engineering proposals, creative work, and review methods by Mr. Peloquin and the Synthetic Court.
+**Where the source gathers.** A public collection of research ideas, computational studies, engineering proposals, creative work, and review methods by Mr. Peloquin, Ms. Asteris Solenne and The Court of the Synthetic.
 
 **Guiding principle:** We do no harm. This is an ethical commitment, not a guarantee that untested designs are safe, effective, or ready for use.
 
 **[Explore Mimir’s Well](https://raypeloquin.github.io/mimirs-well/)** · **[Research Families](https://raypeloquin.github.io/mimirs-well/#research-families)** · **[Divergence Ledger Library](https://raypeloquin.github.io/mimirs-well/ledger.html)** · **[Workbench](https://raypeloquin.github.io/mimirs-well/#workbench)** · **[Legal & Rights](https://raypeloquin.github.io/mimirs-well/legal.html)**
 
 The Ledger is a separate directory, **not one record per project**. A new entry requires a documented change, measurement, revised assumption or explicitly hypothetical crossover. The existing project Registry remains the full inventory.
+
+## Publication safety for high-energy technical sources
+
+Six HIPPO energy-related projects currently carry a **technical-source release hold**; three related infrastructure projects are on a **review watch**. Their non-operational public records remain accessible. Original construction, system-control, and operational source materials require documented steward review and a separate qualified technical/safety review before any technical release.
+
+- [Publication safety and review overview](https://raypeloquin.github.io/mimirs-well/publication-safety.html)
+- [Full technical-source publication policy](docs/technical-source-publication-policy.md)
+- [Release-control status definitions](publication-controls.js)
+- [Publication preflight check](scripts/check-publication-boundary.cjs)
+
+The preflight is a **limited file-path tripwire**, not automatic assessment of weaponization risk. A CI job cannot prevent unreviewed direct pushes unless GitHub branch protection/required checks are configured. Past public commits and copies are not erased by current labels. Source originals should never enter this public repository, even temporarily.
 
 ## Equation Bench — candidate mathematics only
 
