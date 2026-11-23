@@ -24,6 +24,14 @@ Each family links to live matching project cards; cards show their related famil
 
 See [research family maintenance and evidence boundaries](docs/research-families.md). Check the mapping with `node --test research-families.test.cjs`.
 
+## Hall of Areopagus — authenticated private chamber
+
+The public Court section points to an [authenticated ChatGPT Space entrance](https://chatgpt.com/space/page_6b0439a490008191af3bdf71e9fb23ee). The Space was created on 23 November 2026 and its access roster was verified as owner-only at setup, with no direct or inherited collaborators. The public site contains only the entrance URL, not private records, credentials or decisions.
+
+The earlier independently hosted Hall prototype remains linked as an *unverified-access prototype*. Neither an unverified login interface nor a hidden public button is security enforcement.
+
+The private Space currently contains a charter and access policy, deliberation docket, evidence register, and owner decision/release log. This is a private document-centered workspace, **not** a live integrated multi-agent system, automatic arbitration engine, or immutable evidence store. Named AI Court seats do not have login rights unless their specific accounts are deliberately and separately granted access. The owner must explicitly approve any public release.
+
 ## Governance architecture family
 
 - [GO-CUBE — Liberty Field Governor](go-cube.html): v0.5.1 and v0.5.2 core concepts plus Chutes Cube integration.
