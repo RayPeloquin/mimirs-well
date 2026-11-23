@@ -57,6 +57,12 @@
       caption: 'CRUCIBLE · AI-generated test-harness concept poster. Rover and multirotor are synthetic demonstrations; the fixed-wing aircraft extension is proposed, not implemented or validated.',
     },
     {
+      id: 'ghostglass',
+      src: 'assets/ghostglass-observatory-concept.webp',
+      alt: 'Blue-lit Ghostglass detector concept with a circular viewing chamber and illustrated event and uncertainty displays.',
+      caption: 'Ghostglass · AI-generated detector concept with mock readouts. Published evidence comes from synthetic statistics and software tests.',
+    },
+    {
       id: 'temporal-reflection-chamber',
       src: 'assets/temporal-reflection-chamber-concept.jpg',
       alt: 'Temporal Reflection Chamber proposal showing an 8 by 8 by 8 foot metal research enclosure, instrumented transmission-line testbed, external equipment rack and idealized wave-speed and frequency equations.',
