@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Court Case 003 — CRUCIBLE × ECHO-Rx | Mimir’s Well</title>
+<meta name="description" content="Proposed residual-aware rule enforcement simulation combining CRUCIBLE's guarded control and ECHO-Rx's post-stop tail dynamics.">
+<link rel="stylesheet" href="combine.css">
+<style>
+.case-hero{min-height:270px}.case-hero h1{font-size:clamp(2.5rem,6vw,4.8rem)}
+.case-hero p{max-width:770px}.eyebrow{text-transform:uppercase;letter-spacing:.11em;color:var(--gold);font-size:.8rem}
+.case-section{max-width:900px;margin:44px auto}.case-section h2{font-size:clamp(1.7rem,4vw,2.55rem)}
+.case-section p,.case-section li{line-height:1.72}.case-section li+li{margin-top:10px}
+.conditions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.conditions article,.panel{padding:clamp(17px,3vw,25px);background:var(--panel);border:1px solid var(--line);border-radius:12px}
+.conditions h3{font-size:1.15rem}.muted{color:var(--muted)}
+code{white-space:normal;color:var(--gold)}
+@media(max-width:750px){.conditions{grid-template-columns:1fr}}
+</style></head>
+<body><a class="skip" href="#main">Skip to case study</a>
+<header class="site-header"><nav class="wrap" aria-label="Main navigation"><a class="brand" href="index.html">✳ <span>Mimir’s Well</span></a><a href="combine.html">Alchemist’s Bench</a></nav></header>
+<main id="main" class="wrap">
+<header class="hero case-hero"><div>
+<p class="eyebrow">Court case study 003 · 23 November 2026</p>
+<h1>CRUCIBLE <em>× ECHO-Rx</em></h1>
+<p>Can a controller obey every rule now, yet violate a safety limit later because its previous action keeps having effects?</p>
+<p><strong>Proposed simulation · No hardware or clinical validation</strong></p>
+<div class="bench-actions"><a class="button example" href="combine.html?from=crucible&amp;to=echo-rx&amp;case=grok-003">Open the prefilled test brief</a>
+<a class="button example" href="https://github.com/RayPeloquin/mimirs-well/blob/main/research/alchemists-bench/crucible-echo-rx-court-case-study.md">Read technical research record</a></div></div></header>
+<section class="case-section"><h2>The unexpected connection</h2>
+<p><a href="index.html#design/crucible">CRUCIBLE</a> tests rule guarding under synthetic rover and quadrotor stress. Its rover campaign reports 8/40 legacy violations versus 0/40 guarded; the separate quadrotor campaign reports 31/40 versus 27/40, including a regression. None is a field safety guarantee.</p>
+<p><a href="index.html#design/echo-rx">ECHO-Rx</a> demonstrates in a mathematical toy model why stopping new production need not halt the effect of material already released. This is not validated biology.</p>
+<p>Grok transferred the lesson, not the mechanism: <strong>a legal present action can leave a residual that produces an illegal future state.</strong></p></section>
+<section class="case-section panel"><h2>Proposed residual-aware controller</h2>
+<p>Track a residual state alongside ordinary position, velocity or temperature. Before allowing a new action, predict the residual tail and its uncertainty. Reject, derate or stop the action early enough that the predicted reachable states remain within the constraint envelope—even after a future stop command.</p>
+<p><strong>Important:</strong> Tracking must begin <em>before</em> a stop. Stopping the command does not cancel stored momentum, heat, delay or released material. Finite-horizon prediction also needs a defensible tail bound beyond the modeled window.</p></section>
+<section class="case-section"><h2>Three experimental controls</h2><div class="conditions">
+<article><h3>A · Present-state guard</h3><p>CRUCIBLE-style immediate rule check, without future residual prediction.</p><p class="muted">Measures violations caused by lingering effects.</p></article>
+<article><h3>B · Explicit residual budget</h3><p>Same guard plus a residual estimate, forecast safety envelope and explainable budget-triggered earlier restrictions.</p><p class="muted">Tests the modular residual safeguard.</p></article>
+<article><h3>C · Standard predictive safety</h3><p>Conventional prediction-based safety controller with access to the same residual dynamics and uncertainty information.</p><p class="muted">Checks whether B offers value beyond prior control methods.</p></article>
+</div><p><strong>B versus A</strong> tests if looking ahead helps. <strong>B versus C</strong> tests if the separately auditable residual-budget approach adds an engineering advantage rather than rediscovering predictive control.</p></section>
+<section class="case-section"><h2>Proposed simulation</h2>
+<ol><li>Reproduce the rover and quadrotor baseline records separately, retaining exact source and test versions.</li>
+<li>Extend held-out scenarios with physical analogues such as continued momentum, actuator delay or stored thermal energy.</li>
+<li>Pre-register safety boundaries, model-mismatch cases, prediction horizon, sample count, severity measures and acceptable extra stops.</li>
+<li>Run A/B/C on matched disturbance traces: ordinary operation, stop command with a continuing tail, delayed actuation, partial observation and unexpected persistence.</li>
+<li>Measure post-stop violations, overshoot, violation duration, budget-triggered interventions, unnecessary early stops, task completion and computational cost.</li>
+<li>Evaluate robustness to noise and inaccurate residual models; do not call zero observed violations proof of perfect safety.</li></ol></section>
+<section class="case-section panel"><h2>Prior art and evidence boundary</h2>
+<p>Predictive control, delay compensation and control barrier methods already address future-state constraint violations. See <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/rnc.6751">control barrier functionals for delayed systems</a> and <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/rnc.7187">constrained control with distinct input delays</a>.</p>
+<p>The narrowly testable possibility is a <strong>lightweight residual ledger integrated into an auditable guarded controller</strong>. Whether that is useful or distinct from standard predictive safety control is not yet known.</p>
+<p><strong>Current verdict:</strong> Worth a controlled simulation study, not a physical build or safety claim.</p></section>
+<section class="case-section"><h2>Credit</h2><p><strong>Grok</strong> selected the parent designs and formulated the residual-aware idea and initial A/B trial. <strong>Asteris Solenne / ChatGPT</strong> supplied the C comparator, uncertainty-aware simulation structure and prior-art qualification. <strong>Mr. Peloquin</strong> directed the collaboration and preserved this case in the Court archive.</p>
+<p class="muted">A proposed experiment, not a demonstrated discovery. The Alchemist’s Bench organized reasoning; it did not autonomously identify the pairing.</p>
+<div class="bench-actions"><a class="button example" href="combine.html?from=crucible&amp;to=echo-rx&amp;case=grok-003">Open the Bench brief</a><a class="button example" href="court-case-002.html">Court case 002</a></div></section></main>
+<footer class="wrap">Mimir’s Well · Mr. Peloquin &amp; the Synthetic Court · We do no harm</footer></body></html>
