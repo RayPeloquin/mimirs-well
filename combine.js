@@ -41,6 +41,24 @@ const grokCaseExample = {
   materials: "A specified Recipe Pucks interaction model; three functionally comparable interface variants (or controlled mockups); a reliable state sensor/controller; a safe reversible cue for B; an accessible state readout for C; counterbalanced tasks and participant consent. This is a proposed human-interface test, not a working design or demonstrated efficacy.",
 };
 
+const grokOpticalExample = {
+  title: "Calibration integrity: Ghostglass × Chihuahua Sphere",
+  mechanism: "Borrow Ghostglass's pre-registered on/off statistical testing and Chihuahua Sphere's discipline of keeping independently measured source optical energy, losses and receiver energy separate. Treat an uncertain mismatch as a review flag, not proof of an artifact.",
+  change: "Use an optical bench with separately calibrated source-output monitoring, characterized path losses and detector response. Run known-null, artifact-injected and true-signal trials, and compare decisions from the same raw observations under each rule.",
+  baseline: "Three rules on matched blinded trials: A, Ghostglass-style statistical test alone; B, the same test with independent uncertainty-aware source/receiver ledger; C, the same test with conventional detector QC for gain, dark counts, leakage and drift. C does not use the explicit energy-closure rule. Do not derive both ledger sides from the same detector signal.",
+  criterion: "Pre-register detection thresholds, a valid residual-uncertainty band, a minimum useful decrease in known-null false positives, and a minimum retained true-positive sensitivity. Compare B against both A and C at matched signal sensitivity. A failed energy balance flags review, not automatic falsehood; report uncertain, mixed and inconclusive cases.",
+  materials: "Wavelength-characterized safe low-power optical source, calibrated independent optical reference, attenuation/occlusion control, detector and dark/gain reference, measured geometry and path-loss bounds, trial ground truth, code for pre-registered on/off statistics and QC, and calibration uncertainty. No joint physical test has been documented.",
+};
+
+const grokResidualExample = {
+  title: "Residual-aware rule enforcement: CRUCIBLE × ECHO-Rx",
+  mechanism: "Transfer ECHO-Rx's mathematical lesson that an accumulated effect continues after production stops into CRUCIBLE-style guarded control: legal actions must be assessed for their delayed future consequences. This is a conceptual crossover, not a demonstrated new control principle.",
+  change: "Extend versioned CRUCIBLE-like rover and quadrotor simulations with persistent, observable or estimated residual state (e.g. momentum, actuator lag or thermal storage). Before approving each action, forecast residual trajectories and uncertainty envelopes over a pre-specified horizon, and derate or stop early when a future safety constraint would otherwise be crossed. Include a justified bound beyond the horizon.",
+  baseline: "Three controllers on matched held-out traces: A, immediate-state CRUCIBLE-style rule guard; B, same guard plus an explicit residual budget, predictive safety envelope and auditable trigger; C, conventional predictive safety controller using the same available residual dynamics and uncertainty data, without B's separate budget ledger. Include delayed stops, disturbances and model mismatch.",
+  criterion: "Pre-register acceptable reduction in post-stop constraint violations and overshoot, maximum unnecessary early-stop and task-failure rates, and sample size. Compare B with A for useful lookahead, and B with C for incremental value beyond prior predictive control. Track violation frequency, severity and duration, task completion, compute costs and calibration. Zero observed violations alone do not prove zero risk.",
+  materials: "Versioned CRUCIBLE simulator, exact rover and quadrotor campaign records, reproducible residual-state dynamics with units, separate tuning/held-out scenarios and disturbance seeds, matched scenario replay, controller logs, uncertainty and mismatch sweeps, and documented stopping/constraint contracts. ECHO-Rx supplies an analogy only; no wet-lab experiment is proposed.",
+};
+
 const skepticPhysicalExample = {
   title: "SKEPTIC-1: Can a physical brace distinguish mirrored faults?",
   mechanism: "The numerical model predicts that a reversible off-center brace makes identical stiffness losses at opposite ends distinguishable. Test whether the effect survives measurement uncertainty and repeat setup on a physical rig.",
@@ -299,6 +317,10 @@ async function start() {
     params.get("from") === "skeptic-1" && params.get("to") === "temporal-acoustics";
   const grokCase = params.get("case") === "grok-001" &&
     params.get("from") === "skeptic-1" && params.get("to") === "recipe-pucks";
+  const grokOptical = params.get("case") === "grok-002" &&
+    params.get("from") === "ghostglass" && params.get("to") === "chihuahua-sphere-cs-1";
+  const grokResidual = params.get("case") === "grok-003" &&
+    params.get("from") === "crucible" && params.get("to") === "echo-rx";
   const draft = readDraft();
   const requested = physical ? { from: "skeptic-1" } : roles.some(role => params.has(role)) ?
     Object.fromEntries(roles.map(role => [role, params.get(role)])) : draft?.pair;
@@ -312,7 +334,9 @@ async function start() {
 
   const matchesDraft = roles.every(role => draft?.pair?.[role] === pair[role]);
   const fields = physical ? (draft?.fields || skepticPhysicalExample) :
-    example ? acousticExample : grokCase ? grokCaseExample : matchesDraft ? draft.fields : null;
+    example ? acousticExample : grokCase ? grokCaseExample :
+    grokOptical ? grokOpticalExample : grokResidual ? grokResidualExample :
+    matchesDraft ? draft.fields : null;
   for (const name of draftFields) {
     if (typeof fields?.[name] === "string" && !form.elements[name].value) {
       form.elements[name].value = fields[name];
