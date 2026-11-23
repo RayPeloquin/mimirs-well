@@ -1,17 +1,19 @@
 "use strict";
 
-const roles = ["from", "to"];
+const params = new URLSearchParams(location.search);
+const physical = params.get("physical") === "skeptic-1";
+const roles = physical ? ["from"] : ["from", "to"];
 const form = document.querySelector("#brief");
 const fieldLabels = {
-  mechanism: "Borrowed mechanism",
-  change: "Proposed change",
+  mechanism: physical ? "Claim to test" : "Borrowed mechanism",
+  change: physical ? "Physical setup and measurement" : "Proposed change",
   baseline: "Baseline and controls",
   criterion: "Success and failure criteria",
   materials: "Reproduction materials and open requirements",
 };
 const draftFields = ["title", ...Object.keys(fieldLabels)];
 const contributions = window.WellDesignContributions;
-const draftKey = "mimirs-well-combine-draft-v1";
+const draftKey = physical ? "mimirs-well-physical-skeptic-1-v1" : "mimirs-well-combine-draft-v1";
 const pair = { from: null, to: null };
 const catalog = new Map();
 const catalogStatus = document.querySelector("#catalog-status");
@@ -28,6 +30,36 @@ const acousticExample = {
   criterion: "Choose the minimum useful reduction in false cavity detections before running. Compare layouts at the same cavity detection rate.",
   materials: "Use the linked Temporal Acoustics simulator. Prepare held-out rock worlds with solid inclusions that resemble cavities under the centered layout.",
 };
+
+ 
+const skepticPhysicalExample = {
+  title: "SKEPTIC-1: Can a physical brace distinguish mirrored faults?",
+  mechanism: "The numerical model predicts that a reversible off-center brace makes identical stiffness losses at opposite ends distinguishable. Test whether the effect survives measurement uncertainty and repeat setup on a physical rig.",
+  change: "Compare two known stiffness-loss conditions, one at each end, on the same three-mass spring rig. Measure the first natural frequency in hertz for each probe position. Repeat after reseating the brace and check that the original response returns after removal.",
+  baseline: "Compare no brace, a centered brace, and an off-center brace. Use the same masses, spring set, excitation, sensors, and frequency estimator. Repeat both fault conditions and record the scatter from each setup.",
+  criterion: "Before collecting data, specify the repeat count, minimum useful separation, and how frequency uncertainty will be estimated. Support the claim if the off-center probe clears the threshold after uncertainty is included, while both controls stay within the predefined equivalence band. Count the result against the claim if the off-center difference falls short of the threshold, or either control separates the faults, with enough precision to decide. Otherwise report it as inconclusive.",
+  materials: "Specify masses, springs, a removable stiffness brace, a stable fixture, a vibration sensor and data recorder. Measure the actual spring stiffnesses and check the sensor timebase. Use the linked design record and source model for the numerical comparison.",
+};
+
+function enterPhysicalMode() {
+  document.querySelector("#bench-intro").textContent =
+    "Distill to physics. Turn one model prediction into a measurement someone can make.";
+  document.querySelector("#physical-example").hidden = true;
+  document.querySelector("#back-to-combine").hidden = false;
+  document.querySelector("#pair-title").textContent = "Source design";
+  document.querySelector(".pair").classList.add("physical");
+  document.querySelector(".connector").hidden = true;
+  document.querySelector("#to-slot").hidden = true;
+  document.querySelector("#from-title").textContent = "Design under test";
+  document.querySelector("#brief-title").textContent = "Draft the physical test";
+  document.querySelector("#draft-note").textContent = "Proposed test · Your draft is saved in this browser.";
+  document.querySelector("#mechanism-label").textContent = "What claim will you test?";
+  document.querySelector("#change-label").textContent = "What will you measure, and how?";
+  form.elements.title.placeholder = "Name the proposed physical test";
+  form.elements.mechanism.placeholder = "State the model prediction to check.";
+  form.elements.change.placeholder = "Describe the rig, test conditions, and measured quantity.";
+  exportStatus.textContent = "Loading the source design…";
+}
 
 function element(tag, value) {
   const node = document.createElement(tag);
@@ -55,7 +87,7 @@ function saveDraft() {
   try {
     localStorage.setItem(draftKey, JSON.stringify({ pair, fields }));
   } catch {
-    document.querySelector("#brief-title + p").textContent =
+    document.querySelector("#draft-note").textContent =
       "Browser storage is unavailable. Copy or download your draft to keep it.";
   }
 }
@@ -151,6 +183,7 @@ function renderSelection(role) {
     selection.append(source);
   }
 
+  if (physical) return;
   const clear = element("button", "Change design");
   clear.type = "button";
   clear.className = "clear";
@@ -162,9 +195,9 @@ function renderSelection(role) {
 function render() {
   for (const role of roles) {
     renderSelection(role);
-    renderMatches(role);
+    if (!physical) renderMatches(role);
   }
-  copy.disabled = download.disabled = !pair.from || !pair.to;
+  copy.disabled = download.disabled = !roles.every(role => pair[role]);
   fallbackLabel.hidden = true;
   exportStatus.textContent = copy.disabled ? "Choose two designs to export a proposed test." : "";
 }
@@ -179,13 +212,13 @@ function markdownLink(label, path) {
 }
 
 function briefMarkdown() {
-  const title = form.elements.title.value.trim() || "Design combination";
-  const lines = [`# ${title}`, "", "**Status: Proposed test**", "", "## Parent designs"];
+  const title = form.elements.title.value.trim() || (physical ? "Physical test" : "Design combination");
+  const lines = [`# ${title}`, "", "**Status: Proposed test**", "", physical ? "## Source design" : "## Parent designs"];
   for (const role of roles) {
     const entry = catalog.get(pair[role]);
     const note = contributions[entry.id];
-    lines.push("", `### ${role === "from" ? "Borrow from" : "Build on"}`,
-      markdownLink(entry.title, entry.url), "", entry.status, "",
+    if (!physical) lines.push("", `### ${role === "from" ? "Borrow from" : "Build on"}`);
+    lines.push("", markdownLink(entry.title, entry.url), "", entry.status, "",
       entry.evidence || "Source review pending.");
     if (note) {
       lines.push("", `- What it can contribute: ${note.contribution}`,
@@ -218,14 +251,14 @@ download.addEventListener("click", () => {
   const url = URL.createObjectURL(blob);
   const link = element("a");
   link.href = url;
-  link.download = `${pair.from}-to-${pair.to}-test-brief.md`;
+  link.download = physical ? `${pair.from}-physical-test-brief.md` : `${pair.from}-to-${pair.to}-test-brief.md`;
   link.click();
   setTimeout(() => URL.revokeObjectURL(url), 1000);
   exportStatus.textContent = "Markdown brief downloaded.";
 });
 
 form.addEventListener("input", () => {
-  if (new URLSearchParams(location.search).has("example")) syncPair();
+  if (!physical && new URLSearchParams(location.search).has("example")) syncPair();
   fallbackLabel.hidden = true;
   if (!copy.disabled) exportStatus.textContent = "";
   saveDraft();
@@ -234,6 +267,7 @@ form.addEventListener("input", () => {
 form.addEventListener("submit", event => event.preventDefault());
 
 async function start() {
+  if (physical) enterPhysicalMode();
   try {
     const response = await fetch("catalog.json");
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -246,14 +280,14 @@ async function start() {
     }
   } catch {
     catalogStatus.textContent = "The catalog could not load. Reload this page to try again.";
+    exportStatus.textContent = "";
     return;
   }
 
-  const params = new URLSearchParams(location.search);
   const example = params.get("example") === "1" &&
     params.get("from") === "skeptic-1" && params.get("to") === "temporal-acoustics";
   const draft = readDraft();
-  const requested = roles.some(role => params.has(role)) ?
+  const requested = physical ? { from: "skeptic-1" } : roles.some(role => params.has(role)) ?
     Object.fromEntries(roles.map(role => [role, params.get(role)])) : draft?.pair;
   for (const role of roles) {
     const id = requested?.[role];
@@ -264,13 +298,14 @@ async function start() {
   }
 
   const matchesDraft = roles.every(role => draft?.pair?.[role] === pair[role]);
-  const fields = example ? acousticExample : matchesDraft ? draft.fields : null;
+  const fields = physical ? (draft?.fields || skepticPhysicalExample) :
+    example ? acousticExample : matchesDraft ? draft.fields : null;
   for (const name of draftFields) {
     if (typeof fields?.[name] === "string" && !form.elements[name].value) {
       form.elements[name].value = fields[name];
     }
   }
-  catalogStatus.textContent = `Search ${catalog.size} designs across the Well.`;
+  catalogStatus.textContent = physical ? "SKEPTIC-1 · Numerical model" : `Search ${catalog.size} designs across the Well.`;
   render();
 }
 

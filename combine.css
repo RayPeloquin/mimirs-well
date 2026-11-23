@@ -55,6 +55,8 @@ h1 em { color: var(--mint); }
   text-decoration: none;
   cursor: pointer;
 }
+.bench-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.pair.physical { grid-template-columns: minmax(0, 1fr); }
 .example, .secondary { background: #10242d; color: var(--mint); }
 .example:hover, .secondary:hover { border-color: var(--mint); }
 .primary { background: var(--mint); color: #10241c; }
