@@ -19,8 +19,26 @@ window.WellDesignContributions = {
     source: "index.html#design/recipe-pucks",
     sourceLabel: "Recipe Pucks archived record",
   },
+  "crucible": {
+    contribution: "A versioned synthetic testbed for guarded rover and quadrotor actions with independently checked contract verdicts.",
+    need: "Field-independent validation, improved quadrotor outcomes, and tests of delayed dynamics, residual effects, and imperfect state estimates.",
+    source: "index.html#design/crucible",
+    sourceLabel: "CRUCIBLE design record",
+  },
+  "echo-rx": {
+    contribution: "A normalized mathematical shutdown model showing that a preloaded effect reservoir can continue acting after new production is stopped.",
+    need: "Biological validation and qualified physical mechanisms; the toy dynamics cannot be treated as clinical observations.",
+    source: "index.html#design/echo-rx",
+    sourceLabel: "ECHO-Rx design record",
+  },
+  "chihuahua-sphere-cs-1": {
+    contribution: "A calculation-only method that separates source input, emitted optical energy, path losses, and received energy in physical bookkeeping.",
+    need: "Built apparatus, independent calibrated measurements, uncertainty bounds, and verified optical collection efficiency.",
+    source: "index.html#design/chihuahua-sphere-cs-1",
+    sourceLabel: "Chihuahua Sphere design record",
+  },
   ghostglass: {
-    contribution: "A synthetic on/off statistical reference and a documented test protocol.",
+    contribution: "A synthetic on/off statistical reference with documented false-alert and signal-injection tests under specified statistical assumptions.",
     need: "Measurements that establish whether the method transfers to a physical detector.",
     source: "https://github.com/RayPeloquin/Ghostglass-Neutrino-Statistical-Reference",
     sourceLabel: "Statistical reference and source",
