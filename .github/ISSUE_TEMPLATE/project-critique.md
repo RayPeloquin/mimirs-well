@@ -2,8 +2,6 @@
 name: Project critique or correction
 about: Question a public research claim, suggest an independent check, or report a broken reference
 title: "[Review] Project or page title"
-labels: []
-assignees: []
 ---
 
 **Public project or page:** (link or exact title)
