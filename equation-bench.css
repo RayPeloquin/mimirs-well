@@ -1,0 +1,46 @@
+.math-hero{min-height:300px}
+.math-hero h1{font-size:clamp(3rem,7vw,5.4rem)}
+.math-hero p{max-width:710px}
+.eyebrow{font-size:.76rem;text-transform:uppercase;letter-spacing:.16em;color:var(--gold)}
+.math-hero-warning{font-size:.95rem!important;color:var(--gold)!important}
+.support-note,.muted{color:var(--muted);font-size:.9rem;line-height:1.6}
+.equation-pair{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:14px;align-items:start}
+.equation-slot{min-width:0}
+.equation-slot > label,.section > label{display:block;margin:12px 0 8px;font-weight:650}
+.equation-slot select,.mapping-table select{width:100%;min-width:0;background:#09161d;border:1px solid var(--line);color:var(--text);padding:10px;border-radius:7px;font:inherit}
+.equation-slot select:disabled{opacity:.6}
+.source-equation{margin:17px 0;min-height:232px}
+.source-equation h4{margin:0 0 8px;font:1.5rem Georgia,serif}
+.source-equation .equation-status{color:var(--gold);font-size:.81rem;margin-bottom:12px}
+.source-equation pre{white-space:pre-wrap;overflow-wrap:anywhere;border:1px solid #59786b;border-radius:8px;padding:16px;color:var(--mint);background:#09171c;font-size:clamp(.82rem,1.4vw,.96rem)}
+.source-equation p{font-size:.92rem;color:var(--muted)}
+.source-equation .source-links{display:flex;gap:8px 16px;flex-wrap:wrap;font-size:.85rem}
+.source-equation .caveat{font-size:.85rem}
+.source-equation .symbol-list{font-size:.82rem;color:var(--muted)}
+.equation-slot .button{font-size:.85rem}
+.connector{align-self:center}
+.table-scroll{overflow:auto;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+.mapping-table{border-collapse:collapse;width:100%;min-width:690px}
+.mapping-table th,.mapping-table td{padding:12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.mapping-table th{font-size:.8rem;color:var(--mint);background:#0c1a22}
+.mapping-table td{font-size:.9rem}
+.mapping-table tbody tr:last-child td{border-bottom:0}
+.mapping-table .symbol{display:block;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-weight:bold;color:var(--mint)}
+.mapping-table .symbol-meaning{display:block;font-size:.77rem;color:var(--muted)}
+.mapping-table input{min-width:120px}
+.mapping-footer{margin:16px 0;padding:18px;border:1px solid var(--line);border-radius:10px}
+.acknowledge{display:flex;gap:12px;align-items:start;margin:15px 0}
+.acknowledge input{width:20px;min-width:20px;height:20px;margin:3px 0;flex:none;accent-color:var(--mint)}
+#composition{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;line-height:1.65}
+.math-tools{margin-top:14px;align-items:start}
+.math-tools p{max-width:560px}
+.honesty{padding:26px;border:1px solid #7a6748;border-radius:14px;background:#111c22}
+.honesty-fields{display:grid;gap:16px}
+.honesty-fields label{display:grid;gap:6px}
+.honesty-fields span{font-size:.88rem;color:var(--muted)}
+.candidate-stamp{font-weight:700;color:var(--gold);border-left:3px solid var(--gold);padding:12px 16px;background:#231f17}
+.export-section{margin-bottom:42px}
+.export-section .bench-actions{margin:18px 0}
+#export-status{font-size:.88rem;color:var(--muted)}
+.fallback-wrap{display:grid;gap:8px;margin-top:15px}
+@media(max-width:740px){.equation-pair{grid-template-columns:minmax(0,1fr)}.connector{justify-self:center;transform:none}.source-equation{min-height:0}.math-hero{min-height:260px}.honesty{padding:16px}}
