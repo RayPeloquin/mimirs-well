@@ -10,7 +10,7 @@ const sections = [...html.matchAll(/<section\b[^>]*id="([^"]+)"/g)].map(m => m[1
 const featured = [...html.matchAll(/<article class="card" data-featured[\s\S]*?<\/article>/g)].map(m => m[0]);
 
 test('opening three sections remain in the requested order', () => {
-  assert.deepEqual(sections.slice(0,3), ['projects','research-families','divergence-ledger']);
+  assert.deepEqual(sections.slice(0,3), ['projects','alchemists-bench','divergence-ledger']);
   assert.match(html,/Mimir’s Well is a public collection of engineering concepts/);
   assert.equal(featured.length,10);
   assert.equal(featured.filter(card => !card.startsWith('<article class="card" data-featured hidden')).length,6);
@@ -19,7 +19,8 @@ test('opening three sections remain in the requested order', () => {
 test('private Hall and unverified prototype URLs are not advertised publicly', () => {
   assert.doesNotMatch(html,/chatgpt\.com\/space\/page_/);
   assert.doesNotMatch(html,/viridduck16\.chatgpt\.site/);
-  assert.match(html,/private review workspace/);
+  assert.doesNotMatch(html, /Hall of Areopagus/);
+  assert.match(fs.readFileSync('workbench.html', 'utf8'), /private review workspace/);
 });
 
 test('Ankh concept art is not presented without provenance', () => {

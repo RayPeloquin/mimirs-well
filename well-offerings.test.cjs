@@ -21,5 +21,5 @@ test('the voluntary offering opens the verified one-time Stripe checkout', () =>
   assert.deepEqual(destinations, ['https://buy.stripe.com/5kQcN7gQqary1Ol8qAfrW00']);
   assert.match(section[1], /one-time tip/i);
   assert.match(section[1], /you choose the amount/i);
-  assert.match(section[1], /No charitable tax-deductible status is claimed/);
+  assert.match(section[1], /No charitable tax deduction is offered/);
 });

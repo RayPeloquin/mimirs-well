@@ -67,7 +67,7 @@ test('Armory navigation reaches published catalog entries without scripts', () =
   const divisions = require('./armory-data.js');
   const expected = publicEntries.filter(entry => divisions.has(entry.title)).map(entry => entry.id).sort();
   const links = [...armory.matchAll(/href="catalog\.html#([^"]+)"/g)].map(match => match[1]).sort();
-  assert.match(html, /<nav[^>]*aria-label="Main navigation"[\s\S]*?<a href="armory.html">THE ARMORY<\/a>/);
+  assert.match(html, /<details[^>]*id="research-archive"[\s\S]*?<a href="armory.html">The Armory/);
   assert.ok(expected.length > 0);
   assert.deepEqual(links, expected);
   const plainCatalog = read('catalog.html');
