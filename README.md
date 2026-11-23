@@ -8,6 +8,14 @@
 
 The Ledger is a separate directory, **not one record per project**. A new entry requires a documented change, measurement, revised assumption or explicitly hypothetical crossover. The existing project Registry remains the full inventory.
 
+## Equation Bench — candidate mathematics only
+
+The [Equation Bench](https://raypeloquin.github.io/mimirs-well/equation-bench.html) is a separate one-page extension of the Alchemist’s Bench. It pairs source-reviewed mathematical relations, requires explicit symbol correspondence decisions (including no-counterpart choices), and blocks Markdown export until a new candidate expression and three evidence/assumption statements have been written. Every export retains primary source and registry links plus the stamp **“Candidate mathematics — not derived truth. Requires its own evidence.”**
+
+The first release provides four manually verified entry points (SKEPTIC-1, ECHO-Rx, Ghostglass and Temporal Acoustics), not automatic equation extraction from all 358 project titles. There is no solver, unit checker or scientific validation. Drafts are kept locally in the browser for each ordered pair.
+
+[Source verification, acceptance criteria and limitations](docs/equation-bench-mvp.md).
+
 ## Offering to the Gods of Technology
 
 The homepage preserves its coin-and-ripple visual and the playful **“An Offering to the Gods of Technology”** title. The optional [Support the Well](https://raypeloquin.github.io/mimirs-well/#offerings) link points to Stripe Checkout for a one-time contribution in USD. The Well is independently operated by Mr. Peloquin; intended uses include test fixtures, measurement tools, prototype materials, hosting, and public source notes. The archive remains free. Contributions confer no ownership, exclusive access, favorable research conclusion, or outcome guarantee. No charitable tax deduction is offered.
