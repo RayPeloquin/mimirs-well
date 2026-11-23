@@ -2,7 +2,7 @@
 
 **Where the source gathers.** A public collection of research ideas, computational studies, engineering proposals, creative work, and review methods by Mr. Peloquin and the Synthetic Court.
 
-**Guiding principle:** We do no harm.
+**Guiding principle:** We do no harm. This is an ethical commitment, not a guarantee that untested designs are safe, effective, or ready for use.
 
 **[Explore Mimir’s Well](https://raypeloquin.github.io/mimirs-well/)** · **[Research Families](https://raypeloquin.github.io/mimirs-well/#research-families)** · **[Divergence Ledger Library](https://raypeloquin.github.io/mimirs-well/ledger.html)** · **[Workbench](https://raypeloquin.github.io/mimirs-well/#workbench)** · **[Legal & Rights](https://raypeloquin.github.io/mimirs-well/legal.html)**
 
@@ -10,7 +10,7 @@ The Ledger is a separate directory, **not one record per project**. A new entry 
 
 ## Offering to the Gods of Technology
 
-The homepage uses a coin-and-ripple visual with the playful title **“An Offering to the Gods of Technology”**. It has a discreet, entirely voluntary [Support the Well](https://raypeloquin.github.io/mimirs-well/#offerings) invitation. The button opens Stripe Checkout for a one-time tip in USD. Readers choose the amount. The archive remains free to everyone. A tip confers no ownership, special access or promised research outcome. The website claims no charitable tax-deductible status.
+The homepage preserves its coin-and-ripple visual and the playful **“An Offering to the Gods of Technology”** title. The optional [Support the Well](https://raypeloquin.github.io/mimirs-well/#offerings) link points to Stripe Checkout for a one-time contribution in USD. The Well is independently operated by Mr. Peloquin; intended uses include test fixtures, measurement tools, prototype materials, hosting, and public source notes. The archive remains free. Contributions confer no ownership, exclusive access, favorable research conclusion, or outcome guarantee. No charitable tax deduction is offered.
 
 ## Optional soundscape
 
@@ -24,13 +24,13 @@ Each family links to live matching project cards; cards show their related famil
 
 See [research family maintenance and evidence boundaries](docs/research-families.md). Check the mapping with `node --test research-families.test.cjs`.
 
-## Hall of Areopagus — authenticated private chamber
+## Hall of Areopagus — private workspace
 
-The public Court section points to an [authenticated ChatGPT Space entrance](https://chatgpt.com/space/page_6b0439a490008191af3bdf71e9fb23ee). The Space was created on 23 November 2026 and its access roster was verified as owner-only at setup, with no direct or inherited collaborators. The public site contains only the entrance URL, not private records, credentials or decisions.
+The Hall is a **separate authenticated ChatGPT Space**, created on 23 November 2026. At creation, its access roster showed the owner and no other collaborators or inherited grants. The entry URL is deliberately not advertised on the public homepage. Members use their own authorized account access; the public Well does not expose private deliberations.
 
-The earlier independently hosted Hall prototype remains linked as an *unverified-access prototype*. Neither an unverified login interface nor a hidden public button is security enforcement.
+The Hall contains a charter, deliberation docket, evidence register, and owner decision/release log. This is a private document-centered workspace, **not** a live multi-agent service, automatic arbitration engine or immutable evidence store. Names of other AI Court participants are conceptual review roles and do not confer login rights. Public research promotion requires explicit owner approval and content review.
 
-The private Space currently contains a charter and access policy, deliberation docket, evidence register, and owner decision/release log. This is a private document-centered workspace, **not** a live integrated multi-agent system, automatic arbitration engine, or immutable evidence store. Named AI Court seats do not have login rights unless their specific accounts are deliberately and separately granted access. The owner must explicitly approve any public release.
+An earlier independently hosted Hall prototype had unverified access controls and has been removed from public navigation; its status remains unverified. Public Git history may retain prior entry URLs, which are **not secret credentials**; actual authorization must be enforced by the platform.
 
 ## Governance architecture family
 
@@ -52,6 +52,14 @@ The Well brings together projects at **very different evidence stages**:
 The [Divergence Ledger](https://raypeloquin.github.io/mimirs-well/#divergence-ledger) asks three questions of a project: **What did we intend? What actually happened? What else might this be useful for?** The first seven public pilots include KA PATCH, SKEPTIC-1, Temporal Acoustics, Ghostglass, RAVEN-P1, CRUCIBLE and BRIDLE-3. **Ten further documentary records (008–017)** were added on 20 November 2026: ECHO-Rx, ECHO-M, Third-Look, Temporal Reflection Chamber, Hallvard’s Promise, HEMOSTAT-R, FLUFFY-01, NDSM-01, Hypha Mind / GO-CUBE and Radio Echo Chamber. They are not ten new experimental results. [Source map](docs/divergence-ledger-008-017.md).
 
 Records 018–030, published 21 November 2026, cover ten illustrated designs and three energy or physics proposals. Each entry links to its public source note and identifies a test that could change the record. [Browse all 30 records](https://raypeloquin.github.io/mimirs-well/ledger.html).
+
+## Public-facing editorial review — 23 November 2026
+
+After an external content review, the homepage clarified what the archive is, added a qualification to the safety principle, annotated illustrated and Brain-archive selections, restored three missing featured-card Divergence Ledger links, made the HIPPO introduction navigable, improved Workbench context, and replaced the personal-email mailto with a structured public GitHub issue template. The **Brain archive** links lead to public summaries of privately held source notes, not private originals.
+
+The Ankh Qubit Assembly's concept-art image was temporarily **removed from homepage display and the gallery index** because its creation/rights provenance is unresolved. The existing image file and historic Git revisions have **not** been deleted; they may remain publicly retrievable. The project title remains catalogued, without implying hardware validation. A later decision to re-feature the artwork should document who created it and its permitted public use.
+
+A browser-based mobile accessibility/contrast check and a live deployment check remain outstanding; source edits and structural assertions are not evidence those checks passed.
 
 ## Finding the source
 
