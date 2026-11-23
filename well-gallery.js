@@ -51,13 +51,6 @@
       caption: 'CEREBRIS v1.0 · Trauma Cerebral Life-Support Module. Artist’s concept for field-to-hospital support. The readings are illustrative. The poster provides no patient measurements or clinical validation.',
     },
     {
-      id: 'qubit-ankh-assembly',
-      src: 'assets/qubit-ankh-quantum-concept.jpg',
-      alt: 'Concept artwork of a suspended cryogenic-style quantum apparatus with many wires and an illuminated central panel marked by an ankh.',
-      caption: 'Ankh Qubit Assembly · archive concept artwork. No hardware validation. Original design version unverified.',
-    },
-
-    {
       id: 'crucible',
       src: 'assets/crucible-aviation-test-harness-poster.png',
       alt: 'CRUCIBLE reusable autonomy test harness concept poster with a proposed fixed-wing aircraft above a synthetic rover, multirotor and simulation engine.',
