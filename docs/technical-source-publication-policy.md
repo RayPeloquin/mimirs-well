@@ -48,10 +48,19 @@ Operationally enabling build instructions, precise energetic specifications, act
 
 ## Repository safeguards and limits
 
-- [Publication controls](publication-controls.js) mark six held records and three watched related projects in the public interface.
-- [Publication preflight script](scripts/check-publication-boundary.cjs) checks the inventory and scans the repository tree for specific known private source files and private-directory mistakes. It is a **narrow tripwire**; it cannot automatically judge the safety of arbitrary new content.
+- [Publication controls](../publication-controls.js) mark six held records and three watched related projects in the public interface. They also define the separate Equation Bench eligibility list (SKEPTIC-1, ECHO-Rx, Ghostglass and Temporal Acoustics); new sources require explicit review before inclusion.
+- [Publication preflight script](../scripts/check-publication-boundary.cjs) checks catalog statuses, approved Equation Bench source IDs, selected UI safeguards, and suspicious private-source filenames/folders. It is a **narrow tripwire**; it cannot automatically judge the safety of arbitrary new content.
 - GitHub Actions can run that preflight on pushes and pull requests. **A workflow is not a permission control or a substitute for GitHub branch protection and required review.** Direct pushes and other repositories remain outside its protective scope unless appropriately configured.
 - The public GitHub repository, including its history, should always be treated as public. Store original restricted source materials in a separate access-controlled location, **not** an ignored or hidden folder inside this repository.
+
+## Required follow-up: branch rules and public-history audits
+
+- [Branch-rule setup, test instructions, permitted equations and history/release checklist](hippo-publication-followup-checklist.md) is the maintained follow-up record.
+- GitHub must be configured to **require a pull request and the publication preflight status check** before merging into `main`, subject to explicit owner/bypass limits. Until the settings and blocked-merge behavior are verified, no claim of enforced merge protection is warranted.
+- Inspect historical commits, branches, tags, releases, downloadable assets and cross-project aggregation **before relevant technical releases and at least monthly**. A clean present-day source tree does not prove the past has no sensitive material.
+- New Equation Bench source relationships must be independently traced and approved by the steward with cross-project disclosure risk considered; an AI-generated assertion or changed project name does not authorize technical release.
+
+**Status as of 23 November 2026:** required merge-check settings and full retrospective public-history audit have **not been independently verified**.
 
 ## Release review record (private)
 
