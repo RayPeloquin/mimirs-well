@@ -1,0 +1,22 @@
+name: Publication safety preflight
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  publication-preflight:
+    name: Review release-control labels and restricted-file paths
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Check publication boundaries
+        run: node scripts/check-publication-boundary.cjs
