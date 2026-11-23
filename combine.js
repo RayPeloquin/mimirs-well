@@ -13,6 +13,8 @@ const fieldLabels = {
 };
 const draftFields = ["title", ...Object.keys(fieldLabels)];
 const contributions = window.WellDesignContributions;
+const releaseHolds = window.WellPublicationControls?.holds || {};
+function isReleaseHeld(id) { return Boolean(id && Object.hasOwn(releaseHolds, id)); }
 const draftKey = physical ? "mimirs-well-physical-skeptic-1-v1" : "mimirs-well-combine-draft-v1";
 const pair = { from: null, to: null };
 const catalog = new Map();
@@ -131,6 +133,10 @@ function syncPair() {
 }
 
 function setDesign(role, id) {
+  if (isReleaseHeld(id)) {
+    exportStatus.textContent = "This design is on a technical-source release hold. Its public catalog summary remains readable, but combination export is unavailable pending review.";
+    return;
+  }
   pair[role] = id;
   document.querySelector(`#${role}-search`).value = "";
   render();
@@ -152,7 +158,7 @@ function renderMatches(role) {
 
   const words = normalize(input.value).split(" ").filter(Boolean);
   const otherRole = role === "from" ? "to" : "from";
-  const candidates = Array.from(catalog.values()).filter(entry => entry.id !== pair[otherRole]);
+  const candidates = Array.from(catalog.values()).filter(entry => entry.id !== pair[otherRole] && !isReleaseHeld(entry.id));
   const matches = words.length ?
     candidates.filter(entry => words.every(word => entry.searchText.includes(word))) :
     candidates.filter(entry => Object.hasOwn(contributions, entry.id));
@@ -225,7 +231,7 @@ function render() {
     renderSelection(role);
     if (!physical) renderMatches(role);
   }
-  copy.disabled = download.disabled = !roles.every(role => pair[role]);
+  copy.disabled = download.disabled = !roles.every(role => pair[role] && !isReleaseHeld(pair[role]));
   fallbackLabel.hidden = true;
   exportStatus.textContent = copy.disabled ? "Choose two designs to export a proposed test." : "";
 }
@@ -261,6 +267,8 @@ function briefMarkdown() {
 }
 
 copy.addEventListener("click", async () => {
+  if (roles.some(role => isReleaseHeld(pair[role]))) return;
+  if (copy.disabled) return;
   const text = briefMarkdown();
   try {
     await navigator.clipboard.writeText(text);
@@ -275,6 +283,8 @@ copy.addEventListener("click", async () => {
 });
 
 download.addEventListener("click", () => {
+  if (roles.some(role => isReleaseHeld(pair[role]))) return;
+  if (download.disabled) return;
   const blob = new Blob([briefMarkdown()], { type: "text/markdown;charset=utf-8" });
   const url = URL.createObjectURL(blob);
   const link = element("a");
@@ -326,7 +336,7 @@ async function start() {
     Object.fromEntries(roles.map(role => [role, params.get(role)])) : draft?.pair;
   for (const role of roles) {
     const id = requested?.[role];
-    if (catalog.has(id) && !Object.values(pair).includes(id)) pair[role] = id;
+    if (catalog.has(id) && !isReleaseHeld(id) && !Object.values(pair).includes(id)) pair[role] = id;
     const input = document.querySelector(`#${role}-search`);
     input.disabled = false;
     input.addEventListener("input", () => renderMatches(role));
@@ -342,7 +352,7 @@ async function start() {
       form.elements[name].value = fields[name];
     }
   }
-  catalogStatus.textContent = physical ? "SKEPTIC-1 · Numerical model" : `Search ${catalog.size} designs across the Well.`;
+  catalogStatus.textContent = physical ? "SKEPTIC-1 · Numerical model" : `Search ${catalog.size - Object.keys(releaseHolds).length} eligible designs. ${Object.keys(releaseHolds).length} held source records remain in the public catalog only.`;
   render();
 }
 
