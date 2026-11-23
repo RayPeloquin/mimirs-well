@@ -3,7 +3,8 @@
 /* Equation Bench MVP — no algebra engine, no implied proof, no automatic variable merging. */
 (() => {
   const cores = window.WellEquationCores || {};
-  const ids = Object.keys(cores);
+  const releaseHolds = window.WellPublicationControls?.holds || {};
+  const ids = Object.keys(cores).filter(id => !Object.hasOwn(releaseHolds, id));
   const $ = id => document.getElementById(id);
   const aPick = $("pick-a"), bPick = $("pick-b");
   const aCard = $("card-a"), bCard = $("card-b");
@@ -23,7 +24,7 @@
     if (value !== undefined) x.textContent = value;
     return x;
   }
-  function primary(id) { return cores[id] || null; }
+  function primary(id) { return !Object.hasOwn(releaseHolds, id) ? cores[id] || null : null; }
   function entry(id) { return catalog.get(id) || null; }
   function selected() { return Boolean(primary(pair.a) && primary(pair.b) && pair.a !== pair.b); }
   function pairKey() { return "mimirs-well-equation-bench-v1:" + pair.a + "::" + pair.b; }
