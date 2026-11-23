@@ -4,7 +4,7 @@
 
 **Guiding principle:** We do no harm.
 
-**[Explore Mimir’s Well](https://raypeloquin.github.io/mimirs-well/)** · **[Divergence Ledger Library](https://raypeloquin.github.io/mimirs-well/ledger.html)** · **[Workbench](https://raypeloquin.github.io/mimirs-well/#workbench)** · **[Legal & Rights](https://raypeloquin.github.io/mimirs-well/legal.html)**
+**[Explore Mimir’s Well](https://raypeloquin.github.io/mimirs-well/)** · **[Research Families](https://raypeloquin.github.io/mimirs-well/#research-families)** · **[Divergence Ledger Library](https://raypeloquin.github.io/mimirs-well/ledger.html)** · **[Workbench](https://raypeloquin.github.io/mimirs-well/#workbench)** · **[Legal & Rights](https://raypeloquin.github.io/mimirs-well/legal.html)**
 
 The Ledger is a separate directory, **not one record per project**. A new entry requires a documented change, measurement, revised assumption or explicitly hypothetical crossover. The existing project Registry remains the full inventory.
 
@@ -15,6 +15,14 @@ The homepage uses a coin-and-ripple visual with the playful title **“An Offeri
 ## Optional soundscape
 
 The homepage includes a quietly mixed, original procedural soundscape: occasional water droplets with a restrained echo, filtered cavern air and low stone-like resonance. It uses the browser's Web Audio API and no recorded/audio assets, autoplay, cookies or telemetry. It **always starts off**. Visitors may explicitly press **Listen to the Well**, adjust volume, or **Silence the Well**. Playback also stops if they leave or hide the tab. The rest of the site works normally when audio is unsupported or disabled. Source: `well-ambience.js`.
+
+## Connected research families
+
+The homepage now has a **Research Families** explorer with twelve overlapping, question-based pathways: AI governance, embodiment, medical care, living systems, Zion and ecology, water and power, sensing, fundamental physics, aerospace, protective field systems, materials, and community/education.
+
+Each family links to live matching project cards; cards show their related families, and the catalog has a family filter that works alongside its existing filters. The index deliberately retains an **Awaiting family mapping** queue instead of inventing relationships for ambiguous archive titles. Family links are navigational only: they do not imply interoperability, maturity, validation, or a new Divergence Ledger finding. The existing project Registry and original catalog remain authoritative for evidence and project identity.
+
+See [research family maintenance and evidence boundaries](docs/research-families.md). Check the mapping with `node --test research-families.test.cjs`.
 
 ## Governance architecture family
 
@@ -41,6 +49,7 @@ Records 018–030, published 21 November 2026, cover ten illustrated designs and
 
 - `index.html`: main site and project collection.
 - `catalog.js`: recovered title inventory and project cards.
+- `research-families.js`: overlapping cross-domain research pathways, title assignments, and family-specific catalog filtering.
 - `registry.js`: read-only expanded project records and provenance.
 - `public-notes/`: bounded research digests linking reviewed archive material to project records without publishing private originals.
 - `well-gallery.js`, `gallery.css`, `assets/`: project artwork with captions and alt text.
