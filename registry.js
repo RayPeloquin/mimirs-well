@@ -196,7 +196,16 @@ if(records.has('silt-hippo-silo-cistern'))Object.assign(records.get('silt-hippo-
 if(records.has('papercall-papercall-sky'))Object.assign(records.get('papercall-papercall-sky'),{"expanded":true,"purpose":"The Sky variant combines a foldable paper-based interface with a removable communications module. The drawing assigns calls and texts to cellular service and short emergency messages to satellite fallback.","version":"Illustration-based public record · 21 November 2026","evidence":"The artwork supplies no coverage trials, battery endurance measurements or confirmed delivery records.","sources":"https://github.com/RayPeloquin/mimirs-well/blob/main/public-notes/papercall-papercall-sky.md\nArchived concept illustration: PaperCall Sky Emergency Communicator Infographic.png","next":"Simulate loss of coverage and delayed acknowledgements. Check whether users can distinguish a queued message from confirmed delivery."});
 if(records.has('echo-bowl'))Object.assign(records.get('echo-bowl'),{"expanded":true,"purpose":"A passive radio receiver would listen for existing transmissions scattered by celestial objects. A reference antenna would help distinguish candidate echoes from interference.","version":"Illustration-based public record · 21 November 2026","evidence":"The diagram supplies no observed echo, calibrated sensitivity measurement or demonstrated range.","sources":"https://github.com/RayPeloquin/mimirs-well/blob/main/public-notes/echo-bowl.md\nArchived concept illustration: Echo Bowl passive listening system diagram.png","next":"Use blinded synthetic recordings with and without echoes. Measure detection and false alarms as interference changes."});
 // Keep catalog summaries aligned with their published records.
-cards.forEach(card=>{const record=records.get(card.dataset.recordId);const summary=card.querySelector('p');if(record&&summary){card.dataset.depth=record.expanded?'expanded':'pending';const badge=document.createElement('small');badge.className='record-depth';badge.textContent=record.expanded?'Expanded record':'Source review pending';card.querySelector('.stage').after(badge);if(!card.hasAttribute('data-featured'))summary.textContent=record.purpose;card.dataset.search=[record.title,summary.textContent,...fields.map(field=>record[field]||'')].join(' ')}});
+cards.forEach(card=>{const record=records.get(card.dataset.recordId);const summary=card.querySelector('p');if(record&&summary){card.dataset.depth=record.expanded?'expanded':'pending';const badge=document.createElement('small');badge.className='record-depth';badge.textContent=record.expanded?'Expanded record':'Source review pending';card.querySelector('.stage').after(badge);
+const controls=window.WellPublicationControls;
+const hold=controls?.holds?.[record.id],watch=controls?.watches?.[record.id];
+if(hold||watch){
+ const flag=document.createElement('small');
+ flag.className='publication-flag '+(hold?'publication-hold':'publication-watch');
+ flag.textContent=hold?controls.holdLabel:controls.watchLabel;
+ badge.after(flag);
+}
+if(!card.hasAttribute('data-featured'))summary.textContent=record.purpose;card.dataset.search=[record.title,summary.textContent,...fields.map(field=>record[field]||'')].join(' ')}});
 window.dispatchEvent(new Event('registry-ready'));
 // Public records are read-only. Existing browser-local notes are left untouched.
 const notice=document.createElement('div');notice.className='registry-tools';notice.innerHTML='<strong>Olympus Registry · Read-only public records</strong><p>Browse research, review methods and creative work, alongside archived titles awaiting assessment. Expanded documentation is not a maturity or validation rating. Some references name privately held archive documents rather than public downloads; linked precedent papers do not validate our designs. Changes to the collection are maintained through the project repositories; this website has no public editing, save or import controls.</p><p id="registry-status" role="status" aria-live="polite"></p>';
@@ -210,6 +219,18 @@ document.getElementById('record-title').textContent=base.title;
 document.getElementById('record-meta').textContent=base.record+' · '+(base.expanded?'Expanded record':'Source review pending')+' · Read-only · ID: '+id;
 document.getElementById('record-summary').textContent=base.purpose;
 const published=document.getElementById('record-public-fields');published.replaceChildren();
+const publication=window.WellPublicationControls;
+const holdReason=publication?.holds?.[id],watchReason=publication?.watches?.[id];
+if(holdReason||watchReason){
+ const heading=document.createElement('h3');
+ heading.textContent=holdReason?publication.holdLabel:publication.watchLabel;
+ const paragraph=document.createElement('p');
+ paragraph.textContent=(holdReason||watchReason)+' Public summary only; no technical release approval implied.';
+ const link=document.createElement('a');
+ link.href=publication.policy;
+ link.textContent='Read the technical-source publication policy ↗';
+ published.append(heading,paragraph,link);
+}
 [['version','Version'],['evidence','Evidence and limitations'],['contributors','Contributors'],['next','Proposed next steps'],['notes','Notes']].forEach(([field,label])=>{const value=base[field]||(field==='contributors'?'Contributor roles have yet to be documented.':'');if(!value)return;const heading=document.createElement('h3'),text=document.createElement('p');heading.textContent=label;text.textContent=value;text.style.whiteSpace='pre-line';published.append(heading,text)});
 const contribution = window.WellDesignContributions?.[id];
 if (contribution) {
