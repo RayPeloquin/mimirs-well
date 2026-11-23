@@ -4,6 +4,11 @@
 html{overflow-x:clip}
 :root{color-scheme:dark;--bg:#080f17;--ink:#edf4ef;--muted:#a4b5bc;--line:#263b43;--mint:#b5f5cf;--gold:#d9bc83}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,sans-serif}a{color:inherit;text-underline-offset:5px}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:5px}.wrap{max-width:1240px;margin:auto;padding:0 6%}header{border-bottom:1px solid var(--line);background:#080f17ed}nav{min-height:90px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 24px}.brand{font-family:Georgia,serif;font-size:25px;text-decoration:none}.brand span{color:var(--mint);margin-right:12px}.links{display:flex;flex-wrap:wrap;gap:8px 28px;font-size:13px;letter-spacing:.06em;max-width:100%}.links a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none;color:var(--muted);white-space:nowrap}.hero{display:grid;grid-template-columns:minmax(0,600px);align-items:center;min-height:650px;padding-top:60px;padding-bottom:70px}.eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--mint)}h1{font:clamp(64px,8vw,112px)/.99 Georgia,serif;letter-spacing:-.05em;margin:28px 0}h1 em{color:var(--mint);font-weight:normal}.intro{color:var(--muted);max-width:480px;font-size:18px}.button{display:inline-block;border:1px solid var(--mint);background:var(--mint);color:#091a16;padding:13px 23px;text-decoration:none;font-size:13px;font-weight:650;margin:20px 15px 0 0}.quiet{background:transparent;color:var(--ink);border-color:var(--line)}.strip{display:flex;justify-content:space-between;gap:20px;padding:24px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:var(--muted);font-size:12px}.strip strong{font-weight:400;color:var(--mint)}section{padding:85px 0}.sectionhead{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:30px}h2{font:42px/1.15 Georgia,serif;letter-spacing:-.025em;margin:15px 0}h3{font:27px/1.2 Georgia,serif;margin:17px 0 12px}.sectionhead p{max-width:420px;color:var(--muted);font-size:14px}.controls{display:flex;flex-wrap:wrap;gap:10px;margin:30px 0}button,input{font:inherit}button{min-height:44px;border:1px solid var(--line);color:var(--muted);background:transparent;padding:9px 16px;cursor:pointer;font-size:12px}button[aria-pressed=true]{background:var(--mint);border-color:var(--mint);color:#091a16}input{min-width:180px;flex:1;border:1px solid var(--line);background:#101c26;color:var(--ink);padding:9px 14px;font-size:13px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{min-width:0;overflow-wrap:anywhere;border:1px solid var(--line);padding:26px;display:flex;flex-direction:column;min-height:310px;background:linear-gradient(145deg,#13222a80,transparent)}.card[hidden]{display:none}.index{color:var(--gold);font:12px monospace;letter-spacing:.1em}.tag{color:var(--mint);font-size:10px;letter-spacing:.12em;text-transform:uppercase;margin-left:auto}.cardtop{display:flex;gap:10px;align-items:center}.card p{color:var(--muted);font-size:14px;margin:0 0 24px}.card a{margin-top:auto;font-size:12px;color:var(--mint);text-decoration:none}.card a:hover{text-decoration:underline}.note{color:var(--muted);font-size:12px;margin-top:22px}.about{border-top:1px solid var(--line);display:grid}.about p{color:var(--muted)}footer{padding:30px 0;border-top:1px solid var(--line);color:var(--muted);font-size:12px}footer .wrap{display:flex;justify-content:space-between;gap:20px}.empty{color:var(--gold)}@media(max-width:800px){.hero{grid-template-columns:1fr;min-height:0}.grid{grid-template-columns:repeat(2,1fr)}.sectionhead{display:block}.links{gap:15px}.strip{flex-wrap:wrap}}@media(max-width:520px){nav{flex-wrap:wrap;padding:20px 0;gap:12px}.brand{font-size:23px}.links{font-size:12px;width:100%;justify-content:space-between;gap:4px 12px}.hero{padding-top:45px}.grid{grid-template-columns:1fr}section{padding:55px 0}h2{font-size:35px}.strip{display:block}.strip span{display:block;margin:6px 0}footer .wrap{display:block}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .stage{display:block;color:var(--gold);font-size:11px;margin-top:16px}.alias{color:var(--muted);font-size:11px}.card .tag{letter-spacing:.04em;text-align:right}select{min-height:44px;font:inherit;color:var(--ink);background:#101c26;border:1px solid var(--line);padding:9px 12px;font-size:13px;max-width:100%}.catalog-help{border-left:2px solid var(--gold);padding:4px 18px;color:var(--muted);font-size:13px}.loadmore{display:block;margin:24px auto;color:var(--ink);font-size:14px}.loadmore[hidden]{display:none}
+.pending-collection{margin-top:48px;padding-top:35px;border-top:1px solid var(--line)}
+.pending-collection .sectionhead{align-items:start}
+.pending-collection .card{min-height:275px;background:linear-gradient(145deg,#101b22c7,transparent)}
+.pending-collection .card .record-depth{color:var(--gold)}
+.pending-collection[hidden]{display:none}
 .registry-tools{border:1px solid var(--line);padding:22px;margin:25px 0;background:#101c26}.registry-tools p{color:var(--muted);font-size:13px;margin:8px 0}.registry-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:15px 0}.registry-actions .button{margin:0}.record-open{margin-top:20px;text-align:left;color:var(--mint);align-self:flex-start}.import-label{min-width:0;max-width:100%;font-size:12px;color:var(--mint);display:flex;flex-wrap:wrap;align-items:center;gap:10px}.import-label input{min-width:0;width:240px;max-width:100%;font-size:11px}.record-dialog{color:var(--ink);background:#0c1720;border:1px solid #52756c;width:min(860px,94vw);max-height:90vh;padding:30px;overflow:auto;overscroll-behavior:contain}.record-dialog::backdrop{background:#030810df}.record-head{position:sticky;top:0;z-index:1;background:#0c1720;padding:10px 0;display:flex;gap:20px;justify-content:space-between;align-items:start}.record-head h2{font-size:32px;overflow-wrap:anywhere}.record-head button{flex-shrink:0}.record-dialog fieldset{border:1px solid var(--line);padding:20px;margin:25px 0}.record-dialog legend{color:var(--gold);padding:0 10px}.record-dialog label{display:block;font-size:13px;color:var(--mint);margin:18px 0}.record-dialog textarea,.record-dialog input{display:block;width:100%;min-width:0;margin-top:7px;background:#14232d;border:1px solid #3b545c;padding:12px;color:var(--ink);font:14px/1.5 system-ui,sans-serif;resize:vertical}.record-dialog textarea:focus-visible,.record-dialog select:focus-visible{outline:2px solid var(--gold)}.record-dialog p,.record-dialog li{overflow-wrap:anywhere}.record-dialog summary{cursor:pointer;color:var(--gold)}.record-dialog li{font-size:12px;color:var(--muted);margin:8px 0}.record-dialog a{color:var(--mint)}#record-status,#registry-status{color:var(--gold);font-size:13px}@media(max-width:520px){.record-dialog{padding:18px}.record-head{display:block}.record-dialog fieldset{padding:12px}.record-head h2{font-size:27px}}
 .skip-link{position:absolute;left:16px;top:12px;z-index:10;padding:12px 18px;background:var(--mint);color:var(--bg);transform:translateY(-200%)}.skip-link:focus{transform:translateY(0)}
 @media(max-width:800px){#search,#stage,#depth,.record-dialog input,.record-dialog textarea{font-size:16px}}
@@ -183,9 +188,9 @@ html{overflow-x:clip}
   </div>
 </div></div></div>
 <div class="strip"><span><strong>01</strong> &nbsp; Gather the ideas</span><span><strong>02</strong> &nbsp; Question the assumptions</span><span><strong>03</strong> &nbsp; Follow the evidence</span><span><strong>Guiding principle:</strong> We do no harm. Untested concepts are not certified safe.</span></div>
-<section id="projects"><div class="sectionhead"><div><div class="eyebrow">The open collection</div><h2>Featured projects.</h2></div><p>The catalog contains 358 distinct project cards, including 173 expanded records and 185 records pending source review. Start with six projects with a public calculation, model, or software record to inspect.</p></div>
+<section id="projects"><div class="sectionhead"><div><div class="eyebrow">The open collection</div><h2>Projects with expanded records.</h2></div><p>The catalog contains 358 distinct project cards: 173 expanded records and 185 awaiting source review. Start with six featured projects whose public calculations, models, or software records can be inspected. Pending titles are grouped in their own section below.</p></div>
 <p class="catalog-help">Explore research designs, review methods, and creative projects. An <strong>expanded record</strong> has more documentation, not a validation certificate; other entries preserve archive titles awaiting source review. Categories describe subject areas, while source groups describe where a record came from. Different versions stay separate until their relationship is documented.</p>
-<div class="catalog-shortcuts" aria-label="Collection resources"><a href="catalog.html">Browse the full catalog ↗</a><a href="catalog.json">Machine-readable catalog ↗</a><a href="https://github.com/RayPeloquin/mimirs-well/blob/main/COLLECTION-REVIEW.md">Collection review and limitations ↗</a></div><div class="controls" aria-label="Project filters"><button type="button" data-filter="all" aria-pressed="true">All projects</button><button type="button" data-filter="safety" aria-pressed="false">AI & safety</button><button type="button" data-filter="biology" aria-pressed="false">Biology</button><button type="button" data-filter="physics" aria-pressed="false">Physics & engineering</button><button type="button" data-filter="infrastructure" aria-pressed="false">Water & power</button><button type="button" data-filter="robotics" aria-pressed="false">Robotics & field systems</button><button type="button" data-filter="community" aria-pressed="false">Communities & creative</button><select id="stage" aria-label="Filter by source group"><option value="all">All source groups</option><option value="repository">Public repositories</option><option value="documented">Portfolio & archived design titles</option><option value="concept">Recovered concept titles</option></select><select id="depth" aria-label="Filter by record detail"><option value="all">All record details</option><option value="expanded">Expanded records</option><option value="pending">Source review pending</option></select><input id="search" type="search" aria-label="Search projects" placeholder="Find a project…"><button id="reset-filters" type="button">Reset filters</button></div><p id="results" class="note" role="status" aria-live="polite">Six featured projects appear below. <a href="catalog.html">Browse the complete catalog</a>.</p><div class="grid">
+<div class="catalog-shortcuts" aria-label="Collection resources"><a href="catalog.html">Browse the full catalog ↗</a><a href="catalog.json">Machine-readable catalog ↗</a><a href="https://github.com/RayPeloquin/mimirs-well/blob/main/COLLECTION-REVIEW.md">Collection review and limitations ↗</a></div><div class="controls" aria-label="Project filters"><button type="button" data-filter="all" aria-pressed="true">All projects</button><button type="button" data-filter="safety" aria-pressed="false">AI & safety</button><button type="button" data-filter="biology" aria-pressed="false">Biology</button><button type="button" data-filter="physics" aria-pressed="false">Physics & engineering</button><button type="button" data-filter="infrastructure" aria-pressed="false">Water & power</button><button type="button" data-filter="robotics" aria-pressed="false">Robotics & field systems</button><button type="button" data-filter="community" aria-pressed="false">Communities & creative</button><select id="stage" aria-label="Filter by source group"><option value="all">All source groups</option><option value="repository">Public repositories</option><option value="documented">Portfolio & archived design titles</option><option value="concept">Recovered concept titles</option></select><select id="depth" aria-label="Filter by record detail"><option value="all">All record details</option><option value="expanded">Expanded records</option><option value="pending">Source review pending</option></select><input id="search" type="search" aria-label="Search projects" placeholder="Find a project…"><button id="reset-filters" type="button">Reset filters</button></div><p id="results" class="note" role="status" aria-live="polite">Six featured projects appear below. <a href="catalog.html">Browse the complete catalog</a>.</p><div class="grid" id="expanded-grid" aria-label="Expanded project records">
 <article class="card" data-featured data-category="physics"><div class="cardtop"><span class="index">01 /</span><span class="tag">Mechanical measurement</span></div><h3>SKEPTIC-1</h3><div class="featured-evidence">Numerical model</div><p>Reversible mechanical probing: the ideal-model study shows an asymmetric brace separates mirrored faults while a center brace preserves ambiguity. Numerical evidence only; no built instrument.</p><a href="skeptic-divergence-ledger.html">Inspect the probe calculation ↗</a><a href="https://github.com/RayPeloquin/SKEPTIC-1">Open project repository ↗</a></article>
 <article class="card" data-featured data-category="safety"><div class="cardtop"><span class="index">02 /</span><span class="tag">AI & safety</span></div><h3>CRUCIBLE</h3><div class="featured-evidence">Vehicle simulation + software tests</div><p>In 40 simulated rover scenarios, the baseline controller broke its rules eight times. The guarded controller broke them zero times. The quadrotor results were mixed, and neither vehicle was tested in the field.</p><a href="https://github.com/RayPeloquin/CRUCIBLE-Autonomy-Test-Harness">Open project repository ↗</a><a href="crucible-divergence-ledger.html#recount">Inspect the simulation and replay checks ↗</a></article>
 <article class="card" data-featured data-category="physics"><div class="cardtop"><span class="index">03 /</span><span class="tag">Neutrino research</span></div><h3>Ghostglass</h3><div class="featured-evidence">Statistical simulation + software tests</div><p>CHRONOVISOR–N/S: a synthetic on/off statistical reference with published experiment code, saved baseline results, and a documented 15-test protocol suite. These software checks do not demonstrate a working neutrino detector; hardware remains unvalidated.</p><a href="https://github.com/RayPeloquin/Ghostglass-Neutrino-Statistical-Reference">Open project repository ↗</a><a href="ghostglass-divergence-ledger.html">Divergence Ledger ↗</a><a href="ghostglass-divergence-ledger.html#evidence-title">Inspect the saved simulation results ↗</a></article>
@@ -196,7 +201,14 @@ html{overflow-x:clip}
 <article class="card" data-featured hidden data-category="physics"><div class="cardtop"><span class="index">08 /</span><span class="tag">Physics</span></div><h3>Temporal Reflection Chamber</h3><p>The timing model predicts that two pulse features should return in reverse order under a specified switch condition. The chamber still needs a measurement that distinguishes that signature from ordinary echoes.</p><a href="https://github.com/RayPeloquin/Temporal-Reflection-Chamber">Open project repository ↗</a><a href="temporal-reflection-chamber-divergence-ledger.html">Divergence Ledger ↗</a></article>
 <article class="card" data-featured hidden data-category="biology"><div class="cardtop"><span class="index">09 /</span><span class="tag">Biology</span></div><h3>ECHO-M</h3><p>A proposed artificial chromosome would record an exposure as a one-bit mark. A mark could tell a reviewer that an event occurred, but its timing and frequency would remain unknown. The design awaits experimental testing.</p><a href="https://github.com/RayPeloquin/ECHO-M-Host-Coupled-Artificial-Chromosome">Open project repository ↗</a><a href="echo-m-divergence-ledger.html">Divergence Ledger ↗</a></article>
 <article class="card" data-featured hidden data-category="community"><div class="cardtop"><span class="index">10 /</span><span class="tag">Interactive worlds</span></div><h3>Adventurer’s Forge</h3><p>The written rules open at the Broken Skybridge, where players face their first scenario. The archive includes the scene and its artwork. A completed human playtest has yet to be documented.</p><a href="https://github.com/RayPeloquin/UI-Worlds-Adventurers-Forge">Open project repository ↗</a></article>
-</div><button id="load-more" type="button" class="loadmore" hidden>Show 6 more projects ↓</button><noscript><p class="catalog-help">JavaScript is disabled. You can still open the six featured project cards listed above. The interactive filters and record dialogs require JavaScript. <a href="https://github.com/RayPeloquin">Browse the public GitHub collection ↗</a></p><style>.controls{display:none}</style></noscript><p class="note">This directory is a starting point, not a claim of validation. Concepts, computational results, and physical demonstrations require different evidence. Consult each project’s current source documents.</p></section>
+</div><button id="load-more" type="button" class="loadmore" hidden>Show 6 more expanded records ↓</button>
+<section id="pending-projects" class="pending-collection" aria-labelledby="pending-title" hidden>
+  <div class="sectionhead"><div><div class="eyebrow">Preserved for future review</div><h3 id="pending-title">Pending project records.</h3></div><p><strong id="pending-total">185</strong> project titles have not yet had their sources reviewed into expanded records. These are archive placeholders, not evidence of a tested design. They remain searchable, openable, and available to revisit.</p></div>
+  <div class="catalog-shortcuts"><a href="catalog.html?evidence=pending">Browse all pending entries in the catalog ↗</a></div>
+  <div class="grid" id="pending-grid" aria-label="Pending project records"></div>
+  <button id="load-pending" type="button" class="loadmore" hidden>Show 6 more pending entries ↓</button>
+</section>
+<noscript><p class="catalog-help">JavaScript is disabled. You can still open the six featured project cards listed above. The interactive filters and record dialogs require JavaScript. <a href="catalog.html?evidence=pending">Browse the pending records in the full catalog ↗</a> or <a href="https://github.com/RayPeloquin">browse the public GitHub collection ↗</a></p><style>.controls{display:none}</style></noscript><p class="note">This directory is a starting point, not a claim of validation. Concepts, computational results, and physical demonstrations require different evidence. Consult each project’s current source documents.</p></section>
 <section id="alchemists-bench" aria-labelledby="alchemists-bench-title">
   <div class="alchemist-bench">
     <div>
@@ -303,18 +315,114 @@ html{overflow-x:clip}
 <script src="well-ambience.js?v=20261120-well-sound-v1" defer></script>
 <script src="armory-data.js"></script><script src="catalog.js?v=20261121-armory"></script><script src="research-families.js?v=20261123-six"></script>
 <script>
-const buttons=[...document.querySelectorAll('[data-filter]')],cards=[...document.querySelectorAll('.card')],search=document.getElementById('search'),stage=document.getElementById('stage'),depth=document.getElementById('depth'),family=document.getElementById('family'),more=document.getElementById('load-more');const projectPageSize=6;let category='all',limit=projectPageSize;
-function searchText(value){return value.normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/['’‘]/g,'').replace(/[^\p{L}\p{N}]+/gu,' ').trim()}
+const buttons=[...document.querySelectorAll('#projects [data-filter]')];
+const cards=[...document.querySelectorAll('#projects .card')];
+const search=document.getElementById('search');
+const stage=document.getElementById('stage');
+const depth=document.getElementById('depth');
+const family=document.getElementById('family');
+const more=document.getElementById('load-more');
+const pendingMore=document.getElementById('load-pending');
+const expandedGrid=document.getElementById('expanded-grid');
+const pendingGrid=document.getElementById('pending-grid');
+const pendingSection=document.getElementById('pending-projects');
+const results=document.getElementById('results');
+const projectPageSize=6;
+let category='all',expandedLimit=projectPageSize,pendingLimit=projectPageSize,sectionsReady=false;
+
+function searchText(value){
+  return value.normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase()
+    .replace(/['’‘]/g,'').replace(/[^\p{L}\p{N}]+/gu,' ').trim();
+}
 function matchesSearch(text,query){return query.split(' ').filter(Boolean).every(word=>text.includes(word))}
 const searchCache=new WeakMap();
 function cardSearchText(card){
- const raw=[...card.querySelectorAll('h3,p,.alias,.tag,.stage')].map(node=>node.textContent).concat(card.dataset.search||'').join(' ');
- const cached=searchCache.get(card);if(cached&&cached.raw===raw)return cached.text;
- const text=searchText(raw);searchCache.set(card,{raw,text});return text;
+  const raw=[...card.querySelectorAll('h3,p,.alias,.tag,.stage')].map(node=>node.textContent)
+    .concat(card.dataset.search||'').join(' ');
+  const cached=searchCache.get(card);
+  if(cached&&cached.raw===raw)return cached.text;
+  const text=searchText(raw);
+  searchCache.set(card,{raw,text});
+  return text;
 }
-function syncFamilyUrl(){const url=new URL(location.href);if(family&&family.value!=='all')url.searchParams.set('family',family.value);else url.searchParams.delete('family');history.replaceState(null,'',url.pathname+url.search+url.hash)}
-function filter(reset=true){if(reset)limit=projectPageSize;const q=searchText(search.value);let matches=0,shown=0;cards.forEach(card=>{const match=(category==='all'||card.dataset.category===category)&&(stage.value==='all'||card.dataset.stage===stage.value)&&(depth.value==='all'||card.dataset.depth===depth.value)&&(!family||family.value==='all'||card.dataset.families?.split(' ').includes(family.value))&&matchesSearch(cardSearchText(card),q);if(match)matches++;const show=match&&shown<limit;card.hidden=!show;if(show)shown++});more.hidden=shown>=matches;more.textContent='Show '+Math.min(projectPageSize,matches-shown)+' more projects ↓';document.getElementById('results').textContent=matches?'Showing '+shown+' of '+matches+' matching entries · '+cards.length+' entries in the collection.':'No projects match the current search and filters. Try Reset filters, or change the category, development record or record-detail selection.'}
-buttons.forEach(button=>button.addEventListener('click',()=>{category=button.dataset.filter;if(family&&family.value!=='all'){family.value='all';syncFamilyUrl()}buttons.forEach(b=>b.setAttribute('aria-pressed',String(b===button)));filter()}));search.addEventListener('input',()=>filter());stage.addEventListener('change',()=>filter());depth.addEventListener('change',()=>filter());if(family)family.addEventListener('change',()=>{syncFamilyUrl();filter()});window.addEventListener('registry-ready',()=>filter(false));more.addEventListener('click',()=>{const visible=new Set(cards.filter(card=>!card.hidden));limit+=projectPageSize;filter(false);const next=cards.find(card=>!card.hidden&&!visible.has(card));const target=next?.querySelector('.record-open')||next?.querySelector('a');if(target)target.focus()});document.getElementById('reset-filters').addEventListener('click',()=>{category='all';search.value='';stage.value='all';depth.value='all';if(family){family.value='all';syncFamilyUrl()}buttons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.filter==='all')));filter();search.focus()});filter();
+function syncFamilyUrl(){
+  const url=new URL(location.href);
+  if(family&&family.value!=='all')url.searchParams.set('family',family.value);
+  else url.searchParams.delete('family');
+  history.replaceState(null,'',url.pathname+url.search+url.hash);
+}
+function filter(reset=true){
+  if(reset){expandedLimit=projectPageSize;pendingLimit=projectPageSize}
+  const q=searchText(search.value);
+  const matched={expanded:0,pending:0},shown={expanded:0,pending:0};
+  cards.forEach(card=>{
+    const bucket=sectionsReady&&card.dataset.depth==='pending'?'pending':'expanded';
+    const match=(category==='all'||card.dataset.category===category)
+      &&(stage.value==='all'||card.dataset.stage===stage.value)
+      &&(depth.value==='all'||card.dataset.depth===depth.value)
+      &&(!family||family.value==='all'||card.dataset.families?.split(' ').includes(family.value))
+      &&matchesSearch(cardSearchText(card),q);
+    if(match)matched[bucket]++;
+    const limit=bucket==='pending'?pendingLimit:expandedLimit;
+    const show=match&&shown[bucket]<limit;
+    card.hidden=!show;
+    if(show)shown[bucket]++;
+  });
+  more.hidden=shown.expanded>=matched.expanded;
+  more.textContent='Show '+Math.min(projectPageSize,matched.expanded-shown.expanded)+' more expanded records ↓';
+  pendingMore.hidden=shown.pending>=matched.pending;
+  pendingMore.textContent='Show '+Math.min(projectPageSize,matched.pending-shown.pending)+' more pending entries ↓';
+  pendingSection.hidden=!sectionsReady||matched.pending===0;
+  const groups=[];
+  if(matched.expanded)groups.push('Showing '+shown.expanded+' of '+matched.expanded+' expanded records');
+  if(matched.pending)groups.push('showing '+shown.pending+' of '+matched.pending+' pending entries');
+  results.textContent=groups.length?groups.join(' · ')+' · '+cards.length+' project cards in the collection.':
+    'No projects match the current search and filters. Try Reset filters or another category, source group, or record detail.';
+}
+function separatePendingCards(){
+  if(!cards.every(card=>card.dataset.depth==='expanded'||card.dataset.depth==='pending')){
+    results.textContent='Project review status is temporarily unavailable; browse the full catalog for current record details.';
+    return;
+  }
+  for(const card of cards){
+    (card.dataset.depth==='pending'?pendingGrid:expandedGrid).append(card);
+  }
+  sectionsReady=true;
+  document.getElementById('pending-total').textContent=String(
+    cards.filter(card=>card.dataset.depth==='pending').length);
+  filter(false);
+}
+function revealNext(bucket){
+  const previous=new Set(cards.filter(card=>!card.hidden&&
+    (bucket==='pending'?card.dataset.depth==='pending':card.dataset.depth!=='pending')));
+  if(bucket==='pending')pendingLimit+=projectPageSize;
+  else expandedLimit+=projectPageSize;
+  filter(false);
+  const next=cards.find(card=>!card.hidden&&!previous.has(card)&&
+    (bucket==='pending'?card.dataset.depth==='pending':card.dataset.depth!=='pending'));
+  const target=next?.querySelector('.record-open')||next?.querySelector('a');
+  if(target)target.focus();
+}
+buttons.forEach(button=>button.addEventListener('click',()=>{
+  category=button.dataset.filter;
+  if(family&&family.value!=='all'){family.value='all';syncFamilyUrl()}
+  buttons.forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+  filter();
+}));
+search.addEventListener('input',()=>filter());
+stage.addEventListener('change',()=>filter());
+depth.addEventListener('change',()=>filter());
+if(family)family.addEventListener('change',()=>{syncFamilyUrl();filter()});
+window.addEventListener('registry-ready',separatePendingCards);
+more.addEventListener('click',()=>revealNext('expanded'));
+pendingMore.addEventListener('click',()=>revealNext('pending'));
+document.getElementById('reset-filters').addEventListener('click',()=>{
+  category='all';search.value='';stage.value='all';depth.value='all';
+  if(family){family.value='all';syncFamilyUrl()}
+  buttons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.filter==='all')));
+  filter();search.focus();
+});
+filter();
 </script><script>
 function revealHomeSection() {
   const target = document.getElementById(location.hash.slice(1));
