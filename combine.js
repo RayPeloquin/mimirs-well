@@ -32,6 +32,15 @@ const acousticExample = {
 };
 
  
+const grokCaseExample = {
+  title: "Reversible state probe for Recipe Pucks",
+  mechanism: "Borrow the SKEPTIC-1 reasoning pattern of a reversible symmetry-breaking intervention, not a proven transferable mechanism. A user-triggered, one-sided tactile cue must encode the machine's verified current state and then return to neutral.",
+  change: "Define the Recipe Pucks selector's actual states and build a safe state-dependent haptic or detent response. The response must distinguish the states under test; a state-independent vibration would reveal no information.",
+  baseline: "Compare three counterbalanced conditions: A, ordinary Recipe Pucks selector without extra confirmation; B, the same selector with a reversible, one-sided state-dependent probe; C, the same selector with a conventional, accessible 'Show current state' button that presents the same verified state information without asymmetry. Compare both ambiguous and unambiguous visual trials with equivalent practice.",
+  criterion: "Pre-register minimum useful reduction in true-state identification errors, maximum acceptable extra task time, and sample-size rationale. Record errors, time to correct identification, task time, accidental selections and confusion. B must improve on A and offer a practical advantage over C without exceeding cost thresholds to support a distinct asymmetric-probe benefit. If B beats A but not C, attribute improvement to explicit state information rather than demonstrated asymmetry benefit; report mixed or uncertain results as such.",
+  materials: "A specified Recipe Pucks interaction model; three functionally comparable interface variants (or controlled mockups); a reliable state sensor/controller; a safe reversible cue for B; an accessible state readout for C; counterbalanced tasks and participant consent. This is a proposed human-interface test, not a working design or demonstrated efficacy.",
+};
+
 const skepticPhysicalExample = {
   title: "SKEPTIC-1: Can a physical brace distinguish mirrored faults?",
   mechanism: "The numerical model predicts that a reversible off-center brace makes identical stiffness losses at opposite ends distinguishable. Test whether the effect survives measurement uncertainty and repeat setup on a physical rig.",
@@ -95,6 +104,7 @@ function saveDraft() {
 function syncPair() {
   const url = new URL(location.href);
   url.searchParams.delete("example");
+  url.searchParams.delete("case");
   for (const role of roles) {
     if (pair[role]) url.searchParams.set(role, pair[role]);
     else url.searchParams.delete(role);
@@ -258,7 +268,8 @@ download.addEventListener("click", () => {
 });
 
 form.addEventListener("input", () => {
-  if (!physical && new URLSearchParams(location.search).has("example")) syncPair();
+  if (!physical && (new URLSearchParams(location.search).has("example") ||
+      new URLSearchParams(location.search).has("case"))) syncPair();
   fallbackLabel.hidden = true;
   if (!copy.disabled) exportStatus.textContent = "";
   saveDraft();
@@ -286,6 +297,8 @@ async function start() {
 
   const example = params.get("example") === "1" &&
     params.get("from") === "skeptic-1" && params.get("to") === "temporal-acoustics";
+  const grokCase = params.get("case") === "grok-001" &&
+    params.get("from") === "skeptic-1" && params.get("to") === "recipe-pucks";
   const draft = readDraft();
   const requested = physical ? { from: "skeptic-1" } : roles.some(role => params.has(role)) ?
     Object.fromEntries(roles.map(role => [role, params.get(role)])) : draft?.pair;
@@ -299,7 +312,7 @@ async function start() {
 
   const matchesDraft = roles.every(role => draft?.pair?.[role] === pair[role]);
   const fields = physical ? (draft?.fields || skepticPhysicalExample) :
-    example ? acousticExample : matchesDraft ? draft.fields : null;
+    example ? acousticExample : grokCase ? grokCaseExample : matchesDraft ? draft.fields : null;
   for (const name of draftFields) {
     if (typeof fields?.[name] === "string" && !form.elements[name].value) {
       form.elements[name].value = fields[name];
