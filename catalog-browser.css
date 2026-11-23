@@ -34,3 +34,7 @@ button { width: fit-content; color: var(--mint); }
 @media (max-width: 680px) {
   form, #catalog-entries { grid-template-columns: minmax(0,1fr); }
 }
+
+.catalog-safety{max-width:75ch;margin:1rem 0;padding:1rem;border-left:2px solid #edc997;color:var(--muted);background:#171c20}
+.catalog-publication-control{color:#edc997;font-size:.82rem;font-weight:650;margin:.1rem 0 .5rem}
+.catalog-publication-control a{font-weight:400;font-size:.82rem;margin-left:.2rem;min-height:30px}
