@@ -8,6 +8,14 @@
     policy: "publication-safety.html",
     holdLabel: "Technical-source release hold",
     watchLabel: "Publication review watch",
+    /* Every added equation source needs publication/safety review; this is
+     * a second list in addition to equation-cores.js, not a security boundary. */
+    equationEligible: Object.freeze([
+      "skeptic-1",
+      "echo-rx",
+      "ghostglass",
+      "temporal-acoustics"
+    ]),
     holds: Object.freeze({
       "mimir-hippo-extreme-energy-systems": "Original technical source requires a separate safety/publication review before any public release.",
       "hippo-dragon": "Archive title only. Keep original detailed energy-system source nonpublic pending review.",
