@@ -35,12 +35,12 @@ test('library and homepage use shared directory and preserve a no-script list',(
  assert.ok(page.includes('id="ledger-fallback"'));
  assert.equal((page.match(/<li><a href="[a-z0-9-]+-ledger\.html|<li><a href="divergence-ledger\.html/g)||[]).length,30);
  for(const r of records)assert.ok(page.includes('href="'+r.url+'"'),r.url+' lacks fallback link');
- assert.equal((home.slice(home.indexOf('id="ledger-preview"'),home.indexOf('id="ledger-preview"')+2500).match(/DIVERGENCE RECORD/g)||[]).length,3);
+ assert.equal((home.slice(home.indexOf('id="ledger-preview"'),home.indexOf('Six recent records appear here.')).match(/DIVERGENCE RECORD/g)||[]).length,6);
 });
 test('script syntax and progressive enhancement controls exist',()=>{
  const js=fs.readFileSync(path.join(root,'ledger-library.js'),'utf8');
  assert.ok(js.includes('replaceChildren'));
- assert.ok(js.includes('visibleCount = 18'));
+ assert.ok(js.includes('const pageSize = 6'));
  assert.ok(js.includes('document.getElementById(\'ledger-preview\')'));
  assert.ok(js.includes('fallback.hidden=true'));
  assert.ok(js.includes('form.hidden=false'));

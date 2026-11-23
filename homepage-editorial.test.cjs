@@ -13,6 +13,7 @@ test('opening three sections remain in the requested order', () => {
   assert.deepEqual(sections.slice(0,3), ['projects','research-families','divergence-ledger']);
   assert.match(html,/Mimir’s Well is a public collection of engineering concepts/);
   assert.equal(featured.length,10);
+  assert.equal(featured.filter(card => !card.startsWith('<article class="card" data-featured hidden')).length,6);
 });
 
 test('private Hall and unverified prototype URLs are not advertised publicly', () => {

@@ -96,7 +96,7 @@ function renderMatches(role) {
   const matches = words.length ?
     candidates.filter(entry => words.every(word => entry.searchText.includes(word))) :
     candidates.filter(entry => Object.hasOwn(contributions, entry.id));
-  const limit = 8;
+  const limit = 6;
   if (words.length) {
     const shown = Math.min(matches.length, limit);
     count.textContent = !shown ? "No matching designs." :

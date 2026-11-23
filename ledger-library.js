@@ -9,6 +9,7 @@
     return dates || b.number - a.number;
   }
   const byRecent = records.slice().sort(newest);
+  const pageSize = 6;
   document.querySelectorAll('[data-ledger-total]').forEach(node => { node.textContent = String(records.length); });
 
   function elt(tag, cls, value) {
@@ -38,10 +39,10 @@
     return card;
   }
 
-  // The homepage always shows just three recently updated records.
+  // The homepage always shows up to six recently updated records.
   const preview = document.getElementById('ledger-preview');
   if (preview) {
-    const cards = byRecent.slice(0, 3).map(item => createCard(item, true));
+    const cards = byRecent.slice(0, pageSize).map(item => createCard(item, true));
     preview.replaceChildren(...cards);
   }
 
@@ -71,7 +72,7 @@
   addOptions(category, records.map(item=>item.category));
   addOptions(evidence, records.map(item=>item.evidence));
 
-  let visibleCount = 18;
+  let visibleCount = pageSize;
   function matches(item, text) {
     if (category.value && item.category !== category.value) return false;
     if (evidence.value && item.evidence !== evidence.value) return false;
@@ -85,14 +86,14 @@
     return items.sort(newest);
   }
   function render(resetPage) {
-    if (resetPage) visibleCount = 18;
+    if (resetPage) visibleCount = pageSize;
     const text = query.value.trim().toLowerCase();
     const selected = sorted(records.filter(item=>matches(item,text)));
     const showing = selected.slice(0,visibleCount);
     results.replaceChildren(...showing.map(item=>createCard(item,false)));
     empty.hidden = selected.length !== 0;
     showMore.hidden = showing.length >= selected.length;
-    if (!showMore.hidden) showMore.textContent = 'Show ' + Math.min(18,selected.length-showing.length) + ' more records';
+    if (!showMore.hidden) showMore.textContent = 'Show ' + Math.min(pageSize,selected.length-showing.length) + ' more records';
     statusText.textContent = 'Showing ' + showing.length + ' of ' + selected.length + ' matching records · ' + records.length + ' total';
   }
   const params = new URLSearchParams(window.location.search);
@@ -111,7 +112,12 @@
   evidence.addEventListener('change',change);
   sort.addEventListener('change',change);
   form.addEventListener('submit',event=>event.preventDefault());
-  showMore.addEventListener('click',()=>{ visibleCount+=18; render(false); });
+  showMore.addEventListener('click', () => {
+    const firstNew = results.children.length;
+    visibleCount += pageSize;
+    render(false);
+    results.children[firstNew]?.querySelector('a')?.focus();
+  });
   reset.addEventListener('click',()=>{
     query.value=''; category.value=''; evidence.value=''; sort.value='recent';
     render(true); query.focus();

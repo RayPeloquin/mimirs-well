@@ -168,5 +168,14 @@
     article.append(make('span', 'family-count', unmapped + ' cards'), make('h3', '', 'Awaiting family mapping'), make('p', '', 'Archive entries without an assigned research family remain available for review and discovery.'));
     const link = make('a', 'family-explore', 'Review unmapped cards →'); link.href = familyUrl('unmapped'); article.append(link); frag.append(article);
   }
-  root.replaceChildren(frag);
+  const previewSize = 6;
+  const cardsByFamily = [...frag.children];
+  root.replaceChildren(...cardsByFamily.slice(0, previewSize));
+  if (cardsByFamily.length > previewSize) {
+    const more = make('details', 'collection-more');
+    const remaining = make('div', 'family-grid');
+    remaining.append(...cardsByFamily.slice(previewSize));
+    more.append(make('summary', '', 'Show more research families (' + remaining.children.length + ')'), remaining);
+    root.after(more);
+  }
 })();
