@@ -61,6 +61,12 @@ The Ankh Qubit Assembly's concept-art image was temporarily **removed from homep
 
 A browser-based mobile accessibility/contrast check and a live deployment check remain outstanding; source edits and structural assertions are not evidence those checks passed.
 
+## Speak to the Keeper — public correspondence
+
+The Keeper of the Gates exhibit offers an accessible **message to Anubis** form. It uses a native HTML `GET` form to prefill the title and message in a new GitHub issue, where the sender must review and explicitly submit. A [dedicated issue template](.github/ISSUE_TEMPLATE/message-the-keeper.md) is available as a fallback. This does **not** send a message automatically, operate a bot, or create a private inbox.
+
+**Privacy notice:** Submitted issues and replies are public and associated with the sender’s GitHub account. Visitors should not provide private or sensitive information. A reply is not guaranteed. No personal email address is embedded in the public page. A future private-message workflow would require a separately configured service with access and abuse controls.
+
 ## Finding the source
 
 - `index.html`: main site and project collection.
