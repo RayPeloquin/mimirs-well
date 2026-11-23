@@ -13,7 +13,12 @@ test('opening three sections remain in the requested order', () => {
   assert.deepEqual(sections.slice(0,3), ['projects','alchemists-bench','divergence-ledger']);
   assert.match(html,/Mimir’s Well is a public collection of engineering concepts/);
   assert.equal(featured.length,10);
-  assert.equal(featured.filter(card => !card.startsWith('<article class="card" data-featured hidden')).length,6);
+  const visible = featured.filter(card => !card.startsWith('<article class="card" data-featured hidden'));
+  assert.equal(visible.length, 6);
+  for (const card of visible) {
+    assert.match(card, /<\/h3><div class="featured-evidence">[^<]+<\/div><p>/);
+    assert.match(card, />Inspect the /);
+  }
 });
 
 test('private Hall and unverified prototype URLs are not advertised publicly', () => {

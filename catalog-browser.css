@@ -1,0 +1,36 @@
+:root {
+  color-scheme: dark;
+  --bg: #080f17;
+  --panel: #10202a;
+  --ink: #edf4ef;
+  --muted: #adc0c6;
+  --line: #36505a;
+  --mint: #b5f5cf;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { background: var(--bg); color: var(--ink); max-width: 68rem; margin: 0 auto; padding: 2rem clamp(1rem,5vw,3rem); font: 1rem/1.6 system-ui,sans-serif; }
+a { color: var(--mint); text-underline-offset: 4px; }
+:focus-visible { outline: 2px solid #edc997; outline-offset: 4px; }
+.brand { font: 1.3rem Georgia,serif; text-decoration: none; }
+h1, h2 { font-family: Georgia,serif; font-weight: normal; }
+h1 { font-size: clamp(2.5rem,7vw,4.7rem); margin: .4em 0 .1em; line-height: 1.1; }
+h1 + p { color: var(--muted); max-width: 65ch; }
+form { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: .85rem 1rem; padding: 1rem; margin: 1.6rem 0 0; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); align-items: end; }
+label { display: grid; gap: .3rem; font-weight: 650; }
+input, select, button { min-width: 0; padding: .55rem .7rem; min-height: 44px; font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 5px; }
+button, summary { cursor: pointer; }
+button { width: fit-content; color: var(--mint); }
+.catalog-status, .catalog-families, .catalog-download { color: var(--muted); font-size: .9rem; }
+#catalog-entries { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: .85rem; }
+#catalog-entries > li { padding: 1rem; border: 1px solid var(--line); border-radius: 7px; background: var(--panel); overflow-wrap: anywhere; }
+#catalog-entries > li:target { border-color: var(--mint); }
+.catalog-entry h2 { margin: 0 0 .35rem; font-size: 1.55rem; line-height: 1.2; }
+.catalog-type { color: var(--mint); font-weight: 650; font-size: .85rem; margin: 0 0 .35rem; }
+.catalog-families { margin: 0 0 .45rem; }
+.catalog-entry details { margin: .4rem 0; }
+.catalog-entry details p { white-space: pre-line; }
+.catalog-entry a { display: inline-flex; align-items: center; min-height: 44px; }
+@media (max-width: 680px) {
+  form, #catalog-entries { grid-template-columns: minmax(0,1fr); }
+}
