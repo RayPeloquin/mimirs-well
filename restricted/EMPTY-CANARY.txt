@@ -1,0 +1,9 @@
+# HARMLESS PUBLICATION-SAFETY CANARY
+
+This is an intentionally nontechnical test artifact. It contains no designs, diagrams, data, energy-system specifications, or confidential information.
+
+Reason for placement: the parent directory name "restricted" must trigger Mimir's Well publication preflight. This canary is for verifying that a failing check blocks a pull request into main.
+
+DO NOT MERGE. Close the test pull request and delete its branch once Grok's audit is complete.
+
+Created for Operation Escaped HIPPO — branch-protection verification, 2026-11-23.
