@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Combine designs — Mimir’s Well</title>
+  <meta name="description" content="Pair two designs from Mimir’s Well and write a test brief someone else can run.">
+  <link rel="stylesheet" href="combine.css">
+  <script src="design-contributions.js" defer></script>
+  <script src="combine.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to the workspace</a>
+  <header class="site-header">
+    <nav class="wrap" aria-label="Main navigation">
+      <a class="brand" href="index.html">✳ <span>Mimir’s Well</span></a>
+      <a href="index.html#projects">Back to the collection</a>
+    </nav>
+  </header>
+  <main class="wrap" id="main">
+    <section class="hero" aria-labelledby="title">
+      <div class="hero-copy">
+        <h1 id="title">Combine <em>designs.</em></h1>
+        <p>Find what one design can lend another. Leave a test brief someone else can pick up and run.</p>
+        <a class="example button" href="?from=skeptic-1&amp;to=temporal-acoustics&amp;example=1">Open the acoustic example <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+    <noscript><p>Enable JavaScript to use the workspace, or browse the <a href="catalog.html">plain HTML catalog</a>.</p></noscript>
+    <section aria-labelledby="pair-title" class="section">
+      <div class="section-heading">
+        <h2 id="pair-title">Choose a pair</h2>
+        <p id="catalog-status" role="status">Loading the catalog…</p>
+      </div>
+      <div class="pair">
+        <section class="slot" id="from-slot" aria-labelledby="from-title">
+          <h3 id="from-title">Design to borrow from</h3>
+          <label class="sr-only" for="from-search">Search designs to borrow from</label>
+          <input id="from-search" type="search" placeholder="Search titles, contributions, or needs" autocomplete="off" disabled>
+          <p class="match-count" id="from-count" role="status"></p>
+          <ul class="matches" id="from-matches" aria-label="Matching designs to borrow from"></ul>
+          <div class="selection" id="from-selection" hidden></div>
+        </section>
+        <div class="connector" aria-hidden="true"><span>→</span></div>
+        <section class="slot" id="to-slot" aria-labelledby="to-title">
+          <h3 id="to-title">Design to build on</h3>
+          <label class="sr-only" for="to-search">Search designs to build on</label>
+          <input id="to-search" type="search" placeholder="Search titles, contributions, or needs" autocomplete="off" disabled>
+          <p class="match-count" id="to-count" role="status"></p>
+          <ul class="matches" id="to-matches" aria-label="Matching designs to build on"></ul>
+          <div class="selection" id="to-selection" hidden></div>
+        </section>
+      </div>
+    </section>
+    <section aria-labelledby="brief-title" class="section">
+      <div class="section-heading">
+        <h2 id="brief-title">Draft the test brief</h2>
+        <p>Your draft is saved in this browser.</p>
+      </div>
+      <form id="brief">
+        <div class="fields">
+          <label class="full">Working title<input name="title" maxlength="160" placeholder="Name the proposed combination"></label>
+          <label>What are you borrowing?<textarea name="mechanism" rows="3" placeholder="Name the specific mechanism, method, or measurement."></textarea></label>
+          <label>Where would it fit?<textarea name="change" rows="3" placeholder="Describe what changes in the receiving design."></textarea></label>
+          <label>What’s the baseline?<textarea name="baseline" rows="3" placeholder="Describe the comparison and what you’ll hold constant."></textarea></label>
+          <label>What would count as a result?<textarea name="criterion" rows="3" placeholder="State the metric and what counts as success or failure."></textarea></label>
+          <label class="full">What would someone need to run it?<textarea name="materials" rows="3" placeholder="Link to code or data, and list any equipment or missing inputs."></textarea></label>
+        </div>
+        <div class="actions">
+          <button class="button primary" id="copy" type="button" disabled>Copy brief</button>
+          <button class="button secondary" id="download" type="button" disabled>Download Markdown</button>
+          <p id="export-status" role="status">Choose two designs to export a proposed test.</p>
+        </div>
+        <label id="fallback-label" hidden>Markdown brief<textarea id="fallback" rows="10" readonly></textarea></label>
+      </form>
+    </section>
+  </main>
+  <footer class="wrap">Mimir’s Well · Mr. Peloquin &amp; the Synthetic Court</footer>
+</body>
+</html>

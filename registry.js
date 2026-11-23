@@ -202,7 +202,7 @@ window.dispatchEvent(new Event('registry-ready'));
 const notice=document.createElement('div');notice.className='registry-tools';notice.innerHTML='<strong>Olympus Registry · Read-only public records</strong><p>Browse research, review methods and creative work, alongside archived titles awaiting assessment. Expanded documentation is not a maturity or validation rating. Some references name privately held archive documents rather than public downloads; linked precedent papers do not validate our designs. Changes to the collection are maintained through the project repositories; this website has no public editing, save or import controls.</p><p id="registry-status" role="status" aria-live="polite"></p>';
 document.querySelector('.controls').before(notice);
 function announce(text){document.getElementById('registry-status').textContent=text}
-const dialog=document.createElement('dialog');dialog.className='record-dialog';dialog.setAttribute('aria-labelledby','record-title');dialog.setAttribute('aria-describedby','record-summary');dialog.innerHTML='<div class="record-head"><div><div class="eyebrow">Olympus Registry · Read-only project record</div><h2 id="record-title"></h2></div><button type="button" id="record-close" aria-label="Close project record">Close ×</button></div><p id="record-meta" class="note"></p><p id="record-summary"></p><div id="record-public-fields"></div><h3>Sources and document references</h3><div id="record-links"></div><p><a id="record-permalink">Direct link to this project</a></p>';
+const dialog=document.createElement('dialog');dialog.className='record-dialog';dialog.setAttribute('aria-labelledby','record-title');dialog.setAttribute('aria-describedby','record-summary');dialog.innerHTML='<div class="record-head"><div><div class="eyebrow">Olympus Registry · Read-only project record</div><h2 id="record-title"></h2></div><button type="button" id="record-close" aria-label="Close project record">Close ×</button></div><p id="record-meta" class="note"></p><p id="record-summary"></p><div id="record-public-fields"></div><h3>Sources and document references</h3><div id="record-links"></div><p><a id="record-permalink">Direct link to this project</a></p><p id="record-combine-action" hidden><a id="record-combine" class="button quiet">Use in a combination ↗</a></p>';
 document.body.append(dialog);
 let current=null,returnFocus=null;
 function open(id,route){if(!records.has(id))return false;if(dialog.open&&current===id)return true;if(!dialog.open)returnFocus=document.activeElement;current=id;const base=records.get(id);
@@ -211,6 +211,21 @@ document.getElementById('record-meta').textContent=base.record+' · '+(base.expa
 document.getElementById('record-summary').textContent=base.purpose;
 const published=document.getElementById('record-public-fields');published.replaceChildren();
 [['version','Version'],['evidence','Evidence and limitations'],['contributors','Contributors'],['next','Proposed next steps'],['notes','Notes']].forEach(([field,label])=>{const value=base[field]||(field==='contributors'?'Contributor roles have yet to be documented.':'');if(!value)return;const heading=document.createElement('h3'),text=document.createElement('p');heading.textContent=label;text.textContent=value;text.style.whiteSpace='pre-line';published.append(heading,text)});
+const contribution = window.WellDesignContributions?.[id];
+if (contribution) {
+  for (const [title, value] of [
+    ['What it can contribute', contribution.contribution],
+    ['What it still needs', contribution.need],
+  ]) {
+    const heading = document.createElement('h3');
+    const paragraph = document.createElement('p');
+    heading.textContent = title;
+    paragraph.textContent = value;
+    published.append(heading, paragraph);
+  }
+}
+document.getElementById('record-combine-action').hidden = !base.expanded;
+document.getElementById('record-combine').href = 'combine.html?from=' + encodeURIComponent(id);
 const links=document.getElementById('record-links');links.replaceChildren();
 if(base.sources){base.sources.split('\n').map(s=>s.trim()).filter(Boolean).forEach((source,i)=>{const p=document.createElement('p');let url;try{url=new URL(source)}catch(e){p.textContent=source;links.append(p);return}if(!['https:','http:'].includes(url.protocol)){p.textContent=source;links.append(p);return}const a=document.createElement('a');a.href=url.href;const file=url.pathname.split('/').filter(Boolean).pop()||url.hostname;const label=i===0&&url.hostname==='github.com'&&url.pathname.split('/').filter(Boolean).length===2?'Open public project repository':'Read '+file;a.textContent=label+' · '+url.hostname+' ↗';a.setAttribute('aria-label',label+' on '+url.hostname+': '+base.title);p.append(a);links.append(p)})}else{const p=document.createElement('p');p.textContent='Public source references are being organized.';links.append(p)}
 document.getElementById('record-permalink').href='#design/'+id;
