@@ -2,6 +2,7 @@ const { readFileSync, writeFileSync } = require('node:fs');
 const path = require('node:path');
 const assert = require('node:assert/strict');
 const { currentTitles, expandedRecords, slug } = require('./inventory.cjs');
+const publication = require('../publication-controls.js');
 require('../ledger-data.js');
 
 const root = path.resolve(__dirname, '..');
@@ -69,12 +70,17 @@ for (const record of globalThis.MimirsLedgerData) {
 const rows = entries.map(entry => {
   const evidence = ledgerEvidence.get(entry.id) || [expanded.has(entry.id) ? 'unclassified' : 'pending'];
   const familyIds = familyIdsFor(entry.title);
+  const publicationStatus = publication.holds[entry.id] ? publication.holdLabel :
+    publication.watches[entry.id] ? publication.watchLabel : '';
+  const reviewLabel = publicationStatus ?
+    '<p class="catalog-publication-control"><strong>' + escapeHtml(publicationStatus) +
+    '</strong> · <a href="publication-safety.html">Publication policy</a></p>' : '';
   if (!familyIds.length) familyIds.push('unmapped');
   const details = [['Evidence and limits', entry.evidence], ['Contributors', entry.contributors]]
     .filter(([, value]) => value)
     .map(([label, value]) => '<p><strong>' + label + '</strong> ' + escapeHtml(value) + '</p>').join('');
   return '<li id="' + entry.id + '"><div class="catalog-entry" data-types="' + evidence.join(' ') + '" data-families="' + familyIds.join(' ') + '">' +
-    '<h2>' + escapeHtml(entry.title) + '</h2><p class="catalog-type">' + evidence.map(type => escapeHtml(evidenceTypes.get(type))).join(' · ') + '</p>' +
+    '<h2>' + escapeHtml(entry.title) + '</h2>' + reviewLabel + '<p class="catalog-type">' + evidence.map(type => escapeHtml(evidenceTypes.get(type))).join(' · ') + '</p>' +
     '<p class="catalog-families">' + familyIds.map(id => escapeHtml(familyNames.get(id))).join(' · ') + '</p>' +
     (details ? '<details><summary>Evidence and contributor notes</summary>' + details + '</details>' : '') +
     '<a href="' + entry.url + '">Open design record</a></div></li>';
@@ -85,7 +91,7 @@ output('catalog.html', `<!doctype html>
 <title>Project catalog · Mimir’s Well</title><link rel="stylesheet" href="catalog-browser.css"><script defer src="catalog-browser.js"></script></head>
 <body><a class="brand" href="index.html#projects">✳ Mimir’s Well</a>
 <main><h1>Project catalog</h1>
-<p>Browse ${entries.length} projects. Research families group related questions. Evidence types use the published Ledger where a project has an entry.</p>
+<p>Browse ${entries.length} projects. Research families group related questions. Evidence types use the published Ledger where a project has an entry.</p>\n<p class="catalog-safety">Some energy-system records have technical-source publication holds or review-watch status. Public summaries are not technical-release approvals. <a href="publication-safety.html">See the publication safety policy</a>.</p>
 <form id="catalog-controls" hidden>
   <label>Research family<select name="family"><option value="">All research families</option>${options(familyNames)}</select></label>
   <label>Evidence type<select name="evidence"><option value="">All evidence types</option>${options(evidenceTypes)}</select></label>
