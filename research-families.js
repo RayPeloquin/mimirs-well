@@ -77,7 +77,7 @@
       description: 'Materials, construction systems, tooling, fabrication, and proposed physical test articles.',
       examples: ['Roman Concrete', 'Triple-Nitinol Spine', 'SEAM30 / BRICK32'],
       bridges: ['water-energy', 'aerospace-propulsion'],
-      patterns: [/concrete|nitinol|material|metamaterial|forge|fabric|brick|tile|bore|drill|gaian tailings|orehearth|polyforge|seam30|blackwall|vortex|mount|spine|carbon|charcoal|inkheal|invisible ink|paperpower|titanium|diamond thermo|dielectric|oscillar|aether cup|stone|rope coupler|loom|furnace|foundry|hull/i]
+      patterns: [/concrete|nitinol|material|metamaterial|polyforge|fabric|brick|tile|bore|drill|gaian tailings|orehearth|polyforge|seam30|blackwall|vortex|mount|spine|carbon|charcoal|inkheal|invisible ink|paperpower|titanium|diamond thermo|dielectric|oscillar|aether cup|stone|rope coupler|loom|furnace|foundry|hull/i]
     },
     {
       id: 'community-learning', name: 'Communities, education & creative worlds',
