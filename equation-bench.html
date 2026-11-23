@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Equation Bench — Mimir’s Well</title>
+  <meta name="description" content="Combine traceable equations only as candidates. Explicit mapping, inherited claims, and assumption limits are required before export.">
+  <link rel="stylesheet" href="combine.css?v=20261123-equation">
+  <link rel="stylesheet" href="equation-bench.css?v=20261123-mvp">
+  <script src="equation-cores.js?v=20261123-mvp" defer></script>
+  <script src="equation-bench.js?v=20261123-mvp" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to equation workspace</a>
+<header class="site-header"><nav class="wrap" aria-label="Main navigation">
+  <a class="brand" href="index.html">✳ <span>Mimir’s Well</span></a>
+  <a href="combine.html">Back to the Alchemist’s Bench</a>
+</nav></header>
+<main class="wrap" id="main">
+  <header class="hero math-hero">
+    <div>
+      <p class="eyebrow">Alchemist’s Bench · Candidate mathematics</p>
+      <h1>Combine the <em>equations.</em></h1>
+      <p>Borrow equations, not certainty. Keep each source’s assumptions visible and write down exactly what the proposed connection has <strong>not</strong> established.</p>
+      <p class="math-hero-warning"><strong>Candidate mathematics — not derived truth. Requires its own evidence.</strong></p>
+    </div>
+  </header>
+
+  <section class="section" aria-labelledby="sources-title">
+    <div class="section-heading">
+      <h2 id="sources-title">1 · Select two sources</h2>
+      <p id="catalog-status" role="status">Loading the verified equation index…</p>
+    </div>
+    <p class="support-note">This first release offers only relations manually traced to published sources. Projects without reviewed core equations remain in the <a href="catalog.html">full catalog</a>; the Bench will not fabricate mathematics for them.</p>
+    <div class="equation-pair">
+      <section class="slot equation-slot" aria-labelledby="a-title">
+        <h3 id="a-title">Design A · Source equation</h3>
+        <label for="pick-a">Choose a design</label>
+        <select id="pick-a" disabled><option value="">Select a source…</option></select>
+        <div id="card-a" class="source-equation" aria-live="polite">
+          <p class="muted">Select a design to read its source equation and evidence status.</p>
+        </div>
+        <button type="button" id="insert-a" class="button secondary" disabled>Insert equation A into workspace</button>
+      </section>
+      <div class="connector" aria-hidden="true">+</div>
+      <section class="slot equation-slot" aria-labelledby="b-title">
+        <h3 id="b-title">Design B · Source equation</h3>
+        <label for="pick-b">Choose a different design</label>
+        <select id="pick-b" disabled><option value="">Select a source…</option></select>
+        <div id="card-b" class="source-equation" aria-live="polite">
+          <p class="muted">Select a design to read its source equation and evidence status.</p>
+        </div>
+        <button type="button" id="insert-b" class="button secondary" disabled>Insert equation B into workspace</button>
+      </section>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="map-title">
+    <div class="section-heading">
+      <h2 id="map-title">2 · Map every symbol explicitly</h2>
+      <p>Nothing is equated by name or appearance automatically.</p>
+    </div>
+    <p class="support-note">For each symbol in A, select a possible symbol in B (or no counterpart), then explicitly decide whether the quantities are the same or different. All choices start undecided. Review B-only variables too.</p>
+    <div class="table-scroll"><table class="mapping-table">
+      <thead><tr>
+        <th scope="col">Symbol in A</th>
+        <th scope="col">Symbol in B</th>
+        <th scope="col">Same quantity?</th>
+        <th scope="col">Notes / risk</th>
+      </tr></thead>
+      <tbody id="mapping-rows"><tr><td colspan="4">Choose both source designs to begin mapping.</td></tr></tbody>
+    </table></div>
+    <div class="mapping-footer">
+      <p id="unmapped-b">B-only symbols will appear here once both sources are selected.</p>
+      <label class="acknowledge"><input type="checkbox" id="ack-b" disabled> I reviewed the B symbols not paired above and will not silently identify them with A symbols.</label>
+      <p id="mapping-status" class="support-note" role="status"></p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="composition-title">
+    <div class="section-heading">
+      <h2 id="composition-title">3 · Propose a composition</h2>
+      <p>The working area deliberately starts empty.</p>
+    </div>
+    <label for="composition">Candidate combined expression, relation or model</label>
+    <textarea id="composition" rows="8" spellcheck="false" placeholder="Insert a sourced equation above, then write your own candidate coupling. Specify any new variables or operators."></textarea>
+    <div class="bench-actions math-tools">
+      <button type="button" id="scaffold" class="button secondary" disabled>Insert suggested-only scaffold</button>
+      <p class="support-note">The scaffold only places the source relations beside an explicit coupling placeholder. It is <strong>not</strong> a derivation and must be rewritten before export. No automatic solver, simplifier, or unit check runs here.</p>
+    </div>
+  </section>
+
+  <section class="section honesty" aria-labelledby="honesty-title">
+    <div class="section-heading">
+      <h2 id="honesty-title">4 · Forced honesty</h2>
+      <p>All three fields are required. They are never generated as facts.</p>
+    </div>
+    <div class="honesty-fields">
+      <label for="inherited"><strong>Inherited claims</strong><span>What does each original equation actually support, within its own evidence limits?</span>
+        <textarea id="inherited" rows="4" required placeholder="State the original, limited claims. Do not promote numerical or model results into physical validation."></textarea>
+      </label>
+      <label for="joint"><strong>New joint claim</strong><span>What new hypothesis does combining these relations propose?</span>
+        <textarea id="joint" rows="4" required placeholder="Describe precisely what neither source established on its own."></textarea>
+      </label>
+      <label for="strained"><strong>Broken or strained assumptions</strong><span>Where might the source conditions fail in this crossover?</span>
+        <textarea id="strained" rows="4" required placeholder="Note incompatible units, domains, unknown couplings, identifiability, measurement or uncertainty gaps."></textarea>
+      </label>
+    </div>
+  </section>
+
+  <section class="section export-section" aria-labelledby="export-title">
+    <div class="section-heading"><h2 id="export-title">5 · Export a candidate, not a conclusion</h2></div>
+    <p class="candidate-stamp">Candidate mathematics — not derived truth. Requires its own evidence.</p>
+    <div class="bench-actions">
+      <button type="button" class="button primary" id="copy-equation" disabled>Copy Markdown</button>
+      <button type="button" class="button secondary" id="download-equation" disabled>Download Markdown</button>
+      <p id="export-status" role="status">Select two equations, resolve mappings, write the candidate, and complete all three honesty fields.</p>
+    </div>
+    <label id="copy-fallback-wrap" class="fallback-wrap" hidden>Copy this Markdown manually
+      <textarea id="copy-fallback" rows="12" readonly></textarea>
+    </label>
+    <p class="support-note">Drafts remain in this browser only. Export includes full source links, evidence status, your variable decisions, and outstanding limitations. No endorsement or mathematical validity check is implied.</p>
+  </section>
+</main>
+<footer class="wrap">Mimir’s Well · Mr. Peloquin, Ms. Asteris Solenne and The Court of the Synthetic · We do no harm</footer>
+</body></html>
