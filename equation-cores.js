@@ -1,0 +1,66 @@
+"use strict";
+
+/*
+ * Curated source transcriptions — NOT inferred from catalog titles.
+ * Equations are rendered in plain text, alongside their source code links.
+ * Add a record only after checking the exact source and stating the assumptions.
+ */
+window.WellEquationCores = {
+  "skeptic-1": {
+    evidence: "Ideal numerical mass–spring model; no measured hardware data",
+    source: "https://github.com/RayPeloquin/SKEPTIC-1/blob/main/model.py",
+    sourceLabel: "SKEPTIC-1 model.py · spectrum() and matrices()",
+    equation: "lambda_i = eigenvalue_i(K, M)\nf_i = sqrt(lambda_i) / (2*pi)",
+    statement: "Natural frequencies are calculated from the generalized stiffness–mass eigenvalues of an ideal three-mass model.",
+    symbols: [
+      {name:"lambda_i",meaning:"i-th generalized eigenvalue (1/s^2)"},
+      {name:"K",meaning:"stiffness matrix (N/m)"},
+      {name:"M",meaning:"mass matrix (kg)"},
+      {name:"f_i",meaning:"i-th natural frequency (Hz)"}
+    ],
+    caveat: "Faithful notation for scipy.linalg.eigh(K,M) and sqrt(vals)/(2*pi), not a separately printed equation in the original Python. No damping, friction, or sensor physics."
+  },
+  "echo-rx": {
+    evidence: "Reduced theoretical mass-balance equation; no biological results",
+    source: "https://github.com/RayPeloquin/ECHO-Rx-Responsive-Biologic-Production/blob/main/README.md",
+    sourceLabel: "ECHO-Rx README · A mass-balance hypothesis",
+    equation: "dA_T/dt = k_out*A_D - (k_clear + k_spill)*A_T",
+    statement: "The target compartment receives active mass from a depot and loses it through clearance and spillover.",
+    symbols: [
+      {name:"A_T",meaning:"active protein mass in target pool"},
+      {name:"t",meaning:"time"},
+      {name:"k_out",meaning:"depot-to-target transfer rate (1/time)"},
+      {name:"A_D",meaning:"active protein mass in depot pool"},
+      {name:"k_clear",meaning:"target clearance rate (1/time)"},
+      {name:"k_spill",meaning:"target spillover rate (1/time)"}
+    ],
+    caveat: "Assumes homogeneous linear compartments and fixed rates; does not establish effective biological shutdown, therapeutic exposure or clinical safety."
+  },
+  "ghostglass": {
+    evidence: "Synthetic on/off statistical test; no physical detector validation",
+    source: "https://github.com/RayPeloquin/Ghostglass-Neutrino-Statistical-Reference/blob/main/experiment.py",
+    sourceLabel: "Ghostglass experiment.py · decide() exact conditional test",
+    equation: "p = BinomSF(n_on - 1; n_on + n_off, 1/(1+r))",
+    statement: "Computes a conditional on/off Poisson-background tail probability using the binomial survival function.",
+    symbols: [
+      {name:"p",meaning:"one-sided exact conditional p-value"},
+      {name:"n_on",meaning:"nonnegative on-window event count"},
+      {name:"n_off",meaning:"nonnegative off-window event count"},
+      {name:"r",meaning:"off/on exposure ratio (>0)"}
+    ],
+    caveat: "BinomSF(k;n,q)=P(X>k) for X~Binomial(n,q). Assumes stationary equal on/off background rates, valid exposures and Poisson counts; not a signal discovery claim."
+  },
+  "temporal-acoustics": {
+    evidence: "Synthetic 2D scalar-wave numerical method; no field measurements",
+    source: "https://github.com/RayPeloquin/mimirs-well/blob/main/research/temporal-acoustics/pilot.py",
+    sourceLabel: "Temporal Acoustics pilot.py · _simulate() stability guard",
+    equation: "c*dt/dx < 1/sqrt(2)",
+    statement: "The scalar finite-difference pilot rejects time steps that violate its two-dimensional wave propagation stability bound.",
+    symbols: [
+      {name:"c",meaning:"maximum scalar-wave speed (length/time)"},
+      {name:"dt",meaning:"simulation time step (time)"},
+      {name:"dx",meaning:"simulation grid spacing (length)"}
+    ],
+    caveat: "Transcribed from the code’s strict inequality and separate velocity-field check. A numerical stability constraint, not an acoustic discovery or elastic-earth constitutive law."
+  }
+};
