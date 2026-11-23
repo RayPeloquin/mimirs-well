@@ -2854,5 +2854,13 @@
     "evidence": null,
     "contributors": null,
     "url": "index.html#design/zero-g-pod"
+  },
+  {
+    "id": "zion-twin-ring-tuna-habitat",
+    "title": "Zion Twin-Ring Tuna Habitat",
+    "status": "Expanded record",
+    "evidence": "18 simplified simulations retained outer circulation. Tracer exchange varied with grid resolution. Physical exchange and fish behavior remain open.",
+    "contributors": "Mr. Peloquin, Asteris Solenne, Claude, Gemini, Meta AI and Grok.",
+    "url": "index.html#design/zion-twin-ring-tuna-habitat"
   }
 ]
