@@ -52,3 +52,9 @@ test('offerings are voluntary and do not assert charity status', () => {
   assert.match(html,/independently operated project by Mr\. Peloquin/);
   assert.match(html,/No charitable tax deduction is offered/);
 });
+
+test('switching a catalog category clears stale research-family selection', () => {
+  assert.match(html, /buttons\.forEach\(button=>button\.addEventListener\('click'/);
+  assert.match(html, /if\(family&&family\.value!=='all'\)\{family\.value='all';syncFamilyUrl\(\)\}/);
+  assert.match(html, /card\.dataset\.families\?\.split\(' '\)/);
+});
