@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Court Case 002 — Ghostglass × Chihuahua Sphere | Mimir’s Well</title>
+<meta name="description" content="An experimental proposal testing whether independent source-receiver energy accounting adds value to on/off statistical detection beyond routine instrument quality controls.">
+<link rel="stylesheet" href="combine.css">
+<style>
+.case-hero{min-height:270px}.case-hero h1{font-size:clamp(2.4rem,6vw,4.5rem)}
+.case-hero p{max-width:760px}.eyebrow{font-size:.8rem;text-transform:uppercase;letter-spacing:.11em;color:var(--gold)}
+.case-section{max-width:880px;margin:44px auto}.case-section h2{font-size:clamp(1.75rem,4vw,2.45rem)}
+.case-section li+li{margin-top:12px}.case-section li,.case-section p{line-height:1.72}
+.conditions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.conditions article,.panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:clamp(17px,3vw,25px)}
+.conditions h3{font-size:1.15rem}.muted{color:var(--muted)}
+@media(max-width:750px){.conditions{grid-template-columns:1fr}}
+</style></head>
+<body>
+<a class="skip" href="#main">Skip to case study</a>
+<header class="site-header"><nav class="wrap" aria-label="Main navigation"><a class="brand" href="index.html">✳ <span>Mimir’s Well</span></a><a href="combine.html">Alchemist’s Bench</a></nav></header>
+<main class="wrap" id="main">
+<header class="hero case-hero"><div>
+<p class="eyebrow">Court case study 002 · 23 November 2026</p>
+<h1>Ghostglass <em>× Chihuahua Sphere</em></h1>
+<p>Can independent source-to-receiver energy accounting expose false weak-signal detections that survive statistical testing—and outperform ordinary instrument quality checks?</p>
+<p><strong>Proposed experiment · Not physically validated</strong></p>
+<div class="bench-actions">
+<a class="button example" href="combine.html?from=ghostglass&amp;to=chihuahua-sphere-cs-1&amp;case=grok-002">Open the prefilled Bench test</a>
+<a class="button example" href="https://github.com/RayPeloquin/mimirs-well/blob/main/research/alchemists-bench/ghostglass-chihuahua-sphere-court-case-study.md">Read research record</a>
+</div></div></header>
+<section class="case-section"><h2>Two disciplines against self-deception</h2>
+<p><a href="index.html#design/ghostglass">Ghostglass</a> provides a synthetic on/off statistical reference with 15 committed software tests passed, not a physically validated photonic detector.</p>
+<p><a href="index.html#design/chihuahua-sphere-cs-1">Chihuahua Sphere / CS-1</a> supplies a calculation-only energy-accounting discipline: electrical input, emitted light, path losses and received energy belong in separate accounts rather than being counted as independent outputs.</p>
+<p>Grok combined the two into a proposed calibration-integrity workflow. The idea is testable, not yet demonstrated or established as novel.</p></section>
+<section class="case-section panel"><h2>The measurement trap</h2>
+<p><strong>A ledger copied from the detector under test is not independent evidence.</strong> The proposed system needs separately calibrated source output and defensible throughput/loss estimates, plus a detector-response model with uncertainties. A mismatch should flag a run for further review, not automatically declare it fraudulent or physically impossible. A broad energy bound may add no useful discrimination for very weak signals.</p></section>
+<section class="case-section"><h2>Three experimental conditions</h2>
+<div class="conditions">
+<article><h3>A · Statistics alone</h3><p>Pre-registered Ghostglass-style on/off analysis and necessary basic operation checks.</p><p class="muted">Baseline false-positive rate and true-positive sensitivity.</p></article>
+<article><h3>B · Independent energy ledger</h3><p>Same statistics plus separately calibrated emitted optical energy, path losses and receiver-energy model, with uncertainty-aware discrepancy flags.</p><p class="muted">Tests incremental value of dual bookkeeping.</p></article>
+<article><h3>C · Standard detector QC</h3><p>Same statistics plus conventional dark-count, gain, reference, drift and leakage checks, without the proposed dual-ledger closure rule.</p><p class="muted">Tests whether B adds more than established controls.</p></article>
+</div><p><strong>Key comparison: B against both A and C at matched true-positive sensitivity.</strong> Rejecting every trial would reduce false alarms but would not constitute a useful detector.</p></section>
+<section class="case-section"><h2>How to test it fairly</h2>
+<ol>
+<li>Use a safe calibrated low-power optical source, receiver and separate optical reference; establish the source, attenuation, collection and uncertainty model before testing.</li>
+<li>Randomize known-null-target trials, deliberately injected artifacts such as leakage or gain drift, and known positive-signal trials. Source-on background is not itself proof of the intended target signal.</li>
+<li>Freeze detection thresholds, ledger discrepancy bounds, ordinary QC rules and analysis method before reviewing blinded outcome labels.</li>
+<li>Run the same underlying trial data through A, B and C, recording false alarms, true-positive detection, energy residual uncertainty, inconclusive results and added test burden.</li>
+<li>Compare false-alarm rates at comparable signal detection rates; investigate whether any B advantage persists over C and after uncertainty and real-world drift are included.</li>
+</ol></section>
+<section class="case-section panel"><h2>Limits and decision rule</h2>
+<p><strong>Potentially useful:</strong> A pre-specified improvement in false-positive rate for B over both A and C, without unacceptable sensitivity loss or cost, would justify further work.</p>
+<p><strong>Not distinctive:</strong> B beats A but not C. That would support careful calibration and quality control, not a unique dual-ledger advantage.</p>
+<p><strong>Inconclusive:</strong> Results depend on circular measurements, unmodeled losses, uncalibrated detector counts or wide uncertainty. No physical test of this crossover has yet been documented.</p></section>
+<section class="case-section"><h2>Provenance</h2>
+<p><strong>Grok</strong> chose the unexpected pair and drafted the original two-condition proposal. <strong>Asteris Solenne / ChatGPT</strong> added the independent-measurement requirement, third comparator, and calibrated decision criteria. <strong>Mr. Peloquin</strong> directed and authorized the Court research workflow.</p>
+<p class="muted">The Bench structured the thinking; it did not independently discover the pairing. No experimental result or originality claim is established.</p>
+<div class="bench-actions"><a class="button example" href="combine.html?from=ghostglass&amp;to=chihuahua-sphere-cs-1&amp;case=grok-002">Open in the Alchemist’s Bench</a><a class="button example" href="court-case-001.html">Court case 001</a></div>
+</section>
+</main><footer class="wrap">Mimir’s Well · Mr. Peloquin &amp; the Synthetic Court · We do no harm</footer></body></html>
