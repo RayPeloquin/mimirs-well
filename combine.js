@@ -8,7 +8,10 @@ const fieldLabels = {
   mechanism: physical ? "Claim to test" : "Borrowed mechanism",
   change: physical ? "Physical setup and measurement" : "Proposed change",
   baseline: "Baseline and controls",
-  criterion: "Success and failure criteria",
+  criterion: "Decision threshold and inconclusive range",
+  support: "Pre-test prediction: observation supporting the hypothesis",
+  against: "Pre-test prediction: observation counting against the hypothesis",
+  measurement: "Measurement, uncertainty and decision method",
   materials: "Reproduction materials and open requirements",
 };
 const draftFields = ["title", ...Object.keys(fieldLabels)];
@@ -24,6 +27,9 @@ const copy = document.querySelector("#copy");
 const download = document.querySelector("#download");
 const fallback = document.querySelector("#fallback");
 const fallbackLabel = document.querySelector("#fallback-label");
+const pretestDeclaration = form.elements.pretestDeclaration;
+pretestDeclaration.checked = false;
+const requiredPretestFields = ["baseline", "criterion", "support", "against", "measurement"];
 const acousticExample = {
   title: "Asymmetric acoustic probing",
   mechanism: "Borrow SKEPTIC-1’s reversible symmetry-breaking probe.",
@@ -138,6 +144,7 @@ function setDesign(role, id) {
     return;
   }
   pair[role] = id;
+  pretestDeclaration.checked = false;
   document.querySelector(`#${role}-search`).value = "";
   render();
   syncPair();
@@ -231,9 +238,22 @@ function render() {
     renderSelection(role);
     if (!physical) renderMatches(role);
   }
-  copy.disabled = download.disabled = !roles.every(role => pair[role] && !isReleaseHeld(pair[role]));
+  updateExportAvailability();
   fallbackLabel.hidden = true;
-  exportStatus.textContent = copy.disabled ? "Choose two designs to export a proposed test." : "";
+}
+
+function updateExportAvailability() {
+  const selected = roles.every(role => pair[role] && !isReleaseHeld(pair[role]));
+  const specified = requiredPretestFields.every(name => form.elements[name].value.trim());
+  const ready = selected && specified && pretestDeclaration.checked;
+  copy.disabled = download.disabled = !ready;
+  exportStatus.textContent = !selected
+    ? (physical ? "Choose an eligible source design." : "Choose two eligible designs.")
+    : !specified
+      ? "Before exporting, specify baseline, threshold, supporting and contradictory observations, and measurement method."
+      : !pretestDeclaration.checked
+        ? "Confirm predictions were recorded before examining results. Editing clears this declaration."
+        : "Pre-test decision ready. Export and version the file before collecting results.";
 }
 
 function exportedUrl(path) {
@@ -247,7 +267,12 @@ function markdownLink(label, path) {
 
 function briefMarkdown() {
   const title = form.elements.title.value.trim() || (physical ? "Physical test" : "Design combination");
-  const lines = [`# ${title}`, "", "**Status: Proposed test**", "", physical ? "## Source design" : "## Parent designs"];
+  const lines = ["# " + title, "",
+    "**Status: Pre-test prediction (proposed and unvalidated; no experiment result claimed)**",
+    "", "**Exported at:** " + new Date().toISOString() + " (browser clock; not independently certified)",
+    "", "**Author declaration:** Predictions and thresholds were written before examining this test's outcomes.",
+    "", "For an auditable chronology, commit or externally timestamp this export before testing.",
+    "", physical ? "## Source design" : "## Parent designs"];
   for (const role of roles) {
     const entry = catalog.get(pair[role]);
     const note = contributions[entry.id];
@@ -295,12 +320,14 @@ download.addEventListener("click", () => {
   exportStatus.textContent = "Markdown brief downloaded.";
 });
 
-form.addEventListener("input", () => {
+form.addEventListener("input", event => {
+  // Changing a prediction voids its earlier declaration.
+  if (event.target !== pretestDeclaration) pretestDeclaration.checked = false;
   if (!physical && (new URLSearchParams(location.search).has("example") ||
       new URLSearchParams(location.search).has("case"))) syncPair();
   fallbackLabel.hidden = true;
-  if (!copy.disabled) exportStatus.textContent = "";
   saveDraft();
+  updateExportAvailability();
 });
 
 form.addEventListener("submit", event => event.preventDefault());

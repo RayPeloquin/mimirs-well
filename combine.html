@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The Alchemist’s Bench — Mimir’s Well</title>
   <meta name="description" content="Pair two designs from Mimir’s Well and write a test brief someone else can run.">
-  <link rel="stylesheet" href="combine.css?v=20261123-physical">
+  <link rel="stylesheet" href="combine.css?v=20261123-pretest">
   <script src="design-contributions.js?v=20261123-court3" defer></script>
   <script src="publication-controls.js?v=20261123-safety" defer></script>
-  <script src="combine.js?v=20261123-safety" defer></script>
+  <script src="combine.js?v=20261123-pretest" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to the workspace</a>
@@ -71,13 +71,24 @@
           <label><span id="mechanism-label">What are you borrowing?</span><textarea name="mechanism" rows="3" placeholder="Name the specific mechanism, method, or measurement."></textarea></label>
           <label><span id="change-label">Where would it fit?</span><textarea name="change" rows="3" placeholder="Describe what changes in the receiving design."></textarea></label>
           <label>What’s the baseline?<textarea name="baseline" rows="3" placeholder="Describe the comparison and what you’ll hold constant."></textarea></label>
-          <label>What would count as a result?<textarea name="criterion" rows="3" placeholder="State the metric and what counts as success or failure."></textarea></label>
+          <label>Decision threshold and inconclusive range<textarea name="criterion" rows="3" placeholder="Specify the boundary, units, uncertainty and what counts as inconclusive before testing."></textarea></label>
+          <fieldset class="full pretest-record" aria-describedby="pretest-help pretest-caution">
+            <legend>Pre-test prediction · decide before measuring</legend>
+            <p id="pretest-help">Write what observation would support the idea and what would make you change your mind. State a metric, unit, threshold and comparison wherever possible. Do not enter any results here.</p>
+            <div class="pretest-fields">
+              <label>What observation would support the hypothesis?<textarea name="support" rows="3" placeholder="If X differs from baseline by at least Y (units), with uncertainty below Z…"></textarea></label>
+              <label>What observation would count against the hypothesis?<textarea name="against" rows="3" placeholder="If the predicted effect is absent with adequate precision, or a control shows the same effect…"></textarea></label>
+              <label class="full">How will you measure and decide?<textarea name="measurement" rows="3" placeholder="Instrument, units, repeats, controls, uncertainty, analysis and decision rule."></textarea></label>
+            </div>
+            <label class="pretest-confirm"><input type="checkbox" name="pretestDeclaration"><span>These predictions and thresholds were written before I examined the outcomes of this test.</span></label>
+            <p id="pretest-caution">Editing a prediction clears this declaration. Browser drafts and export timestamps are not tamper-proof; save a versioned copy before testing for an auditable chronology.</p>
+          </fieldset>
           <label class="full">What would someone need to run it?<textarea name="materials" rows="3" placeholder="Link to code or data, and list any equipment or missing inputs."></textarea></label>
         </div>
         <div class="actions">
           <button class="button primary" id="copy" type="button" disabled>Copy brief</button>
           <button class="button secondary" id="download" type="button" disabled>Download Markdown</button>
-          <p id="export-status" role="status">Choose two designs to export a proposed test.</p>
+          <p id="export-status" role="status">Choose designs and pre-register observations before exporting.</p>
         </div>
         <label id="fallback-label" hidden>Markdown brief<textarea id="fallback" rows="10" readonly></textarea></label>
       </form>

@@ -92,13 +92,21 @@ textarea { display: block; resize: vertical; }
 .fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 17px 21px; }
 .fields label, #fallback-label { display: grid; gap: 6px; font-weight: 600; }
 .fields input, .fields textarea, #fallback { font-weight: 400; }
+.pretest-record { margin: 0; padding: 20px; border: 1px solid #527c71; background: #0a1c20; border-radius: 10px; min-width: 0; }
+.pretest-record legend { padding: 0 8px; color: var(--mint); font-weight: 700; font-size: 1.05rem; }
+.pretest-record p { color: var(--muted); font-size: .89rem; font-weight: 400; margin: 0 0 14px; }
+.pretest-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.pretest-fields label { display: grid; gap: 6px; }
+.pretest-confirm { display: flex !important; flex-direction: row; align-items: flex-start; gap: 12px; margin: 16px 0 10px; cursor: pointer; }
+.pretest-confirm input { width: 20px; min-width: 20px; height: 20px; margin: 2px 0 0; accent-color: var(--mint); }
+.pretest-record #pretest-caution { margin: 0; font-size: .82rem; }
 .full { grid-column: 1 / -1; }
 .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 20px; }
 #fallback-label { margin-top: 16px; }
 footer { padding-block: 40px 24px; color: var(--muted); font-size: .84rem; }
 @media (max-width: 680px) {
   .wrap { width: calc(100% - 28px); }
-  .pair, .fields { grid-template-columns: minmax(0, 1fr); }
+  .pair, .fields, .pretest-fields { grid-template-columns: minmax(0, 1fr); }
   .connector { justify-self: center; transform: rotate(90deg); }
   .hero { min-height: 256px; background-position: 60% center; }
 }
