@@ -19,7 +19,8 @@ const contributions = window.WellDesignContributions;
 const releaseHolds = window.WellPublicationControls?.holds || {};
 function isReleaseHeld(id) { return Boolean(id && Object.hasOwn(releaseHolds, id)); }
 const draftKey = physical ? "mimirs-well-physical-skeptic-1-v1" : "mimirs-well-combine-draft-v1";
-const pair = { from: null, to: null };
+const pair = { from: null, to: null, third: null };
+const locks = new Set();
 const catalog = new Map();
 const catalogStatus = document.querySelector("#catalog-status");
 const exportStatus = document.querySelector("#export-status");
@@ -131,13 +132,101 @@ function syncPair() {
   const url = new URL(location.href);
   url.searchParams.delete("example");
   url.searchParams.delete("case");
-  for (const role of roles) {
+  for (const role of physical ? roles : [...roles, "third"]) {
     if (pair[role]) url.searchParams.set(role, pair[role]);
     else url.searchParams.delete(role);
   }
   history.replaceState(null, "", url);
 }
 
+function activeRoles() { return !physical && pair.third ? [...roles, "third"] : roles; }
+function eligible() { return [...catalog.values()].filter(e => !isReleaseHeld(e.id)); }
+function wordsFor(value) {
+  const stop = new Set("with from this that have been into under over source design evidence model proposed archived record review pending test tests validation verified physical documented specific not and the for are can its does".split(" "));
+  return new Set(normalize(value || "").split(" ").filter(w => w.length > 3 && !stop.has(w)));
+}
+function overlap(a, b) { return [...a].filter(w => b.has(w)); }
+function terms(e) { return wordsFor([e.title, contributions[e.id]?.contribution, contributions[e.id]?.need].filter(Boolean).join(" ")); }
+function randomItem(items) { return items[Math.floor(Math.random() * items.length)]; }
+function clearBriefForChange() {
+  if (draftFields.some(name => form.elements[name].value.trim()) &&
+      !window.confirm("Changing ingredients clears the current browser brief. Downloaded briefs are safe. Continue?")) return false;
+  for (const name of draftFields) form.elements[name].value = "";
+  pretestDeclaration.checked = false;
+  fallback.value = "";
+  return true;
+}
+function discover(mode) {
+  const status = document.querySelector("#discovery-status");
+  const entries = eligible();
+  const fixed = roles.filter(role => locks.has(role) && pair[role]);
+  if (fixed.length === 2) { status.textContent = "Unlock one design to discover a new partner."; return; }
+  const anchorRole = fixed[0] || (mode === "complement" || mode === "hidden" ? roles.find(role => pair[role]) : null);
+  const targetRole = anchorRole === "to" ? "from" : "to";
+  const anchor = anchorRole ? catalog.get(pair[anchorRole]) : randomItem(entries.filter(e => e.id !== pair.third));
+  if (!anchor) { status.textContent = "No eligible anchor available."; return; }
+  const actualAnchorRole = anchorRole || "from";
+  const candidates = entries.filter(e => e.id !== anchor.id && e.id !== pair.third && e.id !== pair[targetRole]);
+  const ranked = candidates.map(e => {
+    const donor = actualAnchorRole === "from" ? anchor : e;
+    const receiver = actualAnchorRole === "from" ? e : anchor;
+    const matches = mode === "complement" ? overlap(wordsFor(contributions[donor.id]?.contribution), wordsFor(contributions[receiver.id]?.need)) : overlap(terms(anchor), terms(e));
+    return { e, matches, score: matches.length };
+  });
+  let choice;
+  if (mode === "blind") choice = randomItem(ranked);
+  else if (mode === "wild") choice = randomItem(ranked.filter(x => x.score === 0));
+  else {
+    ranked.sort((a,b) => b.score-a.score);
+    choice = randomItem(ranked.filter(x => x.score > 0).slice(0,12));
+  }
+  if (!choice) { status.textContent = "No match for this heuristic. Try Blind Alchemy or a different anchor."; return; }
+  if (!clearBriefForChange()) return;
+  pair[actualAnchorRole] = anchor.id;
+  pair[targetRole] = choice.e.id;
+  for (const role of roles) document.querySelector(`#${role}-search`).value = "";
+  syncPair(); saveDraft(); render();
+  status.textContent = mode === "blind" ? "Random eligible pair. No compatibility claim." :
+    mode === "wild" ? "Low recorded vocabulary overlap; not proof of different disciplines or compatibility." :
+    "Candidate from recorded word overlap: " + choice.matches.join(", ") + ". Review mechanism, units and evidence before using.";
+}
+function renderThird() {
+  const select = document.querySelector("#third-ingredient");
+  if (!select) return;
+  select.replaceChildren();
+  const empty = element("option", "No third ingredient"); empty.value = ""; select.append(empty);
+  for (const entry of eligible().filter(e => e.id !== pair.from && e.id !== pair.to).sort((a,b) => a.title.localeCompare(b.title))) {
+    const option = element("option", entry.title); option.value = entry.id; select.append(option);
+  }
+  select.value = pair.third || "";
+  const detail = document.querySelector("#third-detail");
+  detail.replaceChildren();
+  if (pair.third) {
+    const e = catalog.get(pair.third);
+    detail.append(element("p", e.status + " · " + (e.evidence || "Source review pending.")));
+    const link = element("a", "Open third design record"); link.href = e.url; detail.append(link);
+  }
+}
+function installDiscovery() {
+  const panel = element("section"); panel.className = "slot"; panel.setAttribute("aria-label", "Discovery tools");
+  panel.append(element("h3", "Discovery tools"), element("p", "Explore eligible designs. Suggestions are vocabulary heuristics or random draws, not validated scientific connections."));
+  const actions = element("div"); actions.className = "bench-actions";
+  for (const [mode,label] of [["blind","Blind Alchemy"],["complement","Find a Complement"],["hidden","Hidden Connections"],["wild","Wild Alchemy"]]) {
+    const b = element("button", label); b.type = "button"; b.className = "button secondary"; b.addEventListener("click", () => discover(mode)); actions.append(b);
+  }
+  const status = element("p"); status.id = "discovery-status"; status.setAttribute("role","status");
+  const label = element("label", "Third ingredient (optional)"); label.htmlFor = "third-ingredient";
+  const select = element("select"); select.id = "third-ingredient"; select.style.cssText = "display:block;width:100%;max-width:100%;padding:10px;background:#09161d;color:inherit;border:1px solid #36525a;border-radius:7px;font:inherit";
+  select.addEventListener("change", () => {
+    const id = select.value || null;
+    if (id && (!catalog.has(id) || isReleaseHeld(id) || roles.some(role => pair[role] === id))) { renderThird(); return; }
+    if (!clearBriefForChange()) { renderThird(); return; }
+    pair.third = id; syncPair(); saveDraft(); render();
+  });
+  const detail = element("div"); detail.id = "third-detail";
+  panel.append(actions,status,label,select,detail);
+  document.querySelector(".pair").before(panel);
+}
 function resetPair() {
   if (physical) return;
   if (draftFields.some(name => form.elements[name].value.trim()) &&
@@ -146,6 +235,8 @@ function resetPair() {
     pair[role] = null;
     document.querySelector(`#${role}-search`).value = "";
   }
+  pair.third = null;
+  locks.clear();
   for (const name of draftFields) form.elements[name].value = "";
   pretestDeclaration.checked = false;
   fallback.value = "";
@@ -160,6 +251,8 @@ function setDesign(role, id) {
     exportStatus.textContent = "This design is on a technical-source release hold. Its public catalog summary remains readable, but combination export is unavailable pending review.";
     return;
   }
+  if (!physical && (locks.has(role) || (id && Object.values(pair).includes(id)))) return;
+  if (!physical && !clearBriefForChange()) return;
   pair[role] = id;
   pretestDeclaration.checked = false;
   document.querySelector(`#${role}-search`).value = "";
@@ -182,7 +275,7 @@ function renderMatches(role) {
 
   const words = normalize(input.value).split(" ").filter(Boolean);
   const otherRole = role === "from" ? "to" : "from";
-  const candidates = Array.from(catalog.values()).filter(entry => entry.id !== pair[otherRole] && !isReleaseHeld(entry.id));
+  const candidates = Array.from(catalog.values()).filter(entry => entry.id !== pair[otherRole] && entry.id !== pair.third && !isReleaseHeld(entry.id));
   const matches = words.length ?
     candidates.filter(entry => words.every(word => entry.searchText.includes(word))) :
     candidates.filter(entry => Object.hasOwn(contributions, entry.id));
@@ -247,7 +340,11 @@ function renderSelection(role) {
   clear.className = "clear";
   clear.setAttribute("aria-label", `Change ${entry.title}`);
   clear.addEventListener("click", () => setDesign(role, null));
-  selection.append(clear);
+  clear.disabled = locks.has(role);
+  const lock = element("button", locks.has(role) ? "Unlock design" : "Lock design");
+  lock.type = "button"; lock.className = "clear"; lock.setAttribute("aria-pressed", String(locks.has(role)));
+  lock.addEventListener("click", () => { if (locks.has(role)) locks.delete(role); else locks.add(role); render(); document.querySelector(`#${role}-selection button[aria-pressed]`).focus(); });
+  selection.append(clear, lock);
 }
 
 function render() {
@@ -255,17 +352,18 @@ function render() {
     renderSelection(role);
     if (!physical) renderMatches(role);
   }
+  renderThird();
   updateExportAvailability();
   fallbackLabel.hidden = true;
 }
 
 function updateExportAvailability() {
-  const selected = roles.every(role => pair[role] && !isReleaseHeld(pair[role]));
+  const selected = activeRoles().every(role => pair[role] && catalog.has(pair[role]) && !isReleaseHeld(pair[role])) && new Set(activeRoles().map(role => pair[role])).size === activeRoles().length;
   const specified = requiredPretestFields.every(name => form.elements[name].value.trim());
   const ready = selected && specified && pretestDeclaration.checked;
   copy.disabled = download.disabled = !ready;
   const reset = document.querySelector("#reset-pair");
-  if (reset) reset.disabled = !roles.some(role => pair[role]) && !draftFields.some(name => form.elements[name].value.trim());
+  if (reset) reset.disabled = !activeRoles().some(role => pair[role]) && !draftFields.some(name => form.elements[name].value.trim());
   exportStatus.textContent = !selected
     ? (physical ? "Choose an eligible source design." : "Choose two eligible designs.")
     : !specified
@@ -292,10 +390,10 @@ function briefMarkdown() {
     "", "**Author declaration:** Predictions and thresholds were written before examining this test's outcomes.",
     "", "For an auditable chronology, commit or externally timestamp this export before testing.",
     "", physical ? "## Source design" : "## Parent designs"];
-  for (const role of roles) {
+  for (const role of activeRoles()) {
     const entry = catalog.get(pair[role]);
     const note = contributions[entry.id];
-    if (!physical) lines.push("", `### ${role === "from" ? "Borrow from" : "Build on"}`);
+    if (!physical) lines.push("", `### ${role === "from" ? "Borrow from" : role === "third" ? "Third ingredient" : "Build on"}`);
     lines.push("", markdownLink(entry.title, entry.url), "", entry.status, "",
       entry.evidence || "Source review pending.");
     if (note) {
@@ -311,7 +409,7 @@ function briefMarkdown() {
 }
 
 copy.addEventListener("click", async () => {
-  if (roles.some(role => isReleaseHeld(pair[role]))) return;
+  if (roles.some(role => isReleaseHeld(pair[role])) || isReleaseHeld(pair.third)) return;
   if (copy.disabled) return;
   const text = briefMarkdown();
   try {
@@ -327,13 +425,13 @@ copy.addEventListener("click", async () => {
 });
 
 download.addEventListener("click", () => {
-  if (roles.some(role => isReleaseHeld(pair[role]))) return;
+  if (roles.some(role => isReleaseHeld(pair[role])) || isReleaseHeld(pair.third)) return;
   if (download.disabled) return;
   const blob = new Blob([briefMarkdown()], { type: "text/markdown;charset=utf-8" });
   const url = URL.createObjectURL(blob);
   const link = element("a");
   link.href = url;
-  link.download = physical ? `${pair.from}-physical-test-brief.md` : `${pair.from}-to-${pair.to}-test-brief.md`;
+  link.download = physical ? `${pair.from}-physical-test-brief.md` : `${pair.from}-to-${pair.to}${pair.third ? "-with-" + pair.third : ""}-test-brief.md`;
   link.click();
   setTimeout(() => URL.revokeObjectURL(url), 1000);
   exportStatus.textContent = "Markdown brief downloaded.";
@@ -388,7 +486,11 @@ async function start() {
     input.addEventListener("input", () => renderMatches(role));
   }
 
-  const matchesDraft = roles.every(role => draft?.pair?.[role] === pair[role]);
+  if (!physical) {
+    const third = params.has("third") || roles.some(role => params.has(role)) ? params.get("third") : draft?.pair?.third;
+    if (third && catalog.has(third) && !isReleaseHeld(third) && !Object.values(pair).includes(third)) pair.third = third;
+  }
+  const matchesDraft = roles.every(role => draft?.pair?.[role] === pair[role]) && (physical || (draft?.pair?.third || null) === pair.third);
   const fields = physical ? (draft?.fields || skepticPhysicalExample) :
     example ? acousticExample : grokCase ? grokCaseExample :
     grokOptical ? grokOpticalExample : grokResidual ? grokResidualExample :
@@ -400,6 +502,7 @@ async function start() {
   }
   catalogStatus.textContent = physical ? "SKEPTIC-1 · Numerical model" : `Search ${catalog.size - Object.keys(releaseHolds).length} eligible designs. ${Object.keys(releaseHolds).length} held source records remain in the public catalog only.`;
   if (!physical) {
+    installDiscovery();
     const reset = element("button", "Reset Pair");
     reset.type = "button";
     reset.id = "reset-pair";
