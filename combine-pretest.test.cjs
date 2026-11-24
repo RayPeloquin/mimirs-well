@@ -13,16 +13,20 @@ function block(start,end) {
   assert.ok(a>=0&&b>a,"expected source function boundaries");
   return js.slice(a,b).trim();
 }
+const activeRolesFn=block("function activeRoles() {","\nfunction eligible() {");
 const availabilityFn=block("function updateExportAvailability() {","\nfunction exportedUrl(path) {");
 const exportFn=block("function briefMarkdown() {","\ncopy.addEventListener(");
 const fields=["baseline","criterion","support","against","measurement"];
 function runAvailability(overrides={}) {
+  const catalog=new Map(["skeptic-1","temporal-acoustics","ghostglass"].map(id=>[id,{id}]));
   const elements=Object.fromEntries(fields.map(name=>[name,{value:"Defined "+name+" with units and a fixed threshold"}]));
   if(overrides.blank)elements[overrides.blank].value=" ";
   const checkbox={checked:overrides.checked ?? true};
   const ctx={
     roles:overrides.physical?["from"]:["from","to"],
-    pair:{from:overrides.from??"skeptic-1",to:overrides.to??"temporal-acoustics"},
+    pair:{from:overrides.from??"skeptic-1",to:overrides.to??"temporal-acoustics",third:overrides.third},
+    catalog,
+    document:{querySelector:()=>null},
     form:{elements},
     requiredPretestFields:fields,
     pretestDeclaration:checkbox,
@@ -32,7 +36,7 @@ function runAvailability(overrides={}) {
     download:{disabled:true},
     exportStatus:{textContent:""},
   };
-  vm.runInNewContext(availabilityFn+"\nupdateExportAvailability();",ctx);
+  vm.runInNewContext(activeRolesFn+"\n"+availabilityFn+"\nupdateExportAvailability();",ctx);
   return ctx;
 }
 test("both Bench modes expose distinct support, contrary and measurement fields",()=>{
@@ -51,9 +55,12 @@ test("requires all pre-test observations, threshold, baseline and declaration",(
 });
 test("held source and absent receiving design cannot export",()=>{
   assert.equal(runAvailability({held:"skeptic-1"}).copy.disabled,true);
-  assert.equal(runAvailability({to:null}).copy.disabled,false); // defaulting rule is tested below
   assert.equal(runAvailability({to:""}).copy.disabled,true);
   assert.equal(runAvailability({physical:true,to:""}).copy.disabled,false);
+  assert.equal(runAvailability({to:"missing"}).copy.disabled,true);
+  assert.equal(runAvailability({third:"temporal-acoustics"}).copy.disabled,true);
+  assert.equal(runAvailability({third:"ghostglass",held:"ghostglass"}).copy.disabled,true);
+  assert.equal(runAvailability({third:"ghostglass"}).copy.disabled,false);
 });
 test("exports contain independent predictions and a non-certified timestamp disclaimer",()=>{
   const elements={
@@ -71,7 +78,7 @@ test("exports contain independent predictions and a non-certified timestamp disc
   const ctx={form:{elements},physical:false,roles:["from","to"],pair:{from:"skeptic-1",to:"temporal-acoustics"},
     catalog:new Map([["skeptic-1",{id:"skeptic-1",title:"SKEPTIC-1",url:"a",status:"Proposed"}],["temporal-acoustics",{id:"temporal-acoustics",title:"Temporal Acoustics",url:"b",status:"Proposed"}]]),
     contributions:{},fieldLabels:labelMap,markdownLink:(label,url)=>label+" "+url};
-  const output=vm.runInNewContext(exportFn+"\nbriefMarkdown();",ctx);
+  const output=vm.runInNewContext(activeRolesFn+"\n"+exportFn+"\nbriefMarkdown();",ctx);
   for(const phrase of ["Supporting observation","Signal clears threshold","Contrary observation","Control shows identical effect","Measurement","Repeated readings in Hz","browser clock; not independently certified","no experiment result claimed"])assert.ok(output.includes(phrase),phrase);
 });
 test("editing conditions resets declaration and public export remains release-held",()=>{
