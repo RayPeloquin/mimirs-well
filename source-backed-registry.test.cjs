@@ -13,5 +13,5 @@ test('no duplicate Temporal Reflection Chamber title in catalog and one featured
 test('readable project count and evidence review summary are current',()=>{
  const total = currentTitles().length;
  const expanded = expandedRecords().length;
- assert.ok(html.includes(`${total} distinct project cards, including ${expanded} expanded records and ${total - expanded} records pending`));
+ assert.ok(html.includes(`${total} distinct project cards: ${expanded} expanded records and ${total - expanded} awaiting source review`));
 });
