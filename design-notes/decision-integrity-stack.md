@@ -5,10 +5,15 @@
 ## Purpose and proposed mechanism
 A layered autonomy model separating independent reflex interlocks, confidence-aware perception and slower cognition/governance decisions.
 
+
+This concept concerns separation of fast interlocks and slower decisions; the validity platform concerns quality of input measurements. See also [related archive note](system-validity-platform.md).
+
+Example to test: a slow decision conflicts with an independent interlock. This is a proposed failure case, not an observed result.
+
 ## Evidence limits
 This is a concise public interpretation of a privately held desktop design note, not its complete technical specification. Claims of readiness, resilience, safety, accuracy or performance in the source have not been independently verified. No field trial, formal proof or regulatory approval is asserted here.
 
-## Next reproducible check
+## Proposed next verification check
 Specify interfaces and inject stale sensors, processor loss, conflicting commands and network partitions.
 
 **Source basis:** Mr. Peloquin's desktop archive, `Brain/Decision layer.txt`. Original retained privately. Mimir's Well / Asteris Solenne public summary, 20 November 2026.
