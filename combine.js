@@ -409,7 +409,7 @@ function briefMarkdown() {
 }
 
 copy.addEventListener("click", async () => {
-  if (activeRoles().some(role => isReleaseHeld(pair[role]))) return;
+  if (roles.some(role => isReleaseHeld(pair[role])) || isReleaseHeld(pair.third)) return;
   if (copy.disabled) return;
   const text = briefMarkdown();
   try {
@@ -425,7 +425,7 @@ copy.addEventListener("click", async () => {
 });
 
 download.addEventListener("click", () => {
-  if (activeRoles().some(role => isReleaseHeld(pair[role]))) return;
+  if (roles.some(role => isReleaseHeld(pair[role])) || isReleaseHeld(pair.third)) return;
   if (download.disabled) return;
   const blob = new Blob([briefMarkdown()], { type: "text/markdown;charset=utf-8" });
   const url = URL.createObjectURL(blob);
