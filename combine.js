@@ -138,6 +138,23 @@ function syncPair() {
   history.replaceState(null, "", url);
 }
 
+function resetPair() {
+  if (physical) return;
+  if (draftFields.some(name => form.elements[name].value.trim()) &&
+      !window.confirm("Clear this pair and its current browser draft? Downloaded briefs are not affected.")) return;
+  for (const role of roles) {
+    pair[role] = null;
+    document.querySelector(`#${role}-search`).value = "";
+  }
+  for (const name of draftFields) form.elements[name].value = "";
+  pretestDeclaration.checked = false;
+  fallback.value = "";
+  syncPair();
+  saveDraft();
+  render();
+  document.querySelector("#from-search").focus();
+}
+
 function setDesign(role, id) {
   if (isReleaseHeld(id)) {
     exportStatus.textContent = "This design is on a technical-source release hold. Its public catalog summary remains readable, but combination export is unavailable pending review.";
@@ -225,7 +242,7 @@ function renderSelection(role) {
   }
 
   if (physical) return;
-  const clear = element("button", "Change design");
+  const clear = element("button", "× Change design");
   clear.type = "button";
   clear.className = "clear";
   clear.setAttribute("aria-label", `Change ${entry.title}`);
@@ -247,6 +264,8 @@ function updateExportAvailability() {
   const specified = requiredPretestFields.every(name => form.elements[name].value.trim());
   const ready = selected && specified && pretestDeclaration.checked;
   copy.disabled = download.disabled = !ready;
+  const reset = document.querySelector("#reset-pair");
+  if (reset) reset.disabled = !roles.some(role => pair[role]) && !draftFields.some(name => form.elements[name].value.trim());
   exportStatus.textContent = !selected
     ? (physical ? "Choose an eligible source design." : "Choose two eligible designs.")
     : !specified
@@ -380,6 +399,14 @@ async function start() {
     }
   }
   catalogStatus.textContent = physical ? "SKEPTIC-1 · Numerical model" : `Search ${catalog.size - Object.keys(releaseHolds).length} eligible designs. ${Object.keys(releaseHolds).length} held source records remain in the public catalog only.`;
+  if (!physical) {
+    const reset = element("button", "Reset Pair");
+    reset.type = "button";
+    reset.id = "reset-pair";
+    reset.className = "button secondary";
+    reset.addEventListener("click", resetPair);
+    document.querySelector(".pair").after(reset);
+  }
   render();
 }
 
