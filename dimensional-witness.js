@@ -4,7 +4,22 @@
  * Unit null means source does not establish a concrete unit; never guess.
  * "kind" preserves quantity meaning beyond dimensional exponents. */
 (function(root){
-const version="2026-11-25-v1";
+const version="2026-11-25-v2";
+// Reviewed local transcription snapshots, not remote original file hashes.
+const sourcePins=Object.freeze({
+  "skeptic-1": "171403329b2afa418b8093a7cb5581cc6643f303cb3c3ae9aa48cad82bda0a8e",
+  "echo-rx": "d3bc0b1b6e23b6d22fbae02b62b49e95cc35f4d929992df4c0a9c35487a32687",
+  "ghostglass": "884cd056681214e8063802314db07139ddbe021f3d4aae0c07bce4dd4086d716",
+  "temporal-acoustics": "2308f4ee1e7b19591ab972ae8ab3b086e97c62769689e0512a811c3dfd8078bd",
+  "chihuahua-sphere-cs-1": "d37b66407f5b81220f415c54c96e60281870da80907fff713c9eb4d20cec0184",
+  "the-traveler-solar-electric-research-airship": "64ef0253d9cc1c7e83f9b366c80cd10b68380779b8c1270a9a70e3eb3b901ee6",
+  "zion-twin-ring-tuna-habitat": "9b5173ccfb67dd6ae65b90c5c8dfefff44d82a3273bf0e6155e6fb30825a99f4",
+  "adventurer-s-forge": "1eb019bc7e61f24e3a30e43969e664abef225325dab8fc4094080f0104d94326",
+  "crucible": "fc17a513214be87c14e0b5d7e4ecd848d030055ae9a19324136f913c1ebf0aa1",
+  "spotrecon-spotrecon-r2": "4cf34b585b40a7f26a01f11897dea3f6e0b29b08e1a108ad1fabd06b4022bbd6",
+  "confluence-01-synthetic-sense": "6fab3d29d2abe18dff3f33464ed6b7d4f9dd98ca8193fd7ef737c0d793cd50cf",
+  "spincell-dle": "1dfe0da9111c23f32c1c720154f6214385b92896798361a9652040de20f9de30"
+});
 const raw={
   "skeptic-1": {
     "lambda_i": [
@@ -279,7 +294,7 @@ function compare(a,b){
   if(a.unit!==b.unit)return {code:"unit-review",text:"Dimensions match but unit/scale or representation differs. Document conversion or why comparison is inappropriate. No conversion is performed.",blocked:false};
   return {code:"meaning-review",text:"Dimensions and unit labels match; quantity meaning, context and assumptions still require review. Not proof of equivalence.",blocked:false};
 }
-const api=Object.freeze({version,metadata,get,describe,compare});
+const api=Object.freeze({version,metadata,sourcePins,get,describe,compare});
 if(typeof module!=="undefined"&&module.exports)module.exports=api;
 if(root)root.WellDimensionalWitness=api;
 })(typeof window!=="undefined"?window:null);

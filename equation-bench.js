@@ -49,7 +49,7 @@
       witnessReviewed: tr.querySelector(".witness-review").checked
     }));
     const payload = {
-      rows, witnessVersion: witness?.version || null, ack: ackB.checked, composition: composition.value,
+      rows, witnessVersion: witness?.version || null, sourcePinA:witness?.sourcePins[pair.a], sourcePinB:witness?.sourcePins[pair.b], ack: ackB.checked, composition: composition.value,
       manualComposition, guidedOrigin, inherited: $("inherited").value,
       joint: $("joint").value, strained: $("strained").value
     };
@@ -150,7 +150,7 @@
       const reviewLabel=element("label"); reviewLabel.className="witness-ack"; reviewLabel.hidden=true;
       const review=element("input"); review.type="checkbox";review.className="witness-review";
       review.setAttribute("aria-label","Review dimensions, unit and meaning for "+item.name);
-      review.checked=Boolean(saved?.witnessVersion===witness?.version && stored?.witnessReviewed);
+      review.checked=Boolean(saved?.witnessVersion===witness?.version && saved?.sourcePinA===witness?.sourcePins[pair.a] && saved?.sourcePinB===witness?.sourcePins[pair.b] && stored?.witnessReviewed);
       reviewLabel.append(review,element("span","I reviewed units, meaning and uncertainty for this equivalence."));
       const risk = element("input"); risk.className = "risk"; risk.type = "text";
       risk.placeholder = "Units, domain or mismatch?";
@@ -264,11 +264,14 @@
     const saved = selected() ? storageRead() : null;
     manualComposition = Boolean(saved?.manualComposition);
     guidedOrigin = saved?.guidedOrigin || null;
+    const stale=Boolean(saved&&(saved.witnessVersion!==witness?.version||saved.sourcePinA!==witness?.sourcePins[pair.a]||saved.sourcePinB!==witness?.sourcePins[pair.b]));
+    if(stale){saved.ack=false;if(guidedOrigin)guidedOrigin.adopted=false;}
     composition.value = saved?.composition || "";
     $("inherited").value = saved?.inherited || "";
     $("joint").value = saved?.joint || "";
     $("strained").value = saved?.strained || "";
     $("draft-note").textContent = selected() ? "Local draft for this pair; not published." : "Each source pair has its own local draft.";
+    if(stale) $("draft-note").textContent="Saved draft retained; reviewed transcription or annotation version changed. Re-review mappings and acknowledgements before export.";
     sourceCard("a"); sourceCard("b"); buildMapping(saved); updateExport();
     syncQuery();
   }
@@ -315,6 +318,7 @@
     const a = primary(pair.a), b = primary(pair.b);
     const ar = entry(pair.a), br = entry(pair.b);
     const lines = [
+      "**Reviewed, not approved. Dimensional Witness does not establish physical equivalence or validate the proposed expression.**", "",
       "# Candidate equation combination: " + ar.title + " × " + br.title,
       "",
       "**" + fileStamp + "**",
@@ -346,13 +350,16 @@
       "",
       "## Explicit symbol mapping",
       "",
+      "Reviewed local transcription SHA-256 (A): " + witness.sourcePins[pair.a],
+      "Reviewed local transcription SHA-256 (B): " + witness.sourcePins[pair.b],
+      "These are hashes of the Well transcriptions, not upstream original files.", "",
       "Dimensional Witness metadata version: " + witness.version + ". Dimensions are advisory except known incompatibilities block equivalence. No expression-level check.", "",
       "| Design A symbol | Design B symbol | Same quantity? | Notes / risk | Witness result and review |",
       "| --- | --- | --- | --- | --- |"
     ];
     for (const row of mappings()) {
       lines.push("| " + mdCell(row.a) + " | " + mdCell(row.b === "__none" ? "No counterpart" : row.b) +
-        " | " + (row.decision === "same" ? "Yes" : "No") + " | " + mdCell(row.notes) + " | " + mdCell(witnessResult(row).code + ": " + witnessResult(row).text + " A: " + witness.describe(witness.get(pair.a,row.a)) + (row.b==="__none"?"":" B: "+witness.describe(witness.get(pair.b,row.b))) + "; equivalence review: " + (row.decision==="same"?(row.witnessReviewed?"Acknowledged by user":"Not acknowledged"):"Not claimed")) + " |");
+        " | " + (row.decision === "same" ? "Yes" : "No") + " | " + mdCell(row.notes) + " | " + mdCell(witnessResult(row).code + ": " + witnessResult(row).text + " A: " + witness.describe(witness.get(pair.a,row.a)) + (row.b==="__none"?"":" B: "+witness.describe(witness.get(pair.b,row.b))) + "; equivalence review: " + (row.decision==="same"?(row.witnessReviewed?"Acknowledged by user; reviewed, not approved":"Not acknowledged"):"Not claimed")) + " |");
     }
     const matched = new Set(mappings().filter(x => x.decision === "same").map(x => x.b));
     const unmatched = b.symbols.map(x => x.name).filter(name => !matched.has(name));
@@ -466,6 +473,8 @@
       return;
     }
     try {
+      if(!witness||!globalThis.crypto?.subtle)throw new Error("Reviewed transcription verification unavailable; use the static sources or reload in a secure browser.");
+      for(const id of ids){const digest=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(JSON.stringify(cores[id])));const hex=Array.from(new Uint8Array(digest),x=>x.toString(16).padStart(2,"0")).join("");if(hex!==witness.sourcePins[id])throw new Error("Reviewed transcription changed: "+id+". Fresh annotation review required.");}
       const response = await fetch("catalog.json");
       if (!response.ok) throw new Error("Catalog unavailable: HTTP " + response.status);
       const list = await response.json();

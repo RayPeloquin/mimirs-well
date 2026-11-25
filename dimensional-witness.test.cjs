@@ -37,3 +37,5 @@ test('Witness rejects known incompatibility but never certifies an equivalence',
   const all=Object.values(w.metadata).flatMap(Object.values);
   for(const a of all)for(const b of all){const r=compare(a,b);assert.equal(r.code,compare(b,a).code);assert.equal(r.blocked,compare(b,a).blocked);assert.ok(r.text);}
 });
+
+test('reviewed transcription pins bind exact definitions and distinguish colliding names',()=>{const crypto=require('node:crypto');for(const [id,q] of Object.entries(cores))assert.equal(w.sourcePins[id],crypto.createHash('sha256').update(JSON.stringify(q)).digest('hex'));assert.notEqual(w.sourcePins['ghostglass'],crypto.createHash('sha256').update(JSON.stringify({...cores.ghostglass,statement:'changed'})).digest('hex'));assert.equal(w.compare(w.get('ghostglass','r'),w.get('the-traveler-solar-electric-research-airship','r')).blocked,true);});

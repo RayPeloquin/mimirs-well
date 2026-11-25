@@ -89,6 +89,21 @@ const root = path.resolve(__dirname, '..');
     assert.ok(await page.locator('#download-equation').isEnabled());
     assert.deepEqual(errors,[]);
     console.log('PASS Dimensional Witness: mismatch refusal, unit review, acknowledgment, receipt, reload and revocation');
+    await page.evaluate(()=>{const k='mimirs-well-equation-bench-v1:skeptic-1::confluence-01-synthetic-sense';const draft=JSON.parse(localStorage.getItem(k));draft.sourcePinA='old-source';localStorage.setItem(k,JSON.stringify(draft));});
+    await page.reload();await page.waitForFunction(()=>!document.querySelector('#pick-a').disabled);
+    assert.match(await page.locator('#draft-note').innerText(),/Re-review/);
+    assert.match(await page.locator('#composition').inputValue(),/keep independent quantities separate/);
+    assert.ok(!(await page.locator('#ack-b').isChecked()));assert.ok(await page.locator('#download-equation').isDisabled());
+    await page.goto(base+'/equation-bench.html?a=echo-rx&b=spincell-dle');
+    await page.waitForFunction(()=>!document.querySelector('#pick-a').disabled);
+    for(const row of await page.locator('#mapping-rows tr[data-symbol]').all()){await row.locator('.target').selectOption('__none');await row.locator('.decision').selectOption('different');}
+    for(const symbol of ['A_T','A_D']){const row=page.locator('tr[data-symbol="'+symbol+'"]');await row.locator('.target').selectOption('m_Li_in');await row.locator('.decision').selectOption('same');await row.locator('.risk').fill('Synthetic contradictory mapping fixture only.');await row.locator('.witness-review').check();}
+    await page.locator('#ack-b').check();assert.match(await page.locator('#mapping-status').innerText(),/Two different A symbols/);assert.ok(await page.locator('#download-equation').isDisabled());
+    const stalePage=await context.newPage();await stalePage.route('**/equation-cores.js*',async route=>{const response=await route.fetch();const body=await response.text();await route.fulfill({response,body:body+'\nwindow.WellEquationCores.ghostglass.statement += " changed";'});});
+    await stalePage.goto(base+'/equation-bench.html');await stalePage.waitForFunction(()=>document.querySelector('#catalog-status').textContent.includes('Reviewed transcription changed'));
+    assert.ok(await stalePage.locator('#pick-a').isDisabled());await stalePage.close();
+    console.log('PASS stale draft revocation, duplicate-target refusal and altered-transcription startup refusal');
+
 
 
     await page.goto(base+'/equation-bench.html');
@@ -238,7 +253,12 @@ const root = path.resolve(__dirname, '..');
     console.log('PASS five recovered artwork pages and six public images');
     await staticPage.goto(base+'/dimensional-witness.html');
     assert.match(await staticPage.locator('main').textContent(),/Completed teaching receipt/);
-    assert.equal(await staticPage.locator('tbody tr').count(),4);
+    assert.equal(await staticPage.locator('#witness-outcomes tbody tr').count(),3);
+    assert.equal(await staticPage.locator('table:not(#witness-outcomes) tbody tr').count(),4);
+    await staticPage.goto(base+'/trial-v-receipt.html');
+    assert.match(await staticPage.locator('main').textContent(),/56 passed; 0 failed/);
+    assert.match(await staticPage.locator('main').textContent(),/364 records; 0 validation errors/);
+    assert.match(await staticPage.locator('main').textContent(),/Canonical records with related questions \(10\)/);
     assert.ok(await staticPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
     await staticPage.goto(base+'/catalog.html#skeptic-1');
     assert.ok(await staticPage.locator('#skeptic-1').isVisible());

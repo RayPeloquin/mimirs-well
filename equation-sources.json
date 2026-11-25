@@ -64,7 +64,8 @@
       }
     ],
     "caveat": "Faithful notation for scipy.linalg.eigh(K,M) and sqrt(vals)/(2*pi), not a separately printed equation in the original Python. No damping, friction, or sensor physics.",
-    "witness_version": "2026-11-25-v1"
+    "witness_version": "2026-11-25-v2",
+    "reviewed_transcription_sha256": "171403329b2afa418b8093a7cb5581cc6643f303cb3c3ae9aa48cad82bda0a8e"
   },
   "echo-rx": {
     "evidence": "Reduced theoretical mass-balance equation; no biological results",
@@ -159,7 +160,8 @@
       }
     ],
     "caveat": "Assumes homogeneous linear compartments and fixed rates; does not establish effective biological shutdown, therapeutic exposure or clinical safety.",
-    "witness_version": "2026-11-25-v1"
+    "witness_version": "2026-11-25-v2",
+    "reviewed_transcription_sha256": "d3bc0b1b6e23b6d22fbae02b62b49e95cc35f4d929992df4c0a9c35487a32687"
   },
   "ghostglass": {
     "evidence": "Synthetic on/off statistical test; no physical detector validation",
@@ -226,7 +228,8 @@
       }
     ],
     "caveat": "BinomSF(k;n,q)=P(X>k) for X~Binomial(n,q). Assumes stationary equal on/off background rates, valid exposures and Poisson counts; not a signal discovery claim.",
-    "witness_version": "2026-11-25-v1"
+    "witness_version": "2026-11-25-v2",
+    "reviewed_transcription_sha256": "884cd056681214e8063802314db07139ddbe021f3d4aae0c07bce4dd4086d716"
   },
   "temporal-acoustics": {
     "evidence": "Synthetic 2D scalar-wave numerical method; no field measurements",
@@ -279,7 +282,8 @@
       }
     ],
     "caveat": "Transcribed from the code’s strict inequality and separate velocity-field check. A numerical stability constraint, not an acoustic discovery or elastic-earth constitutive law.",
-    "witness_version": "2026-11-25-v1"
+    "witness_version": "2026-11-25-v2",
+    "reviewed_transcription_sha256": "2308f4ee1e7b19591ab972ae8ab3b086e97c62769689e0512a811c3dfd8078bd"
   },
   "chihuahua-sphere-cs-1": {
     "evidence": "Calculation-only optical energy ledger; hypothetical example",
@@ -360,7 +364,8 @@
       }
     ],
     "caveat": "Notation transcribed from the public prose and hypothetical 10 J / 2 J example. Positive denominators and matched intervals required. No measured efficiency or novel energy gain.",
-    "witness_version": "2026-11-25-v1"
+    "witness_version": "2026-11-25-v2",
+    "reviewed_transcription_sha256": "d37b66407f5b81220f415c54c96e60281870da80907fff713c9eb4d20cec0184"
   },
   "the-traveler-solar-electric-research-airship": {
     "evidence": "Historical passive-drift simulation; no flight or recovery test",
@@ -454,7 +459,8 @@
       }
     ],
     "caveat": "Scoring rule, not trajectory planning, steering or flight control. Net longitude is not cumulative absolute path length. Fixed-pressure passive replay; no descent, landing, physical recovery or airspace authorization established.",
-    "witness_version": "2026-11-25-v1"
+    "witness_version": "2026-11-25-v2",
+    "reviewed_transcription_sha256": "64ef0253d9cc1c7e83f9b366c80cd10b68380779b8c1270a9a70e3eb3b901ee6"
   },
   "zion-twin-ring-tuna-habitat": {
     "evidence": "Dimensionless dye-transport simulation; no physical tank trial",
@@ -497,7 +503,8 @@
       }
     ],
     "caveat": "Equal-area cells within a run; initial dye sum positive. This metric is distinct from outer-straight circulation and one-way gate flux. Strong mesh dependence, no established physical exchange rate, gate-motion result or animal welfare outcome.",
-    "witness_version": "2026-11-25-v1"
+    "witness_version": "2026-11-25-v2",
+    "reviewed_transcription_sha256": "9b5173ccfb67dd6ae65b90c5c8dfefff44d82a3273bf0e6155e6fb30825a99f4"
   },
   "adventurer-s-forge": {
     "evidence": "Desk-checked tabletop scenario using conventional thermodynamics; no hardware validation",
@@ -550,7 +557,8 @@
       }
     ],
     "caveat": "Positive absolute temperatures with T_hot > T_cold; ideal reversible two-reservoir bound. Does not predict real efficiency or establish a fictional energy source, cooling system or working hardware.",
-    "witness_version": "2026-11-25-v1"
+    "witness_version": "2026-11-25-v2",
+    "reviewed_transcription_sha256": "1eb019bc7e61f24e3a30e43969e664abef225325dab8fc4094080f0104d94326"
   },
   "crucible": {
     "evidence": "Recorded held-out synthetic simulation campaign; not hardware reliability evidence",
@@ -603,7 +611,8 @@
       }
     ],
     "caveat": "Notation for the published fractions, not the Wilson confidence interval. Requires positive denominator. Zero observed violations does not imply zero risk. Results apply only to the selected synthetic distribution; no real-world vehicle safety or controller superiority established.",
-    "witness_version": "2026-11-25-v1"
+    "witness_version": "2026-11-25-v2",
+    "reviewed_transcription_sha256": "fc17a513214be87c14e0b5d7e4ecd848d030055ae9a19324136f913c1ebf0aa1"
   },
   "spotrecon-spotrecon-r2": {
     "evidence": "Design review and illustrative calculation; no field measurements",
@@ -656,7 +665,8 @@
       }
     ],
     "caveat": "Transcribed from the printed equation. Timestamps must share a time base; invalid clocks or missing timestamps make age unavailable. Freshness thresholds and accuracy remain unvalidated; no field performance, reservation or aviation approval established.",
-    "witness_version": "2026-11-25-v1"
+    "witness_version": "2026-11-25-v2",
+    "reviewed_transcription_sha256": "4cf34b585b40a7f26a01f11897dea3f6e0b29b08e1a108ad1fabd06b4022bbd6"
   },
   "confluence-01-synthetic-sense": {
     "evidence": "Proposed evaluation metric; no prototype or dataset",
@@ -709,7 +719,8 @@
       }
     ],
     "caveat": "Formalization of the proposed prose metric, not a printed or tested equation in the project. Positive valid duration required. Abstention and coverage must remain visible; excluding unavailable periods can hide failures. No new sensory modality, diagnostic accuracy or safety benefit established.",
-    "witness_version": "2026-11-25-v1"
+    "witness_version": "2026-11-25-v2",
+    "reviewed_transcription_sha256": "6fab3d29d2abe18dff3f33464ed6b7d4f9dd98ca8193fd7ef737c0d793cd50cf"
   },
   "spincell-dle": {
     "evidence": "Illustrated concept; proposed material-accounting metric without paired assays",
@@ -762,6 +773,7 @@
       }
     ],
     "caveat": "Formalization of the public note's proposed recovery metric, not a measured result or printed source equation. Positive input mass required; account for other outlets and inventory changes, and report uncertainty. Recovery is not concentration, selectivity or energy efficiency. No process chemistry, operating parameters or demonstrated extraction performance.",
-    "witness_version": "2026-11-25-v1"
+    "witness_version": "2026-11-25-v2",
+    "reviewed_transcription_sha256": "1dfe0da9111c23f32c1c720154f6214385b92896798361a9652040de20f9de30"
   }
 }
