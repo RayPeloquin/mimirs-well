@@ -1,0 +1,40 @@
+const {test}=require('node:test');
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const crypto=require('node:crypto');
+const {readText}=require('./scripts/test-text.cjs');
+const controls=require('./publication-controls.js');
+require('./ledger-data.js');
+const sha=s=>crypto.createHash('sha256').update(s).digest('hex');
+const catalog=JSON.parse(readText('catalog.json'));
+const manifest=JSON.parse(readText('catalog-manifest.json'));
+const schema=JSON.parse(readText('catalog.schema.json'));
+test('canonical records, manifest, hashes and public boundaries agree',()=>{
+ const html=readText('catalog.html');
+ const ids=[...html.matchAll(/<li id="([^"]+)"><div class="catalog-entry"/g)].map(m=>m[1]);
+ assert.deepEqual(ids,catalog.map(r=>r.id));
+ assert.equal(new Set(ids).size,ids.length);
+ assert.equal(manifest.counts.total,ids.length);
+ assert.equal(manifest.counts.expanded,catalog.filter(r=>r.record_status==='expanded').length);
+ assert.equal(manifest.counts.pending_review,catalog.filter(r=>r.record_status==='pending_review').length);
+ assert.equal(manifest.counts.ledger,globalThis.MimirsLedgerData.length);
+ assert.equal(manifest.catalog_sha256,sha(readText('catalog.json')));
+ assert.equal(readText('catalog.sha256').split(' ')[0],manifest.catalog_sha256);
+ for(const r of catalog){
+   assert.deepEqual(Object.keys(r).sort(),schema.items.required.slice().sort(),r.id);
+   assert.equal(r.canonical_url,'https://raypeloquin.github.io/mimirs-well/catalog.html#'+r.id);
+   assert.ok(r.summary&&r.evidence_notice&&r.publication_notice&&r.policy_url,r.id);
+   assert.ok(r.evidence_types.every(t=>schema.items.properties.evidence_types.items.enum.includes(t)),r.id);
+   const {content_sha256,...body}=r;assert.equal(content_sha256,sha(JSON.stringify(body)),r.id);
+   const hold=Object.hasOwn(controls.holds,r.id),watch=Object.hasOwn(controls.watches,r.id);
+   assert.equal(r.publication_hold,hold?'precautionary_hold_summary_only':watch?'review_watch':'none');
+   if(hold||watch)assert.deepEqual(r.source_urls,[],r.id);
+   if(r.ledger_url)assert.ok(fs.existsSync(new URL(r.ledger_url).pathname.split('/').pop()),r.id);
+ }
+ assert.deepEqual(manifest.holds.map(x=>x.id),Object.keys(controls.holds));
+ assert.deepEqual(manifest.watches.map(x=>x.id),Object.keys(controls.watches));
+ const equations=JSON.parse(readText('equation-sources.json'));
+ assert.deepEqual(Object.keys(equations),controls.equationEligible);
+ assert.ok(Object.keys(equations).every(id=>!Object.hasOwn(controls.holds,id)));
+ assert.doesNotMatch(readText('index.html'),/<img[^>]+src="https:\/\/hits\.sh/i);
+});

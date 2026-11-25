@@ -66,6 +66,30 @@ const root = path.resolve(__dirname, '..');
       assert.ok(w.document<=w.viewport+1,route+' overflow '+JSON.stringify(w));
       console.log('PASS mobile '+route);
     }
+    const staticContext=await browser.newContext({javaScriptEnabled:false});
+    const staticPage=await staticContext.newPage();
+    const external=[];
+    staticPage.on('request',r=>{if(r.url().includes('hits.sh'))external.push(r.url())});
+    await staticPage.goto(base+'/');
+    assert.deepEqual(external,[]);
+    const data=await (await staticPage.request.get(base+'/catalog.json')).json();
+    await staticPage.goto(base+'/catalog.html');
+    const actual=await staticPage.locator('#catalog-entries > li').evaluateAll(es=>es.map(e=>e.id));
+    assert.deepEqual(actual,data.map(r=>r.id));
+    for(const r of data){
+      const row=staticPage.locator('#'+r.id);
+      assert.equal(await row.count(),1);
+      assert.ok(await row.locator('h2').isVisible());
+      if(r.evidence) assert.ok(await row.locator('details').first().isVisible() && await row.locator('details').first().getAttribute('open')!==null);
+    }
+    await staticPage.goto(base+'/catalog.html#skeptic-1');
+    assert.ok(await staticPage.locator('#skeptic-1').isVisible());
+    await staticPage.goto(base+'/equation-bench.html');
+    assert.ok(await staticPage.getByRole('link',{name:'the static equation index'}).isVisible());
+    await staticPage.goto(base+'/combine.html');
+    assert.ok(await staticPage.getByRole('link',{name:'complete static catalog'}).isVisible());
+    await staticContext.close();
+    console.log('PASS JS-free catalog parity, stable records, Bench reading paths, no automatic counter request');
     assert.deepEqual(errors,[]);
   } finally { if(browser) await browser.close(); await new Promise(resolve=>server.close(resolve)); }
 })().catch(e=>{console.error(e);process.exitCode=1;});

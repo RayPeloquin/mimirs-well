@@ -2,6 +2,9 @@ const { readText } = require('./test-text.cjs');
 const { readFileSync, writeFileSync } = require('node:fs');
 const path = require('node:path');
 const assert = require('node:assert/strict');
+const crypto = require('node:crypto');
+const base = 'https://raypeloquin.github.io/mimirs-well/';
+const sha = value => crypto.createHash('sha256').update(value).digest('hex');
 const { currentTitles, expandedRecords, slug } = require('./inventory.cjs');
 const publication = require('../publication-controls.js');
 require('../ledger-data.js');
@@ -26,7 +29,7 @@ const entries = currentTitles().map(title => {
     url: detail?.publicPage || 'index.html#design/' + id };
 }).sort((a, b) => a.id < b.id ? -1 : a.id > b.id ? 1 : 0);
 assert.equal(new Set(entries.map(entry => entry.id)).size, entries.length);
-output('catalog.json', JSON.stringify(entries, null, 2) + '\n');
+
 const { families, familyIdsFor } = require('../research-families.js');
 const familyNames = new Map(families.map(({ id, name }) => [id, name]));
 familyNames.set('unmapped', 'Awaiting family mapping');
@@ -57,6 +60,7 @@ const ledgerTypes = new Map([
   ['Design review', 'concept'],
 ]);
 const ledgerEvidence = new Map();
+const ledgerLinks = new Map();
 const entryIds = new Set(entries.map(entry => entry.id));
 for (const record of globalThis.MimirsLedgerData) {
   const id = ledgerAliases[record.number] || slug(record.title);
@@ -66,8 +70,66 @@ for (const record of globalThis.MimirsLedgerData) {
   const types = [type];
   if (type !== 'software' && record.status.includes('+ tests')) types.push('software');
   ledgerEvidence.set(id, types);
+  ledgerLinks.set(id, record);
 }
 
+// Export explicitly selected fields from the already-public registry.
+const notice = 'Evidence type describes the public artifact, not a validation or safety certificate.';
+for (const entry of entries) {
+  const detail = expanded.get(entry.id);
+  const hold = Object.hasOwn(publication.holds, entry.id);
+  const watch = Object.hasOwn(publication.watches, entry.id);
+  const ledger = ledgerLinks.get(entry.id);
+  const types = ledgerEvidence.get(entry.id) || [detail?.evidenceType || (detail ? 'unclassified' : 'pending')];
+  Object.assign(entry, {
+    record_status: detail ? 'expanded' : 'pending_review',
+    evidence_types: types,
+    publication_hold: hold ? 'precautionary_hold_summary_only' : watch ? 'review_watch' : 'none',
+    publication_notice: hold ? publication.holds[entry.id] : watch ? publication.watches[entry.id] : 'Standard public record; no technical-release approval implied.',
+    summary: detail?.purpose || 'Archive title awaiting source review; no evidence assessment established.',
+    revision_note: detail?.version || null,
+    canonical_url: base + 'catalog.html#' + entry.id,
+    source_urls: hold || watch ? [] : (detail?.sources || '').split('\n').map(s => s.trim()).filter(s => /^https?:\/\/\S+$/.test(s)),
+    ledger_url: ledger ? base + ledger.url : null,
+    ledger_updated: ledger?.updated || null,
+    evidence_notice: notice,
+    policy_url: base + publication.policy
+  });
+  entry.content_sha256 = sha(JSON.stringify(entry));
+}
+const json = JSON.stringify(entries, null, 2) + '\n';
+output('catalog.json', json);
+const manifest = {
+  schema_version: '1.1.0',
+  catalog: 'catalog.json',
+  schema: 'catalog.schema.json',
+  counts: { total: entries.length, expanded: expanded.size, pending_review: entries.length - expanded.size, ledger: globalThis.MimirsLedgerData.length },
+  catalog_sha256: sha(json),
+  hash_encoding: 'UTF-8, LF; record hash is SHA-256 of JSON.stringify(record excluding content_sha256)',
+  policy: publication.policy,
+  policy_version: publication.version,
+  holds: Object.entries(publication.holds).map(([id, notice]) => ({id, notice})),
+  watches: Object.entries(publication.watches).map(([id, notice]) => ({id, notice})),
+  equation_eligible: publication.equationEligible
+};
+output('catalog-manifest.json', JSON.stringify(manifest, null, 2) + '\n');
+output('catalog.sha256', manifest.catalog_sha256 + '  catalog.json\n');
+const columns = ['id','title','record_status','evidence_types','publication_hold','publication_notice','summary','evidence','contributors','revision_note','canonical_url','source_urls','ledger_url','ledger_updated','evidence_notice','policy_url','content_sha256'];
+const csvCell = value => {
+  let text = Array.isArray(value) ? JSON.stringify(value) : String(value ?? '');
+  if (/^[=+\-@\t\r]/.test(text)) text = "'" + text;
+  return '"' + text.replaceAll('"','""') + '"';
+};
+output('catalog.csv', [columns.join(','), ...entries.map(e => columns.map(k => csvCell(e[k])).join(','))].join('\n') + '\n');
+const staticPaths = ['','catalog.html','ledger.html','publication-safety.html','legal.html','combine.html','equation-bench.html', ...globalThis.MimirsLedgerData.map(r=>r.url)];
+output('sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + [...new Set(staticPaths)].map(p => '  <url><loc>' + base + p + '</loc></url>').join('\n') + '\n</urlset>\n');
+const vm = require('node:vm');
+const eqContext = {window:{}};
+vm.runInNewContext(readText(path.join(root,'equation-cores.js')),eqContext);
+const cores = eqContext.window.WellEquationCores;
+assert.deepEqual(Object.keys(cores).sort(), [...publication.equationEligible].sort());
+assert.ok(publication.equationEligible.every(id=>!Object.hasOwn(publication.holds,id)));
+output('equation-sources.json',JSON.stringify(Object.fromEntries(publication.equationEligible.map(id=>[id,cores[id]])),null,2)+'\n');
 const rows = entries.map(entry => {
   const detail = expanded.get(entry.id);
   const evidence = ledgerEvidence.get(entry.id) || [detail?.evidenceType || (detail ? 'unclassified' : 'pending')];
@@ -78,14 +140,17 @@ const rows = entries.map(entry => {
     '<p class="catalog-publication-control"><strong>' + escapeHtml(publicationStatus) +
     '</strong> · <a href="publication-safety.html">Publication policy</a></p>' : '';
   if (!familyIds.length) familyIds.push('unmapped');
-  const details = [['Evidence and limits', entry.evidence], ['Contributors', entry.contributors]]
+  const details = [['Evidence and limits', entry.evidence], ['Contributors', entry.contributors], ['Source revision', entry.revision_note]]
     .filter(([, value]) => value)
     .map(([label, value]) => '<p><strong>' + label + '</strong> ' + escapeHtml(value) + '</p>').join('');
   return '<li id="' + entry.id + '"><div class="catalog-entry" data-types="' + evidence.join(' ') + '" data-families="' + familyIds.join(' ') + '">' +
     '<h2>' + escapeHtml(entry.title) + '</h2>' + reviewLabel + '<p class="catalog-type">' + evidence.map(type => escapeHtml(evidenceTypes.get(type))).join(' · ') + '</p>' +
     '<p class="catalog-families">' + familyIds.map(id => escapeHtml(familyNames.get(id))).join(' · ') + '</p>' +
-    (details ? '<details><summary>Evidence and contributor notes</summary>' + details + '</details>' : '') +
-    '<a href="' + entry.url + '">Open design record</a></div></li>';
+    '<p>' + escapeHtml(entry.summary) + '</p><p class="catalog-families">' + escapeHtml(entry.evidence_notice) + '</p>' + (publicationStatus ? '<p>' + escapeHtml(entry.publication_notice) + '</p>' : '') + '<p class="catalog-families">Record ID: ' + entry.id + ' &middot; ' + escapeHtml(entry.status) + '</p>' +
+    (details ? '<details open><summary>Evidence and contributor notes</summary>' + details + '</details>' : '') +
+    (entry.source_urls.length ? '<details open><summary>Published sources</summary><ul>' + entry.source_urls.map((url,i) => '<li><a href="' + escapeHtml(url) + '">Source ' + (i+1) + ' for ' + escapeHtml(entry.title) + '</a></li>').join('') + '</ul></details>' : '') +
+    (entry.ledger_url ? '<p><a href="' + escapeHtml(entry.ledger_url.replace(base,'')) + '">Divergence Ledger: ' + escapeHtml(entry.title) + '</a></p>' : '') +
+    '<a href="#' + entry.id + '" aria-label="Permanent catalog record: ' + escapeHtml(entry.title) + '">Permanent record link</a> &middot; <a href="' + entry.url + '" aria-label="Open design record: ' + escapeHtml(entry.title) + '">Open design record' + (entry.url.includes('#design/') ? ' (interactive)' : '') + '</a></div></li>';
 });
 const options = map => Array.from(map, ([id, label]) => '<option value="' + id + '">' + escapeHtml(label) + '</option>').join('');
 output('catalog.html', `<!doctype html>
@@ -106,7 +171,7 @@ output('catalog.html', `<!doctype html>
 ${rows.join('\n')}
 </ol>
 <button type="button" id="catalog-more" hidden>Show more projects</button>
-<p class="catalog-download"><a href="catalog.json">Download the JSON index</a></p>
+<p class="catalog-download"><a href="catalog.json">JSON catalog</a> ? <a href="catalog.csv">CSV catalog</a> ? <a href="catalog-manifest.json">Version and checksums</a> ? <a href="catalog.schema.json">Schema</a> ? <a href="llms.txt">Reading guide</a> ? <a href="legal.html#permission">Reuse terms</a></p>
 </main></body></html>
 `);
 const divisions = require('../armory-data.js');
