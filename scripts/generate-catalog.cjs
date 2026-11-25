@@ -1,5 +1,5 @@
 const { readText } = require('./test-text.cjs');
-const { readFileSync, writeFileSync } = require('node:fs');
+const { readFileSync, writeFileSync, mkdirSync, readdirSync } = require('node:fs');
 const path = require('node:path');
 const assert = require('node:assert/strict');
 const crypto = require('node:crypto');
@@ -88,7 +88,7 @@ for (const entry of entries) {
     publication_notice: hold ? publication.holds[entry.id] : watch ? publication.watches[entry.id] : 'Standard public record; no technical-release approval implied.',
     summary: detail?.purpose || 'Archive title awaiting source review; no evidence assessment established.',
     revision_note: detail?.version || null,
-    canonical_url: base + 'catalog.html#' + entry.id,
+    canonical_url: base + 'records/' + entry.id + '.html',
     source_urls: hold || watch ? [] : (detail?.sources || '').split('\n').map(s => s.trim()).filter(s => /^https?:\/\/\S+$/.test(s)),
     ledger_url: ledger ? base + ledger.url : null,
     ledger_updated: ledger?.updated || null,
@@ -100,7 +100,7 @@ for (const entry of entries) {
 const json = JSON.stringify(entries, null, 2) + '\n';
 output('catalog.json', json);
 const manifest = {
-  schema_version: '1.1.0',
+  schema_version: '1.2.0',
   catalog: 'catalog.json',
   schema: 'catalog.schema.json',
   counts: { total: entries.length, expanded: expanded.size, pending_review: entries.length - expanded.size, ledger: globalThis.MimirsLedgerData.length },
@@ -121,7 +121,7 @@ const csvCell = value => {
   return '"' + text.replaceAll('"','""') + '"';
 };
 output('catalog.csv', [columns.join(','), ...entries.map(e => columns.map(k => csvCell(e[k])).join(','))].join('\n') + '\n');
-const staticPaths = ['','catalog.html','ledger.html','publication-safety.html','legal.html','combine.html','equation-bench.html', ...globalThis.MimirsLedgerData.map(r=>r.url)];
+const staticPaths = [...entries.map(e => 'records/' + e.id + '.html'), '','record-index.html','catalog.html','ledger.html','publication-safety.html','legal.html','combine.html','equation-bench.html', ...globalThis.MimirsLedgerData.map(r=>r.url)];
 output('sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + [...new Set(staticPaths)].map(p => '  <url><loc>' + base + p + '</loc></url>').join('\n') + '\n</urlset>\n');
 const vm = require('node:vm');
 const eqContext = {window:{}};
@@ -130,6 +130,22 @@ const cores = eqContext.window.WellEquationCores;
 assert.deepEqual(Object.keys(cores).sort(), [...publication.equationEligible].sort());
 assert.ok(publication.equationEligible.every(id=>!Object.hasOwn(publication.holds,id)));
 output('equation-sources.json',JSON.stringify(Object.fromEntries(publication.equationEligible.map(id=>[id,cores[id]])),null,2)+'\n');
+// Standalone reading views use only the already exported public fields.
+const recordDirectory = path.join(root, 'records');
+if (!check) mkdirSync(recordDirectory,{recursive:true});
+const expectedPages = new Set(entries.map(e=>e.id+'.html'));
+for(const file of readdirSync(recordDirectory)) {
+  assert.ok(expectedPages.has(file), 'Unexpected or withdrawn public record page: '+file+'; remove after review');
+}
+for(const entry of entries) {
+  const field = (label,value) => '<section><h2>'+label+'</h2><p class="record-text">'+escapeHtml(value ?? 'Not established or not supplied.')+'</p></section>';
+  const links = entry.source_urls.map((url,i)=>'<li><a href="'+escapeHtml(url)+'">Published source '+(i+1)+'</a></li>').join('');
+  const evidence = entry.evidence_types.map(type=>evidenceTypes.get(type)).join(' / ');
+  const html = '<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>'+escapeHtml(entry.title)+' | Mimir&#39;s Well</title><meta name="description" content="'+escapeHtml(entry.status+'; '+evidence+'. Public research record, not certification.')+'"><link rel="canonical" href="'+entry.canonical_url+'"><link rel="stylesheet" href="../catalog-browser.css"></head><body><nav><a href="../index.html">Mimir&#39;s Well</a> | <a href="../catalog.html#'+entry.id+'">Full catalog</a> | <a href="../llms.txt">Reading guide</a></nav><main><h1>'+escapeHtml(entry.title)+'</h1><p>Record ID: '+entry.id+' | '+escapeHtml(entry.status)+'</p><p class="catalog-type">'+escapeHtml(evidence)+'</p><p class="catalog-safety">'+escapeHtml(entry.publication_notice)+' <a href="../publication-safety.html">Publication policy</a></p><p>'+escapeHtml(entry.evidence_notice)+'</p>'+field('Summary',entry.summary)+field('Evidence and limits',entry.evidence)+field('Contributors',entry.contributors)+field('Source revision',entry.revision_note)+'<section><h2>Published sources</h2>'+(links?'<ul>'+links+'</ul>':'<p>No source links supplied in this public export.</p>')+'</section>'+(entry.ledger_url?'<p><a href="'+escapeHtml(entry.ledger_url)+'">Divergence Ledger</a></p>':'')+'<p><a href="../catalog-manifest.json">Catalog version and checksum</a> | <a href="../legal.html#permission">Reuse terms</a></p><p class="catalog-families">Record SHA-256: '+entry.content_sha256+'</p></main></body></html>\n';
+  output('records/'+entry.id+'.html',html);
+}
+const compactRows = entries.map(e=>'<li><a href="records/'+e.id+'.html">'+escapeHtml(e.title)+'</a></li>').join('\n');
+output('record-index.html','<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Research record directory | Mimir&#39;s Well</title><link rel="stylesheet" href="catalog-browser.css"></head><body><nav><a href="index.html">Mimir&#39;s Well</a> | <a href="catalog.html">Full catalog</a> | <a href="catalog-manifest.json">Manifest</a></nav><main><h1>Research record directory</h1><p>'+entries.length+' public titles. Includes unreviewed placeholders and public hold summaries; follow each link for evidence and publication status.</p><ol>'+compactRows+'</ol></main></body></html>\n');
 const rows = entries.map(entry => {
   const detail = expanded.get(entry.id);
   const evidence = ledgerEvidence.get(entry.id) || [detail?.evidenceType || (detail ? 'unclassified' : 'pending')];
@@ -150,7 +166,7 @@ const rows = entries.map(entry => {
     (details ? '<details open><summary>Evidence and contributor notes</summary>' + details + '</details>' : '') +
     (entry.source_urls.length ? '<details open><summary>Published sources</summary><ul>' + entry.source_urls.map((url,i) => '<li><a href="' + escapeHtml(url) + '">Source ' + (i+1) + ' for ' + escapeHtml(entry.title) + '</a></li>').join('') + '</ul></details>' : '') +
     (entry.ledger_url ? '<p><a href="' + escapeHtml(entry.ledger_url.replace(base,'')) + '">Divergence Ledger: ' + escapeHtml(entry.title) + '</a></p>' : '') +
-    '<a href="#' + entry.id + '" aria-label="Permanent catalog record: ' + escapeHtml(entry.title) + '">Permanent record link</a> &middot; <a href="' + entry.url + '" aria-label="Open design record: ' + escapeHtml(entry.title) + '">Open design record' + (entry.url.includes('#design/') ? ' (interactive)' : '') + '</a></div></li>';
+    '<a href="records/' + entry.id + '.html" aria-label="Permanent catalog record: ' + escapeHtml(entry.title) + '">Permanent record link</a> &middot; <a href="' + entry.url + '" aria-label="Open design record: ' + escapeHtml(entry.title) + '">Open design record' + (entry.url.includes('#design/') ? ' (interactive)' : '') + '</a></div></li>';
 });
 const options = map => Array.from(map, ([id, label]) => '<option value="' + id + '">' + escapeHtml(label) + '</option>').join('');
 output('catalog.html', `<!doctype html>
@@ -189,7 +205,7 @@ const sections = Array.from(categories, ([division, projects]) => {
   const preview = '<ul>' + items.slice(0, previewSize).join('\n') + '</ul>';
   const overflow = items.slice(previewSize);
   const more = overflow.length ? '<details><summary>Show ' + overflow.length +
-    ' more projects</summary><ul>' + overflow.join('\n') + '</ul></details>' : '';
+    (overflow.length === 1 ? ' more project' : ' more projects') + '</summary><ul>' + overflow.join('\n') + '</ul></details>' : '';
   return '<section><h2>' + escapeHtml(division) + '</h2>' + preview + more + '</section>';
 });
 output('armory.html', `<!doctype html>

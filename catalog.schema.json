@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Mimir's Well public catalog v1.1",
+  "title": "Mimir's Well public catalog v1.2",
   "type": "array",
   "items": {
     "type": "object",

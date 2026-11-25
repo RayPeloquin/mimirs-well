@@ -82,6 +82,12 @@ const root = path.resolve(__dirname, '..');
       assert.ok(await row.locator('h2').isVisible());
       if(r.evidence) assert.ok(await row.locator('details').first().isVisible() && await row.locator('details').first().getAttribute('open')!==null);
     }
+    for(const r of [data[0],data.find(r=>r.id==='skeptic-1'),data.find(r=>r.publication_hold==='precautionary_hold_summary_only'),data.find(r=>r.record_status==='pending_review')]){
+      const response=await staticPage.goto(base+'/records/'+r.id+'.html');
+      assert.equal(response.status(),200);
+      assert.equal(await staticPage.locator('h1').textContent(),r.title);
+      assert.ok((await staticPage.locator('main').textContent()).includes(r.publication_notice));
+    }
     await staticPage.goto(base+'/catalog.html#skeptic-1');
     assert.ok(await staticPage.locator('#skeptic-1').isVisible());
     await staticPage.goto(base+'/equation-bench.html');
