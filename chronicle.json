@@ -1,4 +1,97 @@
 {
+  "execution_error_controls": {
+    "format": "well-chronicle-execution-error-controls-v1",
+    "source_commit": "0c1548588c8cce260b58845f7ea2740242024591",
+    "evidence_class": "same-author-software-error-controls",
+    "environment": {
+      "node": "v24.22.2",
+      "platform": "win32",
+      "arch": "x64"
+    },
+    "command": "node research/chronicle/v2/error-controls.cjs",
+    "scope": "Deliberate error injection in an isolated temporary copy; original research inputs and outputs unchanged. A classified execution error is not a scientific contrary result or independent replication. These controls do not implement an exclusion or inconclusive-result workflow.",
+    "inputs": [
+      {
+        "file": "run.cjs",
+        "sha256": "5b48529749fc0a6c8f78f230ed2e1c59caff7e0e193d7c75f390073b91711409"
+      },
+      {
+        "file": "calculate.cjs",
+        "sha256": "65b57afc2d822b23430d6445e05f1b6343b3221e6e44870af440615fdca7b787"
+      },
+      {
+        "file": "mutants.json",
+        "sha256": "72a24dbb66f6ade23f12aae3ed7fa52695e4503cb5b407ca8f531f761862c1b3"
+      },
+      {
+        "file": "plan.json",
+        "sha256": "4d7ff068836a0809bfb4944c27a163045084a4e03ef1c2f159444db5cd30dd3d"
+      },
+      {
+        "file": "queue-snapshot.json",
+        "sha256": "ca67b3452cc17efdc04eedba8de2cd52e7c2fe7ca37ecce67c78b2f7dbbbf50d"
+      }
+    ],
+    "observations": [
+      {
+        "id": "missing-queue",
+        "expected": {
+          "exit_code": 2,
+          "status": "error",
+          "code": "MISSING_QUEUE_SNAPSHOT_JSON"
+        },
+        "started_at": "2026-11-25T07:57:25.053Z",
+        "finished_at": "2026-11-25T07:57:25.138Z",
+        "exit_code": 2,
+        "stdout": {
+          "format": "well-chronicle-coverage-v2",
+          "status": "error",
+          "code": "MISSING_QUEUE_SNAPSHOT_JSON",
+          "message": "ENOENT"
+        },
+        "stderr": "",
+        "matched": true
+      },
+      {
+        "id": "truncated-expected-list",
+        "expected": {
+          "exit_code": 2,
+          "status": "error",
+          "code": "CASE_COUNT_MISMATCH"
+        },
+        "started_at": "2026-11-25T07:57:25.142Z",
+        "finished_at": "2026-11-25T07:57:25.217Z",
+        "exit_code": 2,
+        "stdout": {
+          "format": "well-chronicle-coverage-v2",
+          "status": "error",
+          "code": "CASE_COUNT_MISMATCH",
+          "message": "test-material-balance"
+        },
+        "stderr": "",
+        "matched": true
+      },
+      {
+        "id": "unknown-fixture-kind",
+        "expected": {
+          "exit_code": 2,
+          "status": "error",
+          "code": "UNKNOWN_FIXTURE_KIND"
+        },
+        "started_at": "2026-11-25T07:57:25.222Z",
+        "finished_at": "2026-11-25T07:57:25.298Z",
+        "exit_code": 2,
+        "stdout": {
+          "format": "well-chronicle-coverage-v2",
+          "status": "error",
+          "code": "UNKNOWN_FIXTURE_KIND",
+          "message": "Unknown fixture kind"
+        },
+        "stderr": "",
+        "matched": true
+      }
+    ]
+  },
   "coverage": {
     "evidence_class": "same-author-determinism-check",
     "receipt": {
