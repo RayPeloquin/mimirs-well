@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Russian Nesting Math — Mimir’s Well</title>
+<link rel="stylesheet" href="combine.css"><link rel="stylesheet" href="equation-bench.css">
+<style>main{max-width:1000px} .nest-stage,.nest-link{padding:1rem;border:1px solid #496156;margin:1rem 0;border-radius:8px} .nest-link{margin-left:clamp(0px,4vw,40px)} label{display:block;margin:.7rem 0} select,textarea,input[type=number]{max-width:100%;width:100%} pre{white-space:pre-wrap;overflow-wrap:anywhere} .nest-stage p{overflow-wrap:anywhere} button{margin:.3rem .3rem .3rem 0} textarea{min-height:5em} #nest-status{white-space:pre-wrap}</style>
+<script src="equation-cores.js?v=20261125-twelve" defer></script>
+<script src="publication-controls.js?v=20261125-twelve" defer></script>
+<script src="dimensional-witness.js?v=20261125-v2" defer></script>
+</head><body><a class="skip" href="#main">Skip to nesting workspace</a>
+<header class="site-header"><nav class="wrap"><a class="brand" href="index.html">✳ Mimir’s Well</a><a href="equation-bench.html">Back to Equation Bench</a></nav></header>
+<main class="wrap" id="main"><header class="hero math-hero"><div><p class="eyebrow">Alchemist’s Bench · Experimental composition</p><h1>Russian <em>Nesting Math.</em></h1><p>Build an ordered chain of two to four source relations. Each output becomes a candidate input to the next stage through an explicit bridge. Order matters; compatibility is not proof.</p><p class="math-hero-warning">Candidate mathematics — not derived truth. Requires its own evidence.</p></div></header>
+<noscript>JavaScript is required. The <a href="equation-sources.html">source equation index</a> remains available.</noscript>
+<section class="section"><h2>Try the idea with ordinary arithmetic</h2><p>A(x)=2x; B(x)=x+3; C(x)=x². These toy functions are not Well research or physical models.</p><label>Input x <input id="toy-x" type="number" value="2" min="-1000" max="1000" step="any"></label><p id="toy-result" role="status"></p></section>
+<section class="section"><h2>1 · Build the ordered chain</h2><p>Only approved public source relations with explicitly annotated input and output roles are offered here. Other equation sources remain available in the original workspace. Select stages from innermost (first) to outermost (last). Remaining inputs and assumptions must be declared below. Changing the chain clears affected bridge selections and revokes review; your candidate notes are retained for revision.</p><div id="nest-stages"></div><div class="bench-actions"><button class="button secondary" id="nest-add" type="button">Add outer layer</button><button class="button secondary" id="nest-remove" type="button">Remove outer layer</button><button class="button secondary" id="nest-reverse" type="button">Reverse stage order (clears bridges)</button></div><p id="nest-order" role="status"></p></section>
+<section class="section"><h2>2 · Declare candidate mathematics</h2><p>Use stage-qualified symbols (S1, S2, …). This workspace does not evaluate or derive arbitrary expressions. A proposed adapter may change dimensions or meaning; it is never automatically validated.</p>
+<label>Candidate expression / ordered model<textarea id="nest-expression" required></textarea></label>
+<label>Remaining inputs, domains, units, boundary conditions and inherited assumptions<textarea id="nest-assumptions" required></textarea></label>
+<label>New joint hypothesis and limitations<textarea id="nest-claim" required></textarea></label>
+<label>Baseline, falsifying observation and measurement/test plan<textarea id="nest-test" required></textarea></label>
+<label><input type="checkbox" id="nest-review"> I reviewed every source, bridge and remaining input. This is a proposal for review, not a verified result.</label></section>
+<section class="section"><h2>3 · Export the candidate</h2><p class="candidate-stamp">Candidate mathematics — not derived truth. Requires its own evidence.</p><p>Export records the ordered source equations, evidence, caveats, bridges and test plan. No data is sent to a server; this page does not save drafts.</p><button class="button primary" id="nest-export" type="button" disabled>Download Markdown receipt</button><p id="nest-status" role="status"></p></section>
+</main><footer class="wrap">Mimir’s Well · The Court of the Synthetic · We do no harm</footer>
+<script>
+document.addEventListener("DOMContentLoaded",()=>{
+"use strict";
+const $=id=>document.getElementById(id);
+const cores=window.WellEquationCores||{}, controls=window.WellPublicationControls||{}, witness=window.WellDimensionalWitness;
+const ports={
+"skeptic-1":{in:["K","M"],out:["f_i"]},
+"ghostglass":{in:["n_on","n_off","r"],out:["p"]},
+"chihuahua-sphere-cs-1":{in:["E_load","E_incident","E_electrical_total"],out:["eta_receiver","eta_total"]},
+"zion-twin-ring-tuna-habitat":{in:["C_receiving","C_initial"],out:["F_dye_percent"]},
+"adventurer-s-forge":{in:["T_cold","T_hot"],out:["eta_Carnot"]},
+"crucible":{in:["N_violated","N_exercised"],out:["p_observed"]},
+"spotrecon-spotrecon-r2":{in:["t_display","t_capture"],out:["delta_t"]},
+"confluence-01-synthetic-sense":{in:["N_false","T_valid_hours"],out:["R_false"]},
+"spincell-dle":{in:["m_Li_recovered","m_Li_in"],out:["R_Li"]}
+};
+const eligible=Object.keys(ports).filter(id=>witness&&Array.isArray(controls.equationEligible)&&controls.equationEligible.includes(id)&&controls.holds&&controls.watches&&!Object.hasOwn(controls.holds,id)&&!Object.hasOwn(controls.watches,id)&&cores[id]&&[...ports[id].in,...ports[id].out].every(n=>cores[id].symbols.some(s=>s.name===n)&&witness.get(id,n)));
+const stage=()=>({id:"",out:""});
+const link=()=>({input:"",mode:"",note:""});
+let stages=[stage(),stage(),stage()],links=[link(),link()];
+const fields=["nest-expression","nest-assumptions","nest-claim","nest-test"];
+const el=(tag,t)=>{const e=document.createElement(tag);if(t!==undefined)e.textContent=t;return e;};
+const label=(parent,title,control)=>{const l=el("label",title);l.append(control);parent.append(l);};
+const select=(items,value,change)=>{const s=el("select");for(const [v,t] of [["","Choose…"],...items]){const o=el("option",t);o.value=v;s.append(o);}s.value=value;s.addEventListener("change",()=>change(s.value));return s;};
+const meta=(id,name)=>witness?.get(id,name);
+function bridgeCheck(i){
+const a=stages[i],b=stages[i+1],l=links[i];
+if(!a.id||!b.id||!a.out||!l.input)return {ok:false,text:"Select upstream output and downstream input."};
+const m=witness.compare(meta(a.id,a.out),meta(b.id,l.input));
+if(l.mode==="direct"){
+const ok=!m.blocked&&m.code==="meaning-review"&&meta(a.id,a.out).kind===meta(b.id,l.input).kind;
+return {ok:ok&&!!l.note.trim(),text:m.text+(ok?" Document why the quantities share meaning and scope.":" Direct identity blocked; use an explicit proposed adapter or select other ports.")};
+}
+if(l.mode==="adapter")return {ok:!!l.note.trim(),text:m.text+" Adapter is a proposed transformation, not dimensionally verified. Specify its equation, units, domain and justification."};
+return {ok:false,text:m.text+" Choose direct identity or proposed adapter."};
+}
+function invalidate(){ $("nest-review").checked=false;refresh();}
+function clearNarrative(){invalidate();}
+function refresh(){
+$("nest-add").disabled=stages.length>=4;$("nest-remove").disabled=stages.length<=2;
+$("nest-order").textContent="Order: "+stages.map((s,i)=>"S"+(i+1)+" "+(s.id||"(unselected)")).join(" → ");
+let issues=[];if(!eligible.length)issues.push("Source eligibility or Witness unavailable; export is blocked.");
+if(stages.some(s=>!eligible.includes(s.id)||!ports[s.id]?.out.includes(s.out)))issues.push("Choose a reviewed source and output for every stage.");
+links.forEach((l,i)=>{const c=bridgeCheck(i),status=$("bridge-status-"+i);if(status)status.textContent=c.text;if(!c.ok)issues.push("Bridge "+(i+1)+" is incomplete or blocked.");});
+if(fields.some(id=>!$(id).value.trim()))issues.push("Complete all four candidate and test fields.");
+if(!$("nest-review").checked)issues.push("Review and acknowledge the complete chain.");
+$("nest-export").disabled=issues.length>0;$("nest-status").textContent=issues.length?issues.join("\n"):"Ready to export a candidate receipt; not scientific validation.";
+}
+function render(){
+const root=$("nest-stages");root.replaceChildren();
+stages.forEach((s,i)=>{
+const box=el("section");box.className="nest-stage";box.append(el("h3","Stage "+(i+1)+(i===0?" · innermost":i===stages.length-1?" · outermost":"")));
+label(box,"Source",select(eligible.map(id=>[id,cores[id].sourceLabel]),s.id,v=>{s.id=v;s.out="";if(i>0)links[i-1]=link();if(i<links.length)links[i]=link();clearNarrative();render();}));
+if(s.id){const c=cores[s.id];box.append(el("pre",c.equation),el("p","Evidence: "+c.evidence),el("p","Limits: "+c.caveat));const a=el("a","Read source");a.href=c.source;box.append(a);label(box,"Output",select(ports[s.id].out.map(n=>[n,n+" — "+witness.describe(meta(s.id,n))]),s.out,v=>{s.out=v;if(i<links.length)links[i]=link();clearNarrative();render();}));}
+root.append(box);
+if(i<links.length){const l=links[i],next=stages[i+1];const b=el("section");b.className="nest-link";b.append(el("h3","Bridge S"+(i+1)+" → S"+(i+2)));label(b,"Downstream input",select(next.id?ports[next.id].in.map(n=>[n,n+" — "+witness.describe(meta(next.id,n))]):[],l.input,v=>{l.input=v;l.mode="";l.note="";clearNarrative();render();}));
+label(b,"Bridge type",select([["direct","Direct identity (strict metadata match)"],["adapter","Proposed adapter / transformation (unverified)"]],l.mode,v=>{l.mode=v;l.note="";clearNarrative();render();}));const note=el("textarea");note.value=l.note;note.placeholder="State the bridge equation, meaning, units, domain and why it might be justified.";note.addEventListener("input",()=>{l.note=note.value;invalidate();});label(b,"Bridge equation and justification",note);const status=el("p");status.id="bridge-status-"+i;status.setAttribute("role","status");b.append(status);root.append(b);}
+});refresh();
+}
+$("nest-add").onclick=()=>{if(stages.length<4){stages.push(stage());links.push(link());clearNarrative();render();}};
+$("nest-remove").onclick=()=>{if(stages.length>2){stages.pop();links.pop();clearNarrative();render();}};
+$("nest-reverse").onclick=()=>{stages.reverse();links=Array.from({length:stages.length-1},link);clearNarrative();render();};
+for(const id of fields)$(id).addEventListener("input",invalidate);
+$("nest-review").addEventListener("change",refresh);
+$("nest-export").onclick=()=>{refresh();if($("nest-export").disabled)return;let md="# Russian Nesting Math — candidate receipt\n\nCandidate mathematics — not derived truth. Requires its own evidence.\n\nWitness version: "+witness.version+"\n\n";
+stages.forEach((s,i)=>{const c=cores[s.id];md+="## S"+(i+1)+" · "+s.id+"\n\nSource: "+c.source+"\n\nEvidence: "+c.evidence+"\n\nRelation:\n\n    "+c.equation.replaceAll("\n","\n    ")+"\n\nClaim: "+c.statement+"\n\nCaveats: "+c.caveat+"\n\nOutput: "+s.out+" — "+witness.describe(meta(s.id,s.out))+"\n\n";if(i<links.length){const l=links[i];md+="### Bridge S"+(i+1)+" → S"+(i+2)+"\n\nInput: "+l.input+" — "+witness.describe(meta(stages[i+1].id,l.input))+"\n\nMode: "+l.mode+"\n\n"+bridgeCheck(i).text+"\n\nUser proposal: "+l.note+"\n\n";}});
+["Candidate model","Remaining inputs and inherited assumptions","New claim and limits","Baseline and falsification test"].forEach((h,i)=>{md+="## "+h+"\n\n"+$(fields[i]).value+"\n\n";});md+="Reviewed by user for research review only. No automatic expression, adapter, conservation or physical validity check.\n";const url=URL.createObjectURL(new Blob([md],{type:"text/markdown"}));const a=el("a");a.href=url;a.download="nesting-candidate.md";document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);};
+const toy=()=>{const x=$("toy-x").valueAsNumber;$("toy-result").textContent=Number.isFinite(x)&&Math.abs(x)<=1000?"C(B(A(x))) = "+(2*x+3)**2+"; A(B(C(x))) = "+2*(x*x+3):"Enter a finite number between −1000 and 1000.";};
+$("toy-x").addEventListener("input",toy);toy();render();
+});
+</script></body></html>
