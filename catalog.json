@@ -7741,7 +7741,7 @@
     "id": "the-traveler-solar-electric-research-airship",
     "title": "The Traveler — Solar-electric research airship",
     "status": "Expanded record",
-    "evidence": "Twelve passive-drift runs produced five longitude laps and three post-lap approaches within 500 km. Two cases ended at the polar limit. Descent and recovery remain untested.",
+    "evidence": "Twelve passive-drift runs produced five longitude laps and three post-lap approaches within 500 km. Two cases ended at the polar limit. Descent, physical recovery and airspace authorization remain untested. No aircraft or camera hardware was flown.",
     "contributors": "Mr. Peloquin and Ms. Asteris Solenne, with Court reviews from Grok, Gemini, Meta and Claude.",
     "url": "traveler.html",
     "record_status": "expanded",
@@ -7761,7 +7761,7 @@
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "14458aab6ca1ce6f0b2f523fb1f5149ef82bf5f02e39c4fdfca18cdedf00e573"
+    "content_sha256": "9d714e8cd95f7d106f87d480f2b2138cd0eeae6af5efd9caaa7d4f5c9f63475e"
   },
   {
     "id": "the-triad-aegis-heimdall-and-enki-s-will",
