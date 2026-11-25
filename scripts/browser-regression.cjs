@@ -187,6 +187,16 @@ const root = path.resolve(__dirname, '..');
       assert.ok(!(await staticPage.locator('a[href$="/'+id+'-art.html"]').count()));
     }
     console.log('PASS ten recovered Court records, eight public images, two summary-only records');
+    for(const [id,count] of [["crystal-damping-loop",1],["quantum-floor",2],["unidentified-transparent-fiber-composite-concept",1],["thoth-s-mind",1],["mosquito-reaper",1]]){
+      await staticPage.goto(base+'/records/'+id+'.html');
+      assert.ok(await staticPage.locator('a[href$="/'+id+'-artwork.html"]').count());
+      await staticPage.goto(base+'/'+id+'-artwork.html');
+      assert.match(await staticPage.locator('aside').textContent(),/CONCEPT ARTWORK ONLY/);
+      assert.equal(await staticPage.locator('figure img').count(),count);
+      for(const img of await staticPage.locator('figure img').all()){await img.scrollIntoViewIfNeeded();await staticPage.waitForFunction(src=>Array.from(document.images).some(i=>i.getAttribute('src')===src&&i.complete&&i.naturalWidth>0),await img.getAttribute('src'));}
+      assert.ok(await staticPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+    }
+    console.log('PASS five recovered artwork pages and six public images');
     await staticPage.goto(base+'/catalog.html#skeptic-1');
     assert.ok(await staticPage.locator('#skeptic-1').isVisible());
     await staticPage.goto(base+'/equation-bench.html');

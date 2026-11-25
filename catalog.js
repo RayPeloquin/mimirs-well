@@ -7,6 +7,9 @@ groups.push(['biology','Computational concept','Zion Twin-Ring Tuna Habitat']);
 groups.push(['physics','Computational concept','The Traveler — Solar-electric research airship']);
 groups.push(['biology','Illustrated concept','Nexus Bridge']);
 groups.push(['physics','Illustrated concept','Aether Shroud']);
+groups.push(['physics','Illustrated concept','Ambassador Anti-Jamming Satellite Navigation System']);
+groups.push(['robotics','Illustrated concept','VHG - Vigilant Hibernation Grid']);
+groups.push(['infrastructure','Illustrated concept','Unidentified Transparent Fiber Composite Concept']);
 const labels={safety:'AI & governance',biology:'Biology & medicine',physics:'Physics & aerospace',infrastructure:'Water, power & infrastructure',robotics:'Robotics & field systems',community:'Communities & creative work',defense:'The Armory · Defense & Protective Systems'};
 // Public-facing grouping only: do not infer readiness, military qualification or weapon capability.
 const armoryDivisions=wellArmoryDivisions;
