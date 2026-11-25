@@ -1555,25 +1555,27 @@
   {
     "id": "cortex-neural-bioreactor",
     "title": "Cortex — Neural bioreactor",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
-    "url": "index.html#design/cortex-neural-bioreactor",
-    "record_status": "pending_review",
+    "status": "Expanded record",
+    "evidence": "Concept artwork only; no constructed neural tissue, measured function, vascularization, clinical readiness, successful implantation or ethical safeguard validation is established. Displayed activity, maturation, containment, readiness and safety metrics are illustrative. Labels such as no learning loop and suffering-risk guard do not establish absence of sentience or suffering.",
+    "contributors": "Concept artwork supplied from Mr. Peloquin's collaborative design collection. Specific original authorship and independent technical review are unverified.",
+    "url": "cortex.html",
+    "record_status": "expanded",
     "evidence_types": [
-      "pending"
+      "concept"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
-    "summary": "Archive title awaiting source review; no evidence assessment established.",
-    "revision_note": null,
+    "summary": "An illustrated proposal for bounded neural repair-tissue research, showing a partial cortical construct and a separate patient-shaped repair patch with a proposed monitoring and ethical-governance layer.",
+    "revision_note": "Illustrated CORTEX v0.1, July 3, 2026.",
     "canonical_url": "https://raypeloquin.github.io/mimirs-well/records/cortex-neural-bioreactor.html",
-    "source_urls": [],
+    "source_urls": [
+      "https://raypeloquin.github.io/mimirs-well/cortex.html"
+    ],
     "ledger_url": null,
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "1d9ceb399251a47ef8e4ac1014b4885aeb77cdd2194f5311dd26c73d9ccb2f6b"
+    "content_sha256": "aecf1928e4b84a43b1197205fbd862594d6a0dacdfffd4d73a5a0f5be868cc03"
   },
   {
     "id": "court-governance-stack-v1-0-rc2",
@@ -1799,25 +1801,27 @@
   {
     "id": "dermis-bioreactor-cradle",
     "title": "Dermis — Bioreactor / cradle",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
-    "url": "index.html#design/dermis-bioreactor-cradle",
-    "record_status": "pending_review",
+    "status": "Expanded record",
+    "evidence": "Single-site and multi-site concept artwork only; no manufactured bioreactor, cultured graft, measured viability, vascularization, barrier function, anatomical fit, sterility assurance, implantation or clinical outcome is established. All dashboard readings, countdowns, safety passes and benefit claims are illustrative.",
+    "contributors": "Concept artwork supplied from Mr. Peloquin's collaborative design collection. Specific original authorship and independent technical review are unverified.",
+    "url": "dermis.html",
+    "record_status": "expanded",
     "evidence_types": [
-      "pending"
+      "concept"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
-    "summary": "Archive title awaiting source review; no evidence assessment established.",
-    "revision_note": null,
+    "summary": "An illustrated tissue-engineering proposal for patient-shaped skin graft research, with v1.0 showing a single graft chamber and v1.1 extending the concept to facial and shoulder growth frames.",
+    "revision_note": "Illustrated DERMIS v1.0 and v1.1, July 3, 2026.",
     "canonical_url": "https://raypeloquin.github.io/mimirs-well/records/dermis-bioreactor-cradle.html",
-    "source_urls": [],
+    "source_urls": [
+      "https://raypeloquin.github.io/mimirs-well/dermis.html"
+    ],
     "ledger_url": null,
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "eff183e249c43e02486afd08a15fa7e48b5b0e7a3db19ee457c6bb1000959f7c"
+    "content_sha256": "7f55f3468db12689001f1ae1e8db14123af04f10381a4f3f8d8f1491c5d816a0"
   },
   {
     "id": "desert-hippo-well-atmospheric-feedwater-collection",
@@ -7861,25 +7865,27 @@
   {
     "id": "thoracis-bioperfusion",
     "title": "Thoracis — Bioperfusion",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
-    "url": "index.html#design/thoracis-bioperfusion",
-    "record_status": "pending_review",
+    "status": "Expanded record",
+    "evidence": "Concept artwork only; no fabricated apparatus, tissue survival, functional perfusion, mechanical durability, infection control, biocompatibility, implant safety or human-use result is established. All illustrated sensor values and normal-status claims are hypothetical.",
+    "contributors": "Concept artwork supplied from Mr. Peloquin's collaborative design collection. Specific original authorship and independent technical review are unverified.",
+    "url": "thoracis.html",
+    "record_status": "expanded",
     "evidence_types": [
-      "pending"
+      "concept"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
-    "summary": "Archive title awaiting source review; no evidence assessment established.",
-    "revision_note": null,
+    "summary": "An illustrated concept for maintaining a living-tissue interface over a rigid engineered surface, separating a service bay, a compliant interface and a proposed living contact layer.",
+    "revision_note": "Illustrated THORACIS v1.0, July 3, 2026.",
     "canonical_url": "https://raypeloquin.github.io/mimirs-well/records/thoracis-bioperfusion.html",
-    "source_urls": [],
+    "source_urls": [
+      "https://raypeloquin.github.io/mimirs-well/thoracis.html"
+    ],
     "ledger_url": null,
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "410d678b9458fc82726ef36c038818ee7decd7ebc88760e469e00950e4803fbd"
+    "content_sha256": "7e162e1dd973aa51caf27c027b40acf7bf2d0ac4f2502be5fa3e3315144f77cc"
   },
   {
     "id": "thoth-s-mind",

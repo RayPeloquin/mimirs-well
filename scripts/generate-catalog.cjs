@@ -121,7 +121,7 @@ const csvCell = value => {
   return '"' + text.replaceAll('"','""') + '"';
 };
 output('catalog.csv', [columns.join(','), ...entries.map(e => columns.map(k => csvCell(e[k])).join(','))].join('\n') + '\n');
-const staticPaths = [...entries.map(e => 'records/' + e.id + '.html'), '','record-index.html','catalog-manifest.html','equation-sources.html','sitemap.html','catalog.html','ledger.html','publication-safety.html','legal.html','combine.html','equation-bench.html', ...globalThis.MimirsLedgerData.map(r=>r.url)];
+const staticPaths = [...entries.map(e => 'records/' + e.id + '.html'), '','record-index.html','catalog-manifest.html','equation-sources.html','sitemap.html','catalog.html','ledger.html','publication-safety.html','legal.html','combine.html','equation-bench.html', ...globalThis.MimirsLedgerData.map(r=>r.url), 'dermis.html','cortex.html','thoracis.html'];
 output('sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + [...new Set(staticPaths)].map(p => '  <url><loc>' + base + p + '</loc></url>').join('\n') + '\n</urlset>\n');
 const vm = require('node:vm');
 const eqContext = {window:{}};

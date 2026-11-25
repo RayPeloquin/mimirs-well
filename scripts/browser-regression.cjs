@@ -144,6 +144,19 @@ const root = path.resolve(__dirname, '..');
       assert.equal(await staticPage.locator('h1').textContent(),r.title);
       assert.ok((await staticPage.locator('main').textContent()).includes(r.publication_notice));
     }
+    for(const [id,route,count] of [['dermis-bioreactor-cradle','dermis.html',2],['cortex-neural-bioreactor','cortex.html',1],['thoracis-bioperfusion','thoracis.html',1]]){
+      await staticPage.goto(base+'/records/'+id+'.html');
+      assert.match(await staticPage.locator('main').textContent(),/illustrative|hypothetical/i);
+      const link=staticPage.locator('a[href$="/'+route+'"]');
+      assert.equal(await link.count(),1);
+      await staticPage.goto(base+'/'+route);
+      await staticPage.setViewportSize({width:390,height:844});
+      assert.match(await staticPage.locator('aside').textContent(),/CONCEPT ARTWORK ONLY/);
+      assert.equal(await staticPage.locator('figure img').count(),count);
+      for(const img of await staticPage.locator('figure img').all()){await img.scrollIntoViewIfNeeded();await staticPage.waitForFunction(src=>Array.from(document.images).some(i=>i.getAttribute('src')===src&&i.complete&&i.naturalWidth>0),await img.getAttribute('src'));}
+      assert.ok(await staticPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+    }
+    console.log('PASS three illustrated biomedical concept pages, four images, no-JS links, mobile layout and caveats');
     await staticPage.goto(base+'/catalog.html#skeptic-1');
     assert.ok(await staticPage.locator('#skeptic-1').isVisible());
     await staticPage.goto(base+'/equation-bench.html');
