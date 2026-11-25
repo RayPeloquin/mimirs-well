@@ -1,4 +1,23 @@
-# FSAMS-SKIN — EVA concept — public source digest
+# FSAMS-SKIN EVA v0.1
+
+**Status:** Illustrated research concept only. No prototype or independent validation established.
+
+## Purpose
+An EVA-specific illustrated adaptive protective surface proposal. A separate archived industrial machine-skin text predates this review; applicability of that text to EVA is not established.
+
+## Evidence and limits
+The EVA artwork resolves the existence of an EVA-specific concept, not qualification or lineage of the industrial source. No tested impact protection, response time, thermal durability, pressure-garment capability or aerospace readiness. Displayed targets and safety claims are illustrative.
+
+## Next review gate
+Qualified materials and spacesuit review, starting with non-life-critical comparisons against passive material baselines.
+
+## Provenance and publication boundary
+Recovered illustration from Mr. Peloquin's collaborative design collection. Specific original artwork authorship and independent review are unverified.
+
+Original concept illustration retained; no technical certification, observed performance or operating instructions inferred.
+
+## Previous source review (historical)
+
 
 **Status:** Source-backed archive concept; no demonstrated implementation or independent validation.  
 **Source review date:** 20 November 2026.  
@@ -6,7 +25,7 @@
 
 ## Purpose in the reviewed source
 
-The available source describes a proposed responsive protective surface for industrial machinery and robotics. The existing catalog's EVA label is not supported by this file and remains an unresolved archive-lineage question.
+The available source describes a proposed responsive protective surface for industrial machinery and robotics. The industrial source alone did not support the EVA label; the newly recovered EVA illustration does not establish lineage between these sources.
 
 ## Evidence and limitations
 
