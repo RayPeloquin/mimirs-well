@@ -355,6 +355,13 @@ const root = path.resolve(__dirname, '..');
     assert.ok(await staticPage.locator('#queue-filter-label').isHidden());
     for(const width of [320,390,768]){await staticPage.setViewportSize({width,height:844});assert.ok(await staticPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Queue overflow '+width);}
     await staticPage.setViewportSize({width:390,height:844});
+    await staticPage.goto(base+'/chronicle.html');
+    assert.equal(await staticPage.locator('#accounting-001 table tbody tr').count(),11);
+    assert.match(await staticPage.locator('#archived-temporal-acoustics').textContent(),/Five of eight strong solid-inclusion/);
+    assert.match(await staticPage.locator('main').textContent(),/No independent replication/);
+    assert.ok(await staticPage.getByRole('link',{name:'Frozen queue snapshot'}).isVisible());
+    for(const width of [320,390,768]){await staticPage.setViewportSize({width,height:844});assert.ok(await staticPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Chronicle overflow '+width);}
+    await staticPage.setViewportSize({width:390,height:844});
     await staticPage.goto(base+'/trial-v-receipt.html');
     assert.match(await staticPage.locator('main').textContent(),/56 passed; 0 failed/);
     assert.match(await staticPage.locator('main').textContent(),/364 records; 0 validation errors/);

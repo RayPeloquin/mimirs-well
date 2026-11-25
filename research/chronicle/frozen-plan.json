@@ -1,0 +1,195 @@
+{
+  "format": "well-chronicle-frozen-synthetic-plan",
+  "version": 1,
+  "created_at": "2026-11-25T07:32:30.308Z",
+  "source_commit": "6bce0cbb82932bed1ddd0764485d2fcaa155fc34",
+  "queue_sha256": "ca67b3452cc17efdc04eedba8de2cd52e7c2fe7ca37ecce67c78b2f7dbbbf50d",
+  "runner_sha256": "bfb444ae8c64c8d4f74120cf581357517e2864971c7e9efd241bae4bbcc9e9bb",
+  "hash_encoding": "UTF-8, LF; per-task hash uses JSON.stringify",
+  "command": "node research/chronicle/replay.cjs",
+  "environment": {
+    "node": "v24.22.2",
+    "platform": "win32",
+    "arch": "x64"
+  },
+  "scope": "Author-defined deterministic arithmetic fixtures, expected values transcribed before execution. Not independent replication or physical validation. No external dependencies. Missing values stay explicitly unknown. D run counts chosen as 10 and 2, with 2 stipulated events and zero valid hours; only undefined rate is the D acceptance criterion.",
+  "tasks": [
+    {
+      "id": "test-material-balance",
+      "cases": [
+        {
+          "id": "closed",
+          "input": 100,
+          "product": 60,
+          "outlet": 25,
+          "inventory": 15
+        },
+        {
+          "id": "missing-outlet",
+          "input": 100,
+          "product": 60,
+          "outlet": null,
+          "inventory": 15
+        },
+        {
+          "id": "missing-inventory",
+          "input": 100,
+          "product": 60,
+          "outlet": 25,
+          "inventory": null
+        }
+      ],
+      "expected": [
+        {
+          "id": "closed",
+          "apparentResidual": 0,
+          "missing": [],
+          "closed": true,
+          "productRatio": 0.6
+        },
+        {
+          "id": "missing-outlet",
+          "apparentResidual": 25,
+          "missing": [
+            "outlet"
+          ],
+          "closed": false,
+          "productRatio": 0.6
+        },
+        {
+          "id": "missing-inventory",
+          "apparentResidual": 15,
+          "missing": [
+            "inventory"
+          ],
+          "closed": false,
+          "productRatio": 0.6
+        }
+      ],
+      "task_sha256": "0fc07b44ef3ac6697a382917b593d49bce5d6e3bf9a9ab2dca2c246ec5e7c431"
+    },
+    {
+      "id": "test-failure-counts",
+      "cases": [
+        {
+          "id": "A",
+          "runs": 10,
+          "failed": 2,
+          "events": 2,
+          "hours": 10
+        },
+        {
+          "id": "B",
+          "runs": 10,
+          "failed": 2,
+          "events": 2,
+          "hours": 20
+        },
+        {
+          "id": "C",
+          "runs": 10,
+          "failed": 4,
+          "events": 4,
+          "hours": 20
+        },
+        {
+          "id": "D",
+          "runs": 10,
+          "failed": 2,
+          "events": 2,
+          "hours": 0
+        }
+      ],
+      "expected": [
+        {
+          "id": "A",
+          "failureFraction": 0.2,
+          "eventRate": 0.2
+        },
+        {
+          "id": "B",
+          "failureFraction": 0.2,
+          "eventRate": 0.1
+        },
+        {
+          "id": "C",
+          "failureFraction": 0.4,
+          "eventRate": 0.2
+        },
+        {
+          "id": "D",
+          "failureFraction": 0.2,
+          "eventRate": null
+        }
+      ],
+      "task_sha256": "27b16f4e755721a9e944eaf79066df86b970e2ccc7d0a9082feb107f577a3dfb"
+    },
+    {
+      "id": "test-energy-ceiling",
+      "cases": [
+        {
+          "id": "terminal",
+          "kind": "ledger",
+          "input": 100,
+          "outputs": [
+            30,
+            70
+          ]
+        },
+        {
+          "id": "double-count",
+          "kind": "ledger",
+          "input": 100,
+          "outputs": [
+            30,
+            70,
+            30
+          ]
+        },
+        {
+          "id": "ideal-ceiling",
+          "kind": "thermal",
+          "hot": 400,
+          "cold": 300,
+          "heat": 20,
+          "work": 5
+        },
+        {
+          "id": "above-ceiling",
+          "kind": "thermal",
+          "hot": 400,
+          "cold": 300,
+          "heat": 20,
+          "work": 6
+        }
+      ],
+      "expected": [
+        {
+          "id": "terminal",
+          "sum": 100,
+          "residual": 0,
+          "closed": true
+        },
+        {
+          "id": "double-count",
+          "sum": 130,
+          "residual": -30,
+          "closed": false
+        },
+        {
+          "id": "ideal-ceiling",
+          "ceiling": 0.25,
+          "workFraction": 0.25,
+          "permittedByBound": true
+        },
+        {
+          "id": "above-ceiling",
+          "ceiling": 0.25,
+          "workFraction": 0.3,
+          "permittedByBound": false
+        }
+      ],
+      "task_sha256": "aee750855f31dd578c22d3aa3843082d8a8fc5211435833ab7968fcc483888c6"
+    }
+  ]
+}

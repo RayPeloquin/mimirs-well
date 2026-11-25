@@ -1,0 +1,55 @@
+{
+  "format": "well-chronicle-observed-run",
+  "version": 1,
+  "run_id": "2026-11-25-accounting-001",
+  "plan_commit": "f319c2f4de58bf4190b817aa7e768e9816ebc403",
+  "started_at": "2026-11-25T07:32:39.503Z",
+  "finished_at": "2026-11-25T07:32:39.577Z",
+  "command": "node research/chronicle/replay.cjs",
+  "environment": {
+    "node": "v24.22.2",
+    "platform": "win32",
+    "arch": "x64"
+  },
+  "exit_code": 0,
+  "stderr": "",
+  "artifacts": [
+    {
+      "path": "research/chronicle/frozen-plan.json",
+      "sha256": "5fcae082fa68efd015bf95d96dfcc4b92ba74076a7a36cae9c8a79fe803f7be7"
+    },
+    {
+      "path": "research/chronicle/replay.cjs",
+      "sha256": "bfb444ae8c64c8d4f74120cf581357517e2864971c7e9efd241bae4bbcc9e9bb"
+    },
+    {
+      "path": "research/chronicle/observed-output.json",
+      "sha256": "c0f93d134cc272da225ad70d81802b3ae9711371b215d524f7473f476eec19a7"
+    },
+    {
+      "path": "test-queue.json",
+      "sha256": "ca67b3452cc17efdc04eedba8de2cd52e7c2fe7ca37ecce67c78b2f7dbbbf50d"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "test-material-balance",
+      "outcome": "supports-limited-check",
+      "cases": 3,
+      "matched": 3
+    },
+    {
+      "id": "test-failure-counts",
+      "outcome": "supports-limited-check",
+      "cases": 4,
+      "matched": 4
+    },
+    {
+      "id": "test-energy-ceiling",
+      "outcome": "supports-limited-check",
+      "cases": 4,
+      "matched": 4
+    }
+  ],
+  "limitations": "Same-author execution against prewritten expectations, not independent replication. Deterministic synthetic arithmetic only; no physical measurement, equipment, clinical, biological or energy performance. The plan commit was made locally before execution; no trusted external timestamp or immutable attestation."
+}
