@@ -1,0 +1,121 @@
+{
+  "version": "2026-11-25-v1",
+  "types": {
+    "guided-hypothesis": "Guided hypothesis",
+    "method-transfer": "Proposed method transfer",
+    "documented-lineage": "Documented research lineage",
+    "documented-architecture": "Documented proposed architecture",
+    "scope-distinction": "Documented scope distinction",
+    "editorial-comparison": "Editorial comparison"
+  },
+  "edges": [
+    {
+      "id": "court-001",
+      "a": "recipe-pucks",
+      "b": "skeptic-1",
+      "type": "method-transfer",
+      "question": "Can an independent state probe distinguish ambiguous selector states?",
+      "basis": "Court Case 001 proposes transferring the idea of a reversible probe from an ideal mechanical model to a tangible selector.",
+      "limit": "The selector is not demonstrated; the analogy is not a proven human-interface mechanism.",
+      "source": "court-case-001.html",
+      "credit": "Existing Court case study",
+      "reviewed_on": "2026-11-25"
+    },
+    {
+      "id": "court-003",
+      "a": "crucible",
+      "b": "echo-rx",
+      "type": "method-transfer",
+      "question": "Can a guard account for residual effects after a stop?",
+      "basis": "Court Case 003 proposes a synthetic residual-aware guard, drawing on the toy shutdown-tail model.",
+      "limit": "No biological or field safety benefit demonstrated; use only an inanimate synthetic benchmark.",
+      "source": "court-case-003.html",
+      "credit": "Existing Court case study",
+      "reviewed_on": "2026-11-25"
+    },
+    {
+      "id": "echo-lineage",
+      "a": "echo-m",
+      "b": "echo-rx",
+      "type": "documented-lineage",
+      "question": "How does the therapeutic research branch differ from the recorder?",
+      "basis": "The ECHO-Rx record explicitly identifies itself as a therapeutic research branch of ECHO-M.",
+      "limit": "Shared lineage does not establish implementation, integration or biological efficacy.",
+      "source": "records/echo-rx.html",
+      "credit": "Editorial indexing by Asteris Solenne; not independently reviewed",
+      "reviewed_on": "2026-11-25"
+    },
+    {
+      "id": "governor-parent",
+      "a": "go-cube-liberty-field-governor",
+      "b": "court-governance-stack-v1-0-rc2",
+      "type": "documented-architecture",
+      "question": "Where does the proposed governor fit?",
+      "basis": "The GO-CUBE design page places the proposed governor within the parent Court governance architecture.",
+      "limit": "Both are proposed; catalog source review remains pending. No complete controller is validated.",
+      "source": "go-cube.html",
+      "credit": "Editorial indexing by Asteris Solenne; not independently reviewed",
+      "reviewed_on": "2026-11-25"
+    },
+    {
+      "id": "governor-testbed",
+      "a": "go-cube-liberty-field-governor",
+      "b": "hypha-mind-go-cube-update-authorization-testbed",
+      "type": "scope-distinction",
+      "question": "What does the update testbed actually establish?",
+      "basis": "The GO-CUBE page explicitly distinguishes the archived local update-authorization testbed from the proposed governor.",
+      "limit": "The toy update tests do not establish the governor, full-stack integration or action safety.",
+      "source": "go-cube.html",
+      "credit": "Editorial indexing by Asteris Solenne; not independently reviewed",
+      "reviewed_on": "2026-11-25"
+    },
+    {
+      "id": "tissue-interface",
+      "a": "dermis-bioreactor-cradle",
+      "b": "thoracis-bioperfusion",
+      "type": "editorial-comparison",
+      "question": "Which evidence would distinguish a tissue interface from an illustration?",
+      "basis": "The two public concept records describe different living-tissue interface research; both explicitly lack manufactured apparatus and measured tissue results.",
+      "limit": "Editorial comparison only. No shared perfusion mechanism, biological equivalence or clinical readiness inferred.",
+      "source": "records/dermis-bioreactor-cradle.html",
+      "credit": "Editorial indexing by Asteris Solenne; not independently reviewed",
+      "reviewed_on": "2026-11-25"
+    },
+    {
+      "id": "tissue-governance",
+      "a": "dermis-bioreactor-cradle",
+      "b": "cortex-neural-bioreactor",
+      "type": "editorial-comparison",
+      "question": "Which claims require separate tissue-specific evidence and ethical review?",
+      "basis": "Both public concept records identify illustrative dashboards and unmeasured biological outcomes; Cortex separately identifies ethical-governance uncertainties.",
+      "limit": "No shared experimental protocol, tissue equivalence or safety claim. Research question only.",
+      "source": "records/cortex-neural-bioreactor.html",
+      "credit": "Editorial indexing by Asteris Solenne; not independently reviewed",
+      "reviewed_on": "2026-11-25"
+    },
+    {
+      "id": "observation-limits",
+      "a": "third-look",
+      "b": "confluence-01-synthetic-sense",
+      "type": "editorial-comparison",
+      "question": "How can a display distinguish observation from verified interpretation?",
+      "basis": "Third-Look proposes cross-view verification labels; CONFLUENCE proposes bounded sensor states including unavailable observations.",
+      "limit": "Neither provides validated accuracy, diagnosis, clinical benefit or demonstrated sensory performance.",
+      "source": "records/third-look.html",
+      "credit": "Editorial indexing by Asteris Solenne; not independently reviewed",
+      "reviewed_on": "2026-11-25"
+    },
+    {
+      "id": "post-stop",
+      "a": "field-medic-guided-hand-support",
+      "b": "echo-rx",
+      "type": "editorial-comparison",
+      "question": "Does revocation mean the physical effect has stopped?",
+      "basis": "FIELD MEDIC explicitly notes that logical revocation does not prove zero residual motion or force; ECHO-Rx uses a mathematical residual-activity illustration.",
+      "limit": "Different physical systems and mechanisms. No transfer of biological equations or medical device validation.",
+      "source": "records/field-medic-guided-hand-support.html",
+      "credit": "Editorial indexing by Asteris Solenne; not independently reviewed",
+      "reviewed_on": "2026-11-25"
+    }
+  ]
+}

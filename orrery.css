@@ -1,0 +1,11 @@
+#orrery-controls { grid-template-columns: repeat(2,minmax(0,1fr)); }
+#orrery-controls input,#orrery-controls select { width:100%; max-width:100%; }
+#orrery-controls label { min-width:0; }
+#orrery-map { background:radial-gradient(ellipse at 20% 50%,#1d362e,#10202a 70%); border:1px solid var(--line); border-radius:8px; padding:1rem; }
+#orrery-svg { display:block; width:min(100%,570px); height:auto; margin:auto; }
+.orrery-edge { padding:1rem; margin:1rem 0; border:1px solid var(--line); border-radius:8px; background:var(--panel); }
+.orrery-edge h3 { margin:0; font-size:1.15rem; }
+.orrery-kind { color:var(--mint); font-size:.85rem; font-weight:650; }
+.orrery-neighbors button { max-width:100%; overflow-wrap:anywhere; text-align:left; }
+#orrery-status { border-left:2px solid var(--mint); padding:.7rem; background:var(--panel); }
+@media(max-width:680px){#orrery-controls{grid-template-columns:minmax(0,1fr)}}

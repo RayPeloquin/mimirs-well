@@ -1,0 +1,5 @@
+# The Orrery
+
+The relationship register is a public editorial index, not an inference engine. Each edge has a stable ID, two canonical IDs, a type, a question, a public basis, a boundary, a source and attribution. Six edges are generated directly from Guided Alchemy; nine are manually curated from the cited public records and case studies. Editorial comparisons are new research questions, not independent Court decisions. Documented lineage and proposed architecture describe what sources say, not a working integration. The other endpoint record supplies context for editorial comparisons. No transitive edges, automatic title-based matches, or compatibility ratings are generated. Hold/watch titles can be located, but no relationships are indexed for them.
+
+Edit orrery-curated.json only after checking the underlying public source and publication boundaries. Run node scripts/generate-catalog.cjs and node --test *.test.cjs, then the browser regression. The static HTML and JSON are generated together. A missing relationship is an unresolved review task, not evidence of no relationship. No user input is saved or submitted.
