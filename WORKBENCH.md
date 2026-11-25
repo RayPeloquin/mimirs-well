@@ -2,7 +2,7 @@
 
 Public handoff snapshot · 21 November 2026
 
-**Current inventory:** 361 distinct project cards, 183 expanded records, 178 pending expanded review.
+**Current inventory:** 361 distinct project cards, 186 expanded records, 175 pending expanded review.
 
 [Open the workbench](https://raypeloquin.github.io/mimirs-well/#workbench)
 
@@ -397,3 +397,8 @@ Three existing archive titles now have illustrated concept records: DERMIS (v1.0
 ## Recovered protective and interface concept collection
 
 Seven illustrations matched to existing or separately named archive records. Two public artworks (FSAMS-SKIN EVA and Eye of Horus) have dedicated illustrated pages. Five original artworks remain outside the public repository; their records contain bounded purpose-level summaries only. Nexus Bridge and Aether Shroud have separate titles pending lineage review. Total: 361 titles, 183 expanded, 178 pending. No equipment, clinical, or human-use validation inferred.
+
+
+## Recovered Court and research concept illustrations
+
+Ten existing titles received source-artwork notes; eight illustrations are public, with GIPS and HIPPO-linked Dragon's Bridle originals preserved locally only. The unlabeled glove is a tentative Sister's Hope match. Prior written-source evidence and limitations remain intact. Total 361 titles, 186 expanded and 175 pending.
