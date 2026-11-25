@@ -35,6 +35,10 @@ The homepage preserves its coin-and-ripple visual and the playful **“An Offeri
 
 The homepage includes a quietly mixed, original procedural soundscape: occasional water droplets with a restrained echo, filtered cavern air and low stone-like resonance. It uses the browser's Web Audio API and no recorded/audio assets, autoplay, cookies or telemetry. It **always starts off**. Visitors may explicitly press **Listen to the Well**, adjust volume, or **Silence the Well**. Playback also stops if they leave or hide the tab. The rest of the site works normally when audio is unsupported or disabled. Source: `well-ambience.js`.
 
+## The Scriptorium
+
+[The Scriptorium](https://raypeloquin.github.io/mimirs-well/scriptorium.html) offers a downloadable offline notebook. Drafts are held in session memory and explicitly exported as local JSON, not encrypted or automatically saved. The hosted editor is disabled. The separate review packet contains only manually entered candidate public fields and requires human release review. Keep private archives outside the public repository.
+
 ## The Orrery
 
 [The Orrery](https://raypeloquin.github.io/mimirs-well/orrery.html) indexes explicit editorial relationships and published guided questions. All catalog records can be selected; only curated edges are shown, with basis, source and boundary. The graph does not infer compatibility, transitivity or validation. Holds and watches have no relationship edges. Its static HTML and JSON are generated together from curated data and the existing recipe source.
