@@ -21,6 +21,7 @@
   let ready = false;
   let pair = {a: "", b: ""};
   let manualComposition = false;
+  let guidedOrigin = null;
 
   function element(tag, value) {
     const x = document.createElement(tag);
@@ -47,7 +48,7 @@
     }));
     const payload = {
       rows, ack: ackB.checked, composition: composition.value,
-      manualComposition, inherited: $("inherited").value,
+      manualComposition, guidedOrigin, inherited: $("inherited").value,
       joint: $("joint").value, strained: $("strained").value
     };
     try {
@@ -191,16 +192,18 @@
   function exportProblems() {
     const problems = mappingProblems();
     if (!composition.value.trim()) problems.push("Write a candidate combined expression or model.");
-    if (!manualComposition || composition.value.includes("SUGGESTED ONLY") ||
+    if ((!manualComposition && !guidedOrigin?.adopted) || composition.value.includes("SUGGESTED ONLY") ||
       composition.value.includes("[your proposed coupling]")) {
-      problems.push("Add your own proposed relationship; inserted source formulas and scaffolds are not themselves a combination.");
+      problems.push("Write your own relationship or explicitly adopt a reviewed guided draft; inserted formulas and scaffolds alone are not combinations.");
     }
+    if (guidedOrigin && !guidedOrigin.adopted) problems.push("Review and explicitly adopt the guided draft before export.");
     for (const [i,field] of honesty.entries()) {
       if (!field.value.trim()) problems.push(["Inherited claims", "New joint claim", "Broken or strained assumptions"][i] + " is required.");
     }
     return problems;
   }
   function updateExport() {
+    updateGuideReview();
     const problems = exportProblems();
     const valid = problems.length === 0;
     copy.disabled = download.disabled = !valid;
@@ -215,6 +218,7 @@
   }
 
   function onMappingChange() {
+    invalidateGuideReview();
     ackB.checked = false;
     showUnmappedB();
     updateExport(); storageWrite();
@@ -222,6 +226,7 @@
   function loadPair() {
     const saved = selected() ? storageRead() : null;
     manualComposition = Boolean(saved?.manualComposition);
+    guidedOrigin = saved?.guidedOrigin || null;
     composition.value = saved?.composition || "";
     $("inherited").value = saved?.inherited || "";
     $("joint").value = saved?.joint || "";
@@ -251,12 +256,14 @@
     const core = primary(pair[role]);
     if (!core) return;
     const header = (role === "a" ? "A" : "B") + " SOURCE RELATION (" + entry(pair[role]).title + "):\n";
+    invalidateGuideReview();
     composition.value += (composition.value.trim() ? "\n\n" : "") + header + core.equation;
     composition.focus();
     updateExport(); storageWrite();
   }
   function suggestScaffold() {
     if (!selected()) return;
+    invalidateGuideReview();
     composition.value =
       "SUGGESTED ONLY — NOT A DERIVATION. Replace all placeholders and this warning before export.\n\n" +
       "A: " + primary(pair.a).equation + "\n\n" +
@@ -275,6 +282,7 @@
       "",
       "**" + fileStamp + "**",
       "",
+      ...(guidedOrigin ? ["## Guided Alchemy draft origin", "", guidedOrigin.title, guidedOrigin.credit, ...(guidedOrigin.ref ? [url(guidedOrigin.ref)] : []), "Explicitly adopted for research review; not validated.", ""] : []),
       "## Source A: " + ar.title,
       "",
       "Well record: [" + ar.title + "](" + url(ar.url) + ")",
@@ -350,6 +358,70 @@
     exportStatus.textContent = "Candidate Markdown downloaded.";
   }
 
+
+  // Curated guided drafts are optional, local, and never silently equate symbols.
+  const recipeList = (window.WellGuidedRecipes || []).filter(r => primary(r.a) && primary(r.b) && r.a !== r.b);
+  let previewRecipe = null;
+  function guidedKey(r){return "mimirs-well-equation-bench-v1:"+r.a+"::"+r.b;}
+  function existingGuidedDraft(r){if(pair.a===r.a&&pair.b===r.b&&(guidedOrigin||composition.value.trim()||honesty.some(x=>x.value.trim())||mappings().some(x=>x.b||x.decision||x.notes)))return true;try{return Boolean(localStorage.getItem(guidedKey(r)));}catch{return false;}}
+  function filteredRecipes(){return recipeList.filter(r=>$("guided-theme").value==="all"||r.theme===$("guided-theme").value);}
+  function renderGuides(){
+    const list=$("guided-list");list.replaceChildren();
+    for(const r of filteredRecipes()){
+      const button=element("button",r.title);button.type="button";button.className="button secondary";
+      button.dataset.guide=r.id;button.setAttribute("aria-pressed",String(previewRecipe?.id===r.id));
+      button.addEventListener("click",()=>previewGuide(r));list.append(button);
+    }
+  }
+  function previewGuide(r){
+    previewRecipe=r;renderGuides();
+    $("guided-name").textContent=r.title;
+    $("guided-pair").textContent=entry(r.a).title+" + "+entry(r.b).title;
+    for(const field of ["why","model","test","limit","credit"]) $("guided-"+field).textContent=r[field];
+    const ref=$("guided-reference");ref.hidden=!r.ref;if(r.ref)ref.href=r.ref;else ref.removeAttribute("href");
+    $("guided-replace").checked=false;$("guided-replace-wrap").hidden=!existingGuidedDraft(r);
+    $("guided-load").disabled=existingGuidedDraft(r);
+    $("guided-preview").hidden=false;
+    $("guided-name").focus();
+    $("guided-status").textContent="Preview only. No workspace changes made.";
+  }
+  function loadGuide(){
+    const r=previewRecipe;if(!r||!primary(r.a)||!primary(r.b))return;
+    if(existingGuidedDraft(r)&&!$("guided-replace").checked){$("guided-status").textContent="Confirm replacement of the existing saved draft first.";return;}
+    pair={a:r.a,b:r.b};aPick.value=r.a;bPick.value=r.b;
+    guidedOrigin={id:r.id,title:r.title,credit:r.credit,ref:r.ref||"",adopted:false};
+    manualComposition=false;
+    sourceCard("a");sourceCard("b");buildMapping(null);
+    // Independent quantities by default, visibly proposed and subject to review.
+    for(const row of mapBody.querySelectorAll("tr[data-symbol]")){
+      row.querySelector(".target").value="__none";
+      row.querySelector(".decision").value="different";
+      row.querySelector(".risk").value="Guided proposal: keep source quantities separate; review before export.";
+    }
+    showUnmappedB();
+    composition.value=r.model+"\n\nProposed falsification test: "+r.test;
+    $("inherited").value="A: "+primary(r.a).statement+" Limits: "+primary(r.a).caveat+"\nB: "+primary(r.b).statement+" Limits: "+primary(r.b).caveat;
+    $("joint").value=r.why+" This is an untested research hypothesis.";
+    $("strained").value=r.limit;
+    syncQuery();updateExport();storageWrite();
+    $("guided-status").textContent="Draft loaded. Review both source cards, the proposed separate-symbol choices, and the three honesty fields. Acknowledge the symbols and adopt the draft below to export.";
+    $("guided-replace-wrap").hidden=false;$("guided-replace").checked=false;$("guided-load").disabled=true;
+    $("sources-title").scrollIntoView({block:"start"});
+  }
+  function updateGuideReview(){
+    $("guided-review-wrap").hidden=!guidedOrigin;
+    $("guided-adopt").checked=Boolean(guidedOrigin?.adopted);
+  }
+  function invalidateGuideReview(){if(guidedOrigin) guidedOrigin.adopted=false;}
+  function startGuides(){
+    $("guided-controls").hidden=false;renderGuides();
+    $("guided-theme").addEventListener("change",()=>{previewRecipe=null;$("guided-preview").hidden=true;renderGuides();});
+    $("guided-surprise").addEventListener("click",()=>{const all=filteredRecipes();const choices=all.filter(r=>r!==previewRecipe);const pool=choices.length?choices:all;if(pool.length)previewGuide(pool[Math.floor(Math.random()*pool.length)]);});
+    $("guided-replace").addEventListener("change",()=>{$("guided-load").disabled=Boolean(previewRecipe&&existingGuidedDraft(previewRecipe)&&!$("guided-replace").checked);});
+    $("guided-load").addEventListener("click",loadGuide);
+    $("guided-adopt").addEventListener("change",()=>{if(guidedOrigin)guidedOrigin.adopted=$("guided-adopt").checked;updateExport();storageWrite();});
+  }
+
   async function start() {
     if (ids.length < 2) {
       $("catalog-status").textContent = "Not enough source-traced equations are available.";
@@ -376,6 +448,7 @@
       aPick.value = a; bPick.value = b;
     }
     loadPair();
+    startGuides();
   }
 
   aPick.addEventListener("change", () => changePair("a", aPick.value));
@@ -384,10 +457,12 @@
   $("insert-b").addEventListener("click", () => insertRelation("b"));
   $("scaffold").addEventListener("click", suggestScaffold);
   composition.addEventListener("input", () => {
+    invalidateGuideReview();
     manualComposition = true;
     updateExport(); storageWrite();
   });
   for (const field of honesty) field.addEventListener("input", () => {
+    invalidateGuideReview();
     updateExport(); storageWrite();
   });
   ackB.addEventListener("change", () => {
