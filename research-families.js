@@ -63,7 +63,7 @@
       description: 'Flight, propulsion, spacecraft support, orbital systems, and mobility research.',
       examples: ['BRIDLE-3', 'Dragon’s Bridle', 'Lunar EVA Life Support'],
       bridges: ['physics-quantum', 'field-protection'],
-      patterns: [/bridle|aerospike|aircraft|aerospace|flight|thruster|rocket|orbital|lunar|luna|spacecraft|saturn-01|sky|falcon|skipjack|wing|hover|zero.g|orion|dart|pmsm|capture chain|star|ram.falcon|sr.margin|uss eldridge|green craft|anubis abyssal|amphibishell|skybus/i]
+      patterns: [/bridle|aerospike|aircraft|aerospace|flight|thruster|rocket|orbital|lunar|luna|spacecraft|saturn-01|sky|falcon|skipjack|wing|hover|zero.g|orion|dart|pmsm|capture chain|star|ram.falcon|sr.margin|uss eldridge|green craft|anubis abyssal|amphibishell|skybus|airship/i]
     },
     {
       id: 'field-protection', name: 'Protective & field systems',

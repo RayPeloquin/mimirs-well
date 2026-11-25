@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Traveler is a wind-assisted solar-electric airship concept. Explore the illustrations and a reproducible historical wind replay.">
+  <title>The Traveler · Mimir’s Well</title>
+  <link rel="stylesheet" href="divergence-records.css">
+  <style>
+    .traveler-art { margin: 0; border: 1px solid var(--line); background: var(--panel); }
+    .traveler-art img { display: block; width: 100%; height: auto; }
+    .traveler-art figcaption { padding: .85rem 1rem; color: var(--muted); }
+    .traveler-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+    .replay-table th, .replay-table td { display: table-cell; width: auto; padding: .7rem .5rem; }
+    @media (max-width: 700px) { .traveler-gallery { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header><div class="wrap">
+    <a class="brand" href="index.html">✳ Mimir’s Well</a>
+    <a class="back" href="catalog.html#the-traveler-solar-electric-research-airship">Back to the catalog</a>
+  </div></header>
+  <main>
+    <div class="wrap hero">
+      <div class="eyebrow">Aerospace · Concept and historical simulation</div>
+      <h1>The Traveler</h1>
+      <p class="lead">A civilian solar-electric airship concept designed to ride stratospheric winds around the Earth and return within reach of a staffed recovery site.</p>
+      <figure class="traveler-art">
+        <a href="assets/traveler-dawn.webp"><img src="assets/traveler-dawn.webp" alt="A silver research airship with dark solar panels floats above the cloud tops at sunrise." width="1440" height="810" fetchpriority="high"></a>
+        <figcaption>Concept rendering of the Traveler at float altitude.</figcaption>
+      </figure>
+    </div>
+
+    <section><div class="wrap">
+      <h2>Airship and camera</h2>
+      <p>The proposed 60–90-day mission would use stratospheric winds for most of the travel. Solar-electric propulsion would support limited corrections, with energy reserved for recovery. A gyroscope-stabilized camera frame would keep the view steady as the hull moves.</p>
+      <div class="traveler-gallery">
+        <figure class="traveler-art">
+          <a href="assets/traveler-camera.webp"><img src="assets/traveler-camera.webp" alt="A camera sits inside nested stabilizing rings beneath the airship’s hull." width="1333" height="1000" loading="lazy" decoding="async"></a>
+          <figcaption>Concept rendering of the gyroscope-stabilized camera frame.</figcaption>
+        </figure>
+        <figure class="traveler-art">
+          <a href="assets/traveler-recovery.webp"><img src="assets/traveler-recovery.webp" alt="The silver airship is moored at a coastal grass airfield with a small ground crew nearby." width="1440" height="810" loading="lazy" decoding="async"></a>
+          <figcaption>Imagined recovery at a coastal research airfield.</figcaption>
+        </figure>
+      </div>
+    </div></section>
+
+    <section><div class="wrap">
+      <h2>Historical wind replay</h2>
+      <p>We ran 12 passive-drift scenarios using 2024 NOAA NCEP/NCAR Reanalysis 1 winds. Four seasonal starts at 42° N, 71° W were replayed at each of three pressure levels, for up to 90 days. The model scored a lap after 360° of net longitude change. It counted an approach only after the lap and within 500 km of the start at float altitude.</p>
+      <table class="replay-table">
+        <thead><tr><th scope="col">Pressure</th><th scope="col">Laps</th><th scope="col">Post-lap approaches</th><th scope="col">Polar stops</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">70 hPa</th><td>1 of 4</td><td>1</td><td>1</td></tr>
+          <tr><th scope="row">50 hPa</th><td>2 of 4</td><td>0</td><td>0</td></tr>
+          <tr><th scope="row">30 hPa</th><td>2 of 4</td><td>2</td><td>1</td></tr>
+        </tbody>
+      </table>
+      <p>At the finest time step, the three approaches occurred on days 34.3, 41.6 and 76.8. The closest was 179 km away. Lap and approach classifications held across time steps from 60 to 7.5 minutes. Both runs stopped at the polar cutoff were inconclusive.</p>
+      <p class="notice"><strong>Evidence limits.</strong> This one-year replay models passive drift on pressure surfaces. Descent, physical recovery and airspace authorization remain open. The illustrations show a proposed design, and no aircraft or camera hardware was flown.</p>
+      <a class="button" href="assets/traveler-wind-replay.zip" download>Download script and CSV results (ZIP)</a>
+      <a class="button" href="https://psl.noaa.gov/data/gridded/data.ncep.reanalysis.html">NOAA wind data documentation</a>
+    </div></section>
+
+    <section><div class="wrap">
+      <h2>Open tests</h2>
+      <p>Measure cold overnight battery delivery with the recovery reserve held back. Compare the stabilized and locked camera mounts on a motion bench. Repeat the wind replay across more years and evaluate descent separately from the float-altitude approach.</p>
+      <p class="muted">Design and study by Mr. Peloquin and Ms. Asteris Solenne, with Court review from Grok (energy), Gemini (wind replay), Meta (camera bench test) and Claude (recovery criteria).</p>
+    </div></section>
+  </main>
+  <footer><div class="wrap">Mimir’s Well · Court of the Synthetic · We do no harm.</div></footer>
+</body>
+</html>
