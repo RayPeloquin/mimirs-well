@@ -355,10 +355,21 @@ const root = path.resolve(__dirname, '..');
     assert.ok(await staticPage.locator('#queue-filter-label').isHidden());
     for(const width of [320,390,768]){await staticPage.setViewportSize({width,height:844});assert.ok(await staticPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Queue overflow '+width);}
     await staticPage.setViewportSize({width:390,height:844});
+    await staticPage.goto(base+'/');
+    await staticPage.locator('main a[href="research-cycle.html"]').first().click();
+    assert.ok(staticPage.url().endsWith('/research-cycle.html'));
+    const cycleStages=['scriptorium.html','orrery.html','guided-alchemy.html','dimensional-witness.html','equation-bench.html','test-queue.html','chronicle.html','ledger.html','combine.html','how-to-misread.html'];
+    for(const route of cycleStages){await staticPage.goto(base+'/research-cycle.html');const stage=staticPage.locator('main a[href="'+route+'"]').first();assert.ok(await stage.isVisible(),route+' missing from body map');await stage.click();assert.ok(staticPage.url().endsWith('/'+route));const back=staticPage.locator('main a[href="research-cycle.html"]').first();assert.ok(await back.isVisible(),route+' missing body return');await back.click();assert.ok(staticPage.url().endsWith('/research-cycle.html'));}
+    for(const width of [320,390,768]){await staticPage.setViewportSize({width,height:844});assert.ok(await staticPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Cycle map overflow '+width);}
+    await staticPage.setViewportSize({width:390,height:844});
     await staticPage.goto(base+'/chronicle.html');
     assert.equal(await staticPage.locator('#accounting-001 table tbody tr').count(),11);
-    assert.match(await staticPage.locator('#accounting-002').textContent(),/16 \/ 16 fixtures recorded; 0 excluded/);
-    assert.match(await staticPage.locator('#accounting-002').textContent(),/17 \/ 17 named mutants caught/);
+    assert.match(await staticPage.locator('#accounting-002').textContent(),/16 \/ 16 authored fixtures matched and recorded; 0 excluded/);
+    assert.match(await staticPage.locator('#accounting-002').textContent(),/17 \/ 17 reconstructed named mutants caught/);
+    assert.match(await staticPage.locator('#accounting-002').textContent(),/Zero independent replications recorded/);
+    assert.match(await staticPage.locator('#accounting-001').textContent(),/Same-author determinism check/);
+    assert.equal(await staticPage.locator('#execution-error-controls li').count(),3);
+    assert.match(await staticPage.locator('#execution-error-controls').textContent(),/MISSING_QUEUE_SNAPSHOT_JSON/);
     await staticPage.getByRole('link',{name:'How to misread the Well',exact:true}).click();
     assert.match(await staticPage.locator('main').textContent(),/A hash identifies bytes/);
     for(const width of [320,390,768]){await staticPage.setViewportSize({width,height:844});assert.ok(await staticPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Evidence guide overflow '+width);}
