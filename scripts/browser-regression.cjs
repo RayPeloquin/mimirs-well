@@ -255,11 +255,13 @@ const root = path.resolve(__dirname, '..');
     assert.match(await staticPage.locator('main').textContent(),/Completed teaching receipt/);
     assert.equal(await staticPage.locator('#witness-outcomes tbody tr').count(),3);
     assert.equal(await staticPage.locator('table:not(#witness-outcomes) tbody tr').count(),4);
+    assert.ok(await staticPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Witness mobile overflow');
     await staticPage.goto(base+'/trial-v-receipt.html');
     assert.match(await staticPage.locator('main').textContent(),/56 passed; 0 failed/);
     assert.match(await staticPage.locator('main').textContent(),/364 records; 0 validation errors/);
     assert.match(await staticPage.locator('main').textContent(),/Canonical records with related questions \(10\)/);
-    assert.ok(await staticPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+    for(const width of [320,390,768]){await staticPage.setViewportSize({width,height:844});const sizes=await staticPage.evaluate(()=>({viewport:innerWidth,document:document.documentElement.scrollWidth}));assert.ok(sizes.document<=sizes.viewport+1,'Trial V receipt overflow '+JSON.stringify(sizes));}
+    await staticPage.setViewportSize({width:390,height:844});
     await staticPage.goto(base+'/catalog.html#skeptic-1');
     assert.ok(await staticPage.locator('#skeptic-1').isVisible());
     await staticPage.goto(base+'/equation-bench.html');

@@ -40,3 +40,9 @@ button { width: fit-content; color: var(--mint); }
 .catalog-publication-control a{font-weight:400;font-size:.82rem;margin-left:.2rem;min-height:30px}
 
 .record-text{white-space:pre-line;overflow-wrap:anywhere}
+
+/* Reading pages contain commit IDs, hashes, long record titles and inline code. */
+main, nav { min-width: 0; overflow-wrap: anywhere; }
+main code { overflow-wrap: anywhere; white-space: pre-wrap; }
+main table { border-collapse: collapse; }
+main th, main td { padding: .55rem; vertical-align: top; overflow-wrap: anywhere; }
