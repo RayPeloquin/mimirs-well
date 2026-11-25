@@ -4,7 +4,7 @@
 (() => {
   const cores = window.WellEquationCores || {};
   const controls = window.WellPublicationControls || {};
-  const releaseHolds = controls.holds || {};
+  const releaseHolds = {...(controls.holds || {}), ...(controls.watches || {})};
   const approved = new Set(controls.equationEligible || []);
   const ids = Object.keys(cores).filter(id =>
     approved.has(id) && !Object.hasOwn(releaseHolds, id));

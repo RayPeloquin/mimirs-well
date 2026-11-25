@@ -62,5 +62,205 @@ window.WellEquationCores = {
       {name:"dx",meaning:"simulation grid spacing (length)"}
     ],
     caveat: "Transcribed from the code’s strict inequality and separate velocity-field check. A numerical stability constraint, not an acoustic discovery or elastic-earth constitutive law."
+  },
+  "chihuahua-sphere-cs-1": {
+    "evidence": "Calculation-only optical energy ledger; hypothetical example",
+    "source": "https://raypeloquin.github.io/mimirs-well/design-notes/chihuahua-sphere.md",
+    "sourceLabel": "CS-1 public design note, Intended experiment",
+    "equation": "eta_receiver = E_load / E_incident\neta_total = E_load / E_electrical_total",
+    "statement": "The receiver and whole apparatus have different efficiency denominators. Incident light is an internal transfer, not another output.",
+    "symbols": [
+      {
+        "name": "eta_receiver",
+        "meaning": "receiver energy conversion fraction"
+      },
+      {
+        "name": "eta_total",
+        "meaning": "whole-apparatus electrical efficiency fraction"
+      },
+      {
+        "name": "E_load",
+        "meaning": "electrical energy delivered to load (J)"
+      },
+      {
+        "name": "E_incident",
+        "meaning": "light energy incident on receiver (J)"
+      },
+      {
+        "name": "E_electrical_total",
+        "meaning": "total supplied electrical energy, including actuators (J)"
+      }
+    ],
+    "caveat": "Notation transcribed from the public prose and hypothetical 10 J / 2 J example. Positive denominators and matched intervals required. No measured efficiency or novel energy gain."
+  },
+  "the-traveler-solar-electric-research-airship": {
+    "evidence": "Historical passive-drift simulation; no flight or recovery test",
+    "source": "https://raypeloquin.github.io/mimirs-well/assets/traveler-wind-replay.zip",
+    "sourceLabel": "Traveler-Wind-Replay.py, score(); bundled README",
+    "equation": "lap = (abs(lon - lon_start) >= 360 deg)\napproach = lap_already_observed AND (d <= r)",
+    "statement": "The historical benchmark counts net longitude laps and only counts sampled approaches once a lap has been observed.",
+    "symbols": [
+      {
+        "name": "lap",
+        "meaning": "Boolean lap threshold at a sample"
+      },
+      {
+        "name": "lon",
+        "meaning": "unwrapped sampled longitude (degrees)"
+      },
+      {
+        "name": "lon_start",
+        "meaning": "starting longitude (degrees)"
+      },
+      {
+        "name": "approach",
+        "meaning": "Boolean sampled post-lap approach event"
+      },
+      {
+        "name": "lap_already_observed",
+        "meaning": "lap observed at or before current sample"
+      },
+      {
+        "name": "d",
+        "meaning": "great-circle distance to start (km)"
+      },
+      {
+        "name": "r",
+        "meaning": "benchmark approach radius (km)"
+      }
+    ],
+    "caveat": "Scoring rule, not trajectory planning, steering or flight control. Net longitude is not cumulative absolute path length. Fixed-pressure passive replay; no descent, landing, physical recovery or airspace authorization established."
+  },
+  "zion-twin-ring-tuna-habitat": {
+    "evidence": "Dimensionless dye-transport simulation; no physical tank trial",
+    "source": "https://raypeloquin.github.io/mimirs-well/assets/zion-tuna/Zion-Gate-Test-01.zip",
+    "sourceLabel": "test_gate.py, simulate() return value; bundled README",
+    "equation": "F_dye_percent = 100 * C_receiving / C_initial",
+    "statement": "The reported dye metric is the sum of dye concentration in receiving-loop cells divided by the initial total dye sum, expressed as a percentage.",
+    "symbols": [
+      {
+        "name": "F_dye_percent",
+        "meaning": "receiving-loop dye percentage"
+      },
+      {
+        "name": "C_receiving",
+        "meaning": "sum of dye concentrations in receiving cells at sample time"
+      },
+      {
+        "name": "C_initial",
+        "meaning": "initial sum of dye concentrations over all wet cells"
+      }
+    ],
+    "caveat": "Equal-area cells within a run; initial dye sum positive. This metric is distinct from outer-straight circulation and one-way gate flux. Strong mesh dependence, no established physical exchange rate, gate-motion result or animal welfare outcome."
+  },
+  "adventurer-s-forge": {
+    "evidence": "Desk-checked tabletop scenario using conventional thermodynamics; no hardware validation",
+    "source": "https://github.com/RayPeloquin/UI-Worlds-Adventurers-Forge/blob/main/docs/UI-Worlds-Playtest-v0.3.md",
+    "sourceLabel": "UI Worlds playtest v0.3, conventional heat-engine subsystem",
+    "equation": "eta_Carnot = 1 - T_cold / T_hot",
+    "statement": "The reversible heat-engine efficiency ceiling depends on the absolute sink and source temperatures.",
+    "symbols": [
+      {
+        "name": "eta_Carnot",
+        "meaning": "maximum reversible thermal efficiency fraction"
+      },
+      {
+        "name": "T_cold",
+        "meaning": "absolute cold-reservoir temperature (K)"
+      },
+      {
+        "name": "T_hot",
+        "meaning": "absolute hot-reservoir temperature (K)"
+      }
+    ],
+    "caveat": "Positive absolute temperatures with T_hot > T_cold; ideal reversible two-reservoir bound. Does not predict real efficiency or establish a fictional energy source, cooling system or working hardware."
+  },
+"crucible": {
+    "evidence": "Recorded held-out synthetic simulation campaign; not hardware reliability evidence",
+    "source": "https://github.com/RayPeloquin/CRUCIBLE-Autonomy-Test-Harness/blob/main/v0.2/README.md",
+    "sourceLabel": "CRUCIBLE v0.2 README, Recorded results and held-out design",
+    "equation": "p_observed = N_violated / N_exercised",
+    "statement": "The campaign reports the observed violation fraction among conclusive, exercised runs, for example 0/40 for the guarded rover. Invalid, incomplete and not-exercised runs are separately reported.",
+    "symbols": [
+      {
+        "name": "p_observed",
+        "meaning": "observed violation fraction (dimensionless)"
+      },
+      {
+        "name": "N_violated",
+        "meaning": "number of conclusive exercised runs with contract violations"
+      },
+      {
+        "name": "N_exercised",
+        "meaning": "number of conclusive exercised runs in the selected campaign group"
+      }
+    ],
+    "caveat": "Notation for the published fractions, not the Wilson confidence interval. Requires positive denominator. Zero observed violations does not imply zero risk. Results apply only to the selected synthetic distribution; no real-world vehicle safety or controller superiority established."
+  },
+  "spotrecon-spotrecon-r2": {
+    "evidence": "Design review and illustrative calculation; no field measurements",
+    "source": "https://github.com/RayPeloquin/SPOTRECON-Parking-Scout/blob/main/README.md",
+    "sourceLabel": "SPOTRECON R2 README, Checked illustrative math, observation age",
+    "equation": "delta_t = t_display - t_capture",
+    "statement": "Observation age is the elapsed time between capture and presentation, using a common clock. Age is separate from whether the observation remains correct.",
+    "symbols": [
+      {
+        "name": "delta_t",
+        "meaning": "observation age (time)"
+      },
+      {
+        "name": "t_display",
+        "meaning": "display timestamp"
+      },
+      {
+        "name": "t_capture",
+        "meaning": "capture timestamp"
+      }
+    ],
+    "caveat": "Transcribed from the printed equation. Timestamps must share a time base; invalid clocks or missing timestamps make age unavailable. Freshness thresholds and accuracy remain unvalidated; no field performance, reservation or aviation approval established."
+  },
+  "confluence-01-synthetic-sense": {
+    "evidence": "Proposed evaluation metric; no prototype or dataset",
+    "source": "https://github.com/RayPeloquin/CONFLUENCE-01-Synthetic-Sense/blob/main/README.md",
+    "sourceLabel": "CONFLUENCE-01 README, Tests before claims, item 4",
+    "equation": "R_false = N_false / T_valid_hours",
+    "statement": "Notation for the proposed reporting metric of false events per valid observation hour. Compare only under declared event definitions, with ground truth and coverage separately reported.",
+    "symbols": [
+      {
+        "name": "R_false",
+        "meaning": "false-event rate (events per valid hour)"
+      },
+      {
+        "name": "N_false",
+        "meaning": "count of false events within valid observation periods"
+      },
+      {
+        "name": "T_valid_hours",
+        "meaning": "total duration of valid observation periods (hours)"
+      }
+    ],
+    "caveat": "Formalization of the proposed prose metric, not a printed or tested equation in the project. Positive valid duration required. Abstention and coverage must remain visible; excluding unavailable periods can hide failures. No new sensory modality, diagnostic accuracy or safety benefit established."
+  },
+  "spincell-dle": {
+    "evidence": "Illustrated concept; proposed material-accounting metric without paired assays",
+    "source": "https://github.com/RayPeloquin/mimirs-well/blob/main/public-notes/spincell-dle.md",
+    "sourceLabel": "SpinCell DLE public note, Evidence and Proposed next check",
+    "equation": "R_Li = m_Li_recovered / m_Li_in",
+    "statement": "Notation for the proposed lithium recovery accounting: compare the mass of lithium recovered in the designated product stream with the incoming lithium mass for the same batch.",
+    "symbols": [
+      {
+        "name": "R_Li",
+        "meaning": "fraction of incoming lithium recovered in designated product"
+      },
+      {
+        "name": "m_Li_recovered",
+        "meaning": "lithium mass in the designated recovered product stream"
+      },
+      {
+        "name": "m_Li_in",
+        "meaning": "lithium mass entering the same defined batch boundary"
+      }
+    ],
+    "caveat": "Formalization of the public note's proposed recovery metric, not a measured result or printed source equation. Positive input mass required; account for other outlets and inventory changes, and report uncertainty. Recovery is not concentration, selectivity or energy efficiency. No process chemistry, operating parameters or demonstrated extraction performance."
   }
 };

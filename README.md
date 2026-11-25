@@ -23,7 +23,7 @@ The preflight is a **limited file-path tripwire**, not automatic assessment of w
 
 The [Equation Bench](https://raypeloquin.github.io/mimirs-well/equation-bench.html) is a separate one-page extension of the Alchemist’s Bench. It pairs source-reviewed mathematical relations, requires explicit symbol correspondence decisions (including no-counterpart choices), and blocks Markdown export until a new candidate expression and three evidence/assumption statements have been written. Every export retains primary source and registry links plus the stamp **“Candidate mathematics — not derived truth. Requires its own evidence.”**
 
-The first release provides four manually verified entry points (SKEPTIC-1, ECHO-Rx, Ghostglass and Temporal Acoustics), not automatic equation extraction from all 359 project titles. There is no solver, unit checker or scientific validation. Drafts are kept locally in the browser for each ordered pair.
+The Equation Bench provides manually source-reviewed entry points (see [current equation source index](equation-sources.html)), not automatic equation extraction from all 359 project titles. There is no solver, unit checker or scientific validation. Drafts are kept locally in the browser for each ordered pair.
 
 [Source verification, acceptance criteria and limitations](docs/equation-bench-mvp.md).
 
