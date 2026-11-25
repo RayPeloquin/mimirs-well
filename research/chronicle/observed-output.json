@@ -1,0 +1,207 @@
+{
+  "format": "well-chronicle-synthetic-replay",
+  "version": 1,
+  "plan_sha256": "5fcae082fa68efd015bf95d96dfcc4b92ba74076a7a36cae9c8a79fe803f7be7",
+  "results": [
+    {
+      "id": "test-material-balance",
+      "outcome": "supports-limited-check",
+      "cases": [
+        {
+          "id": "closed",
+          "expected": {
+            "id": "closed",
+            "apparentResidual": 0,
+            "missing": [],
+            "closed": true,
+            "productRatio": 0.6
+          },
+          "actual": {
+            "id": "closed",
+            "apparentResidual": 0,
+            "missing": [],
+            "closed": true,
+            "productRatio": 0.6
+          },
+          "matches": true
+        },
+        {
+          "id": "missing-outlet",
+          "expected": {
+            "id": "missing-outlet",
+            "apparentResidual": 25,
+            "missing": [
+              "outlet"
+            ],
+            "closed": false,
+            "productRatio": 0.6
+          },
+          "actual": {
+            "id": "missing-outlet",
+            "apparentResidual": 25,
+            "missing": [
+              "outlet"
+            ],
+            "closed": false,
+            "productRatio": 0.6
+          },
+          "matches": true
+        },
+        {
+          "id": "missing-inventory",
+          "expected": {
+            "id": "missing-inventory",
+            "apparentResidual": 15,
+            "missing": [
+              "inventory"
+            ],
+            "closed": false,
+            "productRatio": 0.6
+          },
+          "actual": {
+            "id": "missing-inventory",
+            "apparentResidual": 15,
+            "missing": [
+              "inventory"
+            ],
+            "closed": false,
+            "productRatio": 0.6
+          },
+          "matches": true
+        }
+      ]
+    },
+    {
+      "id": "test-failure-counts",
+      "outcome": "supports-limited-check",
+      "cases": [
+        {
+          "id": "A",
+          "expected": {
+            "id": "A",
+            "failureFraction": 0.2,
+            "eventRate": 0.2
+          },
+          "actual": {
+            "id": "A",
+            "failureFraction": 0.2,
+            "eventRate": 0.2
+          },
+          "matches": true
+        },
+        {
+          "id": "B",
+          "expected": {
+            "id": "B",
+            "failureFraction": 0.2,
+            "eventRate": 0.1
+          },
+          "actual": {
+            "id": "B",
+            "failureFraction": 0.2,
+            "eventRate": 0.1
+          },
+          "matches": true
+        },
+        {
+          "id": "C",
+          "expected": {
+            "id": "C",
+            "failureFraction": 0.4,
+            "eventRate": 0.2
+          },
+          "actual": {
+            "id": "C",
+            "failureFraction": 0.4,
+            "eventRate": 0.2
+          },
+          "matches": true
+        },
+        {
+          "id": "D",
+          "expected": {
+            "id": "D",
+            "failureFraction": 0.2,
+            "eventRate": null
+          },
+          "actual": {
+            "id": "D",
+            "failureFraction": 0.2,
+            "eventRate": null
+          },
+          "matches": true
+        }
+      ]
+    },
+    {
+      "id": "test-energy-ceiling",
+      "outcome": "supports-limited-check",
+      "cases": [
+        {
+          "id": "terminal",
+          "expected": {
+            "id": "terminal",
+            "sum": 100,
+            "residual": 0,
+            "closed": true
+          },
+          "actual": {
+            "id": "terminal",
+            "sum": 100,
+            "residual": 0,
+            "closed": true
+          },
+          "matches": true
+        },
+        {
+          "id": "double-count",
+          "expected": {
+            "id": "double-count",
+            "sum": 130,
+            "residual": -30,
+            "closed": false
+          },
+          "actual": {
+            "id": "double-count",
+            "sum": 130,
+            "residual": -30,
+            "closed": false
+          },
+          "matches": true
+        },
+        {
+          "id": "ideal-ceiling",
+          "expected": {
+            "id": "ideal-ceiling",
+            "ceiling": 0.25,
+            "workFraction": 0.25,
+            "permittedByBound": true
+          },
+          "actual": {
+            "id": "ideal-ceiling",
+            "ceiling": 0.25,
+            "workFraction": 0.25,
+            "permittedByBound": true
+          },
+          "matches": true
+        },
+        {
+          "id": "above-ceiling",
+          "expected": {
+            "id": "above-ceiling",
+            "ceiling": 0.25,
+            "workFraction": 0.3,
+            "permittedByBound": false
+          },
+          "actual": {
+            "id": "above-ceiling",
+            "ceiling": 0.25,
+            "workFraction": 0.3,
+            "permittedByBound": false
+          },
+          "matches": true
+        }
+      ]
+    }
+  ]
+}

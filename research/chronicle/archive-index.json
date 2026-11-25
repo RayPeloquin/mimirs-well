@@ -1,0 +1,48 @@
+{
+  "id": "temporal-acoustics-v03",
+  "record": "temporal-acoustics",
+  "status": "archived-report-not-rerun",
+  "source_commit": "6bce0cbb82932bed1ddd0764485d2fcaa155fc34",
+  "summary": "The saved report describes eight simulated rock worlds, 16 cavity-present and 16 cavity-absent observations. Held-out calibrated interior score reports 100% sensitivity and 12.5% false positives in that smooth-geology set.",
+  "contrary": "Five of eight strong solid-inclusion no-cavity controls triggered the calibrated interior score. The report explicitly warns that the current method cannot reliably exclude these impostors.",
+  "limit": "The archive includes scripts, metrics and reports; Python 3.10+, NumPy, SciPy and Matplotlib are listed, but exact dependency versions and original execution environment are not established by this index. No new simulation or physical survey was performed for the Chronicle.",
+  "commands": [
+    "cd research/temporal-acoustics",
+    "python -m unittest discover -s . -p 'test_*.py' -v",
+    "python run_validation.py"
+  ],
+  "artifacts": [
+    {
+      "path": "research/temporal-acoustics/README.md",
+      "sha256": "28f611156c922bc3989b2d32443266720826b311f611b85c9ac2918befb75a88"
+    },
+    {
+      "path": "research/temporal-acoustics/pilot.py",
+      "sha256": "1e8b53f333fefdab38974d5a2ed5aa9ddc962089237c7aeb6678fcce146b3612"
+    },
+    {
+      "path": "research/temporal-acoustics/joint.py",
+      "sha256": "cc5c9bb9aa6c070fdd01aa4e67497bbd0fa14ba6ba7cf936a350e1047430cfed"
+    },
+    {
+      "path": "research/temporal-acoustics/validation.py",
+      "sha256": "fa3dd8cbbcca2b9fbffb4e62466ebd33933bc004632a4289689157d9757779f3"
+    },
+    {
+      "path": "research/temporal-acoustics/run_validation.py",
+      "sha256": "5005abce982913891584ffdee7dd9ca84eadf55c43b933676e232a85825dcb7b"
+    },
+    {
+      "path": "research/temporal-acoustics/test_validation.py",
+      "sha256": "e4b481c1c493332d5df32add219d060f5ca715109f5679a848cb3c438974c28f"
+    },
+    {
+      "path": "research/temporal-acoustics/results/v0.3-metrics.json",
+      "sha256": "40a4241ae685079daf9d8e587beebd201bc9dc50bb7b0e794274bef3cf911aa0"
+    },
+    {
+      "path": "research/temporal-acoustics/results/v0.3-report.md",
+      "sha256": "0b37bbde97eac9246d12bdcf48b27a7b3d34f533859842396bbdddd32a07bd48"
+    }
+  ]
+}

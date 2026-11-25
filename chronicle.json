@@ -1,0 +1,342 @@
+{
+  "version": "2026-11-25-v1",
+  "scope": "Observed same-author synthetic fixture checks and separately labeled archived reports. No independent replication or physical validation.",
+  "observed": [
+    {
+      "receipt": {
+        "format": "well-chronicle-observed-run",
+        "version": 1,
+        "run_id": "2026-11-25-accounting-001",
+        "plan_commit": "f319c2f4de58bf4190b817aa7e768e9816ebc403",
+        "started_at": "2026-11-25T07:32:39.503Z",
+        "finished_at": "2026-11-25T07:32:39.577Z",
+        "command": "node research/chronicle/replay.cjs",
+        "environment": {
+          "node": "v24.22.2",
+          "platform": "win32",
+          "arch": "x64"
+        },
+        "exit_code": 0,
+        "stderr": "",
+        "artifacts": [
+          {
+            "path": "research/chronicle/frozen-plan.json",
+            "sha256": "5fcae082fa68efd015bf95d96dfcc4b92ba74076a7a36cae9c8a79fe803f7be7"
+          },
+          {
+            "path": "research/chronicle/replay.cjs",
+            "sha256": "bfb444ae8c64c8d4f74120cf581357517e2864971c7e9efd241bae4bbcc9e9bb"
+          },
+          {
+            "path": "research/chronicle/observed-output.json",
+            "sha256": "c0f93d134cc272da225ad70d81802b3ae9711371b215d524f7473f476eec19a7"
+          },
+          {
+            "path": "test-queue.json",
+            "sha256": "ca67b3452cc17efdc04eedba8de2cd52e7c2fe7ca37ecce67c78b2f7dbbbf50d"
+          }
+        ],
+        "tasks": [
+          {
+            "id": "test-material-balance",
+            "outcome": "supports-limited-check",
+            "cases": 3,
+            "matched": 3
+          },
+          {
+            "id": "test-failure-counts",
+            "outcome": "supports-limited-check",
+            "cases": 4,
+            "matched": 4
+          },
+          {
+            "id": "test-energy-ceiling",
+            "outcome": "supports-limited-check",
+            "cases": 4,
+            "matched": 4
+          }
+        ],
+        "limitations": "Same-author execution against prewritten expectations, not independent replication. Deterministic synthetic arithmetic only; no physical measurement, equipment, clinical, biological or energy performance. The plan commit was made locally before execution; no trusted external timestamp or immutable attestation."
+      },
+      "output_path": "research/chronicle/observed-output.json",
+      "plan_path": "research/chronicle/frozen-plan.json",
+      "queue_snapshot": "research/chronicle/queue-snapshot.json",
+      "tasks": [
+        {
+          "id": "test-material-balance",
+          "outcome": "supports-limited-check",
+          "cases": 3,
+          "matched": 3,
+          "question": "Catch missing material in a closed synthetic ledger",
+          "records": [
+            "zion-twin-ring-tuna-habitat",
+            "spincell-dle"
+          ],
+          "plan_url": "test-queue.html#test-material-balance",
+          "observations": [
+            {
+              "id": "closed",
+              "expected": {
+                "id": "closed",
+                "apparentResidual": 0,
+                "missing": [],
+                "closed": true,
+                "productRatio": 0.6
+              },
+              "actual": {
+                "id": "closed",
+                "apparentResidual": 0,
+                "missing": [],
+                "closed": true,
+                "productRatio": 0.6
+              },
+              "matches": true
+            },
+            {
+              "id": "missing-outlet",
+              "expected": {
+                "id": "missing-outlet",
+                "apparentResidual": 25,
+                "missing": [
+                  "outlet"
+                ],
+                "closed": false,
+                "productRatio": 0.6
+              },
+              "actual": {
+                "id": "missing-outlet",
+                "apparentResidual": 25,
+                "missing": [
+                  "outlet"
+                ],
+                "closed": false,
+                "productRatio": 0.6
+              },
+              "matches": true
+            },
+            {
+              "id": "missing-inventory",
+              "expected": {
+                "id": "missing-inventory",
+                "apparentResidual": 15,
+                "missing": [
+                  "inventory"
+                ],
+                "closed": false,
+                "productRatio": 0.6
+              },
+              "actual": {
+                "id": "missing-inventory",
+                "apparentResidual": 15,
+                "missing": [
+                  "inventory"
+                ],
+                "closed": false,
+                "productRatio": 0.6
+              },
+              "matches": true
+            }
+          ]
+        },
+        {
+          "id": "test-failure-counts",
+          "outcome": "supports-limited-check",
+          "cases": 4,
+          "matched": 4,
+          "question": "Expose a misleading failure denominator",
+          "records": [
+            "crucible",
+            "confluence-01-synthetic-sense"
+          ],
+          "plan_url": "test-queue.html#test-failure-counts",
+          "observations": [
+            {
+              "id": "A",
+              "expected": {
+                "id": "A",
+                "failureFraction": 0.2,
+                "eventRate": 0.2
+              },
+              "actual": {
+                "id": "A",
+                "failureFraction": 0.2,
+                "eventRate": 0.2
+              },
+              "matches": true
+            },
+            {
+              "id": "B",
+              "expected": {
+                "id": "B",
+                "failureFraction": 0.2,
+                "eventRate": 0.1
+              },
+              "actual": {
+                "id": "B",
+                "failureFraction": 0.2,
+                "eventRate": 0.1
+              },
+              "matches": true
+            },
+            {
+              "id": "C",
+              "expected": {
+                "id": "C",
+                "failureFraction": 0.4,
+                "eventRate": 0.2
+              },
+              "actual": {
+                "id": "C",
+                "failureFraction": 0.4,
+                "eventRate": 0.2
+              },
+              "matches": true
+            },
+            {
+              "id": "D",
+              "expected": {
+                "id": "D",
+                "failureFraction": 0.2,
+                "eventRate": null
+              },
+              "actual": {
+                "id": "D",
+                "failureFraction": 0.2,
+                "eventRate": null
+              },
+              "matches": true
+            }
+          ]
+        },
+        {
+          "id": "test-energy-ceiling",
+          "outcome": "supports-limited-check",
+          "cases": 4,
+          "matched": 4,
+          "question": "Detect double counting and an impossible ideal heat budget",
+          "records": [
+            "chihuahua-sphere-cs-1",
+            "adventurer-s-forge"
+          ],
+          "plan_url": "test-queue.html#test-energy-ceiling",
+          "observations": [
+            {
+              "id": "terminal",
+              "expected": {
+                "id": "terminal",
+                "sum": 100,
+                "residual": 0,
+                "closed": true
+              },
+              "actual": {
+                "id": "terminal",
+                "sum": 100,
+                "residual": 0,
+                "closed": true
+              },
+              "matches": true
+            },
+            {
+              "id": "double-count",
+              "expected": {
+                "id": "double-count",
+                "sum": 130,
+                "residual": -30,
+                "closed": false
+              },
+              "actual": {
+                "id": "double-count",
+                "sum": 130,
+                "residual": -30,
+                "closed": false
+              },
+              "matches": true
+            },
+            {
+              "id": "ideal-ceiling",
+              "expected": {
+                "id": "ideal-ceiling",
+                "ceiling": 0.25,
+                "workFraction": 0.25,
+                "permittedByBound": true
+              },
+              "actual": {
+                "id": "ideal-ceiling",
+                "ceiling": 0.25,
+                "workFraction": 0.25,
+                "permittedByBound": true
+              },
+              "matches": true
+            },
+            {
+              "id": "above-ceiling",
+              "expected": {
+                "id": "above-ceiling",
+                "ceiling": 0.25,
+                "workFraction": 0.3,
+                "permittedByBound": false
+              },
+              "actual": {
+                "id": "above-ceiling",
+                "ceiling": 0.25,
+                "workFraction": 0.3,
+                "permittedByBound": false
+              },
+              "matches": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "archived": [
+    {
+      "id": "temporal-acoustics-v03",
+      "record": "temporal-acoustics",
+      "status": "archived-report-not-rerun",
+      "source_commit": "6bce0cbb82932bed1ddd0764485d2fcaa155fc34",
+      "summary": "The saved report describes eight simulated rock worlds, 16 cavity-present and 16 cavity-absent observations. Held-out calibrated interior score reports 100% sensitivity and 12.5% false positives in that smooth-geology set.",
+      "contrary": "Five of eight strong solid-inclusion no-cavity controls triggered the calibrated interior score. The report explicitly warns that the current method cannot reliably exclude these impostors.",
+      "limit": "The archive includes scripts, metrics and reports; Python 3.10+, NumPy, SciPy and Matplotlib are listed, but exact dependency versions and original execution environment are not established by this index. No new simulation or physical survey was performed for the Chronicle.",
+      "commands": [
+        "cd research/temporal-acoustics",
+        "python -m unittest discover -s . -p 'test_*.py' -v",
+        "python run_validation.py"
+      ],
+      "artifacts": [
+        {
+          "path": "research/temporal-acoustics/README.md",
+          "sha256": "28f611156c922bc3989b2d32443266720826b311f611b85c9ac2918befb75a88"
+        },
+        {
+          "path": "research/temporal-acoustics/pilot.py",
+          "sha256": "1e8b53f333fefdab38974d5a2ed5aa9ddc962089237c7aeb6678fcce146b3612"
+        },
+        {
+          "path": "research/temporal-acoustics/joint.py",
+          "sha256": "cc5c9bb9aa6c070fdd01aa4e67497bbd0fa14ba6ba7cf936a350e1047430cfed"
+        },
+        {
+          "path": "research/temporal-acoustics/validation.py",
+          "sha256": "fa3dd8cbbcca2b9fbffb4e62466ebd33933bc004632a4289689157d9757779f3"
+        },
+        {
+          "path": "research/temporal-acoustics/run_validation.py",
+          "sha256": "5005abce982913891584ffdee7dd9ca84eadf55c43b933676e232a85825dcb7b"
+        },
+        {
+          "path": "research/temporal-acoustics/test_validation.py",
+          "sha256": "e4b481c1c493332d5df32add219d060f5ca715109f5679a848cb3c438974c28f"
+        },
+        {
+          "path": "research/temporal-acoustics/results/v0.3-metrics.json",
+          "sha256": "40a4241ae685079daf9d8e587beebd201bc9dc50bb7b0e794274bef3cf911aa0"
+        },
+        {
+          "path": "research/temporal-acoustics/results/v0.3-report.md",
+          "sha256": "0b37bbde97eac9246d12bdcf48b27a7b3d34f533859842396bbdddd32a07bd48"
+        }
+      ]
+    }
+  ]
+}
