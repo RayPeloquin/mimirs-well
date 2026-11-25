@@ -2,7 +2,7 @@
 
 Public handoff snapshot · 21 November 2026
 
-**Current inventory:** 359 distinct project cards, 174 expanded records, 185 pending expanded review.
+**Current inventory:** 359 distinct project cards, 177 expanded records, 182 pending expanded review.
 
 [Open the workbench](https://raypeloquin.github.io/mimirs-well/#workbench)
 
@@ -387,3 +387,8 @@ After each batch, update this snapshot when its counts, status or proposed next 
 [Source history](https://github.com/RayPeloquin/mimirs-well/commits/main/) · [Visitor log](https://github.com/RayPeloquin/mimirs-well/issues/1)
 
 We do no harm.
+
+
+## Illustrated bioreactor collection (25 November 2026)
+
+Three existing archive titles now have illustrated concept records: DERMIS (v1.0 and v1.1), CORTEX (v0.1), THORACIS (v1.0). Four source images supplied by Mr. Peloquin were matched to desktop originals. Dashboard values and readiness claims remain unvalidated; no clinical or laboratory performance is claimed. Total titles unchanged: 359, with 177 expanded and 182 pending.
