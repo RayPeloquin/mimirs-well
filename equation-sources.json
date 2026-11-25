@@ -8,22 +8,63 @@
     "symbols": [
       {
         "name": "lambda_i",
-        "meaning": "i-th generalized eigenvalue (1/s^2)"
+        "meaning": "i-th generalized eigenvalue (1/s^2)",
+        "witness": {
+          "dimensions": [
+            0,
+            0,
+            -2,
+            0
+          ],
+          "unit": "1/s^2",
+          "kind": "generalized eigenvalue"
+        }
       },
       {
         "name": "K",
-        "meaning": "stiffness matrix (N/m)"
+        "meaning": "stiffness matrix (N/m)",
+        "witness": {
+          "dimensions": [
+            1,
+            0,
+            -2,
+            0
+          ],
+          "unit": "N/m",
+          "kind": "stiffness matrix"
+        }
       },
       {
         "name": "M",
-        "meaning": "mass matrix (kg)"
+        "meaning": "mass matrix (kg)",
+        "witness": {
+          "dimensions": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "unit": "kg",
+          "kind": "mass matrix"
+        }
       },
       {
         "name": "f_i",
-        "meaning": "i-th natural frequency (Hz)"
+        "meaning": "i-th natural frequency (Hz)",
+        "witness": {
+          "dimensions": [
+            0,
+            0,
+            -1,
+            0
+          ],
+          "unit": "Hz",
+          "kind": "natural frequency"
+        }
       }
     ],
-    "caveat": "Faithful notation for scipy.linalg.eigh(K,M) and sqrt(vals)/(2*pi), not a separately printed equation in the original Python. No damping, friction, or sensor physics."
+    "caveat": "Faithful notation for scipy.linalg.eigh(K,M) and sqrt(vals)/(2*pi), not a separately printed equation in the original Python. No damping, friction, or sensor physics.",
+    "witness_version": "2026-11-25-v1"
   },
   "echo-rx": {
     "evidence": "Reduced theoretical mass-balance equation; no biological results",
@@ -34,30 +75,91 @@
     "symbols": [
       {
         "name": "A_T",
-        "meaning": "active protein mass in target pool"
+        "meaning": "active protein mass in target pool",
+        "witness": {
+          "dimensions": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "unit": null,
+          "kind": "active protein mass"
+        }
       },
       {
         "name": "t",
-        "meaning": "time"
+        "meaning": "time",
+        "witness": {
+          "dimensions": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "unit": null,
+          "kind": "elapsed time"
+        }
       },
       {
         "name": "k_out",
-        "meaning": "depot-to-target transfer rate (1/time)"
+        "meaning": "depot-to-target transfer rate (1/time)",
+        "witness": {
+          "dimensions": [
+            0,
+            0,
+            -1,
+            0
+          ],
+          "unit": null,
+          "kind": "transfer coefficient"
+        }
       },
       {
         "name": "A_D",
-        "meaning": "active protein mass in depot pool"
+        "meaning": "active protein mass in depot pool",
+        "witness": {
+          "dimensions": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "unit": null,
+          "kind": "active protein mass"
+        }
       },
       {
         "name": "k_clear",
-        "meaning": "target clearance rate (1/time)"
+        "meaning": "target clearance rate (1/time)",
+        "witness": {
+          "dimensions": [
+            0,
+            0,
+            -1,
+            0
+          ],
+          "unit": null,
+          "kind": "clearance coefficient"
+        }
       },
       {
         "name": "k_spill",
-        "meaning": "target spillover rate (1/time)"
+        "meaning": "target spillover rate (1/time)",
+        "witness": {
+          "dimensions": [
+            0,
+            0,
+            -1,
+            0
+          ],
+          "unit": null,
+          "kind": "spillover coefficient"
+        }
       }
     ],
-    "caveat": "Assumes homogeneous linear compartments and fixed rates; does not establish effective biological shutdown, therapeutic exposure or clinical safety."
+    "caveat": "Assumes homogeneous linear compartments and fixed rates; does not establish effective biological shutdown, therapeutic exposure or clinical safety.",
+    "witness_version": "2026-11-25-v1"
   },
   "ghostglass": {
     "evidence": "Synthetic on/off statistical test; no physical detector validation",
@@ -68,22 +170,63 @@
     "symbols": [
       {
         "name": "p",
-        "meaning": "one-sided exact conditional p-value"
+        "meaning": "one-sided exact conditional p-value",
+        "witness": {
+          "dimensions": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "1",
+          "kind": "p-value"
+        }
       },
       {
         "name": "n_on",
-        "meaning": "nonnegative on-window event count"
+        "meaning": "nonnegative on-window event count",
+        "witness": {
+          "dimensions": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "count",
+          "kind": "on-window event count"
+        }
       },
       {
         "name": "n_off",
-        "meaning": "nonnegative off-window event count"
+        "meaning": "nonnegative off-window event count",
+        "witness": {
+          "dimensions": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "count",
+          "kind": "off-window event count"
+        }
       },
       {
         "name": "r",
-        "meaning": "off/on exposure ratio (>0)"
+        "meaning": "off/on exposure ratio (>0)",
+        "witness": {
+          "dimensions": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "1",
+          "kind": "exposure ratio"
+        }
       }
     ],
-    "caveat": "BinomSF(k;n,q)=P(X>k) for X~Binomial(n,q). Assumes stationary equal on/off background rates, valid exposures and Poisson counts; not a signal discovery claim."
+    "caveat": "BinomSF(k;n,q)=P(X>k) for X~Binomial(n,q). Assumes stationary equal on/off background rates, valid exposures and Poisson counts; not a signal discovery claim.",
+    "witness_version": "2026-11-25-v1"
   },
   "temporal-acoustics": {
     "evidence": "Synthetic 2D scalar-wave numerical method; no field measurements",
@@ -94,18 +237,49 @@
     "symbols": [
       {
         "name": "c",
-        "meaning": "maximum scalar-wave speed (length/time)"
+        "meaning": "maximum scalar-wave speed (length/time)",
+        "witness": {
+          "dimensions": [
+            0,
+            1,
+            -1,
+            0
+          ],
+          "unit": null,
+          "kind": "wave speed"
+        }
       },
       {
         "name": "dt",
-        "meaning": "simulation time step (time)"
+        "meaning": "simulation time step (time)",
+        "witness": {
+          "dimensions": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "unit": null,
+          "kind": "simulation time step"
+        }
       },
       {
         "name": "dx",
-        "meaning": "simulation grid spacing (length)"
+        "meaning": "simulation grid spacing (length)",
+        "witness": {
+          "dimensions": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "unit": null,
+          "kind": "grid spacing"
+        }
       }
     ],
-    "caveat": "Transcribed from the code’s strict inequality and separate velocity-field check. A numerical stability constraint, not an acoustic discovery or elastic-earth constitutive law."
+    "caveat": "Transcribed from the code’s strict inequality and separate velocity-field check. A numerical stability constraint, not an acoustic discovery or elastic-earth constitutive law.",
+    "witness_version": "2026-11-25-v1"
   },
   "chihuahua-sphere-cs-1": {
     "evidence": "Calculation-only optical energy ledger; hypothetical example",
@@ -116,26 +290,77 @@
     "symbols": [
       {
         "name": "eta_receiver",
-        "meaning": "receiver energy conversion fraction"
+        "meaning": "receiver energy conversion fraction",
+        "witness": {
+          "dimensions": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "1",
+          "kind": "receiver efficiency"
+        }
       },
       {
         "name": "eta_total",
-        "meaning": "whole-apparatus electrical efficiency fraction"
+        "meaning": "whole-apparatus electrical efficiency fraction",
+        "witness": {
+          "dimensions": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "1",
+          "kind": "apparatus efficiency"
+        }
       },
       {
         "name": "E_load",
-        "meaning": "electrical energy delivered to load (J)"
+        "meaning": "electrical energy delivered to load (J)",
+        "witness": {
+          "dimensions": [
+            1,
+            2,
+            -2,
+            0
+          ],
+          "unit": "J",
+          "kind": "load energy"
+        }
       },
       {
         "name": "E_incident",
-        "meaning": "light energy incident on receiver (J)"
+        "meaning": "light energy incident on receiver (J)",
+        "witness": {
+          "dimensions": [
+            1,
+            2,
+            -2,
+            0
+          ],
+          "unit": "J",
+          "kind": "incident light energy"
+        }
       },
       {
         "name": "E_electrical_total",
-        "meaning": "total supplied electrical energy, including actuators (J)"
+        "meaning": "total supplied electrical energy, including actuators (J)",
+        "witness": {
+          "dimensions": [
+            1,
+            2,
+            -2,
+            0
+          ],
+          "unit": "J",
+          "kind": "electrical input energy"
+        }
       }
     ],
-    "caveat": "Notation transcribed from the public prose and hypothetical 10 J / 2 J example. Positive denominators and matched intervals required. No measured efficiency or novel energy gain."
+    "caveat": "Notation transcribed from the public prose and hypothetical 10 J / 2 J example. Positive denominators and matched intervals required. No measured efficiency or novel energy gain.",
+    "witness_version": "2026-11-25-v1"
   },
   "the-traveler-solar-electric-research-airship": {
     "evidence": "Historical passive-drift simulation; no flight or recovery test",
@@ -146,34 +371,90 @@
     "symbols": [
       {
         "name": "lap",
-        "meaning": "Boolean lap threshold at a sample"
+        "meaning": "Boolean lap threshold at a sample",
+        "witness": {
+          "dimensions": null,
+          "unit": "boolean",
+          "kind": "boolean"
+        }
       },
       {
         "name": "lon",
-        "meaning": "unwrapped sampled longitude (degrees)"
+        "meaning": "unwrapped sampled longitude (degrees)",
+        "witness": {
+          "dimensions": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "deg",
+          "kind": "unwrapped longitude"
+        }
       },
       {
         "name": "lon_start",
-        "meaning": "starting longitude (degrees)"
+        "meaning": "starting longitude (degrees)",
+        "witness": {
+          "dimensions": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "deg",
+          "kind": "start longitude"
+        }
       },
       {
         "name": "approach",
-        "meaning": "Boolean sampled post-lap approach event"
+        "meaning": "Boolean sampled post-lap approach event",
+        "witness": {
+          "dimensions": null,
+          "unit": "boolean",
+          "kind": "boolean"
+        }
       },
       {
         "name": "lap_already_observed",
-        "meaning": "lap observed at or before current sample"
+        "meaning": "lap observed at or before current sample",
+        "witness": {
+          "dimensions": null,
+          "unit": "boolean",
+          "kind": "boolean"
+        }
       },
       {
         "name": "d",
-        "meaning": "great-circle distance to start (km)"
+        "meaning": "great-circle distance to start (km)",
+        "witness": {
+          "dimensions": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "unit": "km",
+          "kind": "distance to start"
+        }
       },
       {
         "name": "r",
-        "meaning": "benchmark approach radius (km)"
+        "meaning": "benchmark approach radius (km)",
+        "witness": {
+          "dimensions": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "unit": "km",
+          "kind": "approach radius"
+        }
       }
     ],
-    "caveat": "Scoring rule, not trajectory planning, steering or flight control. Net longitude is not cumulative absolute path length. Fixed-pressure passive replay; no descent, landing, physical recovery or airspace authorization established."
+    "caveat": "Scoring rule, not trajectory planning, steering or flight control. Net longitude is not cumulative absolute path length. Fixed-pressure passive replay; no descent, landing, physical recovery or airspace authorization established.",
+    "witness_version": "2026-11-25-v1"
   },
   "zion-twin-ring-tuna-habitat": {
     "evidence": "Dimensionless dye-transport simulation; no physical tank trial",
@@ -184,18 +465,39 @@
     "symbols": [
       {
         "name": "F_dye_percent",
-        "meaning": "receiving-loop dye percentage"
+        "meaning": "receiving-loop dye percentage",
+        "witness": {
+          "dimensions": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "%",
+          "kind": "modeled dye fraction"
+        }
       },
       {
         "name": "C_receiving",
-        "meaning": "sum of dye concentrations in receiving cells at sample time"
+        "meaning": "sum of dye concentrations in receiving cells at sample time",
+        "witness": {
+          "dimensions": null,
+          "unit": null,
+          "kind": "model dye sum"
+        }
       },
       {
         "name": "C_initial",
-        "meaning": "initial sum of dye concentrations over all wet cells"
+        "meaning": "initial sum of dye concentrations over all wet cells",
+        "witness": {
+          "dimensions": null,
+          "unit": null,
+          "kind": "model dye sum"
+        }
       }
     ],
-    "caveat": "Equal-area cells within a run; initial dye sum positive. This metric is distinct from outer-straight circulation and one-way gate flux. Strong mesh dependence, no established physical exchange rate, gate-motion result or animal welfare outcome."
+    "caveat": "Equal-area cells within a run; initial dye sum positive. This metric is distinct from outer-straight circulation and one-way gate flux. Strong mesh dependence, no established physical exchange rate, gate-motion result or animal welfare outcome.",
+    "witness_version": "2026-11-25-v1"
   },
   "adventurer-s-forge": {
     "evidence": "Desk-checked tabletop scenario using conventional thermodynamics; no hardware validation",
@@ -206,18 +508,49 @@
     "symbols": [
       {
         "name": "eta_Carnot",
-        "meaning": "maximum reversible thermal efficiency fraction"
+        "meaning": "maximum reversible thermal efficiency fraction",
+        "witness": {
+          "dimensions": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "1",
+          "kind": "reversible efficiency ceiling"
+        }
       },
       {
         "name": "T_cold",
-        "meaning": "absolute cold-reservoir temperature (K)"
+        "meaning": "absolute cold-reservoir temperature (K)",
+        "witness": {
+          "dimensions": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "unit": "K",
+          "kind": "absolute sink temperature"
+        }
       },
       {
         "name": "T_hot",
-        "meaning": "absolute hot-reservoir temperature (K)"
+        "meaning": "absolute hot-reservoir temperature (K)",
+        "witness": {
+          "dimensions": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "unit": "K",
+          "kind": "absolute source temperature"
+        }
       }
     ],
-    "caveat": "Positive absolute temperatures with T_hot > T_cold; ideal reversible two-reservoir bound. Does not predict real efficiency or establish a fictional energy source, cooling system or working hardware."
+    "caveat": "Positive absolute temperatures with T_hot > T_cold; ideal reversible two-reservoir bound. Does not predict real efficiency or establish a fictional energy source, cooling system or working hardware.",
+    "witness_version": "2026-11-25-v1"
   },
   "crucible": {
     "evidence": "Recorded held-out synthetic simulation campaign; not hardware reliability evidence",
@@ -228,18 +561,49 @@
     "symbols": [
       {
         "name": "p_observed",
-        "meaning": "observed violation fraction (dimensionless)"
+        "meaning": "observed violation fraction (dimensionless)",
+        "witness": {
+          "dimensions": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "1",
+          "kind": "observed violation fraction"
+        }
       },
       {
         "name": "N_violated",
-        "meaning": "number of conclusive exercised runs with contract violations"
+        "meaning": "number of conclusive exercised runs with contract violations",
+        "witness": {
+          "dimensions": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "count",
+          "kind": "violating run count"
+        }
       },
       {
         "name": "N_exercised",
-        "meaning": "number of conclusive exercised runs in the selected campaign group"
+        "meaning": "number of conclusive exercised runs in the selected campaign group",
+        "witness": {
+          "dimensions": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "count",
+          "kind": "exercised run count"
+        }
       }
     ],
-    "caveat": "Notation for the published fractions, not the Wilson confidence interval. Requires positive denominator. Zero observed violations does not imply zero risk. Results apply only to the selected synthetic distribution; no real-world vehicle safety or controller superiority established."
+    "caveat": "Notation for the published fractions, not the Wilson confidence interval. Requires positive denominator. Zero observed violations does not imply zero risk. Results apply only to the selected synthetic distribution; no real-world vehicle safety or controller superiority established.",
+    "witness_version": "2026-11-25-v1"
   },
   "spotrecon-spotrecon-r2": {
     "evidence": "Design review and illustrative calculation; no field measurements",
@@ -250,18 +614,49 @@
     "symbols": [
       {
         "name": "delta_t",
-        "meaning": "observation age (time)"
+        "meaning": "observation age (time)",
+        "witness": {
+          "dimensions": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "unit": null,
+          "kind": "observation age"
+        }
       },
       {
         "name": "t_display",
-        "meaning": "display timestamp"
+        "meaning": "display timestamp",
+        "witness": {
+          "dimensions": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "unit": null,
+          "kind": "clock timestamp"
+        }
       },
       {
         "name": "t_capture",
-        "meaning": "capture timestamp"
+        "meaning": "capture timestamp",
+        "witness": {
+          "dimensions": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "unit": null,
+          "kind": "clock timestamp"
+        }
       }
     ],
-    "caveat": "Transcribed from the printed equation. Timestamps must share a time base; invalid clocks or missing timestamps make age unavailable. Freshness thresholds and accuracy remain unvalidated; no field performance, reservation or aviation approval established."
+    "caveat": "Transcribed from the printed equation. Timestamps must share a time base; invalid clocks or missing timestamps make age unavailable. Freshness thresholds and accuracy remain unvalidated; no field performance, reservation or aviation approval established.",
+    "witness_version": "2026-11-25-v1"
   },
   "confluence-01-synthetic-sense": {
     "evidence": "Proposed evaluation metric; no prototype or dataset",
@@ -272,18 +667,49 @@
     "symbols": [
       {
         "name": "R_false",
-        "meaning": "false-event rate (events per valid hour)"
+        "meaning": "false-event rate (events per valid hour)",
+        "witness": {
+          "dimensions": [
+            0,
+            0,
+            -1,
+            0
+          ],
+          "unit": "events/h",
+          "kind": "false-event rate"
+        }
       },
       {
         "name": "N_false",
-        "meaning": "count of false events within valid observation periods"
+        "meaning": "count of false events within valid observation periods",
+        "witness": {
+          "dimensions": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "count",
+          "kind": "false-event count"
+        }
       },
       {
         "name": "T_valid_hours",
-        "meaning": "total duration of valid observation periods (hours)"
+        "meaning": "total duration of valid observation periods (hours)",
+        "witness": {
+          "dimensions": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "unit": "h",
+          "kind": "valid observation duration"
+        }
       }
     ],
-    "caveat": "Formalization of the proposed prose metric, not a printed or tested equation in the project. Positive valid duration required. Abstention and coverage must remain visible; excluding unavailable periods can hide failures. No new sensory modality, diagnostic accuracy or safety benefit established."
+    "caveat": "Formalization of the proposed prose metric, not a printed or tested equation in the project. Positive valid duration required. Abstention and coverage must remain visible; excluding unavailable periods can hide failures. No new sensory modality, diagnostic accuracy or safety benefit established.",
+    "witness_version": "2026-11-25-v1"
   },
   "spincell-dle": {
     "evidence": "Illustrated concept; proposed material-accounting metric without paired assays",
@@ -294,17 +720,48 @@
     "symbols": [
       {
         "name": "R_Li",
-        "meaning": "fraction of incoming lithium recovered in designated product"
+        "meaning": "fraction of incoming lithium recovered in designated product",
+        "witness": {
+          "dimensions": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "unit": "1",
+          "kind": "lithium recovery fraction"
+        }
       },
       {
         "name": "m_Li_recovered",
-        "meaning": "lithium mass in the designated recovered product stream"
+        "meaning": "lithium mass in the designated recovered product stream",
+        "witness": {
+          "dimensions": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "unit": null,
+          "kind": "recovered lithium mass"
+        }
       },
       {
         "name": "m_Li_in",
-        "meaning": "lithium mass entering the same defined batch boundary"
+        "meaning": "lithium mass entering the same defined batch boundary",
+        "witness": {
+          "dimensions": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "unit": null,
+          "kind": "incoming lithium mass"
+        }
       }
     ],
-    "caveat": "Formalization of the public note's proposed recovery metric, not a measured result or printed source equation. Positive input mass required; account for other outlets and inventory changes, and report uncertainty. Recovery is not concentration, selectivity or energy efficiency. No process chemistry, operating parameters or demonstrated extraction performance."
+    "caveat": "Formalization of the public note's proposed recovery metric, not a measured result or printed source equation. Positive input mass required; account for other outlets and inventory changes, and report uncertainty. Recovery is not concentration, selectivity or energy efficiency. No process chemistry, operating parameters or demonstrated extraction performance.",
+    "witness_version": "2026-11-25-v1"
   }
 }

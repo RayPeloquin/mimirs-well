@@ -4,6 +4,7 @@
 (() => {
   const cores = window.WellEquationCores || {};
   const controls = window.WellPublicationControls || {};
+  const witness = window.WellDimensionalWitness;
   const releaseHolds = {...(controls.holds || {}), ...(controls.watches || {})};
   const approved = new Set(controls.equationEligible || []);
   const ids = Object.keys(cores).filter(id =>
@@ -44,10 +45,11 @@
       a: tr.dataset.symbol,
       b: tr.querySelector(".target").value,
       decision: tr.querySelector(".decision").value,
-      notes: tr.querySelector(".risk").value
+      notes: tr.querySelector(".risk").value,
+      witnessReviewed: tr.querySelector(".witness-review").checked
     }));
     const payload = {
-      rows, ack: ackB.checked, composition: composition.value,
+      rows, witnessVersion: witness?.version || null, ack: ackB.checked, composition: composition.value,
       manualComposition, guidedOrigin, inherited: $("inherited").value,
       joint: $("joint").value, strained: $("strained").value
     };
@@ -123,7 +125,8 @@
       const first = element("td");
       const name = element("span", item.name); name.className = "symbol";
       const meaning = element("span", item.meaning); meaning.className = "symbol-meaning";
-      first.append(name, meaning);
+      const unit = element("span", witness?.describe(witness.get(pair.a,item.name)) || "Witness unavailable"); unit.className="witness-unit";
+      first.append(name, meaning, unit);
       const second = element("td");
       const target = element("select"); target.className = "target";
       target.setAttribute("aria-label", "Possible counterpart in Design B for " + item.name);
@@ -143,16 +146,23 @@
       decision.append(undecided, same, different);
       decision.value = stored?.decision || "";
       const fourth = element("td");
+      const witnessDetail=element("p"); witnessDetail.className="witness-detail"; witnessDetail.setAttribute("aria-live","polite");
+      const reviewLabel=element("label"); reviewLabel.className="witness-ack"; reviewLabel.hidden=true;
+      const review=element("input"); review.type="checkbox";review.className="witness-review";
+      review.setAttribute("aria-label","Review dimensions, unit and meaning for "+item.name);
+      review.checked=Boolean(saved?.witnessVersion===witness?.version && stored?.witnessReviewed);
+      reviewLabel.append(review,element("span","I reviewed units, meaning and uncertainty for this equivalence."));
       const risk = element("input"); risk.className = "risk"; risk.type = "text";
       risk.placeholder = "Units, domain or mismatch?";
       risk.maxLength = 300;
       risk.setAttribute("aria-label", "Mapping risk or note for " + item.name);
       risk.value = stored?.notes || "";
-      second.append(target); third.append(decision); fourth.append(risk);
+      second.append(target); third.append(decision,witnessDetail); fourth.append(risk,reviewLabel);
       tr.append(first, second, third, fourth); mapBody.append(tr);
       target.addEventListener("change", onMappingChange);
       decision.addEventListener("change", onMappingChange);
       risk.addEventListener("input", onMappingChange);
+      review.addEventListener("change", onMappingChange);
     }
     showUnmappedB();
   }
@@ -162,7 +172,8 @@
       a: tr.dataset.symbol,
       b: tr.querySelector(".target").value,
       decision: tr.querySelector(".decision").value,
-      notes: tr.querySelector(".risk").value.trim()
+      notes: tr.querySelector(".risk").value.trim(),
+      witnessReviewed: tr.querySelector(".witness-review").checked
     }));
   }
   function showUnmappedB() {
@@ -174,6 +185,23 @@
       "All B symbols have explicit same-quantity mappings. Review the mappings and assumptions before confirming.";
   }
 
+  function witnessResult(row) {
+    if (!row.b || row.b === "__none") return {code:"separate",text:"No counterpart selected; no equivalence assessed.",blocked:false};
+    if (!witness) return {code:"unavailable",text:"Witness unavailable. Reload before export.",blocked:true};
+    return witness.compare(witness.get(pair.a,row.a),witness.get(pair.b,row.b));
+  }
+  function updateWitness() {
+    if (!selected()) return;
+    for(const tr of mapBody.querySelectorAll("tr[data-symbol]")) {
+      const row={a:tr.dataset.symbol,b:tr.querySelector(".target").value,decision:tr.querySelector(".decision").value};
+      const result=witnessResult(row),detail=tr.querySelector(".witness-detail"),review=tr.querySelector(".witness-review");
+      const relevant=row.decision==="same"&&Boolean(row.b)&&row.b!=="__none"&&!result.blocked;
+      const text=(row.b&&row.b!=="__none"&&witness?witness.describe(witness.get(pair.b,row.b))+". ":"")+result.text;
+      if(detail.textContent!==text)detail.textContent=text;
+      detail.dataset.blocked=String(result.blocked&&row.decision==="same");
+      review.parentElement.hidden=!relevant;review.disabled=!relevant;if(!relevant)review.checked=false;
+    }
+  }
   function mappingProblems() {
     if (!selected()) return ["Choose two different reviewed source equations."];
     const map = mappings();
@@ -181,6 +209,12 @@
       return ["Decide yes/no and select a B symbol (or no counterpart) for every A symbol."];
     if (map.some(row => row.b === "__none" && row.decision === "same"))
       return ["'No counterpart' cannot also mean 'same quantity'."];
+    if (!witness) return ["Dimensional Witness unavailable; reload before export."];
+    for(const row of map.filter(r=>r.decision==="same")) {
+      const result=witnessResult(row);
+      if(result.blocked)return ["Dimensional Witness: "+row.a+" / "+row.b+": "+result.text];
+      if(!row.notes||!row.witnessReviewed)return ["Dimensional Witness: document the unit, meaning and uncertainty review for "+row.a+" / "+row.b+" and acknowledge it."];
+    }
     const same = map.filter(row => row.decision === "same").map(row => row.b);
     if (new Set(same).size !== same.length)
       return ["Two different A symbols cannot both be silently identified as the same B symbol. Revise the mapping."];
@@ -204,20 +238,23 @@
   }
   function updateExport() {
     updateGuideReview();
+    updateWitness();
     const problems = exportProblems();
     const valid = problems.length === 0;
     copy.disabled = download.disabled = !valid;
     $("scaffold").disabled = !selected();
     $("insert-a").disabled = !primary(pair.a);
     $("insert-b").disabled = !primary(pair.b);
-    $("mapping-status").textContent = mappingProblems()[0] || "All mapped choices are explicit. No dimensional consistency has been checked.";
+    $("mapping-status").textContent = mappingProblems()[0] || "All mapped choices are explicit. Dimensional Witness reviewed symbol mappings only, not the proposed expression.";
     exportStatus.textContent = valid ?
       "Ready to export as candidate mathematics. Nothing on this page verifies validity." :
       problems[0];
     return valid;
   }
 
-  function onMappingChange() {
+  function onMappingChange(event) {
+    const tr=event?.currentTarget?.closest("tr[data-symbol]");
+    if(tr&&!event.currentTarget.classList.contains("witness-review"))tr.querySelector(".witness-review").checked=false;
     invalidateGuideReview();
     ackB.checked = false;
     showUnmappedB();
@@ -309,12 +346,13 @@
       "",
       "## Explicit symbol mapping",
       "",
-      "| Design A symbol | Design B symbol | Same quantity? | Notes / risk |",
-      "| --- | --- | --- | --- |"
+      "Dimensional Witness metadata version: " + witness.version + ". Dimensions are advisory except known incompatibilities block equivalence. No expression-level check.", "",
+      "| Design A symbol | Design B symbol | Same quantity? | Notes / risk | Witness result and review |",
+      "| --- | --- | --- | --- | --- |"
     ];
     for (const row of mappings()) {
       lines.push("| " + mdCell(row.a) + " | " + mdCell(row.b === "__none" ? "No counterpart" : row.b) +
-        " | " + (row.decision === "same" ? "Yes" : "No") + " | " + mdCell(row.notes) + " |");
+        " | " + (row.decision === "same" ? "Yes" : "No") + " | " + mdCell(row.notes) + " | " + mdCell(witnessResult(row).code + ": " + witnessResult(row).text + " A: " + witness.describe(witness.get(pair.a,row.a)) + (row.b==="__none"?"":" B: "+witness.describe(witness.get(pair.b,row.b))) + "; equivalence review: " + (row.decision==="same"?(row.witnessReviewed?"Acknowledged by user":"Not acknowledged"):"Not claimed")) + " |");
     }
     const matched = new Set(mappings().filter(x => x.decision === "same").map(x => x.b));
     const unmatched = b.symbols.map(x => x.name).filter(name => !matched.has(name));
@@ -327,7 +365,7 @@
       "## Broken or strained assumptions", "", $("strained").value.trim(), "",
       "## Evidence boundary", "",
       "**" + fileStamp + "**",
-      "No algebraic verification, dimensional analysis, simplification, physical measurement, or independent validation was performed by the Equation Bench.",
+      "Dimensional Witness checked annotated symbol mappings only; it did not check the proposed expression, convert units, prove physical equivalence, perform algebraic verification, simplification, physical measurement, or independent validation.",
       ""
     );
     return lines.join("\n");
