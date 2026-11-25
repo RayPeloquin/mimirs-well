@@ -1,5 +1,536 @@
 {
-  "version": "2026-11-25-v1",
+  "coverage": {
+    "evidence_class": "same-author-determinism-check",
+    "receipt": {
+      "format": "well-chronicle-coverage-receipt-v2",
+      "freeze_commit": "f5570d1dc6ffcb2018c5373e86d14d13c7398049",
+      "started_at": "2026-11-25T07:49:37.024Z",
+      "finished_at": "2026-11-25T07:49:37.164Z",
+      "environment": {
+        "node": "v24.22.2",
+        "platform": "win32",
+        "arch": "x64"
+      },
+      "command": "node research/chronicle/v2/run.cjs",
+      "exit_code": 0,
+      "stderr": "",
+      "evidence_class": "same-author-determinism-check",
+      "artifacts": [
+        {
+          "file": "plan.json",
+          "sha256": "4d7ff068836a0809bfb4944c27a163045084a4e03ef1c2f159444db5cd30dd3d"
+        },
+        {
+          "file": "calculate.cjs",
+          "sha256": "65b57afc2d822b23430d6445e05f1b6343b3221e6e44870af440615fdca7b787"
+        },
+        {
+          "file": "run.cjs",
+          "sha256": "5b48529749fc0a6c8f78f230ed2e1c59caff7e0e193d7c75f390073b91711409"
+        },
+        {
+          "file": "mutants.json",
+          "sha256": "72a24dbb66f6ade23f12aae3ed7fa52695e4503cb5b407ca8f531f761862c1b3"
+        },
+        {
+          "file": "queue-snapshot.json",
+          "sha256": "ca67b3452cc17efdc04eedba8de2cd52e7c2fe7ca37ecce67c78b2f7dbbbf50d"
+        },
+        {
+          "file": "freeze-observation.json",
+          "sha256": "8fa9ef6c683e95b0f0835422abe9cf83bbdf665a3548409ddf993e1c3bd00223"
+        },
+        {
+          "file": "output.json",
+          "sha256": "2c849de719a895ff4551b31698b008b4b7a909185ebc7ce2957537862f669c6b"
+        }
+      ],
+      "status": "same-author-determinism-check",
+      "retention": {
+        "planned": 16,
+        "recorded": 16,
+        "excluded": 0,
+        "mutants_planned": 17,
+        "mutants_recorded": 17
+      },
+      "limitations": "Finite authored fixtures and separately reconstructed mutants; not Claude exact original 16-mutant script, independent replication, physical evidence, or exhaustive mutation coverage."
+    },
+    "freeze_observation": {
+      "commit": "f5570d1dc6ffcb2018c5373e86d14d13c7398049",
+      "observed_at": "2026-11-25T07:49:37.020Z",
+      "files": [
+        {
+          "file": "plan.json",
+          "url": "https://raw.githubusercontent.com/RayPeloquin/mimirs-well/f5570d1dc6ffcb2018c5373e86d14d13c7398049/research/chronicle/v2/plan.json",
+          "sha256": "4d7ff068836a0809bfb4944c27a163045084a4e03ef1c2f159444db5cd30dd3d",
+          "http_date": "Wed, 25 Nov 2026 07:49:35 GMT"
+        },
+        {
+          "file": "calculate.cjs",
+          "url": "https://raw.githubusercontent.com/RayPeloquin/mimirs-well/f5570d1dc6ffcb2018c5373e86d14d13c7398049/research/chronicle/v2/calculate.cjs",
+          "sha256": "65b57afc2d822b23430d6445e05f1b6343b3221e6e44870af440615fdca7b787",
+          "http_date": "Wed, 25 Nov 2026 07:49:36 GMT"
+        },
+        {
+          "file": "run.cjs",
+          "url": "https://raw.githubusercontent.com/RayPeloquin/mimirs-well/f5570d1dc6ffcb2018c5373e86d14d13c7398049/research/chronicle/v2/run.cjs",
+          "sha256": "5b48529749fc0a6c8f78f230ed2e1c59caff7e0e193d7c75f390073b91711409",
+          "http_date": "Wed, 25 Nov 2026 07:49:36 GMT"
+        },
+        {
+          "file": "mutants.json",
+          "url": "https://raw.githubusercontent.com/RayPeloquin/mimirs-well/f5570d1dc6ffcb2018c5373e86d14d13c7398049/research/chronicle/v2/mutants.json",
+          "sha256": "72a24dbb66f6ade23f12aae3ed7fa52695e4503cb5b407ca8f531f761862c1b3",
+          "http_date": "Wed, 25 Nov 2026 07:49:36 GMT"
+        },
+        {
+          "file": "queue-snapshot.json",
+          "url": "https://raw.githubusercontent.com/RayPeloquin/mimirs-well/f5570d1dc6ffcb2018c5373e86d14d13c7398049/research/chronicle/v2/queue-snapshot.json",
+          "sha256": "ca67b3452cc17efdc04eedba8de2cd52e7c2fe7ca37ecce67c78b2f7dbbbf50d",
+          "http_date": "Wed, 25 Nov 2026 07:49:36 GMT"
+        }
+      ],
+      "scope": "Author observed public commit-pinned GitHub bytes before running. Not independent trusted timestamp, signature, or third-party preregistration."
+    },
+    "plan_path": "research/chronicle/v2/plan.json",
+    "output_path": "research/chronicle/v2/output.json",
+    "mutations": [
+      {
+        "id": "ignore-residual",
+        "killed": true,
+        "mismatches": [
+          "test-material-balance/complete-imbalance"
+        ],
+        "errors": []
+      },
+      {
+        "id": "ignore-missing",
+        "killed": true,
+        "mismatches": [
+          "test-material-balance/missing-but-zero-residual"
+        ],
+        "errors": []
+      },
+      {
+        "id": "ledger-underaccepted",
+        "killed": true,
+        "mismatches": [
+          "test-energy-ceiling/under-accounted"
+        ],
+        "errors": []
+      },
+      {
+        "id": "constant-product-ratio",
+        "killed": true,
+        "mismatches": [
+          "test-material-balance/complete-imbalance"
+        ],
+        "errors": []
+      },
+      {
+        "id": "events-use-failures",
+        "killed": true,
+        "mismatches": [
+          "test-failure-counts/distinct-counts"
+        ],
+        "errors": []
+      },
+      {
+        "id": "failures-use-events",
+        "killed": true,
+        "mismatches": [
+          "test-failure-counts/distinct-counts"
+        ],
+        "errors": []
+      },
+      {
+        "id": "wrong-ceiling",
+        "killed": true,
+        "mismatches": [
+          "test-energy-ceiling/different-temperature"
+        ],
+        "errors": []
+      },
+      {
+        "id": "missing-as-zero",
+        "killed": true,
+        "mismatches": [
+          "test-material-balance/missing-outlet",
+          "test-material-balance/missing-inventory",
+          "test-material-balance/missing-but-zero-residual"
+        ],
+        "errors": []
+      },
+      {
+        "id": "unguarded-ratio",
+        "killed": true,
+        "mismatches": [
+          "test-failure-counts/D"
+        ],
+        "errors": []
+      },
+      {
+        "id": "zero-default-ratio",
+        "killed": true,
+        "mismatches": [
+          "test-failure-counts/D"
+        ],
+        "errors": []
+      },
+      {
+        "id": "deduplicate-transfers",
+        "killed": true,
+        "mismatches": [
+          "test-energy-ceiling/double-count"
+        ],
+        "errors": []
+      },
+      {
+        "id": "absolute-residual",
+        "killed": true,
+        "mismatches": [
+          "test-energy-ceiling/double-count"
+        ],
+        "errors": []
+      },
+      {
+        "id": "exclusive-bound",
+        "killed": true,
+        "mismatches": [
+          "test-energy-ceiling/ideal-ceiling",
+          "test-energy-ceiling/different-temperature"
+        ],
+        "errors": []
+      },
+      {
+        "id": "always-permit",
+        "killed": true,
+        "mismatches": [
+          "test-energy-ceiling/above-ceiling"
+        ],
+        "errors": []
+      },
+      {
+        "id": "never-permit",
+        "killed": true,
+        "mismatches": [
+          "test-energy-ceiling/ideal-ceiling",
+          "test-energy-ceiling/different-temperature"
+        ],
+        "errors": []
+      },
+      {
+        "id": "celsius-bound",
+        "killed": true,
+        "mismatches": [
+          "test-energy-ceiling/ideal-ceiling",
+          "test-energy-ceiling/above-ceiling",
+          "test-energy-ceiling/different-temperature"
+        ],
+        "errors": []
+      },
+      {
+        "id": "omit-inventory",
+        "killed": true,
+        "mismatches": [
+          "test-material-balance/closed",
+          "test-material-balance/missing-outlet",
+          "test-material-balance/complete-imbalance",
+          "test-material-balance/missing-but-zero-residual"
+        ],
+        "errors": []
+      }
+    ],
+    "results": [
+      {
+        "id": "test-material-balance",
+        "outcome": "same-author-determinism-check",
+        "cases": [
+          {
+            "id": "closed",
+            "expected": {
+              "id": "closed",
+              "apparentResidual": 0,
+              "missing": [],
+              "closed": true,
+              "productRatio": 0.6
+            },
+            "actual": {
+              "id": "closed",
+              "apparentResidual": 0,
+              "missing": [],
+              "closed": true,
+              "productRatio": 0.6
+            },
+            "matches": true
+          },
+          {
+            "id": "missing-outlet",
+            "expected": {
+              "id": "missing-outlet",
+              "apparentResidual": 25,
+              "missing": [
+                "outlet"
+              ],
+              "closed": false,
+              "productRatio": 0.6
+            },
+            "actual": {
+              "id": "missing-outlet",
+              "apparentResidual": 25,
+              "missing": [
+                "outlet"
+              ],
+              "closed": false,
+              "productRatio": 0.6
+            },
+            "matches": true
+          },
+          {
+            "id": "missing-inventory",
+            "expected": {
+              "id": "missing-inventory",
+              "apparentResidual": 15,
+              "missing": [
+                "inventory"
+              ],
+              "closed": false,
+              "productRatio": 0.6
+            },
+            "actual": {
+              "id": "missing-inventory",
+              "apparentResidual": 15,
+              "missing": [
+                "inventory"
+              ],
+              "closed": false,
+              "productRatio": 0.6
+            },
+            "matches": true
+          },
+          {
+            "id": "complete-imbalance",
+            "expected": {
+              "id": "complete-imbalance",
+              "apparentResidual": 5,
+              "missing": [],
+              "closed": false,
+              "productRatio": 0.45
+            },
+            "actual": {
+              "id": "complete-imbalance",
+              "apparentResidual": 5,
+              "missing": [],
+              "closed": false,
+              "productRatio": 0.45
+            },
+            "matches": true
+          },
+          {
+            "id": "missing-but-zero-residual",
+            "expected": {
+              "id": "missing-but-zero-residual",
+              "apparentResidual": 0,
+              "missing": [
+                "outlet"
+              ],
+              "closed": false,
+              "productRatio": 0.6
+            },
+            "actual": {
+              "id": "missing-but-zero-residual",
+              "apparentResidual": 0,
+              "missing": [
+                "outlet"
+              ],
+              "closed": false,
+              "productRatio": 0.6
+            },
+            "matches": true
+          }
+        ]
+      },
+      {
+        "id": "test-failure-counts",
+        "outcome": "same-author-determinism-check",
+        "cases": [
+          {
+            "id": "A",
+            "expected": {
+              "id": "A",
+              "failureFraction": 0.2,
+              "eventRate": 0.2
+            },
+            "actual": {
+              "id": "A",
+              "failureFraction": 0.2,
+              "eventRate": 0.2
+            },
+            "matches": true
+          },
+          {
+            "id": "B",
+            "expected": {
+              "id": "B",
+              "failureFraction": 0.2,
+              "eventRate": 0.1
+            },
+            "actual": {
+              "id": "B",
+              "failureFraction": 0.2,
+              "eventRate": 0.1
+            },
+            "matches": true
+          },
+          {
+            "id": "C",
+            "expected": {
+              "id": "C",
+              "failureFraction": 0.4,
+              "eventRate": 0.2
+            },
+            "actual": {
+              "id": "C",
+              "failureFraction": 0.4,
+              "eventRate": 0.2
+            },
+            "matches": true
+          },
+          {
+            "id": "D",
+            "expected": {
+              "id": "D",
+              "failureFraction": 0.2,
+              "eventRate": null
+            },
+            "actual": {
+              "id": "D",
+              "failureFraction": 0.2,
+              "eventRate": null
+            },
+            "matches": true
+          },
+          {
+            "id": "distinct-counts",
+            "expected": {
+              "id": "distinct-counts",
+              "failureFraction": 0.2,
+              "eventRate": 0.7
+            },
+            "actual": {
+              "id": "distinct-counts",
+              "failureFraction": 0.2,
+              "eventRate": 0.7
+            },
+            "matches": true
+          }
+        ]
+      },
+      {
+        "id": "test-energy-ceiling",
+        "outcome": "same-author-determinism-check",
+        "cases": [
+          {
+            "id": "terminal",
+            "expected": {
+              "id": "terminal",
+              "sum": 100,
+              "residual": 0,
+              "closed": true
+            },
+            "actual": {
+              "id": "terminal",
+              "sum": 100,
+              "residual": 0,
+              "closed": true
+            },
+            "matches": true
+          },
+          {
+            "id": "double-count",
+            "expected": {
+              "id": "double-count",
+              "sum": 130,
+              "residual": -30,
+              "closed": false
+            },
+            "actual": {
+              "id": "double-count",
+              "sum": 130,
+              "residual": -30,
+              "closed": false
+            },
+            "matches": true
+          },
+          {
+            "id": "ideal-ceiling",
+            "expected": {
+              "id": "ideal-ceiling",
+              "ceiling": 0.25,
+              "workFraction": 0.25,
+              "permittedByBound": true
+            },
+            "actual": {
+              "id": "ideal-ceiling",
+              "ceiling": 0.25,
+              "workFraction": 0.25,
+              "permittedByBound": true
+            },
+            "matches": true
+          },
+          {
+            "id": "above-ceiling",
+            "expected": {
+              "id": "above-ceiling",
+              "ceiling": 0.25,
+              "workFraction": 0.3,
+              "permittedByBound": false
+            },
+            "actual": {
+              "id": "above-ceiling",
+              "ceiling": 0.25,
+              "workFraction": 0.3,
+              "permittedByBound": false
+            },
+            "matches": true
+          },
+          {
+            "id": "under-accounted",
+            "expected": {
+              "id": "under-accounted",
+              "sum": 90,
+              "residual": 10,
+              "closed": false
+            },
+            "actual": {
+              "id": "under-accounted",
+              "sum": 90,
+              "residual": 10,
+              "closed": false
+            },
+            "matches": true
+          },
+          {
+            "id": "different-temperature",
+            "expected": {
+              "id": "different-temperature",
+              "ceiling": 0.4,
+              "workFraction": 0.4,
+              "permittedByBound": true
+            },
+            "actual": {
+              "id": "different-temperature",
+              "ceiling": 0.4,
+              "workFraction": 0.4,
+              "permittedByBound": true
+            },
+            "matches": true
+          }
+        ]
+      }
+    ]
+  },
+  "version": "2026-11-25-v2",
   "scope": "Observed same-author synthetic fixture checks and separately labeled archived reports. No independent replication or physical validation.",
   "observed": [
     {

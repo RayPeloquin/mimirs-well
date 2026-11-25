@@ -357,6 +357,12 @@ const root = path.resolve(__dirname, '..');
     await staticPage.setViewportSize({width:390,height:844});
     await staticPage.goto(base+'/chronicle.html');
     assert.equal(await staticPage.locator('#accounting-001 table tbody tr').count(),11);
+    assert.match(await staticPage.locator('#accounting-002').textContent(),/16 \/ 16 fixtures recorded; 0 excluded/);
+    assert.match(await staticPage.locator('#accounting-002').textContent(),/17 \/ 17 named mutants caught/);
+    await staticPage.getByRole('link',{name:'How to misread the Well',exact:true}).click();
+    assert.match(await staticPage.locator('main').textContent(),/A hash identifies bytes/);
+    for(const width of [320,390,768]){await staticPage.setViewportSize({width,height:844});assert.ok(await staticPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Evidence guide overflow '+width);}
+    await staticPage.setViewportSize({width:390,height:844});await staticPage.goto(base+'/chronicle.html');
     assert.match(await staticPage.locator('#archived-temporal-acoustics').textContent(),/Five of eight strong solid-inclusion/);
     assert.match(await staticPage.locator('main').textContent(),/No independent replication/);
     assert.ok(await staticPage.getByRole('link',{name:'Frozen queue snapshot'}).isVisible());
