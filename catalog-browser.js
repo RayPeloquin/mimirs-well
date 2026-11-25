@@ -95,5 +95,6 @@ more.addEventListener("click", () => {
   next?.row.querySelector("a")?.focus();
 });
 window.addEventListener("hashchange", restoreFilters);
+for (const detail of results.querySelectorAll("details[open]")) detail.open = false;
 controls.hidden = count.hidden = false;
 restoreFilters();

@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.1.0",
+  "catalog": "catalog.json",
+  "schema": "catalog.schema.json",
+  "counts": {
+    "total": 359,
+    "expanded": 174,
+    "pending_review": 185,
+    "ledger": 30
+  },
+  "catalog_sha256": "fad18c858551b499cc8ee458beea31b8acb40e2d1fdeac491a56bce8d69955b9",
+  "hash_encoding": "UTF-8, LF; record hash is SHA-256 of JSON.stringify(record excluding content_sha256)",
+  "policy": "publication-safety.html",
+  "policy_version": "2026-11-23",
+  "holds": [
+    {
+      "id": "mimir-hippo-extreme-energy-systems",
+      "notice": "Original technical source requires a separate safety/publication review before any public release."
+    },
+    {
+      "id": "hippo-dragon",
+      "notice": "Archive title only. Keep original detailed energy-system source nonpublic pending review."
+    },
+    {
+      "id": "hippo-thunderlung",
+      "notice": "Archive title only. Keep original technical source nonpublic pending review."
+    },
+    {
+      "id": "hippo-vortex-lmb",
+      "notice": "Archive title only. Keep original technical source nonpublic pending review."
+    },
+    {
+      "id": "hippo-mag-01-magnetic-compensation-experiment",
+      "notice": "Public concept and software-evidence summary allowed; no apparatus parameters or control implementation."
+    },
+    {
+      "id": "hippo-thruster-array",
+      "notice": "Public architectural summary allowed; no propulsion construction, power-routing, or operational-control specifications."
+    }
+  ],
+  "watches": [
+    {
+      "id": "hippo-bus-scheduled-hybrid-power-distribution",
+      "notice": "General energy-management overview allowed; separately review any detailed power-switching or high-energy implementation."
+    },
+    {
+      "id": "sound-bus",
+      "notice": "Shipboard utility/sensing interface overview allowed; separately review operational or tactical technical details."
+    },
+    {
+      "id": "quantum-shepherd",
+      "notice": "Facility-management concept allowed; review any unpublished infrastructure or control specifications before release."
+    }
+  ],
+  "equation_eligible": [
+    "skeptic-1",
+    "echo-rx",
+    "ghostglass",
+    "temporal-acoustics"
+  ]
+}

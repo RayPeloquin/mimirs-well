@@ -1,0 +1,178 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Mimir's Well public catalog v1.1",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "id",
+      "title",
+      "status",
+      "evidence",
+      "contributors",
+      "url",
+      "record_status",
+      "evidence_types",
+      "publication_hold",
+      "publication_notice",
+      "summary",
+      "revision_note",
+      "canonical_url",
+      "source_urls",
+      "ledger_url",
+      "ledger_updated",
+      "evidence_notice",
+      "policy_url",
+      "content_sha256"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^[a-z0-9-]+$"
+      },
+      "title": {
+        "type": "string"
+      },
+      "status": {
+        "enum": [
+          "Expanded record",
+          "Source review pending"
+        ]
+      },
+      "evidence": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "contributors": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "url": {
+        "type": "string"
+      },
+      "record_status": {
+        "enum": [
+          "expanded",
+          "pending_review"
+        ]
+      },
+      "evidence_types": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "enum": [
+            "numerical",
+            "software",
+            "concept",
+            "unclassified",
+            "pending"
+          ]
+        }
+      },
+      "publication_hold": {
+        "enum": [
+          "none",
+          "precautionary_hold_summary_only",
+          "review_watch"
+        ]
+      },
+      "publication_notice": {
+        "type": "string",
+        "minLength": 1
+      },
+      "summary": {
+        "type": "string",
+        "minLength": 1
+      },
+      "revision_note": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "canonical_url": {
+        "type": "string",
+        "format": "uri"
+      },
+      "source_urls": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "ledger_url": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "format": "uri"
+      },
+      "ledger_updated": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "format": "date"
+      },
+      "evidence_notice": {
+        "type": "string"
+      },
+      "policy_url": {
+        "type": "string",
+        "format": "uri"
+      },
+      "content_sha256": {
+        "type": "string",
+        "pattern": "^[a-f0-9]{64}$"
+      }
+    },
+    "allOf": [
+      {
+        "if": {
+          "properties": {
+            "publication_hold": {
+              "enum": [
+                "precautionary_hold_summary_only",
+                "review_watch"
+              ]
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "source_urls": {
+              "maxItems": 0
+            }
+          }
+        }
+      },
+      {
+        "if": {
+          "properties": {
+            "record_status": {
+              "const": "pending_review"
+            },
+            "ledger_url": {
+              "type": "null"
+            }
+          }
+        },
+        "then": {
+          "properties": {
+            "evidence_types": {
+              "const": [
+                "pending"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}
