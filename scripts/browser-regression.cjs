@@ -242,6 +242,36 @@ const root = path.resolve(__dirname, '..');
     for(const width of [320,390,768]){await notebook.setViewportSize({width,height:844});assert.ok(await notebook.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Notebook mobile overflow '+width);}
     assert.deepEqual(outgoing,[]);assert.deepEqual(notebookErrors,[]);await notebook.close();
     console.log('PASS Scriptorium: hosted lock, offline draft, archive export and reopen, invalid import, separate packet, revocation, zero HTTP requests and mobile widths');
+    await page.goto(base+'/test-queue.html');
+    assert.equal(await page.locator('.queue-card:visible').count(),6);
+    await page.locator('#queue-priority').selectOption('1');assert.equal(await page.locator('.queue-card:visible').count(),3);
+    await page.goto(base+'/test-worksheet.html');assert.ok(await page.locator('#locked').isVisible());assert.ok(await page.locator('#work').isHidden());
+    const worksheet=await context.newPage();const worksheetRequests=[];const worksheetErrors=[];
+    worksheet.on('request',r=>{if(/^https?:/i.test(r.url()))worksheetRequests.push(r.url());});worksheet.on('pageerror',e=>worksheetErrors.push(e.message));
+    await worksheet.goto(require('node:url').pathToFileURL(path.join(root,'test-worksheet.html')).href);
+    assert.equal(await worksheet.locator('#task option').count(),6);assert.ok(await worksheet.locator('#freeze').isDisabled());
+    assert.ok(await worksheet.locator('#result').isHidden());
+    for(const k of ['source','environment','inputs','criteria'])await worksheet.locator('#'+k).fill('SYNTHETIC BROWSER FIXTURE ONLY: '+k);
+    await worksheet.locator('#ready').check();
+    const [planDownload]=await Promise.all([worksheet.waitForEvent('download'),worksheet.locator('#freeze').click()]);
+    const planFile=await planDownload.path();const plan=JSON.parse(fs.readFileSync(planFile,'utf8'));assert.equal(plan.payload.format,'mimirs-well-frozen-test-plan');
+    assert.equal(plan.digest,require('node:crypto').createHash('sha256').update(JSON.stringify(plan.payload)).digest('hex'));
+    assert.ok(await worksheet.locator('#source').isDisabled());assert.ok(await worksheet.locator('#result').isHidden());
+    await worksheet.locator('#saved').check();assert.ok(await worksheet.locator('#result').isVisible());
+    await worksheet.locator('#outcome').selectOption('not-run');
+    for(const k of ['observations','artifacts','deviations'])await worksheet.locator('#'+k).fill('No test executed: browser fixture '+k);
+    await worksheet.locator('#honest').check();
+    const [runDownload]=await Promise.all([worksheet.waitForEvent('download'),worksheet.locator('#export').click()]);
+    const report=JSON.parse(fs.readFileSync(await runDownload.path(),'utf8'));assert.equal(report.outcome,'not-run');assert.equal(report.status,'reported-not-independently-verified');assert.equal(report.plan.digest,plan.digest);
+    await worksheet.locator('#observations').fill('Changed');assert.ok(await worksheet.locator('#export').isDisabled());
+    await worksheet.locator('#import').setInputFiles({name:'tampered.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify({...plan,payload:{...plan.payload,source:'changed'}}))});
+    await worksheet.waitForFunction(()=>document.querySelector('#status').textContent.includes('Plan not opened'));
+    worksheet.once('dialog',d=>d.accept());await worksheet.locator('#import').setInputFiles(planFile);
+    await worksheet.waitForFunction(()=>document.querySelector('#status').textContent.includes('Plan digest and embedded task matched'));
+    assert.ok(await worksheet.locator('#result').isHidden());
+    for(const width of [320,390,768]){await worksheet.setViewportSize({width,height:844});assert.ok(await worksheet.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Worksheet overflow '+width);}
+    assert.deepEqual(worksheetRequests,[]);assert.deepEqual(worksheetErrors,[]);await worksheet.close();
+    console.log('PASS Crucible queue: filtering, offline freeze, hash validation, reported outcome, revocation, tamper rejection, reopen, no HTTP requests, mobile');
     await staticPage.goto(base+'/catalog.html');
     const actual=await staticPage.locator('#catalog-entries > li').evaluateAll(es=>es.map(e=>e.id));
     assert.deepEqual(actual,data.map(r=>r.id));
@@ -319,6 +349,11 @@ const root = path.resolve(__dirname, '..');
     assert.equal(await staticPage.locator('.orrery-edge:visible').count(),15);
     assert.ok(await staticPage.locator('#orrery-controls').isHidden());
     for(const width of [320,390,768]){await staticPage.setViewportSize({width,height:844});assert.ok(await staticPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Orrery static mobile overflow at '+width);}
+    await staticPage.setViewportSize({width:390,height:844});
+    await staticPage.goto(base+'/test-queue.html');
+    assert.equal(await staticPage.locator('.queue-card:visible').count(),6);
+    assert.ok(await staticPage.locator('#queue-filter-label').isHidden());
+    for(const width of [320,390,768]){await staticPage.setViewportSize({width,height:844});assert.ok(await staticPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Queue overflow '+width);}
     await staticPage.setViewportSize({width:390,height:844});
     await staticPage.goto(base+'/trial-v-receipt.html');
     assert.match(await staticPage.locator('main').textContent(),/56 passed; 0 failed/);

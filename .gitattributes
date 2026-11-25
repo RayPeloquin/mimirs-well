@@ -11,3 +11,4 @@
 *.xml text eol=lf
 *.txt text eol=lf
 *.sha256 text eol=lf
+*.template text eol=lf
