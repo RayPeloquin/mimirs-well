@@ -13,6 +13,12 @@ test('canonical records, manifest, hashes and public boundaries agree',()=>{
  const html=readText('catalog.html');
  const directory=readText('record-index.html');
  assert.ok(Buffer.byteLength(directory)<100000);
+ assert.equal((directory.match(/\[Hold\]/g)||[]).length,manifest.holds.length);
+ assert.equal((directory.match(/\[Watch\]/g)||[]).length,manifest.watches.length);
+ assert.ok(readText('catalog-manifest.html').includes(manifest.catalog_sha256));
+ assert.ok(readText('equation-sources.html').includes('4 allow-listed transcriptions'));
+ assert.ok(catalog.find(r=>r.id==='the-traveler-solar-electric-research-airship').evidence.includes('airspace authorization'));
+ for(const f of ['catalog-manifest.html','equation-sources.html','sitemap.html']) assert.ok(readText('index.html').includes('href="'+f+'"'));
  assert.deepEqual([...directory.matchAll(/href="records\/([^"/]+)\.html"/g)].map(m=>m[1]),catalog.map(r=>r.id));
  const ids=[...html.matchAll(/<li id="([^"]+)"><div class="catalog-entry"/g)].map(m=>m[1]);
  assert.deepEqual(ids,catalog.map(r=>r.id));

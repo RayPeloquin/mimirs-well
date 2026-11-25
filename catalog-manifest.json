@@ -8,7 +8,7 @@
     "pending_review": 185,
     "ledger": 30
   },
-  "catalog_sha256": "e04f7be9ffb3f716a38455223e136ee907b85f35c70ea765a48558439437e6ec",
+  "catalog_sha256": "bebdcc6d0d1533066ff96b395f7baf6ece6a5cfc78fdb20838fbd2c6c6ef0f15",
   "hash_encoding": "UTF-8, LF; record hash is SHA-256 of JSON.stringify(record excluding content_sha256)",
   "policy": "publication-safety.html",
   "policy_version": "2026-11-23",
