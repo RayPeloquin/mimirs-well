@@ -4,6 +4,7 @@ const groups=[["safety","Portfolio architecture","Mount Olympus — Cross-domain
 // Keep the distinct protocell concept under the ECHO research family without conflating it with the host-coupled ECHO Genome.
 groups.push(['biology','Illustrated concept','ECHO Protocell — Resonant and Provisioned Seed']);
 groups.push(['biology','Computational concept','Zion Twin-Ring Tuna Habitat']);
+groups.push(['physics','Computational concept','The Traveler — Solar-electric research airship']);
 const labels={safety:'AI & governance',biology:'Biology & medicine',physics:'Physics & aerospace',infrastructure:'Water, power & infrastructure',robotics:'Robotics & field systems',community:'Communities & creative work',defense:'The Armory · Defense & Protective Systems'};
 // Public-facing grouping only: do not infer readiness, military qualification or weapon capability.
 const armoryDivisions=wellArmoryDivisions;
@@ -104,6 +105,13 @@ groups.forEach(([category,status,titles])=>titles.split('\n').filter(title=>!wit
  if(title==='FLUFFY-01')note.textContent='Unarmed, human-supervised quadruped scout concept for reconnaissance and observation around difficult terrain or damaged infrastructure. No built hardware, autonomy trials, navigation capability or bridge-assessment performance has been established.';
  if(title==='ECHO Protocell — Resonant and Provisioned Seed')note.textContent='Two illustrated minimal-cell proposals: a resonant energy-harvesting seed (v0.3) and a chemically supplied, provisioned seed (v0.4). Both remain speculative concepts; no constructed protocell, self-sustaining operation, replication or containment validation is established.';
  card.append(top,badge,heading,note);
+ if(title==='The Traveler — Solar-electric research airship'){
+   badge.textContent='Concept and historical simulation';
+   const projectLink=document.createElement('a');
+   projectLink.href='traveler.html';
+   projectLink.textContent='View the design and wind replay ↗';
+   card.append(projectLink);
+ }
  if(armoryDivision){const division=document.createElement('small');division.className='alias';division.textContent=armoryDivision+' · Research status unchanged';card.append(division)}
  if(title.startsWith('Sister’s Hope')){note.textContent='A proposed assistive glove concept exploring support for hand movement and everyday tasks. Design review and testing are pending; clinical benefit has not been established.';const alias=document.createElement('small');alias.className='alias';alias.textContent='Former archive title: Mimir’s Well — Hand Restoration Glove.';card.append(alias)}
  if(title.startsWith('Mimir’s Well')){note.textContent='A research architecture for AI discovery, collaboration and traceable findings. Separate from the former glove project.'}

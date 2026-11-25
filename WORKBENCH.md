@@ -2,7 +2,7 @@
 
 Public handoff snapshot · 21 November 2026
 
-**Current inventory:** 358 distinct project cards, 173 expanded records, 185 pending expanded review.
+**Current inventory:** 359 distinct project cards, 174 expanded records, 185 pending expanded review.
 
 [Open the workbench](https://raypeloquin.github.io/mimirs-well/#workbench)
 

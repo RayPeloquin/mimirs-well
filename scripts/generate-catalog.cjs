@@ -22,7 +22,7 @@ const entries = currentTitles().map(title => {
   const detail = expanded.get(id);
   return { id, title, status: detail ? 'Expanded record' : 'Source review pending',
     evidence: detail?.evidence || null, contributors: detail?.contributors || null,
-    url: 'index.html#design/' + id };
+    url: detail?.publicPage || 'index.html#design/' + id };
 }).sort((a, b) => a.id < b.id ? -1 : a.id > b.id ? 1 : 0);
 assert.equal(new Set(entries.map(entry => entry.id)).size, entries.length);
 output('catalog.json', JSON.stringify(entries, null, 2) + '\n');
@@ -68,7 +68,8 @@ for (const record of globalThis.MimirsLedgerData) {
 }
 
 const rows = entries.map(entry => {
-  const evidence = ledgerEvidence.get(entry.id) || [expanded.has(entry.id) ? 'unclassified' : 'pending'];
+  const detail = expanded.get(entry.id);
+  const evidence = ledgerEvidence.get(entry.id) || [detail?.evidenceType || (detail ? 'unclassified' : 'pending')];
   const familyIds = familyIdsFor(entry.title);
   const publicationStatus = publication.holds[entry.id] ? publication.holdLabel :
     publication.watches[entry.id] ? publication.watchLabel : '';
