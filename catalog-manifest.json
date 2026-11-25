@@ -3,12 +3,12 @@
   "catalog": "catalog.json",
   "schema": "catalog.schema.json",
   "counts": {
-    "total": 361,
-    "expanded": 186,
-    "pending_review": 175,
+    "total": 364,
+    "expanded": 191,
+    "pending_review": 173,
     "ledger": 30
   },
-  "catalog_sha256": "c3bd0d4bcfa77742f34c9228dd62d8cd4fea9ad37ce82423b4e1d89ebacb7b09",
+  "catalog_sha256": "3521c010812b7f8f1d0b4a80924f3cad2a8f2d9f6718e5095408aad1ffbc474d",
   "hash_encoding": "UTF-8, LF; record hash is SHA-256 of JSON.stringify(record excluding content_sha256)",
   "policy": "publication-safety.html",
   "policy_version": "2026-11-23",

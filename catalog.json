@@ -555,6 +555,31 @@
     "content_sha256": "09d5c2e0a934849ee32b1e3f60552d8e4df41290ab4bc4d956aad1bb11ad90ec"
   },
   {
+    "id": "ambassador-anti-jamming-satellite-navigation-system",
+    "title": "Ambassador Anti-Jamming Satellite Navigation System",
+    "status": "Expanded record",
+    "evidence": "Illustration only; no verified receiver, interference rejection, positioning accuracy or qualification. Example specifications are not measurements.",
+    "contributors": "Recovered artwork supplied from Mr. Peloquin's collaborative design collection; individual illustration authorship is unverified.",
+    "url": "index.html#design/ambassador-anti-jamming-satellite-navigation-system",
+    "record_status": "expanded",
+    "evidence_types": [
+      "concept"
+    ],
+    "publication_hold": "none",
+    "publication_notice": "Standard public record; no technical-release approval implied.",
+    "summary": "A proposed navigation-receiver resilience and integrity-monitoring architecture.",
+    "revision_note": "Recovered visual sources: Ambassador architecture overview.",
+    "canonical_url": "https://raypeloquin.github.io/mimirs-well/records/ambassador-anti-jamming-satellite-navigation-system.html",
+    "source_urls": [
+      "https://raypeloquin.github.io/mimirs-well/public-notes/ambassador-anti-jamming-satellite-navigation-system-artwork.md"
+    ],
+    "ledger_url": null,
+    "ledger_updated": null,
+    "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
+    "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
+    "content_sha256": "630ba45a0ea43d141103cfed0c316aa5b0cf22dec0fb5f973be5b7b01ffe346c"
+  },
+  {
     "id": "amphibishell",
     "title": "Amphibishell",
     "status": "Expanded record",
@@ -1740,26 +1765,28 @@
     "id": "crystal-damping-loop",
     "title": "Crystal Damping Loop",
     "status": "Expanded record",
-    "evidence": "No hardware prototype, measured latency, suppression or independent stability validation. High-energy installation is not demonstrated.",
-    "contributors": "Mr. Peloquin's saved engineering archive; component-level authorship not yet determined.",
-    "url": "index.html#design/crystal-damping-loop",
+    "evidence": "No hardware prototype, measured latency, suppression or independent stability validation. High-energy installation is not demonstrated.\n\nNo demonstrated launch-vehicle integration, hardware performance, vibration suppression or qubit coherence gain. Illustrated timing and capability targets are not results. No affiliation with or endorsement by a launch provider is established.",
+    "contributors": "Mr. Peloquin's saved engineering archive; component-level authorship not yet determined.\n\nRecovered artwork supplied from Mr. Peloquin's collaborative design collection; individual illustration authorship is unverified.",
+    "url": "crystal-damping-loop-artwork.html",
     "record_status": "expanded",
     "evidence_types": [
       "unclassified"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
-    "summary": "A bounded feedforward-plus-feedback vibration-control proposal with disturbance sensing, conservative actuator limits and residual checking.",
-    "revision_note": "Crystal Damping Loop v0.7 Raptor Integration Variant, archived design; November 2026 digest.",
+    "summary": "A bounded feedforward-plus-feedback vibration-control proposal with disturbance sensing, conservative actuator limits and residual checking.\n\nRecovered illustrations propose applications of vibration monitoring and damping in launch structures and quantum laboratory equipment.",
+    "revision_note": "Crystal Damping Loop v0.7 Raptor Integration Variant, archived design; November 2026 digest.\n\nRecovered visual sources: Illustrative launch-structure application; Crystal Damping Loop v1.0 Qubit Guardian.",
     "canonical_url": "https://raypeloquin.github.io/mimirs-well/records/crystal-damping-loop.html",
     "source_urls": [
-      "https://github.com/RayPeloquin/mimirs-well/blob/main/design-notes/crystal-damping-loop.md"
+      "https://github.com/RayPeloquin/mimirs-well/blob/main/design-notes/crystal-damping-loop.md",
+      "https://raypeloquin.github.io/mimirs-well/crystal-damping-loop-artwork.html",
+      "https://raypeloquin.github.io/mimirs-well/public-notes/crystal-damping-loop-artwork.md"
     ],
     "ledger_url": null,
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "c6c2d29434b1502fe509789d8986b5fc231c89d5e121e07ecebd6eb27dbd2d1c"
+    "content_sha256": "e170cd2aca73fa3a519437343e702fb9f4505cc9e4284f417b1d3654c00adb25"
   },
   {
     "id": "crystal-security",
@@ -4877,26 +4904,28 @@
     "id": "mosquito-reaper",
     "title": "Mosquito Reaper",
     "status": "Expanded record",
-    "evidence": "No built equipment, field capture or species-identification measurement, non-target insect assessment, drone safety case or reduction in mosquito density.",
-    "contributors": "Mr. Peloquin's archived concept portfolio; implementation and individual review credits are unverified.",
-    "url": "index.html#design/mosquito-reaper",
+    "evidence": "No built equipment, field capture or species-identification measurement, non-target insect assessment, drone safety case or reduction in mosquito density.\n\nNo demonstrated insect selectivity, pest reduction, non-target safety, electrical safety or flight performance. Illustrated targets are not results.",
+    "contributors": "Mr. Peloquin's archived concept portfolio; implementation and individual review credits are unverified.\n\nRecovered artwork supplied from Mr. Peloquin's collaborative design collection; individual illustration authorship is unverified.",
+    "url": "mosquito-reaper-artwork.html",
     "record_status": "expanded",
     "evidence_types": [
       "unclassified"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
-    "summary": "A civilian non-chemical mosquito-suppression research concept combining activity observation with supervised, enclosed insect capture.",
-    "revision_note": "Mosquito Reaper v0.1 archive state block; public summary only.",
+    "summary": "A civilian non-chemical mosquito-suppression research concept combining activity observation with supervised, enclosed insect capture.\n\nRecovered illustration of a proposed supervised insect monitoring and enclosed capture system.",
+    "revision_note": "Mosquito Reaper v0.1 archive state block; public summary only.\n\nRecovered visual sources: Mosquito Reaper v0.1.",
     "canonical_url": "https://raypeloquin.github.io/mimirs-well/records/mosquito-reaper.html",
     "source_urls": [
-      "https://github.com/RayPeloquin/mimirs-well/blob/main/design-notes/mosquito-reaper.md"
+      "https://github.com/RayPeloquin/mimirs-well/blob/main/design-notes/mosquito-reaper.md",
+      "https://raypeloquin.github.io/mimirs-well/mosquito-reaper-artwork.html",
+      "https://raypeloquin.github.io/mimirs-well/public-notes/mosquito-reaper-artwork.md"
     ],
     "ledger_url": null,
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "644de9111d027d7e9a4cc410377583372797503396645d5c6c54d83565a5cf41"
+    "content_sha256": "1bad02b17b29fed88a0336ef77dbf1ebcf4e6be42ab564a5451d46e4726ab3c1"
   },
   {
     "id": "mount-olympus-cross-domain-design-and-adversarial-review",
@@ -6113,24 +6142,27 @@
     "id": "quantum-floor",
     "title": "Quantum Floor",
     "status": "Expanded record",
-    "evidence": "The source describes pre-execution, between-shot and calibration-window orchestration. It provides targets and a proposed validation strategy, not completed randomized hardware benchmarks, shot-efficiency improvements or validated timing. Internal fully certified wording is not evidence of independent certification. Proposed subsystem composition has not been demonstrated by the reviewed artifact. This website update reviewed the saved source; it did not rerun the research or perform hardware tests.",
-    "contributors": "Archived Court architecture in Mr. Peloquin's collection; per-module implementation and review provenance remains to be established.",
-    "url": "index.html#design/quantum-floor",
+    "evidence": "The source describes pre-execution, between-shot and calibration-window orchestration. It provides targets and a proposed validation strategy, not completed randomized hardware benchmarks, shot-efficiency improvements or validated timing. Internal fully certified wording is not evidence of independent certification. Proposed subsystem composition has not been demonstrated by the reviewed artifact. This website update reviewed the saved source; it did not rerun the research or perform hardware tests.\n\nNo demonstrated improvement in coherence, fidelity, throughput, or facility reliability. Roadmap dates and numerical targets are aspirational, not predictions or results. Quantum hardware temperature requirements are platform-specific.",
+    "contributors": "Archived Court architecture in Mr. Peloquin's collection; per-module implementation and review provenance remains to be established.\n\nRecovered artwork supplied from Mr. Peloquin's collaborative design collection; individual illustration authorship is unverified.",
+    "url": "quantum-floor-artwork.html",
     "record_status": "expanded",
     "evidence_types": [
       "unclassified"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
-    "summary": "A proposed classical scheduling/stewardship layer for imperfect quantum infrastructure, coordinating work with calibration quality, environmental conditions and resource fairness.",
-    "revision_note": "Reviewed archive includes Quantum Floor v1.1 and a related v1.0 orchestration proposal. Catalog variants are not silently treated as one validated release. Source reviewed November 17, 2026.",
+    "summary": "A proposed classical scheduling/stewardship layer for imperfect quantum infrastructure, coordinating work with calibration quality, environmental conditions and resource fairness.\n\nRecovered artwork describes classical environmental stewardship, workload scheduling and a speculative research roadmap for quantum infrastructure.",
+    "revision_note": "Reviewed archive includes Quantum Floor v1.1 and a related v1.0 orchestration proposal. Catalog variants are not silently treated as one validated release. Source reviewed November 17, 2026.\n\nRecovered visual sources: Heimdall's Quantum Floor v1.1; Adaptive Quantum Floor v1.0; Heimdall's Gaze roadmap; provisional family association.",
     "canonical_url": "https://raypeloquin.github.io/mimirs-well/records/quantum-floor.html",
-    "source_urls": [],
+    "source_urls": [
+      "https://raypeloquin.github.io/mimirs-well/quantum-floor-artwork.html",
+      "https://raypeloquin.github.io/mimirs-well/public-notes/quantum-floor-artwork.md"
+    ],
     "ledger_url": null,
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "03a8da15b2208b2d17be47bb9bf2ab40a05c296a6c213e542eed3e4a10236e57"
+    "content_sha256": "38e0cf64a3a5e5d31a2213f593c1059040570fc2991d3b8144cdd4c5ceed6aef"
   },
   {
     "id": "quantum-judge",
@@ -6208,25 +6240,27 @@
   {
     "id": "quantum-ribbon-worm-governed-quantum-workload-controller",
     "title": "Quantum Ribbon Worm — Governed quantum workload controller",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
+    "status": "Expanded record",
+    "evidence": "Illustrated governance concept only; no verified quantum hardware control, improved fidelity, scheduling benefit or fairness guarantees. HIPPO-linked original stays nonpublic.",
+    "contributors": "Recovered artwork supplied from Mr. Peloquin's collaborative design collection; individual illustration authorship is unverified.",
     "url": "index.html#design/quantum-ribbon-worm-governed-quantum-workload-controller",
-    "record_status": "pending_review",
+    "record_status": "expanded",
     "evidence_types": [
-      "pending"
+      "concept"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
-    "summary": "Archive title awaiting source review; no evidence assessment established.",
-    "revision_note": null,
+    "summary": "A proposed classical resource-allocation governance concept for quantum workloads.",
+    "revision_note": "Recovered visual sources: Quantum Ribbon Worm v0.3 Devourer.",
     "canonical_url": "https://raypeloquin.github.io/mimirs-well/records/quantum-ribbon-worm-governed-quantum-workload-controller.html",
-    "source_urls": [],
+    "source_urls": [
+      "https://raypeloquin.github.io/mimirs-well/public-notes/quantum-ribbon-worm-governed-quantum-workload-controller-artwork.md"
+    ],
     "ledger_url": null,
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "7d541af2363699862e4ba1164bfa32fb7a730bb20d16152c24d77aa21c9131d1"
+    "content_sha256": "37ca713900416ba26dd80f3af778ccaa633f5af780577b2d172893160fcc3633"
   },
   {
     "id": "quantum-secure-field-communications",
@@ -7975,47 +8009,52 @@
     "id": "thoth-s-mind",
     "title": "Thoth’s Mind",
     "status": "Expanded record",
-    "evidence": "The reviewed text proposes signal-quality checks, competing explanations, bounded outputs, escalation and an audit record. It contains no implementation, clinical dataset results, calibrated confidence/refusal behavior or measured reduction in automation bias, liability or patient harm. Edge-deployable and regulation-aware labels are design framing. This website pass reviewed saved documentation; it did not rerun the underlying system or conduct physical/clinical experiments.",
-    "contributors": "Mr. Peloquin's archived Court collection; specific author and independent clinical reviewer attribution are not established by the reviewed text.",
-    "url": "index.html#design/thoth-s-mind",
+    "evidence": "The reviewed text proposes signal-quality checks, competing explanations, bounded outputs, escalation and an audit record. It contains no implementation, clinical dataset results, calibrated confidence/refusal behavior or measured reduction in automation bias, liability or patient harm. Edge-deployable and regulation-aware labels are design framing. This website pass reviewed saved documentation; it did not rerun the underlying system or conduct physical/clinical experiments.\n\nNo validated medical decision system, diagnostic accuracy, clinical safety, legal protection or deployed life-support fallback established. Illustrated doctrine is not medical guidance.",
+    "contributors": "Mr. Peloquin's archived Court collection; specific author and independent clinical reviewer attribution are not established by the reviewed text.\n\nRecovered artwork supplied from Mr. Peloquin's collaborative design collection; individual illustration authorship is unverified.",
+    "url": "thoth-s-mind-artwork.html",
     "record_status": "expanded",
     "evidence_types": [
       "unclassified"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
-    "summary": "An archive name requiring reconciliation: the file titled Thoths Mind.txt contains an AC² Clinical Governance Core proposal for challenging uncertain medical-AI outputs and preserving clinician review.",
-    "revision_note": "File heading: AC² Clinical Governance Core v1.3. A standalone specification explicitly identifying this as Thoth’s Mind was not verified. Source reviewed November 17, 2026.",
+    "summary": "An archive name requiring reconciliation: the file titled Thoths Mind.txt contains an AC² Clinical Governance Core proposal for challenging uncertain medical-AI outputs and preserving clinician review.\n\nRecovered clinical governance illustration emphasizes signal quality, opposing explanations, uncertainty, clinician authority and auditability.",
+    "revision_note": "File heading: AC² Clinical Governance Core v1.3. A standalone specification explicitly identifying this as Thoth’s Mind was not verified. Source reviewed November 17, 2026.\n\nRecovered visual sources: Thoth's Mind AC2 Clinical Governance Core v1.3.",
     "canonical_url": "https://raypeloquin.github.io/mimirs-well/records/thoth-s-mind.html",
-    "source_urls": [],
+    "source_urls": [
+      "https://raypeloquin.github.io/mimirs-well/thoth-s-mind-artwork.html",
+      "https://raypeloquin.github.io/mimirs-well/public-notes/thoth-s-mind-artwork.md"
+    ],
     "ledger_url": null,
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "ecb4639f3b8ea175441b874f2ac34a3a215ca4c00df4eab848016d7dce6c761a"
+    "content_sha256": "587b269dcc95f0e088cf8f6a3c441f55bc7b457816d809dd026ece3e8f5722b2"
   },
   {
     "id": "tickhammer",
     "title": "Tickhammer",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
+    "status": "Expanded record",
+    "evidence": "No validated pest control, environmental safety, human or animal exposure safety, or flight performance. Ozone is a chemical and can harm people and animals; the non-chemical branding is not adopted. Detailed intervention artwork remains nonpublic.",
+    "contributors": "Recovered artwork supplied from Mr. Peloquin's collaborative design collection; individual illustration authorship is unverified.",
     "url": "index.html#design/tickhammer",
-    "record_status": "pending_review",
+    "record_status": "expanded",
     "evidence_types": [
-      "pending"
+      "concept"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
-    "summary": "Archive title awaiting source review; no evidence assessment established.",
-    "revision_note": null,
+    "summary": "Two illustrated revisions of an environmental monitoring and tick-suppression concept.",
+    "revision_note": "Recovered visual sources: Tick Hammer v0.3; Tick Hammer Yard Defense v0.6.",
     "canonical_url": "https://raypeloquin.github.io/mimirs-well/records/tickhammer.html",
-    "source_urls": [],
+    "source_urls": [
+      "https://raypeloquin.github.io/mimirs-well/public-notes/tickhammer-artwork.md"
+    ],
     "ledger_url": null,
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "96075bfcd20d232955229a588129a2948ad42ca694e2bc9b0e147b814e1a3789"
+    "content_sha256": "75ceecd673728c9f296dfe60086403f6fbc62e6e8350b37f0ce3135644829ae3"
   },
   {
     "id": "titanium-pressure-adaptive-metamaterial-mount",
@@ -8230,6 +8269,32 @@
     "content_sha256": "f932663589bd6a05f993216d29f4cf9462b624f9f97283638eb390d548b12e04"
   },
   {
+    "id": "unidentified-transparent-fiber-composite-concept",
+    "title": "Unidentified Transparent Fiber Composite Concept",
+    "status": "Expanded record",
+    "evidence": "Material composition, mechanism, function, authorship and relationship to existing designs are unknown. No manufactured sample, measured optical or mechanical behavior established.",
+    "contributors": "Recovered artwork supplied from Mr. Peloquin's collaborative design collection; individual illustration authorship is unverified.",
+    "url": "unidentified-transparent-fiber-composite-concept-artwork.html",
+    "record_status": "expanded",
+    "evidence_types": [
+      "concept"
+    ],
+    "publication_hold": "none",
+    "publication_notice": "Standard public record; no technical-release approval implied.",
+    "summary": "An unlabeled rendering of a transparent structured block with curved fiber-like features and gold-colored inclusions. Descriptive archive title only.",
+    "revision_note": "Recovered visual sources: Unidentified transparent fiber-composite render.",
+    "canonical_url": "https://raypeloquin.github.io/mimirs-well/records/unidentified-transparent-fiber-composite-concept.html",
+    "source_urls": [
+      "https://raypeloquin.github.io/mimirs-well/unidentified-transparent-fiber-composite-concept-artwork.html",
+      "https://raypeloquin.github.io/mimirs-well/public-notes/unidentified-transparent-fiber-composite-concept-artwork.md"
+    ],
+    "ledger_url": null,
+    "ledger_updated": null,
+    "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
+    "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
+    "content_sha256": "5d44ff6526e6f28530c11ecfccdc696e73d78f67ad888848fb5766341019ff9e"
+  },
+  {
     "id": "uss-eldridge-working-physics-research",
     "title": "USS Eldridge — Working-physics research",
     "status": "Expanded record",
@@ -8347,6 +8412,31 @@
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
     "content_sha256": "9e3c89262fefbb597d983debeee9b3fe5f754e51f1b9fe1980553dac01ca7ba4"
+  },
+  {
+    "id": "vhg-vigilant-hibernation-grid",
+    "title": "VHG - Vigilant Hibernation Grid",
+    "status": "Expanded record",
+    "evidence": "No demonstrated detection accuracy, lifetime, readiness level, or safe field deployment. HIPPO-linked original is nonpublic.",
+    "contributors": "Recovered artwork supplied from Mr. Peloquin's collaborative design collection; individual illustration authorship is unverified.",
+    "url": "index.html#design/vhg-vigilant-hibernation-grid",
+    "record_status": "expanded",
+    "evidence_types": [
+      "concept"
+    ],
+    "publication_hold": "none",
+    "publication_notice": "Standard public record; no technical-release approval implied.",
+    "summary": "A proposed low-power environmental sensing and staged verification concept.",
+    "revision_note": "Recovered visual sources: VHG v2.0 Hardened Ghost.",
+    "canonical_url": "https://raypeloquin.github.io/mimirs-well/records/vhg-vigilant-hibernation-grid.html",
+    "source_urls": [
+      "https://raypeloquin.github.io/mimirs-well/public-notes/vhg-vigilant-hibernation-grid-artwork.md"
+    ],
+    "ledger_url": null,
+    "ledger_updated": null,
+    "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
+    "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
+    "content_sha256": "a0c4207457d1b819a038e491d49e3d8614a324e54412dec61328dcf9281de15d"
   },
   {
     "id": "vortexcap-supercapacitor",

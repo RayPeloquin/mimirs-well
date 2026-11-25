@@ -2,7 +2,7 @@
 
 Public handoff snapshot · 21 November 2026
 
-**Current inventory:** 361 distinct project cards, 186 expanded records, 175 pending expanded review.
+**Current inventory:** 364 distinct project cards, 191 expanded records, 173 pending expanded review.
 
 [Open the workbench](https://raypeloquin.github.io/mimirs-well/#workbench)
 
@@ -402,3 +402,8 @@ Seven illustrations matched to existing or separately named archive records. Two
 ## Recovered Court and research concept illustrations
 
 Ten existing titles received source-artwork notes; eight illustrations are public, with GIPS and HIPPO-linked Dragon's Bridle originals preserved locally only. The unlabeled glove is a tentative Sister's Hope match. Prior written-source evidence and limitations remain intact. Total 361 titles, 186 expanded and 175 pending.
+
+
+## Recovered quantum and environmental artwork
+
+Thirteen illustrations grouped into nine records; three new titles, including one descriptive unidentified-material entry. HIPPO-linked and other safety-sensitive originals remain outside public Git. No measured performance inferred. Total 364 titles, 191 expanded, 173 pending.
