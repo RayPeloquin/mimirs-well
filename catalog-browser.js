@@ -50,7 +50,8 @@ function render(anchor, scrollToAnchor = false) {
     "No projects match. Try a different search or clear the filters.";
   const remaining = matches.length - visible.size;
   more.hidden = remaining <= 0;
-  more.textContent = `Show ${Math.min(pageSize, remaining)} more projects`;
+  const nextCount = Math.min(pageSize, remaining);
+  more.textContent = `Show ${nextCount} more ${nextCount === 1 ? "project" : "projects"}`;
   if (scrollToAnchor && visible.has(anchor)) requestAnimationFrame(() => anchor.row.scrollIntoView());
   return firstPage;
 }
