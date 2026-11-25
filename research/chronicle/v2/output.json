@@ -1,0 +1,447 @@
+{
+  "format": "well-chronicle-coverage-v2",
+  "plan_sha256": "4d7ff068836a0809bfb4944c27a163045084a4e03ef1c2f159444db5cd30dd3d",
+  "status": "same-author-determinism-check",
+  "results": [
+    {
+      "id": "test-material-balance",
+      "outcome": "same-author-determinism-check",
+      "cases": [
+        {
+          "id": "closed",
+          "expected": {
+            "id": "closed",
+            "apparentResidual": 0,
+            "missing": [],
+            "closed": true,
+            "productRatio": 0.6
+          },
+          "actual": {
+            "id": "closed",
+            "apparentResidual": 0,
+            "missing": [],
+            "closed": true,
+            "productRatio": 0.6
+          },
+          "matches": true
+        },
+        {
+          "id": "missing-outlet",
+          "expected": {
+            "id": "missing-outlet",
+            "apparentResidual": 25,
+            "missing": [
+              "outlet"
+            ],
+            "closed": false,
+            "productRatio": 0.6
+          },
+          "actual": {
+            "id": "missing-outlet",
+            "apparentResidual": 25,
+            "missing": [
+              "outlet"
+            ],
+            "closed": false,
+            "productRatio": 0.6
+          },
+          "matches": true
+        },
+        {
+          "id": "missing-inventory",
+          "expected": {
+            "id": "missing-inventory",
+            "apparentResidual": 15,
+            "missing": [
+              "inventory"
+            ],
+            "closed": false,
+            "productRatio": 0.6
+          },
+          "actual": {
+            "id": "missing-inventory",
+            "apparentResidual": 15,
+            "missing": [
+              "inventory"
+            ],
+            "closed": false,
+            "productRatio": 0.6
+          },
+          "matches": true
+        },
+        {
+          "id": "complete-imbalance",
+          "expected": {
+            "id": "complete-imbalance",
+            "apparentResidual": 5,
+            "missing": [],
+            "closed": false,
+            "productRatio": 0.45
+          },
+          "actual": {
+            "id": "complete-imbalance",
+            "apparentResidual": 5,
+            "missing": [],
+            "closed": false,
+            "productRatio": 0.45
+          },
+          "matches": true
+        },
+        {
+          "id": "missing-but-zero-residual",
+          "expected": {
+            "id": "missing-but-zero-residual",
+            "apparentResidual": 0,
+            "missing": [
+              "outlet"
+            ],
+            "closed": false,
+            "productRatio": 0.6
+          },
+          "actual": {
+            "id": "missing-but-zero-residual",
+            "apparentResidual": 0,
+            "missing": [
+              "outlet"
+            ],
+            "closed": false,
+            "productRatio": 0.6
+          },
+          "matches": true
+        }
+      ]
+    },
+    {
+      "id": "test-failure-counts",
+      "outcome": "same-author-determinism-check",
+      "cases": [
+        {
+          "id": "A",
+          "expected": {
+            "id": "A",
+            "failureFraction": 0.2,
+            "eventRate": 0.2
+          },
+          "actual": {
+            "id": "A",
+            "failureFraction": 0.2,
+            "eventRate": 0.2
+          },
+          "matches": true
+        },
+        {
+          "id": "B",
+          "expected": {
+            "id": "B",
+            "failureFraction": 0.2,
+            "eventRate": 0.1
+          },
+          "actual": {
+            "id": "B",
+            "failureFraction": 0.2,
+            "eventRate": 0.1
+          },
+          "matches": true
+        },
+        {
+          "id": "C",
+          "expected": {
+            "id": "C",
+            "failureFraction": 0.4,
+            "eventRate": 0.2
+          },
+          "actual": {
+            "id": "C",
+            "failureFraction": 0.4,
+            "eventRate": 0.2
+          },
+          "matches": true
+        },
+        {
+          "id": "D",
+          "expected": {
+            "id": "D",
+            "failureFraction": 0.2,
+            "eventRate": null
+          },
+          "actual": {
+            "id": "D",
+            "failureFraction": 0.2,
+            "eventRate": null
+          },
+          "matches": true
+        },
+        {
+          "id": "distinct-counts",
+          "expected": {
+            "id": "distinct-counts",
+            "failureFraction": 0.2,
+            "eventRate": 0.7
+          },
+          "actual": {
+            "id": "distinct-counts",
+            "failureFraction": 0.2,
+            "eventRate": 0.7
+          },
+          "matches": true
+        }
+      ]
+    },
+    {
+      "id": "test-energy-ceiling",
+      "outcome": "same-author-determinism-check",
+      "cases": [
+        {
+          "id": "terminal",
+          "expected": {
+            "id": "terminal",
+            "sum": 100,
+            "residual": 0,
+            "closed": true
+          },
+          "actual": {
+            "id": "terminal",
+            "sum": 100,
+            "residual": 0,
+            "closed": true
+          },
+          "matches": true
+        },
+        {
+          "id": "double-count",
+          "expected": {
+            "id": "double-count",
+            "sum": 130,
+            "residual": -30,
+            "closed": false
+          },
+          "actual": {
+            "id": "double-count",
+            "sum": 130,
+            "residual": -30,
+            "closed": false
+          },
+          "matches": true
+        },
+        {
+          "id": "ideal-ceiling",
+          "expected": {
+            "id": "ideal-ceiling",
+            "ceiling": 0.25,
+            "workFraction": 0.25,
+            "permittedByBound": true
+          },
+          "actual": {
+            "id": "ideal-ceiling",
+            "ceiling": 0.25,
+            "workFraction": 0.25,
+            "permittedByBound": true
+          },
+          "matches": true
+        },
+        {
+          "id": "above-ceiling",
+          "expected": {
+            "id": "above-ceiling",
+            "ceiling": 0.25,
+            "workFraction": 0.3,
+            "permittedByBound": false
+          },
+          "actual": {
+            "id": "above-ceiling",
+            "ceiling": 0.25,
+            "workFraction": 0.3,
+            "permittedByBound": false
+          },
+          "matches": true
+        },
+        {
+          "id": "under-accounted",
+          "expected": {
+            "id": "under-accounted",
+            "sum": 90,
+            "residual": 10,
+            "closed": false
+          },
+          "actual": {
+            "id": "under-accounted",
+            "sum": 90,
+            "residual": 10,
+            "closed": false
+          },
+          "matches": true
+        },
+        {
+          "id": "different-temperature",
+          "expected": {
+            "id": "different-temperature",
+            "ceiling": 0.4,
+            "workFraction": 0.4,
+            "permittedByBound": true
+          },
+          "actual": {
+            "id": "different-temperature",
+            "ceiling": 0.4,
+            "workFraction": 0.4,
+            "permittedByBound": true
+          },
+          "matches": true
+        }
+      ]
+    }
+  ],
+  "mutants": [
+    {
+      "id": "ignore-residual",
+      "killed": true,
+      "mismatches": [
+        "test-material-balance/complete-imbalance"
+      ],
+      "errors": []
+    },
+    {
+      "id": "ignore-missing",
+      "killed": true,
+      "mismatches": [
+        "test-material-balance/missing-but-zero-residual"
+      ],
+      "errors": []
+    },
+    {
+      "id": "ledger-underaccepted",
+      "killed": true,
+      "mismatches": [
+        "test-energy-ceiling/under-accounted"
+      ],
+      "errors": []
+    },
+    {
+      "id": "constant-product-ratio",
+      "killed": true,
+      "mismatches": [
+        "test-material-balance/complete-imbalance"
+      ],
+      "errors": []
+    },
+    {
+      "id": "events-use-failures",
+      "killed": true,
+      "mismatches": [
+        "test-failure-counts/distinct-counts"
+      ],
+      "errors": []
+    },
+    {
+      "id": "failures-use-events",
+      "killed": true,
+      "mismatches": [
+        "test-failure-counts/distinct-counts"
+      ],
+      "errors": []
+    },
+    {
+      "id": "wrong-ceiling",
+      "killed": true,
+      "mismatches": [
+        "test-energy-ceiling/different-temperature"
+      ],
+      "errors": []
+    },
+    {
+      "id": "missing-as-zero",
+      "killed": true,
+      "mismatches": [
+        "test-material-balance/missing-outlet",
+        "test-material-balance/missing-inventory",
+        "test-material-balance/missing-but-zero-residual"
+      ],
+      "errors": []
+    },
+    {
+      "id": "unguarded-ratio",
+      "killed": true,
+      "mismatches": [
+        "test-failure-counts/D"
+      ],
+      "errors": []
+    },
+    {
+      "id": "zero-default-ratio",
+      "killed": true,
+      "mismatches": [
+        "test-failure-counts/D"
+      ],
+      "errors": []
+    },
+    {
+      "id": "deduplicate-transfers",
+      "killed": true,
+      "mismatches": [
+        "test-energy-ceiling/double-count"
+      ],
+      "errors": []
+    },
+    {
+      "id": "absolute-residual",
+      "killed": true,
+      "mismatches": [
+        "test-energy-ceiling/double-count"
+      ],
+      "errors": []
+    },
+    {
+      "id": "exclusive-bound",
+      "killed": true,
+      "mismatches": [
+        "test-energy-ceiling/ideal-ceiling",
+        "test-energy-ceiling/different-temperature"
+      ],
+      "errors": []
+    },
+    {
+      "id": "always-permit",
+      "killed": true,
+      "mismatches": [
+        "test-energy-ceiling/above-ceiling"
+      ],
+      "errors": []
+    },
+    {
+      "id": "never-permit",
+      "killed": true,
+      "mismatches": [
+        "test-energy-ceiling/ideal-ceiling",
+        "test-energy-ceiling/different-temperature"
+      ],
+      "errors": []
+    },
+    {
+      "id": "celsius-bound",
+      "killed": true,
+      "mismatches": [
+        "test-energy-ceiling/ideal-ceiling",
+        "test-energy-ceiling/above-ceiling",
+        "test-energy-ceiling/different-temperature"
+      ],
+      "errors": []
+    },
+    {
+      "id": "omit-inventory",
+      "killed": true,
+      "mismatches": [
+        "test-material-balance/closed",
+        "test-material-balance/missing-outlet",
+        "test-material-balance/complete-imbalance",
+        "test-material-balance/missing-but-zero-residual"
+      ],
+      "errors": []
+    }
+  ],
+  "retention": {
+    "planned": 16,
+    "recorded": 16,
+    "excluded": 0,
+    "mutants_planned": 17,
+    "mutants_recorded": 17
+  }
+}

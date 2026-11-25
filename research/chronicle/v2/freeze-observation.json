@@ -1,0 +1,37 @@
+{
+  "commit": "f5570d1dc6ffcb2018c5373e86d14d13c7398049",
+  "observed_at": "2026-11-25T07:49:37.020Z",
+  "files": [
+    {
+      "file": "plan.json",
+      "url": "https://raw.githubusercontent.com/RayPeloquin/mimirs-well/f5570d1dc6ffcb2018c5373e86d14d13c7398049/research/chronicle/v2/plan.json",
+      "sha256": "4d7ff068836a0809bfb4944c27a163045084a4e03ef1c2f159444db5cd30dd3d",
+      "http_date": "Wed, 25 Nov 2026 07:49:35 GMT"
+    },
+    {
+      "file": "calculate.cjs",
+      "url": "https://raw.githubusercontent.com/RayPeloquin/mimirs-well/f5570d1dc6ffcb2018c5373e86d14d13c7398049/research/chronicle/v2/calculate.cjs",
+      "sha256": "65b57afc2d822b23430d6445e05f1b6343b3221e6e44870af440615fdca7b787",
+      "http_date": "Wed, 25 Nov 2026 07:49:36 GMT"
+    },
+    {
+      "file": "run.cjs",
+      "url": "https://raw.githubusercontent.com/RayPeloquin/mimirs-well/f5570d1dc6ffcb2018c5373e86d14d13c7398049/research/chronicle/v2/run.cjs",
+      "sha256": "5b48529749fc0a6c8f78f230ed2e1c59caff7e0e193d7c75f390073b91711409",
+      "http_date": "Wed, 25 Nov 2026 07:49:36 GMT"
+    },
+    {
+      "file": "mutants.json",
+      "url": "https://raw.githubusercontent.com/RayPeloquin/mimirs-well/f5570d1dc6ffcb2018c5373e86d14d13c7398049/research/chronicle/v2/mutants.json",
+      "sha256": "72a24dbb66f6ade23f12aae3ed7fa52695e4503cb5b407ca8f531f761862c1b3",
+      "http_date": "Wed, 25 Nov 2026 07:49:36 GMT"
+    },
+    {
+      "file": "queue-snapshot.json",
+      "url": "https://raw.githubusercontent.com/RayPeloquin/mimirs-well/f5570d1dc6ffcb2018c5373e86d14d13c7398049/research/chronicle/v2/queue-snapshot.json",
+      "sha256": "ca67b3452cc17efdc04eedba8de2cd52e7c2fe7ca37ecce67c78b2f7dbbbf50d",
+      "http_date": "Wed, 25 Nov 2026 07:49:36 GMT"
+    }
+  ],
+  "scope": "Author observed public commit-pinned GitHub bytes before running. Not independent trusted timestamp, signature, or third-party preregistration."
+}

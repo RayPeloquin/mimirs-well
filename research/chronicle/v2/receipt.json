@@ -1,0 +1,54 @@
+{
+  "format": "well-chronicle-coverage-receipt-v2",
+  "freeze_commit": "f5570d1dc6ffcb2018c5373e86d14d13c7398049",
+  "started_at": "2026-11-25T07:49:37.024Z",
+  "finished_at": "2026-11-25T07:49:37.164Z",
+  "environment": {
+    "node": "v24.22.2",
+    "platform": "win32",
+    "arch": "x64"
+  },
+  "command": "node research/chronicle/v2/run.cjs",
+  "exit_code": 0,
+  "stderr": "",
+  "evidence_class": "same-author-determinism-check",
+  "artifacts": [
+    {
+      "file": "plan.json",
+      "sha256": "4d7ff068836a0809bfb4944c27a163045084a4e03ef1c2f159444db5cd30dd3d"
+    },
+    {
+      "file": "calculate.cjs",
+      "sha256": "65b57afc2d822b23430d6445e05f1b6343b3221e6e44870af440615fdca7b787"
+    },
+    {
+      "file": "run.cjs",
+      "sha256": "5b48529749fc0a6c8f78f230ed2e1c59caff7e0e193d7c75f390073b91711409"
+    },
+    {
+      "file": "mutants.json",
+      "sha256": "72a24dbb66f6ade23f12aae3ed7fa52695e4503cb5b407ca8f531f761862c1b3"
+    },
+    {
+      "file": "queue-snapshot.json",
+      "sha256": "ca67b3452cc17efdc04eedba8de2cd52e7c2fe7ca37ecce67c78b2f7dbbbf50d"
+    },
+    {
+      "file": "freeze-observation.json",
+      "sha256": "8fa9ef6c683e95b0f0835422abe9cf83bbdf665a3548409ddf993e1c3bd00223"
+    },
+    {
+      "file": "output.json",
+      "sha256": "2c849de719a895ff4551b31698b008b4b7a909185ebc7ce2957537862f669c6b"
+    }
+  ],
+  "status": "same-author-determinism-check",
+  "retention": {
+    "planned": 16,
+    "recorded": 16,
+    "excluded": 0,
+    "mutants_planned": 17,
+    "mutants_recorded": 17
+  },
+  "limitations": "Finite authored fixtures and separately reconstructed mutants; not Claude exact original 16-mutant script, independent replication, physical evidence, or exhaustive mutation coverage."
+}
