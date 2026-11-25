@@ -45,6 +45,13 @@ test('canonical records, manifest, hashes and public boundaries agree',()=>{
  }
  assert.deepEqual(manifest.holds.map(x=>x.id),Object.keys(controls.holds));
  assert.deepEqual(manifest.watches.map(x=>x.id),Object.keys(controls.watches));
+ const guidePage=readText('guided-alchemy.html');
+ const vm=require('node:vm'),ctx={window:{}};vm.runInNewContext(readText('guided-alchemy.js'),ctx);
+ for(const g of ctx.window.WellGuidedRecipes){assert.ok(guidePage.includes('id="'+g.id+'"'));assert.ok(readText('records/'+g.a+'.html').includes('guided-alchemy.html#'+g.id));assert.ok(readText('records/'+g.b+'.html').includes('guided-alchemy.html#'+g.id));}
+ assert.equal((guidePage.match(/<section id=/g)||[]).length,ctx.window.WellGuidedRecipes.length);
+ const receipt=JSON.parse(readText('verification-receipt.json'));assert.equal(receipt.passed,receipt.tests.length);assert.equal(receipt.failed,0);assert.ok(readText('verification-receipt.html').includes(receipt.commit));
+ assert.ok(directory.includes('[Artwork identity pending]'));
+ for(const f of ['guided-alchemy.html','verification-receipt.html'])assert.ok(readText('index.html').includes('href="'+f+'"'));
  const equations=JSON.parse(readText('equation-sources.json'));
  assert.deepEqual(Object.keys(equations),controls.equationEligible);
  assert.ok(Object.keys(equations).every(id=>!Object.hasOwn(controls.holds,id)));
