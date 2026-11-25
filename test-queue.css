@@ -1,0 +1,1 @@
+.queue-card{border:1px solid var(--line);background:var(--panel);border-radius:8px;padding:1rem;margin:1rem 0}.queue-card dt{color:var(--mint);font-weight:650}.queue-card dd{margin:0 0 .7rem}.queue-card h2{font-size:1.5rem;margin:.3rem 0}.queue-card[hidden]{display:none!important}#queue-priority{max-width:100%}

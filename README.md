@@ -35,6 +35,10 @@ The homepage preserves its coin-and-ripple visual and the playful **“An Offeri
 
 The homepage includes a quietly mixed, original procedural soundscape: occasional water droplets with a restrained echo, filtered cavern air and low stone-like resonance. It uses the browser's Web Audio API and no recorded/audio assets, autoplay, cookies or telemetry. It **always starts off**. Visitors may explicitly press **Listen to the Well**, adjust volume, or **Silence the Well**. Playback also stops if they leave or hide the tab. The rest of the site works normally when audio is unsupported or disabled. Source: `well-ambience.js`.
 
+## The Crucible work queue
+
+[The experimental work queue](https://raypeloquin.github.io/mimirs-well/test-queue.html) contains proposed synthetic checks, not results or safety approvals. The downloaded offline worksheet freezes a plan and records a separately reported outcome; there is no automated execution or publication. The CRUCIBLE autonomy project remains distinct.
+
 ## The Scriptorium
 
 [The Scriptorium](https://raypeloquin.github.io/mimirs-well/scriptorium.html) offers a downloadable offline notebook. Drafts are held in session memory and explicitly exported as local JSON, not encrypted or automatically saved. The hosted editor is disabled. The separate review packet contains only manually entered candidate public fields and requires human release review. Keep private archives outside the public repository.
