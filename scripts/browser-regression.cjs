@@ -172,6 +172,21 @@ const root = path.resolve(__dirname, '..');
       assert.equal(await staticPage.locator('main img').count(),0);
     }
     console.log('PASS seven recovered records, two public artworks, five summary-only records');
+    for(const id of ["odin-s-ravens","enki-s-will-living-safety-stack","court-of-the-synthetic-multi-model-engineering-review","aegis-sentinel-mesh","sister-s-hope-hand-restoration-gloves","olympus-floor-model-engineering-project-and-portfolio-control","mount-olympus-cross-domain-design-and-adversarial-review","weaver-s-shuttle"]){
+      await staticPage.goto(base+'/records/'+id+'.html');
+      assert.ok(await staticPage.locator('a[href$="/'+id+'-art.html"]').count());
+      await staticPage.goto(base+'/'+id+'-art.html');
+      assert.match(await staticPage.locator('aside').textContent(),/CONCEPT ARTWORK ONLY/);
+      await staticPage.locator('figure img').scrollIntoViewIfNeeded();
+      await staticPage.waitForFunction(()=>Array.from(document.images).every(i=>i.complete&&i.naturalWidth>0));
+      assert.ok(await staticPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+    }
+    for(const id of ["gips-intramedullary-guidance-and-risk-control","dragon-s-bridle"]){
+      await staticPage.goto(base+'/records/'+id+'.html');
+      assert.equal(await staticPage.locator('main img').count(),0);
+      assert.ok(!(await staticPage.locator('a[href$="/'+id+'-art.html"]').count()));
+    }
+    console.log('PASS ten recovered Court records, eight public images, two summary-only records');
     await staticPage.goto(base+'/catalog.html#skeptic-1');
     assert.ok(await staticPage.locator('#skeptic-1').isVisible());
     await staticPage.goto(base+'/equation-bench.html');

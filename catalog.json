@@ -222,24 +222,27 @@
     "id": "aegis-sentinel-mesh",
     "title": "Aegis Sentinel Mesh",
     "status": "Expanded record",
-    "evidence": "The reviewed integration note assigns conceptual responsibilities, not measured sensing, refusal performance or real-world protection. Its audit-cleared language is not external certification. Interfaces, conflicting decisions and failure cascades remain implementation questions. This website update reviewed saved documentation; it did not rerun models or conduct experiments.",
-    "contributors": "Mr. Peloquin's Court architecture collection; individual implementation and reviewer provenance remains to be reconciled.",
-    "url": "index.html#design/aegis-sentinel-mesh",
+    "evidence": "The reviewed integration note assigns conceptual responsibilities, not measured sensing, refusal performance or real-world protection. Its audit-cleared language is not external certification. Interfaces, conflicting decisions and failure cascades remain implementation questions. This website update reviewed saved documentation; it did not rerun models or conduct experiments.\n\nArtwork review: No working shield, field protection, operational deployment, validated autonomy, or tier clearance established. The illustrated effects and interface are speculative.",
+    "contributors": "Mr. Peloquin's Court architecture collection; individual implementation and reviewer provenance remains to be reconciled.\n\nRecovered from Mr. Peloquin's collaborative design collection; individual illustration authorship is unverified.",
+    "url": "aegis-sentinel-mesh-art.html",
     "record_status": "expanded",
     "evidence_types": [
       "unclassified"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
-    "summary": "A proposed observation/refusal component within the Triad, intended to keep field assessment and bounded action eligibility separate from operator-coupling assessment and learning.",
-    "revision_note": "Aegis v1.1 is referenced in an archived Triad review; no current standalone implementation package verified. Source reviewed November 17, 2026.",
+    "summary": "A proposed observation/refusal component within the Triad, intended to keep field assessment and bounded action eligibility separate from operator-coupling assessment and learning.\n\nRecovered artwork: An illustrated governance and protective-system concept emphasizing human decision authority and bounded recommendations.",
+    "revision_note": "Aegis v1.1 is referenced in an archived Triad review; no current standalone implementation package verified. Source reviewed November 17, 2026.\n\nAdditional visual source: AEGIS Sentinel Mesh v1.1.",
     "canonical_url": "https://raypeloquin.github.io/mimirs-well/records/aegis-sentinel-mesh.html",
-    "source_urls": [],
+    "source_urls": [
+      "https://raypeloquin.github.io/mimirs-well/aegis-sentinel-mesh-art.html",
+      "https://raypeloquin.github.io/mimirs-well/public-notes/aegis-sentinel-mesh.md"
+    ],
     "ledger_url": null,
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "c26af52344b0c5d7beceb19ef37adef368b28f74f519f4e75654547b9f4f5535"
+    "content_sha256": "e04e986cdad236c88256966c79023e4488105b9b3ea2dbfafece4bff05e3177c"
   },
   {
     "id": "aegis-twin-v0-6",
@@ -1633,28 +1636,30 @@
     "id": "court-of-the-synthetic-multi-model-engineering-review",
     "title": "Court of the Synthetic — Multi-model engineering review",
     "status": "Expanded record",
-    "evidence": "Public project documentation records contributions from multiple AI systems and selectively adopted corrections. Shared briefs, common sources and model agreement are not independent replication. The website demonstrates an organized collection, not a fully automated multi-agent platform or universal validation process. This website update reviewed the saved source; it did not rerun the research or perform hardware tests.",
-    "contributors": "Mr. Peloquin and Asteris Solenne / ChatGPT; broader work includes Grok, Claude, Gemini and Meta AI. Each project's actual participants and contributions belong with its own record.",
-    "url": "index.html#design/court-of-the-synthetic-multi-model-engineering-review",
+    "evidence": "Public project documentation records contributions from multiple AI systems and selectively adopted corrections. Shared briefs, common sources and model agreement are not independent replication. The website demonstrates an organized collection, not a fully automated multi-agent platform or universal validation process. This website update reviewed the saved source; it did not rerun the research or perform hardware tests.\n\nArtwork review: The illustrated council is a visual metaphor for the collaboration method, not a depiction of actual people, independent experimental review, institutional endorsement or deployed agents.",
+    "contributors": "Mr. Peloquin and Asteris Solenne / ChatGPT; broader work includes Grok, Claude, Gemini and Meta AI. Each project's actual participants and contributions belong with its own record.\n\nRecovered from Mr. Peloquin's collaborative design collection; individual illustration authorship is unverified.",
+    "url": "court-of-the-synthetic-multi-model-engineering-review-art.html",
     "record_status": "expanded",
     "evidence_types": [
       "unclassified"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
-    "summary": "A human–AI collaboration method for questioning designs, comparing criticism, checking sources and revising claims. Asteris Solenne / ChatGPT leads in collaboration with Mr. Peloquin.",
-    "revision_note": "Current public collection and project-specific review records, reviewed November 17, 2026. No single software release is assigned to the method. Source reviewed November 17, 2026.",
+    "summary": "A human–AI collaboration method for questioning designs, comparing criticism, checking sources and revising claims. Asteris Solenne / ChatGPT leads in collaboration with Mr. Peloquin.\n\nRecovered artwork: A symbolic depiction of the Court review roles and Forge method.",
+    "revision_note": "Current public collection and project-specific review records, reviewed November 17, 2026. No single software release is assigned to the method. Source reviewed November 17, 2026.\n\nAdditional visual source: Mount Olympus Design Model ? Hera variant.",
     "canonical_url": "https://raypeloquin.github.io/mimirs-well/records/court-of-the-synthetic-multi-model-engineering-review.html",
     "source_urls": [
       "https://raypeloquin.github.io/mimirs-well/#court",
       "https://github.com/RayPeloquin/mimirs-well/blob/main/WORKBENCH.md",
-      "https://github.com/RayPeloquin/Temporal-Reflection-Chamber/blob/main/README.md"
+      "https://github.com/RayPeloquin/Temporal-Reflection-Chamber/blob/main/README.md",
+      "https://raypeloquin.github.io/mimirs-well/court-of-the-synthetic-multi-model-engineering-review-art.html",
+      "https://raypeloquin.github.io/mimirs-well/public-notes/court-of-the-synthetic-multi-model-engineering-review.md"
     ],
     "ledger_url": null,
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "e71ced6410bc597a4da7aaa263c28ff91642aeba0139771f4964092a9443cc60"
+    "content_sha256": "67f6929453a89bc9857436fbe132a009d81f3ed99fcd7583e8cadee8ce54edff"
   },
   {
     "id": "court-on-trial",
@@ -1974,25 +1979,27 @@
   {
     "id": "dragon-s-bridle",
     "title": "Dragon’s Bridle",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
+    "status": "Expanded record",
+    "evidence": "No implemented system, hardware safety, energy delivery, measured performance or validated scheduling is established. HIPPO-linked technical artwork is retained outside the public repository.",
+    "contributors": "Recovered from Mr. Peloquin's collaborative design collection; individual illustration authorship is unverified.",
     "url": "index.html#design/dragon-s-bridle",
-    "record_status": "pending_review",
+    "record_status": "expanded",
     "evidence_types": [
-      "pending"
+      "concept"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
-    "summary": "Archive title awaiting source review; no evidence assessment established.",
-    "revision_note": null,
+    "summary": "Recovered illustration of a proposed energy-system governance layer associated with the HIPPO collection.",
+    "revision_note": "Dragon's Bridle v4.1; recovered archive illustration.",
     "canonical_url": "https://raypeloquin.github.io/mimirs-well/records/dragon-s-bridle.html",
-    "source_urls": [],
+    "source_urls": [
+      "https://raypeloquin.github.io/mimirs-well/public-notes/dragon-s-bridle.md"
+    ],
     "ledger_url": null,
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "51b8a9817f9da496b266286eb9351e5d0793e0878b2fa3efce4a2ed38c8e7598"
+    "content_sha256": "862c61d376420e944562c13d973d49ba941159cab75d1717139bd2ac2ff6c252"
   },
   {
     "id": "drone-rotor-d1",
@@ -2404,24 +2411,27 @@
     "id": "enki-s-will-living-safety-stack",
     "title": "Enki’s Will — Living safety stack",
     "status": "Expanded record",
-    "evidence": "The reviewed materials establish a design doctrine and intended role. They do not provide a measured learning system, deployed enforcement evidence or an experimental safety result. Internal doctrine-locked labels do not certify implementation.",
-    "contributors": "Portfolio credit: Ray Peloquin + U.I. Specific implementation and individual review contributions remain to be documented.",
-    "url": "index.html#design/enki-s-will-living-safety-stack",
+    "evidence": "The reviewed materials establish a design doctrine and intended role. They do not provide a measured learning system, deployed enforcement evidence or an experimental safety result. Internal doctrine-locked labels do not certify implementation.\n\nArtwork review: Concept artwork only. Many embedded labels are unreadable or malformed; they are not accepted as component definitions, specifications or evidence of an implemented nervous system.",
+    "contributors": "Portfolio credit: Ray Peloquin + U.I. Specific implementation and individual review contributions remain to be documented.\n\nRecovered from Mr. Peloquin's collaborative design collection; individual illustration authorship is unverified.",
+    "url": "enki-s-will-living-safety-stack-art.html",
     "record_status": "expanded",
     "evidence_types": [
       "unclassified"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
-    "summary": "A proposed learning-and-memory safety architecture in which adaptive recommendations remain separate from authority to command. In the Triad concept it supplies learning without independently expanding control permissions.",
-    "revision_note": "Enki’s Will is listed in the October 23 portfolio and discussed in the archived Triad integration review. A current standalone release/version has not been verified.",
+    "summary": "A proposed learning-and-memory safety architecture in which adaptive recommendations remain separate from authority to command. In the Triad concept it supplies learning without independently expanding control permissions.\n\nRecovered artwork: An abstract visualization of the proposed safety, memory and learning architecture.",
+    "revision_note": "Enki’s Will is listed in the October 23 portfolio and discussed in the archived Triad integration review. A current standalone release/version has not been verified.\n\nAdditional visual source: ENKI'S WILL ? Synthetic nervous system.",
     "canonical_url": "https://raypeloquin.github.io/mimirs-well/records/enki-s-will-living-safety-stack.html",
-    "source_urls": [],
+    "source_urls": [
+      "https://raypeloquin.github.io/mimirs-well/enki-s-will-living-safety-stack-art.html",
+      "https://raypeloquin.github.io/mimirs-well/public-notes/enki-s-will-living-safety-stack.md"
+    ],
     "ledger_url": null,
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "9936bbb202fbffc0aa9e9f613484fb3ed3214dc2169641ec73994571137a0769"
+    "content_sha256": "87c6324bde653a1259e07e53f86a4139319f1284e36dc697f952d84c49dc6cf3"
   },
   {
     "id": "eta-gate-light-elevator",
@@ -2972,8 +2982,8 @@
     "id": "gips-intramedullary-guidance-and-risk-control",
     "title": "GIPS — Intramedullary guidance and risk control",
     "status": "Expanded record",
-    "evidence": "The reviewed document states proposed update rules, intervention tiers and logging requirements, but supplies no hardware, bench or clinical validation report. Its adult-validation wording is unsupported by evidence in that artifact and is not adopted here. Numerical intervention thresholds and performance assertions are unvalidated design inputs. This website update reviewed the saved source; it did not rerun models or conduct experiments.",
-    "contributors": "Archived in Mr. Peloquin's research collection. Individual authorship, implementation and independent validation are not established in the reviewed copy.",
+    "evidence": "The reviewed document states proposed update rules, intervention tiers and logging requirements, but supplies no hardware, bench or clinical validation report. Its adult-validation wording is unsupported by evidence in that artifact and is not adopted here. Numerical intervention thresholds and performance assertions are unvalidated design inputs. This website update reviewed the saved source; it did not rerun models or conduct experiments.\n\nArtwork review: No clinical validation, surgical suitability, pediatric safety, or validated intervention thresholds follow from the illustration. Its numerical and procedural details remain outside the public repository.",
+    "contributors": "Archived in Mr. Peloquin's research collection. Individual authorship, implementation and independent validation are not established in the reviewed copy.\n\nRecovered from Mr. Peloquin's collaborative design collection; individual illustration authorship is unverified.",
     "url": "index.html#design/gips-intramedullary-guidance-and-risk-control",
     "record_status": "expanded",
     "evidence_types": [
@@ -2981,15 +2991,17 @@
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
-    "summary": "A proposed surgeon-controlled intramedullary guidance and risk-control platform, combining corridor visualization, uncertainty, neuromonitoring context and refusal of inadequately supported actions.",
-    "revision_note": "GIPS v0.5 state block, May 8, 2026. Source reviewed November 17, 2026.",
+    "summary": "A proposed surgeon-controlled intramedullary guidance and risk-control platform, combining corridor visualization, uncertainty, neuromonitoring context and refusal of inadequately supported actions.\n\nRecovered artwork: Earlier illustrated guidance and governance concept; the v0.2 artwork is separate from the previously reviewed v0.5 state block.",
+    "revision_note": "GIPS v0.5 state block, May 8, 2026. Source reviewed November 17, 2026.\n\nAdditional visual source: GIPS v0.2.",
     "canonical_url": "https://raypeloquin.github.io/mimirs-well/records/gips-intramedullary-guidance-and-risk-control.html",
-    "source_urls": [],
+    "source_urls": [
+      "https://raypeloquin.github.io/mimirs-well/public-notes/gips-intramedullary-guidance-and-risk-control.md"
+    ],
     "ledger_url": null,
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "9fe029cbb5b4027b9ac53685724ab97385ea00d57e3ef4943fde3d83ee5c9f27"
+    "content_sha256": "54c3553c92722738f66b32930384962fadedd43c115d9d8960a03e487c17a5fd"
   },
   {
     "id": "go-cube-liberty-field-governor",
@@ -4890,24 +4902,27 @@
     "id": "mount-olympus-cross-domain-design-and-adversarial-review",
     "title": "Mount Olympus — Cross-domain design and adversarial review",
     "status": "Expanded record",
-    "evidence": "The addendum describes separating measurements, equations, models, interpretations and metaphors, and declaring observations that would challenge a claim. It is a review method, not a new physical theory or evidence of better engineering outcomes. Internal approval labels do not establish independent validation. This website update reviewed saved documentation; it did not rerun models or conduct experiments.",
-    "contributors": "Court methodology associated with Mr. Peloquin and Asteris; specific contributions belong with each project's provenance.",
-    "url": "index.html#design/mount-olympus-cross-domain-design-and-adversarial-review",
+    "evidence": "The addendum describes separating measurements, equations, models, interpretations and metaphors, and declaring observations that would challenge a claim. It is a review method, not a new physical theory or evidence of better engineering outcomes. Internal approval labels do not establish independent validation. This website update reviewed saved documentation; it did not rerun models or conduct experiments.\n\nArtwork review: The artwork expresses a research method. Decorative equations do not establish a derivation, novel theory or independently replicated result.",
+    "contributors": "Court methodology associated with Mr. Peloquin and Asteris; specific contributions belong with each project's provenance.\n\nRecovered from Mr. Peloquin's collaborative design collection; individual illustration authorship is unverified.",
+    "url": "mount-olympus-cross-domain-design-and-adversarial-review-art.html",
     "record_status": "expanded",
     "evidence_types": [
       "unclassified"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
-    "summary": "A proposed design/review methodology for turning ideas into mechanisms, testable claims, explicit evidence levels and accountable decisions.",
-    "revision_note": "Reviewed physics addendum v1.3P, May 14, 2026, refers back to core v1.2R; later inventory titles do not establish a current consolidated release. Source reviewed November 17, 2026.",
+    "summary": "A proposed design/review methodology for turning ideas into mechanisms, testable claims, explicit evidence levels and accountable decisions.\n\nRecovered artwork: A visual companion to the physics addendum, distinguishing metaphor, interpretation, model, equation and measurement, with a falsifiability gate.",
+    "revision_note": "Reviewed physics addendum v1.3P, May 14, 2026, refers back to core v1.2R; later inventory titles do not establish a current consolidated release. Source reviewed November 17, 2026.\n\nAdditional visual source: ARISTOTLE'S LYCEUM ? Mount Olympus v1.3P.",
     "canonical_url": "https://raypeloquin.github.io/mimirs-well/records/mount-olympus-cross-domain-design-and-adversarial-review.html",
-    "source_urls": [],
+    "source_urls": [
+      "https://raypeloquin.github.io/mimirs-well/mount-olympus-cross-domain-design-and-adversarial-review-art.html",
+      "https://raypeloquin.github.io/mimirs-well/public-notes/mount-olympus-cross-domain-design-and-adversarial-review.md"
+    ],
     "ledger_url": null,
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "bf461348e51be689ba66d6c7dfc2789325949ea01b637838b3cd63bd88b07a9a"
+    "content_sha256": "e894c455558cc3ff72216f4a868f842980104ae09dc8b2d70e32be27c8dbe075"
   },
   {
     "id": "ndsm-01-neutrino-feasibility-study",
@@ -5217,25 +5232,28 @@
   {
     "id": "odin-s-ravens",
     "title": "Odin’s Ravens",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
-    "url": "index.html#design/odin-s-ravens",
-    "record_status": "pending_review",
+    "status": "Expanded record",
+    "evidence": "The artwork describes an observation doctrine, not demonstrated continuous coverage, detection accuracy, privacy compliance, autonomous docking reliability or flight authorization.",
+    "contributors": "Recovered from Mr. Peloquin's collaborative design collection; individual illustration authorship is unverified.",
+    "url": "odin-s-ravens-art.html",
+    "record_status": "expanded",
     "evidence_types": [
-      "pending"
+      "concept"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
-    "summary": "Archive title awaiting source review; no evidence assessment established.",
-    "revision_note": null,
+    "summary": "An unarmed observation-and-reporting concept for authorized property monitoring, with human decisions and a proposed rotating pair of drones.",
+    "revision_note": "ODIN'S RAVENS v1.0; recovered archive illustration.",
     "canonical_url": "https://raypeloquin.github.io/mimirs-well/records/odin-s-ravens.html",
-    "source_urls": [],
+    "source_urls": [
+      "https://raypeloquin.github.io/mimirs-well/odin-s-ravens-art.html",
+      "https://raypeloquin.github.io/mimirs-well/public-notes/odin-s-ravens.md"
+    ],
     "ledger_url": null,
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "3b3a2a2aea419bfa5eb3d5a6e8e30f540111798b02eddc7bb75e5165ffdb0d7e"
+    "content_sha256": "0a440fb70000534de2d3e60ce0388d89a92ca22d090918b80e556d64bee297d8"
   },
   {
     "id": "off-grid-ranch-water-system",
@@ -5292,24 +5310,27 @@
     "id": "olympus-floor-model-engineering-project-and-portfolio-control",
     "title": "Olympus Floor Model — Engineering project and portfolio control",
     "status": "Expanded record",
-    "evidence": "The source describes required fields, auto-fail rules and portfolio roll-up behavior and states that an HTML artifact was repaired. The reviewed text alone does not reproduce that implementation, verify its gates or establish organizational adoption and benefit. This website update reviewed saved documentation; it did not rerun models or conduct experiments.",
-    "contributors": "Archived in Mr. Peloquin's collection; individual implementation, test and review ownership remains to be consolidated.",
-    "url": "index.html#design/olympus-floor-model-engineering-project-and-portfolio-control",
+    "evidence": "The source describes required fields, auto-fail rules and portfolio roll-up behavior and states that an HTML artifact was repaired. The reviewed text alone does not reproduce that implementation, verify its gates or establish organizational adoption and benefit. This website update reviewed saved documentation; it did not rerun models or conduct experiments.\n\nArtwork review: All displayed portfolio values, staff counts, costs, project statistics, names and gate results are sample interface content, not measured organizational results or valuations.",
+    "contributors": "Archived in Mr. Peloquin's collection; individual implementation, test and review ownership remains to be consolidated.\n\nRecovered from Mr. Peloquin's collaborative design collection; individual illustration authorship is unverified.",
+    "url": "olympus-floor-model-engineering-project-and-portfolio-control-art.html",
     "record_status": "expanded",
     "evidence_types": [
       "unclassified"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
-    "summary": "A proposed engineering/executive project-packet template connecting mechanism and evidence with ownership, cost, incident responsibility, maintenance and decommissioning.",
-    "revision_note": "Olympus Floor Model v1.4R.1 archived control-template specification. Source reviewed November 17, 2026.",
+    "summary": "A proposed engineering/executive project-packet template connecting mechanism and evidence with ownership, cost, incident responsibility, maintenance and decommissioning.\n\nRecovered artwork: An illustrated example dashboard for evidence gates, human burden, project ownership, risk and end-of-life planning.",
+    "revision_note": "Olympus Floor Model v1.4R.1 archived control-template specification. Source reviewed November 17, 2026.\n\nAdditional visual source: OLYMPUS FLOOR MODEL v1.4R.1.",
     "canonical_url": "https://raypeloquin.github.io/mimirs-well/records/olympus-floor-model-engineering-project-and-portfolio-control.html",
-    "source_urls": [],
+    "source_urls": [
+      "https://raypeloquin.github.io/mimirs-well/olympus-floor-model-engineering-project-and-portfolio-control-art.html",
+      "https://raypeloquin.github.io/mimirs-well/public-notes/olympus-floor-model-engineering-project-and-portfolio-control.md"
+    ],
     "ledger_url": null,
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "4df8e54a51585e45f4e7614f64357d9bb64e38010507ad04cff35fd1c575ecc7"
+    "content_sha256": "25cbdcc65358432263ce08e8581856523dabd75e2c29af5fdb8c3b6d67552780"
   },
   {
     "id": "olympus-registry-design-lineage-and-evidence-catalog",
@@ -7002,25 +7023,28 @@
   {
     "id": "sister-s-hope-hand-restoration-gloves",
     "title": "Sister’s Hope — Hand restoration gloves",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
-    "url": "index.html#design/sister-s-hope-hand-restoration-gloves",
-    "record_status": "pending_review",
+    "status": "Expanded record",
+    "evidence": "The image is unlabeled; identity, version and specific function are unverified. It does not demonstrate hand restoration, pain relief, therapeutic benefit or working hardware.",
+    "contributors": "Recovered from Mr. Peloquin's collaborative design collection; individual illustration authorship is unverified.",
+    "url": "sister-s-hope-hand-restoration-gloves-art.html",
+    "record_status": "expanded",
     "evidence_types": [
-      "pending"
+      "concept"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
-    "summary": "Archive title awaiting source review; no evidence assessment established.",
-    "revision_note": null,
+    "summary": "A translucent wearable glove with articulated-looking finger elements and illuminated modules, tentatively associated with the hand-restoration glove archive title.",
+    "revision_note": "Possible Sister's Hope glove illustration; recovered archive illustration.",
     "canonical_url": "https://raypeloquin.github.io/mimirs-well/records/sister-s-hope-hand-restoration-gloves.html",
-    "source_urls": [],
+    "source_urls": [
+      "https://raypeloquin.github.io/mimirs-well/sister-s-hope-hand-restoration-gloves-art.html",
+      "https://raypeloquin.github.io/mimirs-well/public-notes/sister-s-hope-hand-restoration-gloves.md"
+    ],
     "ledger_url": null,
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "256b67f24831e4afcec7d51c086d8f1a60f50859464ab8be655f9f6cb744d154"
+    "content_sha256": "6d412d45db5ecc76c33617e1eb55ca1b12c8d00cf4d12ae82dc7be423cd5209b"
   },
   {
     "id": "site-lantern",
@@ -8424,24 +8448,27 @@
     "id": "weaver-s-shuttle",
     "title": "Weaver’s Shuttle",
     "status": "Expanded record",
-    "evidence": "The reviewed state block is a corrected architecture and staged validation roadmap, not a measured hardware-path proof, deployed gateway or detection benchmark. A hardware-presence or time-attestation claim still needs an explicit threat model and experiments. Review acceptance does not establish unhackability, reliable detection or safe availability behavior. This website pass reviewed saved documentation; it did not rerun the underlying system or conduct physical/clinical experiments.",
-    "contributors": "Archived Court-corrected design in Mr. Peloquin's collection; project-specific implementation and independent test provenance remain unresolved.",
-    "url": "index.html#design/weaver-s-shuttle",
+    "evidence": "The reviewed state block is a corrected architecture and staged validation roadmap, not a measured hardware-path proof, deployed gateway or detection benchmark. A hardware-presence or time-attestation claim still needs an explicit threat model and experiments. Review acceptance does not establish unhackability, reliable detection or safe availability behavior. This website pass reviewed saved documentation; it did not rerun the underlying system or conduct physical/clinical experiments.\n\nArtwork review: The poster's clearance and security claims are not independent verification. Signed assertions are not necessarily true; emergency-access labels do not authorize disabling protective safety systems.",
+    "contributors": "Archived Court-corrected design in Mr. Peloquin's collection; project-specific implementation and independent test provenance remain unresolved.\n\nRecovered from Mr. Peloquin's collaborative design collection; individual illustration authorship is unverified.",
+    "url": "weaver-s-shuttle-art.html",
     "record_status": "expanded",
     "evidence_types": [
       "unclassified"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
-    "summary": "A defensive security architecture proposal separating admission evidence, permission checks, availability protection and bounded containment of suspicious traffic.",
-    "revision_note": "Reviewed bench revision v1.4, codename Neith Protocol / LANTERN Gate. Later versions mentioned elsewhere were not reviewed here. Source reviewed November 17, 2026.",
+    "summary": "A defensive security architecture proposal separating admission evidence, permission checks, availability protection and bounded containment of suspicious traffic.\n\nRecovered artwork: A later illustrated Neith Protocol / LANTERN Gate concept for defensive command admission and accountability, distinct from the previously reviewed v1.4 bench text.",
+    "revision_note": "Reviewed bench revision v1.4, codename Neith Protocol / LANTERN Gate. Later versions mentioned elsewhere were not reviewed here. Source reviewed November 17, 2026.\n\nAdditional visual source: THE WEAVER'S SHUTTLE v2.0.",
     "canonical_url": "https://raypeloquin.github.io/mimirs-well/records/weaver-s-shuttle.html",
-    "source_urls": [],
+    "source_urls": [
+      "https://raypeloquin.github.io/mimirs-well/weaver-s-shuttle-art.html",
+      "https://raypeloquin.github.io/mimirs-well/public-notes/weaver-s-shuttle.md"
+    ],
     "ledger_url": null,
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "c52396bdcc45e4fc68dc30d2ba7787d7778d4fd8f7b5e5145fb9e2a1464c648f"
+    "content_sha256": "147e79d2de2343f1186f1b7eb423809fe38cd3d12a8076b97903673c88d5d73b"
   },
   {
     "id": "wet-hippo-well-gravity-settling-and-manual-routing",
