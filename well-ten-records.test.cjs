@@ -1,3 +1,4 @@
+const { readText } = require('./scripts/test-text.cjs');
 const { test } = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
@@ -18,7 +19,7 @@ const designs = [
 ];
 
 test('ten archive entries become evidence-bounded, source-backed public records', () => {
-  const source = fs.readFileSync(path.join(__dirname, 'registry.js'), 'utf8');
+  const source = readText(path.join(__dirname, 'registry.js'));
   const records = new Map(designs.map(([id]) => [id, { id, purpose: 'Archive title only' }]));
   for (const [id, filename] of designs) {
     const marker = `if(records.has('${id}'))Object.assign(records.get('${id}'),`;
@@ -35,7 +36,7 @@ test('ten archive entries become evidence-bounded, source-backed public records'
     assert.equal(record.sources.split('\n')[0], published, `${id}: first source not public note`);
     const notePath = path.join(__dirname, 'design-notes', filename);
     assert.ok(fs.existsSync(notePath), `missing source note ${filename}`);
-    const note = fs.readFileSync(notePath, 'utf8');
+    const note = readText(notePath);
     assert.match(note, /^# /);
     assert.match(note, /Status:/);
     assert.match(note, /Next check/i);

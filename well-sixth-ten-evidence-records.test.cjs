@@ -1,3 +1,4 @@
+const { readText } = require('./scripts/test-text.cjs');
 const { test } = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
@@ -17,8 +18,8 @@ const candidates = [
 ];
 
 test('the nine retained sixth-batch archive cards expose bounded public notes and expanded records', () => {
-  const registry = fs.readFileSync(path.join(__dirname, 'registry.js'), 'utf8');
-  const catalog = fs.readFileSync(path.join(__dirname, 'catalog.js'), 'utf8');
+  const registry = readText(path.join(__dirname, 'registry.js'));
+  const catalog = readText(path.join(__dirname, 'catalog.js'));
   const records = new Map(candidates.map(([id]) => [id, { id }]));
 
   for (const [id, filename, title] of candidates) {
@@ -37,7 +38,7 @@ test('the nine retained sixth-batch archive cards expose bounded public notes an
       `https://github.com/RayPeloquin/mimirs-well/blob/main/public-notes/${filename}`);
     const digestPath = path.join(__dirname, 'public-notes', filename);
     assert.ok(fs.existsSync(digestPath), `${filename}: public note absent`);
-    const note = fs.readFileSync(digestPath, 'utf8');
+    const note = readText(digestPath);
     assert.match(note, /^# /);
     assert.match(note, /\*\*Status:\*\*/);
     assert.match(note, /## Evidence limits\n\nNo /i);

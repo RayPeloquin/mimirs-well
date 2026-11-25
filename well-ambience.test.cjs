@@ -1,11 +1,12 @@
 'use strict';
+const { readText } = require('./scripts/test-text.cjs');
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const root = __dirname;
-const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
-const source = fs.readFileSync(path.join(root, 'well-ambience.js'), 'utf8');
+const html = readText(path.join(root, 'index.html'));
+const source = readText(path.join(root, 'well-ambience.js'));
 test('sound is optional and labeled on the homepage', () => {
   assert.match(html, /id="well-sound-toggle" aria-pressed="false"/);
   assert.match(html, /id="well-sound-volume"/);

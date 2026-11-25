@@ -1,4 +1,5 @@
 'use strict';
+const { readText } = require('./scripts/test-text.cjs');
 const test=require('node:test');
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
@@ -6,7 +7,7 @@ const path=require('node:path');
 const vm=require('node:vm');
 const root=__dirname;
 const context={window:{}};
-vm.runInNewContext(fs.readFileSync(path.join(root,'ledger-data.js'),'utf8'),context);
+vm.runInNewContext(readText(path.join(root,'ledger-data.js')),context);
 const records=context.window.MimirsLedgerData;
 test('thirty ordered, unique permanent record IDs and URLs',()=>{
  assert.equal(records.length,30);
@@ -20,8 +21,8 @@ test('thirty ordered, unique permanent record IDs and URLs',()=>{
  }
 });
 test('library and homepage use shared directory and preserve a no-script list',()=>{
- const home=fs.readFileSync(path.join(root,'index.html'),'utf8');
- const page=fs.readFileSync(path.join(root,'ledger.html'),'utf8');
+ const home=readText(path.join(root,'index.html'));
+ const page=readText(path.join(root,'ledger.html'));
  assert.ok(home.includes('id="ledger-preview"'));
  assert.ok(home.includes('href="ledger.html"'));
  assert.ok(home.includes('src="ledger-data.js?'));
@@ -38,7 +39,7 @@ test('library and homepage use shared directory and preserve a no-script list',(
  assert.equal((home.slice(home.indexOf('id="ledger-preview"'),home.indexOf('Six recent records appear here.')).match(/DIVERGENCE RECORD/g)||[]).length,6);
 });
 test('script syntax and progressive enhancement controls exist',()=>{
- const js=fs.readFileSync(path.join(root,'ledger-library.js'),'utf8');
+ const js=readText(path.join(root,'ledger-library.js'));
  assert.ok(js.includes('replaceChildren'));
  assert.ok(js.includes('const pageSize = 6'));
  assert.ok(js.includes('document.getElementById(\'ledger-preview\')'));

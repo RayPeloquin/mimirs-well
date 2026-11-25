@@ -1,3 +1,4 @@
+const { readText } = require('./scripts/test-text.cjs');
 const { test } = require('node:test');
 const assert = require('node:assert/strict');
 const { readFileSync, existsSync } = require('node:fs');
@@ -31,7 +32,7 @@ function createFixture(ids) {
       return match ? cards.get(match[1]) || null : null;
     },
   };
-  function render() { if (existsSync(script)) runInNewContext(readFileSync(script, 'utf8'), { document }); }
+  function render() { if (existsSync(script)) runInNewContext(readText(script), { document }); }
   function figures(id) { return cards.get(id)?.children.filter(x => x.className === 'concept-art') || []; }
   return { render, figures };
 }

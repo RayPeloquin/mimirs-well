@@ -1,9 +1,10 @@
+const { readText } = require('./scripts/test-text.cjs');
 const { test } = require('node:test');
 const assert = require('node:assert/strict');
 const { readFileSync } = require('node:fs');
 const path = require('node:path');
 
-const html = readFileSync(path.join(__dirname, 'index.html'), 'utf8');
+const html = readText(path.join(__dirname, 'index.html'));
 
 test('public search description uses Mr. Peloquin rather than the private nickname', () => {
   const description = html.match(/<meta\s+name="description"\s+content="([^"]+)"/i)?.[1];

@@ -1,3 +1,4 @@
+const { readText } = require('./scripts/test-text.cjs');
 const { test } = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
@@ -35,7 +36,7 @@ function renderCatalog() {
     },
     createElement: element,
   };
-  vm.runInNewContext(fs.readFileSync(path.join(__dirname, 'catalog.js'), 'utf8'), { document, wellArmoryDivisions: require('./armory-data.js') });
+  vm.runInNewContext(readText(path.join(__dirname, 'catalog.js')), { document, wellArmoryDivisions: require('./armory-data.js') });
   return cards.map((card) => card.children.find((child) => child.tagName === 'h3')?.textContent);
 }
 

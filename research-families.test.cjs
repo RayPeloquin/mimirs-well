@@ -1,5 +1,6 @@
 /* Regression checks for the Well's navigational research-family layer. */
 'use strict';
+const { readText } = require('./scripts/test-text.cjs');
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
@@ -44,7 +45,7 @@ test('unfamiliar and unreviewed titles are not silently forced into a family', (
 });
 
 test('all current source titles remain discoverable, with explicit unmapped remainder', () => {
-  const src = fs.readFileSync('catalog.js', 'utf8');
+  const src = readText('catalog.js');
   const groupMatches = [...src.matchAll(/\["(safety|biology|physics|infrastructure|robotics|community|defense)","([^"]+)","((?:\\.|[^"\\])*)"\]/g)];
   const titles = groupMatches.flatMap(m => JSON.parse('"' + m[3] + '"').split('\n').map(s => s.split(' — ')[0]));
   assert.ok(titles.length > 300, 'Recovered catalog should be available for classification');
@@ -54,7 +55,7 @@ test('all current source titles remain discoverable, with explicit unmapped rema
 });
 
 test('homepage keeps the Registry and catalog filters alongside the family explorer', () => {
-  const html = fs.readFileSync('index.html', 'utf8');
+  const html = readText('index.html');
   assert.match(html, /id="research-families"/);
   assert.match(html, /id="family-grid"/);
   assert.match(html, /id="projects"/);

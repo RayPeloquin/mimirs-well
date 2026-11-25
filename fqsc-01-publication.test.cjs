@@ -1,3 +1,4 @@
+const { readText } = require('./scripts/test-text.cjs');
 const { test } = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
@@ -22,7 +23,7 @@ test('FQSC-01 appears in the physics catalog with a dedicated design page', () =
     querySelector(selector) { return selector === '.grid' ? grid : null; },
     querySelectorAll() { return []; },
   };
-  vm.runInNewContext(fs.readFileSync(path.join(root, 'catalog.js'), 'utf8'), { document, wellArmoryDivisions: require('./armory-data.js') });
+  vm.runInNewContext(readText(path.join(root, 'catalog.js')), { document, wellArmoryDivisions: require('./armory-data.js') });
   const card = grid.children.find(node => node.children.some(child => child.tag === 'h3' && child.textContent === 'FQSC-01'));
   assert.ok(card, 'the physics catalog must render the actual FQSC-01 design');
   assert.equal(card.dataset.category, 'physics');
@@ -33,7 +34,7 @@ test('FQSC-01 appears in the physics catalog with a dedicated design page', () =
 test('FQSC-01 publishes a substantive concept with an image and an evidence-limited record', () => {
   const pagePath = path.join(root, 'fqsc-01.html');
   assert.ok(fs.existsSync(pagePath), 'dedicated public design page missing');
-  const page = fs.readFileSync(pagePath, 'utf8');
+  const page = readText(pagePath);
   assert.match(page, /Field-Quench Spectral Coupling/);
   assert.match(page, /Proposed architecture/);
   assert.match(page, /Computational test/);
@@ -43,11 +44,11 @@ test('FQSC-01 publishes a substantive concept with an image and an evidence-limi
 
   const notePath = path.join(root, 'design-notes', 'fqsc-01.md');
   assert.ok(fs.existsSync(notePath), 'public design note missing');
-  const note = fs.readFileSync(notePath, 'utf8');
+  const note = readText(notePath);
   assert.match(note, /## Evidence limits\n/);
   assert.match(note, /## Next check\n/);
 
-  const source = fs.readFileSync(path.join(root, 'registry.js'), 'utf8');
+  const source = readText(path.join(root, 'registry.js'));
   const marker = "if(records.has('fqsc-01'))Object.assign(records.get('fqsc-01'),";
   const start = source.indexOf(marker);
   assert.notEqual(start, -1, 'FQSC-01 needs a reviewed, expanded registry record');

@@ -1,10 +1,11 @@
+const { readText } = require('./scripts/test-text.cjs');
 const { test } = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 
 test('the Well gives three distinct sections their own publicly published design art', () => {
-  const html = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8');
+  const html = readText(path.join(__dirname, 'index.html'));
   const placements = [
     ['projects', 'assets/aegis-twin-v06-exterior.webp'],
     ['hippo', 'assets/hippo-mag-01-tabletop.webp'],
