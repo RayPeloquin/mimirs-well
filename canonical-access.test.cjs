@@ -11,6 +11,9 @@ const manifest=JSON.parse(readText('catalog-manifest.json'));
 const schema=JSON.parse(readText('catalog.schema.json'));
 test('canonical records, manifest, hashes and public boundaries agree',()=>{
  const html=readText('catalog.html');
+ const directory=readText('record-index.html');
+ assert.ok(Buffer.byteLength(directory)<100000);
+ assert.deepEqual([...directory.matchAll(/href="records\/([^"/]+)\.html"/g)].map(m=>m[1]),catalog.map(r=>r.id));
  const ids=[...html.matchAll(/<li id="([^"]+)"><div class="catalog-entry"/g)].map(m=>m[1]);
  assert.deepEqual(ids,catalog.map(r=>r.id));
  assert.equal(new Set(ids).size,ids.length);
@@ -22,8 +25,11 @@ test('canonical records, manifest, hashes and public boundaries agree',()=>{
  assert.equal(readText('catalog.sha256').split(' ')[0],manifest.catalog_sha256);
  for(const r of catalog){
    assert.deepEqual(Object.keys(r).sort(),schema.items.required.slice().sort(),r.id);
-   assert.equal(r.canonical_url,'https://raypeloquin.github.io/mimirs-well/catalog.html#'+r.id);
+   assert.equal(r.canonical_url,'https://raypeloquin.github.io/mimirs-well/records/'+r.id+'.html');
    assert.ok(r.summary&&r.evidence_notice&&r.publication_notice&&r.policy_url,r.id);
+   const page=readText('records/'+r.id+'.html');
+   assert.ok(page.includes(r.canonical_url)&&page.includes(r.content_sha256)&&page.includes('Record ID: '+r.id),r.id);
+   assert.ok(!/<script\b/i.test(page),r.id);
    assert.ok(r.evidence_types.every(t=>schema.items.properties.evidence_types.items.enum.includes(t)),r.id);
    const {content_sha256,...body}=r;assert.equal(content_sha256,sha(JSON.stringify(body)),r.id);
    const hold=Object.hasOwn(controls.holds,r.id),watch=Object.hasOwn(controls.watches,r.id);
