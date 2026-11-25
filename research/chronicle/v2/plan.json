@@ -1,0 +1,264 @@
+{
+  "format": "well-chronicle-coverage-plan-v2",
+  "created_at": "2026-11-25T07:49:19.725Z",
+  "base_commit": "f9a121df6fcc5c590fae43d08f9a9220f4f65cc9",
+  "credit": "Claude / First Academic: six surviving mutation classes and acceptance refinements; Asteris Solenne: additional fixtures and separately implemented 17 named mutants (not Claude original script).",
+  "scope": "Same-author deterministic synthetic arithmetic; expected values prewritten. No physical validation or independent replication. Heat is Qh, heat absorbed from the hot reservoir in arbitrary consistent energy units; work uses same units, temperatures are absolute kelvin. Cross multiplication for bound uses small positive integer inputs; no general float tolerance. Null missing quantities remain unknown. Only CRLF to LF normalization; exact JSON field order and terminal newline retained. Task hashes use JSON.stringify in stored queue key order.",
+  "command": "node research/chronicle/v2/run.cjs",
+  "hashes": {
+    "calculator": "65b57afc2d822b23430d6445e05f1b6343b3221e6e44870af440615fdca7b787",
+    "queue": "ca67b3452cc17efdc04eedba8de2cd52e7c2fe7ca37ecce67c78b2f7dbbbf50d",
+    "mutants": "72a24dbb66f6ade23f12aae3ed7fa52695e4503cb5b407ca8f531f761862c1b3",
+    "runner": "5b48529749fc0a6c8f78f230ed2e1c59caff7e0e193d7c75f390073b91711409"
+  },
+  "tasks": [
+    {
+      "id": "test-material-balance",
+      "cases": [
+        {
+          "id": "closed",
+          "input": 100,
+          "product": 60,
+          "outlet": 25,
+          "inventory": 15
+        },
+        {
+          "id": "missing-outlet",
+          "input": 100,
+          "product": 60,
+          "outlet": null,
+          "inventory": 15
+        },
+        {
+          "id": "missing-inventory",
+          "input": 100,
+          "product": 60,
+          "outlet": 25,
+          "inventory": null
+        },
+        {
+          "id": "complete-imbalance",
+          "input": 100,
+          "product": 45,
+          "outlet": 25,
+          "inventory": 25
+        },
+        {
+          "id": "missing-but-zero-residual",
+          "input": 100,
+          "product": 60,
+          "outlet": null,
+          "inventory": 40
+        }
+      ],
+      "expected": [
+        {
+          "id": "closed",
+          "apparentResidual": 0,
+          "missing": [],
+          "closed": true,
+          "productRatio": 0.6
+        },
+        {
+          "id": "missing-outlet",
+          "apparentResidual": 25,
+          "missing": [
+            "outlet"
+          ],
+          "closed": false,
+          "productRatio": 0.6
+        },
+        {
+          "id": "missing-inventory",
+          "apparentResidual": 15,
+          "missing": [
+            "inventory"
+          ],
+          "closed": false,
+          "productRatio": 0.6
+        },
+        {
+          "id": "complete-imbalance",
+          "apparentResidual": 5,
+          "missing": [],
+          "closed": false,
+          "productRatio": 0.45
+        },
+        {
+          "id": "missing-but-zero-residual",
+          "apparentResidual": 0,
+          "missing": [
+            "outlet"
+          ],
+          "closed": false,
+          "productRatio": 0.6
+        }
+      ],
+      "task_sha256": "0fc07b44ef3ac6697a382917b593d49bce5d6e3bf9a9ab2dca2c246ec5e7c431"
+    },
+    {
+      "id": "test-failure-counts",
+      "cases": [
+        {
+          "id": "A",
+          "runs": 10,
+          "failed": 2,
+          "events": 2,
+          "hours": 10
+        },
+        {
+          "id": "B",
+          "runs": 10,
+          "failed": 2,
+          "events": 2,
+          "hours": 20
+        },
+        {
+          "id": "C",
+          "runs": 10,
+          "failed": 4,
+          "events": 4,
+          "hours": 20
+        },
+        {
+          "id": "D",
+          "runs": 10,
+          "failed": 2,
+          "events": 2,
+          "hours": 0
+        },
+        {
+          "id": "distinct-counts",
+          "runs": 10,
+          "failed": 2,
+          "events": 7,
+          "hours": 10
+        }
+      ],
+      "expected": [
+        {
+          "id": "A",
+          "failureFraction": 0.2,
+          "eventRate": 0.2
+        },
+        {
+          "id": "B",
+          "failureFraction": 0.2,
+          "eventRate": 0.1
+        },
+        {
+          "id": "C",
+          "failureFraction": 0.4,
+          "eventRate": 0.2
+        },
+        {
+          "id": "D",
+          "failureFraction": 0.2,
+          "eventRate": null
+        },
+        {
+          "id": "distinct-counts",
+          "failureFraction": 0.2,
+          "eventRate": 0.7
+        }
+      ],
+      "task_sha256": "27b16f4e755721a9e944eaf79066df86b970e2ccc7d0a9082feb107f577a3dfb"
+    },
+    {
+      "id": "test-energy-ceiling",
+      "cases": [
+        {
+          "id": "terminal",
+          "kind": "ledger",
+          "input": 100,
+          "outputs": [
+            30,
+            70
+          ]
+        },
+        {
+          "id": "double-count",
+          "kind": "ledger",
+          "input": 100,
+          "outputs": [
+            30,
+            70,
+            30
+          ]
+        },
+        {
+          "id": "ideal-ceiling",
+          "kind": "thermal",
+          "hot": 400,
+          "cold": 300,
+          "heat": 20,
+          "work": 5
+        },
+        {
+          "id": "above-ceiling",
+          "kind": "thermal",
+          "hot": 400,
+          "cold": 300,
+          "heat": 20,
+          "work": 6
+        },
+        {
+          "id": "under-accounted",
+          "kind": "ledger",
+          "input": 100,
+          "outputs": [
+            30,
+            60
+          ]
+        },
+        {
+          "id": "different-temperature",
+          "kind": "thermal",
+          "hot": 500,
+          "cold": 300,
+          "heat": 20,
+          "work": 8
+        }
+      ],
+      "expected": [
+        {
+          "id": "terminal",
+          "sum": 100,
+          "residual": 0,
+          "closed": true
+        },
+        {
+          "id": "double-count",
+          "sum": 130,
+          "residual": -30,
+          "closed": false
+        },
+        {
+          "id": "ideal-ceiling",
+          "ceiling": 0.25,
+          "workFraction": 0.25,
+          "permittedByBound": true
+        },
+        {
+          "id": "above-ceiling",
+          "ceiling": 0.25,
+          "workFraction": 0.3,
+          "permittedByBound": false
+        },
+        {
+          "id": "under-accounted",
+          "sum": 90,
+          "residual": 10,
+          "closed": false
+        },
+        {
+          "id": "different-temperature",
+          "ceiling": 0.4,
+          "workFraction": 0.4,
+          "permittedByBound": true
+        }
+      ],
+      "task_sha256": "aee750855f31dd578c22d3aa3843082d8a8fc5211435833ab7968fcc483888c6"
+    }
+  ]
+}
