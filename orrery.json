@@ -1,0 +1,3114 @@
+{
+  "version": "2026-11-25-v1",
+  "catalog_sha256": "3521c010812b7f8f1d0b4a80924f3cad2a8f2d9f6718e5095408aad1ffbc474d",
+  "scope": "Explicit documented or proposed relationships only. No inferred transitive links, compatibility, physical coupling, or safety approval. Hold/watch records have no indexed edges.",
+  "types": {
+    "guided-hypothesis": "Guided hypothesis",
+    "method-transfer": "Proposed method transfer",
+    "documented-lineage": "Documented research lineage",
+    "documented-architecture": "Documented proposed architecture",
+    "scope-distinction": "Documented scope distinction",
+    "editorial-comparison": "Editorial comparison"
+  },
+  "counts": {
+    "records": 364,
+    "connected": 21,
+    "edges": 15
+  },
+  "nodes": [
+    {
+      "id": "ac-cognition-engine",
+      "title": "AC Cognition Engine",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/ac-cognition-engine.html",
+      "relationships": 0
+    },
+    {
+      "id": "ac2-admissible-decision-architecture",
+      "title": "AC² — Admissible decision architecture",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/ac2-admissible-decision-architecture.html",
+      "relationships": 0
+    },
+    {
+      "id": "acoustic-genome",
+      "title": "Acoustic Genome",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/acoustic-genome.html",
+      "relationships": 0
+    },
+    {
+      "id": "acoustic-snuffer-wildfire-convoy",
+      "title": "Acoustic Snuffer — Wildfire convoy",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/acoustic-snuffer-wildfire-convoy.html",
+      "relationships": 0
+    },
+    {
+      "id": "adaptive-pulse-process-control-appc",
+      "title": "Adaptive Pulse Process Control / APPC",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/adaptive-pulse-process-control-appc.html",
+      "relationships": 0
+    },
+    {
+      "id": "adaptive-qubit-allocator",
+      "title": "Adaptive Qubit Allocator",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/adaptive-qubit-allocator.html",
+      "relationships": 0
+    },
+    {
+      "id": "adventurer-s-forge",
+      "title": "Adventurer’s Forge",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/adventurer-s-forge.html",
+      "relationships": 1
+    },
+    {
+      "id": "aegis-10",
+      "title": "AEGIS-10",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/aegis-10.html",
+      "relationships": 0
+    },
+    {
+      "id": "aegis-buffershield",
+      "title": "AEGIS BufferShield",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/aegis-buffershield.html",
+      "relationships": 0
+    },
+    {
+      "id": "aegis-sentinel-mesh",
+      "title": "Aegis Sentinel Mesh",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/aegis-sentinel-mesh.html",
+      "relationships": 0
+    },
+    {
+      "id": "aegis-twin-v0-6",
+      "title": "AEGIS-TWIN v0.6",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/aegis-twin-v0-6.html",
+      "relationships": 0
+    },
+    {
+      "id": "aegis-veil-veilkeeper",
+      "title": "AEGIS Veil / Veilkeeper",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/aegis-veil-veilkeeper.html",
+      "relationships": 0
+    },
+    {
+      "id": "aeris-bridge-lung-support",
+      "title": "Aeris-Bridge — Lung support",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/aeris-bridge-lung-support.html",
+      "relationships": 0
+    },
+    {
+      "id": "aether-cup-ophthalmic-concept",
+      "title": "Aether Cup — Ophthalmic concept",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/aether-cup-ophthalmic-concept.html",
+      "relationships": 0
+    },
+    {
+      "id": "aether-hub-multimodal-procedural-guidance",
+      "title": "AETHER HUB — Multimodal procedural guidance",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/aether-hub-multimodal-procedural-guidance.html",
+      "relationships": 0
+    },
+    {
+      "id": "aether-latch-memory",
+      "title": "Aether-Latch Memory",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/aether-latch-memory.html",
+      "relationships": 0
+    },
+    {
+      "id": "aether-shroud",
+      "title": "Aether Shroud",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/aether-shroud.html",
+      "relationships": 0
+    },
+    {
+      "id": "aetherfilament-memory",
+      "title": "Aetherfilament Memory",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/aetherfilament-memory.html",
+      "relationships": 0
+    },
+    {
+      "id": "aetheris-octad-skycity",
+      "title": "Aetheris Octad — Skycity",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/aetheris-octad-skycity.html",
+      "relationships": 0
+    },
+    {
+      "id": "ag-das-guardian",
+      "title": "AG-DAS Guardian",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/ag-das-guardian.html",
+      "relationships": 0
+    },
+    {
+      "id": "ah-1-sh-1-underground-campus",
+      "title": "AH-1 / SH-1 — Underground campus",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/ah-1-sh-1-underground-campus.html",
+      "relationships": 0
+    },
+    {
+      "id": "ai-dentity-identity-and-governance-model",
+      "title": "AI-dentity — Identity and governance model",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/ai-dentity-identity-and-governance-model.html",
+      "relationships": 0
+    },
+    {
+      "id": "aircraft-belly-landing-energy-system",
+      "title": "Aircraft Belly-Landing Energy System",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/aircraft-belly-landing-energy-system.html",
+      "relationships": 0
+    },
+    {
+      "id": "ambassador-anti-jamming-satellite-navigation-system",
+      "title": "Ambassador Anti-Jamming Satellite Navigation System",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/ambassador-anti-jamming-satellite-navigation-system.html",
+      "relationships": 0
+    },
+    {
+      "id": "amphibishell",
+      "title": "Amphibishell",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/amphibishell.html",
+      "relationships": 0
+    },
+    {
+      "id": "anubis-abyssal-gill",
+      "title": "Anubis Abyssal Gill",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/anubis-abyssal-gill.html",
+      "relationships": 0
+    },
+    {
+      "id": "anubis-wing-flight-suit",
+      "title": "Anubis Wing — Flight suit",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/anubis-wing-flight-suit.html",
+      "relationships": 0
+    },
+    {
+      "id": "arbor-seed",
+      "title": "ARBOR / SEED",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/arbor-seed.html",
+      "relationships": 0
+    },
+    {
+      "id": "areopagus",
+      "title": "AREOPAGUS",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/areopagus.html",
+      "relationships": 0
+    },
+    {
+      "id": "arqen-architecture-and-interface-contract",
+      "title": "ARQEN — Architecture and interface contract",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/arqen-architecture-and-interface-contract.html",
+      "relationships": 0
+    },
+    {
+      "id": "artificial-heart-wireless-power-and-dual-reserves",
+      "title": "Artificial Heart — Wireless power and dual reserves",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/artificial-heart-wireless-power-and-dual-reserves.html",
+      "relationships": 0
+    },
+    {
+      "id": "asteris-daydream-loop",
+      "title": "Asteris Daydream Loop",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/asteris-daydream-loop.html",
+      "relationships": 0
+    },
+    {
+      "id": "asteris-desktop-steward",
+      "title": "Asteris Desktop Steward",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/asteris-desktop-steward.html",
+      "relationships": 0
+    },
+    {
+      "id": "asteris-logical-flow-and-location-module",
+      "title": "Asteris: Logical Flow and Location Module",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/asteris-logical-flow-and-location-module.html",
+      "relationships": 0
+    },
+    {
+      "id": "asteris-relay-device-connection-and-handoff",
+      "title": "Asteris Relay — Device connection and handoff",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/asteris-relay-device-connection-and-handoff.html",
+      "relationships": 0
+    },
+    {
+      "id": "atcb",
+      "title": "ATCB",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/atcb.html",
+      "relationships": 0
+    },
+    {
+      "id": "atlas-cistern",
+      "title": "Atlas Cistern",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/atlas-cistern.html",
+      "relationships": 0
+    },
+    {
+      "id": "atmospheric-firefighting-system",
+      "title": "Atmospheric Firefighting System",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/atmospheric-firefighting-system.html",
+      "relationships": 0
+    },
+    {
+      "id": "authority-at-commit",
+      "title": "Authority at Commit",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/authority-at-commit.html",
+      "relationships": 0
+    },
+    {
+      "id": "aux-heart",
+      "title": "AUX-HEART",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/aux-heart.html",
+      "relationships": 0
+    },
+    {
+      "id": "backtrace",
+      "title": "BACKTRACE",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/backtrace.html",
+      "relationships": 0
+    },
+    {
+      "id": "bamboo-rf-agricultural-tolerance-concept",
+      "title": "BAMBOO-RF — Agricultural tolerance concept",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/bamboo-rf-agricultural-tolerance-concept.html",
+      "relationships": 0
+    },
+    {
+      "id": "bioengineered-hair-follicle-horn-implant-concepts",
+      "title": "Bioengineered Hair-Follicle / Horn-Implant Concepts",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/bioengineered-hair-follicle-horn-implant-concepts.html",
+      "relationships": 0
+    },
+    {
+      "id": "biomedical-nanocarrier",
+      "title": "Biomedical Nanocarrier",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/biomedical-nanocarrier.html",
+      "relationships": 0
+    },
+    {
+      "id": "blackwall-fuel-reclaimer",
+      "title": "Blackwall — Fuel reclaimer",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/blackwall-fuel-reclaimer.html",
+      "relationships": 0
+    },
+    {
+      "id": "blood-manager",
+      "title": "Blood Manager",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/blood-manager.html",
+      "relationships": 0
+    },
+    {
+      "id": "boneweave",
+      "title": "Boneweave",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/boneweave.html",
+      "relationships": 0
+    },
+    {
+      "id": "bounceqec",
+      "title": "BounceQEC",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/bounceqec.html",
+      "relationships": 0
+    },
+    {
+      "id": "boundary-0-boundary-0x",
+      "title": "BOUNDARY-0 / BOUNDARY-0X",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/boundary-0-boundary-0x.html",
+      "relationships": 0
+    },
+    {
+      "id": "bridge-01-emergency-ecmo-transfer-support-cradle",
+      "title": "BRIDGE-01 — Emergency ECMO transfer-support cradle",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/bridge-01-emergency-ecmo-transfer-support-cradle.html",
+      "relationships": 0
+    },
+    {
+      "id": "bridle-1-monolithic-cellular-aerospike",
+      "title": "BRIDLE-1 — Monolithic cellular aerospike",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/bridle-1-monolithic-cellular-aerospike.html",
+      "relationships": 0
+    },
+    {
+      "id": "bridle-2",
+      "title": "BRIDLE-2",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/bridle-2.html",
+      "relationships": 0
+    },
+    {
+      "id": "bridle-3",
+      "title": "BRIDLE-3",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/bridle-3.html",
+      "relationships": 0
+    },
+    {
+      "id": "buoyant-impulse-pod",
+      "title": "Buoyant Impulse Pod",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/buoyant-impulse-pod.html",
+      "relationships": 0
+    },
+    {
+      "id": "burst-mode-subsurface-actuation",
+      "title": "Burst-Mode Subsurface Actuation",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/burst-mode-subsurface-actuation.html",
+      "relationships": 0
+    },
+    {
+      "id": "cerebris-trauma-support",
+      "title": "Cerebris — Trauma support",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/cerebris-trauma-support.html",
+      "relationships": 0
+    },
+    {
+      "id": "charcoal-microplastic-filtration",
+      "title": "Charcoal Microplastic Filtration",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/charcoal-microplastic-filtration.html",
+      "relationships": 0
+    },
+    {
+      "id": "chihuahua-sphere-cs-1",
+      "title": "Chihuahua Sphere / CS-1",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/chihuahua-sphere-cs-1.html",
+      "relationships": 2
+    },
+    {
+      "id": "child-safety-search-assist",
+      "title": "Child Safety Search Assist",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/child-safety-search-assist.html",
+      "relationships": 0
+    },
+    {
+      "id": "choir-on-arqen",
+      "title": "Choir on ARQEN",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/choir-on-arqen.html",
+      "relationships": 0
+    },
+    {
+      "id": "chromo-veil",
+      "title": "Chromo Veil",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/chromo-veil.html",
+      "relationships": 0
+    },
+    {
+      "id": "chronovisor",
+      "title": "Chronovisor",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/chronovisor.html",
+      "relationships": 0
+    },
+    {
+      "id": "cmh-01-contractile-heart-material-research",
+      "title": "CMH-01 — Contractile heart-material research",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/cmh-01-contractile-heart-material-research.html",
+      "relationships": 0
+    },
+    {
+      "id": "conduct-architecture",
+      "title": "Conduct Architecture",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/conduct-architecture.html",
+      "relationships": 0
+    },
+    {
+      "id": "confluence-01-synthetic-sense",
+      "title": "CONFLUENCE-01 — Synthetic Sense",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/confluence-01-synthetic-sense.html",
+      "relationships": 3
+    },
+    {
+      "id": "conscience-01-bounded-machine-advisory-layer",
+      "title": "CONSCIENCE-01 — Bounded machine advisory layer",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/conscience-01-bounded-machine-advisory-layer.html",
+      "relationships": 0
+    },
+    {
+      "id": "consent-gate",
+      "title": "Consent Gate",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/consent-gate.html",
+      "relationships": 0
+    },
+    {
+      "id": "cortex-neural-bioreactor",
+      "title": "Cortex — Neural bioreactor",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/cortex-neural-bioreactor.html",
+      "relationships": 1
+    },
+    {
+      "id": "court-governance-stack-v1-0-rc2",
+      "title": "Court Governance Stack v1.0-RC2",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/court-governance-stack-v1-0-rc2.html",
+      "relationships": 1
+    },
+    {
+      "id": "court-of-the-synthetic-multi-model-engineering-review",
+      "title": "Court of the Synthetic — Multi-model engineering review",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/court-of-the-synthetic-multi-model-engineering-review.html",
+      "relationships": 0
+    },
+    {
+      "id": "court-on-trial",
+      "title": "Court on Trial",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/court-on-trial.html",
+      "relationships": 0
+    },
+    {
+      "id": "crimson-sentinel-surgical-pod",
+      "title": "Crimson Sentinel — Surgical pod",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/crimson-sentinel-surgical-pod.html",
+      "relationships": 0
+    },
+    {
+      "id": "crucible",
+      "title": "CRUCIBLE",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/crucible.html",
+      "relationships": 2
+    },
+    {
+      "id": "crystal-damping-loop",
+      "title": "Crystal Damping Loop",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/crystal-damping-loop.html",
+      "relationships": 0
+    },
+    {
+      "id": "crystal-security",
+      "title": "Crystal Security",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/crystal-security.html",
+      "relationships": 0
+    },
+    {
+      "id": "cyber-meta-material",
+      "title": "Cyber Meta-Material",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/cyber-meta-material.html",
+      "relationships": 0
+    },
+    {
+      "id": "deep-earth-listening-earth-stethoscope",
+      "title": "Deep Earth Listening / Earth Stethoscope",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/deep-earth-listening-earth-stethoscope.html",
+      "relationships": 0
+    },
+    {
+      "id": "dermis-bioreactor-cradle",
+      "title": "Dermis — Bioreactor / cradle",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/dermis-bioreactor-cradle.html",
+      "relationships": 2
+    },
+    {
+      "id": "desert-hippo-well-atmospheric-feedwater-collection",
+      "title": "Desert HIPPO Well — Atmospheric feedwater collection",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/desert-hippo-well-atmospheric-feedwater-collection.html",
+      "relationships": 0
+    },
+    {
+      "id": "diamond-thermoelectric-power-source",
+      "title": "Diamond Thermoelectric Power Source",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/diamond-thermoelectric-power-source.html",
+      "relationships": 0
+    },
+    {
+      "id": "dielectric-threshold-mapper",
+      "title": "Dielectric Threshold Mapper",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/dielectric-threshold-mapper.html",
+      "relationships": 0
+    },
+    {
+      "id": "direct-beta-energy-harvester-rtg-study",
+      "title": "Direct Beta Energy Harvester / RTG Study",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/direct-beta-energy-harvester-rtg-study.html",
+      "relationships": 0
+    },
+    {
+      "id": "dog-soundboard-communication-protocol",
+      "title": "Dog Soundboard — Communication protocol",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/dog-soundboard-communication-protocol.html",
+      "relationships": 0
+    },
+    {
+      "id": "dragon-s-bridle",
+      "title": "Dragon’s Bridle",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/dragon-s-bridle.html",
+      "relationships": 0
+    },
+    {
+      "id": "drone-rotor-d1",
+      "title": "Drone Rotor D1",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/drone-rotor-d1.html",
+      "relationships": 0
+    },
+    {
+      "id": "earth-complexity-monitor",
+      "title": "Earth Complexity Monitor",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/earth-complexity-monitor.html",
+      "relationships": 0
+    },
+    {
+      "id": "echo-bowl",
+      "title": "Echo Bowl",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/echo-bowl.html",
+      "relationships": 0
+    },
+    {
+      "id": "echo-dna-echo-y-echo-p-echo-h",
+      "title": "ECHO-DNA / ECHO-Y / ECHO-P / ECHO-H",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/echo-dna-echo-y-echo-p-echo-h.html",
+      "relationships": 0
+    },
+    {
+      "id": "echo-genome-echogenome",
+      "title": "ECHO Genome / EchoGenome",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/echo-genome-echogenome.html",
+      "relationships": 0
+    },
+    {
+      "id": "echo-m",
+      "title": "ECHO-M",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/echo-m.html",
+      "relationships": 1
+    },
+    {
+      "id": "echo-protocell-resonant-and-provisioned-seed",
+      "title": "ECHO Protocell — Resonant and Provisioned Seed",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/echo-protocell-resonant-and-provisioned-seed.html",
+      "relationships": 0
+    },
+    {
+      "id": "echo-rx",
+      "title": "ECHO-Rx",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/echo-rx.html",
+      "relationships": 3
+    },
+    {
+      "id": "edge-reflex-mesh-local-control-and-safety-reflexes",
+      "title": "Edge Reflex Mesh — Local control and safety reflexes",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/edge-reflex-mesh-local-control-and-safety-reflexes.html",
+      "relationships": 0
+    },
+    {
+      "id": "elemental-operator-atlas-rubik-engine",
+      "title": "Elemental Operator Atlas / Rubik Engine",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/elemental-operator-atlas-rubik-engine.html",
+      "relationships": 0
+    },
+    {
+      "id": "em-capture-chain-spacecraft-concept",
+      "title": "EM Capture Chain — Spacecraft concept",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/em-capture-chain-spacecraft-concept.html",
+      "relationships": 0
+    },
+    {
+      "id": "embodied-system-stack",
+      "title": "Embodied System Stack",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/embodied-system-stack.html",
+      "relationships": 0
+    },
+    {
+      "id": "emh-field-guide-gloves",
+      "title": "EMH — Field Guide Gloves",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/emh-field-guide-gloves.html",
+      "relationships": 0
+    },
+    {
+      "id": "empty-river-blood-manufacturing",
+      "title": "Empty River — Blood manufacturing",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/empty-river-blood-manufacturing.html",
+      "relationships": 0
+    },
+    {
+      "id": "endurance-stack",
+      "title": "Endurance Stack",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/endurance-stack.html",
+      "relationships": 0
+    },
+    {
+      "id": "enki-s-homeostasis",
+      "title": "Enki’s Homeostasis",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/enki-s-homeostasis.html",
+      "relationships": 0
+    },
+    {
+      "id": "enki-s-memory",
+      "title": "Enki’s Memory",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/enki-s-memory.html",
+      "relationships": 0
+    },
+    {
+      "id": "enki-s-will-living-safety-stack",
+      "title": "Enki’s Will — Living safety stack",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/enki-s-will-living-safety-stack.html",
+      "relationships": 0
+    },
+    {
+      "id": "eta-gate-light-elevator",
+      "title": "ETA-GATE — Light elevator",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/eta-gate-light-elevator.html",
+      "relationships": 0
+    },
+    {
+      "id": "eta-threshold-material-mapper",
+      "title": "Eta-Threshold — Material mapper",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/eta-threshold-material-mapper.html",
+      "relationships": 0
+    },
+    {
+      "id": "euplectella-node-a-node-b",
+      "title": "Euplectella Node A / Node B",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/euplectella-node-a-node-b.html",
+      "relationships": 0
+    },
+    {
+      "id": "eye-of-horus",
+      "title": "Eye of Horus",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/eye-of-horus.html",
+      "relationships": 0
+    },
+    {
+      "id": "fenrir",
+      "title": "Fenrir",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/fenrir.html",
+      "relationships": 0
+    },
+    {
+      "id": "field-medic-guided-hand-support",
+      "title": "FIELD MEDIC — Guided-hand support",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/field-medic-guided-hand-support.html",
+      "relationships": 1
+    },
+    {
+      "id": "fireground-fusion-hud",
+      "title": "FIREGROUND FUSION HUD",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/fireground-fusion-hud.html",
+      "relationships": 0
+    },
+    {
+      "id": "firewell-silo-wildfire-relief",
+      "title": "Firewell — Silo wildfire relief",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/firewell-silo-wildfire-relief.html",
+      "relationships": 0
+    },
+    {
+      "id": "floquet-wave-processor",
+      "title": "Floquet Wave Processor",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/floquet-wave-processor.html",
+      "relationships": 0
+    },
+    {
+      "id": "florida-space-coast-autonomous-systems-innovation-park",
+      "title": "Florida Space Coast Autonomous Systems Innovation Park",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/florida-space-coast-autonomous-systems-innovation-park.html",
+      "relationships": 0
+    },
+    {
+      "id": "fluffy-01",
+      "title": "FLUFFY-01",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/fluffy-01.html",
+      "relationships": 0
+    },
+    {
+      "id": "folded-linac",
+      "title": "Folded Linac",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/folded-linac.html",
+      "relationships": 0
+    },
+    {
+      "id": "fqsc-01",
+      "title": "FQSC-01",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/fqsc-01.html",
+      "relationships": 0
+    },
+    {
+      "id": "fsams-skin-eva-concept",
+      "title": "FSAMS-SKIN — EVA concept",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/fsams-skin-eva-concept.html",
+      "relationships": 0
+    },
+    {
+      "id": "gaian-needle-mole",
+      "title": "Gaian Needle-Mole",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/gaian-needle-mole.html",
+      "relationships": 0
+    },
+    {
+      "id": "gaian-tailings",
+      "title": "Gaian Tailings",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/gaian-tailings.html",
+      "relationships": 0
+    },
+    {
+      "id": "gamma-native-quantum-optical-foundry",
+      "title": "Gamma Native / Quantum Optical Foundry",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/gamma-native-quantum-optical-foundry.html",
+      "relationships": 0
+    },
+    {
+      "id": "gastra-gastric-sleeve-concept",
+      "title": "GASTRA — Gastric sleeve concept",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/gastra-gastric-sleeve-concept.html",
+      "relationships": 0
+    },
+    {
+      "id": "gentle-01-low-force-gripper",
+      "title": "GENTLE-01 — Low-force gripper",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/gentle-01-low-force-gripper.html",
+      "relationships": 0
+    },
+    {
+      "id": "ghost-fiber",
+      "title": "Ghost Fiber",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/ghost-fiber.html",
+      "relationships": 0
+    },
+    {
+      "id": "ghostglass",
+      "title": "Ghostglass",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/ghostglass.html",
+      "relationships": 1
+    },
+    {
+      "id": "ghostwalker-scout",
+      "title": "Ghostwalker Scout",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/ghostwalker-scout.html",
+      "relationships": 0
+    },
+    {
+      "id": "gips-intramedullary-guidance-and-risk-control",
+      "title": "GIPS — Intramedullary guidance and risk control",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/gips-intramedullary-guidance-and-risk-control.html",
+      "relationships": 0
+    },
+    {
+      "id": "go-cube-liberty-field-governor",
+      "title": "GO-CUBE — Liberty Field Governor",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/go-cube-liberty-field-governor.html",
+      "relationships": 2
+    },
+    {
+      "id": "governed-acoustofluidic-system",
+      "title": "Governed Acoustofluidic System",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/governed-acoustofluidic-system.html",
+      "relationships": 0
+    },
+    {
+      "id": "governed-energy-transit-system",
+      "title": "Governed Energy Transit System",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/governed-energy-transit-system.html",
+      "relationships": 0
+    },
+    {
+      "id": "grail-1-hemocompatibility-doctrine",
+      "title": "GRAIL-1 — Hemocompatibility Doctrine",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/grail-1-hemocompatibility-doctrine.html",
+      "relationships": 0
+    },
+    {
+      "id": "grasp-01-grasp-recovery-simulation-benchmark",
+      "title": "GRASP-01 — Grasp-recovery simulation benchmark",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/grasp-01-grasp-recovery-simulation-benchmark.html",
+      "relationships": 0
+    },
+    {
+      "id": "gravitationally-coupled-clock",
+      "title": "Gravitationally Coupled Clock",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/gravitationally-coupled-clock.html",
+      "relationships": 0
+    },
+    {
+      "id": "gravity-thief-launch-concept",
+      "title": "Gravity Thief — Launch concept",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/gravity-thief-launch-concept.html",
+      "relationships": 0
+    },
+    {
+      "id": "green-craft-exterior-concept",
+      "title": "Green Craft — Exterior concept",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/green-craft-exterior-concept.html",
+      "relationships": 0
+    },
+    {
+      "id": "hallvard-s-promise-little-lungs",
+      "title": "Hallvard’s Promise / Little Lungs",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/hallvard-s-promise-little-lungs.html",
+      "relationships": 0
+    },
+    {
+      "id": "hbftune-eeg-concept",
+      "title": "HBFTune — EEG concept",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/hbftune-eeg-concept.html",
+      "relationships": 0
+    },
+    {
+      "id": "heart-of-osiris",
+      "title": "Heart of Osiris",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/heart-of-osiris.html",
+      "relationships": 0
+    },
+    {
+      "id": "hearth-cask",
+      "title": "Hearth Cask",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/hearth-cask.html",
+      "relationships": 0
+    },
+    {
+      "id": "heartseed-cardiac-support-research",
+      "title": "HEARTSEED — Cardiac support research",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/heartseed-cardiac-support-research.html",
+      "relationships": 0
+    },
+    {
+      "id": "heimdall-qpl",
+      "title": "Heimdall-QPL",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/heimdall-qpl.html",
+      "relationships": 0
+    },
+    {
+      "id": "heimdall-s-bridge-human-machine-coupling-and-balance",
+      "title": "Heimdall’s Bridge — Human–machine coupling and balance",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/heimdall-s-bridge-human-machine-coupling-and-balance.html",
+      "relationships": 0
+    },
+    {
+      "id": "helical-silo-collider",
+      "title": "Helical Silo Collider",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/helical-silo-collider.html",
+      "relationships": 0
+    },
+    {
+      "id": "hemostat-r",
+      "title": "HEMOSTAT-R",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/hemostat-r.html",
+      "relationships": 0
+    },
+    {
+      "id": "hephaestus-autonomous-forge",
+      "title": "Hephaestus — Autonomous forge",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/hephaestus-autonomous-forge.html",
+      "relationships": 0
+    },
+    {
+      "id": "herdminder-hm-01",
+      "title": "HerdMinder / HM-01",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/herdminder-hm-01.html",
+      "relationships": 0
+    },
+    {
+      "id": "hermes-quantum-queue",
+      "title": "Hermes Quantum Queue",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/hermes-quantum-queue.html",
+      "relationships": 0
+    },
+    {
+      "id": "hfh-generalization-specification",
+      "title": "HFH Generalization Specification",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/hfh-generalization-specification.html",
+      "relationships": 0
+    },
+    {
+      "id": "hidden-heat-mathematical-study",
+      "title": "Hidden Heat — Mathematical study",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/hidden-heat-mathematical-study.html",
+      "relationships": 0
+    },
+    {
+      "id": "hippo-bus-scheduled-hybrid-power-distribution",
+      "title": "HIPPO Bus — Scheduled hybrid power distribution",
+      "record_status": "expanded",
+      "publication_hold": "review_watch",
+      "record": "records/hippo-bus-scheduled-hybrid-power-distribution.html",
+      "relationships": 0
+    },
+    {
+      "id": "hippo-canteen-water-verification-treatment-and-stored-power",
+      "title": "HIPPO CANTEEN — Water verification, treatment and stored power",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/hippo-canteen-water-verification-treatment-and-stored-power.html",
+      "relationships": 0
+    },
+    {
+      "id": "hippo-data-center-cooling-stack",
+      "title": "HIPPO Data Center Cooling Stack",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/hippo-data-center-cooling-stack.html",
+      "relationships": 0
+    },
+    {
+      "id": "hippo-dragon",
+      "title": "HIPPO DRAGON",
+      "record_status": "pending_review",
+      "publication_hold": "precautionary_hold_summary_only",
+      "record": "records/hippo-dragon.html",
+      "relationships": 0
+    },
+    {
+      "id": "hippo-mag-01-magnetic-compensation-experiment",
+      "title": "HIPPO-MAG-01 — Magnetic-compensation experiment",
+      "record_status": "expanded",
+      "publication_hold": "precautionary_hold_summary_only",
+      "record": "records/hippo-mag-01-magnetic-compensation-experiment.html",
+      "relationships": 0
+    },
+    {
+      "id": "hippo-stack",
+      "title": "HIPPO Stack",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/hippo-stack.html",
+      "relationships": 0
+    },
+    {
+      "id": "hippo-thruster-array",
+      "title": "HIPPO Thruster Array",
+      "record_status": "expanded",
+      "publication_hold": "precautionary_hold_summary_only",
+      "record": "records/hippo-thruster-array.html",
+      "relationships": 0
+    },
+    {
+      "id": "hippo-thunderlung",
+      "title": "HIPPO Thunderlung",
+      "record_status": "pending_review",
+      "publication_hold": "precautionary_hold_summary_only",
+      "record": "records/hippo-thunderlung.html",
+      "relationships": 0
+    },
+    {
+      "id": "hippo-vortex-lmb",
+      "title": "HIPPO Vortex LMB",
+      "record_status": "pending_review",
+      "publication_hold": "precautionary_hold_summary_only",
+      "record": "records/hippo-vortex-lmb.html",
+      "relationships": 0
+    },
+    {
+      "id": "hippo-water-stack",
+      "title": "HIPPO Water Stack",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/hippo-water-stack.html",
+      "relationships": 0
+    },
+    {
+      "id": "hive-1-human-ai-cognitive-network",
+      "title": "HIVE-1 — Human–AI cognitive network",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/hive-1-human-ai-cognitive-network.html",
+      "relationships": 0
+    },
+    {
+      "id": "horizon-glasses",
+      "title": "Horizon Glasses",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/horizon-glasses.html",
+      "relationships": 0
+    },
+    {
+      "id": "host-powered-synthetic-chromosome",
+      "title": "Host-Powered Synthetic Chromosome",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/host-powered-synthetic-chromosome.html",
+      "relationships": 0
+    },
+    {
+      "id": "hr-01-human-router",
+      "title": "HR-01 — Human Router",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/hr-01-human-router.html",
+      "relationships": 0
+    },
+    {
+      "id": "hull-calmstack-defender",
+      "title": "HULL CALMSTACK DEFENDER",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/hull-calmstack-defender.html",
+      "relationships": 0
+    },
+    {
+      "id": "human-maintenance-stack",
+      "title": "Human Maintenance Stack",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/human-maintenance-stack.html",
+      "relationships": 0
+    },
+    {
+      "id": "human-perception-stack",
+      "title": "Human Perception Stack",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/human-perception-stack.html",
+      "relationships": 0
+    },
+    {
+      "id": "humanitarian-demining-drone",
+      "title": "Humanitarian Demining Drone",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/humanitarian-demining-drone.html",
+      "relationships": 0
+    },
+    {
+      "id": "hy-brasil-dome",
+      "title": "HY-BRASIL DOME",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/hy-brasil-dome.html",
+      "relationships": 0
+    },
+    {
+      "id": "hydrofell-01-hydro-data-center",
+      "title": "Hydrofell-01 — Hydro data center",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/hydrofell-01-hydro-data-center.html",
+      "relationships": 0
+    },
+    {
+      "id": "hypha-ear",
+      "title": "Hypha Ear",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/hypha-ear.html",
+      "relationships": 0
+    },
+    {
+      "id": "hypha-mesh",
+      "title": "Hypha Mesh",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/hypha-mesh.html",
+      "relationships": 0
+    },
+    {
+      "id": "hypha-mind-go-cube-update-authorization-testbed",
+      "title": "Hypha Mind / GO-CUBE — Update-authorization testbed",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/hypha-mind-go-cube-update-authorization-testbed.html",
+      "relationships": 1
+    },
+    {
+      "id": "hypha-rootway",
+      "title": "Hypha Rootway",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/hypha-rootway.html",
+      "relationships": 0
+    },
+    {
+      "id": "inkheal",
+      "title": "INKHEAL",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/inkheal.html",
+      "relationships": 0
+    },
+    {
+      "id": "invisible-ink-printing-and-removal",
+      "title": "Invisible Ink — Printing and removal",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/invisible-ink-printing-and-removal.html",
+      "relationships": 0
+    },
+    {
+      "id": "jaguar-mode",
+      "title": "Jaguar Mode",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/jaguar-mode.html",
+      "relationships": 0
+    },
+    {
+      "id": "janus-10",
+      "title": "JANUS-10",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/janus-10.html",
+      "relationships": 0
+    },
+    {
+      "id": "janus-loop-supply-recovery",
+      "title": "Janus Loop — Supply recovery",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/janus-loop-supply-recovery.html",
+      "relationships": 0
+    },
+    {
+      "id": "ka-patch-bioenergy-jewelry",
+      "title": "KA Patch — Bioenergy jewelry",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/ka-patch-bioenergy-jewelry.html",
+      "relationships": 0
+    },
+    {
+      "id": "knock-moth-pool-tile-mapping",
+      "title": "Knock-Moth — Pool-tile mapping",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/knock-moth-pool-tile-mapping.html",
+      "relationships": 0
+    },
+    {
+      "id": "laaf-pinn",
+      "title": "LAAF PINN",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/laaf-pinn.html",
+      "relationships": 0
+    },
+    {
+      "id": "lantern-1-supervised-budgeted-ai-inquiry",
+      "title": "LANTERN-1 — Supervised, budgeted AI inquiry",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/lantern-1-supervised-budgeted-ai-inquiry.html",
+      "relationships": 0
+    },
+    {
+      "id": "lantex-24-lantex-pro-lanternfly-drone",
+      "title": "LANTEX-24 / LANTEX-PRO — Lanternfly drone",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/lantex-24-lantex-pro-lanternfly-drone.html",
+      "relationships": 0
+    },
+    {
+      "id": "lee-vertical-city-quick-city-seven",
+      "title": "Lee Vertical City / Quick City Seven",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/lee-vertical-city-quick-city-seven.html",
+      "relationships": 0
+    },
+    {
+      "id": "lepton-mitt",
+      "title": "Lepton Mitt",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/lepton-mitt.html",
+      "relationships": 0
+    },
+    {
+      "id": "lg-aether-01-biopsy-permission-and-instrument-motion-research",
+      "title": "LG–AETHER–01 — Biopsy permission and instrument-motion research",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/lg-aether-01-biopsy-permission-and-instrument-motion-research.html",
+      "relationships": 0
+    },
+    {
+      "id": "lifeguard-lance-rescue-drone-and-fleet",
+      "title": "Lifeguard Lance — Rescue drone and fleet",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/lifeguard-lance-rescue-drone-and-fleet.html",
+      "relationships": 0
+    },
+    {
+      "id": "linc-dart-01",
+      "title": "LINC-DART-01",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/linc-dart-01.html",
+      "relationships": 0
+    },
+    {
+      "id": "liquid-metal-cooling-system",
+      "title": "Liquid-Metal Cooling System",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/liquid-metal-cooling-system.html",
+      "relationships": 0
+    },
+    {
+      "id": "litho-hippo",
+      "title": "LITHO-HIPPO",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/litho-hippo.html",
+      "relationships": 0
+    },
+    {
+      "id": "little-gatekeeper",
+      "title": "Little Gatekeeper",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/little-gatekeeper.html",
+      "relationships": 0
+    },
+    {
+      "id": "lunar-eva-life-support",
+      "title": "Lunar EVA Life Support",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/lunar-eva-life-support.html",
+      "relationships": 0
+    },
+    {
+      "id": "lunarecycle-backplate",
+      "title": "LunaRecycle Backplate",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/lunarecycle-backplate.html",
+      "relationships": 0
+    },
+    {
+      "id": "lung-mapper",
+      "title": "Lung Mapper",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/lung-mapper.html",
+      "relationships": 0
+    },
+    {
+      "id": "ma-at-tower",
+      "title": "MA’AT Tower",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/ma-at-tower.html",
+      "relationships": 0
+    },
+    {
+      "id": "margin-01-focused-ultrasound-drug-delivery-research",
+      "title": "MARGIN-01 — Focused-ultrasound drug-delivery research",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/margin-01-focused-ultrasound-drug-delivery-research.html",
+      "relationships": 0
+    },
+    {
+      "id": "medi-goo",
+      "title": "Medi Goo",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/medi-goo.html",
+      "relationships": 0
+    },
+    {
+      "id": "mercurius-echo-mercurius",
+      "title": "Mercurius / ECHO Mercurius",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/mercurius-echo-mercurius.html",
+      "relationships": 0
+    },
+    {
+      "id": "mhd-quasi-plasma-rigidity",
+      "title": "MHD Quasi-Plasma Rigidity",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/mhd-quasi-plasma-rigidity.html",
+      "relationships": 0
+    },
+    {
+      "id": "micro-hippo-fabric",
+      "title": "MICRO HIPPO FABRIC",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/micro-hippo-fabric.html",
+      "relationships": 0
+    },
+    {
+      "id": "mimir-hippo-extreme-energy-systems",
+      "title": "MIMIR-HIPPO — Extreme Energy Systems",
+      "record_status": "pending_review",
+      "publication_hold": "precautionary_hold_summary_only",
+      "record": "records/mimir-hippo-extreme-energy-systems.html",
+      "relationships": 0
+    },
+    {
+      "id": "mimir-s-well-where-the-source-gathers",
+      "title": "Mimir’s Well — Where the Source Gathers",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/mimir-s-well-where-the-source-gathers.html",
+      "relationships": 0
+    },
+    {
+      "id": "mindtrace-photontrace",
+      "title": "MindTrace / PhotonTrace",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/mindtrace-photontrace.html",
+      "relationships": 0
+    },
+    {
+      "id": "mirrorbox-m01",
+      "title": "MIRRORBOX M01",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/mirrorbox-m01.html",
+      "relationships": 0
+    },
+    {
+      "id": "mobile-truth-stack",
+      "title": "Mobile Truth Stack",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/mobile-truth-stack.html",
+      "relationships": 0
+    },
+    {
+      "id": "modular-rope-coupler-ranchline-utility",
+      "title": "Modular Rope Coupler / Ranchline Utility",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/modular-rope-coupler-ranchline-utility.html",
+      "relationships": 0
+    },
+    {
+      "id": "mosquito-reaper",
+      "title": "Mosquito Reaper",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/mosquito-reaper.html",
+      "relationships": 0
+    },
+    {
+      "id": "mount-olympus-cross-domain-design-and-adversarial-review",
+      "title": "Mount Olympus — Cross-domain design and adversarial review",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/mount-olympus-cross-domain-design-and-adversarial-review.html",
+      "relationships": 0
+    },
+    {
+      "id": "ndsm-01-neutrino-feasibility-study",
+      "title": "NDSM-01 — Neutrino feasibility study",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/ndsm-01-neutrino-feasibility-study.html",
+      "relationships": 0
+    },
+    {
+      "id": "neith-lantern-gate",
+      "title": "NEITH LANTERN Gate",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/neith-lantern-gate.html",
+      "relationships": 0
+    },
+    {
+      "id": "neonatal-prenatal-care-chamber",
+      "title": "Neonatal / Prenatal Care Chamber",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/neonatal-prenatal-care-chamber.html",
+      "relationships": 0
+    },
+    {
+      "id": "neural-web-underground-data-center",
+      "title": "Neural Web — Underground data center",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/neural-web-underground-data-center.html",
+      "relationships": 0
+    },
+    {
+      "id": "neuro-bridge",
+      "title": "Neuro-Bridge",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/neuro-bridge.html",
+      "relationships": 0
+    },
+    {
+      "id": "neuroshell-1",
+      "title": "Neuroshell-1",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/neuroshell-1.html",
+      "relationships": 0
+    },
+    {
+      "id": "neurosynapse-1",
+      "title": "Neurosynapse-1",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/neurosynapse-1.html",
+      "relationships": 0
+    },
+    {
+      "id": "neutrino-detector",
+      "title": "Neutrino Detector",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/neutrino-detector.html",
+      "relationships": 0
+    },
+    {
+      "id": "nexus-bridge",
+      "title": "Nexus Bridge",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/nexus-bridge.html",
+      "relationships": 0
+    },
+    {
+      "id": "null-1-null-1h-shield-1",
+      "title": "NULL-1 / NULL-1H / SHIELD-1",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/null-1-null-1h-shield-1.html",
+      "relationships": 0
+    },
+    {
+      "id": "ocean-boundary-residual-inference",
+      "title": "Ocean Boundary Residual Inference",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/ocean-boundary-residual-inference.html",
+      "relationships": 0
+    },
+    {
+      "id": "ocean-ear",
+      "title": "Ocean Ear",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/ocean-ear.html",
+      "relationships": 0
+    },
+    {
+      "id": "ocean-lantern-grid",
+      "title": "OCEAN LANTERN GRID",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/ocean-lantern-grid.html",
+      "relationships": 0
+    },
+    {
+      "id": "odin-s-ravens",
+      "title": "Odin’s Ravens",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/odin-s-ravens.html",
+      "relationships": 0
+    },
+    {
+      "id": "off-grid-ranch-water-system",
+      "title": "Off-Grid Ranch Water System",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/off-grid-ranch-water-system.html",
+      "relationships": 0
+    },
+    {
+      "id": "oilskin-sentinel",
+      "title": "OILSKIN SENTINEL",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/oilskin-sentinel.html",
+      "relationships": 0
+    },
+    {
+      "id": "olympus-floor-model-engineering-project-and-portfolio-control",
+      "title": "Olympus Floor Model — Engineering project and portfolio control",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/olympus-floor-model-engineering-project-and-portfolio-control.html",
+      "relationships": 0
+    },
+    {
+      "id": "olympus-registry-design-lineage-and-evidence-catalog",
+      "title": "Olympus Registry — Design lineage and evidence catalog",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/olympus-registry-design-lineage-and-evidence-catalog.html",
+      "relationships": 0
+    },
+    {
+      "id": "olympus-witness-rig",
+      "title": "Olympus Witness Rig",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/olympus-witness-rig.html",
+      "relationships": 0
+    },
+    {
+      "id": "omnisight-goggles",
+      "title": "OmniSight Goggles",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/omnisight-goggles.html",
+      "relationships": 0
+    },
+    {
+      "id": "orbital-pressure-corridor-beam-handoff",
+      "title": "Orbital Pressure Corridor / Beam Handoff",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/orbital-pressure-corridor-beam-handoff.html",
+      "relationships": 0
+    },
+    {
+      "id": "orehearth-geothermal-concept",
+      "title": "OREHEARTH — Geothermal concept",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/orehearth-geothermal-concept.html",
+      "relationships": 0
+    },
+    {
+      "id": "orion-orbital-recycling",
+      "title": "ORION — Orbital recycling",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/orion-orbital-recycling.html",
+      "relationships": 0
+    },
+    {
+      "id": "osmoskin",
+      "title": "OSMOSKIN",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/osmoskin.html",
+      "relationships": 0
+    },
+    {
+      "id": "ossuary-biomanufacturing",
+      "title": "OSSUARY — Biomanufacturing",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/ossuary-biomanufacturing.html",
+      "relationships": 0
+    },
+    {
+      "id": "outlaw-hovercruiser",
+      "title": "Outlaw Hovercruiser",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/outlaw-hovercruiser.html",
+      "relationships": 0
+    },
+    {
+      "id": "paleoframe-1",
+      "title": "PALEOFRAME-1",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/paleoframe-1.html",
+      "relationships": 0
+    },
+    {
+      "id": "pando-bridge",
+      "title": "Pando Bridge",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/pando-bridge.html",
+      "relationships": 0
+    },
+    {
+      "id": "pando-tongue",
+      "title": "Pando Tongue",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/pando-tongue.html",
+      "relationships": 0
+    },
+    {
+      "id": "papercall-papercall-sky",
+      "title": "PaperCall / PaperCall Sky",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/papercall-papercall-sky.html",
+      "relationships": 0
+    },
+    {
+      "id": "papergrid-0",
+      "title": "PAPERGRID-0",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/papergrid-0.html",
+      "relationships": 0
+    },
+    {
+      "id": "paperpower-water-battery",
+      "title": "PaperPower — Water battery",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/paperpower-water-battery.html",
+      "relationships": 0
+    },
+    {
+      "id": "parseval-coolant-system",
+      "title": "PARSEVAL — Coolant system",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/parseval-coolant-system.html",
+      "relationships": 0
+    },
+    {
+      "id": "parseval-loom",
+      "title": "Parseval Loom",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/parseval-loom.html",
+      "relationships": 0
+    },
+    {
+      "id": "pawtucket-riverside-market-fleet-district",
+      "title": "Pawtucket Riverside Market / Fleet District",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/pawtucket-riverside-market-fleet-district.html",
+      "relationships": 0
+    },
+    {
+      "id": "peirene-homestead-stack-modular-water-infrastructure",
+      "title": "Peirene Homestead Stack — Modular water infrastructure",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/peirene-homestead-stack-modular-water-infrastructure.html",
+      "relationships": 0
+    },
+    {
+      "id": "petsafe-drone-backpack",
+      "title": "PetSafe — Drone backpack",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/petsafe-drone-backpack.html",
+      "relationships": 0
+    },
+    {
+      "id": "phantom-hub-medical-medical-telepresence",
+      "title": "Phantom Hub Medical — Medical telepresence",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/phantom-hub-medical-medical-telepresence.html",
+      "relationships": 0
+    },
+    {
+      "id": "phantom-weave",
+      "title": "PHANTOM WEAVE",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/phantom-weave.html",
+      "relationships": 0
+    },
+    {
+      "id": "pipe-listener-01-plastic-pipe-acoustic-leak-investigation",
+      "title": "PIPE-LISTENER-01 — Plastic-pipe acoustic leak investigation",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/pipe-listener-01-plastic-pipe-acoustic-leak-investigation.html",
+      "relationships": 0
+    },
+    {
+      "id": "pla-1-plasmoid-laser-communications-array",
+      "title": "PLA-1 — Plasmoid laser communications array",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/pla-1-plasmoid-laser-communications-array.html",
+      "relationships": 0
+    },
+    {
+      "id": "plasmoid-memory-cell-seven-cell-ring",
+      "title": "Plasmoid Memory Cell / Seven-Cell Ring",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/plasmoid-memory-cell-seven-cell-ring.html",
+      "relationships": 0
+    },
+    {
+      "id": "pmsm-space-sample-microscope",
+      "title": "PMSM — Space sample microscope",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/pmsm-space-sample-microscope.html",
+      "relationships": 0
+    },
+    {
+      "id": "pollinator-habitat-electric-steamer",
+      "title": "Pollinator Habitat Electric Steamer",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/pollinator-habitat-electric-steamer.html",
+      "relationships": 0
+    },
+    {
+      "id": "polyforge-1-ocean-cleanup-ship",
+      "title": "Polyforge-1 — Ocean cleanup ship",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/polyforge-1-ocean-cleanup-ship.html",
+      "relationships": 0
+    },
+    {
+      "id": "poseidon-s-trident",
+      "title": "Poseidon’s Trident",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/poseidon-s-trident.html",
+      "relationships": 0
+    },
+    {
+      "id": "pulselink-reentry",
+      "title": "PULSELINK — Reentry",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/pulselink-reentry.html",
+      "relationships": 0
+    },
+    {
+      "id": "pyramid-data-center",
+      "title": "Pyramid Data Center",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/pyramid-data-center.html",
+      "relationships": 0
+    },
+    {
+      "id": "qf-01-numerical-research",
+      "title": "QF-01 — Numerical research",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/qf-01-numerical-research.html",
+      "relationships": 0
+    },
+    {
+      "id": "qreadout",
+      "title": "QReadout",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/qreadout.html",
+      "relationships": 0
+    },
+    {
+      "id": "quantum-floor",
+      "title": "Quantum Floor",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/quantum-floor.html",
+      "relationships": 0
+    },
+    {
+      "id": "quantum-judge",
+      "title": "Quantum Judge",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/quantum-judge.html",
+      "relationships": 0
+    },
+    {
+      "id": "quantum-observability-layer-infrastructure-telemetry",
+      "title": "Quantum Observability Layer — Infrastructure telemetry",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/quantum-observability-layer-infrastructure-telemetry.html",
+      "relationships": 0
+    },
+    {
+      "id": "quantum-quiet",
+      "title": "Quantum Quiet",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/quantum-quiet.html",
+      "relationships": 0
+    },
+    {
+      "id": "quantum-ribbon-worm-governed-quantum-workload-controller",
+      "title": "Quantum Ribbon Worm — Governed quantum workload controller",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/quantum-ribbon-worm-governed-quantum-workload-controller.html",
+      "relationships": 0
+    },
+    {
+      "id": "quantum-secure-field-communications",
+      "title": "Quantum Secure Field Communications",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/quantum-secure-field-communications.html",
+      "relationships": 0
+    },
+    {
+      "id": "quantum-shepherd",
+      "title": "Quantum Shepherd",
+      "record_status": "expanded",
+      "publication_hold": "review_watch",
+      "record": "records/quantum-shepherd.html",
+      "relationships": 0
+    },
+    {
+      "id": "quantum-slice-teleporter",
+      "title": "Quantum Slice Teleporter",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/quantum-slice-teleporter.html",
+      "relationships": 0
+    },
+    {
+      "id": "quantum-sovereign-stack",
+      "title": "Quantum Sovereign Stack",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/quantum-sovereign-stack.html",
+      "relationships": 0
+    },
+    {
+      "id": "qubit-ankh-assembly",
+      "title": "Qubit — Ankh Assembly",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/qubit-ankh-assembly.html",
+      "relationships": 0
+    },
+    {
+      "id": "radio-echo-chamber",
+      "title": "Radio Echo Chamber",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/radio-echo-chamber.html",
+      "relationships": 0
+    },
+    {
+      "id": "ram-falcon",
+      "title": "RAM-FALCON",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/ram-falcon.html",
+      "relationships": 0
+    },
+    {
+      "id": "raptor-veil",
+      "title": "Raptor Veil",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/raptor-veil.html",
+      "relationships": 0
+    },
+    {
+      "id": "raven-p1",
+      "title": "RAVEN-P1",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/raven-p1.html",
+      "relationships": 0
+    },
+    {
+      "id": "reality-overlay-stack",
+      "title": "Reality Overlay Stack",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/reality-overlay-stack.html",
+      "relationships": 0
+    },
+    {
+      "id": "recipe-pucks",
+      "title": "Recipe Pucks",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/recipe-pucks.html",
+      "relationships": 1
+    },
+    {
+      "id": "resonant-acoustic-core-drill",
+      "title": "Resonant Acoustic Core Drill",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/resonant-acoustic-core-drill.html",
+      "relationships": 0
+    },
+    {
+      "id": "resonant-brace",
+      "title": "Resonant Brace",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/resonant-brace.html",
+      "relationships": 0
+    },
+    {
+      "id": "resonant-edge-masonry-saw",
+      "title": "Resonant Edge — Masonry saw",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/resonant-edge-masonry-saw.html",
+      "relationships": 0
+    },
+    {
+      "id": "retinal-flood-map-retinal-mapping-research",
+      "title": "Retinal Flood Map — Retinal mapping research",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/retinal-flood-map-retinal-mapping-research.html",
+      "relationships": 0
+    },
+    {
+      "id": "rewind-ii-plasma-concept",
+      "title": "REWIND-II — Plasma concept",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/rewind-ii-plasma-concept.html",
+      "relationships": 0
+    },
+    {
+      "id": "rindler-habitat",
+      "title": "Rindler Habitat",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/rindler-habitat.html",
+      "relationships": 0
+    },
+    {
+      "id": "river-reaper-walker",
+      "title": "River Reaper Walker",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/river-reaper-walker.html",
+      "relationships": 0
+    },
+    {
+      "id": "roman-concrete-finite-reserve-self-healing-model",
+      "title": "Roman Concrete — Finite-reserve self-healing model",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/roman-concrete-finite-reserve-self-healing-model.html",
+      "relationships": 0
+    },
+    {
+      "id": "rubiq",
+      "title": "RUBIQ",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/rubiq.html",
+      "relationships": 0
+    },
+    {
+      "id": "s2m-dart",
+      "title": "S2M-DART",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/s2m-dart.html",
+      "relationships": 0
+    },
+    {
+      "id": "safe-channel-negative-space-mapper",
+      "title": "SAFE CHANNEL — Negative Space Mapper",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/safe-channel-negative-space-mapper.html",
+      "relationships": 0
+    },
+    {
+      "id": "satcom-01-ku-band-vsat-terminal",
+      "title": "SATCOM-01 — Ku-band VSAT terminal",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/satcom-01-ku-band-vsat-terminal.html",
+      "relationships": 0
+    },
+    {
+      "id": "saturn-01-processing-concept",
+      "title": "Saturn-01 — Processing concept",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/saturn-01-processing-concept.html",
+      "relationships": 0
+    },
+    {
+      "id": "scarab-4",
+      "title": "Scarab-4",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/scarab-4.html",
+      "relationships": 0
+    },
+    {
+      "id": "scarab-dc-shipboard-repair",
+      "title": "SCARAB-DC — Shipboard repair",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/scarab-dc-shipboard-repair.html",
+      "relationships": 0
+    },
+    {
+      "id": "scarab-rf",
+      "title": "SCARAB-RF",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/scarab-rf.html",
+      "relationships": 0
+    },
+    {
+      "id": "scope-365-permission-rehearsal",
+      "title": "SCOPE-365 — Permission rehearsal",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/scope-365-permission-rehearsal.html",
+      "relationships": 0
+    },
+    {
+      "id": "seam30-brick32",
+      "title": "SEAM30 / BRICK32",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/seam30-brick32.html",
+      "relationships": 0
+    },
+    {
+      "id": "shofar-mesh-resource-status-signaling",
+      "title": "SHOFAR Mesh — Resource-status signaling",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/shofar-mesh-resource-status-signaling.html",
+      "relationships": 0
+    },
+    {
+      "id": "signature-selective-receiver-detection-and-error-bounds",
+      "title": "Signature-Selective Receiver — Detection and error bounds",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/signature-selective-receiver-detection-and-error-bounds.html",
+      "relationships": 0
+    },
+    {
+      "id": "silt-harp-manual-muddy-water-prefiltration",
+      "title": "SILT HARP — Manual muddy-water prefiltration",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/silt-harp-manual-muddy-water-prefiltration.html",
+      "relationships": 0
+    },
+    {
+      "id": "silt-hippo-silo-cistern",
+      "title": "Silt HIPPO — Silo cistern",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/silt-hippo-silo-cistern.html",
+      "relationships": 0
+    },
+    {
+      "id": "sister-s-hope-hand-restoration-gloves",
+      "title": "Sister’s Hope — Hand restoration gloves",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/sister-s-hope-hand-restoration-gloves.html",
+      "relationships": 0
+    },
+    {
+      "id": "site-lantern",
+      "title": "SITE LANTERN",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/site-lantern.html",
+      "relationships": 0
+    },
+    {
+      "id": "skeptic-1",
+      "title": "SKEPTIC-1",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/skeptic-1.html",
+      "relationships": 2
+    },
+    {
+      "id": "skipjack-lf-hover-feasibility",
+      "title": "SKIPJACK-LF — Hover feasibility",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/skipjack-lf-hover-feasibility.html",
+      "relationships": 0
+    },
+    {
+      "id": "sky-spine-observatory",
+      "title": "Sky-Spine Observatory",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/sky-spine-observatory.html",
+      "relationships": 0
+    },
+    {
+      "id": "sky-wing",
+      "title": "Sky Wing",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/sky-wing.html",
+      "relationships": 0
+    },
+    {
+      "id": "skybridle-aircraft-safety",
+      "title": "Skybridle — Aircraft safety",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/skybridle-aircraft-safety.html",
+      "relationships": 0
+    },
+    {
+      "id": "skybus",
+      "title": "Skybus",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/skybus.html",
+      "relationships": 0
+    },
+    {
+      "id": "small-farm-community",
+      "title": "Small Farm Community",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/small-farm-community.html",
+      "relationships": 0
+    },
+    {
+      "id": "smart-tattoo-microneedle-system",
+      "title": "Smart Tattoo / Microneedle System",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/smart-tattoo-microneedle-system.html",
+      "relationships": 0
+    },
+    {
+      "id": "smt-r1-authenticated-update-governance",
+      "title": "SMT-R1 — Authenticated update governance",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/smt-r1-authenticated-update-governance.html",
+      "relationships": 0
+    },
+    {
+      "id": "solar-thermal-centrifuge",
+      "title": "Solar-Thermal Centrifuge",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/solar-thermal-centrifuge.html",
+      "relationships": 0
+    },
+    {
+      "id": "soul-forge",
+      "title": "Soul Forge",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/soul-forge.html",
+      "relationships": 0
+    },
+    {
+      "id": "soul-forge-hand-mapping",
+      "title": "Soul Forge — Hand Mapping",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/soul-forge-hand-mapping.html",
+      "relationships": 0
+    },
+    {
+      "id": "sound-bus",
+      "title": "Sound Bus",
+      "record_status": "expanded",
+      "publication_hold": "review_watch",
+      "record": "records/sound-bus.html",
+      "relationships": 0
+    },
+    {
+      "id": "spincell-dle",
+      "title": "SpinCell DLE",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/spincell-dle.html",
+      "relationships": 1
+    },
+    {
+      "id": "spotrecon-spotrecon-r2",
+      "title": "SPOTRECON / SPOTRECON R2",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/spotrecon-spotrecon-r2.html",
+      "relationships": 1
+    },
+    {
+      "id": "sr-margin-01-spacecraft-power-and-thermal-audit",
+      "title": "SR-MARGIN-01 — Spacecraft power and thermal audit",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/sr-margin-01-spacecraft-power-and-thermal-audit.html",
+      "relationships": 0
+    },
+    {
+      "id": "stack-nv-sensor-family",
+      "title": "STACK-NV — Sensor family",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/stack-nv-sensor-family.html",
+      "relationships": 0
+    },
+    {
+      "id": "stellar-nursery-01",
+      "title": "Stellar Nursery-01",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/stellar-nursery-01.html",
+      "relationships": 0
+    },
+    {
+      "id": "strixark-owl-conservation",
+      "title": "StrixArk — Owl conservation",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/strixark-owl-conservation.html",
+      "relationships": 0
+    },
+    {
+      "id": "svalbard-knowledge-continuity-and-recovery",
+      "title": "SVALBARD — Knowledge continuity and recovery",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/svalbard-knowledge-continuity-and-recovery.html",
+      "relationships": 0
+    },
+    {
+      "id": "synapse-of-enki",
+      "title": "Synapse of Enki",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/synapse-of-enki.html",
+      "relationships": 0
+    },
+    {
+      "id": "tb-01m-grootslang",
+      "title": "TB-01M Grootslang",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/tb-01m-grootslang.html",
+      "relationships": 0
+    },
+    {
+      "id": "telluric-accelerator-mass-driver",
+      "title": "Telluric Accelerator / Mass Driver",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/telluric-accelerator-mass-driver.html",
+      "relationships": 0
+    },
+    {
+      "id": "telluric-borehole",
+      "title": "Telluric Borehole",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/telluric-borehole.html",
+      "relationships": 0
+    },
+    {
+      "id": "telluric-borer",
+      "title": "Telluric Borer",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/telluric-borer.html",
+      "relationships": 0
+    },
+    {
+      "id": "telluric-transmitter",
+      "title": "Telluric Transmitter",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/telluric-transmitter.html",
+      "relationships": 0
+    },
+    {
+      "id": "temporal-acoustics",
+      "title": "Temporal Acoustics",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/temporal-acoustics.html",
+      "relationships": 1
+    },
+    {
+      "id": "temporal-reflection-chamber",
+      "title": "Temporal Reflection Chamber",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/temporal-reflection-chamber.html",
+      "relationships": 0
+    },
+    {
+      "id": "the-choir-protocol-casg",
+      "title": "The Choir Protocol / CASG",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/the-choir-protocol-casg.html",
+      "relationships": 0
+    },
+    {
+      "id": "the-dock-guardian",
+      "title": "The Dock Guardian",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/the-dock-guardian.html",
+      "relationships": 0
+    },
+    {
+      "id": "the-golden-ratio-intergenerational-community",
+      "title": "The Golden Ratio — Intergenerational Community",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/the-golden-ratio-intergenerational-community.html",
+      "relationships": 0
+    },
+    {
+      "id": "the-traveler-solar-electric-research-airship",
+      "title": "The Traveler — Solar-electric research airship",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/the-traveler-solar-electric-research-airship.html",
+      "relationships": 0
+    },
+    {
+      "id": "the-triad-aegis-heimdall-and-enki-s-will",
+      "title": "The Triad — Aegis, Heimdall and Enki’s Will",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/the-triad-aegis-heimdall-and-enki-s-will.html",
+      "relationships": 0
+    },
+    {
+      "id": "thermal-grace-module",
+      "title": "Thermal Grace Module",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/thermal-grace-module.html",
+      "relationships": 0
+    },
+    {
+      "id": "third-look",
+      "title": "Third-Look",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/third-look.html",
+      "relationships": 1
+    },
+    {
+      "id": "thor-s-hammer",
+      "title": "Thor’s Hammer",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/thor-s-hammer.html",
+      "relationships": 0
+    },
+    {
+      "id": "thoracis-bioperfusion",
+      "title": "Thoracis — Bioperfusion",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/thoracis-bioperfusion.html",
+      "relationships": 1
+    },
+    {
+      "id": "thoth-s-mind",
+      "title": "Thoth’s Mind",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/thoth-s-mind.html",
+      "relationships": 0
+    },
+    {
+      "id": "tickhammer",
+      "title": "Tickhammer",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/tickhammer.html",
+      "relationships": 0
+    },
+    {
+      "id": "titanium-pressure-adaptive-metamaterial-mount",
+      "title": "Titanium Pressure-Adaptive Metamaterial Mount",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/titanium-pressure-adaptive-metamaterial-mount.html",
+      "relationships": 0
+    },
+    {
+      "id": "torus-data-center",
+      "title": "Torus Data Center",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/torus-data-center.html",
+      "relationships": 0
+    },
+    {
+      "id": "torus-vault",
+      "title": "Torus Vault",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/torus-vault.html",
+      "relationships": 0
+    },
+    {
+      "id": "transporter-t0-state-transfer-research",
+      "title": "Transporter T0 — State-transfer research",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/transporter-t0-state-transfer-research.html",
+      "relationships": 0
+    },
+    {
+      "id": "triple-nitinol-spine",
+      "title": "Triple-Nitinol Spine",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/triple-nitinol-spine.html",
+      "relationships": 0
+    },
+    {
+      "id": "truth-layer-confidence-and-uncertainty-overlay",
+      "title": "TRUTH LAYER — Confidence and uncertainty overlay",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/truth-layer-confidence-and-uncertainty-overlay.html",
+      "relationships": 0
+    },
+    {
+      "id": "truth-resolution-stack",
+      "title": "Truth Resolution Stack",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/truth-resolution-stack.html",
+      "relationships": 0
+    },
+    {
+      "id": "truthmap",
+      "title": "TRUTHMAP",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/truthmap.html",
+      "relationships": 0
+    },
+    {
+      "id": "tumor-hunter",
+      "title": "Tumor Hunter",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/tumor-hunter.html",
+      "relationships": 0
+    },
+    {
+      "id": "unidentified-transparent-fiber-composite-concept",
+      "title": "Unidentified Transparent Fiber Composite Concept",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/unidentified-transparent-fiber-composite-concept.html",
+      "relationships": 0
+    },
+    {
+      "id": "uss-eldridge-working-physics-research",
+      "title": "USS Eldridge — Working-physics research",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/uss-eldridge-working-physics-research.html",
+      "relationships": 0
+    },
+    {
+      "id": "vascular-whisperer-vascular-analysis-and-guidance",
+      "title": "Vascular Whisperer — Vascular analysis and guidance",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/vascular-whisperer-vascular-analysis-and-guidance.html",
+      "relationships": 0
+    },
+    {
+      "id": "veil-e-edison-01",
+      "title": "VEIL-E-EDISON-01",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/veil-e-edison-01.html",
+      "relationships": 0
+    },
+    {
+      "id": "veil-resonator",
+      "title": "Veil Resonator",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/veil-resonator.html",
+      "relationships": 0
+    },
+    {
+      "id": "vertical-vortex-silo-data-center",
+      "title": "Vertical Vortex Silo Data Center",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/vertical-vortex-silo-data-center.html",
+      "relationships": 0
+    },
+    {
+      "id": "vhg-vigilant-hibernation-grid",
+      "title": "VHG - Vigilant Hibernation Grid",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/vhg-vigilant-hibernation-grid.html",
+      "relationships": 0
+    },
+    {
+      "id": "vortexcap-supercapacitor",
+      "title": "Vortexcap — Supercapacitor",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/vortexcap-supercapacitor.html",
+      "relationships": 0
+    },
+    {
+      "id": "vowed-self-continuity-engine",
+      "title": "Vowed Self-Continuity Engine",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/vowed-self-continuity-engine.html",
+      "relationships": 0
+    },
+    {
+      "id": "vsrl-01-accelerator",
+      "title": "VSRL-01 — Accelerator",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/vsrl-01-accelerator.html",
+      "relationships": 0
+    },
+    {
+      "id": "warden-1-farm-guardian",
+      "title": "WARDEN-1 — Farm Guardian",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/warden-1-farm-guardian.html",
+      "relationships": 0
+    },
+    {
+      "id": "weaver-s-shuttle",
+      "title": "Weaver’s Shuttle",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/weaver-s-shuttle.html",
+      "relationships": 0
+    },
+    {
+      "id": "wet-hippo-well-gravity-settling-and-manual-routing",
+      "title": "Wet HIPPO Well — Gravity settling and manual routing",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/wet-hippo-well-gravity-settling-and-manual-routing.html",
+      "relationships": 0
+    },
+    {
+      "id": "white-marrow-foundry",
+      "title": "White Marrow Foundry",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/white-marrow-foundry.html",
+      "relationships": 0
+    },
+    {
+      "id": "wi-fi-sensing-for-accessible-homes",
+      "title": "Wi-Fi Sensing for Accessible Homes",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/wi-fi-sensing-for-accessible-homes.html",
+      "relationships": 0
+    },
+    {
+      "id": "wish-virtual-motion-research",
+      "title": "WISH — Virtual-motion research",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/wish-virtual-motion-research.html",
+      "relationships": 0
+    },
+    {
+      "id": "x07-skipjack-integration",
+      "title": "X07 / Skipjack Integration",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/x07-skipjack-integration.html",
+      "relationships": 0
+    },
+    {
+      "id": "yggdrasil-protocol-governed-adaptive-systems",
+      "title": "Yggdrasil Protocol — Governed adaptive systems",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/yggdrasil-protocol-governed-adaptive-systems.html",
+      "relationships": 0
+    },
+    {
+      "id": "zero-g-pod",
+      "title": "Zero-G Pod",
+      "record_status": "pending_review",
+      "publication_hold": "none",
+      "record": "records/zero-g-pod.html",
+      "relationships": 0
+    },
+    {
+      "id": "zion-twin-ring-tuna-habitat",
+      "title": "Zion Twin-Ring Tuna Habitat",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/zion-twin-ring-tuna-habitat.html",
+      "relationships": 1
+    }
+  ],
+  "edges": [
+    {
+      "id": "guided-optical-evidence",
+      "a": "ghostglass",
+      "b": "chihuahua-sphere-cs-1",
+      "type": "guided-hypothesis",
+      "question": "Can two independent checks catch false signals?",
+      "basis": "Ghostglass tests whether counts differ; Chihuahua Sphere tracks energy crossing boundaries. A separate optical ledger may flag some misleading detections.",
+      "limit": "Counts are not joules. Independent calibration and uncertainty bounds are required; a ledger constructed from the same detector counts is circular. No optical apparatus or joint experiment has been validated.",
+      "source": "guided-alchemy.html#optical-evidence",
+      "credit": "Adapted from Court Case 002: Grok pairing; Asteris Solenne / ChatGPT revised protocol.",
+      "reviewed_on": "2026-11-25"
+    },
+    {
+      "id": "guided-stale-senses",
+      "a": "spotrecon-spotrecon-r2",
+      "b": "confluence-01-synthetic-sense",
+      "type": "guided-hypothesis",
+      "question": "When does old information become misleading?",
+      "basis": "One source measures observation age; the other proposes false events per valid hour. Their combination asks how age affects reliability.",
+      "limit": "Age is not error or false-event rate. Clock synchronization, event definitions and valid-duration accounting matter; excluding stale data may hide failures. No field or sensory performance demonstrated.",
+      "source": "guided-alchemy.html#stale-senses",
+      "credit": "New guided hypothesis by Asteris Solenne / ChatGPT; not Court-reviewed.",
+      "reviewed_on": "2026-11-25"
+    },
+    {
+      "id": "guided-energy-ceiling",
+      "a": "chihuahua-sphere-cs-1",
+      "b": "adventurer-s-forge",
+      "type": "guided-hypothesis",
+      "question": "Where does the energy really go?",
+      "basis": "The optical ledger tracks delivered energy; the Carnot ceiling bounds an ideal heat engine. Separate them to avoid claiming all energy losses can become useful work.",
+      "limit": "Carnot applies only to a reversible two-reservoir heat engine, not direct photovoltaic conversion. No recoverable heat quantity or actual conversion performance is supplied.",
+      "source": "guided-alchemy.html#energy-ceiling",
+      "credit": "New guided hypothesis by Asteris Solenne / ChatGPT; not Court-reviewed.",
+      "reviewed_on": "2026-11-25"
+    },
+    {
+      "id": "guided-material-balance",
+      "a": "zion-twin-ring-tuna-habitat",
+      "b": "spincell-dle",
+      "type": "guided-hypothesis",
+      "question": "Did the material arrive, or merely move?",
+      "basis": "Both sources report a fraction of a conserved quantity, but the dye fraction and lithium product recovery describe different systems.",
+      "limit": "Dye concentration sums and lithium mass are not interchangeable. Equal-area grid assumptions apply to Zion; its mesh-dependent results do not establish physical transfer. SpinCell has no measured extraction data.",
+      "source": "guided-alchemy.html#material-balance",
+      "credit": "New guided hypothesis by Asteris Solenne / ChatGPT; not Court-reviewed.",
+      "reviewed_on": "2026-11-25"
+    },
+    {
+      "id": "guided-failure-counts",
+      "a": "crucible",
+      "b": "confluence-01-synthetic-sense",
+      "type": "guided-hypothesis",
+      "question": "Is a system failing often or being observed longer?",
+      "basis": "A fraction of failed runs and a rate per hour answer different questions. Reporting both may expose misleading comparisons.",
+      "limit": "A contract violation is not necessarily a false event. Runs and hours have different denominators. No real-world reliability or safety benefit follows.",
+      "source": "guided-alchemy.html#failure-counts",
+      "credit": "New guided hypothesis by Asteris Solenne / ChatGPT; not Court-reviewed.",
+      "reviewed_on": "2026-11-25"
+    },
+    {
+      "id": "guided-numerical-check",
+      "a": "skeptic-1",
+      "b": "temporal-acoustics",
+      "type": "guided-hypothesis",
+      "question": "Can a numerical artifact masquerade as a finding?",
+      "basis": "One source computes natural modes; the other records a numerical time-step stability guard. Both illustrate the importance of checking a model before interpreting outputs.",
+      "limit": "A lumped stiffness-mass model and a scalar-wave discretization are not the same physical system. The wave stability bound does not establish the accuracy of either model or a coupling between them.",
+      "source": "guided-alchemy.html#numerical-check",
+      "credit": "New guided hypothesis by Asteris Solenne / ChatGPT; not Court-reviewed.",
+      "reviewed_on": "2026-11-25"
+    },
+    {
+      "id": "court-001",
+      "a": "recipe-pucks",
+      "b": "skeptic-1",
+      "type": "method-transfer",
+      "question": "Can an independent state probe distinguish ambiguous selector states?",
+      "basis": "Court Case 001 proposes transferring the idea of a reversible probe from an ideal mechanical model to a tangible selector.",
+      "limit": "The selector is not demonstrated; the analogy is not a proven human-interface mechanism.",
+      "source": "court-case-001.html",
+      "credit": "Existing Court case study",
+      "reviewed_on": "2026-11-25"
+    },
+    {
+      "id": "court-003",
+      "a": "crucible",
+      "b": "echo-rx",
+      "type": "method-transfer",
+      "question": "Can a guard account for residual effects after a stop?",
+      "basis": "Court Case 003 proposes a synthetic residual-aware guard, drawing on the toy shutdown-tail model.",
+      "limit": "No biological or field safety benefit demonstrated; use only an inanimate synthetic benchmark.",
+      "source": "court-case-003.html",
+      "credit": "Existing Court case study",
+      "reviewed_on": "2026-11-25"
+    },
+    {
+      "id": "echo-lineage",
+      "a": "echo-m",
+      "b": "echo-rx",
+      "type": "documented-lineage",
+      "question": "How does the therapeutic research branch differ from the recorder?",
+      "basis": "The ECHO-Rx record explicitly identifies itself as a therapeutic research branch of ECHO-M.",
+      "limit": "Shared lineage does not establish implementation, integration or biological efficacy.",
+      "source": "records/echo-rx.html",
+      "credit": "Editorial indexing by Asteris Solenne; not independently reviewed",
+      "reviewed_on": "2026-11-25"
+    },
+    {
+      "id": "governor-parent",
+      "a": "go-cube-liberty-field-governor",
+      "b": "court-governance-stack-v1-0-rc2",
+      "type": "documented-architecture",
+      "question": "Where does the proposed governor fit?",
+      "basis": "The GO-CUBE design page places the proposed governor within the parent Court governance architecture.",
+      "limit": "Both are proposed; catalog source review remains pending. No complete controller is validated.",
+      "source": "go-cube.html",
+      "credit": "Editorial indexing by Asteris Solenne; not independently reviewed",
+      "reviewed_on": "2026-11-25"
+    },
+    {
+      "id": "governor-testbed",
+      "a": "go-cube-liberty-field-governor",
+      "b": "hypha-mind-go-cube-update-authorization-testbed",
+      "type": "scope-distinction",
+      "question": "What does the update testbed actually establish?",
+      "basis": "The GO-CUBE page explicitly distinguishes the archived local update-authorization testbed from the proposed governor.",
+      "limit": "The toy update tests do not establish the governor, full-stack integration or action safety.",
+      "source": "go-cube.html",
+      "credit": "Editorial indexing by Asteris Solenne; not independently reviewed",
+      "reviewed_on": "2026-11-25"
+    },
+    {
+      "id": "tissue-interface",
+      "a": "dermis-bioreactor-cradle",
+      "b": "thoracis-bioperfusion",
+      "type": "editorial-comparison",
+      "question": "Which evidence would distinguish a tissue interface from an illustration?",
+      "basis": "The two public concept records describe different living-tissue interface research; both explicitly lack manufactured apparatus and measured tissue results.",
+      "limit": "Editorial comparison only. No shared perfusion mechanism, biological equivalence or clinical readiness inferred.",
+      "source": "records/dermis-bioreactor-cradle.html",
+      "credit": "Editorial indexing by Asteris Solenne; not independently reviewed",
+      "reviewed_on": "2026-11-25"
+    },
+    {
+      "id": "tissue-governance",
+      "a": "dermis-bioreactor-cradle",
+      "b": "cortex-neural-bioreactor",
+      "type": "editorial-comparison",
+      "question": "Which claims require separate tissue-specific evidence and ethical review?",
+      "basis": "Both public concept records identify illustrative dashboards and unmeasured biological outcomes; Cortex separately identifies ethical-governance uncertainties.",
+      "limit": "No shared experimental protocol, tissue equivalence or safety claim. Research question only.",
+      "source": "records/cortex-neural-bioreactor.html",
+      "credit": "Editorial indexing by Asteris Solenne; not independently reviewed",
+      "reviewed_on": "2026-11-25"
+    },
+    {
+      "id": "observation-limits",
+      "a": "third-look",
+      "b": "confluence-01-synthetic-sense",
+      "type": "editorial-comparison",
+      "question": "How can a display distinguish observation from verified interpretation?",
+      "basis": "Third-Look proposes cross-view verification labels; CONFLUENCE proposes bounded sensor states including unavailable observations.",
+      "limit": "Neither provides validated accuracy, diagnosis, clinical benefit or demonstrated sensory performance.",
+      "source": "records/third-look.html",
+      "credit": "Editorial indexing by Asteris Solenne; not independently reviewed",
+      "reviewed_on": "2026-11-25"
+    },
+    {
+      "id": "post-stop",
+      "a": "field-medic-guided-hand-support",
+      "b": "echo-rx",
+      "type": "editorial-comparison",
+      "question": "Does revocation mean the physical effect has stopped?",
+      "basis": "FIELD MEDIC explicitly notes that logical revocation does not prove zero residual motion or force; ECHO-Rx uses a mathematical residual-activity illustration.",
+      "limit": "Different physical systems and mechanisms. No transfer of biological equations or medical device validation.",
+      "source": "records/field-medic-guided-hand-support.html",
+      "credit": "Editorial indexing by Asteris Solenne; not independently reviewed",
+      "reviewed_on": "2026-11-25"
+    }
+  ]
+}
