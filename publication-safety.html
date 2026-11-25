@@ -30,9 +30,10 @@
 <section><h2>Reviewed Equation Bench sources</h2>
 <p>The Equation Bench currently permits only source-reviewed mathematical entries listed in the <a href="equation-sources.html">current equation source index</a>. The allowlist is explicitly recorded in <a href="publication-controls.js">publication-controls.js</a> and checked against <a href="equation-cores.js">equation-cores.js</a>. Held projects remain ineligible. Adding a source requires a fresh content and publication-risk review.</p>
 </section>
-<section><h2>Repository protection still to verify</h2>
-<p>The publication preflight workflow exists, but <strong>we have not verified that GitHub requires it before merging into main</strong>. The initial review did not complete an exhaustive historical-commit, tag, release or asset audit. These are outstanding stewardship tasks, not passed security checks.</p>
-<p><a href="https://github.com/RayPeloquin/mimirs-well/blob/main/docs/hippo-publication-followup-checklist.md">Review the GitHub branch-setting and history-audit checklist</a>.</p>
+<section><h2>Repository protection verified; history review bounded</h2>
+<p>On 25 November 2026, the GitHub API reported active ruleset <a href="https://github.com/RayPeloquin/mimirs-well/rules/27930465">27930465</a> on the default branch: pull requests and the publication preflight status check are required, non-fast-forward updates and deletion are blocked, and no bypass actors are configured. The required approving-review count is zero; this is not a claim of mandatory independent human approval. Pages is configured to publish from main.</p>
+<p>A fresh mirror inventory covered 19 branch refs, 20 pull-request refs and 367 reachable commits. No tags or releases were returned. There were 49 project-name object-path matches requiring contextual review. Fourteen known private-only original artwork files were checked by exact Git blob ID against all reachable objects; none matched. This is a targeted inventory and exact-file check, not an exhaustive semantic, binary, archive, sibling-repository or historical-exposure audit. A negative enforcement test on GitHub was not performed.</p>
+<p><a href="docs/trial4-publication-audit.md">Dated audit scope and limitations</a> | <a href="https://github.com/RayPeloquin/mimirs-well/blob/main/docs/hippo-publication-followup-checklist.md">Outstanding audit checklist</a>.</p>
 </section>
 <section><h2>Two review stages, followed by a decision and deployment check</h2>
 <ol>
