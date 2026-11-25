@@ -6,10 +6,11 @@
   <title>Equation Bench — Mimir’s Well</title>
   <meta name="description" content="Combine traceable equations only as candidates. Explicit mapping, inherited claims, and assumption limits are required before export.">
   <link rel="stylesheet" href="combine.css?v=20261123-equation">
-  <link rel="stylesheet" href="equation-bench.css?v=20261123-mvp">
+  <link rel="stylesheet" href="equation-bench.css?v=20261125-guided">
   <script src="equation-cores.js?v=20261125-twelve" defer></script>
   <script src="publication-controls.js?v=20261125-twelve" defer></script>
-  <script src="equation-bench.js?v=20261125-twelve" defer></script>
+  <script src="guided-alchemy.js?v=20261125-guided" defer></script>
+  <script src="equation-bench.js?v=20261125-guided" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to equation workspace</a>
@@ -26,6 +27,27 @@
       <p class="math-hero-warning"><strong>Candidate mathematics — not derived truth. Requires its own evidence.</strong></p>
     </div>
   </header>
+
+  <section class="section guided-panel" aria-labelledby="guided-title">
+    <div class="section-heading"><h2 id="guided-title">Guided Alchemy</h2><p>Start with a question, not an equation. Optional; the manual workspace below still works.</p></div>
+    <p class="support-note">These are curated research suggestions, not live AI predictions or proven combinations. A suggestion can connect methods without equating physical quantities.</p>
+    <div id="guided-controls" hidden>
+      <label for="guided-theme">What would you like to investigate?</label>
+      <select id="guided-theme"><option value="all">Show all research questions</option><option>Trust a measurement</option><option>Account for resources</option><option>Test a system</option></select>
+      <div id="guided-list" class="guided-list"></div>
+      <div class="bench-actions"><button type="button" class="button secondary" id="guided-surprise">Surprise me</button><a href="#sources-title" class="button secondary">Use manual mode</a></div>
+      <div id="guided-preview" class="guided-preview" hidden>
+        <h3 id="guided-name" tabindex="-1"></h3><p id="guided-pair"></p><p id="guided-why"></p>
+        <p><strong>Proposed model:</strong> <span id="guided-model"></span></p>
+        <p><strong>How to challenge it:</strong> <span id="guided-test"></span></p>
+        <p><strong>What is not established:</strong> <span id="guided-limit"></span></p>
+        <p class="support-note" id="guided-credit"></p><a id="guided-reference" hidden>Read the underlying case study</a>
+        <label class="acknowledge" id="guided-replace-wrap" hidden><input type="checkbox" id="guided-replace"> Replace the saved draft for this pair.</label>
+        <div class="bench-actions"><button type="button" class="button primary" id="guided-load">Load suggested draft</button></div>
+      </div>
+      <p id="guided-status" role="status"></p>
+    </div>
+  </section>
 
   <section class="section" aria-labelledby="sources-title">
     <div class="section-heading">
@@ -61,7 +83,7 @@
       <h2 id="map-title">2 · Map every symbol explicitly</h2>
       <p>Nothing is equated by name or appearance automatically.</p>
     </div>
-    <p class="support-note">For each symbol in A, select a possible symbol in B (or no counterpart), then explicitly decide whether the quantities are the same or different. All choices start undecided. Review B-only variables too.</p>
+    <p class="support-note">For each symbol in A, select a possible symbol in B (or no counterpart), then explicitly decide whether the quantities are the same or different. Manual choices start undecided; guided drafts visibly propose separate quantities for your review. Review B-only variables too.</p>
     <div class="table-scroll"><table class="mapping-table">
       <thead><tr>
         <th scope="col">Symbol in A</th>
@@ -95,7 +117,7 @@
   <section class="section honesty" aria-labelledby="honesty-title">
     <div class="section-heading">
       <h2 id="honesty-title">4 · Forced honesty</h2>
-      <p>All three fields are required. They are never generated as facts.</p>
+      <p>All three fields are required. Guided text is a proposed draft, never a validated fact.</p>
     </div>
     <div class="honesty-fields">
       <label for="inherited"><strong>Inherited claims</strong><span>What does each original equation actually support, within its own evidence limits?</span>
@@ -113,6 +135,7 @@
   <section class="section export-section" aria-labelledby="export-title">
     <div class="section-heading"><h2 id="export-title">5 · Export a candidate, not a conclusion</h2></div>
     <p class="candidate-stamp">Candidate mathematics — not derived truth. Requires its own evidence.</p>
+    <div id="guided-review-wrap" hidden><label class="acknowledge"><input type="checkbox" id="guided-adopt"> I reviewed the sources, symbol choices, candidate model and limitations, and explicitly adopt this guided draft for research review.</label><p class="support-note">Editing the draft or mappings revokes this adoption. This is not scientific approval.</p></div>
     <div class="bench-actions">
       <button type="button" class="button primary" id="copy-equation" disabled>Copy Markdown</button>
       <button type="button" class="button secondary" id="download-equation" disabled>Download Markdown</button>
