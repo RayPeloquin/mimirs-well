@@ -18,7 +18,11 @@
       "chihuahua-sphere-cs-1",
       "the-traveler-solar-electric-research-airship",
       "zion-twin-ring-tuna-habitat",
-      "adventurer-s-forge"
+      "adventurer-s-forge",
+      "crucible",
+      "spotrecon-spotrecon-r2",
+      "confluence-01-synthetic-sense",
+      "spincell-dle"
     ]),
     holds: Object.freeze({
       "mimir-hippo-extreme-energy-systems": "Original technical source requires a separate safety/publication review before any public release.",

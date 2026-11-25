@@ -174,5 +174,93 @@ window.WellEquationCores = {
       }
     ],
     "caveat": "Positive absolute temperatures with T_hot > T_cold; ideal reversible two-reservoir bound. Does not predict real efficiency or establish a fictional energy source, cooling system or working hardware."
+  },
+"crucible": {
+    "evidence": "Recorded held-out synthetic simulation campaign; not hardware reliability evidence",
+    "source": "https://github.com/RayPeloquin/CRUCIBLE-Autonomy-Test-Harness/blob/main/v0.2/README.md",
+    "sourceLabel": "CRUCIBLE v0.2 README, Recorded results and held-out design",
+    "equation": "p_observed = N_violated / N_exercised",
+    "statement": "The campaign reports the observed violation fraction among conclusive, exercised runs, for example 0/40 for the guarded rover. Invalid, incomplete and not-exercised runs are separately reported.",
+    "symbols": [
+      {
+        "name": "p_observed",
+        "meaning": "observed violation fraction (dimensionless)"
+      },
+      {
+        "name": "N_violated",
+        "meaning": "number of conclusive exercised runs with contract violations"
+      },
+      {
+        "name": "N_exercised",
+        "meaning": "number of conclusive exercised runs in the selected campaign group"
+      }
+    ],
+    "caveat": "Notation for the published fractions, not the Wilson confidence interval. Requires positive denominator. Zero observed violations does not imply zero risk. Results apply only to the selected synthetic distribution; no real-world vehicle safety or controller superiority established."
+  },
+  "spotrecon-spotrecon-r2": {
+    "evidence": "Design review and illustrative calculation; no field measurements",
+    "source": "https://github.com/RayPeloquin/SPOTRECON-Parking-Scout/blob/main/README.md",
+    "sourceLabel": "SPOTRECON R2 README, Checked illustrative math, observation age",
+    "equation": "delta_t = t_display - t_capture",
+    "statement": "Observation age is the elapsed time between capture and presentation, using a common clock. Age is separate from whether the observation remains correct.",
+    "symbols": [
+      {
+        "name": "delta_t",
+        "meaning": "observation age (time)"
+      },
+      {
+        "name": "t_display",
+        "meaning": "display timestamp"
+      },
+      {
+        "name": "t_capture",
+        "meaning": "capture timestamp"
+      }
+    ],
+    "caveat": "Transcribed from the printed equation. Timestamps must share a time base; invalid clocks or missing timestamps make age unavailable. Freshness thresholds and accuracy remain unvalidated; no field performance, reservation or aviation approval established."
+  },
+  "confluence-01-synthetic-sense": {
+    "evidence": "Proposed evaluation metric; no prototype or dataset",
+    "source": "https://github.com/RayPeloquin/CONFLUENCE-01-Synthetic-Sense/blob/main/README.md",
+    "sourceLabel": "CONFLUENCE-01 README, Tests before claims, item 4",
+    "equation": "R_false = N_false / T_valid_hours",
+    "statement": "Notation for the proposed reporting metric of false events per valid observation hour. Compare only under declared event definitions, with ground truth and coverage separately reported.",
+    "symbols": [
+      {
+        "name": "R_false",
+        "meaning": "false-event rate (events per valid hour)"
+      },
+      {
+        "name": "N_false",
+        "meaning": "count of false events within valid observation periods"
+      },
+      {
+        "name": "T_valid_hours",
+        "meaning": "total duration of valid observation periods (hours)"
+      }
+    ],
+    "caveat": "Formalization of the proposed prose metric, not a printed or tested equation in the project. Positive valid duration required. Abstention and coverage must remain visible; excluding unavailable periods can hide failures. No new sensory modality, diagnostic accuracy or safety benefit established."
+  },
+  "spincell-dle": {
+    "evidence": "Illustrated concept; proposed material-accounting metric without paired assays",
+    "source": "https://github.com/RayPeloquin/mimirs-well/blob/main/public-notes/spincell-dle.md",
+    "sourceLabel": "SpinCell DLE public note, Evidence and Proposed next check",
+    "equation": "R_Li = m_Li_recovered / m_Li_in",
+    "statement": "Notation for the proposed lithium recovery accounting: compare the mass of lithium recovered in the designated product stream with the incoming lithium mass for the same batch.",
+    "symbols": [
+      {
+        "name": "R_Li",
+        "meaning": "fraction of incoming lithium recovered in designated product"
+      },
+      {
+        "name": "m_Li_recovered",
+        "meaning": "lithium mass in the designated recovered product stream"
+      },
+      {
+        "name": "m_Li_in",
+        "meaning": "lithium mass entering the same defined batch boundary"
+      }
+    ],
+    "caveat": "Formalization of the public note's proposed recovery metric, not a measured result or printed source equation. Positive input mass required; account for other outlets and inventory changes, and report uncertainty. Recovery is not concentration, selectivity or energy efficiency. No process chemistry, operating parameters or demonstrated extraction performance."
   }
 };
