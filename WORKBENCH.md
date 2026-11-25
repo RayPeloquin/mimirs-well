@@ -407,3 +407,8 @@ Ten existing titles received source-artwork notes; eight illustrations are publi
 ## Recovered quantum and environmental artwork
 
 Thirteen illustrations grouped into nine records; three new titles, including one descriptive unidentified-material entry. HIPPO-linked and other safety-sensitive originals remain outside public Git. No measured performance inferred. Total 364 titles, 191 expanded, 173 pending.
+
+
+## Dimensional Witness
+
+Review annotations cover all 47 symbols across the 12 allowed sources. Known dimension or Boolean/numeric mismatches block equivalence; any other same-quantity mapping requires notes and explicit acknowledgement. Unit scales unspecified by source remain unknown. Export records the annotation version, comparisons and acknowledgement. This is not expression-level dimensional analysis, automatic conversion, algebra or scientific validation. Guided drafts preserve separate symbols. A static teaching receipt and source annotations are generated alongside the existing reading views.

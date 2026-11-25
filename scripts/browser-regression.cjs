@@ -51,6 +51,45 @@ const root = path.resolve(__dirname, '..');
     assert.ok(await page.locator('#download-equation').isEnabled());
     assert.deepEqual(errors,[]);
     console.log('PASS Equation Bench: initialize, select, map, gate, export, clipboard, reload');
+    // Witness: existing manual draft remains gated when an incompatible mapping is attempted.
+    await page.goto(base+'/equation-bench.html?a=skeptic-1&b=confluence-01-synthetic-sense');
+    await page.waitForFunction(()=>!document.querySelector('#pick-a').disabled);
+    for(const row of await page.locator('#mapping-rows tr[data-symbol]').all()){
+      await row.locator('.target').selectOption('__none');await row.locator('.decision').selectOption('different');
+    }
+    for(const id of ['inherited','joint','strained'])await page.locator('#'+id).fill('Witness fixture; no physical equivalence established.');
+    await page.locator('#composition').fill('Test only: keep independent quantities separate.');
+    const lambda=page.locator('tr[data-symbol="lambda_i"]');
+    await lambda.locator('.target').selectOption('T_valid_hours');await lambda.locator('.decision').selectOption('same');
+    await page.locator('#ack-b').check();
+    assert.match(await page.locator('#mapping-status').innerText(),/Incompatible physical dimensions/);
+    assert.ok(await page.locator('#download-equation').isDisabled());
+    await lambda.locator('.decision').selectOption('different');
+    const freq=page.locator('tr[data-symbol="f_i"]');
+    await freq.locator('.target').selectOption('R_false');await freq.locator('.decision').selectOption('same');
+    assert.match(await freq.locator('.witness-detail').innerText(),/unit\/scale or representation differs/);
+    await page.locator('#ack-b').check();
+    assert.ok(await page.locator('#download-equation').isDisabled());
+    await freq.locator('.risk').fill('Synthetic UI fixture only; review the distinct count definition and h versus s scale. No actual equivalence inferred.');
+    await freq.locator('.witness-review').check();await page.locator('#ack-b').check();
+    assert.ok(await page.locator('#download-equation').isEnabled());
+    await page.locator('#copy-equation').click();
+    const witnessExport=await page.evaluate(()=>navigator.clipboard.readText());
+    assert.match(witnessExport,/Dimensional Witness metadata version/);
+    assert.match(witnessExport,/unit-review/);
+    assert.match(witnessExport,/Acknowledged by user/);
+    await page.reload();await page.waitForFunction(()=>!document.querySelector('#pick-a').disabled);
+    assert.ok(await freq.locator('.witness-review').isChecked());
+    assert.ok(await page.locator('#download-equation').isEnabled());
+    await freq.locator('.risk').fill('Changed context; previous acknowledgement no longer applies.');
+    assert.ok(!(await freq.locator('.witness-review').isChecked()));
+    assert.ok(await page.locator('#download-equation').isDisabled());
+    await freq.locator('.decision').selectOption('different');
+    await page.locator('#ack-b').check();
+    assert.ok(await page.locator('#download-equation').isEnabled());
+    assert.deepEqual(errors,[]);
+    console.log('PASS Dimensional Witness: mismatch refusal, unit review, acknowledgment, receipt, reload and revocation');
+
 
     await page.goto(base+'/equation-bench.html');
     await page.waitForFunction(()=>!document.querySelector('#guided-controls').hidden);
@@ -197,6 +236,10 @@ const root = path.resolve(__dirname, '..');
       assert.ok(await staticPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
     }
     console.log('PASS five recovered artwork pages and six public images');
+    await staticPage.goto(base+'/dimensional-witness.html');
+    assert.match(await staticPage.locator('main').textContent(),/Completed teaching receipt/);
+    assert.equal(await staticPage.locator('tbody tr').count(),4);
+    assert.ok(await staticPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
     await staticPage.goto(base+'/catalog.html#skeptic-1');
     assert.ok(await staticPage.locator('#skeptic-1').isVisible());
     await staticPage.goto(base+'/equation-bench.html');
