@@ -6,7 +6,7 @@
 
 Open [Equation Bench](../../equation-bench.html) from the homepage or existing combination Bench.
 
-The full registry contains many projects, but **this mathematical MVP lists only four source-reviewed equation cores**:
+The full registry contains many projects, but **the original mathematical MVP listed four source-reviewed equation cores** (the [current index](../equation-sources.html) includes later additions):
 
 | Design | Curated relation | Primary source | Evidence boundary |
 | --- | --- | --- | --- |

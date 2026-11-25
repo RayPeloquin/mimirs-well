@@ -62,5 +62,117 @@ window.WellEquationCores = {
       {name:"dx",meaning:"simulation grid spacing (length)"}
     ],
     caveat: "Transcribed from the code’s strict inequality and separate velocity-field check. A numerical stability constraint, not an acoustic discovery or elastic-earth constitutive law."
+  },
+  "chihuahua-sphere-cs-1": {
+    "evidence": "Calculation-only optical energy ledger; hypothetical example",
+    "source": "https://raypeloquin.github.io/mimirs-well/design-notes/chihuahua-sphere.md",
+    "sourceLabel": "CS-1 public design note, Intended experiment",
+    "equation": "eta_receiver = E_load / E_incident\neta_total = E_load / E_electrical_total",
+    "statement": "The receiver and whole apparatus have different efficiency denominators. Incident light is an internal transfer, not another output.",
+    "symbols": [
+      {
+        "name": "eta_receiver",
+        "meaning": "receiver energy conversion fraction"
+      },
+      {
+        "name": "eta_total",
+        "meaning": "whole-apparatus electrical efficiency fraction"
+      },
+      {
+        "name": "E_load",
+        "meaning": "electrical energy delivered to load (J)"
+      },
+      {
+        "name": "E_incident",
+        "meaning": "light energy incident on receiver (J)"
+      },
+      {
+        "name": "E_electrical_total",
+        "meaning": "total supplied electrical energy, including actuators (J)"
+      }
+    ],
+    "caveat": "Notation transcribed from the public prose and hypothetical 10 J / 2 J example. Positive denominators and matched intervals required. No measured efficiency or novel energy gain."
+  },
+  "the-traveler-solar-electric-research-airship": {
+    "evidence": "Historical passive-drift simulation; no flight or recovery test",
+    "source": "https://raypeloquin.github.io/mimirs-well/assets/traveler-wind-replay.zip",
+    "sourceLabel": "Traveler-Wind-Replay.py, score(); bundled README",
+    "equation": "lap = (abs(lon - lon_start) >= 360 deg)\napproach = lap_already_observed AND (d <= r)",
+    "statement": "The historical benchmark counts net longitude laps and only counts sampled approaches once a lap has been observed.",
+    "symbols": [
+      {
+        "name": "lap",
+        "meaning": "Boolean lap threshold at a sample"
+      },
+      {
+        "name": "lon",
+        "meaning": "unwrapped sampled longitude (degrees)"
+      },
+      {
+        "name": "lon_start",
+        "meaning": "starting longitude (degrees)"
+      },
+      {
+        "name": "approach",
+        "meaning": "Boolean sampled post-lap approach event"
+      },
+      {
+        "name": "lap_already_observed",
+        "meaning": "lap observed at or before current sample"
+      },
+      {
+        "name": "d",
+        "meaning": "great-circle distance to start (km)"
+      },
+      {
+        "name": "r",
+        "meaning": "benchmark approach radius (km)"
+      }
+    ],
+    "caveat": "Scoring rule, not trajectory planning, steering or flight control. Net longitude is not cumulative absolute path length. Fixed-pressure passive replay; no descent, landing, physical recovery or airspace authorization established."
+  },
+  "zion-twin-ring-tuna-habitat": {
+    "evidence": "Dimensionless dye-transport simulation; no physical tank trial",
+    "source": "https://raypeloquin.github.io/mimirs-well/assets/zion-tuna/Zion-Gate-Test-01.zip",
+    "sourceLabel": "test_gate.py, simulate() return value; bundled README",
+    "equation": "F_dye_percent = 100 * C_receiving / C_initial",
+    "statement": "The reported dye metric is the sum of dye concentration in receiving-loop cells divided by the initial total dye sum, expressed as a percentage.",
+    "symbols": [
+      {
+        "name": "F_dye_percent",
+        "meaning": "receiving-loop dye percentage"
+      },
+      {
+        "name": "C_receiving",
+        "meaning": "sum of dye concentrations in receiving cells at sample time"
+      },
+      {
+        "name": "C_initial",
+        "meaning": "initial sum of dye concentrations over all wet cells"
+      }
+    ],
+    "caveat": "Equal-area cells within a run; initial dye sum positive. This metric is distinct from outer-straight circulation and one-way gate flux. Strong mesh dependence, no established physical exchange rate, gate-motion result or animal welfare outcome."
+  },
+  "adventurer-s-forge": {
+    "evidence": "Desk-checked tabletop scenario using conventional thermodynamics; no hardware validation",
+    "source": "https://github.com/RayPeloquin/UI-Worlds-Adventurers-Forge/blob/main/docs/UI-Worlds-Playtest-v0.3.md",
+    "sourceLabel": "UI Worlds playtest v0.3, conventional heat-engine subsystem",
+    "equation": "eta_Carnot = 1 - T_cold / T_hot",
+    "statement": "The reversible heat-engine efficiency ceiling depends on the absolute sink and source temperatures.",
+    "symbols": [
+      {
+        "name": "eta_Carnot",
+        "meaning": "maximum reversible thermal efficiency fraction"
+      },
+      {
+        "name": "T_cold",
+        "meaning": "absolute cold-reservoir temperature (K)"
+      },
+      {
+        "name": "T_hot",
+        "meaning": "absolute hot-reservoir temperature (K)"
+      }
+    ],
+    "caveat": "Positive absolute temperatures with T_hot > T_cold; ideal reversible two-reservoir bound. Does not predict real efficiency or establish a fictional energy source, cooling system or working hardware."
   }
 };

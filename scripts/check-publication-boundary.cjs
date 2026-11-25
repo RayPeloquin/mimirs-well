@@ -43,7 +43,7 @@ const approved = publication.equationEligible;
 assert.ok(Array.isArray(approved) && approved.length > 0, "Equation release allowlist is required");
 assert.equal(new Set(approved).size, approved.length, "Duplicate equation eligibility IDs");
 assert.ok(approved.every(id => ids.has(id)), "Equation eligibility references missing catalog entries");
-assert.ok(approved.every(id => !Object.hasOwn(publication.holds, id)),
+assert.ok(approved.every(id => !Object.hasOwn(publication.holds, id) && !Object.hasOwn(publication.watches, id)),
   "Held HIPPO project must not be equation-eligible");
 const sandbox = {window: {}};
 vm.runInNewContext(equationSrc, sandbox, {timeout: 1000, filename: "equation-cores.js"});

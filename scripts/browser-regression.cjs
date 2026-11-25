@@ -73,6 +73,14 @@ const root = path.resolve(__dirname, '..');
     await staticPage.goto(base+'/');
     assert.deepEqual(external,[]);
     const data=await (await staticPage.request.get(base+'/catalog.json')).json();
+    const eqManifest=await (await staticPage.request.get(base+'/catalog-manifest.json')).json();
+    await page.goto(base+'/equation-bench.html');
+    await page.waitForFunction(()=>!document.querySelector('#pick-a').disabled);
+    for(const id of eqManifest.equation_eligible){
+      await page.locator('#pick-a').selectOption(id);
+      assert.ok((await page.locator('#card-a pre').textContent()).length>0,id);
+    }
+    console.log('PASS all '+eqManifest.equation_eligible.length+' selectable equation sources');
     await staticPage.goto(base+'/catalog.html');
     const actual=await staticPage.locator('#catalog-entries > li').evaluateAll(es=>es.map(e=>e.id));
     assert.deepEqual(actual,data.map(r=>r.id));

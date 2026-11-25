@@ -14,7 +14,11 @@
       "skeptic-1",
       "echo-rx",
       "ghostglass",
-      "temporal-acoustics"
+      "temporal-acoustics",
+      "chihuahua-sphere-cs-1",
+      "the-traveler-solar-electric-research-airship",
+      "zion-twin-ring-tuna-habitat",
+      "adventurer-s-forge"
     ]),
     holds: Object.freeze({
       "mimir-hippo-extreme-energy-systems": "Original technical source requires a separate safety/publication review before any public release.",
