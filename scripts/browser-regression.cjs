@@ -157,6 +157,21 @@ const root = path.resolve(__dirname, '..');
       assert.ok(await staticPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
     }
     console.log('PASS three illustrated biomedical concept pages, four images, no-JS links, mobile layout and caveats');
+    for(const id of ['fsams-skin-eva-concept','eye-of-horus']){
+      await staticPage.goto(base+'/records/'+id+'.html');
+      assert.equal(await staticPage.locator('a[href$="/'+id+'.html"]').count(),1);
+      await staticPage.goto(base+'/'+id+'.html');
+      assert.match(await staticPage.locator('aside').textContent(),/CONCEPT ARTWORK ONLY/);
+      const img=staticPage.locator('figure img');await img.scrollIntoViewIfNeeded();
+      await staticPage.waitForFunction(()=>Array.from(document.images).every(i=>i.complete&&i.naturalWidth>0));
+      assert.ok(await staticPage.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+    }
+    for(const id of ['lunar-eva-life-support','nexus-bridge','amphibishell','aether-shroud','anubis-abyssal-gill']){
+      await staticPage.goto(base+'/records/'+id+'.html');
+      assert.match(await staticPage.locator('main').textContent(),/No demonstrated|No clinical procedure|No working breathing/);
+      assert.equal(await staticPage.locator('main img').count(),0);
+    }
+    console.log('PASS seven recovered records, two public artworks, five summary-only records');
     await staticPage.goto(base+'/catalog.html#skeptic-1');
     assert.ok(await staticPage.locator('#skeptic-1').isVisible());
     await staticPage.goto(base+'/equation-bench.html');

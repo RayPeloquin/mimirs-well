@@ -387,6 +387,31 @@
     "content_sha256": "3c66ca85a68f1a76e8cf67743eaf4f53534faebecebf5ee0fef6b154a3e67562"
   },
   {
+    "id": "aether-shroud",
+    "title": "Aether Shroud",
+    "status": "Expanded record",
+    "evidence": "No demonstrated deflection, protective effectiveness, safe field exposure, power feasibility or suit integration. Proposed targets are not results.",
+    "contributors": "Recovered illustration from Mr. Peloquin's collaborative design collection. Specific original artwork authorship and independent review are unverified.",
+    "url": "index.html#design/aether-shroud",
+    "record_status": "expanded",
+    "evidence_types": [
+      "concept"
+    ],
+    "publication_hold": "none",
+    "publication_notice": "Standard public record; no technical-release approval implied.",
+    "summary": "Conceptual active protective layer for orbital debris research, intended as a complement to passive protection.",
+    "revision_note": "AETHER SHROUD v0.1 illustration; Jun 25, 2026.",
+    "canonical_url": "https://raypeloquin.github.io/mimirs-well/records/aether-shroud.html",
+    "source_urls": [
+      "https://raypeloquin.github.io/mimirs-well/public-notes/aether-shroud.md"
+    ],
+    "ledger_url": null,
+    "ledger_updated": null,
+    "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
+    "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
+    "content_sha256": "845262f7be72fc6b1f9c8e8f2753d3ae891a4b07fd1b6bd5d7ad0e669dd34373"
+  },
+  {
     "id": "aetherfilament-memory",
     "title": "Aetherfilament Memory",
     "status": "Source review pending",
@@ -529,48 +554,52 @@
   {
     "id": "amphibishell",
     "title": "Amphibishell",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
+    "status": "Expanded record",
+    "evidence": "No working breathing apparatus, validated oxygen delivery, gas management, depth rating, endurance or human-use safety. Illustrated specifications are not performance data.",
+    "contributors": "Recovered illustration from Mr. Peloquin's collaborative design collection. Specific original artwork authorship and independent review are unverified.",
     "url": "index.html#design/amphibishell",
-    "record_status": "pending_review",
+    "record_status": "expanded",
     "evidence_types": [
-      "pending"
+      "concept"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
-    "summary": "Archive title awaiting source review; no evidence assessment established.",
-    "revision_note": null,
+    "summary": "Biomimetic dissolved-oxygen exchange concept inspired by aquatic organisms.",
+    "revision_note": "AMPHIBISHELL v0.1 illustration; Jun 25, 2026.",
     "canonical_url": "https://raypeloquin.github.io/mimirs-well/records/amphibishell.html",
-    "source_urls": [],
+    "source_urls": [
+      "https://raypeloquin.github.io/mimirs-well/public-notes/amphibishell.md"
+    ],
     "ledger_url": null,
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "cd5d7d7b631d59bd06379ee53c625dfa6ddaeda403a9d39bd507673b196fdb86"
+    "content_sha256": "7869c93e2aa6b628af9a7e08f93bc3fa068786fee29465d11d16ce7cd0daac9b"
   },
   {
     "id": "anubis-abyssal-gill",
     "title": "Anubis Abyssal Gill",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
+    "status": "Expanded record",
+    "evidence": "No demonstrated underwater breathing capability, depth rating, endurance, gas safety or pressure qualification. The restricted original is not released here.",
+    "contributors": "Recovered illustration from Mr. Peloquin's collaborative design collection. Specific original artwork authorship and independent review are unverified.",
     "url": "index.html#design/anubis-abyssal-gill",
-    "record_status": "pending_review",
+    "record_status": "expanded",
     "evidence_types": [
-      "pending"
+      "concept"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
-    "summary": "Archive title awaiting source review; no evidence assessment established.",
-    "revision_note": null,
+    "summary": "Deep-water respiration research title; an illustrated source has been recovered and is explicitly marked confidential.",
+    "revision_note": "Recovered confidential illustration; Jun 25, 2026.",
     "canonical_url": "https://raypeloquin.github.io/mimirs-well/records/anubis-abyssal-gill.html",
-    "source_urls": [],
+    "source_urls": [
+      "https://raypeloquin.github.io/mimirs-well/public-notes/anubis-abyssal-gill.md"
+    ],
     "ledger_url": null,
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "fe60fa04a77ea62b2ed96879ee77430e3b773532fb9981bbf19d4c53a81f6a43"
+    "content_sha256": "320af79ae3365cc5194df341beae93cda31f7938ecaa1d39cae6680dbbd4687b"
   },
   {
     "id": "anubis-wing-flight-suit",
@@ -2468,25 +2497,28 @@
   {
     "id": "eye-of-horus",
     "title": "Eye of Horus",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
-    "url": "index.html#design/eye-of-horus",
-    "record_status": "pending_review",
+    "status": "Expanded record",
+    "evidence": "No calibrated subsurface observations, confirmed mineral deposits, verified depth or classification accuracy, site authorization, or validated heritage-protection mechanism. Dashboard results and coordinates are illustrative, not survey evidence.",
+    "contributors": "Recovered illustration from Mr. Peloquin's collaborative design collection. Specific original artwork authorship and independent review are unverified.",
+    "url": "eye-of-horus.html",
+    "record_status": "expanded",
     "evidence_types": [
-      "pending"
+      "concept"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
-    "summary": "Archive title awaiting source review; no evidence assessment established.",
-    "revision_note": null,
+    "summary": "Illustrated mineral-survey concept using multiple sensing modalities and an augmented-reality interpretation interface, with proposed cultural heritage safeguards.",
+    "revision_note": "EYE OF HORUS ORE-SIGHT v1.4 illustration; Jun 25, 2026.",
     "canonical_url": "https://raypeloquin.github.io/mimirs-well/records/eye-of-horus.html",
-    "source_urls": [],
+    "source_urls": [
+      "https://raypeloquin.github.io/mimirs-well/eye-of-horus.html",
+      "https://raypeloquin.github.io/mimirs-well/public-notes/eye-of-horus.md"
+    ],
     "ledger_url": null,
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "1438f20156fa5745df9475ff1e87bc326efb11b265ac21c8a71cbcc588b86fd1"
+    "content_sha256": "6999afce996a14f44ced4618b0d777bdad266554c83de50ecd096f2ad1cceda0"
   },
   {
     "id": "fenrir",
@@ -2714,26 +2746,27 @@
     "id": "fsams-skin-eva-concept",
     "title": "FSAMS-SKIN — EVA concept",
     "status": "Expanded record",
-    "evidence": "The reviewed document proposes a layered safety retrofit and performance targets, but no prototype, certified protection, measured response, injury mitigation or aerospace testing is reported. The claims of readiness are unverified.",
-    "contributors": "Mr. Peloquin: archived concept direction and source stewardship. Asteris Solenne / ChatGPT: public source synthesis and documentation. Independent technical or domain review for this specific archive has not been verified.",
-    "url": "index.html#design/fsams-skin-eva-concept",
+    "evidence": "The EVA artwork resolves the existence of an EVA-specific concept, not qualification or lineage of the industrial source. No tested impact protection, response time, thermal durability, pressure-garment capability or aerospace readiness. Displayed targets and safety claims are illustrative.",
+    "contributors": "Recovered illustration from Mr. Peloquin's collaborative design collection. Specific original artwork authorship and independent review are unverified.",
+    "url": "fsams-skin-eva-concept.html",
     "record_status": "expanded",
     "evidence_types": [
-      "unclassified"
+      "concept"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
-    "summary": "The available source describes a proposed responsive protective surface for industrial machinery and robotics. The existing catalog's EVA label is not supported by this file and remains an unresolved archive-lineage question.",
-    "revision_note": "FSAMS-SKIN v0.1; recovered industrial machine-skin text, not an EVA qualification document. Source reviewed 20 November 2026.",
+    "summary": "An EVA-specific illustrated adaptive protective surface proposal. A separate archived industrial machine-skin text predates this review; applicability of that text to EVA is not established.",
+    "revision_note": "FSAMS-SKIN EVA v0.1 illustration; Jun 25, 2026.",
     "canonical_url": "https://raypeloquin.github.io/mimirs-well/records/fsams-skin-eva-concept.html",
     "source_urls": [
-      "https://github.com/RayPeloquin/mimirs-well/blob/main/public-notes/fsams-skin-eva-concept.md"
+      "https://raypeloquin.github.io/mimirs-well/fsams-skin-eva-concept.html",
+      "https://raypeloquin.github.io/mimirs-well/public-notes/fsams-skin-eva-concept.md"
     ],
     "ledger_url": null,
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "ae8b9bd73d266c12fecdd7be9b8116839cf4442198930e973dcf1014c82ee099"
+    "content_sha256": "eda5db7384ccbd08e22f562e1ba7e3eb4a384eb14be3a980c49aac309e105063"
   },
   {
     "id": "gaian-needle-mole",
@@ -4464,25 +4497,27 @@
   {
     "id": "lunar-eva-life-support",
     "title": "Lunar EVA Life Support",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
+    "status": "Expanded record",
+    "evidence": "No demonstrated life-support performance, mission duration, safe return margin, or qualification. The source is not an operating specification.",
+    "contributors": "Recovered illustration from Mr. Peloquin's collaborative design collection. Specific original artwork authorship and independent review are unverified.",
     "url": "index.html#design/lunar-eva-life-support",
-    "record_status": "pending_review",
+    "record_status": "expanded",
     "evidence_types": [
-      "pending"
+      "concept"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
-    "summary": "Archive title awaiting source review; no evidence assessment established.",
-    "revision_note": null,
+    "summary": "Lunar EVA life-support research concept. An illustrated source has been recovered, but its original is marked for restricted circulation.",
+    "revision_note": "Recovered restricted PLSS illustration; Jun 25, 2026.",
     "canonical_url": "https://raypeloquin.github.io/mimirs-well/records/lunar-eva-life-support.html",
-    "source_urls": [],
+    "source_urls": [
+      "https://raypeloquin.github.io/mimirs-well/public-notes/lunar-eva-life-support.md"
+    ],
     "ledger_url": null,
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "c9467ab8a2c3cf440f19b8487ee3a037b11c802f6a149fe4d8af36a9f439f7ee"
+    "content_sha256": "11ef0a6465cc5a9c77d3c331a20123656d11a2cd409b3457aa23121e1d59d164"
   },
   {
     "id": "lunarecycle-backplate",
@@ -5059,6 +5094,31 @@
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
     "content_sha256": "2d17e1a2231c71e36964f142291ede98536b460fd8e5f570d65e0355bd76a03d"
+  },
+  {
+    "id": "nexus-bridge",
+    "title": "Nexus Bridge",
+    "status": "Expanded record",
+    "evidence": "No clinical procedure, functional neural reconnection, validated implant, patient outcome or approved human-use pathway is established. Head-body transplantation is not an established treatment.",
+    "contributors": "Recovered illustration from Mr. Peloquin's collaborative design collection. Specific original artwork authorship and independent review are unverified.",
+    "url": "index.html#design/nexus-bridge",
+    "record_status": "expanded",
+    "evidence_types": [
+      "concept"
+    ],
+    "publication_hold": "none",
+    "publication_notice": "Standard public record; no technical-release approval implied.",
+    "summary": "Theoretical neurovascular interface concept. The artwork proposes an interface for severe anatomical discontinuity, not an established treatment.",
+    "revision_note": "NEXUS BRIDGE v1.0 illustration; Jul 3, 2026.",
+    "canonical_url": "https://raypeloquin.github.io/mimirs-well/records/nexus-bridge.html",
+    "source_urls": [
+      "https://raypeloquin.github.io/mimirs-well/public-notes/nexus-bridge.md"
+    ],
+    "ledger_url": null,
+    "ledger_updated": null,
+    "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
+    "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
+    "content_sha256": "8227577b37ca4d8257c03ae573504b8f97221ddd3cebbeaf770dab9d7e019394"
   },
   {
     "id": "null-1-null-1h-shield-1",

@@ -5,6 +5,8 @@ const groups=[["safety","Portfolio architecture","Mount Olympus — Cross-domain
 groups.push(['biology','Illustrated concept','ECHO Protocell — Resonant and Provisioned Seed']);
 groups.push(['biology','Computational concept','Zion Twin-Ring Tuna Habitat']);
 groups.push(['physics','Computational concept','The Traveler — Solar-electric research airship']);
+groups.push(['biology','Illustrated concept','Nexus Bridge']);
+groups.push(['physics','Illustrated concept','Aether Shroud']);
 const labels={safety:'AI & governance',biology:'Biology & medicine',physics:'Physics & aerospace',infrastructure:'Water, power & infrastructure',robotics:'Robotics & field systems',community:'Communities & creative work',defense:'The Armory · Defense & Protective Systems'};
 // Public-facing grouping only: do not infer readiness, military qualification or weapon capability.
 const armoryDivisions=wellArmoryDivisions;

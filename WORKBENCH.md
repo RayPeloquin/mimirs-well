@@ -2,7 +2,7 @@
 
 Public handoff snapshot · 21 November 2026
 
-**Current inventory:** 359 distinct project cards, 177 expanded records, 182 pending expanded review.
+**Current inventory:** 361 distinct project cards, 183 expanded records, 178 pending expanded review.
 
 [Open the workbench](https://raypeloquin.github.io/mimirs-well/#workbench)
 
@@ -392,3 +392,8 @@ We do no harm.
 ## Illustrated bioreactor collection (25 November 2026)
 
 Three existing archive titles now have illustrated concept records: DERMIS (v1.0 and v1.1), CORTEX (v0.1), THORACIS (v1.0). Four source images supplied by Mr. Peloquin were matched to desktop originals. Dashboard values and readiness claims remain unvalidated; no clinical or laboratory performance is claimed. Total titles unchanged: 359, with 177 expanded and 182 pending.
+
+
+## Recovered protective and interface concept collection
+
+Seven illustrations matched to existing or separately named archive records. Two public artworks (FSAMS-SKIN EVA and Eye of Horus) have dedicated illustrated pages. Five original artworks remain outside the public repository; their records contain bounded purpose-level summaries only. Nexus Bridge and Aether Shroud have separate titles pending lineage review. Total: 361 titles, 183 expanded, 178 pending. No equipment, clinical, or human-use validation inferred.
