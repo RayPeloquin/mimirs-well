@@ -1,12 +1,13 @@
 "use strict";
+const { readText } = require('./scripts/test-text.cjs');
 const test=require("node:test");
 const assert=require("node:assert/strict");
 const fs=require("node:fs");
 const vm=require("node:vm");
 const path=require("node:path");
-const html=fs.readFileSync(path.join(__dirname,"combine.html"),"utf8");
-const js=fs.readFileSync(path.join(__dirname,"combine.js"),"utf8");
-const css=fs.readFileSync(path.join(__dirname,"combine.css"),"utf8");
+const html=readText(path.join(__dirname,"combine.html"));
+const js=readText(path.join(__dirname,"combine.js"));
+const css=readText(path.join(__dirname,"combine.css"));
 function block(start,end) {
   const a=js.indexOf(start);
   const b=js.indexOf(end,a);

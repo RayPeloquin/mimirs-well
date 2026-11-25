@@ -1,3 +1,4 @@
+const { readText } = require('./test-text.cjs');
 const { readFileSync, writeFileSync } = require('node:fs');
 const path = require('node:path');
 const assert = require('node:assert/strict');
@@ -9,7 +10,7 @@ const root = path.resolve(__dirname, '..');
 const check = process.argv.includes('--check');
 function output(name, value) {
   const file = path.join(root, name);
-  if (check) assert.ok(readFileSync(file, 'utf8') === value, name + ' is stale. Run node scripts/generate-catalog.cjs');
+  if (check) assert.ok(readText(file) === value, name + ' is stale. Run node scripts/generate-catalog.cjs');
   else writeFileSync(file, value);
 }
 function escapeHtml(value) {
@@ -133,7 +134,7 @@ output('armory.html', `<!doctype html>
 <body><nav><a href="index.html#projects">Mimir’s Well</a> · <a href="catalog.html">Full catalog</a></nav>
 <main><h1>The Armory</h1><p>Defense and protective systems in the Well. Each link opens the project’s catalog entry and its published evidence notes where available.</p>
 ${sections.join('\n')}</main></body></html>\n`);
-const home = readFileSync(path.join(root, 'index.html'), 'utf8');
+const home = readText(path.join(root, 'index.html'));
 const count = globalThis.MimirsLedgerData.length;
 output('index.html', home.replace(/(data-ledger-total>)\d+/g, (_, prefix) => prefix + count)
   .replace(/\d+ distinct project cards, including \d+ expanded records and \d+ records pending/, entries.length + ' distinct project cards, including ' + expanded.size + ' expanded records and ' + (entries.length - expanded.size) + ' records pending'));

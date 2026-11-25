@@ -1,10 +1,11 @@
+const { readText } = require('./scripts/test-text.cjs');
 const { test } = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 
 test('the Well homepage renders a readable illustrated hero background', () => {
-  const html = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8');
+  const html = readText(path.join(__dirname, 'index.html'));
   const asset = path.join(__dirname, 'assets', 'mimirs-well-olympus-background.webp');
   const file = fs.readFileSync(asset);
   assert.equal(file.toString('ascii', 0, 4), 'RIFF');

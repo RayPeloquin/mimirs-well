@@ -1,3 +1,4 @@
+const { readText } = require('./scripts/test-text.cjs');
 const { test } = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
@@ -13,8 +14,8 @@ const designs = [
 ];
 
 test('five retained illustrated archive cards have source-limited public detail records', () => {
-  const source = fs.readFileSync(path.join(__dirname, 'registry.js'), 'utf8');
-  const catalog = fs.readFileSync(path.join(__dirname, 'catalog.js'), 'utf8');
+  const source = readText(path.join(__dirname, 'registry.js'));
+  const catalog = readText(path.join(__dirname, 'catalog.js'));
   const records = new Map(designs.map(([id]) => [id, { id, purpose: 'Archive title only' }]));
   for (const [id, filename, title] of designs) {
     assert.ok(catalog.includes(title), `catalog missing ${title}`);
@@ -31,7 +32,7 @@ test('five retained illustrated archive cards have source-limited public detail 
     assert.equal(record.sources.split('\n')[0], link);
     const file = path.join(__dirname, 'design-notes', filename);
     assert.ok(fs.existsSync(file), `missing ${filename}`);
-    const note = fs.readFileSync(file, 'utf8');
+    const note = readText(file);
     assert.match(note, /^# /);
     assert.match(note, /Status:/);
     assert.match(note, /## Evidence limits\n/);

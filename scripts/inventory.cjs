@@ -1,7 +1,8 @@
+const { readText } = require('./test-text.cjs');
 const { readFileSync } = require('node:fs');
 const path = require('node:path');
 const assert = require('node:assert/strict');
-const read = name => readFileSync(path.join(__dirname, '..', name), 'utf8');
+const read = name => readText(path.join(__dirname, '..', name));
 const html = read('index.html');
 const catalog = read('catalog.js');
 const registry = read('registry.js');

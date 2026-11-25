@@ -1,9 +1,10 @@
 'use strict';
+const { readText } = require('./scripts/test-text.cjs');
 const test=require('node:test');
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const path=require('node:path');
-const html=fs.readFileSync(path.join(__dirname,'index.html'),'utf8');
+const html=readText(path.join(__dirname,'index.html'));
 test('one accessible, unobtrusive voluntary offering section exists',()=>{
  assert.equal((html.match(/id="offerings"/g)||[]).length,1);
  assert.equal((html.match(/id="offerings-title"/g)||[]).length,1);

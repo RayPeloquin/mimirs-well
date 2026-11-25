@@ -1,11 +1,12 @@
 /* Content-only regression checks after the 23 November 2026 editorial review. */
 'use strict';
+const { readText } = require('./scripts/test-text.cjs');
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
-const html = fs.readFileSync('index.html','utf8');
-const gallery = fs.readFileSync('well-gallery.js','utf8');
-const issue = fs.readFileSync('.github/ISSUE_TEMPLATE/project-critique.md','utf8');
+const html = readText('index.html');
+const gallery = readText('well-gallery.js');
+const issue = readText('.github/ISSUE_TEMPLATE/project-critique.md');
 const sections = [...html.matchAll(/<section\b[^>]*id="([^"]+)"/g)].map(m => m[1]);
 const featured = [...html.matchAll(/<article class="card" data-featured[\s\S]*?<\/article>/g)].map(m => m[0]);
 
@@ -27,7 +28,7 @@ test('private Hall and unverified prototype URLs are not advertised publicly', (
   assert.doesNotMatch(html,/chatgpt\.com\/space\/page_/);
   assert.doesNotMatch(html,/viridduck16\.chatgpt\.site/);
   assert.doesNotMatch(html, /Hall of Areopagus/);
-  assert.match(fs.readFileSync('workbench.html', 'utf8'), /private review workspace/);
+  assert.match(readText('workbench.html'), /private review workspace/);
 });
 
 test('Ankh concept art is not presented without provenance', () => {

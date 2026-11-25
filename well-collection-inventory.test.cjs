@@ -1,9 +1,10 @@
+const { readText } = require('./scripts/test-text.cjs');
 const { test } = require('node:test');
 const assert = require('node:assert/strict');
 const { readFileSync, existsSync } = require('node:fs');
 const path = require('node:path');
 
-const read = name => readFileSync(path.join(__dirname, name), 'utf8');
+const read = name => readText(path.join(__dirname, name));
 const html = read('index.html');
 const gallery = read('well-gallery.js');
 

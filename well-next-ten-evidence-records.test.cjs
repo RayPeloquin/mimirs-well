@@ -1,3 +1,4 @@
+const { readText } = require('./scripts/test-text.cjs');
 const { test } = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
@@ -18,8 +19,8 @@ const candidates = [
 ];
 
 test('next ten public purpose digests expand existing archive titles with evidence limits', () => {
-  const registry = fs.readFileSync(path.join(__dirname, 'registry.js'), 'utf8');
-  const catalog = fs.readFileSync(path.join(__dirname, 'catalog.js'), 'utf8');
+  const registry = readText(path.join(__dirname, 'registry.js'));
+  const catalog = readText(path.join(__dirname, 'catalog.js'));
   const records = new Map(candidates.map(([id]) => [id, { id }]));
   for (const [id, filename, title] of candidates) {
     assert.ok(catalog.includes(title), `missing catalog title: ${title}`);
@@ -36,7 +37,7 @@ test('next ten public purpose digests expand existing archive titles with eviden
     assert.equal(record.sources.split('\n')[0], expected);
     const file = path.join(__dirname, 'public-notes', filename);
     assert.ok(fs.existsSync(file), `missing digest: ${filename}`);
-    const note = fs.readFileSync(file, 'utf8');
+    const note = readText(file);
     assert.match(note, /^# /);
     assert.match(note, /\*\*Status:\*\*/);
     assert.match(note, /## Evidence limits\n/);

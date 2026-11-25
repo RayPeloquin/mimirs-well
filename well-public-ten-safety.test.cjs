@@ -1,3 +1,4 @@
+const { readText } = require('./scripts/test-text.cjs');
 const { test } = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
@@ -18,7 +19,7 @@ const designs = [
 ];
 
 test('ten archived titles expose only purpose-level public notes with evidence boundaries', () => {
-  const registry = fs.readFileSync(path.join(__dirname, 'registry.js'), 'utf8');
+  const registry = readText(path.join(__dirname, 'registry.js'));
   const records = new Map(designs.map(([id]) => [id, { id }]));
   for (const [id, filename] of designs) {
     const marker = `if(records.has('${id}'))Object.assign(records.get('${id}'),`;
@@ -33,7 +34,7 @@ test('ten archived titles expose only purpose-level public notes with evidence b
     assert.equal(entry.sources, `https://github.com/RayPeloquin/mimirs-well/blob/main/public-notes/${filename}`);
     const notePath = path.join(__dirname, 'public-notes', filename);
     assert.ok(fs.existsSync(notePath), `${filename} is a publishable public note`);
-    const note = fs.readFileSync(notePath, 'utf8');
+    const note = readText(notePath);
     for (const heading of ['## Public purpose', '## Evidence limits', '## Next check', '## Credits and scope']) {
       assert.ok(note.includes(heading), `${filename} retains ${heading}`);
     }

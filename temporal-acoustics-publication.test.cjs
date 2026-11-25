@@ -1,8 +1,9 @@
+const { readText } = require('./scripts/test-text.cjs');
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
-const read = (file) => fs.readFileSync(path.join(__dirname, file), 'utf8');
+const read = (file) => readText(path.join(__dirname, file));
 
 test('Temporal Acoustics has a discoverable physics record with explicit evidence limits', () => {
   const index = read('index.html');
