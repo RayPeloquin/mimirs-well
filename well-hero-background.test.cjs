@@ -12,8 +12,8 @@ test('the Well homepage renders a readable illustrated hero background', () => {
   assert.equal(file.toString('ascii', 8, 12), 'WEBP');
   assert.ok(file.length < 250_000, 'background should be lightweight');
   assert.doesNotMatch(html, /class="orb"/, 'the hero artwork should be clear of the old globe');
-  assert.match(html, /\.hero::before\s*\{/);
+  assert.match(html, /\.hero-artwork\s*\{/);
   assert.ok(html.includes('url("assets/mimirs-well-olympus-background.webp")'));
-  assert.match(html, /\.hero::before\s*\{[^}]*linear-gradient/s, 'image needs a legibility overlay');
-  assert.match(html, /@media\s*\(max-width:800px\)[^{]*\{[^}]*\.hero::before/s, 'mobile crop should be controlled');
+  assert.match(html, /\.hero-art::after\s*\{[^}]*linear-gradient/s, 'image needs a legibility overlay');
+  assert.match(html, /@media\s*\(max-width:1100px\)\s*\{[\s\S]*?\.hero-artwork\{/, 'mobile crop should be controlled');
 });
