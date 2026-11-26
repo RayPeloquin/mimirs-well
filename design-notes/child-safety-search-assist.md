@@ -14,4 +14,4 @@ No software, live monitoring, measured precision or recall, agency partnership, 
 ## Next check
 Choose one lawful, tightly scoped public-source task, obtain safeguarding and privacy review, define false-identification harms and escalation rules, then evaluate synthetic examples before any real-case consideration.
 
-**Source basis:** Archived `Child-Safety-Search-Assist-Court-Review-2026-11-03.md`; concept by Mr. Peloquin and Asteris Solenne. Claude, Grok, Gemini and Meta provided AI critiques; Wolfram checked illustrative arithmetic. No institutional endorsement.
+**Source basis:** Archived `Child-Safety-Search-Assist-Court-Review-2026-11-03.md`; concept by Mr. Peloquin and Asteris Solenne. The concept received AI-assisted critical review. Individual reviewer contributions are undocumented. Wolfram checked illustrative arithmetic. No institutional endorsement.

@@ -18,4 +18,4 @@ First state a cargo-only use case and compare cost, risk and access with nonflig
 
 ## Source and attribution
 
-Archive source reviewed: *SKIPJACK-LF_Hover_Feasibility_Brief.pdf*, v0.1, 20 October 2026 (five pages), prepared for Mr. Peloquin with AI assistance. Grok, Claude and Gemini reviewed parts of the model; Meta AI's response was unavailable in that review. This digest omits build parameters and operational specifications.
+Archive source reviewed: *SKIPJACK-LF_Hover_Feasibility_Brief.pdf*, v0.1, 20 October 2026 (five pages), prepared for Mr. Peloquin with AI assistance. Parts of the model received AI-assisted critical review. Individual reviewer contributions are undocumented. This digest omits build parameters and operational specifications.

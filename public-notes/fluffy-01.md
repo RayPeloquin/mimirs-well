@@ -18,4 +18,4 @@ Choose an ordinary non-hazardous ground platform and a small observation task. S
 
 ## Source and attribution
 
-Archive source reviewed: *FLUFFY-01-Concept-and-Court-Review.pdf*, v0.1, 26 October 2026 (four pages). Concept direction: Mr. Peloquin; AI drafting and critique, including Claude, Gemini, Meta AI and Grok, are identified in the source. [NIST response-robot test methods](https://www.nist.gov/el/intelligent-systems-division-73500/standard-test-methods-response-robots) offer context, not FLUFFY certification. The source PDF is retained separately; this is the public digest.
+Archive source reviewed: *FLUFFY-01-Concept-and-Court-Review.pdf*, v0.1, 26 October 2026 (four pages). Mr. Peloquin supplied concept direction. The archive documents AI-assisted drafting and critical review. Individual roles are undocumented. [NIST response-robot test methods](https://www.nist.gov/el/intelligent-systems-division-73500/standard-test-methods-response-robots) offer context, not FLUFFY certification. The source PDF is retained separately; this is the public digest.

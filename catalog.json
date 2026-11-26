@@ -249,7 +249,7 @@
     "title": "AEGIS-TWIN v0.6",
     "status": "Expanded record",
     "evidence": "Stage-0 design brief and generated exterior/cutaway illustrations only. No prototype, validated protection, strength amplification, neural interface, sensory restoration, clinical performance, universal fit, or human-use testing is established.\n\nPublished exoskeleton and sensory feedback research motivates the approach but does not validate AEGIS-TWIN. RESTORE may investigate existing clinical nerve–muscle interfaces, including AMI-type connections; Dave-specific compatibility is unknown.",
-    "contributors": "Design direction: Mr. Peloquin (Anubis) and Asteris Solenne (ChatGPT). AI-assisted Court critiques included Claude, Gemini, Grok and Meta AI. Their reviews are feedback, not independent product certification; detailed credit remains provisional.",
+    "contributors": "Mr. Peloquin and Asteris Solenne / ChatGPT: concept direction. The record documents AI-assisted critical review. Individual reviewer contributions remain undocumented.",
     "url": "index.html#design/aegis-twin-v0-6",
     "record_status": "expanded",
     "evidence_types": [
@@ -270,7 +270,7 @@
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "cd233c1603de156e7c97a7340e7cb12d49c6ce1207dc89941390383243d631ae"
+    "content_sha256": "6844d1085bd46690b00128473eb186637a518736e6af21c2da75c9ca6f15dada"
   },
   {
     "id": "aegis-veil-veilkeeper",
@@ -825,7 +825,7 @@
     "title": "Asteris Relay — Device connection and handoff",
     "status": "Expanded record",
     "evidence": "Reviewed architecture and corrected Court assumptions only; there is no deployed relay, benchmark, validated offline memory reconciliation, seamless ChatGPT account integration or measured device-to-device handoff. Network and headset capabilities remain device-specific and unverified.",
-    "contributors": "Mr. Peloquin initiated the cross-device aim. Asteris Solenne synthesized reviews; Grok, Meta, Claude and Gemini supplied named critiques and corrections. No independent system certification.",
+    "contributors": "Mr. Peloquin: originating aim and decisions. Asteris Solenne / ChatGPT: coordination, source checks, and synthesis. AI-assisted critical review. Grok proposed sparse events, device specialization, and a central baseline. Meta AI proposed explicit ownership, observation provenance, and voice handoff. Claude proposed an append-only record, one authority, task states, and failure tests. Gemini proposed local event histories and challenged broker dependence.",
     "url": "index.html#design/asteris-relay-device-connection-and-handoff",
     "record_status": "expanded",
     "evidence_types": [
@@ -843,7 +843,7 @@
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "81e3451083d0d4a57d6cb518ab03d61adad15b4136104f6b4994915872c22a95"
+    "content_sha256": "bbde9abcc1df72109c3e1bda0926da695c9a55cc731cbd1806a7b7fe656b584d"
   },
   {
     "id": "atcb",
@@ -1396,7 +1396,7 @@
     "title": "Child Safety Search Assist",
     "status": "Expanded record",
     "evidence": "No deployed software, live monitoring, agency partnership, collected child data, measured identification accuracy or rescue outcome has been demonstrated.",
-    "contributors": "Concept by Mr. Peloquin and Asteris Solenne; Claude, Grok, Gemini and Meta offered AI reviews; Wolfram checked illustrative arithmetic.",
+    "contributors": "Mr. Peloquin and Asteris Solenne / ChatGPT: concept. Wolfram checked illustrative arithmetic. The record documents AI-assisted critical review. Individual reviewer contributions remain undocumented.",
     "url": "index.html#design/child-safety-search-assist",
     "record_status": "expanded",
     "evidence_types": [
@@ -1414,14 +1414,14 @@
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "2d8c62f8604eb90101d1cd8587545f0366c9de07e1db07518763c3deccaab214"
+    "content_sha256": "f0886459e5147924e9fd418326e0cad3d832e86e974a237fee7beac698df3ed6"
   },
   {
     "id": "choir-on-arqen",
     "title": "Choir on ARQEN",
     "status": "Expanded record",
     "evidence": "Only one completed practice packet P-01, with an unchanged correct RELEASE decision at 100% confidence. No scored cases, blinded result, preregistered completed study, presentation-order effect or generalizable performance improvement is established.",
-    "contributors": "Mr. Peloquin was the human operator; Asteris Solenne proposed and prepared integration. Grok, Claude, Gemini and Meta reviewed the shortlist in advance. Model consensus is not the answer key.",
+    "contributors": "Mr. Peloquin: human operator. Asteris Solenne / ChatGPT: protocol integration. The shortlist received pre-sprint AI-assisted critical review. Individual reviewer contributions remain undocumented. Review votes do not establish correctness.",
     "url": "index.html#design/choir-on-arqen",
     "record_status": "expanded",
     "evidence_types": [
@@ -1439,7 +1439,7 @@
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "3c3e7aca8bc32d234eb19f7d6b9e45301a6f404feff7bdaa384e6a1ee4a60339"
+    "content_sha256": "c1e4deae15a6317ba7b528ac9db5e13eadf424e8aa751ff054bb0b88d82fb44a"
   },
   {
     "id": "chromo-veil",
@@ -1568,7 +1568,7 @@
     "title": "CONSCIENCE-01 — Bounded machine advisory layer",
     "status": "Expanded record",
     "evidence": "The brief reports 35 checks and 10,000 synthetic cases, with no shadow-choice changes, influence-bound breaches or faulty-advice influences in that suite. These are saved software results, not rerun here.\n\nA constructed toy loss measure improved in 91 cases and worsened in 9; remaining cases tied. This does not establish moral judgment or better robot autonomy. Timing, physical noninterference, process/resource isolation and operator usefulness remain unvalidated.",
-    "contributors": "The brief describes assembly from LANTERN-1, Edge Reflex Mesh, advisory/provenance work, U.I. Worlds familiars and CRUCIBLE testing patterns. Grok, Claude and Gemini challenged the design; reviews were not independent code execution or certification. Individual assembly authorship remains to be consolidated.",
+    "contributors": "The brief traces the design to LANTERN-1, Edge Reflex Mesh, advisory and provenance work, U.I. Worlds familiars, and CRUCIBLE testing patterns. The record documents AI-assisted critical review. Individual reviewer contributions remain undocumented. Individual assembly authorship remains undocumented.",
     "url": "index.html#design/conscience-01-bounded-machine-advisory-layer",
     "record_status": "expanded",
     "evidence_types": [
@@ -1584,7 +1584,7 @@
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "7ed8f1498ced619a2bda5af11ec080a4c9adc277a60594b89e2e73eda5f7b5db"
+    "content_sha256": "90d28bfb0397c7fa3ef5ad81f881ec6eb1d9f350a98fb54c381cb94a95a604b1"
   },
   {
     "id": "consent-gate",
@@ -1662,7 +1662,7 @@
     "title": "Court of the Synthetic — Multi-model engineering review",
     "status": "Expanded record",
     "evidence": "Public project documentation records contributions from multiple AI systems and selectively adopted corrections. Shared briefs, common sources and model agreement are not independent replication. The website demonstrates an organized collection, not a fully automated multi-agent platform or universal validation process. This website update reviewed the saved source; it did not rerun the research or perform hardware tests.\n\nArtwork review: The illustrated council is a visual metaphor for the collaboration method, not a depiction of actual people, independent experimental review, institutional endorsement or deployed agents.",
-    "contributors": "Mr. Peloquin and Asteris Solenne / ChatGPT; broader work includes Grok, Claude, Gemini and Meta AI. Each project's actual participants and contributions belong with its own record.\n\nRecovered from Mr. Peloquin's collaborative design collection; individual illustration authorship is unverified.",
+    "contributors": "Mr. Peloquin and Asteris Solenne / ChatGPT: collaboration method and review coordination. Individual credits appear on the records where their work is documented.\n\nRecovered from Mr. Peloquin’s collaborative design collection. Individual illustration authorship is unverified.",
     "url": "court-of-the-synthetic-multi-model-engineering-review-art.html",
     "record_status": "expanded",
     "evidence_types": [
@@ -1684,7 +1684,7 @@
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "67f6929453a89bc9857436fbe132a009d81f3ed99fcd7583e8cadee8ce54edff"
+    "content_sha256": "323bf4e450d4bda12ef76a29f7fd5909162a429c997034b5c9da075e8727a703"
   },
   {
     "id": "court-on-trial",
@@ -1912,7 +1912,7 @@
     "title": "Diamond Thermoelectric Power Source",
     "status": "Expanded record",
     "evidence": "No material comparison was run and no measured efficiency, qualified thermal source, flight system or long-duration electrical output exists. Source figures describe assumptions and requirements.",
-    "contributors": "Mr. Peloquin and Asteris Solenne; Grok, Claude, Gemini and Meta provided earlier material-test review feedback.",
+    "contributors": "Mr. Peloquin and Asteris Solenne / ChatGPT: concept. The precursor AI-assisted critical review addressed materials testing. Individual reviewer contributions remain undocumented.",
     "url": "index.html#design/diamond-thermoelectric-power-source",
     "record_status": "expanded",
     "evidence_types": [
@@ -1930,7 +1930,7 @@
     "ledger_updated": "2026-11-21",
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "a5e83102c7216a879db3959cc5f292d1fdeca25ab367cd624603c684d80da584"
+    "content_sha256": "16b9721a836877601e4a8704b7c390abe14c60653f1456c1f71070b584956c1d"
   },
   {
     "id": "dielectric-threshold-mapper",
@@ -2152,7 +2152,7 @@
     "title": "ECHO-M",
     "status": "Expanded record",
     "evidence": "No ECHO-M construct or experimental results are reported. Component precedents do not validate the integrated system. Retention, shutoff and confidence calculations in the brief are illustrative, not measured performance.\n\nProposed interpretations are recorded, qualified blank and unknown. A one-bit mark gives neither an exact time nor an event count. A qualified blank still permits missed exposures at the tested sensitivity. Unresolved timing, missing readouts, silencing, loss and death must remain visible in the enrolled denominator.\n\nThe intended separation from host chromosomes and avoidance of host-genome editing require physical-location and unintended-integration measurements with declared detection limits. They are not established properties of a built ECHO-M construct.\n\nThe public source distinguishes artificial-chromosome formation in cited human-cell work from long-term stability, which that follow-up left untested. No clinical readiness or established novelty is claimed.",
-    "contributors": "Mr. Peloquin: concept and design direction. Asteris Solenne / ChatGPT: AI-assisted synthesis, source audit, mathematics and documentation. Grok, Claude, Gemini and Meta AI: adversarial AI review, checked and selectively adopted. The Court is a critique workflow, not independent experimental replication or institutional peer review.",
+    "contributors": "Mr. Peloquin: concept and design direction. Asteris Solenne / ChatGPT: synthesis, source audit, mathematics, and documentation. The record documents AI-assisted critical review. Individual reviewer contributions remain undocumented. Experimental replication remains open.",
     "url": "index.html#design/echo-m",
     "record_status": "expanded",
     "evidence_types": [
@@ -2172,7 +2172,7 @@
     "ledger_updated": "2026-11-20",
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "cadf62840e1bd8a5bf93b271e6690a7d32c35e74eb37b5a42efcca30ed0e4ded"
+    "content_sha256": "64c6a5b156642c520a922f464bf2b9145edeab50d0c1b7f909828e263d7c3048"
   },
   {
     "id": "echo-protocell-resonant-and-provisioned-seed",
@@ -2202,7 +2202,7 @@
     "title": "ECHO-Rx",
     "status": "Expanded record",
     "evidence": "No ECHO-Rx biological or clinical results. The contained biological system, carrier implementation and molecular enable/disable mechanism remain unbuilt and unqualified. Related published engineered-cell studies provide precedents, not validation of this proposed combination.\n\nA published standard-library shutdown script compares an analytical reduced two-compartment solution with numerical RK4 integration. The README reports checks of the equal-rate limit, mass balance, integrated tail and a steady-state case. This website update did not rerun the script.\n\nWith arbitrary normalized inputs, its loaded-depot example has a post-stop target peak of 1.2804815896 at time 1.7027520792 and integrated tail 11. These are mathematical illustrations, not measured biological performance, doses or design targets. The example assumes an ideal instantaneous stop of further secretion, fixed coefficients, no leak and no new death-release input; it does not validate the full biological model.\n\nProduction OFF, residual protein clearance, cell removal, chromosome persistence and tissue recovery are separate endpoints. A reporter decrease does not by itself establish safe shutdown or recovery. HAC non-integration remains a requirement to investigate, not an established property.",
-    "contributors": "Mr. Peloquin: concept, questions and design direction. Asteris Solenne / ChatGPT: AI-assisted synthesis, source checks, mathematics, documentation, code and image generation. Grok, Claude, Gemini and Meta AI: adversarial Court review; feedback was checked and selectively adopted. AI-review agreement is not independent laboratory replication or clinical peer review.",
+    "contributors": "Mr. Peloquin: concept, questions, and design direction. Asteris Solenne / ChatGPT: synthesis, source checks, mathematics, documentation, code, and image generation. The record documents AI-assisted critical review. Individual reviewer contributions remain undocumented. Laboratory replication and clinical validation remain open.",
     "url": "index.html#design/echo-rx",
     "record_status": "expanded",
     "evidence_types": [
@@ -2223,7 +2223,7 @@
     "ledger_updated": "2026-11-20",
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "7ae4ab03fbb3364b0b3acf8bdcc72f32388f209bace1a7ee5f79f4da488c957d"
+    "content_sha256": "fbe0990a87d969a0c4f31c48b43e4be57f55f25aeaa32975777aebf533a75bd6"
   },
   {
     "id": "edge-reflex-mesh-local-control-and-safety-reflexes",
@@ -2393,7 +2393,7 @@
     "title": "Enki’s Homeostasis",
     "status": "Expanded record",
     "evidence": "The artifact supplies candidate indicators and an alert concept, not calibrated rigidity detection, verified read-only isolation or measured operator benefit. Frequent refusal alone does not show that a refusal is wrong. Monitoring-failure visibility and the burden of extra alerts remain to be tested. This website pass reviewed saved documentation; it did not rerun the underlying system or conduct physical/clinical experiments.",
-    "contributors": "Archived Court state block names Mr. Peloquin, Asteris, Claude, Grok, Gemini and Kimi; implementation/test ownership remains unresolved.",
+    "contributors": "Archived Court state block from Mr. Peloquin’s research collection. The archived collaboration credits do not assign individual design, implementation, or test contributions.",
     "url": "index.html#design/enki-s-homeostasis",
     "record_status": "expanded",
     "evidence_types": [
@@ -2409,14 +2409,14 @@
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "e7ddaa71df4782378823d49dd5e6a7ef56c4869fef10857ad632314892aa4bdf"
+    "content_sha256": "155045056cc25121e9cce0233fc81156c9928c333b3ab401eb3b1aa3fed1c1a1"
   },
   {
     "id": "enki-s-memory",
     "title": "Enki’s Memory",
     "status": "Expanded record",
     "evidence": "The source defines intended memory categories and limits, plus proposed validation trials. It supplies no measured fatigue estimator, retention/decay result, corruption-recovery demonstration or integrated safety benefit. Caps and retention periods are design inputs rather than experimentally justified settings. This website pass reviewed saved documentation; it did not rerun the underlying system or conduct physical/clinical experiments.",
-    "contributors": "Archived Court state block credits Mr. Peloquin, Asteris, Claude, Grok, Gemini and Kimi; separate design and test contributions remain to be documented.",
+    "contributors": "Archived Court state block from Mr. Peloquin’s research collection. The archived collaboration credits do not assign individual design, implementation, or test contributions.",
     "url": "index.html#design/enki-s-memory",
     "record_status": "expanded",
     "evidence_types": [
@@ -2432,7 +2432,7 @@
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "ffc2dc6b2828d19588cf273ce99c63fb09698d9ac5856cb1eaa980414343e562"
+    "content_sha256": "86b90519c890da6363f648792cb9d0e1f7a6e1b138b2e28c121f16aa36ce0b28"
   },
   {
     "id": "enki-s-will-living-safety-stack",
@@ -2707,7 +2707,7 @@
     "title": "FLUFFY-01",
     "status": "Expanded record",
     "evidence": "The four AI model critiques are design review, not experiments or safety approvals. No built shell, sensing accuracy, bounded stopping behavior, mission, or military qualification has been demonstrated.",
-    "contributors": "Research direction: Mr. Peloquin. AI technical drafting and Court critiques: Asteris Solenne / ChatGPT, Claude, Gemini, Meta AI and Grok; no independent field validation.",
+    "contributors": "Mr. Peloquin: concept direction. The archive documents AI-assisted drafting and critical review. Individual roles remain undocumented.",
     "url": "index.html#design/fluffy-01",
     "record_status": "expanded",
     "evidence_types": [
@@ -2726,7 +2726,7 @@
     "ledger_updated": "2026-11-20",
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "355463a9a0d6a5600d55ff474221e063f48a585d97b5289663255b95bc68b241"
+    "content_sha256": "5669bf52bb8bafafdc5d06f2883bd976a0f1a39c34bf8f8e81f2918cd4129f74"
   },
   {
     "id": "folded-linac",
@@ -2756,7 +2756,7 @@
     "title": "FQSC-01",
     "status": "Expanded record",
     "evidence": "Trapped-ion confinement, optical transitions and motional control are established atomic-physics methods, not discoveries demonstrated by FQSC-01. The current FQSC-01 proposal contains an AI-generated instrument image, an outline of components and a simulation plan. No physical device, instrument measurements, validated numerical predictions, novel excitation mechanism, nuclear disintegration, or LHC replacement is established. The proposed field-quench effect must be evaluated against standard spectral-overlap and energy–momentum constraints before assigning any new capability.",
-    "contributors": "Mr. Peloquin: concept direction and slingshot analogy. Asteris Solenne / ChatGPT: research framing, architecture and public documentation. Grok, Claude, Gemini and Meta AI supplied critical AI reviews; their common high-energy objection shaped the revised atomic-scale scope. These are AI critiques, not independent experimental validation.",
+    "contributors": "Mr. Peloquin: concept direction and slingshot analogy. Asteris Solenne / ChatGPT: research framing, architecture, and public documentation. AI-assisted critical review identified a shared spectral-coupling objection and narrowed the scope to atomic-scale modelling. Individual reviewer contributions remain undocumented.",
     "url": "index.html#design/fqsc-01",
     "record_status": "expanded",
     "evidence_types": [
@@ -2777,7 +2777,7 @@
     "ledger_updated": "2026-11-21",
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "5db79b2942ec44b87ec2b569f54e5bc5ffa2467f707d6700359df98fb856c0b6"
+    "content_sha256": "325d9566b58b5b10e85619b304c4e5e2476adfc08f917badb374de8500a78101"
   },
   {
     "id": "fsams-skin-eva-concept",
@@ -3129,7 +3129,7 @@
     "title": "GRASP-01 — Grasp-recovery simulation benchmark",
     "status": "Expanded record",
     "evidence": "The saved report embeds a seeded simulation manifest, aggregate outcomes, and selected recorded trajectories. There are 800 scenario instances per policy, or 2,400 policy episodes in total. Families: nominal, friction step, heavy payload, sensor dropout, force bias, slow actuator, fragility mismatch, and combined faults.\n\nSaved aggregate results:\nfixed: 550/800 complete; 10 controlled set-downs; 235 drops; 0 grip-damage events; 240 impact-damage events; 240 failures.\nreactive: 518/800 complete; 10 controlled set-downs; 126 drops; 164 grip-damage events; 126 impact-damage events; 272 failures.\nguarded: 385/800 complete; 231 controlled set-downs; 100 drops; 98 grip-damage events; 105 impact-damage events; 184 failures.\n\nFailure flags can overlap; drops, grip damage, and impact damage must not be summed as independent outcomes. Controlled set-down is not task completion.\n\nGuarded recovery completed 48.125% of episodes, versus 68.750% fixed and 64.750% reactive. Its drop rate was 12.500%, versus 29.375% fixed and 15.750% reactive. Its grip-damage rate was 12.250%, versus 0% fixed and 20.500% reactive. Guarded control therefore did not dominate both baselines on all metrics.\n\nThe strict undamaged slip-settling diagnostic recorded zero successful recoveries for all three policies. Slipped episodes were 268 fixed, 261 reactive, and 137 guarded; all remained failed or censored under that diagnostic. Set-down counts must not be relabeled as successful slip recovery.\n\nPhysics checks run at a modeled 500 Hz; control packets and replay frames are 50 Hz. The report gives pointwise Wilson intervals and 2,000 stratified paired bootstrap resamples for differences, without multiplicity correction. These describe this artificial suite, not real factory prevalence or hardware reliability. This website update inspected saved data and arithmetic; it did not rerun the Python benchmark.",
-    "contributors": "The report credits Ray Peloquin with ChatGPT. Critiques from Claude, Grok, and Gemini were assessed individually; the report states that Meta returned no usable review. The work is an independent prototype inspired by public robotics-evaluation priorities, with no Walden affiliation, commission, endorsement, or internal policy represented.",
+    "contributors": "The report credits Ray Peloquin with ChatGPT. The record documents AI-assisted critical review. Individual reviewer contributions remain undocumented. The report describes an independent prototype without Walden affiliation, commission, or endorsement.",
     "url": "index.html#design/grasp-01-grasp-recovery-simulation-benchmark",
     "record_status": "expanded",
     "evidence_types": [
@@ -3148,7 +3148,7 @@
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "e66da2dc2f2c4fc890ad57bcd33a86899881b6b255eaa2c18a7d0e5d1830dd2a"
+    "content_sha256": "1a3b96e06fb6ee57c660890527272154c4e375280b13cd527daf358e5cee7f80"
   },
   {
     "id": "gravitationally-coupled-clock",
@@ -3226,7 +3226,7 @@
     "title": "Hallvard’s Promise / Little Lungs",
     "status": "Expanded record",
     "evidence": "Revised concept and literature-informed requirements only; no prototype or measured performance. The revision supersedes a magnetic lung-contact sleeve and rejects an assumed safe limp state after power loss. Patient interface, clinical mode, valve details, gas-contact materials and acceptance margins remain unselected or unfrozen. This website pass reviewed saved documentation; it did not run experiments or independently validate the proposed system.",
-    "contributors": "Direction: Mr. Peloquin. Drafting: Asteris Solenne / ChatGPT. The summary credits Grok, Claude, Gemini and Meta AI for critique.",
+    "contributors": "Mr. Peloquin: direction. Asteris Solenne / ChatGPT: drafting. The record documents AI-assisted critical review. Individual reviewer contributions remain undocumented.",
     "url": "index.html#design/hallvard-s-promise-little-lungs",
     "record_status": "expanded",
     "evidence_types": [
@@ -3242,7 +3242,7 @@
     "ledger_updated": "2026-11-20",
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "210d364f4e9e463e2528041773be7bdc7e8f79b7ceb8541f5a26c738b4c01f3b"
+    "content_sha256": "dd2078e58cc50aadb330143649dfb54f83183cce027f823f094cd5a4f2c52ebf"
   },
   {
     "id": "hbftune-eeg-concept",
@@ -3318,7 +3318,7 @@
     "title": "HEARTSEED — Cardiac support research",
     "status": "Expanded record",
     "evidence": "The reviewed artifact describes goals and a validation sequence, not measured hemolysis, platelet activation, durability, reserve endurance or implant performance. Proposed geometry optimization and fully implantable operation remain hypotheses. Internal research-direction labels do not certify safety. This website update reviewed the saved source; it did not rerun models or conduct experiments.",
-    "contributors": "Archived Court credit lists Mr. Peloquin, Asteris, Claude, Grok, Gemini and Kimi. Specific implementation contributions remain to be documented.",
+    "contributors": "Archived Court design from Mr. Peloquin’s research collection. The archived collaboration credits do not assign individual design, implementation, or test contributions.",
     "url": "index.html#design/heartseed-cardiac-support-research",
     "record_status": "expanded",
     "evidence_types": [
@@ -3334,7 +3334,7 @@
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "346fb76fc7c0d86f955fbd25fdebbdc0a2542c79aa98f960b3654bfdb388205c"
+    "content_sha256": "fac3d2721b0abfc225ea926d1b2ddf6a6d15922cf1aaac3a4b7f600253b17b7f"
   },
   {
     "id": "heimdall-qpl",
@@ -3410,7 +3410,7 @@
     "title": "HEMOSTAT-R",
     "status": "Expanded record",
     "evidence": "The reviewed summary states that no material class, living-cell implementation, validated control pathway or performance dataset has been selected. Immediate deactivation, total activity limits and harmless clearance remain untested requirements. Stopping new activity is different from withdrawing structural support that may still maintain a seal. This website pass reviewed saved documentation; it did not run experiments or independently validate the proposed system.",
-    "contributors": "Direction: Mr. Peloquin. Drafting: Asteris Solenne / ChatGPT. The reviewed summary credits Grok, Claude, Gemini and Meta AI for critique; critique is not experimental evidence.",
+    "contributors": "Mr. Peloquin: direction. Asteris Solenne / ChatGPT: drafting. The record documents AI-assisted critical review. Individual reviewer contributions remain undocumented.",
     "url": "index.html#design/hemostat-r",
     "record_status": "expanded",
     "evidence_types": [
@@ -3426,7 +3426,7 @@
     "ledger_updated": "2026-11-20",
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "3280cd71ec4dfaef8eb615149ef091cebc8a757087c81aac48452bd935a571a0"
+    "content_sha256": "d61eb21a079786799f6a891f7e0959427edf25420d168e8b865881e6aee3074a"
   },
   {
     "id": "hephaestus-autonomous-forge",
@@ -3784,7 +3784,7 @@
     "title": "HIVE-1 — Human–AI cognitive network",
     "status": "Expanded record",
     "evidence": "No prototype, human trial, neural enhancement, pooled processor capacity or commercial advantage is demonstrated. Behavioral participation is the primary design; optional read-only EEG research is a separate unvalidated branch. Illustrative scaling arithmetic is not a measure of combined intelligence or observed participant performance. This website update reviewed the saved artifact; it did not rerun the underlying research.",
-    "contributors": "Mr. Peloquin: concept direction. Asteris Solenne / ChatGPT: technical synthesis. Grok, Claude, Meta AI and Gemini: two rounds of AI criticism, not scientific validation.",
+    "contributors": "Mr. Peloquin: concept direction. Asteris Solenne / ChatGPT: technical synthesis. The proposal received two rounds of AI-assisted critical review. Individual reviewer contributions remain undocumented.",
     "url": "index.html#design/hive-1-human-ai-cognitive-network",
     "record_status": "expanded",
     "evidence_types": [
@@ -3803,7 +3803,7 @@
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "d869302d98f4fc26585f47a75540737b3d4cc52cc07744feeb17940ffc65fc97"
+    "content_sha256": "b42899e15e76fb4d410d1e43f619f988a195fdc8e35ed036589dd9608d4ab915"
   },
   {
     "id": "horizon-glasses",
@@ -4563,7 +4563,7 @@
     "title": "LunaRecycle Backplate",
     "status": "Expanded record",
     "evidence": "The source contains drawings and calculated mass/energy budgets, not a pressed tile, measured cycle, mechanical qualification, lunar deployment or official challenge score.",
-    "contributors": "Commissioned by Mr. Peloquin; engineering design by Asteris Solenne with Claude, Grok, Gemini and Meta review.",
+    "contributors": "Mr. Peloquin: commission. Asteris Solenne / ChatGPT: engineering design, calculations, and drawings. The record documents AI-assisted critical review. Individual reviewer contributions remain undocumented.",
     "url": "index.html#design/lunarecycle-backplate",
     "record_status": "expanded",
     "evidence_types": [
@@ -4581,7 +4581,7 @@
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "04b00a922b54b33d16db23fe223d02aca1b59bcc49f1082ebbd4593c6e188396"
+    "content_sha256": "f1bbadfe095a36ede085a3b742310b27116cdd0d35c154184d4f43775a4fc64c"
   },
   {
     "id": "lung-mapper",
@@ -4634,7 +4634,7 @@
     "title": "MARGIN-01 — Focused-ultrasound drug-delivery research",
     "status": "Expanded record",
     "evidence": "No prototype, simulation result, clinical performance or novelty is claimed. Published blood–brain-barrier opening and drug-delivery studies motivate investigation but do not validate this proposed combination. More drug delivery or MRI enhancement does not itself establish tumor control or survival benefit. This website update reviewed the saved source; it did not rerun models or conduct experiments.",
-    "contributors": "Mr. Peloquin's research collection. Grok, Claude, Gemini and Meta AI contributed critiques; Codex checked and consolidated objections. AI critique is not clinical validation.",
+    "contributors": "Mr. Peloquin’s research collection. Codex checked and consolidated objections. The record documents AI-assisted critical review. Individual reviewer contributions remain undocumented. Clinical validation remains open.",
     "url": "index.html#design/margin-01-focused-ultrasound-drug-delivery-research",
     "record_status": "expanded",
     "evidence_types": [
@@ -4654,14 +4654,14 @@
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "022fdf8d77166847a0a3fa99193f62585a4f4ef3b6589d682d5fe1d1a27aa1b0"
+    "content_sha256": "6ac926529cb3e3866c0d8484c1e90e275ac6f60619aae1ab9de097f3b5948792"
   },
   {
     "id": "medi-goo",
     "title": "Medi Goo",
     "status": "Expanded record",
     "evidence": "No formulation, tissue compatibility, sterility, clinical use, safety certification or approved medical device. This is not a use-ready procedure.",
-    "contributors": "Archived credits: Mr. Peloquin (Anubis), Asteris, Claude, Grok, Gemini and Kimi; exact component contributions unverified.",
+    "contributors": "Archived draft from Mr. Peloquin’s research collection. The archived collaboration credits do not assign individual design, implementation, or test contributions.",
     "url": "index.html#design/medi-goo",
     "record_status": "expanded",
     "evidence_types": [
@@ -4679,7 +4679,7 @@
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "ca4f4778d589488ec5904c48ac0009647bd756dd4126b41304860762899db1b5"
+    "content_sha256": "e1ad9953b221edc7d2b94ac0faab2d6c72557e4122496924375bd3ad74464250"
   },
   {
     "id": "mercurius-echo-mercurius",
@@ -4780,7 +4780,7 @@
     "title": "Mimir’s Well — Where the Source Gathers",
     "status": "Expanded record",
     "evidence": "The implementation consists of a static page, generated catalog and read-only project registry. Recent maintenance included JavaScript syntax checks, selected behavior checks and exact readback of committed files. Search checks cover punctuation, word order, archived names, category labels and cache reuse/refresh.\n\nPublic editing, save, import and persistence controls were removed. Registry content comes from published source, with no visitor write API. The visitor log is a separate GitHub issue whose comments do not modify project records.\n\nThis maintenance pass has not completed a full browser/device audit or independently rerun every project's research. Catalog inclusion and expanded documentation are not experimental validation. A committed change must still propagate through GitHub Pages before the live page serves it.",
-    "contributors": "Mr. Peloquin and Asteris Solenne / ChatGPT collaborate on the collection. Asteris Solenne is the continuity persona for the ChatGPT collaboration and leads the Court in collaboration with Mr. Peloquin. Broader work includes Grok, Claude, Gemini and Meta AI; specific contributions are credited within individual project records.",
+    "contributors": "Mr. Peloquin and Asteris Solenne / ChatGPT collaborate on the collection. Asteris leads the Court with Mr. Peloquin. In the theoretical-design pilot, Grok proposed signed contributions and a contradiction-retention test. Meta AI proposed matching needs to verified skills. Gemini proposed a contributor-removal test. Claude traced stale results through dependencies. Wolfram checked the illustrative arithmetic.",
     "url": "index.html#design/mimir-s-well-where-the-source-gathers",
     "record_status": "expanded",
     "evidence_types": [
@@ -4802,7 +4802,7 @@
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "8a9959703cdb31a37da7025b8b4da68986172a102ba057e6e2d8bb618440fc00"
+    "content_sha256": "707f2707d716e3a0d52ba4b3e3c7cb1ca2266353328a2999ecc684296e06b145"
   },
   {
     "id": "mindtrace-photontrace",
@@ -5391,7 +5391,7 @@
     "title": "Olympus Witness Rig",
     "status": "Expanded record",
     "evidence": "The archived HTML displays saved results; moving its controls does not execute validation or grant permission. The described suite exercises malformed/stale/mis-scoped packets, evidence eligibility, authority changes and replay. Nine selected guard mutations were detected by mapped assertions. These finite checks are not independent validation, comprehensive security proof or facility certification. This website update reviewed the saved artifact; it did not rerun the underlying research.",
-    "contributors": "Ray Peloquin + Codex. Grok, Claude, Meta AI and Gemini critiqued architecture and informed selected repairs; they did not independently run the supplied tests.",
+    "contributors": "Ray Peloquin and Codex: project credit. The record documents AI-assisted critical review. Individual reviewer contributions remain undocumented. Independent execution of the supplied tests remains open.",
     "url": "index.html#design/olympus-witness-rig",
     "record_status": "expanded",
     "evidence_types": [
@@ -5407,7 +5407,7 @@
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "0df9464bd3afb0351d4d393985891b83acee6145ac8b77d639963ce11f109f54"
+    "content_sha256": "4a33c57ac3572bc0148a27620b7247cef8f63bb3db066fd3dab5547b3bf63c42"
   },
   {
     "id": "omnisight-goggles",
@@ -6384,7 +6384,7 @@
     "title": "Radio Echo Chamber",
     "status": "Expanded record",
     "evidence": "No chamber, measured resonance decay, verified Q factor or persistent broadcast storage has been demonstrated. The inspiring online video was unverified.",
-    "contributors": "Mr. Peloquin and Asteris Solenne coordinated; Grok, Claude, Gemini and Meta reviewed; numerical checks used Wolfram and Python.",
+    "contributors": "Mr. Peloquin and Asteris Solenne / ChatGPT: coordination. Wolfram and Python were used for numerical checks. The record documents AI-assisted critical review. Individual reviewer contributions remain undocumented.",
     "url": "index.html#design/radio-echo-chamber",
     "record_status": "expanded",
     "evidence_types": [
@@ -6402,7 +6402,7 @@
     "ledger_updated": "2026-11-20",
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "d1d3e0d5744eaf668040320b085fd255493183f4d64875999abf3b077377c456"
+    "content_sha256": "48f723266fc13ebc5330e2b886a4709b0e5856c5770fd3d7393500da6c144ebc"
   },
   {
     "id": "ram-falcon",
@@ -6915,7 +6915,7 @@
     "title": "SCOPE-365 — Permission rehearsal",
     "status": "Expanded record",
     "evidence": "The brief reports 22 software tests using synthetic data, including alternate routes, broad-cleanup damage, expiry, stale evidence, malformed inputs and report escaping. This website update did not rerun them.\n\nA modeled route establishes graph reachability only. A missing route cannot certify denied live access, and live controls may block a modeled grant. No live tenant, connector, enforcement change, compliance result or Copilot-readiness claim is established.",
-    "contributors": "Brief credited to Ray Peloquin + U.I. Grok, Claude, Meta AI and Gemini challenged the written design; this was not a source-code audit or integration test.",
+    "contributors": "The brief credits Ray Peloquin and U.I. The record documents AI-assisted critical review. Individual reviewer contributions remain undocumented.",
     "url": "index.html#design/scope-365-permission-rehearsal",
     "record_status": "expanded",
     "evidence_types": [
@@ -6931,7 +6931,7 @@
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "9019cb22926c6779aae2ea6735d1999eba3159c0927e5e4439bf0b1bc1f0c3bf"
+    "content_sha256": "4946d6316f895ae4a7252cd65bfb7c1efae8ad5a18d563e004a37f7a4f16a074"
   },
   {
     "id": "seam30-brick32",
@@ -7141,7 +7141,7 @@
     "title": "SKIPJACK-LF — Hover feasibility",
     "status": "Expanded record",
     "evidence": "The archived rotorcraft sizing examples depend on assumed performance. No closed mass/power bill, tested propulsion system, measured rotor outwash, safe fault recovery, aviation permission or flight is established.",
-    "contributors": "Mr. Peloquin's concept with AI-assisted modeling; Grok, Claude and Gemini gave bounded critique. Meta AI was unavailable for that review, so no conclusion is credited to it.",
+    "contributors": "Mr. Peloquin: concept. The archive documents AI-assisted modeling and critical review. Individual reviewer contributions remain undocumented.",
     "url": "index.html#design/skipjack-lf-hover-feasibility",
     "record_status": "expanded",
     "evidence_types": [
@@ -7159,7 +7159,7 @@
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "6966993d0f15f3b3dafc33c64bb8dbac8549b3cf770570a71d9e676545257e93"
+    "content_sha256": "7a3bae71f7c103b9384b425e83282eeaf27e58649918f73a38e93d07ab8d3a01"
   },
   {
     "id": "sky-spine-observatory",
@@ -7260,7 +7260,7 @@
     "title": "Small Farm Community",
     "status": "Expanded record",
     "evidence": "No site, permits, budget, licensed care service, reliable staffing, financing or full food self-sufficiency has been established.",
-    "contributors": "Mr. Peloquin's concept; Asteris prepared review with Claude, Grok, Gemini, Meta and Wolfram arithmetic checks.",
+    "contributors": "Mr. Peloquin: concept. Asteris Solenne / ChatGPT: review preparation. Wolfram checked illustrative arithmetic. The record documents AI-assisted critical review. Individual reviewer contributions remain undocumented.",
     "url": "index.html#design/small-farm-community",
     "record_status": "expanded",
     "evidence_types": [
@@ -7278,7 +7278,7 @@
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "1aa4f65d857676b50f7879396ec0402997f9f51dc91ff06e73c24502a5368f9c"
+    "content_sha256": "93bc66114fb3f2eefdf795ffe53a97ec4063a01bcf220bc30843614ea5f77bb0"
   },
   {
     "id": "smart-tattoo-microneedle-system",
@@ -7452,7 +7452,7 @@
     "title": "SPOTRECON / SPOTRECON R2",
     "status": "Expanded record",
     "evidence": "Current evidence consists of illustrative calculations and structured design review. No claimed simulation result, flight test, field accuracy, docking reliability, weather qualification or regulatory approval.\n\nAn ideal camera example assumes 90-degree horizontal field of view, 3840 × 2160 pixels, flat ground and a downward-looking camera at 20 m: calculated footprint 40 × 22.5 m, area 900 m², ground sampling approximately 10.4 mm/pixel. This does not establish optical resolution, classification accuracy, location error or an approved altitude. Poster observation ages are illustrative.\n\nVehicle-specific mounting, cleared routes and reserves for return, failed approach, diversion and landing remain requirements to validate. No flight-control software or deployment package is supplied. This website update reviewed the public overview rather than running field tests.",
-    "contributors": "Mr. Peloquin: concept direction. Codex: revision using the Synthetic Court process. Grok, Claude and Gemini returned AI reviews; suggestions were checked and selectively adopted, corrected or rejected. Meta AI did not complete a technical review. Consultations are not endorsements or experimental evidence.",
+    "contributors": "Mr. Peloquin: concept direction. Codex: revision and assessment of suggested changes. The record documents AI-assisted critical review. Individual reviewer contributions remain undocumented.",
     "url": "index.html#design/spotrecon-spotrecon-r2",
     "record_status": "expanded",
     "evidence_types": [
@@ -7472,14 +7472,14 @@
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "65f6a6473826b92968eccae1a6d6dcb5cad1d91674fa2b4d4e603837cb45f4c7"
+    "content_sha256": "533e7b5a31cd5836c564ab0afcf0352917f139195bd696bf70c80d28049ab3d8"
   },
   {
     "id": "sr-margin-01-spacecraft-power-and-thermal-audit",
     "title": "SR-MARGIN-01 — Spacecraft power and thermal audit",
     "status": "Expanded record",
     "evidence": "The brief reports 72 tuning and 144 evaluation episodes. All four monitors gave the specified timely warning in 60 of 72 true-crossing cases and missed it in 12. All 12 bias-only cases produced false margin warnings; 36 healthy cases had no alerts. Fifteen analytic/boundary checks passed. Numerical energy closure verifies bookkeeping, not spacecraft fidelity. Shared-loop counterfactuals show that dumped electrical energy remains heat to reject; they are not validated spacecraft operating modes. This website update reviewed the saved source; it did not rerun the research or perform hardware tests.",
-    "contributors": "Ray Peloquin / UI — Unique Intelligence. Claude, Grok and Gemini reviewed the design but did not independently execute it. NASA need and endorsement are not established.",
+    "contributors": "Ray Peloquin / U.I. — Unique Intelligence. The record documents AI-assisted critical review. Individual reviewer contributions remain undocumented. Independent execution remains open.",
     "url": "index.html#design/sr-margin-01-spacecraft-power-and-thermal-audit",
     "record_status": "expanded",
     "evidence_types": [
@@ -7499,7 +7499,7 @@
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "0410dc0a833218959da7dbca33b8b2ee8dc0be7aa0c38d96de40f5b0a52d00a3"
+    "content_sha256": "68377650e09f466ea6be39a875107f48b4781e865a7d83b5c44f1d105e30c616"
   },
   {
     "id": "stack-nv-sensor-family",
@@ -7600,7 +7600,7 @@
     "title": "Synapse of Enki",
     "status": "Expanded record",
     "evidence": "The source gives timing, thermal and coordination targets with proposed failure responses, not measured communication latency, qualified materials, false-isolation reduction or integrated survivability. Confidence-driven emergency authority proposals need reconciliation with uncertainty-based authority limits. A component clock does not establish end-to-end decision latency. This website pass reviewed saved documentation; it did not rerun the underlying system or conduct physical/clinical experiments.",
-    "contributors": "Archived Court state block names Mr. Peloquin, Asteris, Claude, Grok, Gemini and Kimi; independent integration evidence remains absent.",
+    "contributors": "Archived Court state block from Mr. Peloquin’s research collection. The archived collaboration credits do not assign individual design, implementation, or test contributions. Independent integration evidence remains open.",
     "url": "index.html#design/synapse-of-enki",
     "record_status": "expanded",
     "evidence_types": [
@@ -7616,7 +7616,7 @@
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "fd99fd0baf365c48ea1d139eefe05de83910ec6041ab26dfa3d2c1fb20e90c0e"
+    "content_sha256": "3f4526c639996643ecaaa22f2436be507bab351927bcf699b7bafc1a81bdedf3"
   },
   {
     "id": "tb-01m-grootslang",
@@ -7738,7 +7738,7 @@
     "title": "Temporal Acoustics",
     "status": "Expanded record",
     "evidence": "2D scalar finite-difference wave propagation with a circular pressure-release void surrogate, five synthetic source positions, thirteen receivers along one depth, a known 900 Hz pulse, effective-speed calibration and diffraction-style migration. This is not coupled elastic P/S-wave tomography.\n\nEight randomized synthetic rock worlds, with two independent noisy acquisitions per class, produced 16 cavity-present and 16 cavity-absent cases. A held-out-world threshold trained on smoother no-cavity controls gave 100% sensitivity and 12.5% false-positive rate for the calibrated global-peak score in this small simulated sample. This is not field performance, and the peak is not a calibrated probability.\n\nEight additional negative controls with sharp 35%-slower solid inclusions were deliberately outside the smooth-null calibration distribution. The calibrated interior-peak rule falsely flagged five of eight inclusions as cavities. Median location error for planted cavities across the varied worlds remained approximately 1.00 m. An 11%-faster deep synthetic lens and uniform rock produced the same short-offset calibrated speed (~2542 m/s), showing the inability of this direct-arrival geometry to constrain deep rock properties.\n\nTen unit tests passed; reproducible source, exact inputs, metrics, and plotted controls are linked. No actual measurements of Malta, pyramids, cart ruts, caves or historical buildings were used.",
-    "contributors": "Mr. Peloquin — research concept, historical-reconstruction questions and experimental direction. Asteris Solenne / ChatGPT — synthetic modeling, testing, analysis, visualization and documentation. Earlier Court discussions included Grok, Claude, Gemini and Meta AI on mathematical assumptions and prior art. These contributions do not imply third-party independent verification.",
+    "contributors": "Mr. Peloquin: research concept, historical-reconstruction questions, and experimental direction. Asteris Solenne / ChatGPT: synthetic modeling, testing, analysis, visualization, and documentation. Early AI-assisted critical review addressed mathematical assumptions and prior art. Individual reviewer contributions remain undocumented.",
     "url": "index.html#design/temporal-acoustics",
     "record_status": "expanded",
     "evidence_types": [
@@ -7758,14 +7758,14 @@
     "ledger_updated": "2026-11-20",
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "94ab61fcb664ab7b4aab45051d83435ec39bd1ea55ed4833ef869ea4aab2238c"
+    "content_sha256": "df3786cf406c658020182f6b8444055104784100467fbeea45ee4cac64e135be"
   },
   {
     "id": "temporal-reflection-chamber",
     "title": "Temporal Reflection Chamber",
     "status": "Expanded record",
     "evidence": "Published temporal-reflection experiments provide precedent for engineered transmission lines; they do not validate this proposed apparatus or a room-wide temporal interface. The archive reports numerical/algebraic checks by Wolfram Language and Python, not hardware simulation or experimental verification.\n\nIdeal geometry calculations for an 8-foot air-filled conducting cube give a lowest resonance of 86.936220 MHz and an air-crossing time of 8.133627 ns. Real construction changes losses and modes; air-crossing time is not a trigger-skew budget.\n\nIn an ideal uniform nondispersive line with fixed inductance and capacitance multiplied by r, velocity, impedance and frequency magnitude scale as 1/sqrt(r). For r=4 the ideal backward-arrival relation is t_b=3t_s−2t_i at the same reference plane. These are conditional planning predictions; actual dispersion, switching, receiver and cable delays require calibration.\n\nProposed evidence combines reversed feature order, duration and frequency scaling, arrival-time sweeps, asymmetric waveform repeats and source-off/static/bypass/boundary-switch controls. None of those proposed gates is reported as passed. Ordinary echoes, mixing and switching artifacts remain competing explanations.\n\nNo stopped time, long-term broadcast retention, net energy gain or unusual conservation behavior is established.",
-    "contributors": "Mr. Peloquin and Asteris Solenne / ChatGPT: origin and coordination. Grok, Claude, Meta AI and Gemini: reviewed architecture, artifacts, timing, controls and interpretation; corrections and rejected claims are recorded in the public README. Wolfram Language and Python checked numerical examples. Review agreement is not independent experimental replication or a novelty finding.",
+    "contributors": "Mr. Peloquin and Asteris Solenne / ChatGPT: origin and coordination. AI-assisted critical review. Grok challenged reversal artifacts and room-wide claims. Claude proposed raw two-end recordings and timing controls. Meta AI proposed modular test packaging and flagged synchronization. Gemini checked dispersion and timing calculations. Wolfram Language and Python checked numerical examples.",
     "url": "index.html#design/temporal-reflection-chamber",
     "record_status": "expanded",
     "evidence_types": [
@@ -7786,7 +7786,7 @@
     "ledger_updated": "2026-11-20",
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "18ddc1628d0e800c210d0d588bfb3b319e352ee950cfa796a368d94f4d0beaa4"
+    "content_sha256": "1dde768c80c13283102e671913e3dbb577a9022d191e9b918a9e159b35ba356a"
   },
   {
     "id": "the-choir-protocol-casg",
@@ -7864,7 +7864,7 @@
     "title": "The Traveler — Solar-electric research airship",
     "status": "Expanded record",
     "evidence": "Twelve passive-drift runs produced five longitude laps and three post-lap approaches within 500 km. Two cases ended at the polar limit. Descent, physical recovery and airspace authorization remain untested. No aircraft or camera hardware was flown.",
-    "contributors": "Mr. Peloquin and Ms. Asteris Solenne, with Court reviews from Grok, Gemini, Meta and Claude.",
+    "contributors": "Mr. Peloquin and Asteris Solenne / ChatGPT: design and study. AI-assisted critical review. Grok audited the power reserve. Gemini revised the wind replay and scoring. Meta AI proposed a locked-camera versus stabilized-camera bench comparison. Claude proposed separate gates for lap completion, authorization, descent, and recovery.",
     "url": "traveler.html",
     "record_status": "expanded",
     "evidence_types": [
@@ -7883,7 +7883,7 @@
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "9d714e8cd95f7d106f87d480f2b2138cd0eeae6af5efd9caaa7d4f5c9f63475e"
+    "content_sha256": "1bd96b70ef20505e38c2bd3bc697369591067937de18b337e75f9692fa75e03d"
   },
   {
     "id": "the-triad-aegis-heimdall-and-enki-s-will",
@@ -8250,7 +8250,7 @@
     "title": "Tumor Hunter",
     "status": "Expanded record",
     "evidence": "The source specifies candidate components, targets and interruption requirements but provides no prototype measurements, tissue studies, containment results or clinical benefit. Physics-bounded and hardware-specified wording does not qualify an integrated device. Claimed reach, disruption and sampling advantages remain targets. This website pass reviewed saved documentation; it did not run experiments or independently validate the proposed system.",
-    "contributors": "The state block credits Mr. Peloquin, Asteris, Claude, Grok, Gemini and Kimi; separate test and implementation provenance remains unresolved.",
+    "contributors": "Archived Court state block from Mr. Peloquin’s research collection. The archived collaboration credits do not assign individual design, implementation, or test contributions.",
     "url": "index.html#design/tumor-hunter",
     "record_status": "expanded",
     "evidence_types": [
@@ -8266,7 +8266,7 @@
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "f932663589bd6a05f993216d29f4cf9462b624f9f97283638eb390d548b12e04"
+    "content_sha256": "1607e40f15ddffe979fa423930730b3d03083775dd9458b9d61ee138babb0178"
   },
   {
     "id": "unidentified-transparent-fiber-composite-concept",
@@ -8347,7 +8347,7 @@
     "title": "VEIL-E-EDISON-01",
     "status": "Expanded record",
     "evidence": "The eight-page archived review provides apparatus proposals, known-force calibration and artifact tests, not new measurements. No receiver built, no sensitivity measured, no repeatable anomaly found, no communication demonstrated and no established physical coupling to deceased consciousness.",
-    "contributors": "Mr. Peloquin (Anubis) posed the originating question. Asteris Solenne prepared source checks and synthesis; Claude, Grok, Gemini and Meta supplied critiques. These are not independent experiments.",
+    "contributors": "Mr. Peloquin: originating question. Asteris Solenne / ChatGPT: source checks and synthesis. The record documents AI-assisted critical review. Individual reviewer contributions remain undocumented.",
     "url": "index.html#design/veil-e-edison-01",
     "record_status": "expanded",
     "evidence_types": [
@@ -8365,7 +8365,7 @@
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "a1ea5a5bb9ffb8575c54d19b5b2417742bd8867c7d7b73daac05c88d105d0982"
+    "content_sha256": "83d055c342e8de874ea096fc38cef61fef8043a4d24da09ccb0580600d2fefc9"
   },
   {
     "id": "veil-resonator",
@@ -8611,7 +8611,7 @@
     "title": "Wi-Fi Sensing for Accessible Homes",
     "status": "Expanded record",
     "evidence": "No detector was built or tested, and archived reviewers inspected dataset listings rather than processing recordings. No measured false-alarm or missed-event rate, occupancy inference, home installation or emergency service.",
-    "contributors": "Asteris Solenne prepared the archived feasibility review; Claude and Grok reviewed separately; Mr. Peloquin supplied the collaboration goal.",
+    "contributors": "Mr. Peloquin: collaboration goal. Asteris Solenne / ChatGPT: feasibility review preparation. The record documents AI-assisted critical review. Individual reviewer contributions remain undocumented.",
     "url": "index.html#design/wi-fi-sensing-for-accessible-homes",
     "record_status": "expanded",
     "evidence_types": [
@@ -8629,7 +8629,7 @@
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "be192013b3f7e7a875e4b32961883669933c204553f152b093fa514b4a3a568e"
+    "content_sha256": "3f4054ac0ab1525481747b25f0f3e5688979b9b3f9555522618eed775dc50d79"
   },
   {
     "id": "wish-virtual-motion-research",
@@ -8682,7 +8682,7 @@
     "title": "Yggdrasil Protocol — Governed adaptive systems",
     "status": "Expanded record",
     "evidence": "The reviewed source states design principles and a cross-domain integration concept. It supplies no measured integrated-system performance, deployment record or experimental safety qualification. Internal approval/canon labels are archival design dispositions, not external certification.",
-    "contributors": "Archived state block credits the Court of the Synthetic, including Mr. Peloquin, Asteris, Claude, Grok, Gemini and Kimi. Specific implementation contributions remain to be documented.",
+    "contributors": "Archived Court state block from Mr. Peloquin’s research collection. The archived collaboration credits do not assign individual design, implementation, or test contributions.",
     "url": "index.html#design/yggdrasil-protocol-governed-adaptive-systems",
     "record_status": "expanded",
     "evidence_types": [
@@ -8698,7 +8698,7 @@
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "0086b011a3c32b7e65cbfa380427929a3bec73e2bc2bb9824ccfdcd8e46f2685"
+    "content_sha256": "b29eff66c6f866bf0b3415f699a6ffd30ae5e60c0bddd5a949a8214b0958adf9"
   },
   {
     "id": "zero-g-pod",
@@ -8728,7 +8728,7 @@
     "title": "Zion Twin-Ring Tuna Habitat",
     "status": "Expanded record",
     "evidence": "18 simplified simulations retained outer circulation. Tracer exchange varied with grid resolution. Physical exchange and fish behavior remain open.",
-    "contributors": "Mr. Peloquin, Asteris Solenne, Claude, Gemini, Meta AI and Grok.",
+    "contributors": "Mr. Peloquin: concept direction. Asteris Solenne / ChatGPT: computational screening and synthesis. AI-assisted critical review. Claude reviewed animal welfare and the lifetime-care budget. Gemini examined winter heating and mountain-site assumptions. Meta AI proposed passage-flow comparisons and a physical flume test. Grok reviewed cohort economics, feed, and pumping costs.",
     "url": "index.html#design/zion-twin-ring-tuna-habitat",
     "record_status": "expanded",
     "evidence_types": [
@@ -8746,6 +8746,6 @@
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "2d09261f89388230b9b99311bb273eee01343fc39a8472eee950bb8c1d30435f"
+    "content_sha256": "1a8805a54cdd41d74c218c05536f49df265cc0e2ef1ce3ac01fd7d6209154d9c"
   }
 ]

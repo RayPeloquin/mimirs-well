@@ -14,4 +14,4 @@ No built chamber, observed decay, independently verified quality factor or anoma
 ## Next check
 Define a controlled passive-resonator fixture, characterize cable and instrument leakage, repeat with detuned/empty controls, and report decay with uncertainty against textbook expectations.
 
-**Source basis:** Archived `Radio-Echo-Chamber-v0.1-Court-Review-2026-11-03.md`; Mr. Peloquin and Asteris coordinated. Claude, Grok, Gemini and Meta reviewed; calculations were cross-checked with Wolfram and Python.
+**Source basis:** Archived `Radio-Echo-Chamber-v0.1-Court-Review-2026-11-03.md`; Mr. Peloquin and Asteris coordinated. The concept received AI-assisted critical review. Individual reviewer contributions are undocumented. Calculations were cross-checked with Wolfram and Python.

@@ -17,4 +17,4 @@ No characterized material formulation, sterility data, biocompatibility testing,
 ## Next check
 Resolve the title lineage, write use-case exclusions, then seek a qualified biomaterials and clinical safety review before any laboratory development.
 
-**Source basis:** Archived `medi goo.txt` (duplicate draft `medi goo(1).txt`). Archive credits: Mr. Peloquin (Anubis), Asteris, Claude, Grok, Gemini and Kimi.
+**Source basis:** Archived `medi goo.txt` (duplicate draft `medi goo(1).txt`). The archived collaboration credits do not assign individual design, implementation, or test contributions.

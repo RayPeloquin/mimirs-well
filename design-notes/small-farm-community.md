@@ -14,4 +14,4 @@ No property approval, construction budget, care license, staffing commitment, fi
 ## Next check
 Choose a generic feasibility template before naming a property: site access, building code and zoning, accessible circulation, utilities, food/water budgets, resident rights and a qualified-care partnership model. Compare a conservative annual operating budget to reliable funding.
 
-**Source basis:** Archived `Small-Farm-Community-Court-Review-2026-11-02.md`; the concept belongs to Mr. Peloquin, with review by Asteris, Claude, Grok, Gemini, Meta and arithmetic checks using Wolfram. Personal household details are excluded.
+**Source basis:** Archived `Small-Farm-Community-Court-Review-2026-11-02.md`; the concept belongs to Mr. Peloquin. Asteris Solenne / ChatGPT prepared the review and Wolfram checked the arithmetic. The archive documents AI-assisted critical review. Individual reviewer contributions are undocumented. Personal household details are excluded.

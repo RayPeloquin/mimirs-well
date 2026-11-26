@@ -14,4 +14,4 @@ No pressed tile, tested mechanical performance, verified energy budget, lunar en
 ## Next check
 Build a guarded bench feasibility test through qualified workshop practice; measure actual input mass, energy, tile geometry, drilling tolerance and cycle-to-cycle defects against a purchased insert.
 
-**Source basis:** Archived `LunaRecycle-Backplate-Design.pdf`; commissioned by Mr. Peloquin, calculations and drawings by Asteris Solenne, reviewed by Claude, Grok, Gemini and Meta.
+**Source basis:** Archived `LunaRecycle-Backplate-Design.pdf`; commissioned by Mr. Peloquin, with calculations and drawings by Asteris Solenne / ChatGPT. The design received AI-assisted critical review. Individual reviewer contributions are undocumented.

@@ -38,7 +38,7 @@ This proportionality assumes a perturbative regime and does not predict arbitrar
 
 ## Court review
 
-The common preliminary brief was reviewed by Claude, Grok, Gemini and Meta AI. Three recommended **REVISE** and one **HOLD** for the stronger claims. All four supported treating atomic-scale excitation and motion as known physics suitable for computational comparison while rejecting unsupported transfer of the slingshot analogy to hadronic processes. Their responses are AI critiques, not peer-reviewed validation or experimental evidence.
+The preliminary brief received four responses through AI-assisted critical review. Three recommended **REVISE** and one **HOLD** for the stronger claims. All four supported treating atomic-scale excitation and motion as known physics suitable for computational comparison while rejecting unsupported transfer of the slingshot analogy to hadronic processes. Independent validation and experimental evidence remain open.
 
 ## Next check
 
@@ -58,6 +58,6 @@ The common preliminary brief was reviewed by Claude, Grok, Gemini and Meta AI. T
 
 - **Mr. Peloquin:** concept direction, slingshot analogy and research framing question.
 - **Asteris Solenne / ChatGPT:** architectural interpretation, structured research proposal, concept visualization and documentation.
-- **Grok, Claude, Gemini and Meta AI:** critical AI feedback that led to narrowing the hypothesis. No independent validation is implied.
+- The AI-assisted critical review narrowed the hypothesis. The public record documents the group findings.
 
 **Guiding principle:** We do no harm.

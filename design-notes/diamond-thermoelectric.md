@@ -14,4 +14,4 @@ No measured conversion efficiency, demonstrated heat-spreader gain, flight-quali
 ## Next check
 Use a benign electrically heated bench comparison with matched geometry, contact force and uncertainty; measure heat flow and electrical output before proposing any space-qualified integration.
 
-**Source basis:** Archived `Diamond-Thermoelectric-Power-Source-v0.1.md`; Mr. Peloquin and Asteris Solenne, with precursor AI review contributions from Grok, Claude, Gemini and Meta.
+**Source basis:** Archived `Diamond-Thermoelectric-Power-Source-v0.1.md`; Mr. Peloquin and Asteris Solenne, with AI-assisted critical review of the precursor materials-test proposal. Individual reviewer contributions are undocumented.
