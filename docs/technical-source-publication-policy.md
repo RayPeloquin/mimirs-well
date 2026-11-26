@@ -13,23 +13,16 @@ A general scientific equation, civilian design idea, or statement of experimenta
 
 ## Current release holds
 
-- MIMIR-HIPPO — Extreme Energy Systems
-- HIPPO DRAGON
-- HIPPO Thunderlung
-- HIPPO Vortex LMB
-- HIPPO-MAG-01 — Magnetic-compensation experiment
-- HIPPO Thruster Array
-
-Their names and high-level, non-operational descriptions may remain on the site. Source documents, schematics, energy/circuit specifications, detailed control algorithms, apparatus configurations, tuning and performance settings, test procedures that would enable harmful deployment, and complete reconstruction packages remain **nonpublic** pending explicit review. Do not put originals in this public repository even temporarily; deleting a commit afterward is not a dependable way to retract it.
+Six precautionary holds are displayed using neutral public identifiers HOLD-001 through HOLD-006. The association belongs in the steward's private register. Existing public identifiers and historical copies may remain discoverable; neutral labels do not retract prior disclosure. Only high-level, non-operational descriptions may remain on the site. Source documents, schematics, energy/circuit specifications, detailed control algorithms, apparatus configurations, tuning and performance settings, test procedures that would enable harmful deployment, and complete reconstruction packages remain **nonpublic** pending explicit review. Do not put originals in this public repository even temporarily; deleting a commit afterward is not a dependable way to retract it.
 
 ## Review watch (not automatically restricted)
 
-HIPPO Bus, Sound Bus (naval HIPPO Bus variant), and Quantum Shepherd (Quantum HIPPO Bus alias) require additional review before publishing new implementation-level technical documents. They can retain benign public resource-management and instrumentation summaries.
+Three related records require additional review before publishing new implementation-level technical documents. They can retain benign public resource-management and instrumentation summaries.
 
 ## Required two-stage release decision
 
 1. **Source and purpose check (steward):** identify the exact project, revision, intended audience, civilian value, potential misuse, source provenance, copyright/third-party permissions, and which material is already publicly accessible. A project title or AI-generated concept art is not a safety assessment.
-2. **Independent technical/safety review:** a qualified person other than the originator evaluates harmful repurposing pathways and whether cumulative published details—including other public projects—would enable a dangerous build or use. Court-of-the-Synthetic AI critiques can inform the review but **do not substitute** for independent human judgment or external expertise.
+2. **Independent technical/safety review:** a qualified person other than the originator evaluates harmful repurposing pathways and whether cumulative published details—including other public projects—would enable a dangerous build or use. Court-of-the-Synthetic AI critiques can inform the review but **do not substitute** for independent human judgment or external expertise. No qualified external human reviewer is documented for the current holds; default to withhold.
 3. **Publication decision by the steward:** record an approve-for-safe-summary, revise, defer, or withhold outcome for that **specific revision and artifact**. Default to **withhold** without both steps. Approvals never automatically transfer to later revisions, linked repositories, images, Equation Bench records, code, videos or attachments.
 4. **Post-release audit:** recheck what the deployed website and downloadable files expose; inspect public branches, releases and accessible history. If material is unintentionally exposed, remove public links promptly, preserve evidence for remediation, evaluate history/caches, and consult GitHub support when necessary. Do not promise complete removal from independently copied material.
 
@@ -60,7 +53,11 @@ Operationally enabling build instructions, precise energetic specifications, act
 - Inspect historical commits, branches, tags, releases, downloadable assets and cross-project aggregation **before relevant technical releases and at least monthly**. A clean present-day source tree does not prove the past has no sensitive material.
 - New Equation Bench source relationships must be independently traced and approved by the steward with cross-project disclosure risk considered; an AI-generated assertion or changed project name does not authorize technical release.
 
-**Status as of 23 November 2026:** required merge-check settings and full retrospective public-history audit have **not been independently verified**.
+**Status as of 25 November 2026:** an active default-branch ruleset and required publication preflight were confirmed by a ruleset API read; zero approving reviews are required and no bypass actors are configured. See the [dated audit](trial4-publication-audit.md) and [public policy status](../publication-safety.html). This does not establish complete historical exposure clearance or independent human approval. A fresh end-to-end enforcement test was not performed in this follow-up.
+
+## Medical research boundary
+
+Public medical concepts are not patient-use instructions or clinically validated devices. No independent clinical review is documented here. Qualified clinical and engineering review, and applicable regulatory and ethical approvals, are prerequisites to development toward human use.
 
 ## Release review record (private)
 
