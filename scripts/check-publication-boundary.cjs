@@ -6,6 +6,7 @@
  * This cannot detect all sensitive material and cannot supply a human release decision.
  */
 const assert = require("node:assert/strict");
+const { execFileSync } = require("node:child_process");
 const fs = require("node:fs");
 const path = require("node:path");
 const vm = require("node:vm");
@@ -98,6 +99,7 @@ if (prohibited.length) {
   for (const p of prohibited) console.error(" - " + p);
   process.exitCode = 1;
 } else {
-  console.log("Publication preflight passed: 6 release holds and 3 review watches labeled, curated equation allowlist agrees, and no flagged private-source paths found.");
+  execFileSync(process.execPath, [path.join(root, "scripts/generate-catalog.cjs"), "--check"], { stdio: "inherit" });
+  console.log("Publication preflight passed: generated pages and exports match their sources; 6 release holds and 3 review watches labeled, curated equation allowlist agrees, and no flagged private-source paths found.");
   console.log("This is a filename/path tripwire only. Independent review and branch protection are separate requirements.");
 }

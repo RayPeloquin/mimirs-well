@@ -23,7 +23,7 @@ The preflight is a **limited file-path tripwire**, not automatic assessment of w
 
 The [Equation Bench](https://raypeloquin.github.io/mimirs-well/equation-bench.html) is a separate one-page extension of the Alchemist’s Bench. It pairs source-reviewed mathematical relations, requires explicit symbol correspondence decisions (including no-counterpart choices), and blocks Markdown export until a new candidate expression and three evidence/assumption statements have been written. Every export retains primary source and registry links plus the stamp **“Candidate mathematics — not derived truth. Requires its own evidence.”**
 
-The Equation Bench provides manually source-reviewed entry points (see [current equation source index](equation-sources.html)), not automatic equation extraction from all 364 project titles. There is no solver, unit checker or scientific validation. Drafts are kept locally in the browser for each ordered pair. Guided Alchemy offers optional curated research questions, a preview, explicit draft replacement, separate-symbol proposals and user adoption before candidate export. Guided suggestions are not automatic derivations or validation.
+The Equation Bench provides manually source-reviewed entry points (see [current equation source index](equation-sources.html)), not automatic equation extraction from the full project catalog. There is no solver, unit checker or scientific validation. Drafts are kept locally in the browser for each ordered pair. Guided Alchemy offers optional curated research questions, a preview, explicit draft replacement, separate-symbol proposals and user adoption before candidate export. Guided suggestions are not automatic derivations or validation.
 
 [Source verification, acceptance criteria and limitations](docs/equation-bench-mvp.md).
 
@@ -55,7 +55,7 @@ The homepage includes a quietly mixed, original procedural soundscape: occasiona
 
 The homepage now has a **Research Families** explorer with twelve overlapping, question-based pathways: AI governance, embodiment, medical care, living systems, Zion and ecology, water and power, sensing, fundamental physics, aerospace, protective field systems, materials, and community/education.
 
-Each family links to live matching project cards; cards show their related families, and the catalog has a family filter that works alongside its existing filters. The index deliberately retains an **Awaiting family mapping** queue instead of inventing relationships for ambiguous archive titles. Family links are navigational only: they do not imply interoperability, maturity, validation, or a new Divergence Ledger finding. The existing project Registry and original catalog remain authoritative for evidence and project identity.
+Each family links to live matching project cards; cards show their related families, and the catalog has a family filter that works alongside its existing filters. The index deliberately retains an **Awaiting family mapping** queue instead of inventing relationships for ambiguous archive titles. Family links are navigational only: they do not imply interoperability, maturity, validation, or a new Divergence Ledger finding. Project identity and evidence come from the catalog build described below.
 
 See [research family maintenance and evidence boundaries](docs/research-families.md). Check the mapping with `node --test research-families.test.cjs`.
 
@@ -86,7 +86,7 @@ The Well brings together projects at **very different evidence stages**:
 
 The [Divergence Ledger](https://raypeloquin.github.io/mimirs-well/#divergence-ledger) asks three questions of a project: **What did we intend? What actually happened? What else might this be useful for?** The first seven public pilots include KA PATCH, SKEPTIC-1, Temporal Acoustics, Ghostglass, RAVEN-P1, CRUCIBLE and BRIDLE-3. **Ten further documentary records (008–017)** were added on 20 November 2026: ECHO-Rx, ECHO-M, Third-Look, Temporal Reflection Chamber, Hallvard’s Promise, HEMOSTAT-R, FLUFFY-01, NDSM-01, Hypha Mind / GO-CUBE and Radio Echo Chamber. They are not ten new experimental results. [Source map](docs/divergence-ledger-008-017.md).
 
-Records 018–030, published 21 November 2026, cover ten illustrated designs and three energy or physics proposals. Each entry links to its public source note and identifies a test that could change the record. [Browse all 30 records](https://raypeloquin.github.io/mimirs-well/ledger.html).
+Records 018–030, published 21 November 2026, cover ten illustrated designs and three energy or physics proposals. Each entry links to its public source note and identifies a test that could change the record. [Browse the current Ledger](https://raypeloquin.github.io/mimirs-well/ledger.html).
 
 ## Public-facing editorial review — 23 November 2026
 
@@ -104,10 +104,11 @@ The Keeper of the Gates exhibit offers an accessible **message to Anubis** form.
 
 ## Finding the source
 
-- `index.html`: main site and project collection.
-- `catalog.js`: recovered title inventory and project cards.
+- `index.html`: homepage and authored featured cards.
+- `catalog.js`: authored archive and showcase titles, shared by the homepage and the catalog builder.
 - `research-families.js`: overlapping cross-domain research pathways, title assignments, and family-specific catalog filtering.
-- `registry.js`: read-only expanded project records and provenance.
+- `registry.js`: authored expanded project records and provenance, shared by the homepage and the catalog builder.
+- [Catalog manifest](catalog-manifest.html): current published counts, version and checksum. The build generates the canonical `catalog.json` data, CSV, plain catalog HTML, record pages, and discovery views.
 - `public-notes/`: bounded research digests linking reviewed archive material to project records without publishing private originals.
 - `well-gallery.js`, `gallery.css`, `assets/`: project artwork with captions and alt text.
 - `research/`, `design-notes/`, `public-notes/`: published research, bounded design summaries and source pointers.
@@ -121,13 +122,15 @@ Not all original sources are public. Some archive entries refer to private mater
 
 ## Audited source snapshot
 
-The [20 November 2026 collection and link audit](docs/source-and-collection-audit-2026-11-20.md) recorded **384 distinct project cards** and **152 expanded source-backed records** before the separate GO-CUBE and Court Governance Stack cards were added. The current source contains **364 project cards with 364 distinct titles** and **191 expanded source-backed records**; **173** await expanded source review. The duplicate recovered-catalog title for Temporal Reflection Chamber was retired; its featured project card, source link, expanded Registry record and cutaway artwork remain in place. It confirms 64 internal source-reference paths/occurrences and a sample of outside links, while distinguishing publisher access barriers from genuinely missing targets. These are dated source counts, **not** live scientific maturity indicators.
+The [20 November 2026 collection and link audit](docs/source-and-collection-audit-2026-11-20.md) recorded **384 distinct project cards** and **152 expanded source-backed records** in that snapshot. It checked 64 internal source-reference paths/occurrences and sampled outside links. For the current public inventory, use the [catalog manifest](catalog-manifest.html). Record counts describe documentation coverage.
 
 ## Maintenance and checks
 
-This is a static GitHub Pages site. Published tests include Node.js `*.test.cjs` checks for selected HTML, gallery, public-title and research-page behaviors. Run them in a local checkout with Node.js:
+After editing an authored catalog, Registry, or Ledger entry, regenerate the public views before opening a pull request. The required publication preflight rejects stale generated output.
 
 ```sh
+node scripts/generate-catalog.cjs
+node scripts/generate-catalog.cjs --check
 node --test *.test.cjs
 ```
 

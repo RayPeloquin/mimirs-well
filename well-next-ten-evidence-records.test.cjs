@@ -3,7 +3,6 @@ const { test } = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
-const vm = require('node:vm');
 
 const candidates = [
   ['herdminder-hm-01', 'herdminder-hm-01.md', 'HerdMinder / HM-01'],
@@ -19,16 +18,12 @@ const candidates = [
 ];
 
 test('next ten public purpose digests expand existing archive titles with evidence limits', () => {
-  const registry = readText(path.join(__dirname, 'registry.js'));
+  const { reviews } = require('./registry.js');
   const catalog = readText(path.join(__dirname, 'catalog.js'));
-  const records = new Map(candidates.map(([id]) => [id, { id }]));
   for (const [id, filename, title] of candidates) {
     assert.ok(catalog.includes(title), `missing catalog title: ${title}`);
-    const marker = `if(records.has('${id}'))Object.assign(records.get('${id}'),`;
-    const start = registry.indexOf(marker);
-    assert.notEqual(start, -1, `missing public record: ${id}`);
-    vm.runInNewContext(registry.slice(start, registry.indexOf('\n', start)), { records });
-    const record = records.get(id);
+    const record = reviews.get(id);
+    assert.ok(record, `missing reviewed record: ${id}`);
     assert.equal(record.expanded, true);
     for (const field of ['purpose', 'version', 'evidence', 'contributors', 'sources', 'next', 'notes']) {
       assert.ok(typeof record[field] === 'string' && record[field].trim().length > 25, `${id}: missing ${field}`);

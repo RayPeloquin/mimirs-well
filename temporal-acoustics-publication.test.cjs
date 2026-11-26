@@ -7,12 +7,12 @@ const read = (file) => readText(path.join(__dirname, file));
 
 test('Temporal Acoustics has a discoverable physics record with explicit evidence limits', () => {
   const index = read('index.html');
-  const registry = read('registry.js');
+  const { reviews } = require('./registry.js');
   assert.match(index, /<h3>Temporal Acoustics<\/h3>/);
   assert.match(index, /href="temporal-acoustics\.html"/);
-  assert.match(registry, /records\.has\('temporal-acoustics'\)/);
-  assert.match(registry, /solid inclusions/);
-  assert.match(registry, /No actual measurements of Malta/);
+  const { evidence } = reviews.get('temporal-acoustics');
+  assert.match(evidence, /solid inclusions/);
+  assert.match(evidence, /No actual measurements of Malta/);
 });
 
 test('public research page and image references resolve to real published files', () => {

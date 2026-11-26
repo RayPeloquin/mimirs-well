@@ -48,13 +48,9 @@ test('FQSC-01 publishes a substantive concept with an image and an evidence-limi
   assert.match(note, /## Evidence limits\n/);
   assert.match(note, /## Next check\n/);
 
-  const source = readText(path.join(root, 'registry.js'));
-  const marker = "if(records.has('fqsc-01'))Object.assign(records.get('fqsc-01'),";
-  const start = source.indexOf(marker);
-  assert.notEqual(start, -1, 'FQSC-01 needs a reviewed, expanded registry record');
-  const records = new Map([['fqsc-01', { id: 'fqsc-01' }]]);
-  vm.runInNewContext(source.slice(start, source.indexOf('\n', start)), { records });
-  const record = records.get('fqsc-01');
+  const { reviews } = require('./registry.js');
+  const record = reviews.get('fqsc-01');
+  assert.ok(record, 'FQSC-01 needs a reviewed registry record');
   assert.equal(record.expanded, true);
   assert.equal(record.sources.split('\n')[0], 'https://github.com/RayPeloquin/mimirs-well/blob/main/design-notes/fqsc-01.md');
   for (const key of ['purpose', 'version', 'evidence', 'contributors', 'sources', 'next', 'notes']) {

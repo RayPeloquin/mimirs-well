@@ -3,7 +3,6 @@ const { test } = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
-const vm = require('node:vm');
 
 const designs = [
   ['asteris-relay-device-connection-and-handoff', 'asteris-relay.md'],
@@ -14,15 +13,10 @@ const designs = [
 ];
 
 test('five archive entries receive real expanded project records linked to published notes', () => {
-  const source = readText(path.join(__dirname, 'registry.js'));
-  const records = new Map(designs.map(([id]) => [id, { id, purpose: 'Archive title only' }]));
+  const { reviews } = require('./registry.js');
   for (const [id, filename] of designs) {
-    const marker = `if(records.has('${id}'))Object.assign(records.get('${id}'),`;
-    const start = source.indexOf(marker);
-    assert.notEqual(start, -1, `missing published override: ${id}`);
-    const line = source.slice(start, source.indexOf('\n', start));
-    vm.runInNewContext(line, { records });
-    const record = records.get(id);
+    const record = reviews.get(id);
+    assert.ok(record, `missing reviewed record: ${id}`);
     assert.equal(record.expanded, true);
     for (const field of ['purpose', 'version', 'evidence', 'contributors', 'sources', 'next', 'notes']) {
       assert.ok(typeof record[field] === 'string' && record[field].trim().length > 20, `${id}: missing ${field}`);
