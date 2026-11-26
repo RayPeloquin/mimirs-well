@@ -191,6 +191,19 @@ const root = path.resolve(__dirname, '..');
     await staticPage.goto(base+'/');
     assert.deepEqual(external,[]);
     const data=await (await staticPage.request.get(base+'/catalog.json')).json();
+    const pendingCount=data.filter(r=>r.record_status==='pending_review').length;
+    for(const query of ['status=pending_review','evidence=pending']){
+      await page.goto(base+'/catalog.html?'+query);
+      assert.equal(await page.locator('#catalog-count').textContent(),`Showing 6 of ${pendingCount} matching projects.`);
+      await page.getByRole('searchbox').fill('KA Patch');
+      await page.locator('select[name="evidence"]').selectOption('concept');
+      assert.equal(await page.locator('#catalog-count').textContent(),'Showing 1 of 1 matching projects.');
+      assert.ok(await page.locator('#ka-patch-bioenergy-jewelry').isVisible());
+      assert.equal(new URL(page.url()).searchParams.get('status'),'pending_review');
+      await page.getByRole('button',{name:'Clear filters'}).click();
+      assert.equal(await page.locator('#catalog-count').textContent(),`Showing 6 of ${data.length} matching projects.`);
+    }
+    console.log('PASS catalog status and evidence filters, including legacy pending links');
     const eqManifest=await (await staticPage.request.get(base+'/catalog-manifest.json')).json();
     await page.goto(base+'/equation-bench.html');
     await page.waitForFunction(()=>!document.querySelector('#pick-a').disabled);
