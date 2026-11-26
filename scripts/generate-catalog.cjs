@@ -280,6 +280,56 @@ output('test-queue.html',readingPage('The Crucible: experimental work queue',que
 
 output('how-to-misread.html',readingPage('How to misread the Well',"<p>Read evidence classes before conclusions. A relationship is a question, not a coupling. A frozen plan is a proposal, not a result. A hash identifies bytes relative to a reference, not truth, authority, safety or a trusted time. A local acknowledgement is not approval.</p><h2>Evidence ladder</h2><ol><li>Editorial comparison or guided hypothesis: a research direction.</li><li>Proposed test plan: acceptance criteria, not executed evidence.</li><li>Same-author determinism check: a finite set of cases matches authored expectations. A replay, including on another platform, does not independently validate the model.</li><li>Independent implementation or analysis: separate reviewer and declared method; distinguish blind reimplementation from review of existing code.</li><li>Independent data or physical test: a separate evidence class requiring its own protocol, uncertainty, limitations and safety review.</li></ol><p>Negative controls are deliberately chosen test cases, not necessarily observed experimental failures. Retain every planned case, contrary result, execution error and exclusion with its reason. Missing data is not zero. A result does not automatically move a design into a stronger evidence class.</p><p><a href=\"scriptorium.html\">Private drafting</a> stays offline; explicit archives are readable files, not encrypted storage. Keep them out of public repositories. <a href=\"chronicle.html\">The Chronicle</a> preserves observed runs separately from the <a href=\"test-queue.html\">proposed queue</a>. No independent replication is claimed for the current synthetic fixtures.</p>"));
 output('research-cycle.html',readingPage('The research cycle',"<p>Start anywhere, or follow this ordered reading route. The stages are a human-reviewed workflow, not an automatic promotion system. No stage authorizes physical testing or publication.</p><ol><li><h2><a href=\"scriptorium.html\">The Scriptorium</a></h2><p>Capture unfinished ideas privately; export only deliberately separated review material.</p></li><li><h2><a href=\"orrery.html\">The Orrery</a></h2><p>Explore curated relationships and their limitations; no inferred compatibility.</p></li><li><h2><a href=\"guided-alchemy.html\">Guided Alchemy</a></h2><p>Choose a proposed research question, not an established coupling.</p></li><li><h2><a href=\"dimensional-witness.html\">Dimensional Witness</a></h2><p>Review quantity meanings and refuse incompatible mappings; no approval of equations.</p></li><li><h2><a href=\"equation-bench.html\">The Alchemist's Equation Bench</a></h2><p>Prepare a bounded mathematical hypothesis and test brief; the separate interactive workspace is also available. <a href=\"combine.html\">Open the interactive Alchemist&#39;s Bench</a>.</p></li><li><h2><a href=\"test-queue.html\">The Crucible Work Queue</a></h2><p>Specify a baseline, fixture, acceptance, contrary and stop conditions before execution.</p></li><li><h2><a href=\"chronicle.html\">The Chronicle</a></h2><p>Preserve observed outcomes, inputs, source hashes, contrary controls and reproduction limits.</p></li><li><h2><a href=\"ledger.html\">The Divergence Ledger</a></h2><p>Record evidence and unresolved questions; return to the Scriptorium to revise.</p></li></ol><h2>Read the limits first</h2><p><a href=\"how-to-misread.html\">How to misread the Well</a>: evidence classes, hashes, privacy, and the distinction between a deterministic check and independent science. <a href=\"publication-safety.html\">Publication safeguards</a> remain in force. No independent replication is claimed by the current Chronicle fixtures.</p>"));
+// Clinical use needs an explicit boundary even for pending records. Keep this
+// list editorial: research-family keyword matches also include nonmedical entries.
+const medicalRecords = new Set([
+  'aeris-bridge-lung-support',
+  'aether-cup-ophthalmic-concept',
+  'aether-hub-multimodal-procedural-guidance',
+  'artificial-heart-wireless-power-and-dual-reserves',
+  'aux-heart',
+  'bioengineered-hair-follicle-horn-implant-concepts',
+  'biomedical-nanocarrier',
+  'blood-manager',
+  'boneweave',
+  'bridge-01-emergency-ecmo-transfer-support-cradle',
+  'cerebris-trauma-support',
+  'cmh-01-contractile-heart-material-research',
+  'cortex-neural-bioreactor',
+  'crimson-sentinel-surgical-pod',
+  'dermis-bioreactor-cradle',
+  'echo-rx',
+  'empty-river-blood-manufacturing',
+  'field-medic-guided-hand-support',
+  'gastra-gastric-sleeve-concept',
+  'gips-intramedullary-guidance-and-risk-control',
+  'governed-acoustofluidic-system',
+  'grail-1-hemocompatibility-doctrine',
+  'hallvard-s-promise-little-lungs',
+  'heartseed-cardiac-support-research',
+  'hemostat-r',
+  'human-maintenance-stack',
+  'lg-aether-01-biopsy-permission-and-instrument-motion-research',
+  'lung-mapper',
+  'margin-01-focused-ultrasound-drug-delivery-research',
+  'medi-goo',
+  'neonatal-prenatal-care-chamber',
+  'neuro-bridge',
+  'osmoskin',
+  'ossuary-biomanufacturing',
+  'phantom-hub-medical-medical-telepresence',
+  'retinal-flood-map-retinal-mapping-research',
+  'sister-s-hope-hand-restoration-gloves',
+  'soul-forge',
+  'soul-forge-hand-mapping',
+  'third-look',
+  'thoracis-bioperfusion',
+  'tumor-hunter',
+  'vascular-whisperer-vascular-analysis-and-guidance',
+  'white-marrow-foundry',
+]);
+for (const id of medicalRecords) assert.ok(entryIds.has(id), 'Unknown medical record: ' + id);
+
 // Standalone reading views use only the already exported public fields.
 const recordDirectory = path.join(root, 'records');
 if (!check) mkdirSync(recordDirectory,{recursive:true});
@@ -291,7 +341,9 @@ for(const entry of entries) {
   const field = (label,value) => '<section><h2>'+label+'</h2><p class="record-text">'+escapeHtml(value ?? 'Not established or not supplied.')+'</p></section>';
   const links = entry.source_urls.map((url,i)=>'<li><a href="'+escapeHtml(url)+'">Published source '+(i+1)+'</a></li>').join('');
   const evidence = entry.evidence_types.map(type=>evidenceTypes.get(type)).join(' / ');
-  const html = '<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>'+escapeHtml(entry.title)+' | Mimir&#39;s Well</title><meta name="description" content="'+escapeHtml(entry.status+(entry.record_status==='pending_review'&&evidence===entry.status?'':'; '+evidence)+'. Public research record, not certification.')+'"><link rel="canonical" href="'+entry.canonical_url+'"><link rel="stylesheet" href="../catalog-browser.css"></head><body><nav><a href="../index.html">Mimir&#39;s Well</a> | <a href="../catalog.html#'+entry.id+'">Full catalog</a> | <a href="../llms.txt">Reading guide</a></nav><main><h1>'+escapeHtml(entry.title)+'</h1><p>Record ID: '+entry.id+' | '+escapeHtml(entry.status)+'</p><p class="catalog-type">'+escapeHtml(evidence)+'</p><p class="catalog-safety">'+escapeHtml(entry.publication_notice)+' <a href="../publication-safety.html">Publication policy</a></p><p>'+escapeHtml(entry.evidence_notice)+'</p>'+field('Summary',entry.summary)+field('Evidence and limits',entry.evidence)+field('Contributors',entry.contributors)+field('Source revision',entry.revision_note)+'<section><h2>Published sources</h2>'+(links?'<ul>'+links+'</ul>':'<p>No source links supplied in this public export.</p>')+'</section>'+(entry.ledger_url?'<p><a href="'+escapeHtml(entry.ledger_url)+'">Divergence Ledger</a></p>':'')+(guides.some(g=>g.a===entry.id||g.b===entry.id)?'<section><h2>Related research questions</h2><p>Curated hypotheses only; no physical equivalence or validated coupling implied.</p><ul>'+guides.filter(g=>g.a===entry.id||g.b===entry.id).map(g=>'<li><a href="'+(g.a===entry.id?g.b:g.a)+'.html">'+escapeHtml(titleById.get(g.a===entry.id?g.b:g.a))+'</a> ? <a href="../guided-alchemy.html#'+g.id+'">'+escapeHtml(g.title)+'</a></li>').join('')+'</ul></section>':'')+(connected.has(entry.id)?'<p><a href="../orrery.html?focus='+entry.id+'">Explore direct research relationships in the Orrery</a></p>':'')+'<p>Catalog schema '+manifest.schema_version+' | <a href="../catalog-manifest.html">Catalog version and checksum</a> | <a href="../legal.html#permission">Reuse terms</a></p><p class="catalog-families">Record SHA-256: '+entry.content_sha256+'</p></main></body></html>\n';
+  const medicalNotice = medicalRecords.has(entry.id) ?
+    '<p class="catalog-safety"><strong>Medical research only.</strong> Do not use this record for patient care or medical decisions. This page documents research and provides no clinical authorization.</p>' : '';
+  const html = '<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>'+escapeHtml(entry.title)+' | Mimir&#39;s Well</title><meta name="description" content="'+escapeHtml(entry.status+(entry.record_status==='pending_review'&&evidence===entry.status?'':'; '+evidence)+'. Public research record, not certification.')+'"><link rel="canonical" href="'+entry.canonical_url+'"><link rel="stylesheet" href="../catalog-browser.css"></head><body><nav><a href="../index.html">Mimir&#39;s Well</a> | <a href="../catalog.html#'+entry.id+'">Full catalog</a> | <a href="../llms.txt">Reading guide</a></nav><main><h1>'+escapeHtml(entry.title)+'</h1><p>Record ID: '+entry.id+' | '+escapeHtml(entry.status)+'</p><p class="catalog-type">'+escapeHtml(evidence)+'</p>'+medicalNotice+'<p class="catalog-safety">'+escapeHtml(entry.publication_notice)+' <a href="../publication-safety.html">Publication policy</a></p><p>'+escapeHtml(entry.evidence_notice)+'</p>'+field('Summary',entry.summary)+field('Evidence and limits',entry.evidence)+field('Contributors',entry.contributors)+field('Source revision',entry.revision_note)+'<section><h2>Published sources</h2>'+(links?'<ul>'+links+'</ul>':'<p>No source links supplied in this public export.</p>')+'</section>'+(entry.ledger_url?'<p><a href="'+escapeHtml(entry.ledger_url)+'">Divergence Ledger</a></p>':'')+(guides.some(g=>g.a===entry.id||g.b===entry.id)?'<section><h2>Related research questions</h2><p>Curated hypotheses only; no physical equivalence or validated coupling implied.</p><ul>'+guides.filter(g=>g.a===entry.id||g.b===entry.id).map(g=>'<li><a href="'+(g.a===entry.id?g.b:g.a)+'.html">'+escapeHtml(titleById.get(g.a===entry.id?g.b:g.a))+'</a> ? <a href="../guided-alchemy.html#'+g.id+'">'+escapeHtml(g.title)+'</a></li>').join('')+'</ul></section>':'')+(connected.has(entry.id)?'<p><a href="../orrery.html?focus='+entry.id+'">Explore direct research relationships in the Orrery</a></p>':'')+'<p>Catalog schema '+manifest.schema_version+' | <a href="../catalog-manifest.html">Catalog version and checksum</a> | <a href="../legal.html#permission">Reuse terms</a></p><p class="catalog-families">Record SHA-256: '+entry.content_sha256+'</p></main></body></html>\n';
   output('records/'+entry.id+'.html',html);
 }
 const compactRows = entries.map(e=>'<li><a href="records/'+e.id+'.html">'+escapeHtml(e.title)+'</a>'+ (e.publication_hold==='precautionary_hold_summary_only'?' <strong>[Hold]</strong>':e.publication_hold==='review_watch'?' <strong>[Watch]</strong>':'')+(e.record_status==='pending_review'?' [Pending review]':'')+(e.id==='unidentified-transparent-fiber-composite-concept'?' [Artwork identity pending]':'')+'</li>').join('\n');
