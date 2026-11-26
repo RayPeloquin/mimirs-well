@@ -192,6 +192,22 @@ const root = path.resolve(__dirname, '..');
     assert.deepEqual(external,[]);
     const data=await (await staticPage.request.get(base+'/catalog.json')).json();
     const pendingCount=data.filter(r=>r.record_status==='pending_review').length;
+    const reviewedCount=data.length-pendingCount;
+    await page.goto(base+'/');
+    await page.waitForFunction(()=>document.querySelector('[data-record-id][data-depth]'));
+    const readers=await page.locator('#projects [data-record-id]').evaluateAll(cards=>
+      cards.map(card=>({
+        id:card.dataset.recordId,
+        title:card.querySelector('h3').textContent,
+        status:card.dataset.depth==='expanded'?'expanded':card.dataset.depth==='pending'?'pending_review':card.dataset.depth,
+      })).sort((a,b)=>a.id<b.id?-1:a.id>b.id?1:0)
+    );
+    assert.deepEqual(readers,data.map(record=>({id:record.id,title:record.title,status:record.record_status})));
+    assert.equal(await page.locator('#pending-total').textContent(),String(pendingCount));
+    assert.ok((await staticPage.locator('#projects > .sectionhead').textContent())
+      .includes(`${data.length} distinct project cards: ${reviewedCount} expanded records and ${pendingCount} awaiting source review`));
+    console.log('PASS all interactive project IDs, titles and review statuses match the public catalog');
+
     for(const query of ['status=pending_review','evidence=pending']){
       await page.goto(base+'/catalog.html?'+query);
       assert.equal(await page.locator('#catalog-count').textContent(),`Showing 6 of ${pendingCount} matching projects.`);
@@ -213,7 +229,7 @@ const root = path.resolve(__dirname, '..');
     }
     console.log('PASS all '+eqManifest.equation_eligible.length+' selectable equation sources');
     await page.goto(base+'/orrery.html?focus=echo-rx');
-    assert.equal(await page.locator('#orrery-focus option').count(),365);
+    assert.equal(await page.locator('#orrery-focus option').count(),data.length+1);
     assert.match(await page.locator('#orrery-status').innerText(),/3 of 3 direct curated relationships/);
     assert.ok(await page.locator('#orrery-svg').isVisible());
     assert.equal(await page.locator('.orrery-edge:visible').count(),3);

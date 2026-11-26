@@ -22,11 +22,12 @@ test('project-card count has distinct titles and all expanded records attach', (
   }
   const expected = titles.length + ' distinct project cards';
   assert.ok(html.includes(expected), 'homepage count needs updating: ' + expected);
-  const summary = read('README.md').match(/The current source contains \*\*(\d+) project cards with (\d+) distinct titles/);
-  assert.ok(summary, 'README current inventory is present');
-  assert.equal(Number(summary[1]), titles.length, 'README project count');
-  assert.equal(Number(summary[2]), ids.size, 'README distinct title count');
-  assert.ok(read('WORKBENCH.md').includes('**Current inventory:** ' + expected), 'Workbench current summary needs updating');
+  const { counts } = JSON.parse(read('catalog-manifest.json'));
+  assert.equal(counts.total, titles.length);
+  assert.equal(counts.expanded, expanded.length);
+  assert.equal(counts.pending_review, titles.length - expanded.length);
+  assert.match(read('README.md'), /\[Catalog manifest\]\(catalog-manifest\.html\)/);
+  assert.match(read('WORKBENCH.md'), /\*\*Current inventory:\*\* \[Catalog manifest\]\(catalog-manifest\.html\)/);
   assert.ok(html.includes('<a href="ledger.html">THE LEDGER</a>'), 'Ledger not in main nav');
 });
 

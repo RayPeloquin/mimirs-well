@@ -28,7 +28,15 @@ const entries = currentTitles().map(title => {
     evidence: detail?.evidence || null, contributors: detail?.contributors || null,
     url: detail?.publicPage || 'index.html#design/' + id };
 }).sort((a, b) => a.id < b.id ? -1 : a.id > b.id ? 1 : 0);
-assert.equal(new Set(entries.map(entry => entry.id)).size, entries.length);
+assert.equal(new Set(entries.map(entry => entry.id)).size, entries.length, 'Duplicate catalog project ID');
+const entryIds = new Set(entries.map(entry => entry.id));
+for (const [id, detail] of expanded) {
+  assert.ok(entryIds.has(id), 'Reviewed record has no catalog project: ' + id);
+  assert.equal(detail.expanded, true, 'Reviewed record must be marked expanded: ' + id);
+}
+const ledgerRecords = globalThis.MimirsLedgerData;
+assert.equal(new Set(ledgerRecords.map(record => record.number)).size, ledgerRecords.length, 'Duplicate Ledger record number');
+assert.equal(new Set(ledgerRecords.map(record => record.url)).size, ledgerRecords.length, 'Duplicate Ledger record URL');
 
 const { families, familyIdsFor } = require('../research-families.js');
 const familyNames = new Map(families.map(({ id, name }) => [id, name]));
@@ -61,8 +69,7 @@ const ledgerTypes = new Map([
 ]);
 const ledgerEvidence = new Map();
 const ledgerLinks = new Map();
-const entryIds = new Set(entries.map(entry => entry.id));
-for (const record of globalThis.MimirsLedgerData) {
+for (const record of ledgerRecords) {
   const id = ledgerAliases[record.number] || slug(record.title);
   assert.ok(entryIds.has(id), 'No catalog record for Ledger entry ' + record.title);
   const type = id === 'chihuahua-sphere-cs-1' ? 'numerical' : ledgerTypes.get(record.evidence);
@@ -103,7 +110,7 @@ const manifest = {
   schema_version: '1.2.0',
   catalog: 'catalog.json',
   schema: 'catalog.schema.json',
-  counts: { total: entries.length, expanded: expanded.size, pending_review: entries.length - expanded.size, ledger: globalThis.MimirsLedgerData.length },
+  counts: { total: entries.length, expanded: expanded.size, pending_review: entries.length - expanded.size, ledger: ledgerRecords.length },
   catalog_sha256: sha(json),
   hash_encoding: 'UTF-8, LF; record hash is SHA-256 of JSON.stringify(record excluding content_sha256)',
   policy: publication.policy,
@@ -424,7 +431,39 @@ output('armory.html', `<!doctype html>
 <body><nav><a href="index.html#projects">Mimir’s Well</a> · <a href="catalog.html">Full catalog</a></nav>
 <main><h1>The Armory</h1><p>Defense and protective systems in the Well. Each link opens the project’s catalog entry and its published evidence notes where available. Evidence labels reflect the catalog and do not establish physical validation.</p><p><strong>Publication boundary.</strong> Listing a project here does not approve it for technical release. Withhold operationally enabling material until a qualified independent human reviewer clears it under the <a href="publication-safety.html">publication policy</a>.</p>
 ${sections.join('\n')}</main></body></html>\n`);
+const {total, pending_review: pending, expanded: reviewed, ledger: ledgerCount} = manifest.counts;
+const updateLedgerTotal = html => html.replace(/(data-ledger-total>)\d+/g, (_, prefix) => prefix + ledgerCount);
+
+const previewSize = 6;
+const ledgerNumber = record => String(record.number).padStart(3, '0');
+const recentLedger = ledgerRecords.slice()
+  .sort((a, b) => b.updated.localeCompare(a.updated) || b.number - a.number)
+  .slice(0, previewSize);
+const preview = recentLedger.map(record =>
+  '<article class="ledger-item ledger-feature"><div class="index">' + ledgerNumber(record) +
+  ' / DIVERGENCE RECORD</div><h3>' + escapeHtml(record.title) + '</h3><p class="ledger-status">' +
+  escapeHtml(record.status) + '</p><p>' + escapeHtml(record.summary) + '</p><a href="' +
+  escapeHtml(record.url) + '">Read the record</a></article>').join('\n');
+
 const home = readText(path.join(root, 'index.html'));
-const count = globalThis.MimirsLedgerData.length;
-output('index.html', home.replace(/(data-ledger-total>)\d+/g, (_, prefix) => prefix + count)
-  .replace(/\d+ distinct project cards, including \d+ expanded records and \d+ records pending/, entries.length + ' distinct project cards, including ' + expanded.size + ' expanded records and ' + (entries.length - expanded.size) + ' records pending'));
+output('index.html', updateLedgerTotal(home)
+  .replace(/\d+ distinct project cards: \d+ expanded records and \d+ awaiting source review/,
+    total + ' distinct project cards: ' + reviewed + ' expanded records and ' + pending + ' awaiting source review')
+  .replace(/(id="pending-total">)\d+/, (_, prefix) => prefix + pending)
+  .replace(/(<!-- Generated Ledger preview -->\n)[\s\S]*?(\n<!-- End generated Ledger preview -->)/,
+    (_, opening, closing) => opening + preview + closing));
+
+const ledgerPage = readText(path.join(root, 'ledger.html'));
+const byNumber = ledgerRecords.slice().sort((a, b) => b.number - a.number);
+const fallbackRows = byNumber.map(record => '<li><a href="' + escapeHtml(record.url) + '">' +
+    ledgerNumber(record) + ' · ' + escapeHtml(record.title) + '</a></li>');
+const list = (rows, first) => '<ol reversed start="' + first + '">' + rows.join('\n') + '</ol>';
+const overflow = fallbackRows.slice(previewSize);
+const more = overflow.length ? '\n<details><summary>Show ' + overflow.length + ' more records</summary>' +
+  list(overflow, byNumber[previewSize].number) + '</details>' : '';
+const fallback = '<div id="ledger-fallback"><h3>All ' + ledgerCount +
+  ' published records</h3><p>Each research record has its own permanent page. Enable JavaScript for interactive filtering and sorting.</p>' +
+  list(fallbackRows.slice(0, previewSize), byNumber[0]?.number ?? 0) + more + '</div>';
+output('ledger.html', updateLedgerTotal(ledgerPage)
+  .replace(/(id="ledger-result-count"[^>]*>Showing )\d+/, (_, prefix) => prefix + ledgerCount)
+  .replace(/<div id="ledger-fallback">[\s\S]*?<\/div>/, () => fallback));

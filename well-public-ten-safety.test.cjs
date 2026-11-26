@@ -3,7 +3,6 @@ const { test } = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
-const vm = require('node:vm');
 
 const designs = [
   ['herdminder-hm-01', 'herdminder-hm-01.md'],
@@ -19,14 +18,10 @@ const designs = [
 ];
 
 test('ten archived titles expose only purpose-level public notes with evidence boundaries', () => {
-  const registry = readText(path.join(__dirname, 'registry.js'));
-  const records = new Map(designs.map(([id]) => [id, { id }]));
+  const { reviews } = require('./registry.js');
   for (const [id, filename] of designs) {
-    const marker = `if(records.has('${id}'))Object.assign(records.get('${id}'),`;
-    const start = registry.indexOf(marker);
-    assert.notEqual(start, -1, `${id} has a public registry entry`);
-    vm.runInNewContext(registry.slice(start, registry.indexOf('\n', start)), { records });
-    const entry = records.get(id);
+    const entry = reviews.get(id);
+    assert.ok(entry, `missing reviewed record: ${id}`);
     assert.equal(entry.expanded, true);
     assert.ok(entry.purpose.length > 35);
     assert.match(entry.evidence, /no |not |unverified|untested|unknown/i);

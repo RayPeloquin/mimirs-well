@@ -2,7 +2,7 @@
 
 Public handoff snapshot · 21 November 2026
 
-**Current inventory:** 364 distinct project cards, 191 expanded records, 173 pending expanded review.
+**Current inventory:** [Catalog manifest](catalog-manifest.html).
 
 [Open the workbench](https://raypeloquin.github.io/mimirs-well/#workbench)
 
@@ -373,7 +373,7 @@ All 396 current titles and the 70 expanded summaries were screened for collectio
 
 The three-project source batch, RAVEN-P1 inventory and original v0.1 pack recovery are complete as scoped above. Next, inspect recovered scripts and license packaging, then prepare publication of the missing v0.1 files while preserving existing public documentation and later versions. Public reproduction is still incomplete; no model rerun or research-file upload occurred in the recovery pass.
 
-After each batch, update this snapshot when its counts, status or proposed next step change. Check the actual source rather than treating an old snapshot as current.
+After each batch, regenerate the catalog and record any relevant historical changes here. Check the actual source rather than treating an old snapshot as current.
 
 ## Resume map
 

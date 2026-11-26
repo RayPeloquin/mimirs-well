@@ -3,7 +3,6 @@ const { test } = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
-const vm = require('node:vm');
 
 const designs = [
   ['quantum-shepherd', 'quantum-shepherd.md', 'Quantum Shepherd'],
@@ -19,17 +18,12 @@ const designs = [
 ];
 
 test('third ten archived cards render bounded source-linked expanded records', () => {
-  const source = readText(path.join(__dirname, 'registry.js'));
+  const { reviews } = require('./registry.js');
   const catalog = readText(path.join(__dirname, 'catalog.js'));
-  const records = new Map(designs.map(([id]) => [id, { id, purpose: 'Archive title only' }]));
   for (const [id, filename, title] of designs) {
     assert.ok(catalog.includes(title), `missing catalog card: ${title}`);
-    const marker = `if(records.has('${id}'))Object.assign(records.get('${id}'),`;
-    const start = source.indexOf(marker);
-    assert.notEqual(start, -1, `missing expansion: ${id}`);
-    const line = source.slice(start, source.indexOf('\n', start));
-    vm.runInNewContext(line, { records });
-    const record = records.get(id);
+    const record = reviews.get(id);
+    assert.ok(record, `missing reviewed record: ${id}`);
     assert.equal(record.expanded, true, `${id}: not marked expanded`);
     for (const field of ['purpose', 'version', 'evidence', 'contributors', 'sources', 'next', 'notes']) {
       assert.ok(typeof record[field] === 'string' && record[field].trim().length > 20, `${id}: missing ${field}`);

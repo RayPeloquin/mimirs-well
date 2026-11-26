@@ -10,39 +10,6 @@ groups.push(['physics','Illustrated concept','Aether Shroud']);
 groups.push(['physics','Illustrated concept','Ambassador Anti-Jamming Satellite Navigation System']);
 groups.push(['robotics','Illustrated concept','VHG - Vigilant Hibernation Grid']);
 groups.push(['infrastructure','Illustrated concept','Unidentified Transparent Fiber Composite Concept']);
-const labels={safety:'AI & governance',biology:'Biology & medicine',physics:'Physics & aerospace',infrastructure:'Water, power & infrastructure',robotics:'Robotics & field systems',community:'Communities & creative work',defense:'The Armory · Defense & Protective Systems'};
-// Public-facing grouping only: do not infer readiness, military qualification or weapon capability.
-const armoryDivisions=wellArmoryDivisions;
-const grid=document.querySelector('.grid');
-document.querySelectorAll('.card').forEach(c=>{c.dataset.stage='repository';const badge=document.createElement('span');badge.className='stage';badge.textContent='Public repository';c.querySelector('h3').before(badge)});
-const third=document.createElement('article');third.className='card';third.dataset.category='biology';third.dataset.stage='repository';
-const top=document.createElement('div');top.className='cardtop';const thirdIndex=document.createElement('span');thirdIndex.className='index';thirdIndex.textContent='10 /';const tag=document.createElement('span');tag.className='tag';tag.textContent='Biology & medicine';top.append(thirdIndex,tag);
-const stage=document.createElement('span');stage.className='stage';stage.textContent='Public repository';
-const h=document.createElement('h3');h.textContent='Third-Look';
-const p=document.createElement('p');p.textContent='Three-camera wound-imaging handpiece research. Explore the design, development record and limitations.';
-const a=document.createElement('a');a.href='https://github.com/RayPeloquin/Third-Look-Three-Camera';a.textContent='Open project repository ↗';third.append(top,stage,h,p,a);grid.append(third);
-// AEGIS-TWIN v0.6 has a public overview, but its safety and human-interface work is still conceptual.
-const aegis=document.createElement('article');aegis.className='card';aegis.dataset.category='robotics';aegis.dataset.stage='repository';
-const aegisTop=document.createElement('div');aegisTop.className='cardtop';
-const aegisIndex=document.createElement('span');aegisIndex.className='index';aegisIndex.textContent='11 /';
-const aegisTag=document.createElement('span');aegisTag.className='tag';aegisTag.textContent='Robotics & field systems';
-aegisTop.append(aegisIndex,aegisTag);
-const aegisStage=document.createElement('span');aegisStage.className='stage';aegisStage.textContent='Public concept overview';
-const aegisHeading=document.createElement('h3');aegisHeading.textContent='AEGIS-TWIN v0.6';
-const aegisNote=document.createElement('p');aegisNote.textContent='Hybrid protective exosleeves and an artificial nervous-system research concept. Intact-arm augmentation and separate limb-restoration interfaces; no human-use validation.';
-const aegisLink=document.createElement('a');aegisLink.href='aegis-twin.html';aegisLink.textContent='See the concept and cutaway ↗';
-aegis.append(aegisTop,aegisStage,aegisHeading,aegisNote,aegisLink);grid.append(aegis);
-// FQSC-01 is an original, simulation-first physics concept rather than a validated instrument.
-const fqsc=document.createElement('article');fqsc.className='card';fqsc.dataset.category='physics';fqsc.dataset.stage='documented';
-const fqscTop=document.createElement('div');fqscTop.className='cardtop';
-const fqscIndex=document.createElement('span');fqscIndex.className='index';fqscIndex.textContent='12 /';
-const fqscTag=document.createElement('span');fqscTag.className='tag';fqscTag.textContent='Physics & aerospace';fqscTop.append(fqscIndex,fqscTag);
-const fqscStage=document.createElement('span');fqscStage.className='stage';fqscStage.textContent='Simulation-first research concept';
-const fqscHeading=document.createElement('h3');fqscHeading.textContent='FQSC-01';
-const fqscNote=document.createElement('p');fqscNote.textContent='Field-Quench Spectral Coupling: a proposed confined-ion research instrument comparing internal excitation with motion under changing electromagnetic fields. Concept only; no hardware or measurements.';
-const fqscLink=document.createElement('a');fqscLink.href='fqsc-01.html';fqscLink.textContent='Explore the design and research gates ↗';
-fqsc.append(fqscTop,fqscStage,fqscHeading,fqscNote,fqscLink);grid.append(fqsc);
-let number=13;
 // These titles are retained in the historical inventory but excluded from the public Well.
 const withdrawnTitles=new Set([
  'Charlotte School — Intergenerational living and year-round gardens',
@@ -52,6 +19,53 @@ const withdrawnTitles=new Set([
  'Stone Mansion District',
  'Thor Avatar',
 ]);
+const showcaseTitles=Object.freeze({
+  h:'Third-Look',
+  aegisHeading:'AEGIS-TWIN v0.6',
+  fqscHeading:'FQSC-01',
+  qubitHeading:'Qubit — Ankh Assembly',
+  goCubeHeading:'GO-CUBE — Liberty Field Governor',
+  courtStackHeading:'Court Governance Stack v1.0-RC2',
+});
+const archiveRows=groups.flatMap(([category,status,titles])=>
+  titles.split('\n').filter(title=>!withdrawnTitles.has(title)).map(title=>({category,status,title})));
+if(typeof module==='object'&&module.exports){
+  module.exports={archiveRows,showcaseTitles};
+  return;
+}
+const labels={safety:'AI & governance',biology:'Biology & medicine',physics:'Physics & aerospace',infrastructure:'Water, power & infrastructure',robotics:'Robotics & field systems',community:'Communities & creative work',defense:'The Armory · Defense & Protective Systems'};
+// Public-facing grouping only: do not infer readiness, military qualification or weapon capability.
+const armoryDivisions=wellArmoryDivisions;
+const grid=document.querySelector('.grid');
+document.querySelectorAll('.card').forEach(c=>{c.dataset.stage='repository';const badge=document.createElement('span');badge.className='stage';badge.textContent='Public repository';c.querySelector('h3').before(badge)});
+const third=document.createElement('article');third.className='card';third.dataset.category='biology';third.dataset.stage='repository';
+const top=document.createElement('div');top.className='cardtop';const thirdIndex=document.createElement('span');thirdIndex.className='index';thirdIndex.textContent='10 /';const tag=document.createElement('span');tag.className='tag';tag.textContent='Biology & medicine';top.append(thirdIndex,tag);
+const stage=document.createElement('span');stage.className='stage';stage.textContent='Public repository';
+const h=document.createElement('h3');h.textContent=showcaseTitles.h;
+const p=document.createElement('p');p.textContent='Three-camera wound-imaging handpiece research. Explore the design, development record and limitations.';
+const a=document.createElement('a');a.href='https://github.com/RayPeloquin/Third-Look-Three-Camera';a.textContent='Open project repository ↗';third.append(top,stage,h,p,a);grid.append(third);
+// AEGIS-TWIN v0.6 has a public overview, but its safety and human-interface work is still conceptual.
+const aegis=document.createElement('article');aegis.className='card';aegis.dataset.category='robotics';aegis.dataset.stage='repository';
+const aegisTop=document.createElement('div');aegisTop.className='cardtop';
+const aegisIndex=document.createElement('span');aegisIndex.className='index';aegisIndex.textContent='11 /';
+const aegisTag=document.createElement('span');aegisTag.className='tag';aegisTag.textContent='Robotics & field systems';
+aegisTop.append(aegisIndex,aegisTag);
+const aegisStage=document.createElement('span');aegisStage.className='stage';aegisStage.textContent='Public concept overview';
+const aegisHeading=document.createElement('h3');aegisHeading.textContent=showcaseTitles.aegisHeading;
+const aegisNote=document.createElement('p');aegisNote.textContent='Hybrid protective exosleeves and an artificial nervous-system research concept. Intact-arm augmentation and separate limb-restoration interfaces; no human-use validation.';
+const aegisLink=document.createElement('a');aegisLink.href='aegis-twin.html';aegisLink.textContent='See the concept and cutaway ↗';
+aegis.append(aegisTop,aegisStage,aegisHeading,aegisNote,aegisLink);grid.append(aegis);
+// FQSC-01 is an original, simulation-first physics concept rather than a validated instrument.
+const fqsc=document.createElement('article');fqsc.className='card';fqsc.dataset.category='physics';fqsc.dataset.stage='documented';
+const fqscTop=document.createElement('div');fqscTop.className='cardtop';
+const fqscIndex=document.createElement('span');fqscIndex.className='index';fqscIndex.textContent='12 /';
+const fqscTag=document.createElement('span');fqscTag.className='tag';fqscTag.textContent='Physics & aerospace';fqscTop.append(fqscIndex,fqscTag);
+const fqscStage=document.createElement('span');fqscStage.className='stage';fqscStage.textContent='Simulation-first research concept';
+const fqscHeading=document.createElement('h3');fqscHeading.textContent=showcaseTitles.fqscHeading;
+const fqscNote=document.createElement('p');fqscNote.textContent='Field-Quench Spectral Coupling: a proposed confined-ion research instrument comparing internal excitation with motion under changing electromagnetic fields. Concept only; no hardware or measurements.';
+const fqscLink=document.createElement('a');fqscLink.href='fqsc-01.html';fqscLink.textContent='Explore the design and research gates ↗';
+fqsc.append(fqscTop,fqscStage,fqscHeading,fqscNote,fqscLink);grid.append(fqsc);
+let number=13;
 // Separate catalog record for the artwork.
 const qubitCard=document.createElement('article');
 qubitCard.className='card';qubitCard.dataset.category='physics';qubitCard.dataset.stage='concept';
@@ -60,7 +74,7 @@ const qubitIndex=document.createElement('span');qubitIndex.className='index';qub
 const qubitTag=document.createElement('span');qubitTag.className='tag';qubitTag.textContent=labels.physics;
 qubitTop.append(qubitIndex,qubitTag);
 const qubitStage=document.createElement('span');qubitStage.className='stage';qubitStage.textContent='Concept artwork · Project provenance unverified';
-const qubitHeading=document.createElement('h3');qubitHeading.textContent='Qubit — Ankh Assembly';
+const qubitHeading=document.createElement('h3');qubitHeading.textContent=showcaseTitles.qubitHeading;
 const qubitNote=document.createElement('p');qubitNote.textContent='Ankh-centered cryogenic quantum-computing concept artwork. No built device or measured qubit operation is documented. Original project name and design version remain unconfirmed.';
 const qubitLink=document.createElement('a');qubitLink.href='#qubit-art';qubitLink.textContent='View the Ankh Qubit artwork ↗';
 qubitCard.append(qubitTop,qubitStage,qubitHeading,qubitNote,qubitLink);grid.append(qubitCard);
@@ -74,7 +88,7 @@ const goCubeIndex=document.createElement('span');goCubeIndex.className='index';g
 const goCubeTag=document.createElement('span');goCubeTag.className='tag';goCubeTag.textContent=labels.safety;
 goCubeTop.append(goCubeIndex,goCubeTag);
 const goCubeStage=document.createElement('span');goCubeStage.className='stage';goCubeStage.textContent='Concept artwork · Implementation unverified';
-const goCubeHeading=document.createElement('h3');goCubeHeading.textContent='GO-CUBE — Liberty Field Governor';
+const goCubeHeading=document.createElement('h3');goCubeHeading.textContent=showcaseTitles.goCubeHeading;
 const goCubeNote=document.createElement('p');goCubeNote.textContent='Proposed liberty-first governor for autonomy: protected safe zones, two-eye redundancy and pressure/encirclement awareness. Five historical graphics span v0.5.1, v0.5.2 and the Chutes integration. No implemented safety guarantee is established.';
 const goCubeLink=document.createElement('a');goCubeLink.href='go-cube.html';goCubeLink.textContent='Explore the GO-CUBE design family ↗';
 goCubeCard.append(goCubeTop,goCubeStage,goCubeHeading,goCubeNote,goCubeLink);grid.append(goCubeCard);
@@ -85,12 +99,12 @@ const courtStackIndex=document.createElement('span');courtStackIndex.className='
 const courtStackTag=document.createElement('span');courtStackTag.className='tag';courtStackTag.textContent=labels.safety;
 courtStackTop.append(courtStackIndex,courtStackTag);
 const courtStackStage=document.createElement('span');courtStackStage.className='stage';courtStackStage.textContent='Parent architecture · Concept only';
-const courtStackHeading=document.createElement('h3');courtStackHeading.textContent='Court Governance Stack v1.0-RC2';
+const courtStackHeading=document.createElement('h3');courtStackHeading.textContent=showcaseTitles.courtStackHeading;
 const courtStackNote=document.createElement('p');courtStackNote.textContent='Proposed combined architecture integrating Chutes Cube, GO-CUBE, HIPPO Bus, Tesseract-Cube and Princess Clause. The supplied governance and medical-vignette graphic illustrates roles and decisions, not a validated controller.';
 const courtStackLink=document.createElement('a');courtStackLink.href='court-governance-stack.html';courtStackLink.textContent='Explore the parent governance stack ↗';
 courtStackCard.append(courtStackTop,courtStackStage,courtStackHeading,courtStackNote,courtStackLink);grid.append(courtStackCard);
 
-groups.forEach(([category,status,titles])=>titles.split('\n').filter(title=>!withdrawnTitles.has(title)).forEach(title=>{
+archiveRows.forEach(({category,status,title})=>{
  const armoryDivision=armoryDivisions.get(title);
  const publicCategory=armoryDivision?'defense':category;
  const card=document.createElement('article');card.className='card';card.dataset.category=publicCategory;card.dataset.stage=status==='Illustrated concept'?'concept':'documented';
@@ -129,7 +143,7 @@ groups.forEach(([category,status,titles])=>titles.split('\n').filter(title=>!wit
  }
 
  grid.append(card);
-}));
+});
 // Promote already-listed repository projects without creating duplicate project cards.
 for(const name of ['CRUCIBLE','AEGIS-TWIN v0.6']){
  const division=armoryDivisions.get(name);
