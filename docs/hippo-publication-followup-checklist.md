@@ -16,7 +16,7 @@ For repository administrators, in **RayPeloquin/mimirs-well → Settings → Rul
 5. Test with a harmless disposable pull request whose candidate branch causes the preflight to fail (e.g. an **empty** file in a directory named `restricted`); verify the PR actually cannot merge, then remove the test branch/file. Do **not** publish real restricted source or sensitive specifications.
 6. Record the protection/ruleset link, date, person who checked it, required check name, bypass permissions, and an example observed blocked merge in a **private** stewardship log.
 
-**Current status:** Required status check **not independently verified** as active; merge blocking **not verified**. Do not claim either until demonstrated.
+**Status as of 25 November 2026:** [active default-branch ruleset](https://github.com/RayPeloquin/mimirs-well/rules/27930465) and required publication preflight confirmed by an API read; zero approving reviews required; no configured bypass actors. No fresh end-to-end blocked-merge test was performed in this follow-up. See the [dated audit](trial4-publication-audit.md).
 
 GitHub reference: [Creating rulesets](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/creating-rulesets-for-a-repository) and [Available rules for rulesets](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/available-rules-for-rulesets).
 
@@ -48,7 +48,7 @@ Record results privately:
 - [ ] For any issue, maintain a private remediation record and seek GitHub support where needed. Deleting a present file does not remove all reachable history, caches or copies.
 - [ ] Reconfirm that the ruleset is active, that the check is required and not bypassed, and that an unreviewed test change cannot merge.
 
-**Status:** A full retrospective history/tag/release-asset audit **has not been completed** by the initial Grok test or the original automated tripwire.
+**Status:** The [25 November targeted inventory](trial4-publication-audit.md) is recorded, but full retrospective content, asset, archive and cross-repository review remains incomplete. A later branch API response returned 32 entries, the releases response was empty, and tag retrieval was unavailable in that follow-up. Do not infer no historical exposure.
 
 ## Limitations of the automated preflight
 
