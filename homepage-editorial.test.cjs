@@ -17,11 +17,11 @@ test('the collection and its pending subsection precede the Bench and Ledger', (
   assert.match(html,/Mimir’s Well is a public collection of engineering concepts/);
   assert.equal(featured.length,10);
   const visible = featured.filter(card => !card.startsWith('<article class="card" data-featured hidden'));
-  assert.equal(visible.length, 6);
+  assert.equal(visible.length, 10);
   for (const card of visible) {
     assert.match(card, /<\/h3><div class="featured-evidence">[^<]+<\/div><p>/);
-    assert.match(card, />Inspect the /);
   }
+  for (const card of visible.slice(0,6)) assert.match(card, />Inspect the /);
 });
 
 test('private Hall and unverified prototype URLs are not advertised publicly', () => {
