@@ -10,3 +10,16 @@ test('body cycle map connects every research stage and preserves classified fail
  assert.deepEqual(shape(actual),shape(old));assert.equal(actual.observations.length,3);assert.ok(actual.observations.every(o=>o.exit_code===2&&o.matched&&o.stdout.status==='error'));
  const page=readText('chronicle.html');assert.ok(page.includes('17 / 17 reconstructed named mutants'));assert.ok(page.includes('Zero independent replications recorded'));assert.ok(page.includes('Same-author determinism check (historical outcome code preserved)'));assert.ok(!page.includes('<strong>supports-limited-check</strong>'));
 });
+
+test('research pages connect proposed plans, observed receipts, and Ledger records',()=>{
+ const queue=readText('test-queue.html');
+ const plan=id=>queue.match(new RegExp('<article class="queue-card" id="'+id+'"[\\s\\S]*?</article>'))?.[0];
+ const skeptic=plan('test-numerical-check');
+ assert.match(skeptic,/href="skeptic-divergence-ledger.html">Ledger: SKEPTIC-1/);
+ assert.match(skeptic,/No observed run for this plan is recorded in the Chronicle/);
+ const material=plan('test-material-balance');
+ assert.match(material,/href="chronicle.html#run-test-material-balance"/);
+ assert.match(material,/href="chronicle.html#accounting-002"/);
+ assert.doesNotMatch(material,/No observed run/);
+ assert.match(readText('orrery.html'),/href="skeptic-divergence-ledger.html">Ledger: SKEPTIC-1/);
+});
