@@ -27,6 +27,7 @@ const showcaseTitles=Object.freeze({
   goCubeHeading:'GO-CUBE — Liberty Field Governor',
   courtStackHeading:'Court Governance Stack v1.0-RC2',
 });
+groups.push(["biology","Concept / design","BASTET-1 — Feline Spectral Augmentation System"]);
 const archiveRows=groups.flatMap(([category,status,titles])=>
   titles.split('\n').filter(title=>!withdrawnTitles.has(title)).map(title=>({category,status,title})));
 if(typeof module==='object'&&module.exports){

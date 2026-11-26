@@ -1,6 +1,6 @@
 {
   "version": "2026-11-25-v1",
-  "catalog_sha256": "adbd521cdb8abce56517edabbd8f86071f889f85951b75d26ddaf0b889e8d2a5",
+  "catalog_sha256": "1bef3c1442eba12429ac8fc85e15a04dcf1509d06349244068ddbba280862dac",
   "scope": "Explicit documented or proposed relationships only. No inferred transitive links, compatibility, physical coupling, or safety approval. Hold/watch records have no indexed edges.",
   "types": {
     "guided-hypothesis": "Guided hypothesis",
@@ -11,7 +11,7 @@
     "editorial-comparison": "Editorial comparison"
   },
   "counts": {
-    "records": 364,
+    "records": 365,
     "connected": 21,
     "edges": 15
   },
@@ -350,6 +350,14 @@
       "record_status": "expanded",
       "publication_hold": "none",
       "record": "records/bamboo-rf-agricultural-tolerance-concept.html",
+      "relationships": 0
+    },
+    {
+      "id": "bastet-1-feline-spectral-augmentation-system",
+      "title": "BASTET-1 — Feline Spectral Augmentation System",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/bastet-1-feline-spectral-augmentation-system.html",
       "relationships": 0
     },
     {
