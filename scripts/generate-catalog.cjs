@@ -349,21 +349,28 @@ for (const entry of entries) {
   categories.get(division).push(entry);
 }
 const sections = Array.from(categories, ([division, projects]) => {
-  const items = projects.map(({ id, title }) =>
-    '<li><a href="catalog.html#' + id + '">' + escapeHtml(title) + '</a></li>');
+  const items = projects.map(entry => {
+    const evidence = entry.evidence_types.map(type => evidenceTypes.get(type)).join(' · ');
+    const releaseStatus = publication.holds[entry.id] ? publication.holdLabel :
+      publication.watches[entry.id] ? publication.watchLabel : 'no specific hold/watch designation documented';
+    return '<li><a href="catalog.html#' + entry.id + '">' + escapeHtml(entry.title) +
+      '</a> <small>— ' + escapeHtml(evidence + '; ' + releaseStatus + '; no technical release approval.') + '</small></li>';
+  });
   const previewSize = 6;
   const preview = '<ul>' + items.slice(0, previewSize).join('\n') + '</ul>';
   const overflow = items.slice(previewSize);
   const more = overflow.length ? '<details><summary>Show ' + overflow.length +
     (overflow.length === 1 ? ' more project' : ' more projects') + '</summary><ul>' + overflow.join('\n') + '</ul></details>' : '';
-  return '<section><h2>' + escapeHtml(division) + '</h2>' + preview + more + '</section>';
+  const medicalNotice = division === 'Battlefield medicine' ?
+    '<p><strong>Medical research only.</strong> These entries have no documented independent clinical review. Do not use them for patient care or medical decisions.</p>' : '';
+  return '<section><h2>' + escapeHtml(division) + '</h2>' + medicalNotice + preview + more + '</section>';
 });
 output('armory.html', `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Armory · Mimir’s Well</title>
 <style>:root{color-scheme:dark}body{max-width:52rem;margin:auto;padding:2rem 1.2rem;background:#080f17;color:#edf4ef;font:1rem/1.65 system-ui}a{color:#b5f5cf}section{border-top:1px solid #34444b}li{padding:.35rem 0}summary{cursor:pointer;color:#b5f5cf;margin-bottom:.5rem}</style></head>
 <body><nav><a href="index.html#projects">Mimir’s Well</a> · <a href="catalog.html">Full catalog</a></nav>
-<main><h1>The Armory</h1><p>Defense and protective systems in the Well. Each link opens the project’s catalog entry and its published evidence notes where available.</p>
+<main><h1>The Armory</h1><p>Defense and protective systems in the Well. Each link opens the project’s catalog entry and its published evidence notes where available. Evidence labels reflect the catalog and do not establish physical validation.</p><p><strong>Publication boundary.</strong> Listing a project here does not approve it for technical release. Withhold operationally enabling material until a qualified independent human reviewer clears it under the <a href="publication-safety.html">publication policy</a>.</p>
 ${sections.join('\n')}</main></body></html>\n`);
 const home = readText(path.join(root, 'index.html'));
 const count = globalThis.MimirsLedgerData.length;
