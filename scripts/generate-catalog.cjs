@@ -297,8 +297,7 @@ for(const entry of entries) {
 const compactRows = entries.map(e=>'<li><a href="records/'+e.id+'.html">'+escapeHtml(e.title)+'</a>'+ (e.publication_hold==='precautionary_hold_summary_only'?' <strong>[Hold]</strong>':e.publication_hold==='review_watch'?' <strong>[Watch]</strong>':'')+(e.record_status==='pending_review'?' [Pending review]':'')+(e.id==='unidentified-transparent-fiber-composite-concept'?' [Artwork identity pending]':'')+'</li>').join('\n');
 output('record-index.html','<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Research record directory | Mimir&#39;s Well</title><link rel="stylesheet" href="catalog-browser.css"></head><body><nav><a href="index.html">Mimir&#39;s Well</a> | <a href="catalog.html">Full catalog</a> | <a href="catalog-manifest.html">Manifest</a> | <a href="guided-alchemy.html">Guided pathways</a> | <a href="orrery.html">The Orrery</a> | <a href="equation-sources.html">Equation sources</a></nav><main><h1>Research record directory</h1><p>'+entries.length+' public titles. [Pending review] marks archive titles awaiting source review.</p><p><strong>Hold</strong> marks a restricted technical-source release. <strong>Watch</strong> marks a record under additional review. See the <a href="publication-safety.html">publication policy</a> or open a record for its evidence and release status.</p><ol>'+compactRows+'</ol></main></body></html>\n');
 const rows = entries.map(entry => {
-  const detail = expanded.get(entry.id);
-  const evidence = ledgerEvidence.get(entry.id) || [detail?.evidenceType || (detail ? 'unclassified' : 'pending')];
+  const evidence = entry.evidence_types;
   const familyIds = familyIdsFor(entry.title);
   const publicationStatus = publication.holds[entry.id] ? publication.holdLabel :
     publication.watches[entry.id] ? publication.watchLabel : '';
@@ -309,7 +308,7 @@ const rows = entries.map(entry => {
   const details = [['Evidence and limits', entry.evidence], ['Contributors', entry.contributors], ['Source revision', entry.revision_note]]
     .filter(([, value]) => value)
     .map(([label, value]) => '<p><strong>' + label + '</strong> ' + escapeHtml(value) + '</p>').join('');
-  return '<li id="' + entry.id + '"><div class="catalog-entry" data-types="' + evidence.join(' ') + '" data-families="' + familyIds.join(' ') + '">' +
+  return '<li id="' + entry.id + '"><div class="catalog-entry" data-types="' + evidence.join(' ') + '" data-review-status="' + entry.record_status + '" data-families="' + familyIds.join(' ') + '">' +
     '<h2>' + escapeHtml(entry.title) + '</h2>' + reviewLabel + '<p class="catalog-type">' + evidence.map(type => escapeHtml(evidenceTypes.get(type))).join(' · ') + '</p>' +
     '<p class="catalog-families">' + familyIds.map(id => escapeHtml(familyNames.get(id))).join(' · ') + '</p>' +
     '<p>' + escapeHtml(entry.summary) + '</p><p class="catalog-families">' + escapeHtml(entry.evidence_notice) + '</p>' + (publicationStatus ? '<p>' + escapeHtml(entry.publication_notice) + '</p>' : '') + '<p class="catalog-families">Record ID: ' + entry.id + ' &middot; ' + escapeHtml(entry.status) + '</p>' +
@@ -321,13 +320,14 @@ const rows = entries.map(entry => {
 const options = map => Array.from(map, ([id, label]) => '<option value="' + id + '">' + escapeHtml(label) + '</option>').join('');
 output('catalog.html', `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Project catalog · Mimir’s Well</title><link rel="stylesheet" href="catalog-browser.css"><script defer src="catalog-browser.js"></script></head>
+<title>Project catalog · Mimir’s Well</title><link rel="stylesheet" href="catalog-browser.css"><script defer src="catalog-browser.js?v=review-status"></script></head>
 <body><a class="brand" href="index.html#projects">✳ Mimir’s Well</a>
 <main><h1>Project catalog</h1>
-<p>Browse ${entries.length} projects. Research families group related questions. Evidence types use the published Ledger where a project has an entry.</p>\n<p class="catalog-safety">Some energy-system records have technical-source publication holds or review-watch status. Public summaries are not technical-release approvals. <a href="publication-safety.html">See the publication safety policy</a>.</p>
+<p>Browse ${entries.length} projects. Research families group related questions. Review status tracks source review. Evidence type reflects the published Ledger where a project has an entry.</p>\n<p class="catalog-safety">Some energy-system records have technical-source publication holds or review-watch status. Public summaries are not technical-release approvals. <a href="publication-safety.html">See the publication safety policy</a>.</p>
 <form id="catalog-controls" hidden>
   <label>Research family<select name="family"><option value="">All research families</option>${options(familyNames)}</select></label>
-  <label>Evidence type<select name="evidence"><option value="">All evidence types</option>${options(evidenceTypes)}</select></label>
+  <label>Review status<select name="status"><option value="">All review statuses</option><option value="expanded">Expanded records</option><option value="pending_review">Source review pending</option></select></label>
+  <label>Evidence type<select name="evidence"><option value="">All evidence types</option>${options([...evidenceTypes].filter(([type]) => type !== 'pending'))}</select></label>
   <label class="catalog-search">Search projects<input name="q" type="search" placeholder="Search titles or notes" autocomplete="off"></label>
   <button type="reset">Clear filters</button>
 </form>
