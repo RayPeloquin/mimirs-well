@@ -1011,6 +1011,31 @@
     "content_sha256": "85196c1d20c2104c6115d033839294260c6abe58d8e56ecc3fb754409f9a0f53"
   },
   {
+    "id": "bastet-1-feline-spectral-augmentation-system",
+    "title": "BASTET-1 — Feline Spectral Augmentation System",
+    "status": "Expanded record",
+    "evidence": "Concept and proposed tests only. No hardware tests, improved biological perception, animal safety, communication decoding or validated optical performance established. The simulator illustrates weights, not measured sensor or feline performance.",
+    "contributors": "Mr. Peloquin: originating sensory augmentation idea. Ms. Asteris Solenne (ChatGPT): external optical architecture, weighting example, illustrations and validation plan.",
+    "url": "bastet-1.html",
+    "record_status": "expanded",
+    "evidence_types": [
+      "concept"
+    ],
+    "publication_hold": "none",
+    "publication_notice": "Standard public record; no technical-release approval implied.",
+    "summary": "Proposed external visible, near-infrared and passive thermal sensor fusion to extend accessible visual information. Bench-only initial phase; separate exploratory acoustic analysis concept.",
+    "revision_note": "BASTET-1 v0.1 — illustrated concept and interactive channel-weight example, 26 November 2026.",
+    "canonical_url": "https://raypeloquin.github.io/mimirs-well/records/bastet-1-feline-spectral-augmentation-system.html",
+    "source_urls": [
+      "https://raypeloquin.github.io/mimirs-well/bastet-1.html"
+    ],
+    "ledger_url": null,
+    "ledger_updated": null,
+    "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
+    "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
+    "content_sha256": "5a6a2a8073b7631732593095a106e344523ac972362197d13a3b9cdcdd9100bb"
+  },
+  {
     "id": "bioengineered-hair-follicle-horn-implant-concepts",
     "title": "Bioengineered Hair-Follicle / Horn-Implant Concepts",
     "status": "Source review pending",
