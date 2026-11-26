@@ -136,4 +136,6 @@ node --test *.test.cjs
 
 Tests verify only their stated checks. They do not substitute for a full browser accessibility audit, independent scientific replication, medical review, or hardware safety certification.
 
+Project records credit people and models for their documented contributions. The Court provides AI-assisted critical review. Project records describe group findings at the level supported by the available sources.
+
 The collection is iterative. Prior conclusions, failed controls, and changed interpretations belong in the historical record rather than being silently polished away.

@@ -2,7 +2,7 @@
 
 **Date:** 20 November 2026  
 **Scope:** Ten archive projects already listed in Mimir’s Well but previously lacking expanded evidence records.  
-**Publication boundary:** Original user-owned source files remain private; only bounded public digests and a source fingerprint are published. This is not a laboratory audit, independent peer review or equipment validation.
+**Publication boundary:** Original user-owned source files remain private; only bounded public digests and a source fingerprint are published. These digests summarize the archived material. Laboratory audit, independent review and equipment validation remain outside their scope.
 
 | Project record | Public digest | Reviewed local archive file | SHA-256 |
 | --- | --- | --- | --- |

@@ -23,4 +23,4 @@ Freeze the case keys, balanced order assignment, outcome measures and reviewer e
 
 **Source basis:** Archived *Choir-on-ARQEN-Pilot.md*, prepared 12 November 2026; practice case and unscored plan.
 
-**Attribution:** Mr. Peloquin, human operator; Asteris Solenne, protocol integration; Grok, Claude, Gemini and Meta, independent pre-sprint review. Review votes are not evidence of correctness.
+**Attribution:** Mr. Peloquin was the human operator. Asteris Solenne / ChatGPT integrated the protocol. The shortlist received pre-sprint AI-assisted critical review. Individual reviewer contributions are undocumented. Review votes are not evidence of correctness.

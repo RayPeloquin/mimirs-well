@@ -14,4 +14,4 @@ No measured noise reduction, validated contact-force threshold, user comfort stu
 ## Next check
 Choose a benign mobility platform and independently verified safety envelope; compare human perceptions and emergency-stop response across baseline and candidate motion policies with operator oversight.
 
-**Source basis:** Archived `Jaguar mode.txt` v1.1; Mr. Peloquin's research archive, with original engineering and peer-review responsibilities unverified.
+**Source basis:** Archived `Jaguar mode.txt` v1.1; Mr. Peloquin's research archive, with original engineering and review responsibilities unverified.

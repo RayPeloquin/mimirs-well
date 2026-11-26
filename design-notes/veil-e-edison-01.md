@@ -23,4 +23,4 @@ Define a measurable input-force range, choose a benchtop sensor arrangement, est
 
 **Source basis:** Archived *VEIL-E-EDISON-01-v3.0-Court-Design.pdf*, eight pages, 29 October 2026. The archived paper contains historical-source review and longer methodology.
 
-**Attribution:** Mr. Peloquin (Anubis), originating question; Asteris Solenne, source checks and consolidation; Claude, Grok, Gemini and Meta, critiques. None of these reviews constitutes independent physical testing.
+**Attribution:** Mr. Peloquin posed the originating question. Asteris Solenne / ChatGPT checked sources and consolidated the critiques. The archive documents AI-assisted critical review. Individual reviewer contributions and independent physical testing remain undocumented.

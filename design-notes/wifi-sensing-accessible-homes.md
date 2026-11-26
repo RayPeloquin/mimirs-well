@@ -14,4 +14,4 @@ No measured sensitivity, missed-event rate, false alarm rate, in-home installati
 ## Next check
 Review label definitions and consent conditions; hold out complete recording sessions; report balanced accuracy, misses, false alarms and room-to-room variation against a simple baseline. Before any home pilot, establish opt-in, retention limits and explicit non-emergency status.
 
-**Source basis:** Archived `WiFi-Sensing-Court-Feasibility-2026-11-02.md`. Prepared by Asteris; Claude and Grok offered distinct review comments. This digest does not release private household information.
+**Source basis:** Archived `WiFi-Sensing-Court-Feasibility-2026-11-02.md`. Asteris Solenne / ChatGPT prepared the feasibility review. The digest records AI-assisted critical review and leaves individual reviewer contributions unspecified. This digest does not release private household information.

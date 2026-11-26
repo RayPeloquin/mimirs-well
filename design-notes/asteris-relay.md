@@ -23,4 +23,6 @@ With the actual devices, record one low-risk desktop-to-phone handoff and one ph
 
 **Source basis:** Archived *Asteris-Relay-Court-Review-01.md*, 10 November 2026; original review remains private.
 
-**Attribution:** Mr. Peloquin (Anubis), originating aim and decisions; Asteris Solenne, synthesis; Grok, Meta, Claude and Gemini, named Court critiques. Review is not implementation certification.
+**Attribution.** Mr. Peloquin set the originating aim and made the project decisions. Asteris Solenne / ChatGPT coordinated the reviews, checked sources, and wrote the synthesis.
+
+**AI-assisted critical review.** Grok proposed sparse events, device specialization, and a central baseline. Meta AI proposed explicit ownership, observation provenance, and voice handoff. Claude proposed an append-only record, one authority, task states, and failure tests. Gemini proposed local event histories and challenged broker dependence.
