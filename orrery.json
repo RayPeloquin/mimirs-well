@@ -1,6 +1,6 @@
 {
   "version": "2026-11-25-v1",
-  "catalog_sha256": "adbd521cdb8abce56517edabbd8f86071f889f85951b75d26ddaf0b889e8d2a5",
+  "catalog_sha256": "5f22b23c707e3d75484883aab0d47cf91a026fc50d5b4aa4b86626488f9c85f5",
   "scope": "Explicit documented or proposed relationships only. No inferred transitive links, compatibility, physical coupling, or safety approval. Hold/watch records have no indexed edges.",
   "types": {
     "guided-hypothesis": "Guided hypothesis",
@@ -11,7 +11,7 @@
     "editorial-comparison": "Editorial comparison"
   },
   "counts": {
-    "records": 364,
+    "records": 365,
     "connected": 21,
     "edges": 15
   },
@@ -395,7 +395,7 @@
     {
       "id": "bounceqec",
       "title": "BounceQEC",
-      "record_status": "pending_review",
+      "record_status": "expanded",
       "publication_hold": "none",
       "record": "records/bounceqec.html",
       "relationships": 0
@@ -518,6 +518,14 @@
       "record_status": "expanded",
       "publication_hold": "none",
       "record": "records/cmh-01-contractile-heart-material-research.html",
+      "relationships": 0
+    },
+    {
+      "id": "coherence-controlled-quantum-tunneling-switch",
+      "title": "Coherence-Controlled Quantum Tunneling Switch",
+      "record_status": "expanded",
+      "publication_hold": "none",
+      "record": "records/coherence-controlled-quantum-tunneling-switch.html",
       "relationships": 0
     },
     {
@@ -1707,7 +1715,7 @@
     {
       "id": "neuroshell-1",
       "title": "Neuroshell-1",
-      "record_status": "pending_review",
+      "record_status": "expanded",
       "publication_hold": "none",
       "record": "records/neuroshell-1.html",
       "relationships": 0
@@ -1715,7 +1723,7 @@
     {
       "id": "neurosynapse-1",
       "title": "Neurosynapse-1",
-      "record_status": "pending_review",
+      "record_status": "expanded",
       "publication_hold": "none",
       "record": "records/neurosynapse-1.html",
       "relationships": 0
@@ -2035,7 +2043,7 @@
     {
       "id": "pulselink-reentry",
       "title": "PULSELINK — Reentry",
-      "record_status": "pending_review",
+      "record_status": "expanded",
       "publication_hold": "none",
       "record": "records/pulselink-reentry.html",
       "relationships": 0
@@ -2227,7 +2235,7 @@
     {
       "id": "rewind-ii-plasma-concept",
       "title": "REWIND-II — Plasma concept",
-      "record_status": "pending_review",
+      "record_status": "expanded",
       "publication_hold": "none",
       "record": "records/rewind-ii-plasma-concept.html",
       "relationships": 0
