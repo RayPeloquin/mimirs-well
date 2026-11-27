@@ -1,0 +1,31 @@
+name: Diogenes' Lantern
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: diogenes-lantern
+  cancel-in-progress: false
+jobs:
+  research-cycle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Bounded research cycle
+        run: node research/diogenes/worker.cjs "$RUNNER_TEMP/diogenes"
+      - name: Preserve cycle receipt
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: diogenes-receipt
+          path: ${{ runner.temp }}/diogenes/receipt.json
+          retention-days: 14
+          if-no-files-found: warn
