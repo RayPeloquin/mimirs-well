@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Traveler Messaging on Windows: shared-file contention, a tested SQLite queue, and the next phone-to-desktop delivery test.">
+  <link rel="canonical" href="https://raypeloquin.github.io/mimirs-well/traveler-messaging.html">
+  <link rel="stylesheet" href="divergence-records.css">
+  <title>Traveler Messaging · Mimir’s Well</title>
+  <style>
+    .messaging-art { margin: 1.5rem 0 0; border: 1px solid var(--line); background: var(--panel); }
+    .messaging-art img { display: block; width: 100%; height: auto; }
+    .messaging-art figcaption { padding: .8rem 1rem; color: var(--muted); }
+    .results { overflow-wrap: anywhere; }
+  </style>
+</head>
+<body>
+  <header><div class="wrap">
+    <a class="brand" href="index.html">✳ Mimir’s Well</a>
+    <a class="back" href="index.html#projects">Back to the collection</a>
+  </div></header>
+  <main>
+    <div class="wrap hero">
+      <div class="eyebrow">Distributed systems · Desktop software test</div>
+      <h1>Traveler Messaging</h1>
+      <p class="lead">Two writers hit a deliberate SQLite write lock. Both retried with their original IDs, and all 20 messages committed exactly once in the desktop test.</p>
+      <p><time datetime="2026-11-27">November 27, 2026</time> · Windows desktop prototype for Android phone and Quest 3S messaging.</p>
+      <figure class="messaging-art">
+        <a href="assets/traveler-messaging-workbench.webp"><img src="assets/traveler-messaging-workbench.webp" width="1672" height="941" alt="A desktop computer and an upright phone on a warmly lit workbench, with a mixed-reality headset on the shelf behind them." fetchpriority="high"></a>
+        <figcaption>Concept illustration of the three-device workbench. The desktop hosted the tests reported here.</figcaption>
+      </figure>
+    </div>
+
+    <section><div class="wrap">
+      <h2>From shared file to SQLite</h2>
+      <ul>
+        <li>Individual phone and Quest conversation runs recorded 10 of 10 entries each on the desktop. A scheduled phone run also recorded 10 of 10.</li>
+        <li>A shared-start run recorded 16 of 20. Windows reported file-in-use errors for <code>Phone-E07</code>, <code>Phone-E08</code>, <code>Quest-E03</code>, and <code>Quest-E06</code>.</li>
+        <li>A follow-up simulation recorded 20 of 20 on first attempts. It exercised simultaneous producers under that run’s conditions and left recovery from a failed write open.</li>
+        <li>Desktop-local SQLite tests confirmed that replaying an identical message ID left one record. The intended recipient could acknowledge the message, and repeating the acknowledgment made no further change. Commands on the desktop exercised both the phone and Quest roles.</li>
+        <li>An unauthenticated request to the local gateway was rejected, and nine isolated gateway checks passed. A desktop watcher detected one local message in about 350 ms.</li>
+      </ul>
+    </div></section>
+
+    <section><div class="wrap">
+      <h2>Deliberate lock test</h2>
+      <p>Two producers started together and each sent ten distinct IDs through Traveler’s existing enqueue code. The harness used a fresh Windows SQLite database in WAL mode, held a separate write transaction, and waited for both first sends to report contention. It released the lock after 11.0 seconds and retried each failed send with its original ID. A separate connection then read the committed rows and checked their IDs and contents against the sends.</p>
+      <ul class="results">
+        <li><strong>Contention observed.</strong> <code>CONT-A-01</code> and <code>CONT-B-01</code> both returned <code>SQLITE_BUSY</code> while the lock was held, after about 10.98 seconds each. The configured busy timeout was 10 seconds.</li>
+        <li><strong>Two same-ID retries.</strong> Both succeeded on their first retry after release. The test harness supplied those retries.</li>
+        <li><strong>20 committed records and 20 matching send receipts.</strong> Zero missing or extra IDs, duplicates, or mismatches. The two induced lock errors were the only errors reported.</li>
+      </ul>
+      <figure class="messaging-art">
+        <a href="assets/traveler-messaging-queue.webp"><img src="assets/traveler-messaging-queue.webp" width="1672" height="941" alt="Teal and amber streams of message blocks merge into a single channel through an open metal gate." loading="lazy" decoding="async"></a>
+        <figcaption>Concept illustration of two message streams resuming after a write lock clears.</figcaption>
+      </figure>
+      <p class="notice"><strong>Evidence limits.</strong> This was one controlled desktop run. It verified committed rows and send receipts under a deliberately held lock. Crash recovery, physical-device delivery, and Android background operation remain open. Windows and Android appeared in Tailscale device status before the network work was paused. Tailscale stayed paused during this test, and Quest integration remains open.</p>
+    </div></section>
+
+    <section><div class="wrap">
+      <h2>Court of the Synthetic review</h2>
+      <p>The AI-assisted critical review recommended using the desktop SQLite queue as the sole write path. Each reviewer contributed a distinct check.</p>
+      <ul>
+        <li><strong>Grok</strong> proposed deliberately contending two ten-message producers and requiring 20 unique committed IDs. The desktop test above executed that check.</li>
+        <li><strong>Claude</strong> proposed reporting acceptance after commit and tracking recipient acknowledgment separately. Its follow-up test stops the gateway after commit and before the sender receives a receipt, then retries the same ID.</li>
+        <li><strong>Gemini</strong> proposed verifying which physical device originates each message, measuring send-to-acknowledgment timing, and testing Android with the screen locked after foreground delivery is established.</li>
+      </ul>
+      <p>The next desktop test is the commit-before-receipt crash case. After that, the first network milestone is a phone-originated message and a desktop reply, each acknowledged by its intended recipient. The airship concept and wind replay are documented on <a href="traveler.html">The Traveler</a> page.</p>
+      <p class="muted">Test design and execution by Mr. Peloquin and Asteris Solenne / ChatGPT. AI-generated concept illustrations.</p>
+    </div></section>
+  </main>
+  <footer><div class="wrap">Mimir’s Well · Court of the Synthetic · We do no harm.</div></footer>
+</body>
+</html>
