@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "assigned": [
+    {
+      "id": "distributed-research",
+      "query": "distributed agents reliable message delivery local first data synchronization"
+    },
+    {
+      "id": "reproducibility",
+      "query": "computational research reproducibility scientific workflow provenance"
+    }
+  ],
+  "exploratory": [
+    {
+      "id": "negative-evidence",
+      "query": "negative results publication bias computational experiments"
+    },
+    {
+      "id": "uncertainty",
+      "query": "uncertainty quantification model verification reproducibility"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+'use strict';
+const {test}=require('node:test'),assert=require('node:assert/strict');
+const {run,discover,select}=require('./research/diogenes/worker.cjs');
+const q=require('./research/diogenes/queue.json');
+const now=new Date('2026-11-27T23:17:00Z');
+const mock=async()=>({ok:true,json:async()=>({message:{items:[{DOI:'10.1234/abc',title:['Example'],published:{'date-parts':[[2026,11,1]]}},{DOI:'10.1234/ABC'},{DOI:'invalid'}]}})});
+test('Lantern chooses one topic per lane',()=>assert.deepEqual(select(q,now).map(x=>x.lane),['assigned','exploratory']));
+test('Lantern deduplicates and bounds metadata; never treats it as evidence',async()=>{const d=await discover(select(q,now)[0],now,mock);assert.equal(d.candidates.length,1);assert.equal(d.candidates[0].status,'unreviewed metadata candidate');});
+test('Lantern preserves source outage and contrary fixture',async()=>{const r=await run({now,fetcher:async()=>({ok:false,status:429}),replay:()=>({status:'contrary'})});assert.equal(r.status,'fixture attention');assert.equal(r.discovery[0].status,'unavailable');assert.equal(r.fixture.status,'contrary');});
+test('Lantern successful metadata plus actual frozen replay',async()=>{const r=await run({now,fetcher:mock});assert.equal(r.status,'completed');assert.equal(r.fixture.status,'same-author-determinism-check');assert.equal(r.discovery.length,2);});
