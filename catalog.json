@@ -1128,25 +1128,25 @@
   {
     "id": "bounceqec",
     "title": "BounceQEC",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
+    "status": "Expanded record",
+    "evidence": "Poster reports a negative result for high-fidelity redundant quantum error correction: two-site recovery improved versus the identity reference, but remained imperfect. Reported values are not independently reproduced; code, exact initial encoding, recovery optimization, numerical convergence and a preregistered threshold are not supplied. This toy model does not establish cosmological information survival.",
+    "contributors": "Mr. Peloquin's collaborative design archive; individual artwork authorship and independent review credits remain unverified.",
     "url": "index.html#design/bounceqec",
-    "record_status": "pending_review",
+    "record_status": "expanded",
     "evidence_types": [
-      "pending"
+      "concept"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
-    "summary": "Archive title awaiting source review; no evidence assessment established.",
-    "revision_note": null,
+    "summary": "A reported three-site scalar-field toy-model investigation of quantum information spreading during a modeled bounce, comparing harmonic and interacting cases.",
+    "revision_note": "BOUNCE-QEC first numerical result poster, reviewed 2026-11-27.",
     "canonical_url": "https://raypeloquin.github.io/mimirs-well/records/bounceqec.html",
     "source_urls": [],
     "ledger_url": null,
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "9637a64ba150cf52f2a92b82d12efdb91e9dfc7ed68ad763d7d2e3824ba42ad6"
+    "content_sha256": "acb6b3ef1e04ef41bc914e78e8da0607d73e0653bb512a62c9df5cf49d1b5c26"
   },
   {
     "id": "boundary-0-boundary-0x",
@@ -1512,6 +1512,31 @@
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
     "content_sha256": "3db6103b8c4b5e519ae5f994fd171e581bcfea769715ccedf5b62df5c8183028"
+  },
+  {
+    "id": "coherence-controlled-quantum-tunneling-switch",
+    "title": "Coherence-Controlled Quantum Tunneling Switch",
+    "status": "Expanded record",
+    "evidence": "The displayed two-level Hamiltonian has consistent local dressed eigenvalues. This alone does not establish a switch, coherent recombination, or suppression of total transmission by decoherence; these depend on preparation, scattering dynamics and detection. The labeled detuning is not explicitly defined in the Hamiltonian. No numerical or experimental transmission result supplied.",
+    "contributors": "Mr. Peloquin's collaborative design archive; individual artwork authorship and independent review credits remain unverified.",
+    "url": "index.html#design/coherence-controlled-quantum-tunneling-switch",
+    "record_status": "expanded",
+    "evidence_types": [
+      "concept"
+    ],
+    "publication_hold": "none",
+    "publication_notice": "Standard public record; no technical-release approval implied.",
+    "summary": "Proposed two-state quantum scattering model exploring whether coherent internal-state dynamics can alter transmission.",
+    "revision_note": "Coherence-Controlled Quantum Tunneling Switch poster, reviewed 2026-11-27.",
+    "canonical_url": "https://raypeloquin.github.io/mimirs-well/records/coherence-controlled-quantum-tunneling-switch.html",
+    "source_urls": [
+      "https://doi.org/10.1038/s41467-018-03626-w"
+    ],
+    "ledger_url": null,
+    "ledger_updated": null,
+    "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
+    "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
+    "content_sha256": "df25e068976a0a3a64658945d4977b42c96f0f9a3e4b4fc92bd2c4316cd83450"
   },
   {
     "id": "conduct-architecture",
@@ -5073,48 +5098,48 @@
   {
     "id": "neuroshell-1",
     "title": "Neuroshell-1",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
+    "status": "Expanded record",
+    "evidence": "No evidence supplied for safe sustained isolated human-brain viability, consciousness preservation, clinical benefit, or the illustrated operating specifications. These are speculative design illustrations, not medical equipment or operating instructions.",
+    "contributors": "Mr. Peloquin's collaborative design archive; individual artwork authorship and independent review credits remain unverified.",
     "url": "index.html#design/neuroshell-1",
-    "record_status": "pending_review",
+    "record_status": "expanded",
     "evidence_types": [
-      "pending"
+      "concept"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
-    "summary": "Archive title awaiting source review; no evidence assessment established.",
-    "revision_note": null,
+    "summary": "Speculative concept for preservation and support of neural tissue, with eventual interface research as a distinct long-term question.",
+    "revision_note": "Two NEUROSHELL-1 concept illustrations reviewed 2026-11-27; technical originals not released.",
     "canonical_url": "https://raypeloquin.github.io/mimirs-well/records/neuroshell-1.html",
     "source_urls": [],
     "ledger_url": null,
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "bc1ba5a69ca4c31e143aa2c8be103a5887dc8684afa396a9a0f3ddf6369abe7d"
+    "content_sha256": "98bbf3424bc7f10228aa93df0868b2b3e8960f6b61a66c0ad87a6426f6ee702d"
   },
   {
     "id": "neurosynapse-1",
     "title": "Neurosynapse-1",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
+    "status": "Expanded record",
+    "evidence": "A conceptual systems architecture, not a demonstrated neural interface. Limited component-level neural interfaces do not establish whole-body, autonomic or endocrine integration. No validated clinical hardware, decoder performance, physiological safety or human-use evidence supplied.",
+    "contributors": "Mr. Peloquin's collaborative design archive; individual artwork authorship and independent review credits remain unverified.",
     "url": "index.html#design/neurosynapse-1",
-    "record_status": "pending_review",
+    "record_status": "expanded",
     "evidence_types": [
-      "pending"
+      "concept"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
-    "summary": "Archive title awaiting source review; no evidence assessment established.",
-    "revision_note": null,
+    "summary": "Proposed governed interface separating neural signal translation, authorization, body control and biological support.",
+    "revision_note": "NEUROSYNAPSE-1 brain-body communication architecture poster, reviewed 2026-11-27.",
     "canonical_url": "https://raypeloquin.github.io/mimirs-well/records/neurosynapse-1.html",
     "source_urls": [],
     "ledger_url": null,
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "3940056f8fd34af4d68e2aed614125239567286fadeaa89f408ef656ddb7f69c"
+    "content_sha256": "d5665c4b0699e689cf88c4987b456148e4b2db7f3decf178672a3e585138fbc9"
   },
   {
     "id": "neutrino-detector",
@@ -6049,25 +6074,27 @@
   {
     "id": "pulselink-reentry",
     "title": "PULSELINK — Reentry",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
+    "status": "Expanded record",
+    "evidence": "The referenced Rodriguez Fuentes and Parent Physics of Fluids study (2026; arXiv:2512.18163) reports numerical plasma depletion and lower RF attenuation. It does not validate the illustrated communications protocol, post-pulse window duration, link reliability or vehicle-scale power budget. No prototype or flight data supplied.",
+    "contributors": "Mr. Peloquin's collaborative design archive; individual artwork authorship and independent review credits remain unverified.",
     "url": "index.html#design/pulselink-reentry",
-    "record_status": "pending_review",
+    "record_status": "expanded",
     "evidence_types": [
-      "pending"
+      "concept"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
-    "summary": "Archive title awaiting source review; no evidence assessment established.",
-    "revision_note": null,
+    "summary": "Proposed intermittent communication protocol for civilian atmospheric reentry, using temporary improvements in plasma-channel transparency to exchange telemetry.",
+    "revision_note": "PULSE-LINK v0.1, supplied concept poster; reviewed 2026-11-27.",
     "canonical_url": "https://raypeloquin.github.io/mimirs-well/records/pulselink-reentry.html",
-    "source_urls": [],
+    "source_urls": [
+      "https://arxiv.org/abs/2512.18163"
+    ],
     "ledger_url": null,
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "d7bca460c968023803898ff2f6a531ef2f8522cded6ae8e23bcc2a83df207e01"
+    "content_sha256": "735606646a0cce40c982f5b3c338d8553fd217df953b76d786e706dd96aa8c53"
   },
   {
     "id": "pyramid-data-center",
@@ -6628,25 +6655,27 @@
   {
     "id": "rewind-ii-plasma-concept",
     "title": "REWIND-II — Plasma concept",
-    "status": "Source review pending",
-    "evidence": null,
-    "contributors": null,
+    "status": "Expanded record",
+    "evidence": "Electroaerodynamic propulsion has experimental precedent; this proposed traveling electromagnetic architecture, high mass flow, efficiency, acoustic performance and reliability are not demonstrated. Static magnet arrays alone do not establish net axial momentum transfer. No measured data supplied.",
+    "contributors": "Mr. Peloquin's collaborative design archive; individual artwork authorship and independent review credits remain unverified.",
     "url": "index.html#design/rewind-ii-plasma-concept",
-    "record_status": "pending_review",
+    "record_status": "expanded",
     "evidence_types": [
-      "pending"
+      "concept"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
-    "summary": "Archive title awaiting source review; no evidence assessment established.",
-    "revision_note": null,
+    "summary": "Proposed solid-state air-moving concept based on ion-neutral momentum transfer and a wide, low-velocity-increment airflow.",
+    "revision_note": "REWIND-II solid-state axial fan concept poster, reviewed 2026-11-27.",
     "canonical_url": "https://raypeloquin.github.io/mimirs-well/records/rewind-ii-plasma-concept.html",
-    "source_urls": [],
+    "source_urls": [
+      "https://doi.org/10.1038/s41586-018-0707-9"
+    ],
     "ledger_url": null,
     "ledger_updated": null,
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "a9ab50b71e88de356a3b704f77313cd83981162b828d8573623a9b22e79a2f6b"
+    "content_sha256": "f3b6db57e734672433dfb00023605eb1f6af009905bafd30fbe4e6dde3a7ec24"
   },
   {
     "id": "rindler-habitat",
