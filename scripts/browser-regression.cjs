@@ -174,7 +174,10 @@ const root = path.resolve(__dirname, '..');
     for(const width of [320,390,1100,1101,1280,1440,1920]){
       await page.setViewportSize({width,height:844});
       await page.goto(base+'/');
-      await page.getByText(/Showing 10 of .* expanded records/).waitFor();
+      await page.getByText(/Showing 9 of .* expanded records/).waitFor();
+      assert.equal(await page.locator('#expanded-grid [data-featured]:visible').count(),9);
+      assert.equal(await page.locator('#expanded-grid [data-featured]').count(),10);
+      await page.locator('#load-more').click();
       assert.equal(await page.locator('#expanded-grid [data-featured]:visible').count(),10);
       const door=page.getByRole('link',{name:'Enter the Hypogeum'});
       await door.scrollIntoViewIfNeeded();
@@ -185,7 +188,7 @@ const root = path.resolve(__dirname, '..');
       await page.getByRole('heading',{name:'The Hypogeum',exact:true}).waitFor();
       assert.equal(await page.getByRole('link',{name:'Open the local Hypogeum'}).getAttribute('href'),'http://127.0.0.1:17830/');
     }
-    console.log('PASS Hypogeum artwork entrance and all ten featured cards at seven viewport widths');
+    console.log('PASS Hypogeum artwork entrance and nine-card preview and access to the tenth featured card at seven viewport widths');
     await page.setViewportSize({width:1280,height:720});
     await page.goto(base+'/');
     await page.locator('#well-sound-toggle').click();
