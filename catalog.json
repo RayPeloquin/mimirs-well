@@ -8,7 +8,7 @@
     "url": "index.html#design/ac-cognition-engine",
     "record_status": "expanded",
     "evidence_types": [
-      "unclassified"
+      "concept"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
@@ -18,11 +18,11 @@
     "source_urls": [
       "https://github.com/RayPeloquin/mimirs-well/blob/main/public-notes/ac-cognition-engine.md"
     ],
-    "ledger_url": null,
-    "ledger_updated": null,
+    "ledger_url": "https://raypeloquin.github.io/mimirs-well/ac-cognition-engine-divergence-ledger.html",
+    "ledger_updated": "2026-11-27",
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "83bf7014f90ed32e21f11b0f2f444bf61e06bc87d430e252c01ce91b77608406"
+    "content_sha256": "67cb729d72f85008c065f0ec7bb8410664089c0a2047ab127e7bd6f038ab861e"
   },
   {
     "id": "ac2-admissible-decision-architecture",
@@ -3531,7 +3531,7 @@
     "url": "index.html#design/hidden-heat-mathematical-study",
     "record_status": "expanded",
     "evidence_types": [
-      "unclassified"
+      "concept"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
@@ -3541,11 +3541,11 @@
     "source_urls": [
       "https://github.com/RayPeloquin/mimirs-well/blob/main/public-notes/hidden-heat.md"
     ],
-    "ledger_url": null,
-    "ledger_updated": null,
+    "ledger_url": "https://raypeloquin.github.io/mimirs-well/hidden-heat-mathematical-study-divergence-ledger.html",
+    "ledger_updated": "2026-11-27",
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "5c90639764db11993538145a5b4be8c835d3b0934f3ca42b3804181a2ca9a251"
+    "content_sha256": "ba7408ab3ce521b3dd15dc6c524eca285c048b0c1f4274c94d02f0a4c69f2660"
   },
   {
     "id": "hippo-bus-scheduled-hybrid-power-distribution",
@@ -4255,7 +4255,7 @@
     "url": "index.html#design/knock-moth-pool-tile-mapping",
     "record_status": "expanded",
     "evidence_types": [
-      "unclassified"
+      "concept"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
@@ -4266,11 +4266,11 @@
       "https://github.com/RayPeloquin/mimirs-well/blob/main/public-notes/knock-moth.md",
       "https://infotechnology.fhwa.dot.gov/hammer-sound-chain-drag-hscd/"
     ],
-    "ledger_url": null,
-    "ledger_updated": null,
+    "ledger_url": "https://raypeloquin.github.io/mimirs-well/knock-moth-pool-tile-mapping-divergence-ledger.html",
+    "ledger_updated": "2026-11-27",
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "96cb0dc4d0f736e440a37ef234bb7b04ddfcf841de72824d7729fa2d5bbe8108"
+    "content_sha256": "92cebe5f981f22fd811c6b0ce315978ce30b0fe3f2e058e21026ddce912178ba"
   },
   {
     "id": "laaf-pinn",
@@ -5293,7 +5293,7 @@
     "url": "index.html#design/off-grid-ranch-water-system",
     "record_status": "expanded",
     "evidence_types": [
-      "unclassified"
+      "concept"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
@@ -5304,11 +5304,11 @@
       "https://github.com/RayPeloquin/mimirs-well/blob/main/public-notes/off-grid-ranch-water-system.md",
       "https://www.energy.gov/cmei/femp/best-management-practice-14-alternative-water-sources"
     ],
-    "ledger_url": null,
-    "ledger_updated": null,
+    "ledger_url": "https://raypeloquin.github.io/mimirs-well/off-grid-ranch-water-system-divergence-ledger.html",
+    "ledger_updated": "2026-11-27",
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "d064f69049e315600d91bfb01ad68bd81f475757596ce01e9d6fd41b381a4b65"
+    "content_sha256": "a0137a11e03c68851bfa10032f87be0e759bb5a891c71bec8a782d7f4b344764"
   },
   {
     "id": "oilskin-sentinel",
@@ -5344,7 +5344,7 @@
     "url": "olympus-floor-model-engineering-project-and-portfolio-control-art.html",
     "record_status": "expanded",
     "evidence_types": [
-      "unclassified"
+      "concept"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
@@ -5355,11 +5355,11 @@
       "https://raypeloquin.github.io/mimirs-well/olympus-floor-model-engineering-project-and-portfolio-control-art.html",
       "https://raypeloquin.github.io/mimirs-well/public-notes/olympus-floor-model-engineering-project-and-portfolio-control.md"
     ],
-    "ledger_url": null,
-    "ledger_updated": null,
+    "ledger_url": "https://raypeloquin.github.io/mimirs-well/olympus-floor-model-engineering-project-and-portfolio-control-divergence-ledger.html",
+    "ledger_updated": "2026-11-27",
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "25cbdcc65358432263ce08e8581856523dabd75e2c29af5fdb8c3b6d67552780"
+    "content_sha256": "11986247b227ed7b83e249632335a23dfdd5964eb6c45dc88d5c3c89eb233aca"
   },
   {
     "id": "olympus-registry-design-lineage-and-evidence-catalog",
@@ -5675,7 +5675,7 @@
     "url": "index.html#design/papergrid-0",
     "record_status": "expanded",
     "evidence_types": [
-      "unclassified"
+      "concept"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
@@ -5685,11 +5685,11 @@
     "source_urls": [
       "https://github.com/RayPeloquin/mimirs-well/blob/main/public-notes/papergrid-0.md"
     ],
-    "ledger_url": null,
-    "ledger_updated": null,
+    "ledger_url": "https://raypeloquin.github.io/mimirs-well/papergrid-0-divergence-ledger.html",
+    "ledger_updated": "2026-11-27",
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "04eb7bfcca84bb96ab26c1c07cc8bf0537cce975026e8f43feeac0fd66dba6a4"
+    "content_sha256": "3d588ba2d33869acdbc833ec8e4fe1a83b45d3f747098a7d4814278909465f55"
   },
   {
     "id": "paperpower-water-battery",
@@ -7383,7 +7383,7 @@
     "url": "index.html#design/soul-forge-hand-mapping",
     "record_status": "expanded",
     "evidence_types": [
-      "unclassified"
+      "concept"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
@@ -7393,11 +7393,11 @@
     "source_urls": [
       "https://github.com/RayPeloquin/mimirs-well/blob/main/public-notes/soul-forge-hand-mapping.md"
     ],
-    "ledger_url": null,
-    "ledger_updated": null,
+    "ledger_url": "https://raypeloquin.github.io/mimirs-well/soul-forge-hand-mapping-divergence-ledger.html",
+    "ledger_updated": "2026-11-27",
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "00968d56e6aa7c5de7b3039f6be3ae68c8ee1ed136de3bd0b88a9efe3d40145a"
+    "content_sha256": "5f560a755d0e2c8c4977712602ec0306d92da40a31f97fa85b0300c9afb7c860"
   },
   {
     "id": "sound-bus",
@@ -7820,7 +7820,7 @@
     "url": "index.html#design/the-dock-guardian",
     "record_status": "expanded",
     "evidence_types": [
-      "unclassified"
+      "concept"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
@@ -7830,11 +7830,11 @@
     "source_urls": [
       "https://github.com/RayPeloquin/mimirs-well/blob/main/public-notes/the-dock-guardian.md"
     ],
-    "ledger_url": null,
-    "ledger_updated": null,
+    "ledger_url": "https://raypeloquin.github.io/mimirs-well/the-dock-guardian-divergence-ledger.html",
+    "ledger_updated": "2026-11-27",
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "83b8c3b97bd9b0920f11e595c456d47fde3a668a69cb09e1b04572f759c924a5"
+    "content_sha256": "e26af1de31c5fd65a3a833de1a1396fb0341115ef6386e845f7bc60b007a99ec"
   },
   {
     "id": "the-golden-ratio-intergenerational-community",
@@ -8288,11 +8288,11 @@
       "https://raypeloquin.github.io/mimirs-well/unidentified-transparent-fiber-composite-concept-artwork.html",
       "https://raypeloquin.github.io/mimirs-well/public-notes/unidentified-transparent-fiber-composite-concept-artwork.md"
     ],
-    "ledger_url": null,
-    "ledger_updated": null,
+    "ledger_url": "https://raypeloquin.github.io/mimirs-well/unidentified-transparent-fiber-composite-concept-divergence-ledger.html",
+    "ledger_updated": "2026-11-27",
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "5d44ff6526e6f28530c11ecfccdc696e73d78f67ad888848fb5766341019ff9e"
+    "content_sha256": "52981af6add31e1deccaaddbc8d9f60d5900c6bbaf9e39e97fc4d5b5593dac1c"
   },
   {
     "id": "uss-eldridge-working-physics-research",
@@ -8472,7 +8472,7 @@
     "url": "index.html#design/vowed-self-continuity-engine",
     "record_status": "expanded",
     "evidence_types": [
-      "unclassified"
+      "concept"
     ],
     "publication_hold": "none",
     "publication_notice": "Standard public record; no technical-release approval implied.",
@@ -8482,11 +8482,11 @@
     "source_urls": [
       "https://github.com/RayPeloquin/mimirs-well/blob/main/public-notes/vowed-self-continuity-engine.md"
     ],
-    "ledger_url": null,
-    "ledger_updated": null,
+    "ledger_url": "https://raypeloquin.github.io/mimirs-well/vowed-self-continuity-engine-divergence-ledger.html",
+    "ledger_updated": "2026-11-27",
     "evidence_notice": "Evidence type describes the public artifact, not a validation or safety certificate.",
     "policy_url": "https://raypeloquin.github.io/mimirs-well/publication-safety.html",
-    "content_sha256": "02395174e45e70ffbf527c7ad7c9970baf56fa618c2cfec94b80c35d4a706c1a"
+    "content_sha256": "e72372d47406bec001287b38095a716baffa6ffafe2b3cbe27609d978093e76b"
   },
   {
     "id": "vsrl-01-accelerator",
