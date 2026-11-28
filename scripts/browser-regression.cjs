@@ -22,6 +22,24 @@ const root = path.resolve(__dirname, '..');
     page.on('pageerror',e=>errors.push(e.message));
     const base='http://127.0.0.1:'+server.address().port;
     await page.goto(base+'/equation-bench.html');
+    const timing = page.locator('#timing');
+    assert.equal(await timing.evaluate(el => el.open), false);
+    await timing.locator('summary').first().click();
+    const pulse = page.locator('#pulse-start');
+    const reading = page.locator('#timing-result');
+    assert.match(await reading.innerText(), /Missed/);
+    for (const [start, expected] of [['0', /Detected at 0 seconds/], ['9', /Missed/], ['9.5', /Detected at 10 seconds/], ['10', /Detected at 10 seconds/], ['19', /Missed/]]) {
+      await pulse.evaluate((slider, value) => {
+        slider.value = value;
+        slider.dispatchEvent(new Event('input', {bubbles: true}));
+      }, start);
+      assert.match(await reading.innerText(), expected);
+    }
+    await pulse.press('Home');
+    assert.match(await reading.innerText(), /Detected at 0 seconds/);
+    await timing.locator('summary').last().click();
+    assert.match(await timing.innerText(), /fault from 2 to 4 seconds/);
+    await timing.locator('summary').first().click();
     await page.locator('#pick-a').waitFor();
     await page.waitForFunction(()=>!document.querySelector('#pick-a').disabled);
     assert.match(await page.locator('#draft-note').innerText(),/each source pair/i);
