@@ -1,6 +1,6 @@
 {
   "version": "2026-11-25-v1",
-  "catalog_sha256": "7c8d79832b07b2f0648a49f33d1502c8a69b999c77f4694971bea7884e51443a",
+  "catalog_sha256": "bc7d65c0f20a9cf200c4c41df9a86522b35c3199c9a65988e2c6d1e0e19838db",
   "scope": "Explicit documented or proposed relationships only. No inferred transitive links, compatibility, physical coupling, or safety approval. Hold/watch records have no indexed edges.",
   "types": {
     "guided-hypothesis": "Guided hypothesis",
@@ -835,7 +835,7 @@
     {
       "id": "eta-gate-light-elevator",
       "title": "ETA-GATE — Light elevator",
-      "record_status": "pending_review",
+      "record_status": "expanded",
       "publication_hold": "none",
       "record": "records/eta-gate-light-elevator.html",
       "relationships": 0
@@ -1019,7 +1019,7 @@
     {
       "id": "go-cube-liberty-field-governor",
       "title": "GO-CUBE — Liberty Field Governor",
-      "record_status": "pending_review",
+      "record_status": "expanded",
       "publication_hold": "none",
       "record": "records/go-cube-liberty-field-governor.html",
       "relationships": 2
@@ -2003,7 +2003,7 @@
     {
       "id": "pmsm-space-sample-microscope",
       "title": "PMSM — Space sample microscope",
-      "record_status": "pending_review",
+      "record_status": "expanded",
       "publication_hold": "none",
       "record": "records/pmsm-space-sample-microscope.html",
       "relationships": 0
@@ -2123,7 +2123,7 @@
     {
       "id": "quantum-slice-teleporter",
       "title": "Quantum Slice Teleporter",
-      "record_status": "pending_review",
+      "record_status": "expanded",
       "publication_hold": "none",
       "record": "records/quantum-slice-teleporter.html",
       "relationships": 0
@@ -2731,7 +2731,7 @@
     {
       "id": "triple-nitinol-spine",
       "title": "Triple-Nitinol Spine",
-      "record_status": "pending_review",
+      "record_status": "expanded",
       "publication_hold": "none",
       "record": "records/triple-nitinol-spine.html",
       "relationships": 0
