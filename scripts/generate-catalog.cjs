@@ -382,6 +382,20 @@ const rows = entries.map(entry => {
     '<a href="records/' + entry.id + '.html" aria-label="Permanent catalog record: ' + escapeHtml(entry.title) + '">Permanent record link</a> &middot; <a href="' + entry.url + '" aria-label="Open design record: ' + escapeHtml(entry.title) + '">Open design record' + (entry.url.includes('#design/') ? ' (interactive)' : '') + '</a></div></li>';
 });
 const options = map => Array.from(map, ([id, label]) => '<option value="' + id + '">' + escapeHtml(label) + '</option>').join('');
+const researchPlateHtml = readText(path.join(root, 'research-plates.html'));
+const researchPlateItems = [...researchPlateHtml.matchAll(/<section\\b([^>]*)>([\\s\\S]*?)<\\/section>/gi)].map(match => {
+  const id = (match[1].match(/\\bid="([^"]+)"/) || [])[1];
+  const body = match[2];
+  const rawTitle = (body.match(/<h2[^>]*>([\\s\\S]*?)<\\/h2>/i) || [])[1];
+  const decode = value => value.replace(/&amp;/g, '&').replace(/&#x27;/g, "'").replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+  const title = decode((rawTitle || '').replace(/<[^>]*>/g, '').trim());
+  const image = (body.match(/<img\\b[^>]*>/i) || [])[0];
+  const video = (body.match(/<video\\b[^>]*>/i) || [])[0];
+  const src = image ? (image.match(/\\bsrc="([^"]+)"/) || [])[1] : video ? (video.match(/\\bposter="([^"]+)"/) || [])[1] : null;
+  const rawAlt = image ? (image.match(/\\balt="([^"]*)"/) || [])[1] : title + ' animated illustration';
+  return { id, title, src, alt: decode(rawAlt || '') };
+}).filter(item => item.id && item.title && item.src && item.src.startsWith('assets/research-plates/'));
+const illustrationIndex = '<details class="catalog-illustration-index"><summary>Research illustrations (' + researchPlateItems.length + ' visual items)</summary><p>Open an illustration to view its original page and any available notes.</p><div class="catalog-illustration-grid">' + researchPlateItems.map(item => '<a class="catalog-illustration-item" href="research-plates.html#' + escapeHtml(item.id) + '"><img loading="lazy" decoding="async" src="' + escapeHtml(item.src) + '" alt="' + escapeHtml(item.alt) + '"><span>' + escapeHtml(item.title) + '</span></a>').join('') + '</div></details>';
 output('catalog.html', `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Project catalog · Mimir’s Well</title><link rel="stylesheet" href="catalog-browser.css"><script defer src="catalog-browser.js?v=artwork-20261127"></script></head>
@@ -389,6 +403,7 @@ output('catalog.html', `<!doctype html>
 <main><h1>Project catalog</h1>
 <p>Browse ${entries.length} projects. Research families group related questions. Review status tracks source review. Evidence type reflects the published Ledger where a project has an entry.</p>\n<p class="catalog-safety">Some energy-system records have technical-source publication holds or review-watch status. Public summaries are not technical-release approvals. <a href="publication-safety.html">See the publication safety policy</a>.</p>
 <p><a href="illustrated-designs.html">Browse illustrated designs</a> · artwork availability is separate from source review and evidence.</p>
+${illustrationIndex}
 <form id="catalog-controls" hidden>
   <label>Research family<select name="family"><option value="">All research families</option>${options(familyNames)}</select></label>
   <label>Review status<select name="status"><option value="">All review statuses</option><option value="expanded">Expanded records</option><option value="pending_review">Source review pending</option></select></label>
