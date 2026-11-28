@@ -104,6 +104,11 @@ for (const entry of entries) {
   });
   entry.content_sha256 = sha(JSON.stringify(entry));
 }
+const artwork = require('../well-gallery.js');
+const { createArtworkViews } = require('./illustrated-designs.cjs');
+for (const item of artwork) assert.ok(require('node:fs').existsSync(path.join(root,item.src)), 'Missing artwork asset: '+item.src);
+const artworkViews = createArtworkViews(entries, artwork);
+output('illustrated-designs.html',artworkViews.galleryPage());
 const json = JSON.stringify(entries, null, 2) + '\n';
 output('catalog.json', json);
 const manifest = {
@@ -128,7 +133,7 @@ const csvCell = value => {
   return '"' + text.replaceAll('"','""') + '"';
 };
 output('catalog.csv', [columns.join(','), ...entries.map(e => columns.map(k => csvCell(e[k])).join(','))].join('\n') + '\n');
-const staticPaths = [...entries.map(e => 'records/' + e.id + '.html'), '','hypogeum.html','guided-alchemy.html','verification-receipt.html','trial-v-receipt.html','traveler-messaging.html','orrery.html','scriptorium.html','test-queue.html','chronicle.html','diogenes-lantern.html','research-cycle.html','how-to-misread.html','dimensional-witness.html','record-index.html','catalog-manifest.html','equation-sources.html','sitemap.html','catalog.html','ledger.html','publication-safety.html','legal.html','combine.html','equation-bench.html', ...globalThis.MimirsLedgerData.map(r=>r.url), 'dermis.html','cortex.html','thoracis.html','fsams-skin-eva-concept.html','eye-of-horus.html',"odin-s-ravens-art.html","enki-s-will-living-safety-stack-art.html","court-of-the-synthetic-multi-model-engineering-review-art.html","aegis-sentinel-mesh-art.html","sister-s-hope-hand-restoration-gloves-art.html","olympus-floor-model-engineering-project-and-portfolio-control-art.html","mount-olympus-cross-domain-design-and-adversarial-review-art.html","weaver-s-shuttle-art.html","crystal-damping-loop-artwork.html","quantum-floor-artwork.html","unidentified-transparent-fiber-composite-concept-artwork.html","thoth-s-mind-artwork.html","mosquito-reaper-artwork.html"];
+const staticPaths = [...entries.map(e => 'records/' + e.id + '.html'), '','hypogeum.html','guided-alchemy.html','verification-receipt.html','trial-v-receipt.html','traveler-messaging.html','orrery.html','scriptorium.html','test-queue.html','chronicle.html','diogenes-lantern.html','research-cycle.html','how-to-misread.html','dimensional-witness.html','record-index.html','catalog-manifest.html','equation-sources.html','sitemap.html','catalog.html','ledger.html','publication-safety.html','legal.html','combine.html','equation-bench.html', ...globalThis.MimirsLedgerData.map(r=>r.url), 'dermis.html','cortex.html','thoracis.html','fsams-skin-eva-concept.html','eye-of-horus.html',"odin-s-ravens-art.html","enki-s-will-living-safety-stack-art.html","court-of-the-synthetic-multi-model-engineering-review-art.html","aegis-sentinel-mesh-art.html","sister-s-hope-hand-restoration-gloves-art.html","olympus-floor-model-engineering-project-and-portfolio-control-art.html","mount-olympus-cross-domain-design-and-adversarial-review-art.html","weaver-s-shuttle-art.html","crystal-damping-loop-artwork.html","quantum-floor-artwork.html","unidentified-transparent-fiber-composite-concept-artwork.html","thoth-s-mind-artwork.html","mosquito-reaper-artwork.html","research-plates.html","illustrated-designs.html"];
 output('sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + [...new Set(staticPaths)].map(p => '  <url><loc>' + base + p + '</loc></url>').join('\n') + '\n</urlset>\n');
 const vm = require('node:vm');
 const eqContext = {window:{}};
@@ -367,26 +372,28 @@ const rows = entries.map(entry => {
   const details = [['Evidence and limits', entry.evidence], ['Contributors', entry.contributors], ['Source revision', entry.revision_note]]
     .filter(([, value]) => value)
     .map(([label, value]) => '<p><strong>' + label + '</strong> ' + escapeHtml(value) + '</p>').join('');
-  return '<li id="' + entry.id + '"><div class="catalog-entry" data-types="' + evidence.join(' ') + '" data-review-status="' + entry.record_status + '" data-families="' + familyIds.join(' ') + '">' +
+  return '<li id="' + entry.id + '"><div class="catalog-entry" data-types="' + evidence.join(' ') + '" data-review-status="' + entry.record_status + '" data-families="' + familyIds.join(' ') + '" data-artwork="' + artworkViews.countFor(entry.id) + '">' +
     '<h2>' + escapeHtml(entry.title) + '</h2>' + reviewLabel + '<p class="catalog-type">' + evidence.map(type => escapeHtml(evidenceTypes.get(type))).join(' · ') + '</p>' +
     '<p class="catalog-families">' + familyIds.map(id => escapeHtml(familyNames.get(id))).join(' · ') + '</p>' +
     '<p>' + escapeHtml(entry.summary) + '</p><p class="catalog-families">' + escapeHtml(entry.evidence_notice) + '</p>' + (publicationStatus ? '<p>' + escapeHtml(entry.publication_notice) + '</p>' : '') + '<p class="catalog-families">Record ID: ' + entry.id + ' &middot; ' + escapeHtml(entry.status) + '</p>' +
     (details ? '<details open><summary>Evidence and contributor notes</summary>' + details + '</details>' : '') +
     (entry.source_urls.length ? '<details open><summary>Published sources</summary><ul>' + entry.source_urls.map((url,i) => '<li><a href="' + escapeHtml(url) + '">Source ' + (i+1) + ' for ' + escapeHtml(entry.title) + '</a></li>').join('') + '</ul></details>' : '') +
-    (entry.ledger_url ? '<p><a href="' + escapeHtml(entry.ledger_url.replace(base,'')) + '">Divergence Ledger: ' + escapeHtml(entry.title) + '</a></p>' : '') +
+    (entry.ledger_url ? '<p><a href="' + escapeHtml(entry.ledger_url.replace(base,'')) + '">Divergence Ledger: ' + escapeHtml(entry.title) + '</a></p>' : '') + artworkViews.catalogLink(entry.id) +
     '<a href="records/' + entry.id + '.html" aria-label="Permanent catalog record: ' + escapeHtml(entry.title) + '">Permanent record link</a> &middot; <a href="' + entry.url + '" aria-label="Open design record: ' + escapeHtml(entry.title) + '">Open design record' + (entry.url.includes('#design/') ? ' (interactive)' : '') + '</a></div></li>';
 });
 const options = map => Array.from(map, ([id, label]) => '<option value="' + id + '">' + escapeHtml(label) + '</option>').join('');
 output('catalog.html', `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Project catalog · Mimir’s Well</title><link rel="stylesheet" href="catalog-browser.css"><script defer src="catalog-browser.js?v=review-status"></script></head>
+<title>Project catalog · Mimir’s Well</title><link rel="stylesheet" href="catalog-browser.css"><script defer src="catalog-browser.js?v=artwork-20261127"></script></head>
 <body><a class="brand" href="index.html#projects">✳ Mimir’s Well</a>
 <main><h1>Project catalog</h1>
 <p>Browse ${entries.length} projects. Research families group related questions. Review status tracks source review. Evidence type reflects the published Ledger where a project has an entry.</p>\n<p class="catalog-safety">Some energy-system records have technical-source publication holds or review-watch status. Public summaries are not technical-release approvals. <a href="publication-safety.html">See the publication safety policy</a>.</p>
+<p><a href="illustrated-designs.html">Browse illustrated designs</a> · artwork availability is separate from source review and evidence.</p>
 <form id="catalog-controls" hidden>
   <label>Research family<select name="family"><option value="">All research families</option>${options(familyNames)}</select></label>
   <label>Review status<select name="status"><option value="">All review statuses</option><option value="expanded">Expanded records</option><option value="pending_review">Source review pending</option></select></label>
   <label>Evidence type<select name="evidence"><option value="">All evidence types</option>${options([...evidenceTypes].filter(([type]) => type !== 'pending'))}</select></label>
+  <label>Design artwork<select name="artwork"><option value="">All projects</option><option value="with">With indexed images</option><option value="without">Without indexed images</option></select></label>
   <label class="catalog-search">Search projects<input name="q" type="search" placeholder="Search titles or notes" autocomplete="off"></label>
   <button type="reset">Clear filters</button>
 </form>

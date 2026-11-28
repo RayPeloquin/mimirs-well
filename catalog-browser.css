@@ -46,3 +46,14 @@ main, nav { min-width: 0; overflow-wrap: anywhere; }
 main code { overflow-wrap: anywhere; white-space: pre-wrap; }
 main table { border-collapse: collapse; }
 main th, main td { padding: .55rem; vertical-align: top; overflow-wrap: anywhere; }
+
+/* Project visuals: one project per gallery card, never one card per image. */
+.artwork-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.artwork-project{padding:1rem;border:1px solid var(--line);border-radius:8px;background:var(--panel);min-width:0;scroll-margin-top:1rem}
+.artwork-project:target{border-color:var(--mint)}
+.artwork-project h2{font-size:1.4rem;line-height:1.25;margin:.1rem 0}
+.artwork-project figure{margin:.8rem 0}
+.artwork-project img{display:block;max-width:100%;height:auto;border-radius:5px}
+.artwork-project figcaption{font-size:.88rem;color:var(--muted);margin-top:.45rem}
+.artwork-link{margin:.5rem 0}
+@media(max-width:680px){.artwork-grid{grid-template-columns:minmax(0,1fr)}}

@@ -8,7 +8,8 @@ const search = controls.elements.q;
 const family = controls.elements.family;
 const evidence = controls.elements.evidence;
 const reviewStatus = controls.elements.status;
-const selects = [family, evidence, reviewStatus];
+const artwork = controls.elements.artwork;
+const selects = [family, evidence, reviewStatus, artwork];
 const pageSize = 6;
 let limit = pageSize;
 
@@ -23,6 +24,7 @@ const entries = Array.from(results.children, row => {
     row,
     types: entry.dataset.types.split(" "),
     reviewStatus: entry.dataset.reviewStatus,
+    hasArtwork: Number(entry.dataset.artwork) > 0,
     families: entry.dataset.families.split(" "),
     searchable: normalize(entry.textContent + " " + row.id),
   };
@@ -42,6 +44,7 @@ function render(anchor, scrollToAnchor = false) {
     (!family.value || entry.families.includes(family.value)) &&
     (!evidence.value || entry.types.includes(evidence.value)) &&
     (!reviewStatus.value || entry.reviewStatus === reviewStatus.value) &&
+    (!artwork.value || (artwork.value === "with" ? entry.hasArtwork : !entry.hasArtwork)) &&
     words.every(word => entry.searchable.includes(word)));
   const firstPage = matches.slice(0, limit);
   if (anchor && matches.includes(anchor) && !firstPage.includes(anchor)) {
