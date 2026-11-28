@@ -4,11 +4,11 @@
   "schema": "catalog.schema.json",
   "counts": {
     "total": 364,
-    "expanded": 191,
-    "pending_review": 173,
+    "expanded": 196,
+    "pending_review": 168,
     "ledger": 40
   },
-  "catalog_sha256": "7c8d79832b07b2f0648a49f33d1502c8a69b999c77f4694971bea7884e51443a",
+  "catalog_sha256": "bc7d65c0f20a9cf200c4c41df9a86522b35c3199c9a65988e2c6d1e0e19838db",
   "hash_encoding": "UTF-8, LF; record hash is SHA-256 of JSON.stringify(record excluding content_sha256)",
   "policy": "publication-safety.html",
   "policy_version": "2026-11-23",
