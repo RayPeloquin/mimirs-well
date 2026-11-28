@@ -34,3 +34,9 @@ All six WebP files were committed to their specified `assets/` paths together wi
 ### Evidence boundary
 
 The existing `Hypha Mind / GO-CUBE — Update-authorization testbed` is a separate computational study. Its measured-in-software behavior does not validate the GO-CUBE v0.5.x Liberty Field Governor or the combined Court Governance Stack. The `Princess Clause` and illustrated clinical vignette are design concepts, not clinical data.
+
+## Public poster revision — 27 November 2026
+
+The original historical asset hash above describes the 20 November publication. The Court Governance Stack public poster now uses a hypothetical industrial control decision-hold scenario and neutral human-protection iconography. The Princess Clause retains its protective and human-authorization role. Illustrative metrics are not test results. The original source is preserved separately and in Git history. No change to a safety threshold, governor implementation, authorization rule, or evidence status is claimed.
+
+Current public asset: `assets/court-governance-stack-v10-rc2.webp` — 369510 bytes; SHA-256 `e7eb93bf261e86d8b50fe32dbe8094f35a590f9f99e0d13cd880fd24c6866915`.
