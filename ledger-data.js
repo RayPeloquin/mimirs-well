@@ -303,6 +303,106 @@
     "summary": "Separate lamp and receiver balances clarify how to count light transferred inside the apparatus.",
     "url": "chihuahua-sphere-divergence-ledger.html",
     "updated": "2026-11-21"
+  },
+  {
+    "number": 31,
+    "title": "Knock-Moth — Pool-tile mapping",
+    "category": "Engineering",
+    "evidence": "Design review",
+    "status": "Public source review",
+    "summary": "A change in sound gives the mason a place to inspect. Joints and backing materials can produce changes too.",
+    "url": "knock-moth-pool-tile-mapping-divergence-ledger.html",
+    "updated": "2026-11-27"
+  },
+  {
+    "number": 32,
+    "title": "PAPERGRID-0",
+    "category": "Energy",
+    "evidence": "Design review",
+    "status": "Public source review",
+    "summary": "The archive moves from a factory-scale energy concept to accounting for one assembled sample.",
+    "url": "papergrid-0-divergence-ledger.html",
+    "updated": "2026-11-27"
+  },
+  {
+    "number": 33,
+    "title": "Hidden Heat — Mathematical study",
+    "category": "Physics",
+    "evidence": "Design review",
+    "status": "Public source review",
+    "summary": "Intermittent sampling can hide behavior that an ideal model resolves between readings.",
+    "url": "hidden-heat-mathematical-study-divergence-ledger.html",
+    "updated": "2026-11-27"
+  },
+  {
+    "number": 34,
+    "title": "Off-Grid Ranch Water System",
+    "category": "Infrastructure",
+    "evidence": "Design review",
+    "status": "Public source review",
+    "summary": "An illustration shows collection and storage together. The service question is whether stored water covers gaps in collection.",
+    "url": "off-grid-ranch-water-system-divergence-ledger.html",
+    "updated": "2026-11-27"
+  },
+  {
+    "number": 35,
+    "title": "The Dock Guardian",
+    "category": "Engineering",
+    "evidence": "Design review",
+    "status": "Public source review",
+    "summary": "The digest narrows an unusual-contact alert to a request for human review. Its cause remains open.",
+    "url": "the-dock-guardian-divergence-ledger.html",
+    "updated": "2026-11-27"
+  },
+  {
+    "number": 36,
+    "title": "AC Cognition Engine",
+    "category": "Software & governance",
+    "evidence": "Design review",
+    "status": "Public source review",
+    "summary": "The blueprint separates reconciliation of opposing assessments from permission to act.",
+    "url": "ac-cognition-engine-divergence-ledger.html",
+    "updated": "2026-11-27"
+  },
+  {
+    "number": 37,
+    "title": "Vowed Self-Continuity Engine",
+    "category": "Software & governance",
+    "evidence": "Design review",
+    "status": "Public source review",
+    "summary": "The design gives continuity an observable target: consistency with recorded commitments across a proposed change.",
+    "url": "vowed-self-continuity-engine-divergence-ledger.html",
+    "updated": "2026-11-27"
+  },
+  {
+    "number": 38,
+    "title": "Unidentified Transparent Fiber Composite Concept",
+    "category": "Materials",
+    "evidence": "Design review",
+    "status": "Public source review",
+    "summary": "The archive could recover a visible pattern and give it a descriptive title. Composition and project identity remain unknown.",
+    "url": "unidentified-transparent-fiber-composite-concept-divergence-ledger.html",
+    "updated": "2026-11-27"
+  },
+  {
+    "number": 39,
+    "title": "Soul Forge — Hand Mapping",
+    "category": "Design",
+    "evidence": "Design review",
+    "status": "Public source review",
+    "summary": "The Stage 0 addendum places hand mapping before a decision about further assistive-device research.",
+    "url": "soul-forge-hand-mapping-divergence-ledger.html",
+    "updated": "2026-11-27"
+  },
+  {
+    "number": 40,
+    "title": "Olympus Floor Model — Engineering project and portfolio control",
+    "category": "Software & governance",
+    "evidence": "Design review",
+    "status": "Public source review",
+    "summary": "Staffing, costs and review outcomes on the illustrated dashboard are sample interface content.",
+    "url": "olympus-floor-model-engineering-project-and-portfolio-control-divergence-ledger.html",
+    "updated": "2026-11-27"
   }
 ]);
 })(typeof window !== "undefined" ? window : globalThis);
