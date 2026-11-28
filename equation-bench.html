@@ -6,12 +6,13 @@
   <title>Equation Bench — Mimir’s Well</title>
   <meta name="description" content="Combine traceable equations only as candidates. Explicit mapping, inherited claims, and assumption limits are required before export.">
   <link rel="stylesheet" href="combine.css?v=20261123-equation">
-  <link rel="stylesheet" href="equation-bench.css?v=20261125-witness">
+  <link rel="stylesheet" href="equation-bench.css?v=20261127-timing">
   <script src="equation-cores.js?v=20261125-twelve" defer></script>
   <script src="publication-controls.js?v=20261125-twelve" defer></script>
   <script src="guided-alchemy.js?v=20261125-guided" defer></script>
   <script src="dimensional-witness.js?v=20261125-v2" defer></script>
   <script src="equation-bench.js?v=20261125-witness-v2" defer></script>
+  <script src="timing-study.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to equation workspace</a>
@@ -29,6 +30,25 @@
       <p><a class="button secondary" href="nesting-bench.html">Russian Nesting Math · build an ordered chain ↗</a></p>
     </div>
   </header>
+
+  <details class="section timing-study" id="timing">
+    <summary>Does the timing matter?</summary>
+    <p>A sensor takes an instantaneous reading at 0, 10 and 20 seconds. A fault lasts one second. Move its start time to see which readings catch it.</p>
+    <div id="timing-controls" hidden>
+      <div class="timing-axis" aria-hidden="true">
+        <span class="timing-pulse"></span>
+        <span class="timing-tick">0 s</span><span class="timing-tick">10 s</span><span class="timing-tick">20 s</span>
+      </div>
+      <label for="pulse-start">Fault starts at <output id="pulse-time" for="pulse-start">4.0</output> seconds</label>
+      <input type="range" id="pulse-start" min="0" max="19" step="0.1" value="4" aria-describedby="timing-rule">
+      <p id="timing-result" role="status"></p>
+    </div>
+    <noscript><p>A fault from 4 to 5 seconds falls between readings. A fault from 9.5 to 10.5 seconds appears in the 10-second reading.</p></noscript>
+    <p class="support-note" id="timing-rule">The fault is active at its start and clears exactly one second later. A reading at the clearing instant records normal.</p>
+    <details><summary>Try another case: readings at 0, 6 and 12 seconds all show normal. Could a two-second fault have occurred?</summary>
+      <p>Yes. A fault from 2 to 4 seconds fits entirely between the first two readings. All three readings would still show normal.</p>
+    </details>
+  </details>
 
   <section class="section guided-panel" aria-labelledby="guided-title">
     <div class="section-heading"><h2 id="guided-title">Guided Alchemy</h2><p>Start with a question, not an equation. Optional; the manual workspace below still works.</p></div>
