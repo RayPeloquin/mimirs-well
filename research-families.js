@@ -26,7 +26,7 @@
     {
       id: 'living-systems', name: 'Synthetic biology & living systems',
       description: 'Protein design, cellular control, artificial chromosomes, and the limits of proposed biological systems.',
-      examples: ['RAVEN-P1', 'ECHO-Rx', 'ECHO-M'],
+      examples: ['RAVEN-P1', 'ECHO-Rx', 'ECHO-M', 'ECHO Genome / EchoGenome', 'ECHO-DNA / ECHO-Y / ECHO-P / ECHO-H', 'ECHO Protocell — Resonant and Provisioned Seed'],
       bridges: ['clinical-care', 'zion-regenerative'],
       patterns: [/raven-p1|echo-rx|echo-m\b|echo genome|echogenome|echo.dna|echo.y|echo.p|echo.h|echo protocell|host.powered synthetic chromosome|acoustic genome|protein|chromosome|protocell|cellular|biologic|bioengineered|microneedle|chromo veil|white marrow|tumor hunter|biomedical nanocarrier|medi goo|ka patch|bioenergy|microbial/i]
     },
