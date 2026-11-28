@@ -447,6 +447,7 @@ const preview = recentLedger.map(record =>
 
 const home = readText(path.join(root, 'index.html'));
 output('index.html', updateLedgerTotal(home)
+  .replace(/Browse the \d+ projects<\/a>/, 'Browse the ' + total + ' projects</a>')
   .replace(/\d+ distinct project cards: \d+ expanded records and \d+ awaiting source review/,
     total + ' distinct project cards: ' + reviewed + ' expanded records and ' + pending + ' awaiting source review')
   .replace(/(id="pending-total">)\d+/, (_, prefix) => prefix + pending)
